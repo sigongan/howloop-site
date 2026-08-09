@@ -1,0 +1,146 @@
+---
+title: 'How to bleed a radiator that is cold at the top'
+cardTitle: 'Bleed a cold radiator'
+description: 'A radiator that is hot at the bottom and cold at the top has air trapped inside. Five minutes with a small key gets the heat back — and here is the step nearly everyone forgets afterwards.'
+topic: 'home'
+published: 2026-08-02
+timeNeeded: '5 minutes per radiator'
+difficulty: 'Easy'
+cost: 'Under $3 for a key'
+tools:
+  - 'Radiator bleed key (or a flat screwdriver on newer valves)'
+  - 'Old cloth or towel'
+  - 'Small bowl'
+steps:
+  - title: 'Confirm it is actually air'
+    text: 'Run the heating, then feel the radiator top and bottom. Hot at the bottom and cold at the top means air is trapped in the upper part. Cold all over is a different problem — usually a stuck valve or a blockage.'
+  - title: 'Turn the heating off and let it cool'
+    text: 'Never bleed a hot system. Wait until the radiators are cool to touch — the water inside is under pressure and scalds. Spread a cloth under the valve and hold a bowl beneath it.'
+  - title: 'Turn the key slowly anticlockwise'
+    text: 'A quarter to half a turn is plenty. You will hear a steady hiss as air escapes. Do not open it further and do not remove the screw completely.'
+  - title: 'Close it the moment water appears'
+    text: 'The hiss stops and a dribble of water comes out. That is your signal — close the valve immediately, snug but not forced. Overtightening damages the seat and creates a permanent weep.'
+  - title: 'Check the boiler pressure and top it up'
+    text: 'Bleeding removes water from a sealed system, so the pressure gauge drops. Most combi boilers want roughly 1 to 1.5 bar when cold. Use the filling loop to bring it back up, then run the heating and re-check the radiator.'
+faq:
+  - q: 'Which radiator do I bleed first?'
+    a: 'Start on the ground floor and work upward, and within each floor start furthest from the boiler. Air rises, so upstairs radiators collect it fastest, but bleeding downstairs first stops air being drawn back down as you go.'
+  - q: 'How often should I be doing this?'
+    a: 'Once a year, before the heating season starts, is plenty for most homes. If you find yourself bleeding the same radiator every few weeks, air is getting in from somewhere — a small leak, a failing pump seal or corrosion producing hydrogen gas. That needs a heating engineer, not more bleeding.'
+  - q: 'Nothing comes out at all when I open the valve.'
+    a: 'Either the valve is blocked with debris or the system pressure is too low to push anything out. Check the boiler gauge first — if it is near zero, top it up and try again. If pressure is fine and still nothing comes out, the valve pin is likely seized.'
+  - q: 'The boiler pressure gauge is in the red after I finished.'
+    a: 'You overfilled it while topping up. Bleed a small amount out of the nearest radiator to bring it back down into the normal band, and next time open the filling loop in short bursts, watching the gauge.'
+  - q: 'My radiator is cold at the bottom instead of the top.'
+    a: 'That is sludge, not air, and bleeding will not touch it. Magnetite sludge settles at the bottom and blocks flow. It needs a power flush or at least a chemical clean, which is a job for a heating engineer.'
+---
+
+import AnimStage from '../../components/AnimStage.astro';
+import Callout from '../../components/Callout.astro';
+import Radiator from '../../animations/Radiator.astro';
+
+A radiator is a container of hot water with a fixed volume. When air gets into
+the system it does what air always does — it rises to the highest point it can
+reach and sits there. In a panel radiator that point is the top few inches, and
+water can no longer get to it. The bottom stays hot, the top goes cold, and the
+room takes twice as long to warm up.
+
+The fix is to open a small valve at the top and let the air out. It takes about
+five minutes and costs nothing. The part people get wrong is not the bleeding —
+it's what happens to the boiler afterwards.
+
+<AnimStage
+  id="radiator"
+  label="Letting trapped air out of a panel radiator"
+  steps={frontmatter.steps}
+  pace={3000}
+  caption="Cross-section of a panel radiator. The dashed area at the top is trapped air; the green fills in as it escapes through the bleed valve."
+>
+  <Radiator />
+</AnimStage>
+
+## First, check it's actually air
+
+This takes ten seconds and saves you from doing the wrong job entirely.
+
+Run the heating for fifteen minutes, then put a hand on the radiator low down
+and then high up.
+
+- **Hot bottom, cold top** → trapped air. Bleeding will fix it.
+- **Cold everywhere** → not air. The valve at either end may be closed or
+  seized, or the radiator isn't getting flow.
+- **Hot top, cold bottom** → sludge sitting in the base. Bleeding does nothing
+  for this; it needs a proper flush.
+
+<Callout type="warn" title="Let it cool first — this one matters">
+The water in a heating system runs well above the temperature that scalds skin,
+and it is under pressure. Turn the heating off and wait until the radiators are
+cool enough to hold your hand against comfortably. Bleeding a hot system is how
+people end up with burns on their wrists.
+</Callout>
+
+## Opening the valve
+
+The bleed valve is the small square or slotted screw at the top of one end of
+the radiator. Older ones take a **bleed key** — a cheap stamped-metal square you
+can buy anywhere that sells DIY supplies. Many newer valves take a flat-blade
+screwdriver instead.
+
+Put a cloth on the floor and hold a bowl or cup directly under the valve. Water
+will come out, and it is usually black.
+
+Turn the key **anticlockwise, slowly**. A quarter turn is often enough. You want
+a steady hiss, not a rush. Half a turn is the maximum you should ever need.
+
+Do not keep unscrewing to make it go faster. Beyond about a full turn the screw
+can come out entirely, and at that point you have a hole in a pressurised
+heating system and no way to close it. That is a genuinely bad afternoon.
+
+## Closing at the right moment
+
+Listen. The hiss will thin out and stop, and a dribble of water will appear.
+**That is the moment.** All the air is out and water has reached the valve.
+
+Close it right away — turn clockwise until it is snug, then stop. Do not haul on
+it. The seat is soft brass and overtightening deforms it, which gives you a
+valve that weeps permanently and needs replacing.
+
+Wipe the area dry and check it after a minute. If it is still beading water, it
+needs a fraction more. If it drips steadily even when firmly closed, the valve
+is worn out.
+
+## The step everyone forgets
+
+You have just removed water from a sealed system. The pressure has dropped.
+
+Look at the gauge on the front of your boiler. Cold, most combi boilers want to
+sit around **1 to 1.5 bar** — the green band on the dial. If it has fallen below
+that, the boiler may refuse to fire, and you will have "fixed" one radiator and
+disabled all of them.
+
+Topping up is done with the **filling loop**, usually a braided silver hose with
+a tap at each end, under or beside the boiler. Open both taps briefly, watch the
+gauge climb, and close them as soon as you reach the middle of the band. Do it
+in short bursts — the gauge moves faster than you expect, and overshooting into
+the red means bleeding some back out again.
+
+<Callout type="tip" title="Do the whole house in one go">
+If one radiator has air, others probably do too. Work ground floor first, then
+upstairs, and within each floor start with the radiator furthest from the
+boiler. Then top the pressure up once at the end rather than after every
+radiator.
+</Callout>
+
+## When it isn't a five-minute job
+
+- **You are bleeding the same radiator every few weeks.** Air is getting in
+  continuously — a small leak, a failing pump seal, or internal corrosion making
+  hydrogen. Repeated bleeding treats the symptom and accelerates the corrosion.
+- **The water that comes out is thick and black.** Heavy sludge. The system
+  needs cleaning.
+- **The bleed screw is seized or rounded off.** Stop before you shear it.
+- **Pressure drops on its own between top-ups.** There is a leak somewhere.
+- **Anything involving the boiler itself.** Gas appliances are not DIY.
+
+Bleeding is one of the few heating jobs that is genuinely safe for anyone to do.
+Everything past it isn't, and the line is worth respecting.

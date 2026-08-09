@@ -1,0 +1,64 @@
+---
+import Prose from '../layouts/Prose.astro';
+import { SITE } from '../consts';
+---
+
+<Prose
+  title="Contact"
+  description={`Get in touch with the ${SITE.name} team — corrections, guide requests, privacy questions and press.`}
+  lede="One inbox, read by a human. Corrections get priority."
+>
+  <p>
+    The fastest way to reach us is email:
+    <strong><a href={`mailto:${SITE.email}`}>{SITE.email}</a></strong>. We aim to
+    reply within three working days.
+  </p>
+
+  <h2>What to send where</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>If you want to…</th>
+        <th>Put this in the subject line</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Report something we got wrong</td>
+        <td><code>Correction — [guide name]</code></td>
+      </tr>
+      <tr>
+        <td>Request a guide for a problem you keep hitting</td>
+        <td><code>Guide request</code></td>
+      </tr>
+      <tr>
+        <td>Ask about your data, cookies or ad personalisation</td>
+        <td><code>Privacy</code></td>
+      </tr>
+      <tr>
+        <td>Report a copyright or accessibility issue</td>
+        <td><code>Legal</code> or <code>Accessibility</code></td>
+      </tr>
+      <tr>
+        <td>Talk about advertising or partnerships</td>
+        <td><code>Business</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Corrections</h2>
+  <p>
+    If a guide is wrong, tell us which step and what happened instead. We'd
+    rather fix it than defend it. Confirmed corrections are applied to the
+    animation and the written steps together, and the guide's "last reviewed"
+    date is updated — see our <a href="/editorial-policy">editorial policy</a>.
+  </p>
+
+  <h2>What we can't help with</h2>
+  <p>
+    We can't diagnose your specific repair remotely, and we can't offer
+    professional plumbing, electrical, legal or medical advice. If a job feels
+    beyond you, or the guide's warning section applies to your situation, please
+    call a qualified professional in your area.
+  </p>
+</Prose>

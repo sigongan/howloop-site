@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Page not found"
+  description="That page doesn't exist. Here's the way back to the guides."
+  noindex={true}
+>
+  <section class="wrap nf">
+    <p class="eyebrow">404</p>
+    <h1>That loop doesn't exist.</h1>
+    <p>
+      The page you were after has moved or was never here. Nothing is broken on
+      your end.
+    </p>
+    <div class="nf__cta">
+      <a class="btn btn--brand" href="/guides">Browse all guides</a>
+      <a class="btn btn--ghost" href="/">Back to the start</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .nf {
+    padding-block: clamp(3rem, 2rem + 6vw, 7rem);
+    max-width: 46rem;
+  }
+
+  .nf h1 {
+    font-size: var(--step-4);
+    margin-block: 0.4rem 0.9rem;
+  }
+
+  .nf p {
+    color: var(--ink-2);
+    font-size: var(--step-1);
+    max-width: 44ch;
+  }
+
+  .nf__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-block-start: 1.8rem;
+  }
+</style>

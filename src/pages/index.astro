@@ -1,0 +1,329 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import GuideCard from '../components/GuideCard.astro';
+import AnimStage from '../components/AnimStage.astro';
+import DrainClog from '../animations/DrainClog.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { SITE, TOPICS } from '../consts';
+
+const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
+);
+
+const demo = guides.find((g) => g.id === 'unclog-a-bathroom-sink-drain');
+const demoSteps = demo?.data.steps ?? [];
+---
+
+<Base title={SITE.name} description={SITE.description}>
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">{SITE.tagline}</p>
+        <h1>
+          Stuck on something small?<br />
+          <span class="hl">Watch the loop.</span>
+        </h1>
+        <p class="hero__lede">
+          Every guide on Howloop is a short animation that shows the fix from
+          the angle you can't see in real life — inside the drain, inside the
+          tank, inside the phone. Watch it twice, then go and do it.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--brand" href="/guides">Browse the guides</a>
+          <a class="btn btn--ghost" href="/topics/home">Around the house</a>
+        </div>
+        <ul class="hero__points">
+          <li><strong>No 12-minute video.</strong> The whole fix in 30 seconds.</li>
+          <li><strong>Scrub any step.</strong> Pause on the bit you're on.</li>
+          <li><strong>Written out too.</strong> Every animation has a text version.</li>
+        </ul>
+      </div>
+
+      <div class="hero__demo">
+        {
+          demo && demoSteps.length > 0 && (
+            <AnimStage
+              id="hero-demo"
+              label={demo.data.cardTitle ?? demo.data.title}
+              steps={demoSteps}
+              pace={2600}
+              caption="This is what every guide looks like. Play, pause, or jump to the step you're stuck on."
+            >
+              <DrainClog />
+            </AnimStage>
+          )
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap band">
+    <h2 class="band__title">Pick a mess</h2>
+    <div class="topics">
+      {
+        Object.values(TOPICS).map((t) => (
+          <a class="topic" href={`/topics/${t.id}`}>
+            <h3>{t.label}</h3>
+            <p>{t.blurb}</p>
+            <span class="topic__go">
+              {guides.filter((g) => g.data.topic === t.id).length} guides →
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="wrap band">
+    <div class="band__head">
+      <h2 class="band__title">All the loops</h2>
+      <a class="band__link" href="/guides">See everything →</a>
+    </div>
+    <div class="grid">
+      {guides.slice(0, 6).map((g) => <GuideCard guide={g} />)}
+    </div>
+  </section>
+
+  <div class="wrap"><AdSlot layout="display" /></div>
+
+  <section class="wrap band">
+    <div class="why">
+      <h2>Why animations beat photos and long videos</h2>
+      <div class="why__grid">
+        <div>
+          <h3>You can see through things</h3>
+          <p>
+            The reason a slow drain or a running toilet is confusing is that the
+            problem is hidden inside a pipe or behind a wall. A drawing can cut
+            straight through it. A camera can't.
+          </p>
+        </div>
+        <div>
+          <h3>Timing is the instruction</h3>
+          <p>
+            "Pull it out slowly" and "pull it out" look identical in a photo.
+            Motion carries the part of the instruction that words are bad at.
+          </p>
+        </div>
+        <div>
+          <h3>You control the clock</h3>
+          <p>
+            No scrubbing through an intro, a sponsor read and three minutes of
+            setup. Each step is its own frame, and you sit on it as long as you
+            like.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding-block: clamp(2rem, 1rem + 4vw, 4rem) 1rem;
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--brand-tint) 70%, var(--paper)),
+      var(--paper) 70%
+    );
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: clamp(1.5rem, 1rem + 3vw, 3.5rem);
+    align-items: center;
+  }
+
+  @media (max-width: 60rem) {
+    .hero__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .hero__copy h1 {
+    margin-block-start: 0.6rem;
+    font-size: var(--step-5);
+    letter-spacing: -0.035em;
+  }
+
+  .hl {
+    color: var(--brand-deep);
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .hl::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.06em;
+    height: 0.28em;
+    background: color-mix(in srgb, var(--accent) 32%, transparent);
+    border-radius: 3px;
+    z-index: -1;
+  }
+
+  .hero__lede {
+    margin-block-start: 1.1rem;
+    max-width: 46ch;
+    font-size: var(--step-1);
+    line-height: 1.55;
+    color: var(--ink-2);
+  }
+
+  .hero__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-block-start: 1.6rem;
+  }
+
+  .hero__points {
+    list-style: none;
+    padding: 0;
+    margin-block-start: 1.8rem;
+    display: grid;
+    gap: 0.55rem;
+    font-size: var(--step--1);
+    color: var(--ink-2);
+  }
+
+  .hero__points li {
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  .hero__points li::before {
+    content: '';
+    flex: none;
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-block-start: 0.5rem;
+    border-radius: 999px;
+    background: var(--brand);
+  }
+
+  .hero__points strong {
+    color: var(--ink);
+    font-weight: 650;
+  }
+
+  .hero__demo :global(.anim) {
+    margin-block: 0;
+  }
+
+  /* --- bands ------------------------------------------------------------- */
+  .band {
+    padding-block: clamp(2rem, 1.4rem + 2vw, 3.5rem);
+  }
+
+  .band__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .band__title {
+    font-size: var(--step-3);
+    margin-block-end: 1.3rem;
+  }
+
+  .band__head .band__title {
+    margin-block-end: 0;
+  }
+
+  .band__link {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--step--1);
+    text-decoration: none;
+  }
+
+  .band__head + .grid {
+    margin-block-start: 1.4rem;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  }
+
+  /* --- topics ------------------------------------------------------------ */
+  .topics {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  }
+
+  .topic {
+    display: block;
+    padding: 1.6rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
+  }
+
+  .topic:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .topic h3 {
+    font-size: var(--step-2);
+  }
+
+  .topic p {
+    margin-block: 0.5rem 0.9rem;
+    color: var(--ink-2);
+    font-size: var(--step--1);
+    line-height: 1.6;
+  }
+
+  .topic__go {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--step--1);
+    color: var(--brand-deep);
+  }
+
+  /* --- why --------------------------------------------------------------- */
+  .why {
+    padding: clamp(1.6rem, 1.2rem + 1.5vw, 2.6rem);
+    border-radius: var(--radius-lg);
+    background: var(--paper-deep);
+    border: 1px solid var(--line);
+  }
+
+  .why h2 {
+    font-size: var(--step-3);
+    max-width: 22ch;
+  }
+
+  .why__grid {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    margin-block-start: 1.6rem;
+  }
+
+  .why__grid h3 {
+    font-size: var(--step-1);
+  }
+
+  .why__grid p {
+    margin-block-start: 0.5rem;
+    color: var(--ink-2);
+    font-size: var(--step--1);
+    line-height: 1.65;
+  }
+</style>

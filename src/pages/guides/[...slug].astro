@@ -1,0 +1,486 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import { SITE, TOPICS } from '../../consts';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides', ({ data }) => !data.draft);
+  return guides.map((guide) => ({
+    params: { slug: guide.id },
+    props: { guide, all: guides },
+  }));
+}
+
+const { guide, all } = Astro.props;
+const { Content } = await render(guide);
+const d = guide.data;
+const topic = TOPICS[d.topic];
+
+const related = all
+  .filter((g) => g.id !== guide.id)
+  .sort((a, b) => (a.data.topic === d.topic ? -1 : 1))
+  .slice(0, 3);
+
+const fmt = (date: Date) =>
+  date.toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+
+const howToLd = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: d.title,
+  description: d.description,
+  totalTime: d.timeNeeded,
+  estimatedCost: d.cost,
+  datePublished: d.published.toISOString(),
+  dateModified: (d.updated ?? d.published).toISOString(),
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  supply: d.tools.map((t) => ({ '@type': 'HowToSupply', name: t })),
+  step: d.steps.map((s, i) => ({
+    '@type': 'HowToStep',
+    position: i + 1,
+    name: s.title,
+    text: s.text,
+    url: `${SITE.url}/guides/${guide.id}#step-${i + 1}`,
+  })),
+  ...(d.faq.length
+    ? {
+        mainEntity: {
+          '@type': 'FAQPage',
+          mainEntity: d.faq.map((f) => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          })),
+        },
+      }
+    : {}),
+};
+---
+
+<Base
+  title={d.title}
+  description={d.description}
+  type="article"
+  publishedTime={d.published}
+  modifiedTime={d.updated ?? d.published}
+  jsonLd={howToLd}
+>
+  <article class="guide">
+    <header class="guide__head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="/guides">Guides</a>
+          <span aria-hidden="true">/</span>
+          <a href={`/topics/${topic.id}`}>{topic.label}</a>
+        </nav>
+
+        <h1>{d.title}</h1>
+        <p class="guide__lede">{d.description}</p>
+
+        <dl class="specs">
+          <div>
+            <dt>Time</dt>
+            <dd>{d.timeNeeded}</dd>
+          </div>
+          <div>
+            <dt>Difficulty</dt>
+            <dd>{d.difficulty}</dd>
+          </div>
+          <div>
+            <dt>Cost</dt>
+            <dd>{d.cost}</dd>
+          </div>
+          <div>
+            <dt>Steps</dt>
+            <dd>{d.steps.length}</dd>
+          </div>
+        </dl>
+
+        {
+          d.tools.length > 0 && (
+            <p class="guide__tools">
+              <span>You'll need</span>
+              {d.tools.map((t) => (
+                <span class="chip">{t}</span>
+              ))}
+            </p>
+          )
+        }
+      </div>
+    </header>
+
+    <div class="wrap guide__grid">
+      <div class="guide__main article-body">
+        <Content />
+
+        <AdSlot layout="in-article" class="guide__ad" />
+
+        <section class="steplist" aria-labelledby="written-steps">
+          <h2 id="written-steps">The steps, in writing</h2>
+          <p class="steplist__note">
+            Same sequence as the animation — handy if you'd rather read it, or
+            print it and take it with you.
+          </p>
+          <ol>
+            {
+              d.steps.map((s, i) => (
+                <li id={`step-${i + 1}`}>
+                  <strong>{s.title}</strong>
+                  <span>{s.text}</span>
+                </li>
+              ))
+            }
+          </ol>
+        </section>
+
+        {
+          d.faq.length > 0 && (
+            <section class="faq" aria-labelledby="faq-heading">
+              <h2 id="faq-heading">Questions people actually ask</h2>
+              {d.faq.map((f) => (
+                <details>
+                  <summary>{f.q}</summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </section>
+          )
+        }
+
+        <footer class="guide__foot">
+          <p>
+            Published {fmt(d.published)}{
+              d.updated && <> · Last reviewed {fmt(d.updated)}</>
+            }
+          </p>
+          <p>
+            Howloop guides are general advice for common problems. If something
+            about your situation looks different from the animation — a smell of
+            gas, water near electrics, an injury — stop and get a professional.
+          </p>
+        </footer>
+      </div>
+
+      <aside class="guide__side">
+        <div class="sticky">
+          <h2 class="side__title">At a glance</h2>
+          <ol class="side__steps">
+            {
+              d.steps.map((s, i) => (
+                <li>
+                  <a href={`#step-${i + 1}`}>{s.title}</a>
+                </li>
+              ))
+            }
+          </ol>
+          <AdSlot layout="display" class="side__ad" />
+        </div>
+      </aside>
+    </div>
+
+    <section class="wrap related">
+      <h2>Next loop</h2>
+      <div class="grid">
+        {related.map((g) => <GuideCard guide={g} />)}
+      </div>
+    </section>
+  </article>
+</Base>
+
+<style>
+  .guide__head {
+    padding-block: 2.5rem 2rem;
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--brand-tint) 60%, var(--paper)),
+      var(--paper)
+    );
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .crumbs {
+    display: flex;
+    gap: 0.5rem;
+    font-size: var(--step--1);
+    color: var(--ink-3);
+    margin-block-end: 0.9rem;
+  }
+
+  .crumbs a {
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+
+  .crumbs a:hover {
+    color: var(--brand-deep);
+    text-decoration: underline;
+  }
+
+  .guide__head h1 {
+    font-size: var(--step-4);
+    max-width: 20ch;
+  }
+
+  .guide__lede {
+    margin-block-start: 0.9rem;
+    max-width: 58ch;
+    font-size: var(--step-1);
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+
+  .specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-block-start: 1.6rem;
+  }
+
+  .specs > div {
+    padding: 0.55rem 0.95rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    min-width: 6.5rem;
+  }
+
+  .specs dt {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+
+  .specs dd {
+    margin: 0.1rem 0 0;
+    font-family: var(--font-display);
+    font-weight: 600;
+  }
+
+  .guide__tools {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-block-start: 1.1rem;
+    font-size: var(--step--1);
+    color: var(--ink-3);
+  }
+
+  .guide__tools > span:first-child {
+    font-weight: 600;
+    color: var(--ink-2);
+    margin-inline-end: 0.2rem;
+  }
+
+  /* --- body -------------------------------------------------------------- */
+  .guide__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 17rem;
+    gap: 3rem;
+    padding-block: 2.5rem 3rem;
+    align-items: start;
+  }
+
+  @media (max-width: 62rem) {
+    .guide__grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 2rem;
+    }
+
+    .guide__side {
+      order: -1;
+    }
+  }
+
+  .guide__main {
+    max-width: 44rem;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 5.5rem;
+  }
+
+  .side__title {
+    font-size: var(--step--1);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-block-end: 0.7rem;
+  }
+
+  .side__steps {
+    margin: 0;
+    padding-inline-start: 1.2rem;
+    display: grid;
+    gap: 0.5rem;
+    font-size: var(--step--1);
+  }
+
+  .side__steps::marker,
+  .side__steps li::marker {
+    color: var(--brand);
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+
+  .side__steps a {
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+
+  .side__steps a:hover {
+    color: var(--brand-deep);
+    text-decoration: underline;
+  }
+
+  /* --- written steps ----------------------------------------------------- */
+  .steplist {
+    margin-block-start: 3rem;
+    padding: 1.6rem 1.6rem 1.8rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+  }
+
+  .steplist h2 {
+    margin: 0;
+    font-size: var(--step-2);
+  }
+
+  .steplist__note {
+    margin-block: 0.4rem 1.2rem;
+    color: var(--ink-3);
+    font-size: var(--step--1);
+  }
+
+  .steplist ol {
+    counter-reset: s;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1.1rem;
+  }
+
+  .steplist li {
+    counter-increment: s;
+    display: grid;
+    gap: 0.15rem;
+    padding-inline-start: 3rem;
+    position: relative;
+    scroll-margin-top: 6rem;
+  }
+
+  .steplist li::before {
+    content: counter(s);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 999px;
+    background: var(--brand-tint);
+    color: var(--brand-deep);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--step--1);
+  }
+
+  .steplist strong {
+    font-family: var(--font-display);
+    font-size: var(--step-0);
+  }
+
+  .steplist span {
+    color: var(--ink-2);
+    font-size: var(--step--1);
+    line-height: 1.6;
+  }
+
+  /* --- faq --------------------------------------------------------------- */
+  .faq {
+    margin-block-start: 3rem;
+  }
+
+  .faq h2 {
+    font-size: var(--step-2);
+    margin-block-end: 1rem;
+  }
+
+  .faq details {
+    border-bottom: 1px solid var(--line);
+    padding-block: 0.9rem;
+  }
+
+  .faq summary {
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--step-0);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .faq summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq summary::after {
+    content: '+';
+    color: var(--brand);
+    font-size: 1.3em;
+    line-height: 1;
+    flex: none;
+  }
+
+  .faq details[open] summary::after {
+    content: '−';
+  }
+
+  .faq details p {
+    margin-block-start: 0.6rem;
+    color: var(--ink-2);
+    font-size: var(--step--1);
+    line-height: 1.65;
+  }
+
+  /* --- foot -------------------------------------------------------------- */
+  .guide__foot {
+    margin-block-start: 2.5rem;
+    padding-block-start: 1.2rem;
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 0.5rem;
+    font-size: var(--step--1);
+    color: var(--ink-3);
+  }
+
+  /* --- related ----------------------------------------------------------- */
+  .related {
+    padding-block: 2.5rem 4rem;
+    border-top: 1px solid var(--line-soft);
+  }
+
+  .related h2 {
+    font-size: var(--step-2);
+    margin-block-end: 1.2rem;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  }
+</style>

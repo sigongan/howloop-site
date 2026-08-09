@@ -1,0 +1,133 @@
+---
+import Logo from './Logo.astro';
+import { FOOTER_LINKS, SITE, TOPICS } from '../consts';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-foot">
+  <div class="wrap site-foot__inner">
+    <div class="site-foot__brand">
+      <a href="/" aria-label={`${SITE.name} — home`}><Logo size={28} /></a>
+      <p>{SITE.tagline}</p>
+      <p class="site-foot__blurb">{SITE.description}</p>
+    </div>
+
+    <nav class="site-foot__col" aria-label="Topics">
+      <h2>Topics</h2>
+      <ul>
+        {
+          Object.values(TOPICS).map((t) => (
+            <li>
+              <a href={`/topics/${t.id}`}>{t.label}</a>
+            </li>
+          ))
+        }
+        <li><a href="/guides">All guides</a></li>
+      </ul>
+    </nav>
+
+    <nav class="site-foot__col" aria-label="Site information">
+      <h2>Site</h2>
+      <ul>
+        {
+          FOOTER_LINKS.map((l) => (
+            <li>
+              <a href={l.href}>{l.label}</a>
+            </li>
+          ))
+        }
+        <li><a href="/rss.xml">RSS feed</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="wrap site-foot__legal">
+    <p>© {year} {SITE.name}. All rights reserved.</p>
+    <p>
+      Howloop publishes general guidance for common household and device
+      problems. It is not professional plumbing, electrical, or medical advice —
+      see our <a href="/terms">terms of use</a>.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-foot {
+    margin-block-start: auto;
+    padding-block: 3.5rem 2rem;
+    background: var(--paper-deep);
+    border-top: 1px solid var(--line);
+  }
+
+  .site-foot__inner {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 47rem) {
+    .site-foot__inner {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .site-foot__brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .site-foot__brand p {
+    margin-block-start: 0.9rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .site-foot__blurb {
+    font-family: var(--font-body) !important;
+    font-weight: 400 !important;
+    font-size: var(--step--1);
+    color: var(--ink-2) !important;
+    max-width: 42ch;
+  }
+
+  .site-foot__col h2 {
+    font-size: var(--step--1);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-block-end: 0.8rem;
+  }
+
+  .site-foot__col ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .site-foot__col a {
+    color: var(--ink-2);
+    text-decoration: none;
+    font-size: var(--step--1);
+  }
+
+  .site-foot__col a:hover {
+    color: var(--brand-deep);
+    text-decoration: underline;
+  }
+
+  .site-foot__legal {
+    margin-block-start: 2.5rem;
+    padding-block-start: 1.5rem;
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 0.4rem;
+    font-size: var(--step--1);
+    color: var(--ink-3);
+  }
+
+  .site-foot__legal p:last-child {
+    max-width: 70ch;
+  }
+</style>

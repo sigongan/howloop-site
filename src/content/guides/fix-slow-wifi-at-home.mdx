@@ -1,0 +1,156 @@
+---
+title: 'How to fix slow Wi-Fi at home without buying anything'
+cardTitle: 'Fix slow Wi-Fi at home'
+description: 'Most home Wi-Fi problems are placement problems, not speed problems. Move the router, split the bands, and the dead corner of the house usually comes back — animated, in five steps.'
+topic: 'devices'
+published: 2026-08-04
+timeNeeded: '20 minutes'
+difficulty: 'Easy'
+cost: 'Free'
+tools:
+  - 'Your router'
+  - 'A phone with a speed test app'
+steps:
+  - title: 'Notice where the router actually is'
+    text: 'Most routers sit wherever the cable enters the house — a corner, on the floor, often behind furniture. Signal spreads outward in a sphere, so from a corner you are broadcasting most of your coverage into the garden.'
+  - title: 'Move it central, high and out in the open'
+    text: 'Central in the floor plan, at least a metre off the ground, and with nothing stacked on top of it. Line of sight matters far more than distance in a typical home.'
+  - title: 'Get it away from metal and water'
+    text: 'Keep roughly a metre between the router and microwaves, fridges, metal shelving, mirrors and fish tanks. Metal reflects the signal and water absorbs it, and both make a much bigger hole in coverage than people expect.'
+  - title: 'Put the right devices on the right band'
+    text: 'Use 5 GHz for anything in the same or next room — it is much faster but passes through walls poorly. Leave 2.4 GHz for devices at the far end of the house and out in the garden.'
+  - title: 'Restart the router and measure again'
+    text: 'Power off for thirty seconds, then on. Run the same speed test from the same spot as before so you have a real comparison rather than an impression.'
+faq:
+  - q: 'Why is my Wi-Fi fast next to the router and useless upstairs?'
+    a: 'Because 5 GHz, which is what your phone connects to when it is close, carries much more data but is absorbed heavily by walls and floors. As you move away the phone drops to 2.4 GHz, which travels further but carries less. Nothing is broken — you are watching the physics of the two bands. Moving the router more central shrinks the distance to the worst room.'
+  - q: 'Should I use one network name for both bands, or two?'
+    a: 'One combined name is easier and works well in most homes, because the router steers devices between the bands. Split them into two names when you have a device that keeps clinging to the wrong band, or when you have smart-home gear that only supports 2.4 GHz and refuses to join a combined network.'
+  - q: 'Does restarting the router really do anything?'
+    a: 'Sometimes, and it is free. A restart clears the channel choice, so a router that picked a congested channel months ago gets to re-scan. It also clears memory issues on cheaper hardware. It is not magic, and if you have to do it weekly the router is failing.'
+  - q: 'My speed test shows the full speed I pay for, but video still buffers.'
+    a: 'Then bandwidth is not the problem — latency, packet loss or the wireless link is. Test with a device plugged in by cable. If the cable is fine and wireless is not, it is a Wi-Fi problem and placement is the first thing to fix. If the cable is bad too, it is a line problem and worth reporting to your provider.'
+  - q: 'When is it actually worth buying a mesh system?'
+    a: 'When you have done everything here and there is still a room you cannot use — typically in a house that is long, on more than two floors, or built with thick masonry or foil-backed insulation. Try a single well-placed router first: people routinely spend money on mesh to solve a problem that was a router sitting behind a television.'
+featured: true
+---
+
+import AnimStage from '../../components/AnimStage.astro';
+import Callout from '../../components/Callout.astro';
+import WifiSlow from '../../animations/WifiSlow.astro';
+
+Almost nobody chooses where their router goes. The engineer put a socket on
+whichever wall was cheapest to reach, and the router has lived there ever since
+— usually in a corner, usually on the floor, usually behind something.
+
+That single fact explains most "slow Wi-Fi" in homes. A router radiates roughly
+spherically. Put it in the corner of a rectangular house and a large share of
+that sphere is going into the garden and the neighbour's wall. Move it to the
+middle and the same hardware suddenly covers the place you live in.
+
+<AnimStage
+  id="wifi"
+  label="Where the router goes, and which band to use"
+  steps={frontmatter.steps}
+  pace={3000}
+  caption="Top-down floor plan. Green rings are usable signal; the greyed boxes are the appliances that punch holes in it."
+>
+  <WifiSlow />
+</AnimStage>
+
+## Placement, in order of how much it matters
+
+**1. Central beats powerful.** The single biggest gain available to you, and it
+costs nothing. Move toward the middle of the area you actually use — including
+vertically. In a two-storey house, a router upstairs at the top of the stairs
+often covers both floors better than one in a downstairs corner.
+
+**2. High beats low.** Signal spreads down and outward more easily than it
+climbs. Get it off the floor and onto a shelf about a metre up or higher.
+Floor-level routers spend their energy on your floorboards.
+
+**3. Open beats hidden.** Inside a TV cabinet, behind a monitor, or under a pile
+of post are all meaningfully worse than out in the open. The router is not
+decorative, but it is also not going to work from inside a cupboard.
+
+**4. Away from metal and water.** A microwave, a fridge, a metal filing cabinet,
+a large mirror and a fish tank are all serious obstacles. Metal reflects 2.4 GHz;
+water absorbs it — which is also why a room full of people is slower than an
+empty one. Give the router a metre of clearance from anything in that list.
+
+<Callout type="tip" title="If the cable is in the wrong place">
+You don't have to move the socket. A long flat Ethernet cable from the modem to
+a better-placed router costs very little and solves the problem permanently.
+Running one cable is nearly always cheaper and more effective than buying a
+mesh system.
+</Callout>
+
+## The two bands, and why your phone lies to you
+
+Modern routers broadcast on two frequencies at once, and understanding the
+trade-off explains almost every confusing symptom.
+
+| | 2.4 GHz | 5 GHz |
+| --- | --- | --- |
+| Speed | Lower | Much higher |
+| Range | Good | Shorter |
+| Through walls | Passes reasonably | Absorbed heavily |
+| Congestion | Crowded — neighbours, Bluetooth, microwaves | Usually quiet |
+| Best for | Far rooms, garden, smart-home gear | Same room, streaming, video calls |
+
+Your phone shows "full bars" based on signal strength, not usable throughput.
+Sitting at the far end of the house on 2.4 GHz you can have four bars and a
+connection that struggles with a video call. Bars measure whether you can hear
+the router; they say nothing about how much you can hear per second.
+
+**What to actually do:** if your router presents one combined network name, leave
+it — the router steers devices reasonably well. Split it into two names only
+when a specific device keeps clinging to the wrong band, or when a smart plug or
+camera refuses to join because it only speaks 2.4 GHz.
+
+## Channels, briefly
+
+In a flat or a terrace you're sharing the air with every neighbour. On 2.4 GHz
+there are only three genuinely non-overlapping channels — **1, 6 and 11** — and
+everyone's router is squeezed into them.
+
+Most routers pick a channel automatically at boot and then never re-evaluate. So
+a router that has been on for eight months may still be sitting on the channel
+that was quiet last winter. **Restarting it forces a fresh scan**, which is a
+large part of why the old "turn it off and on again" advice keeps working.
+
+If you want to be deliberate about it, a Wi-Fi analyser app will show you which
+of 1, 6 and 11 is least crowded, and you can set it manually in the router's
+settings page.
+
+## Measure properly, or you're guessing
+
+Before and after, do the same test:
+
+1. Stand in the **worst** room in the house — the one that prompted all this.
+2. Run a speed test and write down the download, upload and ping.
+3. Make one change.
+4. Test again, from the same spot, holding the phone the same way.
+
+One change at a time. If you move the router, split the bands and change the
+channel all at once, you learn nothing about which of them helped.
+
+<Callout type="warn" title="Check the line before you blame the Wi-Fi">
+Plug a laptop into the router with an Ethernet cable and test again. If the wired
+speed is also poor, the problem is your connection, not your Wi-Fi, and no amount
+of router-shuffling will fix it — that's a call to your provider.
+</Callout>
+
+## When it is genuinely a hardware problem
+
+Buy something only after the free changes are exhausted, and buy the right thing:
+
+- **One room is dead, everywhere else is fine** → a single powerline adapter or
+  a wired access point in that room.
+- **A whole floor or wing is weak** → a mesh system. This is what mesh is for.
+- **The router is more than about five years old**, or restarts on its own → it's
+  the router. Older hardware also lacks the newer standards that handle many
+  devices at once, which is what modern homes actually stress.
+
+But do the free things first. A router moved two metres and lifted off the floor
+has fixed more home networks than any purchase.

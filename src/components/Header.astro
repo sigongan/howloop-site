@@ -1,0 +1,168 @@
+---
+import Logo from './Logo.astro';
+import { NAV, SITE } from '../consts';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+
+<header class="site-head">
+  <div class="wrap site-head__inner">
+    <a href="/" class="site-head__brand" aria-label={`${SITE.name} — home`}>
+      <Logo size={30} />
+    </a>
+
+    <input
+      type="checkbox"
+      id="nav-toggle"
+      class="visually-hidden site-head__checkbox"
+    />
+    <label for="nav-toggle" class="site-head__burger">
+      <span aria-hidden="true"></span>
+      <span class="visually-hidden">Menu</span>
+    </label>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        {
+          NAV.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                aria-current={path === item.href ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-head {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .site-head__inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .site-head__brand {
+    text-decoration: none;
+    margin-inline-end: auto;
+  }
+
+  .site-nav ul {
+    display: flex;
+    gap: 0.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-nav a {
+    display: block;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    color: var(--ink-2);
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--step--1);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .site-nav a:hover {
+    background: var(--surface);
+    color: var(--ink);
+  }
+
+  .site-nav a[aria-current='page'] {
+    background: var(--brand-tint);
+    color: var(--brand-deep);
+    font-weight: 600;
+  }
+
+  /* CSS-only mobile menu — no JS needed for navigation. */
+  .site-head__burger {
+    display: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    cursor: pointer;
+  }
+
+  .site-head__burger span[aria-hidden] {
+    position: relative;
+    display: block;
+    width: 1.05rem;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+  }
+
+  .site-head__burger span[aria-hidden]::before,
+  .site-head__burger span[aria-hidden]::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+  }
+
+  .site-head__burger span[aria-hidden]::before {
+    top: -6px;
+  }
+
+  .site-head__burger span[aria-hidden]::after {
+    top: 6px;
+  }
+
+  .site-head__checkbox:focus-visible + .site-head__burger {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 47rem) {
+    .site-head__burger {
+      display: grid;
+    }
+
+    .site-nav {
+      flex-basis: 100%;
+      display: none;
+      padding-block-end: 0.85rem;
+    }
+
+    .site-head__checkbox:checked ~ .site-nav {
+      display: block;
+    }
+
+    .site-nav ul {
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .site-nav a {
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 0.75rem;
+      font-size: var(--step-0);
+    }
+  }
+</style>

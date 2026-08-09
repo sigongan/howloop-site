@@ -1,0 +1,317 @@
+---
+/* The string-wrap method for a ring stuck behind a swollen knuckle. */
+---
+
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="sr">
+  <!-- hand edge -->
+  <path
+    class="hand"
+    d="M60 176 C 96 156, 150 152, 196 158 L212 158 V344 L196 344 C 150 350, 96 346, 60 326 Z"
+  />
+
+  <!-- finger with a swollen knuckle at ~x470 -->
+  <path
+    class="finger"
+    d="M200 168
+       C 300 162, 380 160, 420 158
+       C 470 156, 520 168, 528 200
+       C 534 224, 528 244, 520 252
+       C 560 254, 626 250, 664 254
+       C 706 258, 720 282, 706 300
+       C 690 320, 620 320, 560 316
+       C 500 312, 460 322, 420 344
+       C 380 366, 300 352, 200 336 Z"
+  />
+
+  <!-- swelling shimmer -->
+  <g class="swell">
+    <path class="swellring" d="M470 132 C 520 120, 556 152, 552 196" />
+    <path class="swellring s2" d="M470 372 C 520 384, 556 352, 552 308" />
+  </g>
+
+  <!-- cooling / elevation cue -->
+  <g class="cool">
+    <path class="arrowup" d="M120 120 V60 M100 80 l20 -20 l20 20" />
+    <circle class="chill" cx="196" cy="96" r="8" />
+    <circle class="chill c2" cx="232" cy="76" r="6" />
+    <circle class="chill c3" cx="164" cy="70" r="5" />
+  </g>
+
+  <!-- the wrap: evenly spaced turns from the tip back to the ring -->
+  <g class="wrap">
+    <path class="turn t1" d="M600 258 C 592 288, 592 300, 600 316" />
+    <path class="turn t2" d="M566 256 C 556 286, 556 300, 566 316" />
+    <path class="turn t3" d="M532 252 C 520 284, 520 300, 532 314" />
+    <path class="turn t4" d="M500 240 C 486 276, 486 300, 500 310" />
+    <path class="turn t5" d="M468 224 C 452 268, 452 302, 468 330" />
+    <path class="turn t6" d="M436 200 C 420 256, 420 306, 436 344" />
+    <path class="turn t7" d="M404 186 C 388 250, 388 306, 404 350" />
+    <path class="turn t8" d="M372 178 C 356 246, 356 306, 372 350" />
+  </g>
+
+  <!-- the free end tucked under the ring, pointing at the hand -->
+  <path class="tail" d="M330 250 C 300 240, 276 228, 258 208" />
+
+  <!-- ring -->
+  <g class="ring">
+    <path
+      class="ringband"
+      d="M300 172 C 282 214, 282 296, 300 342 L330 342 C 312 296, 312 214, 330 172 Z"
+    />
+  </g>
+
+  <!-- unwind direction -->
+  <g class="unwind">
+    <path class="uarrow" d="M250 400 H420 M400 384 l20 16 l-20 16" />
+    <text class="tag" x="250" y="436">unwind toward the hand</text>
+  </g>
+
+  <!-- done -->
+  <g class="done">
+    <circle class="tickbg" cx="700" cy="120" r="34" />
+    <path class="tick" d="M684 120 l11 12 l21 -25" />
+  </g>
+</svg>
+
+<style>
+  .sr {
+    --dur: 0.7s;
+    --ease: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .sr .hand,
+  .sr .finger {
+    fill: var(--paper-deep);
+    stroke: var(--ink);
+    stroke-width: 5;
+    stroke-linejoin: round;
+  }
+
+  .sr .tag {
+    font-family: var(--font-mono);
+    font-size: 18px;
+    fill: var(--ink-3);
+  }
+
+  /* --- swelling ---------------------------------------------------------- */
+  .sr .swell {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .sr .swellring {
+    fill: none;
+    stroke: var(--danger);
+    stroke-width: 4;
+    stroke-linecap: round;
+    animation: sr-pulse 1.8s ease-in-out infinite;
+  }
+
+  .sr .s2 {
+    animation-delay: -0.9s;
+  }
+
+  @keyframes sr-pulse {
+    0%,
+    100% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.9;
+    }
+  }
+
+  /* --- cooling ----------------------------------------------------------- */
+  .sr .cool {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .sr .arrowup {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .sr .chill {
+    fill: var(--brand);
+    animation: sr-float 2.2s ease-in-out infinite;
+  }
+
+  .sr .c2 {
+    animation-delay: -0.7s;
+  }
+  .sr .c3 {
+    animation-delay: -1.4s;
+  }
+
+  @keyframes sr-float {
+    0%,
+    100% {
+      transform: translateY(0);
+      opacity: 0.4;
+    }
+    50% {
+      transform: translateY(-14px);
+      opacity: 1;
+    }
+  }
+
+  /* --- wrap -------------------------------------------------------------- */
+  .sr .turn {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 7;
+    stroke-linecap: round;
+    opacity: 0;
+    transition: opacity 0.35s var(--ease);
+  }
+
+  .sr .tail {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 7;
+    stroke-linecap: round;
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  /* --- ring -------------------------------------------------------------- */
+  .sr .ring {
+    transition: transform 1.1s var(--ease);
+  }
+
+  .sr .ringband {
+    fill: var(--ink);
+  }
+
+  /* --- unwind hint ------------------------------------------------------- */
+  .sr .unwind {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .sr .uarrow {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: sr-nudge 1.4s ease-in-out infinite;
+  }
+
+  @keyframes sr-nudge {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+
+  .sr .done {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.6);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+
+  .sr .tickbg {
+    fill: var(--brand);
+  }
+
+  .sr .tick {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ======================================================================
+     Step states
+     ====================================================================== */
+
+  /* 0 — swollen, stuck. Cool it and raise it. */
+  :global([data-step='0']) .sr .swell,
+  :global([data-step='0']) .sr .cool {
+    opacity: 1;
+  }
+
+  /* 1 — wrap from the fingertip back toward the ring */
+  :global([data-step='1']) .sr .turn,
+  :global([data-step='2']) .sr .turn,
+  :global([data-step='3']) .sr .turn {
+    opacity: 1;
+  }
+
+  :global([data-step='1']) .sr .t1 {
+    transition-delay: 0.05s;
+  }
+  :global([data-step='1']) .sr .t2 {
+    transition-delay: 0.15s;
+  }
+  :global([data-step='1']) .sr .t3 {
+    transition-delay: 0.25s;
+  }
+  :global([data-step='1']) .sr .t4 {
+    transition-delay: 0.35s;
+  }
+  :global([data-step='1']) .sr .t5 {
+    transition-delay: 0.45s;
+  }
+  :global([data-step='1']) .sr .t6 {
+    transition-delay: 0.55s;
+  }
+  :global([data-step='1']) .sr .t7 {
+    transition-delay: 0.65s;
+  }
+  :global([data-step='1']) .sr .t8 {
+    transition-delay: 0.75s;
+  }
+
+  /* 2 — tuck the free end under the ring */
+  :global([data-step='2']) .sr .tail,
+  :global([data-step='3']) .sr .tail {
+    opacity: 1;
+  }
+
+  :global([data-step='2']) .sr .unwind {
+    opacity: 1;
+  }
+
+  /* 3 — unwind: the ring walks along the wrapping */
+  :global([data-step='3']) .sr .unwind {
+    opacity: 1;
+  }
+
+  :global([data-step='3']) .sr .ring {
+    transform: translateX(150px);
+  }
+
+  :global([data-step='3']) .sr .t8,
+  :global([data-step='3']) .sr .t7,
+  :global([data-step='3']) .sr .t6,
+  :global([data-step='3']) .sr .t5 {
+    opacity: 0;
+  }
+
+  /* 4 — off */
+  :global([data-step='4']) .sr .ring {
+    transform: translateX(560px) translateY(-28px) rotate(16deg);
+  }
+
+  :global([data-step='4']) .sr .turn,
+  :global([data-step='4']) .sr .tail {
+    opacity: 0;
+  }
+
+  :global([data-step='4']) .sr .done {
+    opacity: 1;
+    transform: scale(1);
+  }
+</style>

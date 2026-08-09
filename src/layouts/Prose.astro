@@ -1,0 +1,63 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  lede?: string;
+  updated?: string;
+  noindex?: boolean;
+}
+
+const { title, description, lede, updated, noindex } = Astro.props;
+---
+
+<Base title={title} description={description} noindex={noindex}>
+  <header class="pagehead">
+    <div class="wrap">
+      <h1>{title}</h1>
+      {lede && <p class="lede">{lede}</p>}
+      {updated && <p class="updated">Last updated {updated}</p>}
+    </div>
+  </header>
+
+  <div class="wrap body">
+    <div class="prose article-body">
+      <slot />
+    </div>
+  </div>
+</Base>
+
+<style>
+  .pagehead {
+    padding-block: 2.5rem 2rem;
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--brand-tint) 55%, var(--paper)),
+      var(--paper)
+    );
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .pagehead h1 {
+    font-size: var(--step-4);
+  }
+
+  .lede {
+    margin-block-start: 0.9rem;
+    max-width: 58ch;
+    font-size: var(--step-1);
+    color: var(--ink-2);
+    line-height: 1.55;
+  }
+
+  .updated {
+    margin-block-start: 0.9rem;
+    font-size: var(--step--1);
+    color: var(--ink-3);
+  }
+
+  .body {
+    padding-block: 2.5rem 4rem;
+  }
+</style>

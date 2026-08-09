@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#fbfaf7"/>
+  <g opacity="0.5">
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#14171c" opacity="0.16"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#dots)"/>
+  </g>
+  <rect x="0" y="0" width="1200" height="14" fill="#0d9b6c"/>
+
+  <g transform="translate(96 150)">
+    <g transform="scale(1.9)">
+      <path d="M20 4a16 16 0 1 1-13.4 7.3" fill="none" stroke="#0d9b6c" stroke-width="4.2" stroke-linecap="round"/>
+      <path d="M4.2 3.4 L8.4 12.6 L17.4 8.2" fill="none" stroke="#0d9b6c" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.6 13.4 L28 20 L16.6 26.6 Z" fill="#ee6c1e"/>
+    </g>
+    <text x="98" y="56" font-family="'Space Grotesk',system-ui,sans-serif" font-size="56" font-weight="700" letter-spacing="-2" fill="#14171c">how<tspan fill="#075c41">loop</tspan></text>
+  </g>
+
+  <text x="96" y="360" font-family="'Space Grotesk',system-ui,sans-serif" font-size="82" font-weight="700" letter-spacing="-3" fill="#14171c">Stuck on something small?</text>
+  <text x="96" y="452" font-family="'Space Grotesk',system-ui,sans-serif" font-size="82" font-weight="700" letter-spacing="-3" fill="#075c41">Watch the loop.</text>
+
+  <text x="96" y="536" font-family="system-ui,sans-serif" font-size="30" fill="#454d58">Short animated fixes for everyday household and device problems.</text>
+</svg>

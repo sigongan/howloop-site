@@ -1,0 +1,150 @@
+---
+title: 'How to reset a tripped breaker and find what caused it'
+cardTitle: 'Reset a tripped breaker'
+description: 'Half the lights are out and one switch in the box is out of line. Resetting it takes ten seconds — but resetting it the wrong way is why it trips again, and why you never find the cause.'
+topic: 'home'
+published: 2026-08-01
+timeNeeded: '10 minutes'
+difficulty: 'Easy'
+cost: 'Free'
+tools:
+  - 'A torch (the box is often in a dark cupboard)'
+  - 'Your phone, for a photo of the labels'
+steps:
+  - title: 'Find the switch that is out of line'
+    text: 'Open the consumer unit cover and look along the row. Every switch should point the same way; the tripped one is visibly out of line with its neighbours. Some sit halfway rather than fully down.'
+  - title: 'Unplug everything on that circuit first'
+    text: 'This is the step that changes the outcome. If you reset with a faulty appliance still plugged in, it either trips straight back or damages something. Unplug every appliance in the affected rooms before touching the switch.'
+  - title: 'Push it fully OFF, then fully ON'
+    text: 'A tripped breaker often rests between positions and will not re-latch from there. Push it firmly all the way down to OFF first, then all the way up to ON. One deliberate movement each way.'
+  - title: 'Plug things back one at a time'
+    text: 'Wait about thirty seconds between each appliance and switch it on before moving to the next. You are not restoring the room, you are running an experiment.'
+  - title: 'The one that trips it again is your culprit'
+    text: 'When the breaker goes a second time, the appliance you just switched on is the fault. Leave it unplugged. If nothing trips it, the original cause was a one-off surge and you are done.'
+faq:
+  - q: 'What is the difference between a breaker tripping and an RCD tripping?'
+    a: 'A circuit breaker (MCB) protects the wiring from overload or short circuit, and trips one circuit. An RCD detects current leaking to earth — the fault type that can electrocute someone — and usually kills several circuits at once. If a single switch is down, it is a breaker. If a whole bank went off together, that is the RCD, and it deserves more caution because it means current was going somewhere it should not.'
+  - q: 'It trips again immediately with nothing plugged in.'
+    a: 'Stop. With every load removed, a breaker that still will not stay on points to a fault in the fixed wiring or in something hard-wired, like a light fitting or an extractor fan. That is an electrician job — do not keep resetting it.'
+  - q: 'Why did it trip when nothing seems wrong?'
+    a: 'Most single trips are an overload — a kettle, a heater and a microwave on one kitchen circuit — or the moment a failing appliance element finally gives out. Lamps often trip a circuit at the instant a bulb blows, because the filament briefly shorts. A one-off with an obvious cause is not a fault.'
+  - q: 'Should I label the breakers?'
+    a: 'Yes, and do it now while you know which one it was. Ten minutes with a marker saves you standing in a dark cupboard guessing later. Photograph the finished labels and keep the picture on your phone.'
+  - q: 'The switch will not stay up no matter how I push it.'
+    a: 'Make sure you pushed it fully to OFF first — a half-tripped breaker cannot re-latch from the middle position, and this catches almost everyone. If it genuinely will not hold with all loads disconnected, there is a fault or the breaker itself has failed.'
+---
+
+import AnimStage from '../../components/AnimStage.astro';
+import Callout from '../../components/Callout.astro';
+import BreakerReset from '../../animations/BreakerReset.astro';
+
+A breaker doesn't trip out of spite. It trips because something asked for more
+current than the circuit is rated for, or because a fault let current take a
+path it shouldn't. Flipping it back on is trivial. The useful part is finding
+out which of those two things happened — and you can only do that if you reset
+it in the right order.
+
+Most people reset first and investigate never. Then it trips again a week later
+and they still have no idea why.
+
+<AnimStage
+  id="breaker"
+  label="Resetting a breaker without losing the evidence"
+  steps={frontmatter.steps}
+  pace={3000}
+  caption="A typical consumer unit. The tripped switch sits out of line with its neighbours — that visual break is what you are scanning for."
+>
+  <BreakerReset />
+</AnimStage>
+
+## Finding it
+
+Your consumer unit — fuse box, breaker panel, whatever you call it — is usually
+in a hallway cupboard, under the stairs, in a garage, or near the front door.
+Take a torch; they are rarely in well-lit places.
+
+Open the cover and look along the row. **You are looking for a break in a
+pattern.** All the switches point one way except one. That's it.
+
+Two things worth knowing:
+
+- Some breakers trip to a **middle position** rather than fully down. From the
+  side it can look almost on. If you're not sure, this is a good reason to do
+  the full OFF-then-ON push regardless.
+- If a **whole bank** of switches went off together, that's the RCD rather than
+  a single breaker. Same reset procedure, but treat it more seriously — an RCD
+  trips because current was leaking to earth, which is the dangerous kind of
+  fault.
+
+<Callout type="warn" title="Look, don't open">
+Resetting a breaker means flipping a switch on the outside of the unit. That is
+all. Never remove the panel cover, never poke inside, and if the unit is warm,
+smells of burning, or has scorch marks, close the cupboard and call an
+electrician.
+</Callout>
+
+## Unplug first — this is the whole trick
+
+Here's what happens if you skip this: you flip the switch, the faulty toaster is
+still plugged in, and the breaker trips instantly. You try again. Same result.
+Now you know only that "something" is wrong, and you've put a fault current
+through the circuit three more times.
+
+So before you touch the switch, go round the affected rooms and **unplug
+everything**. Kettle, toaster, heater, phone charger, television, the lot.
+Switch off any lights on that circuit too.
+
+You have now removed every variable. Whatever happens next is meaningful.
+
+## The reset itself
+
+**Push it fully to OFF first.** All the way down, deliberately. This is the part
+that trips people up — a breaker resting in the middle position will not
+re-latch, and pushing weakly toward ON just moves it back to the middle. It
+feels like the breaker is broken. It isn't.
+
+**Then push it fully to ON.** One firm movement.
+
+It should stay. If it does, power is back and you're ready for the actual
+diagnosis.
+
+## Now find the cause
+
+Plug things back in **one at a time**, and switch each one on before moving to
+the next. Wait about thirty seconds between them.
+
+This is slow on purpose. Faults often only show up under load — a heater is fine
+until its element draws full current, a washing machine is fine until it starts
+heating water. Give each appliance a chance to misbehave.
+
+**If the breaker trips again**, the thing you just switched on is your fault.
+Leave it unplugged. Depending on what it is, that's either a repair or a
+replacement, but either way you now know, which is the entire point of the
+exercise.
+
+**If nothing trips it**, the original cause was almost certainly a momentary
+overload or a bulb failing at the instant it blew. That's not a fault and
+doesn't need fixing.
+
+<Callout type="tip" title="Label the breakers while you're standing there">
+You have just learned which switch controls which rooms. That knowledge
+evaporates within a day. Write it on the unit with a marker or a label maker,
+then photograph it and keep the photo on your phone. Next time you'll spend
+thirty seconds on this instead of ten minutes.
+</Callout>
+
+## When to stop and call an electrician
+
+- **It trips with nothing plugged in.** The fault is in the fixed wiring or in
+  something hard-wired. Stop resetting it.
+- **The RCD trips repeatedly.** Earth leakage is the fault type that hurts
+  people.
+- **Anything is warm, discoloured, or smells of burning.** Leave it off and call
+  someone today.
+- **A socket, switch or plug is scorched or cracked.**
+- **It trips whenever it rains,** which usually means water is getting into an
+  outdoor socket or a light fitting.
+
+A breaker doing its job is a sign the safety system works. A breaker that keeps
+doing its job is a sign something needs fixing properly — and repeatedly
+resetting it is exactly the wrong response.

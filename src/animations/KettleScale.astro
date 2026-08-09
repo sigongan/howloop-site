@@ -1,0 +1,347 @@
+---
+/* Kettle in section: limescale on the element, and what dissolves it. */
+---
+
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="kt">
+  <!-- kettle body -->
+  <path
+    class="body"
+    d="M250 130 C 244 200, 240 320, 252 400 C 256 424, 272 436, 300 436 H480 C 508 436, 524 424, 528 400 C 540 320, 536 200, 530 130 Z"
+  />
+  <path class="lid" d="M240 130 H540" />
+  <rect class="lidknob" x="368" y="98" width="44" height="32" rx="10" />
+
+  <!-- spout -->
+  <path class="spout" d="M250 168 L188 130 L182 176 L246 214" />
+
+  <!-- handle -->
+  <path class="handle" d="M536 168 C 610 176, 616 340, 538 372" />
+
+  <!-- base + element -->
+  <rect class="base" x="262" y="396" width="256" height="26" rx="8" />
+
+  <!-- liquid -->
+  <g class="liquidwrap">
+    <path
+      class="liquid"
+      d="M252 200 C 246 300, 248 360, 254 396 H526 C 532 360, 534 300, 528 200 Z"
+    />
+  </g>
+
+  <!-- limescale crust -->
+  <g class="scale">
+    <path class="crust" d="M266 396 q 18 -20 36 0 q 18 -18 36 0 q 20 -22 40 0 q 18 -16 36 0 q 20 -20 40 0 q 16 -14 32 0 v 12 H266 Z" />
+    <path class="fleck f1" d="M300 340 q 10 -12 20 0 q -10 10 -20 0 Z" />
+    <path class="fleck f2" d="M446 312 q 12 -14 24 0 q -12 12 -24 0 Z" />
+    <path class="fleck f3" d="M362 268 q 9 -11 18 0 q -9 9 -18 0 Z" />
+  </g>
+
+  <!-- 1:1 mix label -->
+  <g class="mix">
+    <rect x="586" y="150" width="180" height="94" rx="14" />
+    <text class="mixtitle" x="606" y="186">1 : 1</text>
+    <text class="mixsub" x="606" y="214">white vinegar</text>
+    <text class="mixsub" x="606" y="234">+ water</text>
+  </g>
+
+  <!-- bubbles while it works -->
+  <g class="bubbles">
+    <circle cx="310" cy="360" r="9" /><circle cx="380" cy="330" r="7" />
+    <circle cx="452" cy="352" r="10" /><circle cx="500" cy="316" r="6" />
+    <circle cx="340" cy="300" r="6" />
+  </g>
+
+  <!-- timer -->
+  <g class="timer">
+    <circle class="timerbg" cx="676" cy="330" r="44" />
+    <path class="timerarc" d="M676 292 A 38 38 0 1 1 675 292" />
+    <path class="hands" d="M676 330 V302 M676 330 h22" />
+    <text class="tag mid" x="676" y="396">30 min</text>
+  </g>
+
+  <!-- rinse -->
+  <g class="rinse">
+    <path class="rinseline" d="M400 60 V132" />
+    <path class="rinseline r2" d="M366 74 V132" />
+    <path class="rinseline r3" d="M434 74 V132" />
+    <text class="tag mid" x="400" y="46">boil clean water ×2</text>
+  </g>
+
+  <g class="done">
+    <circle class="tickbg" cx="120" cy="400" r="32" />
+    <path class="tick" d="M105 400 l10 11 l20 -23" />
+  </g>
+</svg>
+
+<style>
+  .kt {
+    --dur: 0.7s;
+    --ease: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .kt .body,
+  .kt .spout {
+    fill: var(--surface);
+    stroke: var(--ink);
+    stroke-width: 5;
+    stroke-linejoin: round;
+  }
+
+  .kt .lid {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 6;
+    stroke-linecap: round;
+  }
+
+  .kt .lidknob {
+    fill: var(--ink);
+  }
+
+  .kt .handle {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 14;
+    stroke-linecap: round;
+  }
+
+  .kt .base {
+    fill: var(--ink);
+  }
+
+  .kt .tag {
+    font-family: var(--font-mono);
+    font-size: 17px;
+    fill: var(--ink-3);
+  }
+
+  .kt .mid {
+    text-anchor: middle;
+  }
+
+  /* --- liquid ------------------------------------------------------------- */
+  .kt .liquidwrap {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .kt .liquid {
+    fill: color-mix(in srgb, var(--brand) 20%, transparent);
+    transition: fill var(--dur) var(--ease);
+  }
+
+  /* --- scale -------------------------------------------------------------- */
+  .kt .crust {
+    fill: color-mix(in srgb, var(--accent) 30%, var(--paper-deep));
+    stroke: var(--accent-deep);
+    stroke-width: 2.5;
+  }
+
+  .kt .fleck {
+    fill: color-mix(in srgb, var(--accent) 35%, var(--paper-deep));
+  }
+
+  .kt .scale,
+  .kt .fleck {
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  /* --- mix label ---------------------------------------------------------- */
+  .kt .mix {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .kt .mix rect {
+    fill: var(--surface);
+    stroke: var(--brand);
+    stroke-width: 3;
+  }
+
+  .kt .mixtitle {
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 700;
+    fill: var(--brand-deep);
+  }
+
+  .kt .mixsub {
+    font-family: var(--font-body);
+    font-size: 16px;
+    fill: var(--ink-2);
+  }
+
+  /* --- bubbles ------------------------------------------------------------ */
+  .kt .bubbles {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .kt .bubbles circle {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 3;
+    animation: kt-rise 2.4s ease-in-out infinite;
+  }
+
+  .kt .bubbles circle:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  .kt .bubbles circle:nth-child(3) {
+    animation-delay: -1s;
+  }
+  .kt .bubbles circle:nth-child(4) {
+    animation-delay: -1.5s;
+  }
+  .kt .bubbles circle:nth-child(5) {
+    animation-delay: -2s;
+  }
+
+  @keyframes kt-rise {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-120px);
+      opacity: 0;
+    }
+  }
+
+  /* --- timer -------------------------------------------------------------- */
+  .kt .timer {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .kt .timerbg {
+    fill: var(--surface);
+    stroke: var(--line);
+    stroke-width: 3;
+  }
+
+  .kt .timerarc {
+    fill: none;
+    stroke: var(--brand-tint-2);
+    stroke-width: 6;
+  }
+
+  .kt .hands {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 4.5;
+    stroke-linecap: round;
+  }
+
+  /* --- rinse -------------------------------------------------------------- */
+  .kt .rinse {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .kt .rinseline {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 14 12;
+    animation: kt-flow 0.9s linear infinite;
+  }
+
+  .kt .r2 {
+    animation-delay: -0.3s;
+    opacity: 0.6;
+  }
+  .kt .r3 {
+    animation-delay: -0.6s;
+    opacity: 0.6;
+  }
+
+  @keyframes kt-flow {
+    to {
+      stroke-dashoffset: -26;
+    }
+  }
+
+  .kt .done {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.6);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+
+  .kt .tickbg {
+    fill: var(--brand);
+  }
+
+  .kt .tick {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ======================================================================
+     Step states
+     ====================================================================== */
+
+  /* 0 — the crust on the element is what slows the boil */
+
+  /* 1 — fill with a 1:1 mix of white vinegar and water */
+  :global([data-step='1']) .kt .liquidwrap,
+  :global([data-step='2']) .kt .liquidwrap,
+  :global([data-step='3']) .kt .liquidwrap {
+    opacity: 1;
+  }
+
+  :global([data-step='1']) .kt .mix,
+  :global([data-step='2']) .kt .mix {
+    opacity: 1;
+  }
+
+  /* 2 — boil, then leave it to sit */
+  :global([data-step='2']) .kt .bubbles {
+    opacity: 1;
+  }
+
+  :global([data-step='2']) .kt .timer,
+  :global([data-step='3']) .kt .timer {
+    opacity: 1;
+  }
+
+  :global([data-step='2']) .kt .fleck {
+    opacity: 0.35;
+  }
+
+  /* 3 — pour it out; the crust has let go */
+  :global([data-step='3']) .kt .fleck {
+    opacity: 0;
+  }
+
+  :global([data-step='3']) .kt .crust {
+    opacity: 0.25;
+  }
+
+  :global([data-step='3']) .kt .liquid {
+    fill: color-mix(in srgb, var(--accent) 20%, transparent);
+  }
+
+  /* 4 — boil clean water twice before you drink from it */
+  :global([data-step='4']) .kt .scale {
+    opacity: 0;
+  }
+
+  :global([data-step='4']) .kt .rinse {
+    opacity: 1;
+  }
+
+  :global([data-step='4']) .kt .done {
+    opacity: 1;
+    transform: scale(1);
+  }
+</style>

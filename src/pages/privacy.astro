@@ -1,0 +1,131 @@
+---
+import Prose from '../layouts/Prose.astro';
+import { SITE } from '../consts';
+---
+
+<Prose
+  title="Privacy policy"
+  description={`How ${SITE.name} handles data, cookies and advertising.`}
+  lede="The short version: we don't ask you for anything, we don't run our own tracking, and the only third party that sets cookies here is our advertising provider."
+  updated="8 August 2026"
+>
+  <p>
+    This policy explains what happens to data when you visit
+    <strong>{SITE.domain}</strong> ("the site", "we", "us"). It applies to every
+    page on this domain.
+  </p>
+
+  <h2>1. What we collect ourselves</h2>
+  <p>
+    Nothing that identifies you. The site is a set of static pages. There is no
+    account system, no login, no comment box and no newsletter sign-up, so there
+    is no personal information for us to store.
+  </p>
+  <p>
+    Our hosting provider keeps standard server logs (IP address, browser type,
+    the page requested, the time of the request) for a short period for
+    security and abuse prevention. We do not use those logs to build a profile
+    of you and we do not sell them.
+  </p>
+
+  <h2>2. Cookies and similar technologies</h2>
+  <p>
+    We do not set our own cookies for analytics or personalisation. Cookies on
+    this site come from third parties, described below. Your browser lets you
+    block or delete cookies at any time — that will not break the site.
+  </p>
+
+  <h2>3. Advertising</h2>
+  <p>
+    This site is funded by advertising and uses <strong>Google AdSense</strong>,
+    a third-party advertising service provided by Google LLC.
+  </p>
+  <ul>
+    <li>
+      Third-party vendors, including Google, use cookies to serve ads based on
+      your prior visits to this site or other sites.
+    </li>
+    <li>
+      Google's use of advertising cookies enables it and its partners to serve
+      ads to you based on your visit to this and/or other sites on the internet.
+    </li>
+    <li>
+      You may opt out of personalised advertising by visiting
+      <a href="https://www.google.com/settings/ads" rel="nofollow noopener"
+        >Google Ads Settings</a
+      >.
+    </li>
+    <li>
+      You can also opt out of a third-party vendor's use of cookies for
+      personalised advertising at
+      <a href="https://www.aboutads.info/choices/" rel="nofollow noopener"
+        >aboutads.info/choices</a
+      > or, in Europe, at
+      <a href="https://www.youronlinechoices.eu/" rel="nofollow noopener"
+        >youronlinechoices.eu</a
+      >.
+    </li>
+    <li>
+      Where required, third-party vendors we work with may collect and use data
+      under a consent framework. If you are in a region that requires consent
+      (such as the EEA or the UK), you will be shown a consent message before
+      personalised ads are served, and you can change your choice at any time.
+    </li>
+  </ul>
+  <p>
+    Google's own explanation of how it uses data from sites that use its
+    services is at
+    <a
+      href="https://policies.google.com/technologies/partner-sites"
+      rel="nofollow noopener">policies.google.com/technologies/partner-sites</a
+    >.
+  </p>
+
+  <h2>4. Fonts</h2>
+  <p>
+    We load one display typeface from Google Fonts. When your browser requests
+    it, Google receives your IP address as part of that request. No cookie is
+    set by the font request itself.
+  </p>
+
+  <h2>5. Links to other sites</h2>
+  <p>
+    Guides sometimes link to manufacturers, standards bodies or retailers. Once
+    you follow a link you are on someone else's site under their privacy policy,
+    not ours. We are not responsible for their practices.
+  </p>
+
+  <h2>6. Children</h2>
+  <p>
+    This site is not directed at children under 13 and we do not knowingly
+    collect information from them. If you believe a child has provided us with
+    personal information, contact us and we will delete it.
+  </p>
+
+  <h2>7. Your rights</h2>
+  <p>
+    Depending on where you live, you may have the right to access, correct,
+    delete or restrict the use of personal data held about you, and to object to
+    processing or withdraw consent. Because we do not hold identifiable data
+    ourselves, most of these requests are best directed to Google, whose ad
+    services set the cookies described above. If you'd like help, write to
+    <a href={`mailto:${SITE.email}`}>{SITE.email}</a> with "Privacy" in the
+    subject line.
+  </p>
+  <p>
+    California residents: we do not sell or share personal information as those
+    terms are defined by the CCPA/CPRA.
+  </p>
+
+  <h2>8. Changes</h2>
+  <p>
+    If this policy changes we will update the date at the top of this page.
+    Material changes will be noted on the page for at least 30 days.
+  </p>
+
+  <h2>9. Contact</h2>
+  <p>
+    Questions about this policy: <a href={`mailto:${SITE.email}`}>{SITE.email}</a
+    >.
+  </p>
+</Prose>

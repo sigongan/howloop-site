@@ -1,0 +1,301 @@
+---
+/* A butt hinge in section: the pin is the thing that squeaks, and the thing you oil. */
+---
+
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="dh">
+  <!-- frame and door -->
+  <rect class="frame" x="70" y="60" width="150" height="380" rx="6" />
+  <g class="door">
+    <rect class="doorbody" x="0" y="0" width="330" height="380" rx="6" />
+    <circle class="knob" cx="286" cy="196" r="14" />
+  </g>
+
+  <!-- squeak waves -->
+  <g class="squeak">
+    <path class="wave w1" d="M300 132 C 330 158, 330 194, 300 220" />
+    <path class="wave w2" d="M330 116 C 372 154, 372 198, 330 236" />
+    <path class="wave w3" d="M360 100 C 414 150, 414 202, 360 252" />
+  </g>
+
+  <!-- the hinge, enlarged -->
+  <g class="hinge">
+    <!-- leaves -->
+    <rect class="leaf" x="-96" y="-14" width="96" height="28" rx="4" />
+    <rect class="leaf" x="0" y="-14" width="96" height="28" rx="4" />
+    <!-- knuckles -->
+    <rect class="knuckle" x="-22" y="-72" width="44" height="46" rx="10" />
+    <rect class="knuckle" x="-22" y="-22" width="44" height="46" rx="10" />
+    <rect class="knuckle" x="-22" y="28" width="44" height="46" rx="10" />
+    <!-- the pin -->
+    <g class="pin">
+      <rect class="pinbody" x="-9" y="-76" width="18" height="152" rx="9" />
+      <rect class="pinhead" x="-17" y="-92" width="34" height="18" rx="6" />
+    </g>
+    <!-- friction marks where the squeak comes from -->
+    <g class="friction">
+      <path d="M-30 -48 h-14" /><path d="M30 -48 h14" />
+      <path d="M-30 2 h-14" /><path d="M30 2 h14" />
+      <path d="M-30 52 h-14" /><path d="M30 52 h14" />
+    </g>
+  </g>
+
+  <!-- lubricant -->
+  <g class="oil">
+    <path class="bottle" d="M660 120 h48 v92 a12 12 0 0 1 -12 12 h-24 a12 12 0 0 1 -12 -12 Z" />
+    <path class="nozzle" d="M676 120 v-30 h16 v30" />
+    <circle class="drop d1" cx="684" cy="240" r="8" />
+    <circle class="drop d2" cx="684" cy="264" r="6" />
+  </g>
+
+  <!-- work it up and down -->
+  <g class="workarrow">
+    <path d="M600 176 V300 M586 192 l14 -16 l14 16 M586 284 l14 16 l14 -16" />
+  </g>
+
+  <!-- wipe -->
+  <g class="wipe">
+    <rect x="0" y="0" width="86" height="60" rx="10" />
+  </g>
+
+  <g class="done">
+    <circle class="tickbg" cx="708" cy="400" r="32" />
+    <path class="tick" d="M693 400 l10 11 l20 -23" />
+  </g>
+</svg>
+
+<style>
+  .dh {
+    --dur: 0.65s;
+    --ease: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .dh .frame {
+    fill: var(--paper-deep);
+    stroke: var(--ink);
+    stroke-width: 5;
+  }
+
+  .dh .doorbody {
+    fill: color-mix(in srgb, var(--ink) 10%, var(--paper));
+    stroke: var(--ink);
+    stroke-width: 5;
+  }
+
+  .dh .knob {
+    fill: var(--ink-2);
+  }
+
+  .dh .door {
+    transform: translate(220px, 60px);
+    transform-origin: 0 190px;
+    transition: transform 1.1s var(--ease);
+  }
+
+  /* --- squeak ------------------------------------------------------------- */
+  .dh .squeak {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .dh .wave {
+    fill: none;
+    stroke: var(--danger);
+    stroke-width: 5;
+    stroke-linecap: round;
+    animation: dh-wave 1.5s ease-out infinite;
+  }
+
+  .dh .w2 {
+    animation-delay: -0.5s;
+  }
+  .dh .w3 {
+    animation-delay: -1s;
+  }
+
+  @keyframes dh-wave {
+    0% {
+      opacity: 0;
+    }
+    35% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* --- hinge -------------------------------------------------------------- */
+  .dh .hinge {
+    transform: translate(400px, 240px) scale(1.5);
+  }
+
+  .dh .leaf {
+    fill: var(--surface);
+    stroke: var(--ink);
+    stroke-width: 3.5;
+  }
+
+  .dh .knuckle {
+    fill: var(--paper-deep);
+    stroke: var(--ink);
+    stroke-width: 3.5;
+  }
+
+  .dh .pin {
+    transition: transform var(--dur) var(--ease);
+  }
+
+  .dh .pinbody,
+  .dh .pinhead {
+    fill: var(--accent);
+  }
+
+  .dh .friction path {
+    fill: none;
+    stroke: var(--danger);
+    stroke-width: 4;
+    stroke-linecap: round;
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  /* --- oil ---------------------------------------------------------------- */
+  .dh .oil {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .dh .bottle {
+    fill: var(--brand-tint);
+    stroke: var(--brand-deep);
+    stroke-width: 4;
+  }
+
+  .dh .nozzle {
+    fill: none;
+    stroke: var(--brand-deep);
+    stroke-width: 4;
+    stroke-linecap: round;
+  }
+
+  .dh .drop {
+    fill: var(--brand);
+    animation: dh-drop 1.6s ease-in infinite;
+  }
+
+  .dh .d2 {
+    animation-delay: -0.8s;
+  }
+
+  @keyframes dh-drop {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(60px);
+      opacity: 0;
+    }
+  }
+
+  .dh .workarrow {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .dh .workarrow path {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .dh .wipe {
+    opacity: 0;
+    transform: translate(430px, 340px) rotate(-8deg);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+
+  .dh .wipe rect {
+    fill: color-mix(in srgb, var(--brand) 16%, var(--paper));
+    stroke: var(--brand);
+    stroke-width: 3;
+  }
+
+  .dh .done {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.6);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+
+  .dh .tickbg {
+    fill: var(--brand);
+  }
+
+  .dh .tick {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ======================================================================
+     Step states
+     ====================================================================== */
+
+  /* 0 — find which hinge is actually squeaking */
+  :global([data-step='0']) .dh .squeak {
+    opacity: 1;
+  }
+
+  :global([data-step='0']) .dh .friction path {
+    opacity: 1;
+  }
+
+  :global([data-step='0']) .dh .door {
+    transform: translate(220px, 60px) rotate(-4deg);
+  }
+
+  /* 1 — open the door and lift the pin part way out */
+  :global([data-step='1']) .dh .pin,
+  :global([data-step='2']) .dh .pin {
+    transform: translateY(-58px);
+  }
+
+  :global([data-step='1']) .dh .friction path {
+    opacity: 1;
+  }
+
+  /* 2 — oil the pin, not the leaves */
+  :global([data-step='2']) .dh .oil,
+  :global([data-step='3']) .dh .oil {
+    opacity: 1;
+  }
+
+  /* 3 — drop it back and work the door to spread it */
+  :global([data-step='3']) .dh .workarrow {
+    opacity: 1;
+  }
+
+  :global([data-step='3']) .dh .door {
+    transform: translate(220px, 60px) rotate(6deg);
+  }
+
+  /* 4 — wipe the drips, silence */
+  :global([data-step='4']) .dh .wipe {
+    opacity: 1;
+    transform: translate(430px, 320px) rotate(4deg);
+  }
+
+  :global([data-step='4']) .dh .done {
+    opacity: 1;
+    transform: scale(1);
+  }
+</style>

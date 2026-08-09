@@ -1,0 +1,322 @@
+---
+/* Top-down floor plan: where the router goes, and what to do about bands. */
+---
+
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="wf">
+  <!-- floor plan -->
+  <rect class="floor" x="60" y="50" width="680" height="400" rx="10" />
+  <path class="wall" d="M320 50 V210 M320 290 V450 M520 210 H740" />
+  <path class="wall thin" d="M60 210 H180" />
+
+  <text class="room" x="120" y="100">bedroom</text>
+  <text class="room" x="390" y="100">living room</text>
+  <text class="room" x="580" y="290">kitchen</text>
+  <text class="room" x="120" y="330">office</text>
+
+  <!-- obstacles -->
+  <g class="obstacles">
+    <rect class="metal" x="560" y="230" width="80" height="54" rx="6" />
+    <text class="tagsm" x="560" y="308">microwave</text>
+    <rect class="metal" x="660" y="230" width="56" height="90" rx="6" />
+    <text class="tagsm" x="654" y="342">fridge</text>
+  </g>
+
+  <!-- signal rings -->
+  <g class="router">
+    <g class="rings">
+      <circle class="ring r1" cx="0" cy="0" r="60" />
+      <circle class="ring r2" cx="0" cy="0" r="110" />
+      <circle class="ring r3" cx="0" cy="0" r="165" />
+      <circle class="ring r4" cx="0" cy="0" r="225" />
+    </g>
+    <g class="box">
+      <rect x="-30" y="-14" width="60" height="28" rx="7" />
+      <path class="ant" d="M-16 -14 V-40 M16 -14 V-40" />
+    </g>
+  </g>
+
+  <!-- device with signal bars -->
+  <g class="device">
+    <rect class="phone" x="0" y="0" width="46" height="80" rx="9" />
+    <g class="bars">
+      <rect class="bar b1" x="10" y="58" width="6" height="12" rx="2" />
+      <rect class="bar b2" x="20" y="50" width="6" height="20" rx="2" />
+      <rect class="bar b3" x="30" y="42" width="6" height="28" rx="2" />
+    </g>
+  </g>
+
+  <!-- band labels -->
+  <g class="bands">
+    <g class="band band5">
+      <rect x="0" y="0" width="132" height="40" rx="20" />
+      <text x="20" y="26">5 GHz · near</text>
+    </g>
+    <g class="band band24">
+      <rect x="0" y="0" width="150" height="40" rx="20" />
+      <text x="18" y="26">2.4 GHz · far</text>
+    </g>
+  </g>
+
+  <!-- restart badge -->
+  <g class="restart">
+    <circle class="restartbg" cx="0" cy="0" r="34" />
+    <path
+      class="restarticon"
+      d="M-12 -4 A 13 13 0 1 1 -8 9"
+      fill="none"
+      stroke="#fff"
+      stroke-width="5"
+      stroke-linecap="round"
+    ></path>
+    <path class="restarticon" d="M-19 -12 l7 8 l9 -5" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+
+  <g class="done">
+    <circle class="tickbg" cx="700" cy="90" r="30" />
+    <path class="tick" d="M686 90 l10 11 l19 -22" />
+  </g>
+</svg>
+
+<style>
+  .wf {
+    --dur: 0.75s;
+    --ease: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .wf .floor {
+    fill: var(--paper-deep);
+    stroke: var(--ink);
+    stroke-width: 5;
+  }
+
+  .wf .wall {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 5;
+    stroke-linecap: round;
+  }
+
+  .wf .thin {
+    stroke-width: 4;
+  }
+
+  .wf .room {
+    font-family: var(--font-mono);
+    font-size: 17px;
+    fill: var(--ink-3);
+  }
+
+  .wf .tagsm {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    fill: var(--ink-3);
+  }
+
+  .wf .metal {
+    fill: color-mix(in srgb, var(--ink) 18%, var(--paper));
+    stroke: var(--ink-3);
+    stroke-width: 3;
+  }
+
+  .wf .obstacles {
+    opacity: 0.35;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  /* --- router ------------------------------------------------------------ */
+  .wf .router {
+    transform: translate(120px, 400px);
+    transition: transform 0.9s var(--ease);
+  }
+
+  .wf .box rect {
+    fill: var(--ink);
+  }
+
+  .wf .ant {
+    stroke: var(--ink);
+    stroke-width: 5;
+    stroke-linecap: round;
+    fill: none;
+  }
+
+  .wf .ring {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 3.5;
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+    animation: wf-pulse 3s ease-out infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .wf .r1 {
+    animation-delay: 0s;
+  }
+  .wf .r2 {
+    animation-delay: -0.75s;
+  }
+  .wf .r3 {
+    animation-delay: -1.5s;
+  }
+  .wf .r4 {
+    animation-delay: -2.25s;
+  }
+
+  @keyframes wf-pulse {
+    0% {
+      transform: scale(0.55);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+
+  /* --- device ------------------------------------------------------------ */
+  .wf .device {
+    transform: translate(600px, 110px);
+  }
+
+  .wf .phone {
+    fill: var(--surface);
+    stroke: var(--ink);
+    stroke-width: 4;
+  }
+
+  .wf .bar {
+    fill: var(--line);
+    transition: fill 0.4s var(--ease);
+  }
+
+  /* --- bands ------------------------------------------------------------- */
+  .wf .band rect {
+    fill: var(--surface);
+    stroke: var(--brand);
+    stroke-width: 3;
+  }
+
+  .wf .band text {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 600;
+    fill: var(--brand-deep);
+  }
+
+  .wf .band5 {
+    transform: translate(420px, 300px);
+  }
+
+  .wf .band24 {
+    transform: translate(420px, 356px);
+  }
+
+  .wf .bands {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  /* --- restart ----------------------------------------------------------- */
+  .wf .restart {
+    transform: translate(700px, 400px) scale(0.6);
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+
+  .wf .restartbg {
+    fill: var(--accent);
+  }
+
+  .wf .done {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.6);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+
+  .wf .tickbg {
+    fill: var(--brand);
+  }
+
+  .wf .tick {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ======================================================================
+     Step states
+     ====================================================================== */
+
+  /* 0 — router shoved in a corner: one weak ring reaches the phone */
+  :global([data-step='0']) .wf .r1 {
+    opacity: 1;
+  }
+
+  :global([data-step='0']) .wf .r2 {
+    opacity: 0.35;
+  }
+
+  :global([data-step='0']) .wf .b1 {
+    fill: var(--danger);
+  }
+
+  /* 1 — move it central, up off the floor, out in the open */
+  :global([data-step='1']) .wf .router,
+  :global([data-step='2']) .wf .router,
+  :global([data-step='3']) .wf .router,
+  :global([data-step='4']) .wf .router {
+    transform: translate(410px, 250px);
+  }
+
+  :global([data-step='1']) .wf .ring,
+  :global([data-step='2']) .wf .ring,
+  :global([data-step='3']) .wf .ring,
+  :global([data-step='4']) .wf .ring {
+    opacity: 1;
+  }
+
+  :global([data-step='1']) .wf .b1,
+  :global([data-step='1']) .wf .b2 {
+    fill: var(--accent);
+  }
+
+  /* 2 — keep it away from metal and microwaves */
+  :global([data-step='2']) .wf .obstacles {
+    opacity: 1;
+  }
+
+  :global([data-step='2']) .wf .metal {
+    stroke: var(--danger);
+    fill: var(--danger-tint);
+  }
+
+  :global([data-step='2']) .wf .b1,
+  :global([data-step='2']) .wf .b2 {
+    fill: var(--accent);
+  }
+
+  /* 3 — split the bands */
+  :global([data-step='3']) .wf .bands {
+    opacity: 1;
+  }
+
+  :global([data-step='3']) .wf .bar,
+  :global([data-step='4']) .wf .bar {
+    fill: var(--brand);
+  }
+
+  /* 4 — restart and re-test */
+  :global([data-step='4']) .wf .restart {
+    opacity: 1;
+    transform: translate(700px, 400px) scale(1);
+  }
+
+  :global([data-step='4']) .wf .done {
+    opacity: 1;
+    transform: scale(1);
+  }
+</style>

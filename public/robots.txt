@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Google's ad crawler needs access for AdSense to serve relevant ads.
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+Sitemap: https://howloop.how/sitemap-index.xml

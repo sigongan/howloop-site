@@ -1,0 +1,626 @@
+---
+/*
+ * Charging port — high-fidelity vector.
+ *
+ * Composition follows iFixit: the whole object on the left for orientation, a
+ * magnified cut-through on the right, and coloured markers pointing at the one
+ * thing each step is about.
+ *
+ * Fidelity comes from materials rather than detail count: brushed aluminium on
+ * the shell, gold on the contacts, matte black plastic on the plug, a genuinely
+ * dark cavity, and soft contact shadows so parts sit in space.
+ */
+---
+
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="cp">
+  <defs>
+    <!-- brushed aluminium -->
+    <linearGradient id="cpAlu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b737d" />
+      <stop offset="0.18" stop-color="#4a515a" />
+      <stop offset="0.55" stop-color="#343a42" />
+      <stop offset="0.92" stop-color="#454c55" />
+      <stop offset="1" stop-color="#242930" />
+    </linearGradient>
+
+    <!-- cut face of the aluminium: brighter, because it is freshly exposed -->
+    <linearGradient id="cpCut" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8d949d" />
+      <stop offset="0.5" stop-color="#5d646d" />
+      <stop offset="1" stop-color="#3b414a" />
+    </linearGradient>
+
+    <!-- glass sheen across the screen -->
+    <linearGradient id="cpGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="0.42" stop-color="#e8edf2" stop-opacity="0.55" />
+      <stop offset="0.44" stop-color="#cdd6de" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#eef2f6" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- gold plating on the contacts -->
+    <linearGradient id="cpGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4dd9a" />
+      <stop offset="0.45" stop-color="#d8b055" />
+      <stop offset="1" stop-color="#9c7524" />
+    </linearGradient>
+
+    <!-- nickel shell on the plug tip -->
+    <linearGradient id="cpShell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfe4e9" />
+      <stop offset="0.28" stop-color="#aab2bb" />
+      <stop offset="0.6" stop-color="#7f8892" />
+      <stop offset="1" stop-color="#b3bac2" />
+    </linearGradient>
+
+    <!-- matte black overmould -->
+    <linearGradient id="cpPlastic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4048" />
+      <stop offset="0.3" stop-color="#22272d" />
+      <stop offset="1" stop-color="#14181d" />
+    </linearGradient>
+
+    <!-- birch toothpick -->
+    <linearGradient id="cpWood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0d69f" />
+      <stop offset="0.4" stop-color="#d7b160" />
+      <stop offset="1" stop-color="#a8802f" />
+    </linearGradient>
+
+    <!-- the cavity gets darker toward the back -->
+    <linearGradient id="cpCavity" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#2b3037" />
+      <stop offset="0.5" stop-color="#191d22" />
+      <stop offset="1" stop-color="#0d1013" />
+    </linearGradient>
+
+    <!-- lint: warm grey felt -->
+    <linearGradient id="cpLint" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#9a8f83" />
+      <stop offset="0.55" stop-color="#7d7267" />
+      <stop offset="1" stop-color="#5b5249" />
+    </linearGradient>
+
+    <!-- soft shadow under objects -->
+    <filter id="cpShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#14171c" flood-opacity="0.22" />
+    </filter>
+    <filter id="cpShadowSm" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#14171c" flood-opacity="0.3" />
+    </filter>
+
+    <!-- fuzzy edge for the lint -->
+    <filter id="cpFuzz" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" result="n" />
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <clipPath id="cpLensClip">
+      <rect x="300" y="108" width="472" height="296" rx="16" />
+    </clipPath>
+  </defs>
+
+  <!-- ============ left: the phone ============ -->
+  <g class="phone">
+    <g filter="url(#cpShadow)">
+      <rect class="phonebody" x="54" y="86" width="140" height="336" rx="24" />
+    </g>
+    <rect class="phonebezel" x="60" y="92" width="128" height="324" rx="20" />
+    <rect class="phonescreen" x="66" y="98" width="116" height="312" rx="16" />
+    <rect class="phonesheen" x="66" y="98" width="116" height="312" rx="16" />
+    <rect class="speaker" x="106" y="106" width="36" height="5" rx="2.5" />
+    <rect class="sidebtn" x="192" y="150" width="5" height="44" rx="2.5" />
+    <!-- the port, seen from outside -->
+    <rect class="portslot" x="105" y="402" width="38" height="12" rx="6" />
+    <rect class="portslotinner" x="109" y="405" width="30" height="6" rx="3" />
+    <circle class="marker" cx="124" cy="408" r="32" />
+  </g>
+
+  <!-- magnifier cone -->
+  <path class="cone" d="M152 380 L300 112 L300 400 L152 436 Z" />
+
+  <!-- ============ right: magnified cut-through ============ -->
+  <g filter="url(#cpShadow)">
+    <rect class="lens" x="300" y="108" width="472" height="296" rx="16" />
+  </g>
+
+  <g clip-path="url(#cpLensClip)">
+    <!-- aluminium body, cut -->
+    <path class="material" d="M300 150 H690 V370 H300 Z" />
+    <path class="cutface" d="M300 150 H316 V370 H300 Z" />
+    <path class="edgehi" d="M300 152 H690" />
+    <path class="edgelo" d="M300 368 H690" />
+
+    <!-- outer edge of the phone, where the cable enters -->
+    <path class="outeredge" d="M690 150 V370" />
+
+    <!-- the cavity -->
+    <path class="cavity" d="M694 210 H402 a10 10 0 0 0 -10 10 V300 a10 10 0 0 0 10 10 H694 Z" />
+    <path class="shield" d="M694 212 H404 a8 8 0 0 0 -8 8" />
+    <path class="shield" d="M694 308 H404 a8 8 0 0 1 -8 -8" />
+
+    <!--
+      The tongue: a flat blade cantilevered from the back wall, with gold
+      contacts running along its top and bottom faces. The plug slides over it.
+    -->
+    <g class="contactgroup">
+      <rect class="tongue" x="400" y="244" width="200" height="22" rx="4" />
+      <rect class="padtop" x="406" y="245.5" width="190" height="6" rx="3" />
+      <rect class="padbot" x="406" y="258.5" width="190" height="6" rx="3" />
+    </g>
+
+    <!-- compacted lint, wedged against the back wall -->
+    <g class="lint">
+      <path
+        class="lintmass"
+        d="M398 216 q 42 -6 72 10 q 36 18 32 46 q -5 32 -38 42 q -32 10 -66 2 Z"
+      />
+      <path class="fibre" d="M412 236 q 32 8 46 32" />
+      <path class="fibre" d="M418 292 q 28 -22 56 -20" />
+      <path class="fibre" d="M406 262 q 34 -4 58 12" />
+    </g>
+
+    <!-- the cable -->
+    <g class="cable">
+      <g filter="url(#cpShadowSm)">
+        <!-- hollow shell: the slot at the left is what receives the tongue -->
+        <path
+          class="plugshell"
+          d="M8 0 H280 V82 H8 a8 8 0 0 1 -8 -8 V60 H206 V22 H0 V8 a8 8 0 0 1 8 -8 Z"
+        />
+        <rect class="plugbody" x="272" y="-6" width="150" height="94" rx="12" />
+        <rect class="cord" x="416" y="24" width="150" height="34" rx="17" />
+        <rect class="strain" x="408" y="16" width="34" height="50" rx="12" />
+      </g>
+      <path class="plughi" d="M14 7 H268" />
+    </g>
+
+    <!-- toothpick -->
+    <g class="pick">
+      <g filter="url(#cpShadowSm)">
+        <path class="pickbody" d="M0 -11 L0 11 L-158 4.5 L-158 -4.5 Z" />
+      </g>
+      <path class="pickhi" d="M-150 -2 L-6 -6" />
+    </g>
+  </g>
+
+  <!-- the lint, once it is out (outside the clip, sitting on the "bench") -->
+  <g class="lintout">
+    <g filter="url(#cpShadowSm)">
+      <path class="lintmass" d="M0 0 q 32 -5 54 8 q 27 16 22 34 q -5 21 -30 27 q -26 6 -50 -2 Z" />
+    </g>
+  </g>
+
+  <!-- ---------- callout markers + labels ---------- -->
+
+  <!-- step 0: it will not go all the way in -->
+  <g class="gapmark">
+    <path class="gapline" d="M402 190 V330" />
+    <path class="gapline" d="M500 190 V330" />
+    <path class="gaparrow" d="M408 348 H494 M416 341 l-8 7 l8 7 M486 341 l8 7 l-8 7" />
+    <g class="tagbox tagbox--bad">
+      <rect x="366" y="368" width="172" height="32" rx="16" />
+      <text x="452" y="389">not fully in</text>
+    </g>
+  </g>
+
+  <!-- step 2: what you are looking at -->
+  <g class="labels">
+    <g class="lab lab--lint">
+      <path class="lead" d="M434 214 V170" />
+      <circle class="leaddot" cx="434" cy="214" r="4.5" />
+      <g class="tagbox tagbox--warn">
+        <rect x="346" y="138" width="176" height="32" rx="16" />
+        <text x="434" y="159">compacted lint</text>
+      </g>
+      <circle class="marker marker--sm" cx="436" cy="262" r="54" />
+    </g>
+    <g class="lab lab--contacts">
+      <path class="lead" d="M566 246 L646 184" />
+      <circle class="leaddot" cx="566" cy="246" r="4.5" />
+      <g class="tagbox">
+        <rect x="584" y="152" width="130" height="32" rx="16" />
+        <text x="649" y="173">contacts</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- step 3: the tool -->
+  <g class="picklabel">
+    <g class="tagbox tagbox--warn">
+      <rect x="496" y="368" width="270" height="32" rx="16" />
+      <text x="631" y="389">wooden toothpick — never metal</text>
+    </g>
+  </g>
+
+  <!-- step 1: power off -->
+  <g class="poweroff">
+    <circle class="pobg" cx="124" cy="230" r="40" />
+    <path class="poicon" d="M124 211 V232" />
+    <path class="poicon" d="M107 218 A 21 21 0 1 0 141 218" />
+  </g>
+
+  <!-- step 4: it seats -->
+  <g class="click">
+    <path class="spark" d="M706 186 l0 -28 M742 212 l26 -10 M732 172 l18 -21" />
+    <g class="tagbox tagbox--ok">
+      <rect x="596" y="368" width="170" height="32" rx="16" />
+      <text x="681" y="389">clicks in flush</text>
+    </g>
+  </g>
+
+  <g class="done">
+    <circle class="tickbg" cx="124" cy="230" r="40" />
+    <path class="tick" d="M105 230 l13 14 l25 -29" />
+  </g>
+</svg>
+
+<style>
+  .cp {
+    --dur: 0.6s;
+    --ease: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  /* ---------- phone ---------- */
+  .cp .phonebody {
+    fill: url(#cpAlu);
+  }
+
+  .cp .phonebezel {
+    fill: #0e1114;
+  }
+
+  .cp .phonescreen {
+    fill: #11161b;
+  }
+
+  .cp .phonesheen {
+    fill: url(#cpGlass);
+    opacity: 0.16;
+  }
+
+  .cp .speaker {
+    fill: #2c3238;
+  }
+
+  .cp .sidebtn {
+    fill: #5b636c;
+  }
+
+  .cp .portslot {
+    fill: #0b0e11;
+  }
+
+  .cp .portslotinner {
+    fill: url(#cpShell);
+    opacity: 0.5;
+  }
+
+  .cp .marker {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 4;
+    stroke-dasharray: 10 9;
+    animation: cp-spin 16s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .cp .marker--sm {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  @keyframes cp-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .cp .cone {
+    fill: color-mix(in srgb, var(--ink) 7%, transparent);
+    stroke: color-mix(in srgb, var(--ink) 18%, transparent);
+    stroke-width: 2;
+  }
+
+  /* ---------- lens ---------- */
+  .cp .lens {
+    fill: #f7f5f1;
+    stroke: color-mix(in srgb, var(--ink) 22%, transparent);
+    stroke-width: 3;
+  }
+
+  .cp .material {
+    fill: url(#cpAlu);
+  }
+
+  .cp .cutface {
+    fill: url(#cpCut);
+  }
+
+  .cp .edgehi {
+    stroke: #939ba4;
+    stroke-width: 2.5;
+    opacity: 0.55;
+    fill: none;
+  }
+
+  .cp .edgelo {
+    stroke: #0e1114;
+    stroke-width: 2.5;
+    opacity: 0.5;
+    fill: none;
+  }
+
+  .cp .outeredge {
+    stroke: #c3c9d0;
+    stroke-width: 3;
+    opacity: 0.5;
+    fill: none;
+  }
+
+  .cp .cavity {
+    fill: url(#cpCavity);
+  }
+
+  .cp .shield {
+    fill: none;
+    stroke: #97a0aa;
+    stroke-width: 3;
+    opacity: 0.6;
+  }
+
+  .cp .tongue {
+    fill: #2a3037;
+    stroke: #464e57;
+    stroke-width: 2;
+  }
+
+  .cp .padtop,
+  .cp .padbot {
+    fill: url(#cpGold);
+  }
+
+  /* ---------- lint ---------- */
+  .cp .lintmass {
+    fill: url(#cpLint);
+    filter: url(#cpFuzz);
+  }
+
+  .cp .fibre {
+    fill: none;
+    stroke: #cfc6ba;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    opacity: 0.45;
+  }
+
+  .cp .lint {
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+
+  .cp .lintout {
+    transform: translate(700px, 428px) scale(0.9);
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease), transform 0.7s var(--ease);
+  }
+
+  /* ---------- cable ---------- */
+  .cp .cable {
+    transform: translate(770px, 214px);
+    transition: transform 0.8s var(--ease);
+  }
+
+  .cp .plugshell {
+    fill: url(#cpShell);
+  }
+
+  .cp .plugbody,
+  .cp .strain {
+    fill: url(#cpPlastic);
+  }
+
+  .cp .cord {
+    fill: #1b1f24;
+  }
+
+  .cp .plughi {
+    stroke: #ffffff;
+    stroke-width: 3;
+    opacity: 0.4;
+    fill: none;
+    stroke-linecap: round;
+  }
+
+  /* ---------- toothpick ---------- */
+  .cp .pick {
+    transform: translate(830px, 292px);
+    opacity: 0;
+    transition: transform 0.9s var(--ease), opacity var(--dur) var(--ease);
+  }
+
+  .cp .pickbody {
+    fill: url(#cpWood);
+  }
+
+  .cp .pickhi {
+    stroke: #fff3d6;
+    stroke-width: 2;
+    opacity: 0.5;
+    fill: none;
+  }
+
+  /* ---------- callout tags ---------- */
+  .cp .tagbox rect {
+    fill: var(--ink);
+  }
+
+  .cp .tagbox text {
+    fill: #fff;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 600;
+    text-anchor: middle;
+  }
+
+  .cp .tagbox--warn rect {
+    fill: var(--accent-deep);
+  }
+
+  .cp .tagbox--ok rect {
+    fill: var(--brand);
+  }
+
+  .cp .tagbox--bad rect {
+    fill: var(--danger);
+  }
+
+  .cp .lead {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+  }
+
+  .cp .leaddot {
+    fill: var(--ink);
+  }
+
+  .cp .lab,
+  .cp .labels,
+  .cp .picklabel,
+  .cp .gapmark,
+  .cp .click {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  /* ---------- gap marker ---------- */
+  .cp .gapline {
+    fill: none;
+    stroke: var(--danger);
+    stroke-width: 3.5;
+    stroke-dasharray: 9 7;
+  }
+
+  .cp .gaparrow {
+    fill: none;
+    stroke: var(--danger);
+    stroke-width: 3.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ---------- badges ---------- */
+  .cp .poweroff,
+  .cp .done {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.6);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+
+  .cp .pobg {
+    fill: var(--ink);
+  }
+
+  .cp .poicon {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 5;
+    stroke-linecap: round;
+  }
+
+  .cp .tickbg {
+    fill: var(--brand);
+  }
+
+  .cp .tick {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .cp .spark {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 5;
+    stroke-linecap: round;
+  }
+
+  /* ======================================================================
+     Step states
+     ====================================================================== */
+
+  /* 0 — the plug stops short: its slot hits the lint before the tongue */
+  :global([data-step='0']) .cp .cable {
+    transform: translate(486px, 214px);
+  }
+
+  :global([data-step='0']) .cp .gapmark {
+    opacity: 1;
+  }
+
+  /* 1 — power off, cable out of the way */
+  :global([data-step='1']) .cp .poweroff {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* 2 — look inside and identify: lint, not damage */
+  :global([data-step='2']) .cp .labels,
+  :global([data-step='2']) .cp .lab {
+    opacity: 1;
+  }
+
+  :global([data-step='2']) .cp .marker--sm,
+  :global([data-step='3']) .cp .marker--sm {
+    opacity: 1;
+  }
+
+  /* 3 — hook behind it with a wooden toothpick and drag outward */
+  :global([data-step='3']) .cp .pick {
+    opacity: 1;
+    transform: translate(566px, 292px);
+  }
+
+  :global([data-step='3']) .cp .picklabel {
+    opacity: 1;
+  }
+
+  :global([data-step='3']) .cp .lint {
+    transform: translateX(18px);
+  }
+
+  /* 4 — lint out, plug seats flush */
+  :global([data-step='4']) .cp .pick {
+    opacity: 1;
+    transform: translate(840px, 292px);
+  }
+
+  :global([data-step='4']) .cp .lint {
+    opacity: 0;
+  }
+
+  :global([data-step='4']) .cp .lintout {
+    opacity: 1;
+    transform: translate(650px, 428px) scale(1);
+  }
+
+  /* the slot slides right over the tongue */
+  :global([data-step='4']) .cp .cable {
+    transform: translate(396px, 214px);
+  }
+
+  :global([data-step='4']) .cp .click {
+    opacity: 1;
+  }
+
+  :global([data-step='4']) .cp .done {
+    opacity: 1;
+    transform: scale(1);
+  }
+</style>

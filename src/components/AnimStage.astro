@@ -1,0 +1,532 @@
+---
+/**
+ * AnimStage — the heart of Howloop.
+ *
+ * A step-driven animation player. The slotted SVG reads `data-step` off the
+ * stage element and transitions between states with plain CSS, so:
+ *   - every step is a real, addressable state (no fragile keyframe timing)
+ *   - the caption, the dots and the drawing can never fall out of sync
+ *   - it scrubs, pauses and loops for free
+ *   - with JS off or reduced motion on, it degrades to a readable step list
+ *
+ * Authoring an animation = write one SVG and a few rules like:
+ *   .stage[data-step="2"] .hand { transform: translate(20px, -8px); }
+ */
+
+interface Step {
+  title: string;
+  text: string;
+}
+
+interface Props {
+  id: string;
+  label: string;
+  steps: Step[];
+  /** ms each step is held before auto-advancing */
+  pace?: number;
+  /** SVG viewBox aspect ratio, width / height */
+  ratio?: string;
+  caption?: string;
+}
+
+const {
+  id,
+  label,
+  steps,
+  pace = 2800,
+  ratio = '16 / 10',
+  caption,
+} = Astro.props;
+---
+
+<figure
+  class="anim"
+  data-anim
+  data-pace={pace}
+  data-count={steps.length}
+  aria-labelledby={`${id}-label`}
+>
+  <div class="anim__head">
+    <p class="anim__label" id={`${id}-label`}>
+      <span class="anim__loopdot" aria-hidden="true"></span>
+      {label}
+    </p>
+    <p class="anim__counter" data-counter aria-hidden="true">
+      1<span>/{steps.length}</span>
+    </p>
+  </div>
+
+  <div
+    class="anim__stage"
+    data-stage
+    data-step="0"
+    style={`--ratio: ${ratio}`}
+    role="img"
+    aria-label={`${label}. Animated diagram; the same instructions are written out below.`}
+  >
+    <slot />
+  </div>
+
+  <div class="anim__caption" aria-live="polite">
+    {
+      steps.map((s, i) => (
+        <p class="anim__cap" data-cap={i} hidden={i !== 0}>
+          <span class="anim__capnum">Step {i + 1}</span>
+          <strong>{s.title}</strong>
+          <span class="anim__captext">{s.text}</span>
+        </p>
+      ))
+    }
+  </div>
+
+  <div class="anim__bar">
+    <button class="anim__btn" data-prev type="button">
+      <svg viewBox="0 0 20 20" aria-hidden="true"
+        ><path
+          d="M12.5 4 6.5 10l6 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path></svg
+      >
+      <span class="visually-hidden">Previous step</span>
+    </button>
+
+    <button class="anim__btn anim__btn--play" data-toggle type="button" aria-pressed="true">
+      <svg class="anim__ico-pause" viewBox="0 0 20 20" aria-hidden="true"
+        ><path
+          d="M7 4v12M13 4v12"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"></path></svg
+      >
+      <svg class="anim__ico-play" viewBox="0 0 20 20" aria-hidden="true"
+        ><path d="M6.5 4 16 10l-9.5 6z" fill="currentColor"></path></svg
+      >
+      <span class="anim__btnlabel" data-toggle-label>Pause</span>
+    </button>
+
+    <button class="anim__btn" data-next type="button">
+      <svg viewBox="0 0 20 20" aria-hidden="true"
+        ><path
+          d="M7.5 4l6 6-6 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path></svg
+      >
+      <span class="visually-hidden">Next step</span>
+    </button>
+
+    <ol class="anim__steps">
+      {
+        steps.map((s, i) => (
+          <li>
+            <button
+              type="button"
+              data-goto={i}
+              class="anim__step"
+              title={`Step ${i + 1} — ${s.title}`}
+              aria-current={i === 0 ? 'step' : undefined}
+            >
+              <span aria-hidden="true">{i + 1}</span>
+              <span class="visually-hidden">
+                Step {i + 1}: {s.title}
+              </span>
+            </button>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+
+  {caption && <figcaption class="anim__note">{caption}</figcaption>}
+</figure>
+
+<style>
+  .anim {
+    margin: 2rem 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+
+  .anim__head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1.1rem;
+    border-bottom: 1px solid var(--line-soft);
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--brand-tint) 55%, var(--surface)),
+      var(--surface)
+    );
+  }
+
+  .anim__label {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--step--1);
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  .anim__loopdot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--brand);
+    flex: none;
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--brand) 55%, transparent);
+    animation: loopdot 2.4s ease-out infinite;
+  }
+
+  @keyframes loopdot {
+    0% {
+      box-shadow: 0 0 0 0 color-mix(in srgb, var(--brand) 45%, transparent);
+    }
+    70%,
+    100% {
+      box-shadow: 0 0 0 8px transparent;
+    }
+  }
+
+  .anim__counter {
+    margin: 0 0 0 auto;
+    font-family: var(--font-mono);
+    font-size: var(--step--1);
+    color: var(--ink-3);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .anim__counter span {
+    opacity: 0.65;
+  }
+
+  .anim__stage {
+    aspect-ratio: var(--ratio);
+    background:
+      radial-gradient(
+        circle at 1px 1px,
+        color-mix(in srgb, var(--ink) 9%, transparent) 1px,
+        transparent 0
+      )
+      0 0 / 22px 22px,
+      var(--paper);
+    display: grid;
+    place-items: center;
+    padding: 0.5rem;
+  }
+
+  .anim__stage :global(svg) {
+    width: 100%;
+    height: 100%;
+  }
+
+  .anim__caption {
+    padding: 1rem 1.1rem 0.2rem;
+    min-height: 5.4rem;
+  }
+
+  .anim__cap {
+    display: grid;
+    gap: 0.15rem;
+    margin: 0;
+    animation: capin 0.35s ease both;
+  }
+
+  /* `display: grid` above outranks the UA rule for [hidden], so restate it. */
+  .anim__cap[hidden] {
+    display: none;
+  }
+
+  @keyframes capin {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+  }
+
+  .anim__capnum {
+    font-family: var(--font-display);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+  }
+
+  .anim__cap strong {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  .anim__captext {
+    color: var(--ink-2);
+    font-size: var(--step--1);
+    line-height: 1.6;
+  }
+
+  .anim__bar {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.85rem 1.1rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .anim__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    height: 2.35rem;
+    padding-inline: 0.6rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-2);
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .anim__btn:hover {
+    background: var(--paper-deep);
+    color: var(--ink);
+    border-color: var(--ink-3);
+  }
+
+  .anim__btn svg {
+    width: 1.15rem;
+    height: 1.15rem;
+    flex: none;
+  }
+
+  .anim__btn--play {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper);
+    padding-inline: 0.85rem 1rem;
+  }
+
+  .anim__btn--play:hover {
+    background: var(--brand-deep);
+    border-color: var(--brand-deep);
+    color: #fff;
+  }
+
+  .anim__btnlabel {
+    font-family: var(--font-display);
+    font-size: var(--step--1);
+    font-weight: 600;
+  }
+
+  .anim__ico-play {
+    display: none;
+  }
+
+  .anim[data-playing='false'] .anim__ico-play {
+    display: block;
+  }
+
+  .anim[data-playing='false'] .anim__ico-pause {
+    display: none;
+  }
+
+  /* Numbered step buttons — click any one to jump straight to that scene. */
+  .anim__steps {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    list-style: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .anim__step {
+    display: grid;
+    place-items: center;
+    min-width: 2.15rem;
+    height: 2.15rem;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--ink-3);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--step--1);
+    font-variant-numeric: tabular-nums;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, border-color 0.18s,
+      transform 0.18s;
+  }
+
+  .anim__step:hover {
+    background: var(--paper-deep);
+    border-color: var(--ink-3);
+    color: var(--ink);
+    transform: translateY(-1px);
+  }
+
+  .anim__step[aria-current='step'] {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+  }
+
+  @media (max-width: 30rem) {
+    .anim__steps {
+      margin-inline-start: 0;
+      width: 100%;
+      justify-content: flex-start;
+      padding-block-start: 0.2rem;
+    }
+  }
+
+  .anim__note {
+    padding: 0 1.1rem 1.1rem;
+    font-size: var(--step--1);
+    color: var(--ink-3);
+    border-top: 1px solid var(--line-soft);
+    padding-top: 0.85rem;
+  }
+
+</style>
+
+<script>
+  type Stage = HTMLElement;
+
+  function initStage(root: HTMLElement) {
+    const stage = root.querySelector<Stage>('[data-stage]');
+    const caps = Array.from(
+      root.querySelectorAll<HTMLElement>('[data-cap]')
+    );
+    const dots = Array.from(root.querySelectorAll<HTMLElement>('[data-goto]'));
+    const counter = root.querySelector<HTMLElement>('[data-counter]');
+    const toggle = root.querySelector<HTMLButtonElement>('[data-toggle]');
+    const toggleLabel = root.querySelector<HTMLElement>('[data-toggle-label]');
+    const prev = root.querySelector<HTMLButtonElement>('[data-prev]');
+    const next = root.querySelector<HTMLButtonElement>('[data-next]');
+
+    if (!stage || caps.length === 0) return;
+
+    const count = caps.length;
+    const pace = Number(root.dataset.pace || 2800);
+    const reduced = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    ).matches;
+
+    let index = 0;
+    let timer: number | undefined;
+    let playing = !reduced;
+    let seen = false;
+
+    root.setAttribute('data-ready', '');
+
+    function render() {
+      stage!.dataset.step = String(index);
+      caps.forEach((c, i) => {
+        c.hidden = i !== index;
+        if (i === index) {
+          // restart the little entrance animation
+          c.style.animation = 'none';
+          void c.offsetWidth;
+          c.style.animation = '';
+        }
+      });
+      dots.forEach((d, i) => {
+        if (i === index) d.setAttribute('aria-current', 'step');
+        else d.removeAttribute('aria-current');
+      });
+      if (counter) {
+        counter.innerHTML = `${index + 1}<span>/${count}</span>`;
+      }
+    }
+
+    function stop() {
+      if (timer) window.clearInterval(timer);
+      timer = undefined;
+    }
+
+    function start() {
+      stop();
+      timer = window.setInterval(() => {
+        index = (index + 1) % count;
+        render();
+      }, pace);
+    }
+
+    function setPlaying(v: boolean) {
+      playing = v;
+      root.dataset.playing = String(v);
+      toggle?.setAttribute('aria-pressed', String(v));
+      if (toggleLabel) toggleLabel.textContent = v ? 'Pause' : 'Play';
+      if (v) start();
+      else stop();
+    }
+
+    function goto(i: number, pause = true) {
+      index = ((i % count) + count) % count;
+      render();
+      if (pause) setPlaying(false);
+      else if (playing) start();
+    }
+
+    toggle?.addEventListener('click', () => setPlaying(!playing));
+    prev?.addEventListener('click', () => goto(index - 1));
+    next?.addEventListener('click', () => goto(index + 1));
+    dots.forEach((d, i) => d.addEventListener('click', () => goto(i)));
+
+    // Keyboard scrubbing when the player has focus.
+    root.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        goto(index - 1);
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        goto(index + 1);
+      }
+    });
+
+    render();
+    setPlaying(false);
+
+    // Only run while on screen — no wasted frames, no surprise motion.
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            if (!seen && !reduced) {
+              seen = true;
+              setPlaying(true);
+            } else if (playing) {
+              start();
+            }
+          } else {
+            stop();
+          }
+        }
+      },
+      { threshold: 0.35 }
+    );
+    io.observe(root);
+  }
+
+  document
+    .querySelectorAll<HTMLElement>('[data-anim]')
+    .forEach((el) => initStage(el));
+</script>

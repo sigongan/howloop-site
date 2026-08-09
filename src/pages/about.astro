@@ -1,0 +1,97 @@
+---
+import Prose from '../layouts/Prose.astro';
+import { SITE } from '../consts';
+---
+
+<Prose
+  title="About Howloop"
+  description="Why Howloop exists, who makes it, and how the animated guides are put together."
+  lede="Howloop turns ordinary how-to instructions into short looping animations, because most of the confusing part of a repair is the part you can't see."
+>
+  <h2>The problem we kept running into</h2>
+  <p>
+    A slow bathroom drain is not a hard problem. Neither is a toilet that runs
+    all night, or a phone that says it has no storage left. They are all
+    problems where the fix takes ten minutes and the <em>understanding</em> takes
+    an hour — because the thing you need to see is hidden inside a pipe, inside
+    a tank, or inside a menu six levels deep.
+  </p>
+  <p>
+    So you search. You get a wall of text with no pictures, or a fourteen-minute
+    video where the actual fix starts at 8:40, or a photo of someone's hand
+    holding a tool at an angle that tells you nothing. None of it shows you the
+    one thing you needed: what is happening on the other side of the wall.
+  </p>
+
+  <h2>What we do instead</h2>
+  <p>
+    Every guide on {SITE.name} is built around a short animation that cuts the
+    object open. You see the clog sitting in the tailpiece. You see the flapper
+    not quite sealing. You see where the paper template goes before the nail
+    does. Then you get the same instructions in writing, in the same order, so
+    you can print them or read them one-handed while the other hand is busy.
+  </p>
+  <p>The animations are deliberately plain:</p>
+  <ul>
+    <li>
+      <strong>Every step is a state you can stop on.</strong> Nothing loops past
+      you at a speed set by someone else. Pause, go back, sit on step three for
+      as long as you need.
+    </li>
+    <li>
+      <strong>Colour means something.</strong> Green is the correct path and the
+      direction things should move. Orange is the part you actually touch.
+      Everything else is context.
+    </li>
+    <li>
+      <strong>They are drawings, not footage.</strong> A drawing can remove the
+      cabinet door, the wall and the plastic housing. A camera can't.
+    </li>
+  </ul>
+
+  <h2>How a guide gets made</h2>
+  <ol>
+    <li>
+      We pick a problem that recurs — something a normal household hits more than
+      once, not a one-off exotic repair.
+    </li>
+    <li>
+      We work out the actual mechanism: <em>why</em> the thing fails, not just
+      what to do about it. If we can't explain the cause in one sentence, the
+      guide isn't ready.
+    </li>
+    <li>
+      We storyboard the fix as four to six states. If it needs more than six,
+      the guide is really two guides.
+    </li>
+    <li>
+      We draw it, write the steps to match exactly, and add the honest caveats:
+      when this won't work, and when to stop and call someone.
+    </li>
+  </ol>
+  <p>
+    Full detail on sourcing, corrections and review is in our
+    <a href="/editorial-policy">editorial policy</a>.
+  </p>
+
+  <h2>What we won't do</h2>
+  <p>
+    We don't publish guides for anything where a mistake is dangerous and
+    invisible — gas work, mains electrical work, structural work, or anything
+    medical beyond ordinary first aid. When a job crosses that line, the guide
+    says so and stops. A page view is not worth a house fire.
+  </p>
+
+  <h2>Who's behind it</h2>
+  <p>
+    {SITE.name} is a small independent site. It is funded by advertising, which
+    is why you'll see clearly labelled ad slots between sections. Ads never
+    influence which guides we make or what they say — see our
+    <a href="/editorial-policy">editorial policy</a> for how we keep that line
+    clean.
+  </p>
+  <p>
+    Found a mistake, or fixed something in a smarter way than we showed? We'd
+    honestly like to know: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+  </p>
+</Prose>

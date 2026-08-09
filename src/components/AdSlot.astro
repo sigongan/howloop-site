@@ -1,0 +1,59 @@
+---
+/**
+ * A reserved, labelled ad slot.
+ *
+ * Renders nothing at all until `adsensePublisherId` is filled in, so the
+ * pre-approval site stays clean. The reserved height prevents layout shift,
+ * and the label keeps you on the right side of AdSense's "clearly
+ * distinguishable from content" rule.
+ */
+import { SITE } from '../consts';
+
+interface Props {
+  slot?: string;
+  layout?: 'in-article' | 'display';
+  class?: string;
+}
+
+const { slot = '', layout = 'display', class: cls = '' } = Astro.props;
+const enabled = Boolean(SITE.adsensePublisherId);
+---
+
+{
+  enabled && (
+    <aside class:list={['adslot', `adslot--${layout}`, cls]} aria-label="Advertisement">
+      <p class="adslot__label">Advertisement</p>
+      <ins
+        class="adsbygoogle"
+        style="display:block"
+        data-ad-client={SITE.adsensePublisherId}
+        data-ad-slot={slot}
+        data-ad-format={layout === 'in-article' ? 'fluid' : 'auto'}
+        data-ad-layout={layout === 'in-article' ? 'in-article' : undefined}
+        data-full-width-responsive="true"
+      />
+      <script is:inline>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </aside>
+  )
+}
+
+<style>
+  .adslot {
+    margin-block: 2.5rem;
+    padding: 0.75rem;
+    border: 1px dashed var(--line);
+    border-radius: var(--radius);
+    background: color-mix(in srgb, var(--paper-deep) 55%, transparent);
+    min-height: 8rem;
+  }
+
+  .adslot__label {
+    margin: 0 0 0.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+</style>
