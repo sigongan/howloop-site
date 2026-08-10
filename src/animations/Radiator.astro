@@ -1,115 +1,209 @@
 ---
-/* Cutaway of a panel radiator: trapped air at the top, bleed valve, water. */
+/*
+ * Bleeding a radiator — high-fidelity vector.
+ *
+ * Painted steel panel in section. Trapped air sits at the top because that is
+ * where air always goes; the bleed valve is the only way out.
+ */
 ---
 
 <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="rd">
-  <!-- wall + radiator shell -->
-  <path class="ln wall" d="M60 430 H740" />
-  <rect class="shell" x="150" y="110" width="480" height="290" rx="14" />
+  <defs>
+    <linearGradient id="rdSteel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="0.12" stop-color="#f0f2f4" />
+      <stop offset="0.6" stop-color="#e2e6e9" />
+      <stop offset="1" stop-color="#cdd2d7" />
+    </linearGradient>
 
-  <!-- fins -->
-  <g class="fins">
-    <path d="M210 130 V380" /><path d="M270 130 V380" />
-    <path d="M330 130 V380" /><path d="M390 130 V380" />
-    <path d="M450 130 V380" /><path d="M510 130 V380" />
-    <path d="M570 130 V380" />
+    <linearGradient id="rdWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8ed6c3" stop-opacity="0.8" />
+      <stop offset="1" stop-color="#31967b" stop-opacity="0.55" />
+    </linearGradient>
+
+    <linearGradient id="rdKey" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffa95c" />
+      <stop offset="0.45" stop-color="#ee6c1e" />
+      <stop offset="1" stop-color="#a94709" />
+    </linearGradient>
+
+    <linearGradient id="rdChrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7d858f" />
+      <stop offset="0.2" stop-color="#eef1f4" />
+      <stop offset="0.55" stop-color="#aab2ba" />
+      <stop offset="1" stop-color="#6d747d" />
+    </linearGradient>
+
+    <filter id="rdShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#14171c" flood-opacity="0.2" />
+    </filter>
+    <filter id="rdShadowSm" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#14171c" flood-opacity="0.28" />
+    </filter>
+
+    <clipPath id="rdPanelClip">
+      <rect x="152" y="112" width="476" height="286" rx="12" />
+    </clipPath>
+  </defs>
+
+  <!-- wall and floor -->
+  <path class="wall" d="M60 430 H740" />
+
+  <!-- radiator panel -->
+  <g filter="url(#rdShadow)">
+    <rect class="panel" x="150" y="110" width="480" height="290" rx="14" />
   </g>
 
-  <!-- water inside, rising as air leaves -->
-  <g class="waterwrap">
-    <rect class="water" x="158" y="0" width="464" height="284" />
+  <g clip-path="url(#rdPanelClip)">
+    <!-- water inside -->
+    <g class="waterwrap">
+      <rect class="water" x="152" y="0" width="476" height="290" />
+      <path class="waterline" d="M152 0 H628" />
+    </g>
+
+    <!-- trapped air -->
+    <g class="air">
+      <rect class="airfill" x="152" y="112" width="476" height="98" />
+    </g>
+
+    <!-- convector fins, seen through the cut -->
+    <g class="fins">
+      <path d="M210 124 V386" /><path d="M270 124 V386" /><path d="M330 124 V386" />
+      <path d="M390 124 V386" /><path d="M450 124 V386" /><path d="M510 124 V386" />
+      <path d="M570 124 V386" />
+    </g>
   </g>
 
-  <!-- trapped air pocket -->
-  <g class="air">
-    <rect class="airfill" x="158" y="118" width="464" height="96" rx="6" />
-    <text class="tag" x="330" y="172">trapped air</text>
-  </g>
+  <rect class="panelline" x="150" y="110" width="480" height="290" rx="14" />
 
-  <!-- legs / pipes -->
-  <path class="ln" d="M200 400 V430" />
-  <path class="ln" d="M580 400 V430" />
+  <!-- pipes -->
+  <g filter="url(#rdShadowSm)">
+    <path class="pipe" d="M200 400 V430" />
+    <path class="pipe" d="M580 400 V430" />
+  </g>
 
   <!-- bleed valve, top right -->
   <g class="valve">
-    <rect class="valvebody" x="622" y="128" width="30" height="30" rx="5" />
-    <path class="ln thin" d="M652 143 H676" />
+    <rect class="valvebody" x="620" y="126" width="32" height="32" rx="6" />
+    <rect class="valvesq" x="628" y="134" width="16" height="16" rx="3" />
   </g>
 
   <!-- the key -->
   <g class="key">
-    <rect class="keyhead" x="0" y="0" width="30" height="30" rx="5" />
-    <rect class="keyshaft" x="28" y="9" width="52" height="12" rx="6" />
-    <path class="turnarrow" d="M14 -18 A 26 26 0 0 0 -14 4" />
+    <g filter="url(#rdShadowSm)">
+      <rect class="keyhead" x="0" y="0" width="32" height="32" rx="6" />
+      <rect class="keyshaft" x="30" y="10" width="56" height="12" rx="6" />
+    </g>
+    <path class="turnarrow" d="M16 -20 A 28 28 0 0 0 -14 4" />
     <path class="turnarrow" d="M-20 -4 l6 10 l10 -6" />
   </g>
 
-  <!-- cloth under the valve -->
-  <path class="cloth" d="M600 190 h96 l-14 44 h-68 Z" />
+  <!-- cloth -->
+  <path class="cloth" d="M596 194 h104 l-16 48 h-72 Z" />
 
   <!-- escaping air -->
   <g class="hiss">
-    <path class="hissline" d="M660 138 H720" />
-    <path class="hissline h2" d="M660 150 H706" />
-    <path class="hissline h3" d="M660 128 H700" />
+    <path class="hissline" d="M658 136 H722" />
+    <path class="hissline h2" d="M658 148 H708" />
+    <path class="hissline h3" d="M658 126 H702" />
   </g>
 
-  <!-- the dribble that tells you to stop -->
+  <!-- the dribble that means stop -->
   <g class="drip">
-    <circle cx="668" cy="160" r="6" />
-    <circle cx="668" cy="182" r="5" />
+    <circle cx="666" cy="162" r="6" />
+    <circle cx="666" cy="184" r="5" />
   </g>
 
-  <!-- cold top / hot bottom markers -->
+  <!-- cold / hot -->
   <g class="temp">
     <g class="cold">
-      <circle cx="110" cy="170" r="22" />
-      <text x="110" y="177" text-anchor="middle">cold</text>
+      <circle cx="104" cy="168" r="26" />
+      <text x="104" y="175" text-anchor="middle">cold</text>
     </g>
     <g class="hot">
-      <circle cx="110" cy="340" r="22" />
-      <text x="110" y="347" text-anchor="middle">hot</text>
+      <circle cx="104" cy="344" r="26" />
+      <text x="104" y="351" text-anchor="middle">hot</text>
     </g>
   </g>
 
   <!-- boiler pressure gauge -->
   <g class="gauge">
-    <circle class="gaugebg" cx="706" cy="360" r="46" />
-    <path class="gaugearc" d="M676 382 A 38 38 0 1 1 736 382" />
-    <path class="needle" d="M706 360 L688 336" />
-    <circle class="hub" cx="706" cy="360" r="6" />
-    <text class="tag mid" x="706" y="424">boiler pressure</text>
+    <g filter="url(#rdShadowSm)">
+      <circle class="gaugebg" cx="700" cy="356" r="48" />
+    </g>
+    <path class="gaugearc" d="M668 380 A 40 40 0 1 1 732 380" />
+    <path class="gaugeband" d="M686 372 A 40 40 0 0 1 714 372" />
+    <path class="needle" d="M700 356 L680 330" />
+    <circle class="hub" cx="700" cy="356" r="6" />
+  </g>
+
+  <!-- callouts -->
+  <g class="labels">
+    <g class="lab lab--air">
+      <path class="lead" d="M390 160 L390 92" />
+      <circle class="leaddot" cx="390" cy="160" r="4.5" />
+      <g class="tagbox tagbox--warn">
+        <rect x="300" y="60" width="180" height="32" rx="16" />
+        <text x="390" y="81">trapped air</text>
+      </g>
+    </g>
+    <g class="lab lab--valve">
+      <path class="lead" d="M636 158 L700 216" />
+      <circle class="leaddot" cx="636" cy="158" r="4.5" />
+      <g class="tagbox">
+        <rect x="620" y="216" width="168" height="32" rx="16" />
+        <text x="704" y="237">bleed valve</text>
+      </g>
+      <circle class="marker marker--sm" cx="636" cy="142" r="42" />
+    </g>
+  </g>
+
+  <g class="cooltag">
+    <g class="tagbox tagbox--bad">
+      <rect x="30" y="60" width="252" height="32" rx="16" />
+      <text x="156" y="81">heating off, let it cool</text>
+    </g>
+  </g>
+
+  <g class="stoptag">
+    <g class="tagbox tagbox--bad">
+      <rect x="30" y="60" width="272" height="32" rx="16" />
+      <text x="166" y="81">water appears — close it</text>
+    </g>
+  </g>
+
+  <g class="pressuretag">
+    <g class="tagbox tagbox--ok">
+      <rect x="30" y="60" width="284" height="32" rx="16" />
+      <text x="172" y="81">top the boiler back up</text>
+    </g>
   </g>
 
   <g class="done">
-    <circle class="tickbg" cx="110" cy="90" r="32" />
-    <path class="tick" d="M95 90 l10 11 l20 -23" />
+    <circle class="tickbg" cx="104" cy="256" r="34" />
+    <path class="tick" d="M88 256 l11 12 l21 -25" />
   </g>
 </svg>
 
 <style>
   .rd {
-    --dur: 0.7s;
+    --dur: 0.65s;
     --ease: cubic-bezier(0.65, 0, 0.35, 1);
   }
 
-  .rd .ln {
+  .rd .wall {
     fill: none;
     stroke: var(--ink);
-    stroke-width: 5;
+    stroke-width: 6;
     stroke-linecap: round;
   }
 
-  .rd .thin {
-    stroke-width: 4;
+  .rd .panel {
+    fill: url(#rdSteel);
   }
 
-  .rd .wall {
-    stroke-width: 6;
-  }
-
-  .rd .shell {
-    fill: var(--paper-deep);
+  .rd .panelline {
+    fill: none;
     stroke: var(--ink);
     stroke-width: 5;
   }
@@ -118,60 +212,69 @@
     fill: none;
     stroke: var(--ink);
     stroke-width: 2.5;
-    opacity: 0.28;
+    opacity: 0.16;
   }
 
-  .rd .tag {
-    font-family: var(--font-mono);
-    font-size: 17px;
-    fill: var(--ink-3);
+  .rd .pipe {
+    fill: none;
+    stroke: url(#rdChrome);
+    stroke-width: 11;
+    stroke-linecap: round;
   }
 
-  .rd .mid {
-    text-anchor: middle;
-  }
-
-  /* --- water / air -------------------------------------------------------- */
+  /* ---------- water / air ---------- */
   .rd .waterwrap {
-    transform: translateY(214px);
+    transform: translateY(210px);
     transition: transform 1s var(--ease);
   }
 
   .rd .water {
-    fill: color-mix(in srgb, var(--brand) 22%, transparent);
+    fill: url(#rdWater);
+  }
+
+  .rd .waterline {
+    fill: none;
+    stroke: #2f9c80;
+    stroke-width: 4;
   }
 
   .rd .air {
-    opacity: 1;
     transition: opacity var(--dur) var(--ease);
   }
 
   .rd .airfill {
-    fill: color-mix(in srgb, var(--ink) 8%, transparent);
+    fill: #ffffff;
     stroke: var(--ink-3);
     stroke-width: 2.5;
-    stroke-dasharray: 8 7;
+    stroke-dasharray: 9 8;
+    opacity: 0.85;
   }
 
-  /* --- valve + key -------------------------------------------------------- */
+  /* ---------- valve + key ---------- */
   .rd .valvebody {
-    fill: var(--ink);
+    fill: url(#rdChrome);
+    stroke: #5f666e;
+    stroke-width: 2;
+  }
+
+  .rd .valvesq {
+    fill: #4a5158;
   }
 
   .rd .key {
-    transform: translate(700px, 128px);
+    transform: translate(700px, 126px);
     opacity: 0;
     transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
   }
 
   .rd .keyhead,
   .rd .keyshaft {
-    fill: var(--accent);
+    fill: url(#rdKey);
   }
 
   .rd .turnarrow {
     fill: none;
-    stroke: var(--accent-deep);
+    stroke: #a94709;
     stroke-width: 4;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -180,14 +283,14 @@
   }
 
   .rd .cloth {
-    fill: color-mix(in srgb, var(--brand) 18%, var(--paper));
-    stroke: var(--brand);
+    fill: #e8f4ef;
+    stroke: #2f9c80;
     stroke-width: 2.5;
     opacity: 0;
     transition: opacity var(--dur) var(--ease);
   }
 
-  /* --- hiss / drip -------------------------------------------------------- */
+  /* ---------- hiss / drip ---------- */
   .rd .hiss,
   .rd .drip {
     opacity: 0;
@@ -219,7 +322,7 @@
   }
 
   .rd .drip circle {
-    fill: var(--brand);
+    fill: #37a086;
     animation: rd-drip 1.4s ease-in infinite;
   }
 
@@ -236,20 +339,20 @@
       opacity: 1;
     }
     100% {
-      transform: translateY(46px);
+      transform: translateY(48px);
       opacity: 0;
     }
   }
 
-  /* --- temperature markers ------------------------------------------------ */
+  /* ---------- temperature ---------- */
   .rd .temp {
     opacity: 0;
     transition: opacity var(--dur) var(--ease);
   }
 
   .rd .cold circle {
-    fill: var(--surface);
-    stroke: var(--ink-3);
+    fill: #eef4f8;
+    stroke: #7f9bb0;
     stroke-width: 3;
   }
 
@@ -262,31 +365,38 @@
   .rd .temp text {
     font-family: var(--font-display);
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     fill: var(--ink-2);
   }
 
-  /* --- gauge -------------------------------------------------------------- */
+  /* ---------- gauge ---------- */
   .rd .gauge {
     opacity: 0;
     transition: opacity var(--dur) var(--ease);
   }
 
   .rd .gaugebg {
-    fill: var(--surface);
-    stroke: var(--line);
+    fill: #ffffff;
+    stroke: var(--ink);
     stroke-width: 3;
   }
 
   .rd .gaugearc {
     fill: none;
-    stroke: var(--brand-tint-2);
-    stroke-width: 7;
+    stroke: #dfe3e7;
+    stroke-width: 8;
+    stroke-linecap: round;
+  }
+
+  .rd .gaugeband {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 8;
     stroke-linecap: round;
   }
 
   .rd .needle {
-    stroke: var(--accent);
+    stroke: var(--danger);
     stroke-width: 5;
     stroke-linecap: round;
     fill: none;
@@ -297,6 +407,70 @@
 
   .rd .hub {
     fill: var(--ink);
+  }
+
+  /* ---------- callouts ---------- */
+  .rd .marker {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 4;
+    stroke-dasharray: 10 9;
+    animation: rd-spin 16s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .rd .marker--sm {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  @keyframes rd-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .rd .tagbox rect {
+    fill: var(--ink);
+  }
+
+  .rd .tagbox text {
+    fill: #fff;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 600;
+    text-anchor: middle;
+  }
+
+  .rd .tagbox--warn rect {
+    fill: var(--accent-deep);
+  }
+  .rd .tagbox--bad rect {
+    fill: var(--danger);
+  }
+  .rd .tagbox--ok rect {
+    fill: var(--brand);
+  }
+
+  .rd .lead {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+  }
+
+  .rd .leaddot {
+    fill: var(--ink);
+  }
+
+  .rd .labels,
+  .rd .lab,
+  .rd .cooltag,
+  .rd .stoptag,
+  .rd .pressuretag {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
   }
 
   .rd .done {
@@ -323,12 +497,21 @@
      Step states
      ====================================================================== */
 
-  /* 0 — the symptom: cold at the top, hot at the bottom */
+  /* 0 — cold at the top, hot at the bottom: that is air, not sludge */
   :global([data-step='0']) .rd .temp {
     opacity: 1;
   }
 
-  /* 1 — heating off, radiator cool, cloth ready */
+  :global([data-step='0']) .rd .labels,
+  :global([data-step='0']) .rd .lab--air {
+    opacity: 1;
+  }
+
+  /* 1 — heating off, cooled, cloth and key ready */
+  :global([data-step='1']) .rd .cooltag {
+    opacity: 1;
+  }
+
   :global([data-step='1']) .rd .cloth,
   :global([data-step='2']) .rd .cloth,
   :global([data-step='3']) .rd .cloth,
@@ -340,34 +523,41 @@
   :global([data-step='2']) .rd .key,
   :global([data-step='3']) .rd .key {
     opacity: 1;
-    transform: translate(622px, 128px);
+    transform: translate(620px, 126px);
   }
 
-  /* 2 — turn the key slowly anticlockwise; air hisses out */
-  :global([data-step='2']) .rd .hiss {
+  :global([data-step='1']) .rd .labels,
+  :global([data-step='1']) .rd .lab--valve {
     opacity: 1;
   }
 
+  :global([data-step='1']) .rd .marker--sm {
+    opacity: 1;
+  }
+
+  /* 2 — quarter turn anticlockwise; air hisses out and water rises */
+  :global([data-step='2']) .rd .hiss,
   :global([data-step='2']) .rd .turnarrow {
     opacity: 1;
   }
 
   :global([data-step='2']) .rd .waterwrap {
-    transform: translateY(160px);
+    transform: translateY(158px);
   }
 
   :global([data-step='2']) .rd .airfill {
     opacity: 0.5;
   }
 
-  /* 3 — water dribbles: close it immediately */
-  :global([data-step='3']) .rd .drip {
+  /* 3 — water dribbles: close it now */
+  :global([data-step='3']) .rd .drip,
+  :global([data-step='3']) .rd .stoptag {
     opacity: 1;
   }
 
   :global([data-step='3']) .rd .waterwrap,
   :global([data-step='4']) .rd .waterwrap {
-    transform: translateY(118px);
+    transform: translateY(112px);
   }
 
   :global([data-step='3']) .rd .air,
@@ -375,13 +565,14 @@
     opacity: 0;
   }
 
-  /* 4 — top the boiler pressure back up */
+  /* 4 — the step everyone forgets: boiler pressure */
   :global([data-step='4']) .rd .key {
     opacity: 0;
-    transform: translate(700px, 128px);
+    transform: translate(700px, 126px);
   }
 
-  :global([data-step='4']) .rd .gauge {
+  :global([data-step='4']) .rd .gauge,
+  :global([data-step='4']) .rd .pressuretag {
     opacity: 1;
   }
 

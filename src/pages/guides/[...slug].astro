@@ -30,6 +30,21 @@ const fmt = (date: Date) =>
     year: 'numeric',
   });
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Guides', item: `${SITE.url}/guides` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: topic.label,
+      item: `${SITE.url}/topics/${topic.id}`,
+    },
+    { '@type': 'ListItem', position: 3, name: d.title },
+  ],
+};
+
 const howToLd = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
@@ -39,6 +54,7 @@ const howToLd = {
   estimatedCost: d.cost,
   datePublished: d.published.toISOString(),
   dateModified: (d.updated ?? d.published).toISOString(),
+  author: { '@type': 'Organization', name: SITE.author, url: SITE.url },
   publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   supply: d.tools.map((t) => ({ '@type': 'HowToSupply', name: t })),
   step: d.steps.map((s, i) => ({
@@ -69,7 +85,7 @@ const howToLd = {
   type="article"
   publishedTime={d.published}
   modifiedTime={d.updated ?? d.published}
-  jsonLd={howToLd}
+  jsonLd={[howToLd, breadcrumbLd]}
 >
   <article class="guide">
     <header class="guide__head">
@@ -112,6 +128,23 @@ const howToLd = {
             </p>
           )
         }
+
+        <p class="trustbar">
+          <span class="trustbar__who">
+            Researched, illustrated and safety-checked by the {SITE.name}
+            editorial team
+          </span>
+          <span aria-hidden="true">·</span>
+          <span>Published {fmt(d.published)}</span>
+          {d.updated && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>Last reviewed {fmt(d.updated)}</span>
+            </>
+          )}
+          <span aria-hidden="true">·</span>
+          <a href="/editorial-policy">How we make guides</a>
+        </p>
       </div>
     </header>
 
@@ -277,6 +310,28 @@ const howToLd = {
     font-weight: 600;
     color: var(--ink-2);
     margin-inline-end: 0.2rem;
+  }
+
+  /* Who checked this, and when — surfaced rather than buried in the footer. */
+  .trustbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block-start: 1.4rem;
+    padding-block-start: 1.1rem;
+    border-top: 1px solid var(--line);
+    font-size: var(--step--1);
+    color: var(--ink-3);
+  }
+
+  .trustbar__who {
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+
+  .trustbar a {
+    color: var(--brand-deep);
   }
 
   /* --- body -------------------------------------------------------------- */

@@ -1,90 +1,198 @@
 ---
-/* Kettle in section: limescale on the element, and what dissolves it. */
+/*
+ * Descaling a kettle — high-fidelity vector.
+ *
+ * Brushed stainless in section. The crust on the element gets a rough edge
+ * because limescale is rock, not dirt — that distinction is the whole guide.
+ */
 ---
 
 <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="kt">
+  <defs>
+    <linearGradient id="ktSteel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7f878f" />
+      <stop offset="0.12" stop-color="#e9edf0" />
+      <stop offset="0.34" stop-color="#c3cad0" />
+      <stop offset="0.58" stop-color="#9aa2aa" />
+      <stop offset="0.82" stop-color="#dfe4e8" />
+      <stop offset="1" stop-color="#727a82" />
+    </linearGradient>
+
+    <linearGradient id="ktSteelDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3f464d" />
+      <stop offset="0.3" stop-color="#6b737b" />
+      <stop offset="0.7" stop-color="#4a525a" />
+      <stop offset="1" stop-color="#2c3238" />
+    </linearGradient>
+
+    <linearGradient id="ktScale" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3e7cf" />
+      <stop offset="0.5" stop-color="#dcc9a3" />
+      <stop offset="1" stop-color="#b99f74" />
+    </linearGradient>
+
+    <linearGradient id="ktWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9adcca" stop-opacity="0.7" />
+      <stop offset="1" stop-color="#37a086" stop-opacity="0.45" />
+    </linearGradient>
+
+    <linearGradient id="ktVinegar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd79a" stop-opacity="0.7" />
+      <stop offset="1" stop-color="#e0a24a" stop-opacity="0.5" />
+    </linearGradient>
+
+    <filter id="ktShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#14171c" flood-opacity="0.2" />
+    </filter>
+    <filter id="ktShadowSm" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#14171c" flood-opacity="0.28" />
+    </filter>
+    <filter id="ktRough" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="3" seed="11" result="n" />
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+
+    <clipPath id="ktBodyClip">
+      <path d="M252 132 C 246 202, 242 322, 254 400 C 258 424, 274 436, 302 436 H478 C 506 436, 522 424, 526 400 C 538 322, 534 202, 528 132 Z" />
+    </clipPath>
+  </defs>
+
   <!-- kettle body -->
-  <path
-    class="body"
-    d="M250 130 C 244 200, 240 320, 252 400 C 256 424, 272 436, 300 436 H480 C 508 436, 524 424, 528 400 C 540 320, 536 200, 530 130 Z"
-  />
-  <path class="lid" d="M240 130 H540" />
-  <rect class="lidknob" x="368" y="98" width="44" height="32" rx="10" />
-
-  <!-- spout -->
-  <path class="spout" d="M250 168 L188 130 L182 176 L246 214" />
-
-  <!-- handle -->
-  <path class="handle" d="M536 168 C 610 176, 616 340, 538 372" />
-
-  <!-- base + element -->
-  <rect class="base" x="262" y="396" width="256" height="26" rx="8" />
-
-  <!-- liquid -->
-  <g class="liquidwrap">
+  <g filter="url(#ktShadow)">
     <path
-      class="liquid"
-      d="M252 200 C 246 300, 248 360, 254 396 H526 C 532 360, 534 300, 528 200 Z"
+      class="body"
+      d="M252 132 C 246 202, 242 322, 254 400 C 258 424, 274 436, 302 436 H478 C 506 436, 522 424, 526 400 C 538 322, 534 202, 528 132 Z"
     />
   </g>
 
-  <!-- limescale crust -->
-  <g class="scale">
-    <path class="crust" d="M266 396 q 18 -20 36 0 q 18 -18 36 0 q 20 -22 40 0 q 18 -16 36 0 q 20 -20 40 0 q 16 -14 32 0 v 12 H266 Z" />
-    <path class="fleck f1" d="M300 340 q 10 -12 20 0 q -10 10 -20 0 Z" />
-    <path class="fleck f2" d="M446 312 q 12 -14 24 0 q -12 12 -24 0 Z" />
-    <path class="fleck f3" d="M362 268 q 9 -11 18 0 q -9 9 -18 0 Z" />
+  <!-- spout and handle -->
+  <path class="spout" d="M252 168 L188 128 L182 176 L248 216" />
+  <path class="handle" d="M534 168 C 610 178, 616 340, 536 372" />
+
+  <!-- contents -->
+  <g clip-path="url(#ktBodyClip)">
+    <g class="liquidwrap">
+      <rect class="liquid liquid--water" x="240" y="200" width="300" height="240" />
+      <rect class="liquid liquid--vinegar" x="240" y="200" width="300" height="240" />
+      <path class="liquidline" d="M240 200 H540" />
+    </g>
+
+    <!-- limescale on the element and lower walls -->
+    <g class="scale">
+      <path
+        class="crust"
+        d="M256 398 q 20 -22 40 0 q 18 -20 38 0 q 22 -24 44 0 q 20 -18 40 0 q 22 -22 44 0 q 18 -16 34 0 v 16 H256 Z"
+      />
+      <path class="fleck f1" d="M296 344 q 12 -14 24 0 q -12 12 -24 0 Z" />
+      <path class="fleck f2" d="M442 314 q 14 -16 28 0 q -14 14 -28 0 Z" />
+      <path class="fleck f3" d="M358 272 q 10 -12 20 0 q -10 10 -20 0 Z" />
+      <path class="fleck f4" d="M488 358 q 11 -13 22 0 q -11 11 -22 0 Z" />
+    </g>
+
+    <!-- bubbles while the acid works -->
+    <g class="bubbles">
+      <circle cx="306" cy="360" r="9" /><circle cx="378" cy="330" r="7" />
+      <circle cx="450" cy="352" r="10" /><circle cx="496" cy="316" r="6" />
+      <circle cx="338" cy="300" r="6" />
+    </g>
   </g>
 
-  <!-- 1:1 mix label -->
+  <!-- lid -->
+  <path class="lid" d="M240 132 H540" />
+  <g filter="url(#ktShadowSm)">
+    <rect class="lidknob" x="366" y="98" width="48" height="34" rx="11" />
+  </g>
+
+  <!-- base -->
+  <g filter="url(#ktShadowSm)">
+    <rect class="base" x="262" y="436" width="256" height="26" rx="9" />
+  </g>
+
+  <!-- 1:1 mix card -->
   <g class="mix">
-    <rect x="586" y="150" width="180" height="94" rx="14" />
-    <text class="mixtitle" x="606" y="186">1 : 1</text>
-    <text class="mixsub" x="606" y="214">white vinegar</text>
-    <text class="mixsub" x="606" y="234">+ water</text>
-  </g>
-
-  <!-- bubbles while it works -->
-  <g class="bubbles">
-    <circle cx="310" cy="360" r="9" /><circle cx="380" cy="330" r="7" />
-    <circle cx="452" cy="352" r="10" /><circle cx="500" cy="316" r="6" />
-    <circle cx="340" cy="300" r="6" />
+    <g filter="url(#ktShadowSm)">
+      <rect class="mixcard" x="586" y="140" width="188" height="104" rx="16" />
+    </g>
+    <text class="mixtitle" x="608" y="180">1 : 1</text>
+    <text class="mixsub" x="608" y="208">white vinegar</text>
+    <text class="mixsub" x="608" y="230">+ water</text>
   </g>
 
   <!-- timer -->
   <g class="timer">
-    <circle class="timerbg" cx="676" cy="330" r="44" />
-    <path class="timerarc" d="M676 292 A 38 38 0 1 1 675 292" />
-    <path class="hands" d="M676 330 V302 M676 330 h22" />
-    <text class="tag mid" x="676" y="396">30 min</text>
+    <g filter="url(#ktShadowSm)">
+      <circle class="timerbg" cx="680" cy="330" r="46" />
+    </g>
+    <path class="timerarc" d="M680 290 A 40 40 0 1 1 679 290" />
+    <path class="hands" d="M680 330 V300 M680 330 h24" />
+    <text class="tag mid" x="680" y="400">30 min</text>
   </g>
 
   <!-- rinse -->
   <g class="rinse">
-    <path class="rinseline" d="M400 60 V132" />
-    <path class="rinseline r2" d="M366 74 V132" />
-    <path class="rinseline r3" d="M434 74 V132" />
-    <text class="tag mid" x="400" y="46">boil clean water ×2</text>
+    <path class="rinseline" d="M390 56 V126" />
+    <path class="rinseline r2" d="M356 70 V126" />
+    <path class="rinseline r3" d="M424 70 V126" />
+  </g>
+
+  <!-- callouts -->
+  <g class="labels">
+    <g class="lab lab--crust">
+      <path class="lead" d="M390 396 L200 340" />
+      <circle class="leaddot" cx="390" cy="396" r="4.5" />
+      <g class="tagbox tagbox--warn">
+        <rect x="24" y="314" width="180" height="32" rx="16" />
+        <text x="114" y="335">limescale, not dirt</text>
+      </g>
+      <circle class="marker marker--sm" cx="390" cy="398" r="60" />
+    </g>
+  </g>
+
+  <g class="scrubtag">
+    <g class="tagbox tagbox--bad">
+      <rect x="24" y="314" width="246" height="32" rx="16" />
+      <text x="147" y="335">never scrape or scour</text>
+    </g>
+  </g>
+
+  <g class="rinsetag">
+    <g class="tagbox tagbox--ok">
+      <rect x="24" y="314" width="256" height="32" rx="16" />
+      <text x="152" y="335">boil clean water twice</text>
+    </g>
   </g>
 
   <g class="done">
-    <circle class="tickbg" cx="120" cy="400" r="32" />
-    <path class="tick" d="M105 400 l10 11 l20 -23" />
+    <circle class="tickbg" cx="114" cy="420" r="34" />
+    <path class="tick" d="M98 420 l11 12 l21 -25" />
   </g>
 </svg>
 
 <style>
   .kt {
-    --dur: 0.7s;
+    --dur: 0.65s;
     --ease: cubic-bezier(0.65, 0, 0.35, 1);
   }
 
-  .kt .body,
-  .kt .spout {
-    fill: var(--surface);
+  .kt .body {
+    fill: url(#ktSteel);
     stroke: var(--ink);
     stroke-width: 5;
     stroke-linejoin: round;
+  }
+
+  .kt .spout {
+    fill: url(#ktSteel);
+    stroke: var(--ink);
+    stroke-width: 5;
+    stroke-linejoin: round;
+  }
+
+  .kt .handle {
+    fill: none;
+    stroke: url(#ktSteelDark);
+    stroke-width: 16;
+    stroke-linecap: round;
   }
 
   .kt .lid {
@@ -95,18 +203,11 @@
   }
 
   .kt .lidknob {
-    fill: var(--ink);
-  }
-
-  .kt .handle {
-    fill: none;
-    stroke: var(--ink);
-    stroke-width: 14;
-    stroke-linecap: round;
+    fill: url(#ktSteelDark);
   }
 
   .kt .base {
-    fill: var(--ink);
+    fill: url(#ktSteelDark);
   }
 
   .kt .tag {
@@ -119,59 +220,73 @@
     text-anchor: middle;
   }
 
-  /* --- liquid ------------------------------------------------------------- */
+  /* ---------- liquid ---------- */
   .kt .liquidwrap {
     opacity: 0;
     transition: opacity var(--dur) var(--ease);
   }
 
-  .kt .liquid {
-    fill: color-mix(in srgb, var(--brand) 20%, transparent);
-    transition: fill var(--dur) var(--ease);
-  }
-
-  /* --- scale -------------------------------------------------------------- */
-  .kt .crust {
-    fill: color-mix(in srgb, var(--accent) 30%, var(--paper-deep));
-    stroke: var(--accent-deep);
-    stroke-width: 2.5;
-  }
-
-  .kt .fleck {
-    fill: color-mix(in srgb, var(--accent) 35%, var(--paper-deep));
-  }
-
-  .kt .scale,
-  .kt .fleck {
+  .kt .liquid--water {
+    fill: url(#ktWater);
+    opacity: 0;
     transition: opacity var(--dur) var(--ease);
   }
 
-  /* --- mix label ---------------------------------------------------------- */
+  .kt .liquid--vinegar {
+    fill: url(#ktVinegar);
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .kt .liquidline {
+    fill: none;
+    stroke: #c98f34;
+    stroke-width: 3;
+    opacity: 0.7;
+  }
+
+  /* ---------- scale ---------- */
+  .kt .crust {
+    fill: url(#ktScale);
+    filter: url(#ktRough);
+  }
+
+  .kt .fleck {
+    fill: url(#ktScale);
+    filter: url(#ktRough);
+  }
+
+  .kt .scale,
+  .kt .fleck,
+  .kt .crust {
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  /* ---------- mix card ---------- */
   .kt .mix {
     opacity: 0;
     transition: opacity var(--dur) var(--ease);
   }
 
-  .kt .mix rect {
-    fill: var(--surface);
+  .kt .mixcard {
+    fill: #ffffff;
     stroke: var(--brand);
     stroke-width: 3;
   }
 
   .kt .mixtitle {
     font-family: var(--font-display);
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 700;
     fill: var(--brand-deep);
   }
 
   .kt .mixsub {
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 17px;
     fill: var(--ink-2);
   }
 
-  /* --- bubbles ------------------------------------------------------------ */
+  /* ---------- bubbles ---------- */
   .kt .bubbles {
     opacity: 0;
     transition: opacity var(--dur) var(--ease);
@@ -179,7 +294,7 @@
 
   .kt .bubbles circle {
     fill: none;
-    stroke: var(--brand);
+    stroke: #2f9c80;
     stroke-width: 3;
     animation: kt-rise 2.4s ease-in-out infinite;
   }
@@ -206,27 +321,27 @@
       opacity: 1;
     }
     100% {
-      transform: translateY(-120px);
+      transform: translateY(-130px);
       opacity: 0;
     }
   }
 
-  /* --- timer -------------------------------------------------------------- */
+  /* ---------- timer ---------- */
   .kt .timer {
     opacity: 0;
     transition: opacity var(--dur) var(--ease);
   }
 
   .kt .timerbg {
-    fill: var(--surface);
-    stroke: var(--line);
+    fill: #ffffff;
+    stroke: var(--ink);
     stroke-width: 3;
   }
 
   .kt .timerarc {
     fill: none;
-    stroke: var(--brand-tint-2);
-    stroke-width: 6;
+    stroke: #dfe3e7;
+    stroke-width: 7;
   }
 
   .kt .hands {
@@ -236,7 +351,7 @@
     stroke-linecap: round;
   }
 
-  /* --- rinse -------------------------------------------------------------- */
+  /* ---------- rinse ---------- */
   .kt .rinse {
     opacity: 0;
     transition: opacity var(--dur) var(--ease);
@@ -244,8 +359,8 @@
 
   .kt .rinseline {
     fill: none;
-    stroke: var(--brand);
-    stroke-width: 5;
+    stroke: #2f9c80;
+    stroke-width: 6;
     stroke-linecap: round;
     stroke-dasharray: 14 12;
     animation: kt-flow 0.9s linear infinite;
@@ -264,6 +379,69 @@
     to {
       stroke-dashoffset: -26;
     }
+  }
+
+  /* ---------- callouts ---------- */
+  .kt .marker {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 4;
+    stroke-dasharray: 10 9;
+    animation: kt-spin 16s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .kt .marker--sm {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  @keyframes kt-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .kt .tagbox rect {
+    fill: var(--ink);
+  }
+
+  .kt .tagbox text {
+    fill: #fff;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 600;
+    text-anchor: middle;
+  }
+
+  .kt .tagbox--warn rect {
+    fill: var(--accent-deep);
+  }
+  .kt .tagbox--bad rect {
+    fill: var(--danger);
+  }
+  .kt .tagbox--ok rect {
+    fill: var(--brand);
+  }
+
+  .kt .lead {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+  }
+
+  .kt .leaddot {
+    fill: var(--ink);
+  }
+
+  .kt .labels,
+  .kt .lab,
+  .kt .scrubtag,
+  .kt .rinsetag {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
   }
 
   .kt .done {
@@ -291,8 +469,16 @@
      ====================================================================== */
 
   /* 0 — the crust on the element is what slows the boil */
+  :global([data-step='0']) .kt .labels,
+  :global([data-step='0']) .kt .lab {
+    opacity: 1;
+  }
 
-  /* 1 — fill with a 1:1 mix of white vinegar and water */
+  :global([data-step='0']) .kt .marker--sm {
+    opacity: 1;
+  }
+
+  /* 1 — half vinegar, half water */
   :global([data-step='1']) .kt .liquidwrap,
   :global([data-step='2']) .kt .liquidwrap,
   :global([data-step='3']) .kt .liquidwrap {
@@ -304,39 +490,49 @@
     opacity: 1;
   }
 
-  /* 2 — boil, then leave it to sit */
-  :global([data-step='2']) .kt .bubbles {
-    opacity: 1;
-  }
-
+  /* 2 — boil once, then leave it */
+  :global([data-step='2']) .kt .bubbles,
   :global([data-step='2']) .kt .timer,
   :global([data-step='3']) .kt .timer {
     opacity: 1;
   }
 
   :global([data-step='2']) .kt .fleck {
-    opacity: 0.35;
+    opacity: 0.3;
   }
 
-  /* 3 — pour it out; the crust has let go */
+  /* 3 — pour out and wipe; never scrape */
   :global([data-step='3']) .kt .fleck {
     opacity: 0;
   }
 
   :global([data-step='3']) .kt .crust {
-    opacity: 0.25;
+    opacity: 0.22;
   }
 
-  :global([data-step='3']) .kt .liquid {
-    fill: color-mix(in srgb, var(--accent) 20%, transparent);
+  :global([data-step='3']) .kt .scrubtag {
+    opacity: 1;
   }
 
-  /* 4 — boil clean water twice before you drink from it */
+  /* 4 — two clean boils before you drink from it */
   :global([data-step='4']) .kt .scale {
     opacity: 0;
   }
 
-  :global([data-step='4']) .kt .rinse {
+  :global([data-step='4']) .kt .liquidwrap {
+    opacity: 1;
+  }
+
+  :global([data-step='4']) .kt .liquid--vinegar {
+    opacity: 0;
+  }
+
+  :global([data-step='4']) .kt .liquid--water {
+    opacity: 1;
+  }
+
+  :global([data-step='4']) .kt .rinse,
+  :global([data-step='4']) .kt .rinsetag {
     opacity: 1;
   }
 

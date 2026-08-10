@@ -5,8 +5,9 @@ import { SITE } from '../consts';
 
 <Prose
   title="About Howloop"
-  description="Why Howloop exists, who makes it, and how the animated guides are put together."
-  lede="Howloop turns ordinary how-to instructions into short looping animations, because most of the confusing part of a repair is the part you can't see."
+  description="Who makes Howloop, how each guide is researched and checked before it is published, and what we will not publish."
+  lede="Howloop turns ordinary how-to instructions into short looping animations, because the confusing part of most repairs is the part you cannot see."
+  updated="9 August 2026"
 >
   <h2>The problem we kept running into</h2>
   <p>
@@ -17,10 +18,10 @@ import { SITE } from '../consts';
     a tank, or inside a menu six levels deep.
   </p>
   <p>
-    So you search. You get a wall of text with no pictures, or a fourteen-minute
+    So you search. You get a wall of text with no pictures, a fourteen-minute
     video where the actual fix starts at 8:40, or a photo of someone's hand
-    holding a tool at an angle that tells you nothing. None of it shows you the
-    one thing you needed: what is happening on the other side of the wall.
+    holding a tool at an angle that tells you nothing. None of it shows the one
+    thing you needed: what is happening on the other side of the wall.
   </p>
 
   <h2>What we do instead</h2>
@@ -31,7 +32,6 @@ import { SITE } from '../consts';
     does. Then you get the same instructions in writing, in the same order, so
     you can print them or read them one-handed while the other hand is busy.
   </p>
-  <p>The animations are deliberately plain:</p>
   <ul>
     <li>
       <strong>Every step is a state you can stop on.</strong> Nothing loops past
@@ -40,58 +40,93 @@ import { SITE } from '../consts';
     </li>
     <li>
       <strong>Colour means something.</strong> Green is the correct path and the
-      direction things should move. Orange is the part you actually touch.
-      Everything else is context.
+      direction things should move. Orange is the part you actually touch. Red
+      is the problem. Everything else is context.
     </li>
     <li>
       <strong>They are drawings, not footage.</strong> A drawing can remove the
-      cabinet door, the wall and the plastic housing. A camera can't.
+      cabinet door, the wall and the plastic housing. A camera cannot.
     </li>
   </ul>
 
-  <h2>How a guide gets made</h2>
-  <ol>
-    <li>
-      We pick a problem that recurs — something a normal household hits more than
-      once, not a one-off exotic repair.
-    </li>
-    <li>
-      We work out the actual mechanism: <em>why</em> the thing fails, not just
-      what to do about it. If we can't explain the cause in one sentence, the
-      guide isn't ready.
-    </li>
-    <li>
-      We storyboard the fix as four to six states. If it needs more than six,
-      the guide is really two guides.
-    </li>
-    <li>
-      We draw it, write the steps to match exactly, and add the honest caveats:
-      when this won't work, and when to stop and call someone.
-    </li>
-  </ol>
+  <h2>Who makes it</h2>
   <p>
-    Full detail on sourcing, corrections and review is in our
+    {SITE.name} is produced by a small independent editorial team. We are not a
+    media group and we are not affiliated with any manufacturer. Rather than
+    publish under a single byline, we work the way a small newsroom does — every
+    guide passes through the same three roles before it goes live:
+  </p>
+  <ul>
+    <li>
+      <strong>Research.</strong> Establishes the mechanism — why the thing fails
+      — and checks it against manufacturer documentation, published standards
+      and, where relevant, plumbing or electrical codes.
+    </li>
+    <li>
+      <strong>Illustration.</strong> Builds the cutaway animation from the
+      research, in the house visual language, with each step as a separate
+      addressable state.
+    </li>
+    <li>
+      <strong>Edit and safety review.</strong> Checks that the written steps and
+      the animation say exactly the same thing, and decides where the guide has
+      to stop and tell you to call a professional.
+    </li>
+  </ul>
+  <p>
+    If you want to know exactly how a guide gets made, sourced and corrected,
+    that is written out in full in our
+    <a href="/editorial-policy">editorial policy</a> — including how we use
+    software tooling and where a human has to sign off.
+  </p>
+
+  <h2>How to check our work</h2>
+  <p>
+    We would rather you verified us than trusted us. Three things make that
+    possible:
+  </p>
+  <ul>
+    <li>
+      <strong>Every guide carries dates.</strong> When it was published, and when
+      it was last reviewed. Device guides age fastest and get re-checked most
+      often.
+    </li>
+    <li>
+      <strong>Every guide states its limits.</strong> What it assumes about your
+      fixtures, and the point at which you should stop and call someone. If a
+      guide has no limits section, it is not finished.
+    </li>
+    <li>
+      <strong>Corrections are applied in place and logged.</strong> Substantive
+      corrections — ones that change what you should actually do — are noted at
+      the foot of the guide rather than quietly edited away.
+    </li>
+  </ul>
+
+  <h2>What we will not publish</h2>
+  <p>
+    We do not publish guides for anything where a mistake is dangerous and
+    invisible — gas work, mains electrical work, structural work, or anything
+    medical beyond ordinary first aid. When a job crosses that line, the guide
+    says so and stops. We also do not publish anything that helps bypass safety
+    interlocks, defeat copyright protection, or circumvent device security.
+  </p>
+  <p>A page view is not worth a house fire.</p>
+
+  <h2>How we are funded</h2>
+  <p>
+    {SITE.name} is funded by advertising. Ad slots are clearly labelled and kept
+    visually separate from content. Advertising has no influence on which
+    problems we cover, which method a guide recommends, or whether a guide tells
+    you to hire a professional. The full separation policy is in our
     <a href="/editorial-policy">editorial policy</a>.
   </p>
 
-  <h2>What we won't do</h2>
+  <h2>Tell us when we are wrong</h2>
   <p>
-    We don't publish guides for anything where a mistake is dangerous and
-    invisible — gas work, mains electrical work, structural work, or anything
-    medical beyond ordinary first aid. When a job crosses that line, the guide
-    says so and stops. A page view is not worth a house fire.
-  </p>
-
-  <h2>Who's behind it</h2>
-  <p>
-    {SITE.name} is a small independent site. It is funded by advertising, which
-    is why you'll see clearly labelled ad slots between sections. Ads never
-    influence which guides we make or what they say — see our
-    <a href="/editorial-policy">editorial policy</a> for how we keep that line
-    clean.
-  </p>
-  <p>
-    Found a mistake, or fixed something in a smarter way than we showed? We'd
-    honestly like to know: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    Found a mistake, or fixed something in a smarter way than we showed? That is
+    the most useful email we get:
+    <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Confirmed corrections are
+    applied to the animation and the written steps together.
   </p>
 </Prose>

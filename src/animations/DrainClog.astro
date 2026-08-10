@@ -1,170 +1,280 @@
 ---
-/* Unclog a bathroom sink — cross-section of basin, tailpiece and clog. */
+/*
+ * Slow bathroom sink — high-fidelity vector.
+ *
+ * Full cross-section: porcelain basin, chrome tailpiece, and the hair-and-scum
+ * plug wedged above the trap. The clog gets a fuzzy edge because a smooth blob
+ * reads as a rock, and the whole point is that it is soft and grabbable.
+ */
 ---
 
 <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="dc">
-  <!-- counter surface -->
-  <path class="ln surface" d="M120 150 H680" />
-  <path class="fill-soft" d="M120 150 H210 V132 H120 Z" />
-  <path class="fill-soft" d="M590 132 H680 V150 H590 Z" />
+  <defs>
+    <linearGradient id="dcPorcelain" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="0.55" stop-color="#f1f3f5" />
+      <stop offset="1" stop-color="#dfe3e7" />
+    </linearGradient>
 
-  <!-- basin walls -->
-  <path class="ln" d="M210 132 C 216 224, 302 252, 368 254" />
-  <path class="ln" d="M590 132 C 584 224, 498 252, 432 254" />
+    <linearGradient id="dcChrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6d747d" />
+      <stop offset="0.16" stop-color="#eef1f4" />
+      <stop offset="0.44" stop-color="#b2bac2" />
+      <stop offset="0.72" stop-color="#828a94" />
+      <stop offset="0.9" stop-color="#dde2e7" />
+      <stop offset="1" stop-color="#5f666e" />
+    </linearGradient>
 
-  <!-- standing water in the basin (steps 0 & 3) -->
+    <linearGradient id="dcWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd8c6" stop-opacity="0.75" />
+      <stop offset="1" stop-color="#3aa88b" stop-opacity="0.5" />
+    </linearGradient>
+
+    <linearGradient id="dcGunk" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#6b5f52" />
+      <stop offset="0.5" stop-color="#4a4139" />
+      <stop offset="1" stop-color="#2b2622" />
+    </linearGradient>
+
+    <linearGradient id="dcTool" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9a4d" />
+      <stop offset="0.5" stop-color="#ee6c1e" />
+      <stop offset="1" stop-color="#b64d0d" />
+    </linearGradient>
+
+    <filter id="dcShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#14171c" flood-opacity="0.2" />
+    </filter>
+    <filter id="dcShadowSm" x="-40%" y="-40%" width="180%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#14171c" flood-opacity="0.28" />
+    </filter>
+    <filter id="dcFuzz" x="-30%" y="-30%" width="160%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" seed="3" result="n" />
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="9" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <!-- counter -->
+  <g filter="url(#dcShadow)">
+    <path class="counter" d="M96 138 H236 V162 H96 Z" />
+    <path class="counter" d="M564 138 H704 V162 H564 Z" />
+  </g>
+
+  <!-- basin, cut in half -->
+  <path
+    class="basin"
+    d="M236 138 C 242 232, 320 262, 372 264 L428 264 C 480 262, 558 232, 564 138 Z"
+  />
+  <path class="basinline" d="M236 138 C 242 232, 320 262, 372 264" />
+  <path class="basinline" d="M564 138 C 558 232, 480 262, 428 264" />
+
+  <!-- standing water -->
   <path
     class="water"
-    d="M232 196 C 246 236, 312 252, 368 254 L432 254 C 488 252, 554 236, 568 196 Z"
+    d="M258 190 C 272 232, 328 258, 372 262 L428 262 C 472 258, 528 232, 542 190 Z"
   />
 
-  <!-- tailpiece + trap -->
-  <path class="ln" d="M368 254 V392 C 368 452, 470 452, 470 392 V300" />
-  <path class="ln" d="M432 254 V392 C 432 410, 508 410, 508 392 V300" />
-  <path class="ln thin" d="M470 300 H508" />
+  <!-- tailpiece and trap -->
+  <g filter="url(#dcShadowSm)">
+    <path class="pipe" d="M372 264 V396 C 372 452, 470 452, 470 396 V300 H508 V396 C 508 410, 436 410, 436 396 V264" />
+  </g>
+  <path class="pipehi" d="M380 272 V392" />
 
-  <!-- the clog, wedged in the tailpiece -->
+  <!-- the clog -->
   <g class="clog clog--stuck">
     <path
-      class="clogmass"
-      d="M378 320 C 392 300, 424 306, 422 326 C 440 330, 436 356, 416 356 C 408 372, 380 368, 380 350 C 366 344, 366 326, 378 320 Z"
+      class="gunk"
+      d="M378 318 C 392 296, 426 302, 424 324 C 444 328, 440 358, 418 358 C 410 376, 378 372, 378 352 C 362 346, 364 326, 378 318 Z"
     />
-    <path class="hair" d="M382 318 C 400 330, 396 350, 412 358" />
-    <path class="hair" d="M416 314 C 400 332, 410 348, 388 352" />
+    <path class="hair" d="M384 316 C 404 330, 398 352, 416 360" />
+    <path class="hair" d="M418 312 C 400 332, 412 350, 388 354" />
+    <path class="hair" d="M374 336 C 396 340, 404 356, 420 344" />
   </g>
 
   <!-- stopper -->
   <g class="stopper">
-    <ellipse class="fill-ink" cx="400" cy="252" rx="34" ry="9" />
-    <path class="ln thin" d="M400 252 V214" />
-    <circle class="fill-ink" cx="400" cy="208" r="9" />
+    <ellipse class="stoppertop" cx="400" cy="252" rx="36" ry="10" />
+    <rect class="stopperrod" x="396" y="206" width="8" height="46" />
+    <circle class="stopperknob" cx="400" cy="202" r="10" />
   </g>
 
-  <!-- the zip tool -->
+  <!-- barbed tool -->
   <g class="tool">
-    <path class="toolshaft" d="M400 40 V352" />
-    <g class="barbs">
-      <path d="M400 300 l-13 -11" /><path d="M400 300 l13 -11" />
-      <path d="M400 276 l-13 -11" /><path d="M400 276 l13 -11" />
-      <path d="M400 252 l-13 -11" /><path d="M400 252 l13 -11" />
-      <path d="M400 228 l-13 -11" /><path d="M400 228 l13 -11" />
-      <path d="M400 204 l-13 -11" /><path d="M400 204 l13 -11" />
+    <g filter="url(#dcShadowSm)">
+      <rect class="toolgrip" x="376" y="6" width="48" height="38" rx="12" />
+      <path class="toolshaft" d="M400 44 V352" />
     </g>
-    <rect class="toolgrip" x="378" y="14" width="44" height="34" rx="10" />
-    <!-- clog riding up on the barbs -->
+    <g class="barbs">
+      <path d="M400 306 l-14 -12" /><path d="M400 306 l14 -12" />
+      <path d="M400 280 l-14 -12" /><path d="M400 280 l14 -12" />
+      <path d="M400 254 l-14 -12" /><path d="M400 254 l14 -12" />
+      <path d="M400 228 l-14 -12" /><path d="M400 228 l14 -12" />
+      <path d="M400 202 l-14 -12" /><path d="M400 202 l14 -12" />
+      <path d="M400 176 l-14 -12" /><path d="M400 176 l14 -12" />
+    </g>
     <g class="clog clog--onTool">
       <path
-        class="clogmass"
-        d="M378 320 C 392 300, 424 306, 422 326 C 440 330, 436 356, 416 356 C 408 372, 380 368, 380 350 C 366 344, 366 326, 378 320 Z"
+        class="gunk"
+        d="M378 318 C 392 296, 426 302, 424 324 C 444 328, 440 358, 418 358 C 410 376, 378 372, 378 352 C 362 346, 364 326, 378 318 Z"
       />
-      <path class="hair" d="M382 318 C 400 330, 396 350, 412 358" />
+      <path class="hair" d="M384 316 C 404 330, 398 352, 416 360" />
     </g>
   </g>
 
-  <!-- hot-water flush -->
+  <!-- hot flush -->
   <g class="flush">
-    <path class="flowline" d="M400 268 V332" />
-    <path class="flowline f2" d="M382 274 V330" />
-    <path class="flowline f3" d="M418 274 V330" />
-    <path class="arrow" d="M392 336 l8 12 l8 -12" />
+    <path class="flowline" d="M400 276 V344" />
+    <path class="flowline f2" d="M382 282 V342" />
+    <path class="flowline f3" d="M418 282 V342" />
   </g>
 
-  <!-- success tick -->
+  <!-- callouts -->
+  <g class="labels">
+    <g class="lab lab--clog">
+      <path class="lead" d="M424 330 L556 296" />
+      <circle class="leaddot" cx="424" cy="330" r="4.5" />
+      <g class="tagbox tagbox--warn">
+        <rect x="548" y="270" width="216" height="32" rx="16" />
+        <text x="656" y="291">hair bound with soap scum</text>
+      </g>
+      <circle class="marker marker--sm" cx="400" cy="336" r="58" />
+    </g>
+    <g class="lab lab--trap">
+      <path class="lead" d="M470 424 L596 424" />
+      <circle class="leaddot" cx="470" cy="424" r="4.5" />
+      <g class="tagbox">
+        <rect x="588" y="408" width="176" height="32" rx="16" />
+        <text x="676" y="429">trap — still clear</text>
+      </g>
+    </g>
+  </g>
+
+  <g class="pulltag">
+    <g class="tagbox tagbox--warn">
+      <rect x="36" y="270" width="196" height="32" rx="16" />
+      <text x="134" y="291">pull up slowly</text>
+    </g>
+  </g>
+
+  <g class="flushtag">
+    <g class="tagbox tagbox--ok">
+      <rect x="36" y="270" width="228" height="32" rx="16" />
+      <text x="150" y="291">hot water, one minute</text>
+    </g>
+  </g>
+
   <g class="done">
-    <circle class="tickbg" cx="640" cy="392" r="34" />
-    <path class="tick" d="M624 392 l11 12 l21 -25" />
+    <circle class="tickbg" cx="134" cy="392" r="36" />
+    <path class="tick" d="M117 392 l12 13 l22 -26" />
   </g>
 </svg>
 
 <style>
   .dc {
-    --dur: 0.65s;
+    --dur: 0.6s;
     --ease: cubic-bezier(0.65, 0, 0.35, 1);
   }
 
-  .dc .ln {
+  .dc .counter {
+    fill: #cfd4d9;
+    stroke: var(--ink);
+    stroke-width: 4;
+    stroke-linejoin: round;
+  }
+
+  .dc .basin {
+    fill: url(#dcPorcelain);
+  }
+
+  .dc .basinline {
     fill: none;
     stroke: var(--ink);
     stroke-width: 5;
     stroke-linecap: round;
   }
 
-  .dc .thin {
-    stroke-width: 3.5;
-  }
-
-  .dc .surface {
-    stroke-width: 6;
-  }
-
-  .dc .fill-soft {
-    fill: var(--paper-deep);
-    stroke: var(--ink);
-    stroke-width: 3;
-  }
-
-  .dc .fill-ink {
-    fill: var(--ink);
-  }
-
-  /* --- water ------------------------------------------------------------- */
   .dc .water {
-    fill: color-mix(in srgb, var(--brand) 22%, transparent);
-    opacity: 1;
+    fill: url(#dcWater);
     transition: opacity var(--dur) var(--ease);
   }
 
-  /* --- clog -------------------------------------------------------------- */
-  .dc .clogmass {
-    fill: color-mix(in srgb, var(--ink) 72%, var(--accent));
+  .dc .pipe {
+    fill: none;
+    stroke: url(#dcChrome);
+    stroke-width: 13;
+    stroke-linejoin: round;
+  }
+
+  .dc .pipehi {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 3;
+    opacity: 0.5;
+  }
+
+  /* ---------- clog ---------- */
+  .dc .gunk {
+    fill: url(#dcGunk);
+    filter: url(#dcFuzz);
   }
 
   .dc .hair {
     fill: none;
-    stroke: var(--paper);
-    stroke-width: 2.5;
+    stroke: #cdc3b6;
+    stroke-width: 2.4;
     stroke-linecap: round;
-    opacity: 0.6;
-  }
-
-  .dc .clog--onTool {
-    opacity: 0;
+    opacity: 0.5;
   }
 
   .dc .clog {
     transition: opacity var(--dur) var(--ease);
   }
 
-  /* --- stopper ----------------------------------------------------------- */
-  .dc .stopper {
-    transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
+  .dc .clog--onTool {
+    opacity: 0;
   }
 
-  /* --- tool -------------------------------------------------------------- */
+  /* ---------- stopper ---------- */
+  .dc .stopper {
+    transition: transform var(--dur) var(--ease);
+  }
+
+  .dc .stoppertop,
+  .dc .stopperknob {
+    fill: url(#dcChrome);
+    stroke: #5f666e;
+    stroke-width: 2;
+  }
+
+  .dc .stopperrod {
+    fill: #8b939c;
+  }
+
+  /* ---------- tool ---------- */
   .dc .tool {
     transform: translateY(-330px);
-    transition: transform 0.85s var(--ease);
+    transition: transform 0.9s var(--ease);
   }
 
   .dc .toolshaft {
     fill: none;
-    stroke: var(--accent);
-    stroke-width: 7;
+    stroke: url(#dcTool);
+    stroke-width: 8;
     stroke-linecap: round;
   }
 
   .dc .barbs path {
     fill: none;
-    stroke: var(--accent);
+    stroke: #ee6c1e;
     stroke-width: 4.5;
     stroke-linecap: round;
   }
 
   .dc .toolgrip {
-    fill: var(--accent);
+    fill: url(#dcTool);
   }
 
-  /* --- flush ------------------------------------------------------------- */
+  /* ---------- flush ---------- */
   .dc .flush {
     opacity: 0;
     transition: opacity var(--dur) var(--ease);
@@ -172,44 +282,94 @@
 
   .dc .flowline {
     fill: none;
-    stroke: var(--brand);
-    stroke-width: 5;
+    stroke: #3aa88b;
+    stroke-width: 6;
     stroke-linecap: round;
-    stroke-dasharray: 16 14;
-    animation: dc-flow 0.9s linear infinite;
+    stroke-dasharray: 14 14;
+    animation: dc-flow 0.85s linear infinite;
   }
 
   .dc .f2 {
     animation-delay: -0.3s;
-    opacity: 0.65;
+    opacity: 0.6;
   }
-
   .dc .f3 {
     animation-delay: -0.6s;
-    opacity: 0.65;
+    opacity: 0.6;
   }
 
   @keyframes dc-flow {
     to {
-      stroke-dashoffset: -30;
+      stroke-dashoffset: -28;
     }
   }
 
-  .dc .arrow {
+  /* ---------- callouts ---------- */
+  .dc .marker {
     fill: none;
-    stroke: var(--brand);
-    stroke-width: 5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    stroke: var(--accent);
+    stroke-width: 4;
+    stroke-dasharray: 10 9;
+    animation: dc-spin 16s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center;
   }
 
-  /* --- done -------------------------------------------------------------- */
+  .dc .marker--sm {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  @keyframes dc-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .dc .tagbox rect {
+    fill: var(--ink);
+  }
+
+  .dc .tagbox text {
+    fill: #fff;
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 600;
+    text-anchor: middle;
+  }
+
+  .dc .tagbox--warn rect {
+    fill: var(--accent-deep);
+  }
+  .dc .tagbox--ok rect {
+    fill: var(--brand);
+  }
+
+  .dc .lead {
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+  }
+
+  .dc .leaddot {
+    fill: var(--ink);
+  }
+
+  .dc .labels,
+  .dc .lab,
+  .dc .pulltag,
+  .dc .flushtag {
+    opacity: 0;
+    transition: opacity var(--dur) var(--ease);
+  }
+
   .dc .done {
     opacity: 0;
     transform-box: fill-box;
     transform-origin: center;
-    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
     transform: scale(0.6);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
   }
 
   .dc .tickbg {
@@ -228,24 +388,41 @@
      Step states
      ====================================================================== */
 
-  /* 0 — the problem: water standing, stopper in place */
+  /* 0 — standing water, and the plug is above the trap */
+  :global([data-step='0']) .dc .labels,
+  :global([data-step='0']) .dc .lab {
+    opacity: 1;
+  }
 
-  /* 1 — pop the stopper out */
+  :global([data-step='0']) .dc .marker--sm {
+    opacity: 1;
+  }
+
+  /* 1 — stopper out */
   :global([data-step='1']) .dc .stopper,
   :global([data-step='2']) .dc .stopper,
   :global([data-step='3']) .dc .stopper {
-    transform: translateY(-150px) rotate(-14deg);
+    transform: translate(-176px, -104px) rotate(-18deg);
   }
 
-  /* 2 — feed the tool down past the clog */
+  :global([data-step='1']) .dc .labels,
+  :global([data-step='1']) .dc .lab--clog {
+    opacity: 1;
+  }
+
+  :global([data-step='1']) .dc .marker--sm {
+    opacity: 1;
+  }
+
+  /* 2 — feed the tool down past the plug */
   :global([data-step='2']) .dc .tool {
     transform: translateY(0);
   }
 
-  /* 3 — pull it out; the clog comes with it */
+  /* 3 — pull it out slowly; the plug comes with it */
   :global([data-step='3']) .dc .tool {
     transform: translateY(-300px);
-    transition-delay: 0.15s;
+    transition-delay: 0.12s;
   }
 
   :global([data-step='3']) .dc .clog--stuck {
@@ -257,24 +434,29 @@
   }
 
   :global([data-step='3']) .dc .water {
-    opacity: 0.25;
+    opacity: 0.3;
   }
 
-  /* 4 — flush, refit, done */
+  :global([data-step='3']) .dc .pulltag {
+    opacity: 1;
+  }
+
+  /* 4 — flush hot, refit, done */
   :global([data-step='4']) .dc .clog--stuck,
   :global([data-step='4']) .dc .clog--onTool {
     opacity: 0;
   }
 
   :global([data-step='4']) .dc .tool {
-    transform: translateY(-430px);
+    transform: translateY(-440px);
   }
 
   :global([data-step='4']) .dc .water {
     opacity: 0;
   }
 
-  :global([data-step='4']) .dc .flush {
+  :global([data-step='4']) .dc .flush,
+  :global([data-step='4']) .dc .flushtag {
     opacity: 1;
   }
 
