@@ -19,7 +19,7 @@ export const SITE = {
   adsensePublisherId: '',
 };
 
-export type TopicId = 'home' | 'devices';
+export type TopicId = 'home' | 'devices' | 'paperwork';
 
 export const TOPICS: Record<
   TopicId,
@@ -37,12 +37,19 @@ export const TOPICS: Record<
     blurb:
       'Slow connections, full storage, dying batteries. The digital chores that come back every few months.',
   },
+  paperwork: {
+    id: 'paperwork',
+    label: 'Paperwork',
+    blurb:
+      'Government forms, ID numbers, registrations. The admin that only ever gets done once you know which box applies to you.',
+  },
 };
 
 export const NAV = [
   { href: '/guides', label: 'All guides' },
   { href: '/topics/home', label: 'Around the house' },
   { href: '/topics/devices', label: 'Phones & Wi-Fi' },
+  { href: '/topics/paperwork', label: 'Paperwork' },
   { href: '/about', label: 'About' },
 ];
 

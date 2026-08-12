@@ -8,7 +8,7 @@ const guides = defineCollection({
     // Short, punchy version used on cards.
     cardTitle: z.string().optional(),
     description: z.string(),
-    topic: z.enum(['home', 'devices']),
+    topic: z.enum(['home', 'devices', 'paperwork']),
     published: z.coerce.date(),
     updated: z.coerce.date().optional(),
     // Practical metadata shown in the guide header.
@@ -27,6 +27,11 @@ const guides = defineCollection({
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
+    // Strips the page back to the interactive walkthrough alone: no spec
+    // chips, no sidebar, no written-steps list, no FAQ block. For guides
+    // where the interaction *is* the guide and prose would only get in
+    // the way.
+    bare: z.boolean().default(false),
   }),
 });
 

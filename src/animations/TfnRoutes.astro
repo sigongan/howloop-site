@@ -1,0 +1,179 @@
+---
+/* Four TFN application routes, laid out as cards, with the reader's route
+   highlighted as the animation steps through each one. */
+---
+
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" class="tfn">
+  <text class="label" x="40" y="46">Which route is yours?</text>
+
+  <!-- route 1: citizen with passport -->
+  <g class="card r1">
+    <rect class="body" x="40" y="80" width="330" height="150" rx="12" />
+    <circle class="dot" cx="72" cy="112" r="10" />
+    <text class="cardtitle" x="96" y="118">Citizen, own passport</text>
+    <path class="icon" d="M64 150 h280 M64 168 h220 M64 186 h250" />
+    <text class="cardnote" x="64" y="212">myID + myGov, online</text>
+  </g>
+
+  <!-- route 2: migrant/visitor with work visa -->
+  <g class="card r2">
+    <rect class="body" x="430" y="80" width="330" height="150" rx="12" />
+    <circle class="dot" cx="462" cy="112" r="10" />
+    <text class="cardtitle" x="486" y="118">Work-rights visa</text>
+    <path class="icon" d="M454 150 h280 M454 168 h230 M454 186 h260" />
+    <text class="cardnote" x="454" y="212">IAR, online, no documents</text>
+  </g>
+
+  <!-- route 3: in Australia, no passport/visa match -->
+  <g class="card r3">
+    <rect class="body" x="40" y="260" width="330" height="150" rx="12" />
+    <circle class="dot" cx="72" cy="292" r="10" />
+    <text class="cardtitle" x="96" y="298">In Australia, no online match</text>
+    <path class="icon" d="M64 330 h280 M64 348 h220 M64 366 h250" />
+    <text class="cardnote" x="64" y="392">Australia Post or Services Australia, in person</text>
+  </g>
+
+  <!-- route 4: outside Australia -->
+  <g class="card r4">
+    <rect class="body" x="430" y="260" width="330" height="150" rx="12" />
+    <circle class="dot" cx="462" cy="292" r="10" />
+    <text class="cardtitle" x="486" y="298">Living outside Australia</text>
+    <path class="icon" d="M454 330 h280 M454 348 h230 M454 366 h260" />
+    <text class="cardnote" x="454" y="392">Paper form NAT 2628, by post</text>
+  </g>
+
+  <!-- travelling marker that lands on the active card -->
+  <g class="marker">
+    <path class="markerpin" d="M0 -18 a18 18 0 1 1 -0.1 0 z M0 -4 l0 20" />
+    <circle class="markerhead" r="6" cy="-18" />
+  </g>
+</svg>
+
+<style>
+  .tfn {
+    --dur: 0.6s;
+    --ease: cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .tfn .label {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    fill: var(--ink);
+  }
+
+  .tfn .card {
+    transition: opacity var(--dur) var(--ease);
+  }
+
+  .tfn .body {
+    fill: var(--surface);
+    stroke: var(--ink);
+    stroke-width: 3.5;
+    transition: stroke var(--dur) var(--ease), fill var(--dur) var(--ease);
+  }
+
+  .tfn .dot {
+    fill: var(--ink-3);
+    transition: fill var(--dur) var(--ease);
+  }
+
+  .tfn .cardtitle {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    fill: var(--ink);
+  }
+
+  .tfn .icon {
+    fill: none;
+    stroke: var(--ink-3);
+    stroke-width: 5;
+    stroke-linecap: round;
+    transition: stroke var(--dur) var(--ease);
+  }
+
+  .tfn .cardnote {
+    font-family: var(--font-body);
+    font-size: 15px;
+    fill: var(--ink-2);
+  }
+
+  .tfn .marker {
+    opacity: 0;
+    transform: translate(72px, 112px);
+    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+
+  .tfn .markerpin {
+    fill: var(--accent);
+    stroke: var(--accent-deep);
+    stroke-width: 2;
+  }
+
+  .tfn .markerhead {
+    fill: #fff;
+  }
+
+  /* Step 0: intro — nothing highlighted, marker hidden */
+
+  /* Step 1: citizen route highlighted */
+  :global([data-step='1']) .tfn .r1 .body {
+    stroke: var(--brand);
+  }
+  :global([data-step='1']) .tfn .r1 .dot {
+    fill: var(--brand);
+  }
+  :global([data-step='1']) .tfn .r1 .icon {
+    stroke: var(--brand-deep);
+  }
+  :global([data-step='1']) .tfn .marker {
+    opacity: 1;
+    transform: translate(72px, 112px);
+  }
+
+  /* Step 2: work-visa route highlighted */
+  :global([data-step='2']) .tfn .r2 .body {
+    stroke: var(--brand);
+  }
+  :global([data-step='2']) .tfn .r2 .dot {
+    fill: var(--brand);
+  }
+  :global([data-step='2']) .tfn .r2 .icon {
+    stroke: var(--brand-deep);
+  }
+  :global([data-step='2']) .tfn .marker {
+    opacity: 1;
+    transform: translate(462px, 112px);
+  }
+
+  /* Step 3: in-person route highlighted */
+  :global([data-step='3']) .tfn .r3 .body {
+    stroke: var(--brand);
+  }
+  :global([data-step='3']) .tfn .r3 .dot {
+    fill: var(--brand);
+  }
+  :global([data-step='3']) .tfn .r3 .icon {
+    stroke: var(--brand-deep);
+  }
+  :global([data-step='3']) .tfn .marker {
+    opacity: 1;
+    transform: translate(72px, 292px);
+  }
+
+  /* Step 4: overseas route highlighted */
+  :global([data-step='4']) .tfn .r4 .body {
+    stroke: var(--brand);
+  }
+  :global([data-step='4']) .tfn .r4 .dot {
+    fill: var(--brand);
+  }
+  :global([data-step='4']) .tfn .r4 .icon {
+    stroke: var(--brand-deep);
+  }
+  :global([data-step='4']) .tfn .marker {
+    opacity: 1;
+    transform: translate(462px, 292px);
+  }
+</style>

@@ -99,27 +99,31 @@ const howToLd = {
         <h1>{d.title}</h1>
         <p class="guide__lede">{d.description}</p>
 
-        <dl class="specs">
-          <div>
-            <dt>Time</dt>
-            <dd>{d.timeNeeded}</dd>
-          </div>
-          <div>
-            <dt>Difficulty</dt>
-            <dd>{d.difficulty}</dd>
-          </div>
-          <div>
-            <dt>Cost</dt>
-            <dd>{d.cost}</dd>
-          </div>
-          <div>
-            <dt>Steps</dt>
-            <dd>{d.steps.length}</dd>
-          </div>
-        </dl>
+        {
+          !d.bare && (
+            <dl class="specs">
+              <div>
+                <dt>Time</dt>
+                <dd>{d.timeNeeded}</dd>
+              </div>
+              <div>
+                <dt>Difficulty</dt>
+                <dd>{d.difficulty}</dd>
+              </div>
+              <div>
+                <dt>Cost</dt>
+                <dd>{d.cost}</dd>
+              </div>
+              <div>
+                <dt>Steps</dt>
+                <dd>{d.steps.length}</dd>
+              </div>
+            </dl>
+          )
+        }
 
         {
-          d.tools.length > 0 && (
+          !d.bare && d.tools.length > 0 && (
             <p class="guide__tools">
               <span>You'll need</span>
               {d.tools.map((t) => (
@@ -148,32 +152,34 @@ const howToLd = {
       </div>
     </header>
 
-    <div class="wrap guide__grid">
-      <div class="guide__main article-body">
+    <div class:list={['wrap', 'guide__grid', d.bare && 'guide__grid--bare']}>
+      <div class:list={['guide__main', 'article-body', d.bare && 'guide__main--bare']}>
         <Content />
 
         <AdSlot layout="in-article" class="guide__ad" />
 
-        <section class="steplist" aria-labelledby="written-steps">
-          <h2 id="written-steps">The steps, in writing</h2>
-          <p class="steplist__note">
-            Same sequence as the animation — handy if you'd rather read it, or
-            print it and take it with you.
-          </p>
-          <ol>
-            {
-              d.steps.map((s, i) => (
-                <li id={`step-${i + 1}`}>
-                  <strong>{s.title}</strong>
-                  <span>{s.text}</span>
-                </li>
-              ))
-            }
-          </ol>
-        </section>
+        {
+          !d.bare && (
+            <section class="steplist" aria-labelledby="written-steps">
+              <h2 id="written-steps">The steps, in writing</h2>
+              <p class="steplist__note">
+                Same sequence as the animation — handy if you'd rather read it,
+                or print it and take it with you.
+              </p>
+              <ol>
+                {d.steps.map((s, i) => (
+                  <li id={`step-${i + 1}`}>
+                    <strong>{s.title}</strong>
+                    <span>{s.text}</span>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )
+        }
 
         {
-          d.faq.length > 0 && (
+          !d.bare && d.faq.length > 0 && (
             <section class="faq" aria-labelledby="faq-heading">
               <h2 id="faq-heading">Questions people actually ask</h2>
               {d.faq.map((f) => (
@@ -200,7 +206,7 @@ const howToLd = {
         </footer>
       </div>
 
-      <aside class="guide__side">
+      <aside class="guide__side" hidden={d.bare}>
         <div class="sticky">
           <h2 class="side__title">At a glance</h2>
           <ol class="side__steps">
@@ -356,6 +362,17 @@ const howToLd = {
 
   .guide__main {
     max-width: 44rem;
+  }
+
+  /* Bare guides: the walkthrough is the whole page, so it gets the
+     full column and there is no sidebar to make room for. */
+  .guide__grid--bare {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .guide__main--bare {
+    max-width: 68rem;
+    margin-inline: auto;
   }
 
   .sticky {

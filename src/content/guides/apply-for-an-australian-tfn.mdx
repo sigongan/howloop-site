@@ -1,0 +1,205 @@
+---
+title: 'How to apply for an Australian Tax File Number (TFN)'
+cardTitle: 'Apply for an Australian TFN'
+description: 'The right way to apply for a TFN depends entirely on who you are — a citizen or resident who can set up a Strong myID, a visa holder with work rights, a resident without a Digital ID, or someone living overseas with Australian income. See every route at once and find the one that fits.'
+topic: 'paperwork'
+bare: true
+published: 2026-08-12
+updated: 2026-08-12
+timeNeeded: '5–30 minutes to apply; up to 28 days to receive it'
+difficulty: 'Easy'
+cost: 'Free'
+tools:
+  - 'Your passport or travel document, if you have one'
+  - 'A myGov account, if applying online'
+  - 'Your visa details, if you hold one (check them on VEVO)'
+steps:
+  - title: 'Four different routes'
+    text: 'A TFN application is not one form. The route that applies to you depends on whether you can set up a Strong myID, whether you hold a visa with current work rights, and whether you are in Australia or overseas.'
+  - title: 'Citizen or resident with a Strong myID'
+    text: 'Apply online using a Strong myID linked to myGov. Needs a current Australian passport and being at least 15. Most people receive the TFN on screen the same day.'
+  - title: 'Visa holder with current work rights'
+    text: 'Apply online through the Individual Auto-Registration system. No documents to send — your visa is checked automatically against Department of Home Affairs records. Blocked by visa conditions 8101, 8103 and 8116.'
+  - title: 'Australian resident without a Digital ID'
+    text: 'Apply in person at a participating Australia Post outlet or a Services Australia service centre with original identity documents, or by post using form NAT 1432 with certified copies. Free at any age.'
+  - title: 'Living outside Australia with Australian income'
+    text: 'Apply using the paper form NAT 2628, posted with certified copies of your identity documents — never the originals.'
+faq: []
+---
+
+import Callout from '../../components/Callout.astro';
+import RouteMap from '../../components/RouteMap.astro';
+
+export const tfnSafety = {
+  title: 'Once you have it, guard it',
+  text: 'Only your employer (after you start work), your bank, your super fund and a registered tax agent ever need your TFN. Never put it on a resume. The ATO will never text or email you a link asking you to log in, and will never ask for payment by gift card.',
+};
+
+export const tfnPeople = [
+  {
+    id: 'citizen-myid',
+    icon: 'passportAu',
+    label: 'I can set up a Strong myID',
+    sub: 'Australian citizen or resident, current passport, aged 15+',
+    lane: 'route1',
+  },
+  {
+    id: 'citizen-noid',
+    icon: 'passportOther',
+    label: "I'm a citizen or resident without a Digital ID",
+    sub: "No current passport, under 15, or can't complete myID",
+    lane: 'route3',
+  },
+  {
+    id: 'visa',
+    icon: 'visa',
+    label: "I'm on a visa with current work rights",
+    sub: 'Working holiday, student with work rights, skilled, most others',
+    lane: 'route2',
+  },
+  {
+    id: 'inperson',
+    icon: 'inAu',
+    label: "I'm in Australia now, without work rights",
+    sub: 'No Strong myID and no work-rights visa, but here right now',
+    lane: 'route3',
+  },
+  {
+    id: 'overseas',
+    icon: 'outAu',
+    label: 'I live outside Australia',
+    sub: 'With Australian-sourced income',
+    lane: 'route4',
+  },
+];
+
+export const tfnLanes = [
+  {
+    id: 'route1',
+    icon: 'phone',
+    name: 'myID + myGov',
+    tag: 'Online, on your phone',
+    who: 'Citizens & residents, 15+',
+    need: [
+      { icon: 'passportAu', label: 'Current Australian passport', text: 'Your own, not a family member’s.' },
+      { icon: 'licence', label: 'One more ID', text: "Driver's licence or learner's permit…" },
+      { icon: 'medicare', label: '…or Medicare card', text: 'Any one of these works.' },
+      { icon: 'cert', label: '…or citizenship certificate', text: 'Any one of these works.' },
+    ],
+    doit: [
+      {
+        items: [
+          { icon: 'dot', text: 'Set up the myID app — scan your passport, add one more ID, take a selfie' },
+          { icon: 'dot', text: 'Sign in to myGov and link the ATO' },
+          { icon: 'dot', text: 'Fill in the short TFN application' },
+        ],
+      },
+    ],
+    wait: { icon: 'bolt', label: 'Usually the same day', text: 'On screen, straight away. If it needs checking, up to 28 days.' },
+    arrives: { icon: 'phone', label: 'Shows on screen', text: 'A letter also lands in your myGov Inbox.' },
+    flag: 'Residents can apply at any age — being at least 15 is only a requirement for this online myID route.',
+  },
+  {
+    id: 'route2',
+    icon: 'laptop',
+    name: 'Individual Auto-Registration (IAR)',
+    tag: 'Online, nothing to send',
+    who: 'Visa with work rights',
+    need: [
+      { icon: 'nothing', none: true, label: 'Nothing to post or photocopy', text: 'Just your passport and visa details, typed in.' },
+    ],
+    doit: [
+      {
+        items: [
+          { icon: 'dot', text: 'Check your visa shows as in effect on VEVO first' },
+          { icon: 'dot', text: "Open the ATO's online application for foreign passport holders" },
+          { icon: 'dot', text: 'Enter your passport, visa and an Australian postal address' },
+        ],
+      },
+    ],
+    wait: { icon: 'clock', label: 'Up to 28 days', text: "Applying a second time while you wait makes it slower, not faster." },
+    arrives: { icon: 'letter', label: 'Letter in the post', text: 'To the Australian address you gave.' },
+    flag: 'Blocked by visa conditions 8101, 8103 or 8116 — those mean no work, so this route won’t accept the application. Use the in-person route instead.',
+  },
+  {
+    id: 'route3',
+    icon: 'counter',
+    name: 'Australian resident without a Digital ID',
+    tag: 'Someone checks your ID in person, or by certified post',
+    who: 'Residents, any age',
+    need: [
+      { icon: 'cert', label: 'Current original ID documents', text: 'For the two in-person channels — not photocopies.' },
+      { icon: 'letter', label: 'Certified copies', text: 'For the postal channel only — never send originals.' },
+    ],
+    doit: [
+      {
+        label: 'Australia Post',
+        items: [
+          { icon: 'dot', text: 'Complete the online form and print the summary' },
+          { icon: 'dot', text: 'Take it to a participating outlet within 30 days, with your original documents' },
+          { icon: 'dot', text: 'Sign it there' },
+        ],
+      },
+      {
+        label: 'Services Australia service centre',
+        items: [
+          { icon: 'dot', text: 'Complete the paper form NAT 1432' },
+          { icon: 'dot', text: 'Bring current original documents to a service centre' },
+        ],
+      },
+      {
+        label: 'By post',
+        items: [
+          { icon: 'dot', text: 'For people who can’t use either channel above' },
+          { icon: 'dot', text: 'Complete NAT 1432 and send certified copies — never the originals — to the address on the form' },
+        ],
+      },
+    ],
+    wait: { icon: 'clock', label: 'Up to 28 days', text: 'Counted from when your documents were sighted, or received by post.' },
+    arrives: { icon: 'letter', label: 'Letter in the post', text: 'Say on the form if you want it shared with Centrelink.' },
+    flag: 'Aboriginal and Torres Strait Islander applicants who can’t provide enough identity documents can use form NAT 1589 instead — a referee completes the proof-of-identity reference.',
+  },
+  {
+    id: 'route4',
+    icon: 'post',
+    name: 'Paper form NAT 2628',
+    tag: 'Printed, posted, slowest',
+    who: 'Living overseas',
+    need: [
+      { icon: 'letter', label: 'Form NAT 2628', text: 'Download from ato.gov.au, or order it on 1300 720 092.' },
+      { icon: 'cert', label: 'Certified copies of your ID', text: 'Copies, never the originals.' },
+      { icon: 'post', label: 'Postage', text: 'To the address printed on the form.' },
+    ],
+    doit: [
+      {
+        items: [
+          { icon: 'dot', text: "Check you actually need one — interest, dividends or royalties alone usually don't require a TFN" },
+          { icon: 'dot', text: 'Download and complete NAT 2628' },
+          { icon: 'dot', text: 'Get your ID documents certified, then post everything together' },
+        ],
+      },
+    ],
+    wait: { icon: 'clock', label: 'Up to 28 days after it arrives', text: 'Plus international post time in both directions.' },
+    arrives: { icon: 'letter', label: 'Letter in the post', text: 'To the address on your form.' },
+  },
+];
+
+<Callout type="warn" title="This is a process guide, not tax advice">
+This page walks through **how to apply** for a TFN and which route fits your
+situation — it is not advice on whether you need one, how you should be taxed,
+or anything about a tax return. Howloop is not a registered tax agent. For
+anything specific to your circumstances, use the [ATO](https://www.ato.gov.au)
+directly or speak to a registered tax agent.
+</Callout>
+
+There are four completely different ways to apply for a Tax File Number.
+Here they all are, side by side — pick who you are and the rest fade out, or read all four.
+
+<RouteMap
+  id="tfn-route-map"
+  title="Which TFN application is yours?"
+  intro="Tap who you are and the other lanes fade out — but you can always see the whole picture, including the ones that aren't yours."
+  people={tfnPeople}
+  lanes={tfnLanes}
+  safety={tfnSafety}
+/>

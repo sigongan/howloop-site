@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototype B — The whole map</title>
+<style>
+  :root{
+    --paper:#fbfaf7; --paper-deep:#f2efe8; --ink:#14171c; --ink-2:#4a5058; --ink-3:#7b828c;
+    --line:#ddd8cd; --green:#0d9b6c; --green-soft:#e6f5ef; --orange:#ee6c1e; --orange-soft:#fdeee3;
+    --radius:14px; --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:920px;margin:0 auto;padding:28px 20px 90px}
+  .protolabel{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:26px}
+  h1{font-size:2rem;line-height:1.15;margin:0 0 10px;letter-spacing:-.02em}
+  .sub{font-size:1.05rem;color:var(--ink-2);margin:0 0 34px;max-width:56ch}
+
+  .sect{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:40px 0 14px;font-weight:700}
+
+  /* picker */
+  .picker{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+  .pick{
+    display:flex;gap:12px;align-items:center;text-align:left;
+    background:#fff;border:2px solid var(--line);border-radius:12px;padding:13px 14px;
+    font:inherit;font-size:.95rem;font-weight:600;color:var(--ink);cursor:pointer;transition:.16s
+  }
+  .pick svg{width:42px;height:42px;flex:none}
+  .pick small{display:block;font-weight:400;font-size:.82rem;color:var(--ink-2);line-height:1.35;margin-top:2px}
+  .pick:hover{border-color:var(--orange)}
+  .pick:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+  .pick[aria-pressed="true"]{border-color:var(--green);background:var(--green-soft)}
+
+  /* lanes */
+  .lanes{margin-top:18px;display:grid;gap:14px}
+  .lane{
+    border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden;
+    transition:opacity .3s,filter .3s,border-color .2s
+  }
+  .lanes.filtered .lane{opacity:.28;filter:grayscale(1)}
+  .lanes.filtered .lane.hit{opacity:1;filter:none;border-color:var(--green);box-shadow:0 0 0 3px var(--green-soft)}
+
+  .lhead{display:flex;align-items:center;gap:14px;padding:16px 18px;background:var(--paper-deep)}
+  .lhead svg{width:46px;height:46px;flex:none}
+  .lhead b{display:block;font-size:1.06rem;line-height:1.25}
+  .lhead span{font-size:.86rem;color:var(--ink-2)}
+  .who{margin-left:auto;flex:none;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--ink-3);border:1px solid var(--line);border-radius:99px;padding:4px 10px;background:#fff}
+  .lane.hit .who{color:#0a6d4c;border-color:#9ed7c1;background:var(--green-soft)}
+
+  /* the strip: need -> do -> wait -> get */
+  .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  @media(max-width:700px){.strip{grid-template-columns:1fr 1fr}}
+  @media(max-width:430px){.strip{grid-template-columns:1fr}}
+  .cell{padding:16px 16px 18px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .cell:first-child{border-left:0}
+  @media(max-width:700px){.cell:nth-child(odd){border-left:0}}
+  @media(max-width:430px){.cell{border-left:0}}
+  .cell h4{margin:0 0 10px;font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+  .cell ul{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+  .cell li{display:flex;gap:9px;align-items:flex-start;font-size:.9rem;line-height:1.4}
+  .cell li svg{width:22px;height:22px;flex:none;margin-top:1px}
+  .big{display:flex;align-items:center;gap:10px}
+  .big svg{width:34px;height:34px;flex:none}
+  .big b{display:block;font-size:1rem;line-height:1.2}
+  .big span{font-size:.84rem;color:var(--ink-2)}
+  .flag{margin-top:12px;font-size:.84rem;color:#a1440a;background:var(--orange-soft);border-radius:8px;padding:8px 10px}
+
+  .foot{margin-top:34px;border-left:4px solid var(--orange);background:var(--orange-soft);border-radius:0 10px 10px 0;padding:16px 18px}
+  .foot b{display:block;margin-bottom:5px}
+  .foot p{margin:0;font-size:.94rem;color:var(--ink-2)}
+  .reset{background:none;border:0;font:inherit;font-size:.85rem;color:var(--ink-3);text-decoration:underline;cursor:pointer;margin-top:12px;padding:4px 0}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="protolabel">Prototype B · the whole map</p>
+
+  <h1>Get an Australian Tax File Number</h1>
+  <p class="sub">Four different routes exist. Here they all are, side by side. Tap who you are and the other three fade out — but you can always see the whole picture, so you know what you're not doing and why.</p>
+
+  <p class="sect">Who are you?</p>
+  <div class="picker" id="picker"></div>
+  <button class="reset" id="reset" hidden>show all four again</button>
+
+  <div class="lanes" id="lanes"></div>
+
+  <div class="foot">
+    <b>Once you have it, guard it</b>
+    <p>Only four kinds of people ever need your TFN: your employer <em>after</em> you start work, your bank, your super fund, and a registered tax agent. Never put it on a resume. The ATO will never text or email you a link asking you to log in, and will never ask for payment by gift card.</p>
+  </div>
+</div>
+
+<script>
+const I={
+  passAU:`<svg viewBox="0 0 64 64" fill="none" stroke="#14171c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="8" width="32" height="48" rx="4" fill="#ee6c1e" fill-opacity=".16"/><circle cx="32" cy="28" r="8"/><path d="M24 28h16M32 20c3 3 3 13 0 16M32 20c-3 3-3 13 0 16M26 44h12"/></svg>`,
+  visa:`<svg viewBox="0 0 64 64" fill="none" stroke="#14171c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="16" width="52" height="34" rx="4" fill="#e6f5ef"/><path d="M6 26h52"/><circle cx="20" cy="38" r="5" stroke="#0d9b6c"/><path d="M32 35h18M32 43h11" stroke="#0d9b6c"/></svg>`,
+  counter:`<svg viewBox="0 0 64 64" fill="none" stroke="#14171c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 44h52M11 44V26h42v18" fill="#f2efe8"/><circle cx="24" cy="18" r="5"/><path d="M17 28c1-4 4-6 7-6s6 2 7 6"/><path d="M40 34h9" stroke="#ee6c1e"/></svg>`,
+  globe:`<svg viewBox="0 0 64 64" fill="none" stroke="#14171c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="19"/><path d="M13 32h38M32 13c6 6 6 32 0 38M32 13c-6 6-6 32 0 38"/></svg>`,
+  phone:`<svg viewBox="0 0 64 64" fill="none" stroke="#14171c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="6" width="24" height="52" rx="5" fill="#e6f5ef"/><path d="M28 12h8"/><path d="M26 34l5 6 9-12" stroke="#0d9b6c" stroke-width="4"/></svg>`,
+  laptop:`<svg viewBox="0 0 64 64" fill="none" stroke="#14171c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="14" width="40" height="28" rx="3" fill="#e6f5ef"/><path d="M6 48h52"/></svg>`,
+  envelope:`<svg viewBox="0 0 64 64" fill="none" stroke="#14171c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="16" width="48" height="32" rx="4" fill="#fff"/><path d="M8 19l24 17 24-17" stroke="#ee6c1e"/></svg>`,
+  post:`<svg viewBox="0 0 64 64" fill="none" stroke="#14171c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="16" width="48" height="32" rx="4" fill="#fdeee3"/><path d="M8 19l24 17 24-17" stroke="#ee6c1e"/></svg>`,
+  clock:`<svg viewBox="0 0 64 64" fill="none" stroke="#14171c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="34" r="20" fill="#f2efe8"/><path d="M32 21v13l9 7" stroke="#ee6c1e"/></svg>`,
+  bolt:`<svg viewBox="0 0 64 64" fill="none" stroke="#0d9b6c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M36 8L18 36h12l-4 20 20-30H34z" fill="#e6f5ef"/></svg>`,
+  tick:`<svg viewBox="0 0 24 24" fill="none" stroke="#0d9b6c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5.5L20 6"/></svg>`,
+  dot:`<svg viewBox="0 0 24 24" fill="none" stroke="#ee6c1e" stroke-width="3" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="#ee6c1e"/></svg>`,
+  nil:`<svg viewBox="0 0 24 24" fill="none" stroke="#0d9b6c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8" stroke-opacity=".35"/><path d="M8 12.5l3 3 5-6.5"/></svg>`,
+  id:`<svg viewBox="0 0 24 24" fill="none" stroke="#14171c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="11" r="2.4"/><path d="M4.5 16c.7-2 2-2.6 3.5-2.6S11 14 11.7 16M14 10h6M14 14h4"/></svg>`,
+  paper:`<svg viewBox="0 0 24 24" fill="none" stroke="#14171c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M9 11h6M9 15h6"/></svg>`
+};
+
+const PEOPLE=[
+  {id:"citizen",ill:I.passAU,label:"I have an Australian passport",small:"Citizen, aged 15 or over"},
+  {id:"iar",ill:I.visa,label:"I'm on a visa that lets me work",small:"Working holiday, student, skilled, NZ citizen"},
+  {id:"inperson",ill:I.counter,label:"I'm in Australia, neither of those",small:"No Australian passport, no work visa"},
+  {id:"overseas",ill:I.globe,label:"I live overseas",small:"With income from Australia"}
+];
+
+const LANES=[
+  {id:"citizen",ill:I.phone,name:"myID + myGov",tag:"Online, on your phone",who:"Citizens",
+   need:[[I.id,"Australian passport"],[I.id,"Plus one: licence, Medicare card or citizenship certificate"]],
+   doit:[[I.dot,"Set up the myID app — scan passport, add one more ID, take a selfie"],[I.dot,"Sign in to myGov, link the ATO"],[I.dot,"Fill the short form"]],
+   wait:{ill:I.bolt,b:"Same day, usually",s:"On screen, straight away"},
+   get:{ill:I.laptop,b:"Shows on screen",s:"Plus a letter in your myGov Inbox"}},
+
+  {id:"iar",ill:I.laptop,name:"Auto-registration (IAR)",tag:"Online, nothing to send",who:"Work visa",
+   need:[[I.nil,"Nothing to post or photocopy"],[I.id,"Just your passport and visa numbers, typed in"]],
+   doit:[[I.dot,"Check your visa shows as active on VEVO first"],[I.dot,"Open the ATO application for migrants and visitors"],[I.dot,"Enter passport, visa and an Australian address"]],
+   wait:{ill:I.clock,b:"Up to 28 days",s:"Applying twice makes it slower"},
+   get:{ill:I.envelope,b:"Letter in the post",s:"To the Australian address you gave"},
+   flag:"If your visa says condition 8101, 8103 or 8116, it means no work and this route won't take you. Use the in-person one."},
+
+  {id:"inperson",ill:I.counter,name:"Australia Post or Services Australia",tag:"Someone checks your ID at a counter",who:"In Australia",
+   need:[[I.id,"Original documents, not copies"],[I.paper,"Printed form summary, for the Australia Post version"]],
+   doit:[[I.dot,"Australia Post: fill the form online, print it, visit within 30 days"],[I.dot,"Or Services Australia: fill form NAT 1432 there"],[I.dot,"Staff sight your documents, you sign"]],
+   wait:{ill:I.clock,b:"Up to 28 days",s:"Counted from when your ID was seen"},
+   get:{ill:I.envelope,b:"Letter in the post",s:"Say on the form if you want it shared with Centrelink"}},
+
+  {id:"overseas",ill:I.post,name:"Paper form NAT 2628",tag:"Printed, posted, slowest",who:"Overseas",
+   need:[[I.paper,"Form NAT 2628 from ato.gov.au"],[I.id,"Certified copies of your ID — never the originals"]],
+   doit:[[I.dot,"Check you need one at all — interest, dividends or royalties alone usually don't require a TFN"],[I.dot,"Complete the form"],[I.dot,"Get copies certified, post everything together"]],
+   wait:{ill:I.clock,b:"28 days after it arrives",s:"Plus post time each way"},
+   get:{ill:I.envelope,b:"Letter in the post",s:"To the address on your form"}}
+];
+
+const picker=document.getElementById('picker'), lanesEl=document.getElementById('lanes'), reset=document.getElementById('reset');
+
+picker.innerHTML=PEOPLE.map(p=>
+  `<button class="pick" data-id="${p.id}" aria-pressed="false">${p.ill}<span>${p.label}<small>${p.small}</small></span></button>`).join('');
+
+lanesEl.innerHTML=LANES.map(l=>`
+  <section class="lane" data-id="${l.id}">
+    <div class="lhead">${l.ill}<div><b>${l.name}</b><span>${l.tag}</span></div><span class="who">${l.who}</span></div>
+    <div class="strip">
+      <div class="cell"><h4>What you need</h4><ul>${l.need.map(n=>`<li>${n[0]}<span>${n[1]}</span></li>`).join('')}</ul></div>
+      <div class="cell"><h4>What you do</h4><ul>${l.doit.map(n=>`<li>${n[0]}<span>${n[1]}</span></li>`).join('')}</ul>${l.flag?`<p class="flag">${l.flag}</p>`:''}</div>
+      <div class="cell"><h4>How long</h4><div class="big">${l.wait.ill}<div><b>${l.wait.b}</b><span>${l.wait.s}</span></div></div></div>
+      <div class="cell"><h4>What arrives</h4><div class="big">${l.get.ill}<div><b>${l.get.b}</b><span>${l.get.s}</span></div></div></div>
+    </div>
+  </section>`).join('');
+
+function choose(id){
+  picker.querySelectorAll('.pick').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.id===id)));
+  lanesEl.classList.toggle('filtered',!!id);
+  lanesEl.querySelectorAll('.lane').forEach(l=>l.classList.toggle('hit',l.dataset.id===id));
+  reset.hidden=!id;
+  if(id) lanesEl.querySelector('.lane.hit').scrollIntoView({behavior:'smooth',block:'center'});
+}
+picker.addEventListener('click',e=>{const b=e.target.closest('.pick'); if(b) choose(b.dataset.id);});
+reset.onclick=()=>choose(null);
+</script>
+</body>
+</html>
