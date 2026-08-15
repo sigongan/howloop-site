@@ -50,10 +50,17 @@ const topic = TOPICS[data.topic];
     border-color: var(--brand-tint-2);
   }
 
-  .card__meta {
+ .card__meta {
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem;
+    min-width: 0;
+  }
+  .card__meta :global(.chip) {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .card__title {
@@ -77,8 +84,9 @@ const topic = TOPICS[data.topic];
     inset: 0;
   }
 
-  .card {
+.card {
     position: relative;
+    min-width: 0;
   }
 
   .card__title a:hover {
