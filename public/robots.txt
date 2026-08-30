@@ -9,3 +9,7 @@ User-agent: AdsBot-Google
 Allow: /
 
 Sitemap: https://howloop.how/sitemap-index.xml
+
+# Internal production desk — not for indexing.
+User-agent: *
+Disallow: /desk

@@ -16,3 +16,9 @@
 
 /og-default.svg
   Cache-Control: public, max-age=604800
+
+/desk/*
+  X-Robots-Tag: noindex, nofollow
+
+/desk
+  X-Robots-Tag: noindex, nofollow
