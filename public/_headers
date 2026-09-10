@@ -22,3 +22,9 @@
 
 /desk
   X-Robots-Tag: noindex, nofollow
+
+/trade/*
+  X-Robots-Tag: noindex, nofollow
+
+/trade
+  X-Robots-Tag: noindex, nofollow
