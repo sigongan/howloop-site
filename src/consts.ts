@@ -6,17 +6,17 @@
 export const SITE = {
   name: 'Howloop',
   wordmark: 'howloop',
-  tagline: 'How-to, on loop.',
+  tagline: 'Clear numbers. Better money moves.',
   description:
-    'Short looping animations that show you exactly how to fix everyday problems — around the house and on your devices. Watch the loop, then do it.',
+    'Free Australian financial calculators and plain-English money guides for saving, planning and buying a home.',
   url: 'https://howloop.how',
   domain: 'howloop.how',
-  locale: 'en',
+  locale: 'en-AU',
   email: 'hello@howloop.how',
   author: 'The Howloop team',
   // Paste your AdSense publisher ID here (e.g. 'ca-pub-1234567890123456').
   // Leave empty until AdSense is approved — no script is injected while it is empty.
-  adsensePublisherId: '',
+  adsensePublisherId: import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '',
 };
 
 export type TopicId = 'home' | 'devices' | 'paperwork';

@@ -1,0 +1,6 @@
+export const calculators=[
+{slug:'compound-interest',name:'Compound interest',tag:'SAVE & GROW',icon:'growth',description:'See what small, regular deposits could become. Let time do some of the work.',detail:'Explore how your starting balance, regular savings and interest rate work together over time.',color:'green'},
+{slug:'mortgage',name:'Mortgage & offset',tag:'MAKE IT HOME',icon:'home',description:'Find your repayments. See what an offset or extra payment could change.',detail:'Understand your monthly repayments and the difference an offset balance or extra repayments could make.',color:'blue'},
+{slug:'savings-goal',name:'Savings goal',tag:'PLAN SOMETHING GOOD',icon:'target',description:'A home deposit, a big trip, a fresh start. Turn your goal into a monthly plan.',detail:'Work backwards from your goal to find the monthly savings you would need.',color:'peach'},
+{slug:'emergency-fund',name:'Emergency fund',tag:'FIND YOUR BUFFER',icon:'shield',description:'Work out a cash buffer that fits your expenses. Give yourself some breathing room.',detail:'Turn your essential monthly expenses into a savings buffer, then plan how to build it.',color:'lavender'}
+];

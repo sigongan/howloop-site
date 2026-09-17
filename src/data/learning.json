@@ -1,0 +1,246 @@
+[
+  {
+    "slug": "how-compound-interest-works",
+    "title": "Compound interest, without the complicated bit.",
+    "category": "SAVING",
+    "minutes": 5,
+    "summary": "What interest on interest really means, and how to use a projection without mistaking it for a promise.",
+    "tool": "compound-interest",
+    "sections": [
+      [
+        "Start with the two balances",
+        "Your account balance is the amount available in the account. Your total deposits are the money you have put in yourself. The gap between them is interest, assuming there have been no withdrawals, taxes or fees. Keeping those two numbers separate makes a savings projection easier to read. A large future balance can be mostly your own contributions; that does not make the plan less useful, but it changes what the graph is telling you."
+      ],
+      [
+        "A small worked example",
+        "Suppose you begin with $1,000 and earn a hypothetical 12% annual rate, credited monthly. This unusually high rate is chosen only to make the arithmetic easy to follow. With no additional deposits, the first month earns $10. In the second month, interest is calculated on $1,010 and adds $10.10. At the end of twelve months the balance is approximately $1,126.83. The extra $6.83 beyond $120 of simple interest comes from earning interest on earlier interest."
+      ],
+      [
+        "Regular deposits often matter more at the start",
+        "With a small opening balance, the amount you save can make a bigger difference than a small rate change. Try the calculator once with your current contribution and again with an extra $20 or $50. Keep the rate and time the same so you can see the effect of just that change. Next, hold the contribution steady and lower the interest rate. This separates the part you control from the part the bank can change."
+      ],
+      [
+        "Read the graph as a scenario",
+        "The rising line is a mathematical projection using the numbers you enter. It does not predict future interest rates, inflation or your ability to maintain deposits. Howloop uses monthly compounding and end-of-month contributions. Weekly and fortnightly savings are converted to monthly equivalents, so the estimate will not match the exact timing on a bank statement. Money added earlier in a month can earn a different amount under daily bank calculations."
+      ],
+      [
+        "Make the number useful",
+        "Write down the purpose of the savings, your planned contribution and a realistic review date. Check whether your chosen account has a base rate, an ongoing bonus or a short welcome offer. Compare a lower-rate scenario before committing to a timeframe. If your goal is several years away, remember that a dollar balance does not tell you how much that money will buy by then. The calculator excludes inflation, fees and tax."
+      ]
+    ],
+    "sources": [
+      [
+        "ASIC Moneysmart: compound interest",
+        "https://moneysmart.gov.au/saving/compound-interest"
+      ],
+      [
+        "ASIC Moneysmart: compound interest calculator",
+        "https://moneysmart.gov.au/budgeting/compound-interest-calculator"
+      ]
+    ]
+  },
+  {
+    "slug": "bonus-interest-conditions",
+    "title": "That savings rate comes with a little fine print.",
+    "category": "BANKING",
+    "minutes": 5,
+    "summary": "Learn the difference between a base rate, a bonus component and a welcome offer before you build a savings plan.",
+    "tool": "compound-interest",
+    "sections": [
+      [
+        "Find the rate you actually qualify for",
+        "A savings advertisement may lead with the largest available percentage, but your account may earn a lower amount when conditions are missed. A base rate is the ordinary rate for the relevant balance and account. Bonus interest depends on additional conditions. An introductory offer applies for a limited period or to a specific group, such as new customers. A useful comparison starts by identifying which of those rates applies to your situation."
+      ],
+      [
+        "A hypothetical offer, unpacked",
+        "Imagine an account with a 1% base rate and a 3% additional bonus when you satisfy its conditions. The eligible total could be 4% for that period. If the bank instead describes a 4% total bonus rate, adding another 1% would be wrong. The wording matters. Public product feeds can contain multiple rate components and tiers, so a list of percentages is not automatically a final customer rate. Howloop does not blindly add every rate in the feed."
+      ],
+      [
+        "Turn conditions into a monthly checklist",
+        "Read the provider’s rules for deposits, balance growth, transactions, withdrawals and eligible linked accounts. Check when the bank measures each condition: calendar month, statement period or another window. If balance growth is required, find out whether interest credits count. If card transactions are required, verify which transactions qualify and when they must settle. A reminder is only helpful once it reflects the actual product rules."
+      ],
+      [
+        "Watch the balance limits",
+        "A rate may cover the whole balance when you are inside a band, or only the portion inside each tier. Those two structures can produce different interest. A advertised ceiling can also apply to combined balances across several accounts with the same provider. Entering one account into a calculator does not establish that the entire balance qualifies. Read the full product documentation if you have multiple accounts."
+      ],
+      [
+        "Use the explorer with the right expectations",
+        "The Howloop bank explorer presents dated public CDR snapshots, alphabetically. It is not a ranked list of best accounts and does not cover every bank or product. Where a base variable-rate structure is unambiguous, the calculator can model it and re-evaluate supported balance tiers as savings grow. Bonus and introductory entries stay visible for inspection. For a complex offer, confirm the applicable total with the provider and enter your own scenario. A constant custom rate is held for the full term, so model a welcome period separately from the rate after it ends."
+      ]
+    ],
+    "sources": [
+      [
+        "ASIC Moneysmart: savings accounts",
+        "https://moneysmart.gov.au/banking/savings-accounts"
+      ],
+      [
+        "Consumer Data Right: public product data",
+        "https://www.cdr.gov.au/for-providers/how-find-data-holders-product-data-request-service"
+      ]
+    ]
+  },
+  {
+    "slug": "offset-vs-extra-repayments",
+    "title": "An offset or extra repayments. What’s the difference?",
+    "category": "HOME LOANS",
+    "minutes": 6,
+    "summary": "Two ways to reduce mortgage interest, with different implications for how you access your money.",
+    "tool": "mortgage",
+    "sections": [
+      [
+        "Follow where the money sits",
+        "An offset is a separate account linked to an eligible home loan. Extra repayments go directly towards the loan. Both can reduce interest, but the balances live in different places. Money in an offset generally remains account money, while access to extra repayments depends on the lender’s redraw rules. Check those rules rather than assuming the two features are interchangeable."
+      ],
+      [
+        "The interest arithmetic",
+        "Consider a hypothetical $600,000 loan with a constant $30,000 balance in a 100% offset. The interest calculation uses a net balance of $570,000. At an unchanged annual rate of 6%, that $30,000 would initially reduce interest by roughly $150 a month using a simple monthly approximation. The exact bank calculation usually uses daily balances, and the benefit changes when money moves in or out."
+      ],
+      [
+        "Why the repayment can stay the same",
+        "A lower interest charge does not necessarily mean the bank reduces your scheduled repayment. If you keep paying the same amount, more goes towards principal, which can shorten the loan. Howloop holds the standard principal-and-interest repayment constant, then models the offset and any extra monthly payment. The comparison isolates those features on the same assumed loan rate and term."
+      ],
+      [
+        "Compare costs as well as benefits",
+        "An offset feature can come with a package fee, account fee or different loan rate. A calculator that ignores those costs is useful for understanding the mechanics but cannot establish which loan is cheaper overall. Compare the total cost of the actual loan offers. If the offset balance is small or frequently withdrawn, use a lower average balance in your scenario."
+      ],
+      [
+        "Keep access and future use in mind",
+        "Before making extra repayments, check restrictions, redraw minimums and whether a fixed-rate period changes the rules. If the property could later have a different use, seek qualified tax advice about your own situation rather than assuming offset and redraw have the same tax consequences. The Howloop model makes no tax calculations."
+      ],
+      [
+        "Read the payoff date carefully",
+        "The offset balance in our calculation stays separate throughout the plan. It is not automatically transferred to pay off the final loan balance. This is a deliberate assumption: a loan fully covered by an offset may stop accruing interest while scheduled repayments continue to reduce the actual debt. The model excludes lender fees, interest-only periods and changes in rates."
+      ]
+    ],
+    "sources": [
+      [
+        "ASIC Moneysmart: mortgage offset accounts",
+        "https://moneysmart.gov.au/home-loans/mortgage-offset-accounts"
+      ],
+      [
+        "ASIC Moneysmart: pay off your mortgage faster",
+        "https://moneysmart.gov.au/home-loans/pay-off-your-mortgage-faster"
+      ]
+    ]
+  },
+  {
+    "slug": "planning-a-home-deposit",
+    "title": "Give your home deposit a plan, not just a number.",
+    "category": "HOME BUYING",
+    "minutes": 5,
+    "summary": "Break a large savings target into a deposit, a separate cost allowance and a monthly habit you can check.",
+    "tool": "savings-goal",
+    "sections": [
+      [
+        "Separate the purchase price from the cash target",
+        "The property price is not the amount you need to save, and the deposit is not the only upfront cost. Start with a price range and a deposit percentage that fits the lending options you are investigating. Keep buying costs in a separate allowance so they do not quietly consume money intended for the deposit. This tool does not determine how much you can borrow."
+      ],
+      [
+        "An example you can adapt",
+        "For a hypothetical $650,000 property, a 15% deposit is $97,500. If you add a self-chosen $20,000 allowance for purchase costs, the savings target becomes $117,500. That allowance is an illustration, not an estimate of your transfer duty or other expenses. If you already have $25,000 dedicated to the purchase, you can enter the full target and your current savings into the goal calculator."
+      ],
+      [
+        "Give every cost a place",
+        "Make a checklist for transfer duty, conveyancing, inspections, lender charges, moving and a buffer after settlement. Eligibility for concessions and assistance depends on the jurisdiction, property and buyer. Use the relevant state revenue office and program’s current official rules. A lender may also require mortgage insurance in some situations. Avoid treating any single deposit percentage as a universal approval threshold."
+      ],
+      [
+        "Work backwards from a timeframe",
+        "A target is useful when it becomes an amount you can compare with your actual monthly budget. Enter the goal, existing savings and years available. Then lower the assumed interest rate or extend the timeframe to see how much the monthly requirement changes. If the result would leave you without room for ordinary bills, revise the plan instead of treating the calculator as an instruction to save that amount."
+      ],
+      [
+        "Keep the deposit plan separate from the borrowing decision",
+        "Savings growth does not tell you whether repayments will be affordable. A lender considers income, expenses, debts, credit history and its own assessment rules. Once you have a possible loan amount, use the mortgage calculator to explore monthly repayments and a higher-rate scenario. Those figures are still estimates, not pre-approval. Revisit the deposit target when prices, costs or your circumstances change."
+      ]
+    ],
+    "sources": [
+      [
+        "ASIC Moneysmart: save for a house deposit",
+        "https://moneysmart.gov.au/saving/save-for-a-house-deposit"
+      ],
+      [
+        "ASIC Moneysmart: home loans",
+        "https://moneysmart.gov.au/home-loans"
+      ]
+    ]
+  },
+  {
+    "slug": "building-an-emergency-fund",
+    "title": "Build a little breathing room into your budget.",
+    "category": "EVERYDAY MONEY",
+    "minutes": 4,
+    "summary": "Work out what essentials cost, choose a buffer and start with a contribution you can sustain.",
+    "tool": "emergency-fund",
+    "sections": [
+      [
+        "Start with your own essentials",
+        "List the bills that continue even if income stops for a while: housing, groceries, utilities, insurance, transport and minimum debt repayments. Use recent statements where possible. An annual insurance bill belongs in the monthly budget too; divide it by twelve. The exercise is about the costs you need to cover, not a judgment about how your household spends."
+      ],
+      [
+        "Choose a number of months",
+        "Three months is the example used in the calculator. It is a planning starting point, not an individual recommendation. Variable income, dependants, health needs and available support can change the buffer you choose. You can also begin with a smaller first milestone if the full amount feels out of reach."
+      ],
+      [
+        "A worked planning example",
+        "If essential expenses are $3,500 a month, a three-month target is $10,500. With $2,000 already set aside, the remaining gap is $8,500. Saving $400 at the end of each month would take 22 whole months to close that gap when interest is excluded. This calculation assumes you do not need to spend the buffer along the way."
+      ],
+      [
+        "Keep the buffer accessible",
+        "Think about how you would reach the money during an unexpected expense. A product with withdrawal restrictions or a risk of losing principal may behave differently from an accessible savings balance. If you use an offset as your cash buffer, check the account and loan terms. Avoid double-counting the same money as both a home deposit and emergency savings when planning two goals."
+      ],
+      [
+        "Review the plan when life changes",
+        "The target should respond to your expenses and circumstances. Revisit it after a move, a job change, a new dependant or a substantial bill increase. If the fund is used, re-run the calculation with the new balance and choose a replenishment contribution. A zero monthly contribution leaves a gap without a completion date; the tool displays that plainly rather than promising a timeline."
+      ]
+    ],
+    "sources": [
+      [
+        "ASIC Moneysmart: emergency funds",
+        "https://moneysmart.gov.au/saving/save-for-an-emergency-fund"
+      ],
+      [
+        "ASIC Moneysmart: starting to save",
+        "https://moneysmart.gov.au/saving/how-to-start-saving"
+      ]
+    ]
+  },
+  {
+    "slug": "read-a-savings-projection",
+    "title": "Read a savings projection like a plan, not a promise.",
+    "category": "MONEY BASICS",
+    "minutes": 4,
+    "summary": "Learn which assumptions sit behind a future balance and how to test the parts that might change.",
+    "tool": "compound-interest",
+    "sections": [
+      [
+        "Change one thing at a time",
+        "A projection is easiest to understand when only one input changes. Keep the starting balance, rate and timeframe fixed while trying a different deposit amount. Then return to the original contribution and vary the rate. If every number changes at once, you cannot easily tell which decision produced the difference."
+      ],
+      [
+        "Check what the end balance contains",
+        "If you start with $10,000 and add $500 per month for ten years, your own deposits total $70,000 before any interest. A future balance above that includes the modelled interest. When someone compares two accounts using only the final balance, it can hide the fact that most of the money comes from consistent saving rather than the rate difference."
+      ],
+      [
+        "Look for assumptions about timing",
+        "An annual interest rate does not specify when money is credited. A projection might compound yearly, monthly or daily, and contributions might arrive at the beginning or end of a period. Howloop’s savings calculators use monthly compounding and end-of-month contributions. This makes the method reproducible, but it is not an exact reconstruction of bank interest."
+      ],
+      [
+        "Allow for rates to change",
+        "A variable bank rate can move during a multi-year plan. A welcome offer may last only a few months. Test a lower constant rate as a sensitivity check, and separately calculate a short introductory period if you want to understand it. Do not use a temporary promotional rate as though it were guaranteed for ten years."
+      ],
+      [
+        "Remember what is outside the number",
+        "The balance is nominal Australian dollars. It does not include inflation, tax, fees, withdrawals or changes to your income. The result therefore cannot tell you the future purchasing power of the money or the after-tax benefit of choosing one product. Use the year-by-year table to understand the calculation, and check the actual account documentation before acting."
+      ]
+    ],
+    "sources": [
+      [
+        "ASIC Moneysmart: compound interest calculator",
+        "https://moneysmart.gov.au/budgeting/compound-interest-calculator"
+      ],
+      [
+        "Howloop: calculation methods",
+        "https://howloop.how/methodology"
+      ]
+    ]
+  }
+]

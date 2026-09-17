@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/banks.json';
+const count=data.banks.reduce((sum,b)=>sum+b.productCount,0);
+const date=new Date(data.fetchedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'long',year:'numeric'});
+---
+<Base title="Australian bank product explorer" description="Explore published Australian deposit product data. Find banks, inspect base rates and bonus conditions, and try a savings projection. Coverage and update dates disclosed.">
+<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Bank explorer</div><span class="hl-eyebrow">A MORE INFORMED SAVING MOVE</span><h1>Your bank.<br/>A little more context.</h1><p>Find a banking brand, inspect its published deposit products and take the numbers into your savings plan.</p></header>
+<div class="hl-wrap hl-page-main"><div class="hl-bank-intro"><strong>{data.banks.length}</strong><div>banking brands in the public CDR register<br/>{count} deposit and transaction products retrieved · Snapshot {date}</div></div>
+<p class="hl-help" style="max-width:800px;margin-bottom:22px">This directory covers banking brands in the CDR register, not every Australian bank or every product. Some providers have no deposit products, unavailable feeds or incomplete responses. Results are alphabetical, not a ranking. Eligibility, fees and product types vary; confirm them with the provider.</p>
+<label class="hl-field"><span>Find your bank or provider</span><input class="hl-search" type="search" id="bank-filter" placeholder="Try CommBank, ING, ANZ or Up…" aria-label="Find your bank or provider"/></label><p class="hl-help" id="bank-count" aria-live="polite">{data.banks.length} providers</p>
+<div class="hl-bank-grid">{data.banks.map(b=><a class="hl-bank-row" data-bank-name={b.name.toLowerCase()} href={'/calculators/compound-interest?bank='+b.id}><span class="hl-bank-initial">{b.name.replace(/[^a-zA-Z]/g,'').slice(0,2).toUpperCase()}</span><div><h2>{b.name}</h2><small>{b.status==='unavailable'?'Data unavailable':b.productCount+' products'+(b.status==='partial'?' · partial data':'')}</small></div><span aria-hidden="true">↗</span></a>)}</div>
+<p id="bank-empty" class="hl-empty" hidden>No matching provider. You can still <a href="/calculators/compound-interest">enter your own interest rate</a>.</p>
+<div class="hl-explainer"><div><h2>Public product data. No account access.</h2><p>We retrieve product information from the public APIs listed in the Australian Government’s Consumer Data Right register. These describe products and their terms; they contain no customer balances or transactions.</p><p>Snapshots show a retrieval date. The calculator can automatically model simple base variable rates and supported dollar-based tiers. It does not automatically combine bonus or introductory components or infer whether you qualify.</p></div><div><h2>Where the information comes from</h2><p><a href="https://www.cdr.gov.au/for-providers/how-find-data-holders-product-data-request-service">CDR: public product data ↗</a></p><p><a href="https://www.apra.gov.au/registers/list-registered-authorised-deposit-taking-institutions">APRA: authorised institutions ↗</a></p><p><a href="/methodology">Our coverage and rate methodology →</a></p></div></div></div>
+</Base>
+<script>
+const input=document.querySelector('#bank-filter');const cards=[...document.querySelectorAll('[data-bank-name]')];
+input?.addEventListener('input',()=>{const query=input.value.trim().toLowerCase();let count=0;cards.forEach(card=>{const show=card.dataset.bankName.includes(query);card.hidden=!show;if(show)count++;});document.querySelector('#bank-count').textContent=count+' matching providers';document.querySelector('#bank-empty').hidden=count!==0;});
+</script>
+

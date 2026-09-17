@@ -1,329 +1,57 @@
 ---
-import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import GuideCard from '../components/GuideCard.astro';
-import AnimStage from '../components/AnimStage.astro';
-import DrainClog from '../animations/DrainClog.astro';
-import AdSlot from '../components/AdSlot.astro';
-import { SITE, TOPICS } from '../consts';
-
-const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
-);
-
-const demo = guides.find((g) => g.id === 'unclog-a-bathroom-sink-drain');
-const demoSteps = demo?.data.steps ?? [];
+import ToolIcon from '../components/ToolIcon.astro';
+import {calculators} from '../data/tools';
 ---
-
-<Base title={SITE.name} description={SITE.description}>
-  <section class="hero">
-    <div class="wrap hero__grid">
-      <div class="hero__copy">
-        <p class="eyebrow">{SITE.tagline}</p>
-        <h1>
-          Stuck on something small?<br />
-          <span class="hl">Watch the loop.</span>
-        </h1>
-        <p class="hero__lede">
-          Every guide on Howloop is a short animation that shows the fix from
-          the angle you can't see in real life — inside the drain, inside the
-          tank, inside the phone. Watch it twice, then go and do it.
-        </p>
-        <div class="hero__cta">
-          <a class="btn btn--brand" href="/guides">Browse the guides</a>
-          <a class="btn btn--ghost" href="/topics/home">Around the house</a>
-        </div>
-        <ul class="hero__points">
-          <li><strong>No 12-minute video.</strong> The whole fix in 30 seconds.</li>
-          <li><strong>Scrub any step.</strong> Pause on the bit you're on.</li>
-          <li><strong>Written out too.</strong> Every animation has a text version.</li>
-        </ul>
-      </div>
-
-      <div class="hero__demo">
-        {
-          demo && demoSteps.length > 0 && (
-            <AnimStage
-              id="hero-demo"
-              label={demo.data.cardTitle ?? demo.data.title}
-              steps={demoSteps}
-              pace={2600}
-              caption="This is what every guide looks like. Play, pause, or jump to the step you're stuck on."
-            >
-              <DrainClog />
-            </AnimStage>
-          )
-        }
-      </div>
-    </div>
-  </section>
-
-  <section class="wrap band">
-    <h2 class="band__title">Pick a mess</h2>
-    <div class="topics">
-      {
-        Object.values(TOPICS).map((t) => (
-          <a class="topic" href={`/topics/${t.id}`}>
-            <h3>{t.label}</h3>
-            <p>{t.blurb}</p>
-            <span class="topic__go">
-              {guides.filter((g) => g.data.topic === t.id).length} guides →
-            </span>
-          </a>
-        ))
-      }
-    </div>
-  </section>
-
-  <section class="wrap band">
-    <div class="band__head">
-      <h2 class="band__title">All the loops</h2>
-      <a class="band__link" href="/guides">See everything →</a>
-    </div>
-    <div class="grid">
-      {guides.slice(0, 6).map((g) => <GuideCard guide={g} />)}
-    </div>
-  </section>
-
-  <div class="wrap"><AdSlot layout="display" /></div>
-
-  <section class="wrap band">
-    <div class="why">
-      <h2>Why animations beat photos and long videos</h2>
-      <div class="why__grid">
-        <div>
-          <h3>You can see through things</h3>
-          <p>
-            The reason a slow drain or a running toilet is confusing is that the
-            problem is hidden inside a pipe or behind a wall. A drawing can cut
-            straight through it. A camera can't.
-          </p>
-        </div>
-        <div>
-          <h3>Timing is the instruction</h3>
-          <p>
-            "Pull it out slowly" and "pull it out" look identical in a photo.
-            Motion carries the part of the instruction that words are bad at.
-          </p>
-        </div>
-        <div>
-          <h3>You control the clock</h3>
-          <p>
-            No scrubbing through an intro, a sponsor read and three minutes of
-            setup. Each step is its own frame, and you sit on it as long as you
-            like.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-</Base>
-
-<style>
-  .hero {
-    padding-block: clamp(2rem, 1rem + 4vw, 4rem) 1rem;
-    background: linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--brand-tint) 70%, var(--paper)),
-      var(--paper) 70%
-    );
-    border-bottom: 1px solid var(--line-soft);
-  }
-
-  .hero__grid {
-    display: grid;
-    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-    gap: clamp(1.5rem, 1rem + 3vw, 3.5rem);
-    align-items: center;
-  }
-
-  @media (max-width: 60rem) {
-    .hero__grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .hero__copy h1 {
-    margin-block-start: 0.6rem;
-    font-size: var(--step-5);
-    letter-spacing: -0.035em;
-  }
-
-  .hl {
-    color: var(--brand-deep);
-    position: relative;
-    white-space: nowrap;
-  }
-
-  .hl::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0.06em;
-    height: 0.28em;
-    background: color-mix(in srgb, var(--accent) 32%, transparent);
-    border-radius: 3px;
-    z-index: -1;
-  }
-
-  .hero__lede {
-    margin-block-start: 1.1rem;
-    max-width: 46ch;
-    font-size: var(--step-1);
-    line-height: 1.55;
-    color: var(--ink-2);
-  }
-
-  .hero__cta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-block-start: 1.6rem;
-  }
-
-  .hero__points {
-    list-style: none;
-    padding: 0;
-    margin-block-start: 1.8rem;
-    display: grid;
-    gap: 0.55rem;
-    font-size: var(--step--1);
-    color: var(--ink-2);
-  }
-
-  .hero__points li {
-    display: flex;
-    gap: 0.6rem;
-  }
-
-  .hero__points li::before {
-    content: '';
-    flex: none;
-    width: 0.55rem;
-    height: 0.55rem;
-    margin-block-start: 0.5rem;
-    border-radius: 999px;
-    background: var(--brand);
-  }
-
-  .hero__points strong {
-    color: var(--ink);
-    font-weight: 650;
-  }
-
-  .hero__demo :global(.anim) {
-    margin-block: 0;
-  }
-
-  /* --- bands ------------------------------------------------------------- */
-  .band {
-    padding-block: clamp(2rem, 1.4rem + 2vw, 3.5rem);
-  }
-
-  .band__head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .band__title {
-    font-size: var(--step-3);
-    margin-block-end: 1.3rem;
-  }
-
-  .band__head .band__title {
-    margin-block-end: 0;
-  }
-
-  .band__link {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: var(--step--1);
-    text-decoration: none;
-  }
-
-  .band__head + .grid {
-    margin-block-start: 1.4rem;
-  }
-
-  .grid {
-    display: grid;
-    gap: 1.1rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
-  }
-
-  /* --- topics ------------------------------------------------------------ */
-  .topics {
-    display: grid;
-    gap: 1.1rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
-  }
-
-  .topic {
-    display: block;
-    padding: 1.6rem;
-    border-radius: var(--radius-lg);
-    background: var(--surface);
-    border: 1px solid var(--line);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.16s ease, box-shadow 0.16s ease;
-  }
-
-  .topic:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-  }
-
-  .topic h3 {
-    font-size: var(--step-2);
-  }
-
-  .topic p {
-    margin-block: 0.5rem 0.9rem;
-    color: var(--ink-2);
-    font-size: var(--step--1);
-    line-height: 1.6;
-  }
-
-  .topic__go {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: var(--step--1);
-    color: var(--brand-deep);
-  }
-
-  /* --- why --------------------------------------------------------------- */
-  .why {
-    padding: clamp(1.6rem, 1.2rem + 1.5vw, 2.6rem);
-    border-radius: var(--radius-lg);
-    background: var(--paper-deep);
-    border: 1px solid var(--line);
-  }
-
-  .why h2 {
-    font-size: var(--step-3);
-    max-width: 22ch;
-  }
-
-  .why__grid {
-    display: grid;
-    gap: 1.6rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
-    margin-block-start: 1.6rem;
-  }
-
-  .why__grid h3 {
-    font-size: var(--step-1);
-  }
-
-  .why__grid p {
-    margin-block-start: 0.5rem;
-    color: var(--ink-2);
-    font-size: var(--step--1);
-    line-height: 1.65;
-  }
-</style>
+<Base title="Howloop" description="Free Australian money calculators. Explore compound interest, savings goals, mortgage repayments and bank product data. Clear numbers for your next money move.">
+<div class="hl-home">
+<section class="hl-hero hl-wrap">
+<div class="hl-hero-copy"><div class="hl-eyebrow"><span class="hl-dot"></span> A LITTLE CLARITY GOES A LONG WAY</div>
+<h1>Your money.<br/>Your possibilities<span class="hl-lime-dot">.</span></h1>
+<p>Less guesswork. More “I’ve got this.”<br/>Simple tools to help you save, buy a home and make your next money move.</p>
+<div class="hl-hero-actions"><a class="hl-button" href="/calculators">Find your calculator <span aria-hidden="true">↗</span></a><a class="hl-text-link" href="/learn">A good place to start <span aria-hidden="true">→</span></a></div>
+<div class="hl-micro-trust"><span>✓ Free to use</span><span>✓ No sign-up</span><span>✓ Built for Australia</span></div></div>
+<div class="hl-hero-visual">
+<div class="hl-chart-card"><div class="hl-chart-top"><span><span class="hl-live-dot"></span> YOUR MONEY, IN MOTION</span><ToolIcon name="growth"/></div>
+<div class="hl-chart-label">A little today. A lot of possibility.</div><div class="hl-hero-total" data-hero-total>$68,314</div><div class="hl-chart-sub">Your projected balance in <b data-hero-years>10 years</b></div>
+<svg class="hl-hero-chart" viewBox="0 0 430 166" role="img" aria-label="Illustrative savings growth over time"><defs><linearGradient id="growth-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7ed96" stop-opacity=".28"/><stop offset="1" stop-color="#d7ed96" stop-opacity="0"/></linearGradient></defs><path class="hl-chart-grid" d="M0 30h430M0 80h430M0 130h430"/><path data-hero-deposit d="M0 150 430 72" stroke="#75828e" stroke-width="2" stroke-dasharray="5 6" fill="none"/><path data-hero-area d="M0 150C110 139 242 91 430 8V165H0Z" fill="url(#growth-fill)"/><path data-hero-line d="M0 150C110 139 242 91 430 8" fill="none" stroke="#d6ed97" stroke-width="3"/><circle data-hero-point cx="424" cy="11" r="5" fill="#d6ed97"/></svg>
+<div class="hl-chart-axis"><span>Today</span><span data-hero-end>Year 10</span></div>
+<div class="hl-hero-mini-stats"><div><span><i></i> Your deposits</span><b data-hero-deposits>$53,000</b></div><div><span><i class="interest"></i> Interest earned</span><b class="lime" data-hero-interest>+$15,314</b></div></div>
+<div class="hl-hero-control"><label for="hero-years">Give it time <strong><span data-hero-range>10</span> years</strong></label><input id="hero-years" type="range" min="1" max="30" value="10" step="1"/><div class="hl-range-labels"><span>1 year</span><span>30 years</span></div></div>
+<div class="hl-chart-footnote">$5,000 start + $400/month · 4.5% p.a. illustrative rate.<br/>Monthly compounding. Before tax and fees.</div></div>
+<div class="hl-floating-note"><span class="hl-note-icon">↗</span><div>Small steps.<br/><strong>A future you can see.</strong></div></div>
+</div></section>
+<div class="hl-proofbar"><div class="hl-wrap"><span><ToolIcon name="bank"/> Australian dollars. Australian context.</span><span>Transparent calculations</span><span>Your numbers stay in your browser</span><a href="/methodology">See how it works ↗</a></div></div>
+<section class="hl-section hl-wrap" id="tools"><div class="hl-section-head"><div><span class="hl-eyebrow">LESS MATHS. MORE MOMENTUM.</span><h2>What’s your next money move?</h2></div><a class="hl-text-link" href="/calculators">Explore all tools <span>↗</span></a></div>
+<div class="hl-tool-grid">{calculators.map((t,i)=><a href={'/calculators/'+t.slug} class={'hl-tool-card '+t.color}><div class="hl-tool-top"><span class="hl-icon-box"><ToolIcon name={t.icon}/></span><span class="hl-tool-number">0{i+1}</span></div><span class="hl-card-kicker">{t.tag}</span><h3>{t.name}</h3><p>{t.description}</p><span class="hl-card-link">Let’s work it out <span>↗</span></span></a>)}</div></section>
+<section class="hl-bank-feature hl-wrap"><div class="hl-bank-art" aria-hidden="true"><div class="hl-orbit-ring"></div><div class="hl-bank-tile tile-cba">C<span>CommBank</span></div><div class="hl-bank-tile tile-ing">ING<span>ING</span></div><div class="hl-bank-tile tile-anz">ANZ<span>ANZ</span></div><div class="hl-bank-tile tile-nab">nab<span>NAB</span></div><div class="hl-bank-tile tile-up">up<span>Up</span></div><div class="hl-bank-center"><ToolIcon name="bank"/><span>Your next<br/><b>saving move.</b></span></div><div class="hl-bank-art-caption">A little more context. A more informed choice.</div></div>
+<div class="hl-bank-feature-copy"><span class="hl-eyebrow">MEET YOUR MONEY’S NEXT HOME</span><h2>Your bank.<br/>The bigger picture.</h2><p>Explore public deposit products from Australian banking brands. See the published rates and the conditions behind them, then bring a rate into your savings plan.</p><a href="/banks" class="hl-button light">Explore bank products <span>↗</span></a><small>Public CDR product data. Coverage varies by provider.<br/>No bank login or account connection needed.</small></div></section>
+<section class="hl-section hl-wrap"><div class="hl-section-head"><div><span class="hl-eyebrow">A FEW MINUTES. A LITTLE MORE CONFIDENCE.</span><h2>Good with money starts here.</h2></div><a class="hl-text-link" href="/learn">All money guides <span>↗</span></a></div>
+<div class="hl-guide-grid"><a class="hl-guide-card" href="/learn/how-compound-interest-works"><div class="hl-guide-art art-grow" aria-hidden="true"><span>1</span><span>2</span><span>4</span><span>8</span><b>Small beginnings.<br/>Bigger possibilities.</b></div><span class="hl-card-kicker">SAVING · 5 MIN READ</span><h3>Compound interest, without the complicated bit.</h3><p>Your money can earn interest on its interest. Here’s what that actually means.</p><span class="hl-card-link">Get the idea <span>↗</span></span></a>
+<a class="hl-guide-card" href="/learn/bonus-interest-conditions"><div class="hl-guide-art art-rates" aria-hidden="true"><div>More than<br/><b>a percentage.</b></div><span class="hl-art-chip">Rates + conditions</span></div><span class="hl-card-kicker">BANKING · 5 MIN READ</span><h3>That savings rate comes with a little fine print.</h3><p>Base rates, bonus hoops and welcome offers: know which number applies to you.</p><span class="hl-card-link">Read between the lines <span>↗</span></span></a>
+<a class="hl-guide-card" href="/learn/offset-vs-extra-repayments"><div class="hl-guide-art art-home" aria-hidden="true"><svg viewBox="0 0 260 110"><path d="m50 70 52-43 52 43M66 58v46h72V58M87 103V77h29v26" fill="none" stroke="#2a3a4c" stroke-width="3"/><circle cx="190" cy="48" r="28" fill="#d4e999"/><path d="M180 48h20m-10-10v20" stroke="#2a3a4c" stroke-width="3"/></svg></div><span class="hl-card-kicker">HOME LOANS · 6 MIN READ</span><h3>An offset or extra repayments. What’s the difference?</h3><p>Two ways to reduce interest, with different trade-offs for access to your money.</p><span class="hl-card-link">Make sense of it <span>↗</span></span></a></div></section>
+<section class="hl-clarity hl-wrap"><div class="hl-clarity-mark" aria-hidden="true">✳</div><div><h2>Clear numbers. A calmer next step.</h2><p>No accounts to create. No money to connect. Just a little clarity, whenever you need it.</p></div><a class="hl-button" href="/calculators/compound-interest">Try a calculator <span>↗</span></a></section>
+</div>
+<script>
+import {savings} from '../lib/finance.mjs';
+const range=document.querySelector('#hero-years') as HTMLInputElement;
+function renderHero(){
+ const years=Number(range.value);
+ const r=savings({principal:5000,contribution:400,annualRate:4.5,years});
+ const currency=(n:number)=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
+ const set=(selector:string,value:string)=>{const el=document.querySelector(selector);if(el)el.textContent=value;};
+ set('[data-hero-total]',currency(r.balance));
+ set('[data-hero-years]',years+(years===1?' year':' years'));
+ set('[data-hero-range]',String(years));
+ set('[data-hero-end]','Year '+years);
+ set('[data-hero-deposits]',currency(r.deposits));
+ set('[data-hero-interest]','+'+currency(r.interest));
+ const path=(key:string)=>r.rows.map((p:any,i:number)=>(i?'L':'M')+(p.year/years*430).toFixed(1)+' '+(155-p[key]/Math.max(r.balance,1)*145).toFixed(1)).join(' ');
+ document.querySelector('[data-hero-line]')?.setAttribute('d',path('balance'));
+ document.querySelector('[data-hero-area]')?.setAttribute('d',path('balance')+' L430 165 L0 165 Z');
+ document.querySelector('[data-hero-deposit]')?.setAttribute('d',path('deposits'));
+ document.querySelector('[data-hero-point]')?.setAttribute('cx','430');
+ document.querySelector('[data-hero-point]')?.setAttribute('cy','10');
+}
+range?.addEventListener('input',renderHero);if(range)renderHero();
+</script>

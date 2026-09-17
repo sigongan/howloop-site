@@ -1,0 +1,59 @@
+---
+import Field from './MoneyField.astro';
+import banks from '../data/banks.json';
+const {kind='compound-interest'}=Astro.props;
+---
+<div class="hl-calculator" data-calculator={kind}>
+<form class="hl-form">
+<h2>Your starting point</h2>
+{kind==='compound-interest'&&<>
+<Field name="principal" label="Starting balance" value={10000}/>
+<div class="hl-field-row"><Field name="contribution" label="Regular contribution" value={500} max={1000000}/><label class="hl-field"><span>How often?</span><select name="frequency" aria-label="Contribution frequency"><option value="monthly">Monthly</option><option value="fortnightly">Fortnightly</option><option value="weekly">Weekly</option></select></label></div>
+<div class="hl-field-row"><Field name="annualRate" label="Annual interest rate (%)" value={4.5} max={30} step="any" prefix="" hint="Illustrative until you choose a bank."/><Field name="years" label="Years to grow" value={10} min={1} max={50} step={1} prefix=""/></div>
+<details class="hl-product-picker" data-bank-picker><summary>Choose an Australian bank rate</summary>
+<label class="hl-field"><span>Find a bank or provider</span><input type="search" data-bank-search placeholder="Search by name…" aria-label="Search banks"/></label>
+<label class="hl-field"><span>Bank or provider</span><select data-bank-select aria-label="Bank or provider"><option value="">Custom / illustrative rate</option>{banks.banks.map(b=><option value={b.id}>{b.name}{b.productCount===0?' — no product data':''}</option>)}</select></label>
+<label class="hl-field" data-product-field hidden><span>Deposit product</span><select data-product-select aria-label="Deposit product"><option value="">Choose a product</option></select></label>
+<p class="hl-product-status" data-bank-status aria-live="polite">Published product data checked {new Date(banks.fetchedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'})}. Not a whole-market comparison.</p>
+<div data-product-info></div>
+</details>
+<p class="hl-rate-model" data-rate-model>Custom constant rate · monthly compounding</p>
+</>}
+{kind==='mortgage'&&<>
+<Field name="principal" label="Loan amount" value={600000}/>
+<div class="hl-field-row"><Field name="annualRate" label="Interest rate (% p.a.)" value={6} max={30} step="any" prefix=""/><Field name="years" label="Loan term (years)" value={30} min={1} max={40} step={1} prefix=""/></div>
+<Field name="offset" label="Average offset balance" value={30000} hint="Assumes a constant 100% offset balance."/>
+<Field name="extra" label="Extra monthly repayment" value={200} max={1000000} step={0.01}/>
+<p class="hl-help">Principal-and-interest loan. Your regular repayment stays the same as the loan without an offset.</p>
+</>}
+{kind==='savings-goal'&&<>
+<Field name="target" label="Your savings goal" value={80000} hint="For a home deposit, include your own purchase-cost allowance."/>
+<Field name="principal" label="Already saved" value={15000}/>
+<div class="hl-field-row"><Field name="years" label="Time to reach it (years)" value={5} min={1} max={50} step={1} prefix=""/><Field name="annualRate" label="Interest rate (% p.a.)" value={4.5} max={30} step="any" prefix=""/></div>
+<p class="hl-help">A constant, illustrative rate. Contributions arrive at the end of each month.</p>
+</>}
+{kind==='emergency-fund'&&<>
+<Field name="expenses" label="Essential monthly expenses" value={3500} max={1000000} hint="Housing, groceries, utilities, transport and minimum debt payments."/>
+<Field name="months" label="Months you want to cover" value={3} min={1} max={24} step={1} prefix=""/>
+<Field name="existing" label="Already set aside" value={2000}/>
+<Field name="contribution" label="Monthly savings towards it" value={400} max={1000000} step={0.01}/>
+<p class="hl-help">Choose a buffer that suits your circumstances. This estimate excludes interest.</p>
+</>}
+<button type="submit" class="hl-button">Calculate my numbers <span>↗</span></button>
+<p class="hl-error" data-error role="alert" hidden></p>
+<p class="hl-help">All amounts in AUD. Your inputs are calculated in this browser.</p>
+</form>
+<section class="hl-results" aria-label="Your calculation results">
+<p class="hl-result-label" data-result-label>Your projected balance</p><output class="hl-result-total" data-result-total aria-live="polite">—</output><p class="hl-result-sub" data-result-sub>Enter your numbers to see the possibilities.</p>
+<div class="hl-result-stats"><div><span data-stat1-label>Your deposits</span><strong data-stat1>—</strong></div><div><span data-stat2-label>Interest earned</span><strong data-stat2>—</strong></div></div>
+<div data-chart></div>
+<div class="hl-chart-legend" data-legend><span>Projected balance</span><span>Your deposits</span></div>
+<div class="hl-scenario" data-scenario></div>
+<div class="hl-result-actions"><button type="button" class="hl-plain-button" data-save>Save on this device</button><button type="button" class="hl-plain-button" data-load hidden>Restore saved plan</button><button type="button" class="hl-plain-button" data-export>Download CSV</button></div>
+<p class="hl-help" data-action-status aria-live="polite"></p>
+<p class="hl-method-note" data-method-note>Estimates only. Assumes unchanged rates, no withdrawals, tax or fees. Monthly approximation; your bank’s daily calculation and product rules may differ. <a href="/methodology">Calculation details →</a></p>
+</section>
+</div>
+<noscript><p class="hl-noscript">Turn on JavaScript to use the interactive calculator. The explanations and calculation methods below are available without it.</p></noscript>
+<details class="hl-year-table"><summary>See the numbers behind the picture</summary><div class="hl-table-scroll"><table class="hl-table" data-results-table><caption class="visually-hidden">Calculation breakdown</caption><thead></thead><tbody></tbody></table></div></details>
+<script>import '../scripts/calculators.js';</script>

@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE } from '../consts';
 import '../styles/global.css';
+import '../styles/finance.css';
 
 interface Props {
   title: string;
@@ -31,6 +32,7 @@ const canonicalURL = new URL(canonical ?? Astro.url.pathname, Astro.site);
 const fullTitle =
   title === SITE.name ? `${SITE.name} — ${SITE.tagline}` : `${title} | ${SITE.name}`;
 
+const publisherId = /^ca-pub-\d{16}$/.test(SITE.adsensePublisherId) ? SITE.adsensePublisherId : '';
 const ogImage = new URL('/og-default.svg', Astro.site);
 
 const orgLd = {
@@ -66,7 +68,7 @@ const orgLd = {
       href="/rss.xml"
     />
 
-    <meta name="theme-color" content="#fbfaf7" />
+    <meta name="theme-color" content="#f7f8f3" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Open Graph -->
@@ -103,7 +105,7 @@ const orgLd = {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
     />
 
     <script
@@ -116,16 +118,7 @@ const orgLd = {
       )
     }
 
-    {
-      /* AdSense loads only once you paste a publisher ID into src/consts.ts */
-      SITE.adsensePublisherId && (
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE.adsensePublisherId}`}
-          crossorigin="anonymous"
-        />
-      )
-    }
+    {publisherId && <meta name="google-adsense-account" content={publisherId} />}
   </head>
 
   <body>
