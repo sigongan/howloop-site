@@ -22,9 +22,11 @@ const { topic, guides } = Astro.props;
 ---
 
 <Base
+  noindex={true}
   title={topic.label}
   description={`${topic.blurb} ${guides.length} animated Howloop guides.`}
 >
+<aside class="hl-archive-note hl-wrap"><strong>From the Howloop archive.</strong> This older guide belongs to our previous household and everyday-information collection. Howloop now focuses on Australian money education. <a href="/start">Explore the current site →</a></aside>
   <header class="pagehead">
     <div class="wrap">
       <p class="eyebrow">{guides.length} guides</p>

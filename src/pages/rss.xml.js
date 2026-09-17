@@ -1,22 +1,19 @@
 import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
+import guides from '../data/learning.json';
 import { SITE } from '../consts';
 
 export async function GET(context) {
-  const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort(
-    (a, b) => b.data.published.valueOf() - a.data.published.valueOf()
-  );
-
   return rss({
-    title: `${SITE.name} — ${SITE.tagline}`,
-    description: SITE.description,
+    title: `${SITE.name} - Australian money guides`,
+    description: 'Plain-English Australian money guides, with worked examples, calculation assumptions and official sources.',
     site: context.site,
     items: guides.map((guide) => ({
-      title: guide.data.title,
-      description: guide.data.description,
-      pubDate: guide.data.published,
-      link: `/guides/${guide.id}/`,
+      title: guide.title,
+      description: guide.summary,
+      pubDate: new Date(guide.datePublished ?? '2026-09-18T00:00:00+10:00'),
+      link: `/learn/${guide.slug}`,
     })),
-    customData: `<language>en</language>`,
+    trailingSlash: false,
+    customData: `<language>en-au</language>`,
   });
 }

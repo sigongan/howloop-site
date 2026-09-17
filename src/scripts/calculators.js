@@ -1,4 +1,5 @@
 import {savings,requiredSavings,mortgage,emergencyFund,baseRateModel} from '../lib/finance.mjs';
+import {feeLines,tierLines,conditionText,conditionList} from '../lib/product-display.mjs';
 const money=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
 const precise=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',minimumFractionDigits:2,maximumFractionDigits:2}).format(n);
 const safeURL=url=>{try{const u=new URL(url);return u.protocol==='https:'?u.href:null;}catch{return null;}};
@@ -6,6 +7,21 @@ for(const root of document.querySelectorAll('[data-calculator]')){
 const kind=root.dataset.calculator,form=root.querySelector('form'),q=s=>root.querySelector(s),output=(name,text)=>{q('[data-'+name+']').textContent=text;};
 const inputs=()=>Object.fromEntries([...form.querySelectorAll('[name]')].map(el=>[el.name,el.type==='number'?Number(el.value):el.value]));
 const key='howloop-plan-v1-'+kind;let rows=[],headers=[],model=null,modelLabel='',products=[],requestVersion=0;
+const unchangedRateNote='Custom rate unchanged - confirm or edit the annual rate before relying on this scenario.';
+let rateHint=null;
+if(kind==='compound-interest'){
+ const rateInput=form.elements.annualRate;
+ rateHint=rateInput.closest('label').querySelector('small')??document.createElement('small');
+ rateHint.id='howloop-'+kind+'-annual-rate-note';rateHint.setAttribute('aria-live','polite');
+ rateInput.closest('label').append(rateHint);
+ rateInput.setAttribute('aria-describedby',[rateInput.getAttribute('aria-describedby'),rateHint.id].filter(Boolean).join(' '));
+ setRateHint('Illustrative custom rate. A bank selection applies a rate only when a supported product model is loaded.');
+}
+function setRateHint(message,attention=false){
+ if(!rateHint)return;
+ rateHint.textContent=message;rateHint.style.fontWeight=attention?'700':'';
+ rateHint.style.color=attention?'#854a18':'';
+}
 function chart(points,keys,labels){
 const width=520,height=175,left=48,top=15,bottom=153;
 const max=Math.max(1,...points.flatMap(p=>keys.map(k=>p[k]??0)));const total=Math.max(1,points.at(-1)?.month??1);
@@ -50,33 +66,69 @@ table();return true;
 }catch(e){q('[data-error]').hidden=false;q('[data-error]').textContent='Please check your inputs. '+e.message;return false;}
 }
 form.addEventListener('submit',e=>{e.preventDefault();if(form.reportValidity())calculate();});
-form.addEventListener('input',e=>{if(e.target.name){if(e.target.name==='annualRate'&&model){model=null;output('rate-model','Custom constant rate · your edit overrides the bank model');}calculate();}});
+form.addEventListener('input',e=>{if(e.target.name){if(e.target.name==='annualRate'&&kind==='compound-interest'){model=null;output('rate-model','Custom constant rate - your edit overrides any bank model');setRateHint('Custom annual rate entered by you. Held constant for the full projection; bank conditions are not simulated.');}calculate();}});
 const status=message=>output('action-status',message);
-q('[data-export]').addEventListener('click',()=>{if(!calculate())return;const quote=x=>'"'+String(x).replaceAll('"','""')+'"';const csv=[headers,...rows.map(r=>r.map((v,i)=>i?Number(v).toFixed(2):v))].map(r=>r.map(quote).join(',')).join('\r\n');const url=URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='howloop-'+kind+'.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status('Your calculation breakdown has been downloaded.');});
+q('[data-export]').addEventListener('click',()=>{if(!calculate())return;const quote=x=>'"'+String(x).replaceAll('"','""')+'"';const csv=[headers,...rows.map(r=>r.map((v,i)=>i?Number(v).toFixed(2):v))].map(r=>r.map(quote).join(',')).join('\r\n');const url=URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='howloop-'+kind+'.csv';a.hidden=true;document.body.append(a);try{a.click();status('CSV download requested. Check your browser downloads.');}finally{a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}});
 try{q('[data-load]').hidden=!localStorage.getItem(key);}catch{}
 q('[data-save]').addEventListener('click',()=>{if(!calculate())return;try{localStorage.setItem(key,JSON.stringify({values:inputs(),bank:q('[data-bank-select]')?.value??'',product:q('[data-product-select]')?.value??'',bankModel:!!model}));q('[data-load]').hidden=false;status('Saved in this browser. Use Restore saved plan to return to these numbers.');}catch{status('Your browser did not allow local storage. You can download a CSV instead.');}});
-q('[data-load]').addEventListener('click',async()=>{try{const saved=JSON.parse(localStorage.getItem(key));if(!saved?.values)throw Error();for(const el of form.querySelectorAll('[name]'))if(saved.values[el.name]!==undefined)el.value=String(saved.values[el.name]);model=null;if(saved.bank&&q('[data-bank-select]')){q('[data-bank-select]').value=saved.bank;await loadBank(saved.product,saved.bankModel);}calculate();status('Saved inputs restored. Bank projections use the currently available dated snapshot.');}catch{status('This saved plan could not be restored.');}});
+q('[data-load]').addEventListener('click',async()=>{try{const saved=JSON.parse(localStorage.getItem(key));if(!saved?.values)throw Error();for(const el of form.querySelectorAll('[name]'))if(saved.values[el.name]!==undefined)el.value=String(saved.values[el.name]);model=null;if(q('[data-bank-select]')){q('[data-bank-select]').value=saved.bank??'';await loadBank(saved.product,saved.bankModel);}calculate();status('Saved inputs restored. Bank projections use the currently available dated snapshot.');}catch{status('This saved plan could not be restored.');}});
 const remove=document.createElement('button');remove.type='button';remove.className='hl-plain-button';remove.textContent='Clear saved plan';q('.hl-result-actions').append(remove);remove.addEventListener('click',()=>{try{localStorage.removeItem(key);q('[data-load]').hidden=true;status('Saved plan removed from this browser.');}catch{status('Storage could not be cleared. Use your browser’s site-data settings.');}});
 function append(parent,tag,text,cls){const el=document.createElement(tag);el.textContent=text;if(cls)el.className=cls;parent.append(el);return el;}
 function selectProduct(auto=true){
-model=null;const product=products.find(p=>p.id===q('[data-product-select]').value);const info=q('[data-product-info]');info.replaceChildren();if(!product){output('rate-model','Custom constant rate · monthly compounding');calculate();return;}
-append(info,'p',product.description,'hl-product-description');
-const link=safeURL(product.url);if(link){const a=append(info,'a','Check this product with the provider ↗');a.href=link;a.target='_blank';a.rel='noopener noreferrer';}
-const modelCandidate=baseRateModel(product);if(modelCandidate&&auto){model=modelCandidate;modelLabel=product.name;form.elements.annualRate.value=model(inputs().principal).toFixed(4);append(info,'p','Base variable rate loaded. Bonus and introductory interest are excluded. Check all eligibility and fees below.','hl-product-status');}else{append(info,'p',modelCandidate?'Your custom rate is retained. Choose the product again to load its base-rate model.':'This rate structure needs manual checking. No product rate has been applied. Confirm the total rate and conditions with the provider, then enter your own scenario rate.','hl-product-status');output('rate-model','Custom constant rate · bank offer conditions are not simulated');}
-const details=document.createElement('details');details.className='hl-published-rates';append(details,'summary','Published rates, eligibility & fees');for(const rate of product.depositRates??[]){const item=append(details,'div','','hl-rate-item');append(item,'b',(Number(rate.rate)*100).toFixed(2)+'% p.a. · '+rate.depositRateType.toLowerCase().replaceAll('_',' '));append(item,'p','Published rate component — do not assume this is the total eligible rate.');for(const tier of rate.tiers??[])append(item,'p','Tier: '+tier.minimumValue+' to '+(tier.maximumValue??'no upper limit')+' '+tier.unitOfMeasure.toLowerCase()+' · '+tier.rateApplicationMethod.toLowerCase().replaceAll('_',' '));if(rate.additionalInfo)append(item,'p',rate.additionalInfo);if(rate.additionalValue)append(item,'p',rate.additionalValue);for(const c of rate.applicabilityConditions??[])append(item,'p',[c.rateApplicabilityType?.replaceAll('_',' '),c.additionalValue,c.additionalInfo].filter(Boolean).join(' · '));}
-for(const [title,list,type] of [['Eligibility',product.eligibility,'eligibilityType'],['Product constraints',product.constraints,'constraintType'],['Fees',product.fees,'feeType']]){append(details,'h3',title);if(!list?.length)append(details,'p','No entries returned. Confirm with the provider.');for(const entry of list??[])append(details,'p',[entry.name,entry[type]?.replaceAll('_',' '),entry.amount?money(Number(entry.amount)):'',entry.additionalValue,entry.additionalInfo].filter(Boolean).join(' · '));}
-info.append(details);const a=append(info,'a','View source product data ↗');a.href=safeURL(product.source)??'#';a.target='_blank';a.rel='noopener noreferrer';calculate();
+ model=null;
+ const product=products.find(p=>p.id===q('[data-product-select]').value);
+ const info=q('[data-product-info]');info.replaceChildren();
+ if(!product){output('rate-model','Custom constant rate - monthly compounding');setRateHint('Your existing annual rate is retained. Choose a supported product to load its base rate, or edit your custom rate.');calculate();return;}
+ append(info,'p',product.description,'hl-product-description');
+ const link=safeURL(product.url);if(link){const a=append(info,'a','Check this product with the provider');a.href=link;a.target='_blank';a.rel='noopener noreferrer';}
+ const modelCandidate=baseRateModel(product);
+ if(modelCandidate&&auto){
+  model=modelCandidate;modelLabel=product.name;form.elements.annualRate.value=model(inputs().principal).toFixed(4);
+  append(info,'p','Base variable rate loaded. Bonus and introductory interest are excluded. Check all eligibility and fees below.','hl-product-status');
+  setRateHint('Supported base-rate model loaded. Bonus and introductory components are excluded. Editing this number switches to your own constant rate.');
+ }else{
+  append(info,'p',unchangedRateNote,'hl-product-status');
+  append(info,'p',modelCandidate?'Your saved custom rate is retained. Choose this product again to load its supported base-rate model.':'This product needs manual checking. No rate has been applied from this product. Confirm the applicable rate and conditions with the provider.');
+  output('rate-model',unchangedRateNote);setRateHint(unchangedRateNote,true);
+ }
+ const details=document.createElement('details');details.className='hl-published-rates';
+ append(details,'summary','Published rates, eligibility & fees');
+ append(details,'p','These are provider data components, not verified eligibility limits or a total eligible rate. A missing tier bound does not mean bonus eligibility is unlimited. Check the provider terms, including balance caps.');
+ for(const rate of product.depositRates??[]){
+  const item=append(details,'div','','hl-rate-item');
+  append(item,'b',(Number(rate.rate)*100).toFixed(2)+'% p.a. - '+String(rate.depositRateType??'unspecified').toLowerCase().replaceAll('_',' '));
+  append(item,'p','Published rate component - do not assume this is the total eligible rate.');
+  for(const tier of rate.tiers??[])for(const line of tierLines(tier))append(item,'p',line);
+  if(rate.additionalInfo)append(item,'p',rate.additionalInfo);
+  if(rate.additionalValue)append(item,'p',rate.additionalValue);
+  for(const condition of conditionList(rate.applicabilityConditions))append(item,'p','Rate condition: '+conditionText(condition));
+ }
+ for(const [title,list,type] of [['Eligibility',product.eligibility,'eligibilityType'],['Product constraints',product.constraints,'constraintType']]){
+  append(details,'h3',title);
+  if(!list?.length)append(details,'p','No entries returned. Confirm with the provider.');
+  for(const entry of list??[])append(details,'p',[entry.name,entry[type]?.replaceAll('_',' '),entry.additionalValue,entry.additionalInfo].filter(Boolean).join(' - '));
+ }
+ append(details,'h3','Published fee components');
+ append(details,'p','Fees below are not included in the projection and are not a total cost estimate. Charges depend on usage, eligibility, discounts and provider terms.');
+ if(!product.fees?.length)append(details,'p','No fee entries returned. This does not establish that the account is fee-free.');
+ for(const fee of product.fees??[]){const item=append(details,'div','','hl-rate-item');for(const line of feeLines(fee))append(item,'p',line);}
+ const feeURL=safeURL(product.additionalInformation?.feesAndPricingUri);
+ if(feeURL){const a=append(details,'a','Check the provider fee schedule');a.href=feeURL;a.target='_blank';a.rel='noopener noreferrer';}
+ info.append(details);
+ const a=append(info,'a','View source product data');a.href=safeURL(product.source)??'#';a.target='_blank';a.rel='noopener noreferrer';
+ calculate();
 }
 async function loadBank(productId='',auto=true){
 const id=q('[data-bank-select]').value,version=++requestVersion;model=null;products=[];q('[data-product-info]').replaceChildren();q('[data-product-select]').replaceChildren(new Option('Choose a product',''));q('[data-product-field]').hidden=true;output('rate-model','Custom constant rate · monthly compounding');
-if(!id){output('bank-status','Using your own rate. Bank rates have not been applied.');calculate();return;}
+if(!id){output('bank-status','Using your own rate. Bank rates have not been applied.');setRateHint('Your existing custom rate is retained and held constant for the projection.');calculate();return;}
+setRateHint(unchangedRateNote+' Choose a product to inspect its published rates.',true);
 output('bank-status','Loading published product data…');
 try{const response=await fetch('/data/banks/'+encodeURIComponent(id)+'.json',{signal:AbortSignal.timeout(12000)});if(!response.ok)throw Error();const data=await response.json();if(version!==requestVersion)return;products=data.products;
 const date=new Date(data.checkedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'});const stale=Date.now()-Date.parse(data.checkedAt)>7*86400000;
 output('bank-status','Retrieved '+date+'. '+(stale?'Older than 7 days: verify rates with the provider before using. ':'')+(data.status==='partial'?'Some product requests were unavailable. ':'')+(products.length?products.length+' published products.': 'No deposit product data available. Enter your own confirmed rate.'));
 if(products.length){q('[data-product-field]').hidden=false;products.sort((a,b)=>a.name.localeCompare(b.name)).forEach(p=>q('[data-product-select]').add(new Option(p.name,p.id)));if(productId&&products.some(p=>p.id===productId)){q('[data-product-select]').value=productId;selectProduct(auto);}}
 calculate();
-}catch(e){if(version!==requestVersion)return;output('bank-status','Product data could not load. You can still enter a rate confirmed with your provider.');calculate();}
+}catch(e){if(version!==requestVersion)return;output('bank-status','Product data could not load. You can still enter a rate confirmed with your provider.');setRateHint(unchangedRateNote,true);calculate();}
 }
 if(q('[data-bank-select]')){
 const select=q('[data-bank-select]');const options=[...select.options].map(o=>({value:o.value,label:o.textContent}));

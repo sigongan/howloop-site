@@ -3,11 +3,24 @@ import Base from '../../layouts/Base.astro';
 import guides from '../../data/learning.json';
 export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
 const {guide}=Astro.props;
+const published=guide.datePublished ?? '2026-09-18';
+const modified=guide.dateModified ?? published;
+const checked=guide.sourcesChecked ?? published;
+const fmt=(value:string)=>new Date(value+'T12:00:00+10:00').toLocaleDateString('en-AU',{day:'numeric',month:'long',year:'numeric',timeZone:'Australia/Brisbane'});
+const sections=guide.sections.map(([title,text],i)=>({title,text,id:'section-'+(i+1)}));
+const related=guides.filter(g=>g.slug!==guide.slug).sort((a,b)=>Number(b.tool===guide.tool)-Number(a.tool===guide.tool)).slice(0,2);
+const url='https://howloop.how/learn/'+guide.slug;
 ---
-<Base title={guide.title} description={guide.summary} type="article" publishedTime={new Date('2026-09-18T00:00:00+10:00')} jsonLd={{'@context':'https://schema.org','@type':'Article',headline:guide.title,description:guide.summary,author:{'@type':'Organization',name:'Howloop'},datePublished:'2026-09-18',publisher:{'@type':'Organization',name:'Howloop',url:'https://howloop.how'}}}>
+<Base title={guide.title} description={guide.summary} type="article" publishedTime={new Date(published+'T00:00:00+10:00')} modifiedTime={new Date(modified+'T00:00:00+10:00')} jsonLd={{'@context':'https://schema.org','@type':'Article',headline:guide.title,description:guide.summary,mainEntityOfPage:url,author:{'@type':'Organization',name:'Howloop',url:'https://howloop.how/about#publisher'},datePublished:published,dateModified:modified,publisher:{'@type':'Organization',name:'Howloop',url:'https://howloop.how'}}}>
 <header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/learn">Money guides</a> / {guide.category.toLowerCase()}</div><span class="hl-eyebrow">{guide.category} · {guide.minutes} MIN READ</span><h1 style="max-width:850px">{guide.title}</h1><p>{guide.summary}</p></header>
-<article class="hl-wrap hl-content"><div class="hl-page-meta">By Howloop · Published 18 September 2026 · General education</div>{guide.sections.map(([title,text])=><section><h2>{title}</h2><p>{text}</p></section>)}
-<aside class="hl-callout"><h2>Make it your own.</h2><p>Try the example with numbers that fit your plan. The calculator shows its assumptions and a breakdown you can download.</p><a class="hl-button" href={'/calculators/'+guide.tool}>Open the calculator <span>↗</span></a></aside>
-<h2>Sources and further reading</h2><ul>{guide.sources.map(([title,url])=><li><a href={url} rel="noopener noreferrer">{title} ↗</a></li>)}</ul><p class="hl-help">Sources checked 18 September 2026. Product terms and official guidance can change. This guide does not assess your financial circumstances.</p><p>Something unclear or incorrect? <a href="/contact">Tell us what to improve →</a></p></article>
+<div class="hl-wrap hl-reading-layout">
+<aside class="hl-reading-sidebar"><details class="hl-reading-toc"><summary>In this guide</summary><nav aria-label="On this page"><ol>{sections.map(s=><li><a href={'#'+s.id}>{s.title}</a></li>)}</ol><a href="#sources">Sources & update record</a></nav></details></aside>
+<article class="hl-content hl-reading-content">
+<div class="hl-byline">Published by <a href="/about#publisher">Howloop</a><br/><time datetime={published}>Published {fmt(published)}</time> · <time datetime={modified}>Updated {fmt(modified)}</time><br/><a href="/editorial-policy">How this content is prepared</a> · General education</div>
+{sections.map(s=><section id={s.id}><h2>{s.title}</h2>{s.text.split('\n\n').map(paragraph=><p>{paragraph}</p>)}</section>)}
+<aside class="hl-callout"><h2>Try the idea with your numbers.</h2><p>Run the example, change one input and compare the result. Keep the assumptions alongside any figure you save.</p><a class="hl-button" href={'/calculators/'+guide.tool}>Open the calculator <span aria-hidden="true">↗</span></a></aside>
+<section id="sources"><h2>Sources and update record</h2><p>These primary sources provide context. The worked examples use Howloop's stated assumptions, so a provider's actual calculation can differ.</p><ul>{guide.sources.map(([title,url])=><li><a href={url} rel="noopener noreferrer">{title} ↗</a></li>)}</ul><p class="hl-help">Sources checked {fmt(checked)}. Product terms and guidance can change. {guide.updateNote ?? 'Initial publication with worked examples and source references.'}</p><p>AI tools assist with preparation. This article has not been reviewed by a licensed financial adviser. See our <a href="/editorial-policy">publishing and correction process</a>.</p></section>
+<section class="hl-next-reading"><h2>Keep building the picture.</h2>{related.map(g=><p><a href={'/learn/'+g.slug}>{g.title} →</a></p>)}</section>
+<p>Found an error or a confusing explanation? <a href={'/contact?topic='+encodeURIComponent(guide.title)}>Send a correction</a>. Include the page and an example using sample numbers.</p>
+</article></div>
 </Base>
-

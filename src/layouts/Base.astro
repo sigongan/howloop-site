@@ -29,6 +29,9 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(canonical ?? Astro.url.pathname, Astro.site);
+if (canonicalURL.pathname !== '/') canonicalURL.pathname = canonicalURL.pathname.replace(/\/+$/, '');
+canonicalURL.search = '';
+canonicalURL.hash = '';
 const fullTitle =
   title === SITE.name ? `${SITE.name} — ${SITE.tagline}` : `${title} | ${SITE.name}`;
 

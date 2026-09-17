@@ -20,7 +20,13 @@ export default defineConfig({
   integrations: [
     mdx(),
     sitemap({
-      filter: (page) => !page.includes('/404'),
+      // The original household guides remain available as an explicit archive.
+      // Search discovery now focuses on maintained financial tools and guides.
+      filter: (page) => !/^\/(?:404(?:\.html)?|guides|topics|desk|trade)(?:\/|$)/.test(new URL(page).pathname),
+      serialize: (item) => ({
+        ...item,
+        url: new URL(item.url).pathname === '/' ? item.url : item.url.replace(/\/$/, ''),
+      }),
     }),
   ],
   build: {

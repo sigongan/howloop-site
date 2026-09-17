@@ -10,6 +10,5 @@ Allow: /
 
 Sitemap: https://howloop.how/sitemap-index.xml
 
-# Internal production desk — not for indexing.
-User-agent: *
-Disallow: /desk
+# Archives and technical pages use page-level noindex rules or response headers.
+# Keep them crawlable so search engines can read those rules.

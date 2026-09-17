@@ -17,3 +17,10 @@ test('bank model includes base only and does not add bonus or intro',()=>{const 
 test('per-tier rates weight balances and whole-balance tiers select',()=>{let model=baseRateModel({depositRates:[rate(.05,'VARIABLE',[tier(0,10000)]),rate(.02,'VARIABLE',[tier(10000.01)])]});near(model(20000),3.5);model=baseRateModel({depositRates:[rate(.05,'VARIABLE',[tier(0,10000,'WHOLE_BALANCE')]),rate(.02,'VARIABLE',[tier(10000.01,undefined,'WHOLE_BALANCE')])]});near(model(20000),2);});
 test('overlapping, conditional and incomplete tiers are not automatically imported',()=>{for(const product of [{depositRates:[rate(.01),rate(.02)]},{depositRates:[{...rate(.04),applicabilityConditions:[{rateApplicabilityType:'OTHER'}]}]},{depositRates:[rate(.04,'VARIABLE',[tier(0,10000)])]},{depositRates:[rate(.04,'VARIABLE',[tier(0,20000)]),rate(.03,'VARIABLE',[tier(10000)])]}])assert.equal(baseRateModel(product),null);});
 test('growing balance re-evaluates a bank tier each month',()=>{const model=baseRateModel({depositRates:[rate(.05,'VARIABLE',[tier(0,10000)]),rate(0,'VARIABLE',[tier(10000.01)])]});const r=savings({principal:20000,contribution:1000,years:1,rateForBalance:model});near(r.interest,500,1e-6);});
+test('legacy condition objects prevent automatic application of a conditional base rate',()=>{
+  const condition={additionalInfo:'Only applies when account conditions are met'};
+  const tier={minimumValue:'0',unitOfMeasure:'DOLLAR',rateApplicationMethod:'WHOLE_BALANCE',applicabilityConditions:condition};
+  assert.equal(baseRateModel({depositRates:[{depositRateType:'VARIABLE',rate:'0.04',applicabilityConditions:condition}]}),null);
+  assert.equal(baseRateModel({depositRates:[{depositRateType:'VARIABLE',rate:'0.04',tiers:[tier]}]}),null);
+  assert.equal(baseRateModel({depositRates:[{depositRateType:'VARIABLE',rate:'0.04'},{depositRateType:'VARIABLE',rate:'0.04',tiers:[tier]}]}),null);
+});

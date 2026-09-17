@@ -11,13 +11,15 @@ const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort(
 ---
 
 <Base
-  title="All guides"
+  noindex={true}
+  title="Everyday guide archive"
   description="Every Howloop guide: short looping animations that show you how to fix common household and device problems, step by step."
 >
+<aside class="hl-archive-note hl-wrap"><strong>From the Howloop archive.</strong> This older guide belongs to our previous household and everyday-information collection. Howloop now focuses on Australian money education. <a href="/start">Explore the current site →</a></aside>
   <header class="pagehead">
     <div class="wrap">
       <p class="eyebrow">{guides.length} guides</p>
-      <h1>Every loop we've made</h1>
+      <h1>Everyday guide archive</h1>
       <p class="lede">
         Ordinary problems that come back every few months. Each one is an
         animation you can pause on the step you're stuck at, plus the same
