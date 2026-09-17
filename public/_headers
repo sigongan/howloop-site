@@ -28,3 +28,8 @@
 
 /trade
   X-Robots-Tag: noindex, nofollow
+
+# Machine-readable snapshots support the bank explorer; the explorer itself is
+# the indexable page with source, scope and freshness explanations.
+/data/*
+  X-Robots-Tag: noindex

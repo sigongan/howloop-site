@@ -1,7 +1,8 @@
 ---
 import Logo from './Logo.astro';
 const path=Astro.url.pathname;
-const links=[['/calculators','Calculators'],['/banks','Bank explorer'],['/learn','Money guides'],['/about','About']];
+import { NAV } from '../consts';
+const links=NAV.map(({href,label})=>[href,label]);
 ---
 <header class="hl-header"><div class="hl-wrap hl-nav">
 <a class="hl-brand" href="/" aria-label="Howloop home"><Logo /></a>

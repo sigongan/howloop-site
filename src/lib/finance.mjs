@@ -20,10 +20,11 @@ const base=run(0,0),plan=run(offset,extra);return {payment,base,plan,interestSav
 }
 export function emergencyFund({expenses,months,existing=0,contribution=0}){finite(expenses,'Expenses',0,1e6);finite(months,'Buffer months',1,24);finite(existing,'Existing savings',0,1e8);finite(contribution,'Contribution',0,1e6);const target=expenses*months,gap=Math.max(0,target-existing);return {target,gap,monthsToGoal:gap===0?0:contribution===0?null:Math.ceil(gap/contribution)};}
 // Conservative base-rate modelling: never infer bonus eligibility or add overlapping rate components.
+const hasConditions=value=>Array.isArray(value)?value.length>0:!!value&&typeof value==='object'?Object.keys(value).length>0:!!value;
 export function baseRateModel(product){
 const rows=(product.depositRates??[]).filter(r=>r.depositRateType==='VARIABLE');
 if(!rows.length)return null;
-if(rows.some(r=>r.applicabilityConditions?.length||r.additionalValue))return null;
+if(rows.some(r=>hasConditions(r.applicabilityConditions)||r.additionalValue||(r.tiers??[]).some(t=>hasConditions(t.applicabilityConditions))))return null;
 if(rows.some(r=>!Number.isFinite(Number(r.rate))||Number(r.rate)<0||Number(r.rate)>.3))return null;
 const flat=rows.filter(r=>!r.tiers?.length);
 if(rows.length===1&&flat.length===1)return ()=>Number(rows[0].rate)*100;

@@ -13,7 +13,7 @@ export const SITE = {
   domain: 'howloop.how',
   locale: 'en-AU',
   email: 'hello@howloop.how',
-  author: 'The Howloop team',
+  author: 'Howloop',
   // Paste your AdSense publisher ID here (e.g. 'ca-pub-1234567890123456').
   // Leave empty until AdSense is approved — no script is injected while it is empty.
   adsensePublisherId: import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '',
@@ -46,11 +46,10 @@ export const TOPICS: Record<
 };
 
 export const NAV = [
-  { href: '/guides', label: 'All guides' },
-  { href: '/topics/home', label: 'Around the house' },
-  { href: '/topics/devices', label: 'Phones & Wi-Fi' },
-  { href: '/topics/paperwork', label: 'Paperwork' },
-  { href: '/about', label: 'About' },
+  { href: '/start', label: 'Start here' },
+  { href: '/calculators', label: 'Calculators' },
+  { href: '/learn', label: 'Money guides' },
+  { href: '/banks', label: 'Bank explorer' },
 ];
 
 export const FOOTER_LINKS = [

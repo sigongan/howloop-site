@@ -80,6 +80,7 @@ const howToLd = {
 ---
 
 <Base
+  noindex={true}
   title={d.title}
   description={d.description}
   type="article"
@@ -87,6 +88,7 @@ const howToLd = {
   modifiedTime={d.updated ?? d.published}
   jsonLd={[howToLd, breadcrumbLd]}
 >
+<aside class="hl-archive-note hl-wrap"><strong>From the Howloop archive.</strong> This older guide belongs to our previous household and everyday-information collection. Howloop now focuses on Australian money education. <a href="/start">Explore the current site →</a></aside>
   <article class="guide">
     <header class="guide__head">
       <div class="wrap">
@@ -135,15 +137,14 @@ const howToLd = {
 
         <p class="trustbar">
           <span class="trustbar__who">
-            Researched, illustrated and safety-checked by the {SITE.name}
-            editorial team
+            Published by {SITE.name} · archived content
           </span>
           <span aria-hidden="true">·</span>
           <span>Published {fmt(d.published)}</span>
           {d.updated && (
             <>
               <span aria-hidden="true">·</span>
-              <span>Last reviewed {fmt(d.updated)}</span>
+              <span>Updated {fmt(d.updated)}</span>
             </>
           )}
           <span aria-hidden="true">·</span>
@@ -195,7 +196,7 @@ const howToLd = {
         <footer class="guide__foot">
           <p>
             Published {fmt(d.published)}{
-              d.updated && <> · Last reviewed {fmt(d.updated)}</>
+              d.updated && <> · Updated {fmt(d.updated)}</>
             }
           </p>
           <p>

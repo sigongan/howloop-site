@@ -1,6 +1,10 @@
 [
   {
     "slug": "how-compound-interest-works",
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "updateNote": "Added a contribution-versus-rate comparison, weekly payment conversion and independent arithmetic checks for the first month and zero-interest scenario.",
     "title": "Compound interest, without the complicated bit.",
     "category": "SAVING",
     "minutes": 5,
@@ -24,6 +28,22 @@
         "The rising line is a mathematical projection using the numbers you enter. It does not predict future interest rates, inflation or your ability to maintain deposits. Howloop uses monthly compounding and end-of-month contributions. Weekly and fortnightly savings are converted to monthly equivalents, so the estimate will not match the exact timing on a bank statement. Money added earlier in a month can earn a different amount under daily bank calculations."
       ],
       [
+        "Compare a contribution change with a rate change",
+        "Here is an original Howloop example using constant hypothetical rates and monthly deposits. Start with $5,000, add $400 a month and save for ten years at 4% a year. The model ends at $66,354, of which $53,000 is your own money. Raising the monthly deposit to $450 at the same rate produces $73,717: about $7,362 more, including $6,000 of additional deposits. Keeping deposits at $400 but raising the rate to 4.5% produces $68,314, about $1,960 more than the first scenario. In this example, the extra contribution changes the outcome more. That is a comparison of these inputs, not a universal rule about rates."
+      ],
+      [
+        "Do not turn every month into four weeks",
+        "If you save $100 a week, 52 deposits add up to $5,200 a year. Saving $400 each month adds up to $4,800. Those plans differ by $400 before interest, so their ending balances should differ. Howloop converts the weekly plan to $433.33 per month on average, keeping the unrounded value in the calculation. A $200 fortnightly contribution has the same annual total under the 26-fortnight assumption. A real calendar can contain an extra payday, which this simplified model does not schedule."
+      ],
+      [
+        "Check the first month by hand",
+        "For the $5,000 example at 4%, divide 4% by twelve. The first month's modelled interest is $16.67. Add that to the opening balance, then add the $400 end-of-month contribution: the closing balance is about $5,416.67. The new deposit does not earn a full month's interest immediately in this model. If your bank statement differs, compare the dates of deposits and withdrawals, the days in the interest period and the rate actually applied before assuming either result is wrong."
+      ],
+      [
+        "Use zero interest as a second reference point",
+        "Re-run the same $5,000 opening balance and $400 monthly contribution at 0%. After ten years, the result is exactly $53,000. This is a useful arithmetic check because it removes every interest assumption. It also shows how much of the target depends on deposits continuing. The difference between this run and the 4% run is about $13,354 of modelled interest. A missed contribution changes the deposit total as well as the interest earned later."
+      ],
+      [
         "Make the number useful",
         "Write down the purpose of the savings, your planned contribution and a realistic review date. Check whether your chosen account has a base rate, an ongoing bonus or a short welcome offer. Compare a lower-rate scenario before committing to a timeframe. If your goal is several years away, remember that a dollar balance does not tell you how much that money will buy by then. The calculator excludes inflation, fees and tax."
       ]
@@ -41,6 +61,10 @@
   },
   {
     "slug": "bonus-interest-conditions",
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "updateNote": "Added worked missed-bonus, introductory-period and balance-tier examples, plus a checklist for comparing dated product information.",
     "title": "That savings rate comes with a little fine print.",
     "category": "BANKING",
     "minutes": 5,
@@ -61,7 +85,23 @@
       ],
       [
         "Watch the balance limits",
-        "A rate may cover the whole balance when you are inside a band, or only the portion inside each tier. Those two structures can produce different interest. A advertised ceiling can also apply to combined balances across several accounts with the same provider. Entering one account into a calculator does not establish that the entire balance qualifies. Read the full product documentation if you have multiple accounts."
+        "A rate may cover the whole balance when you are inside a band, or only the portion inside each tier. Those two structures can produce different interest. An advertised ceiling can also apply to combined balances across several accounts with the same provider. Entering one account into a calculator does not establish that the entire balance qualifies. Read the full product documentation if you have multiple accounts."
+      ],
+      [
+        "Put a missed bonus into dollars",
+        "Using the hypothetical 1% base plus 3% additional bonus above, a constant $20,000 balance earns about $66.67 for one month at a 4% total rate, compared with $16.67 at 1%, under a simple annual-rate-divided-by-twelve calculation. Missing the bonus changes that month's interest by roughly $50. This is only an illustration: real products may use daily balances and different eligibility periods. Check whether meeting a condition this month affects this month's interest or the following month's rate. The highest advertised rate is only useful to your plan for periods when its conditions are met."
+      ],
+      [
+        "A short promotion needs two calculations",
+        "Suppose $20,000 earns a hypothetical 5% a year for four months, followed by 2% for eight months, with monthly compounding and no deposits or withdrawals. The first period ends at $20,335.42; carrying that balance into the second period gives $20,608.15 after a year. Using 5% for the entire year gives $21,023.24, overstating this particular scenario by $415.09. These are invented rates, not a current offer. The Howloop interface accepts whole years, so this short-period example is worked separately using the monthly formula; entering one year at the promotional rate will not reproduce it."
+      ],
+      [
+        "Two tier structures can share the same headline",
+        "Imagine a $120,000 balance. A hypothetical account paying 4% on the first $100,000 and 1% on the remaining $20,000 would earn $4,200 over a year before compounding or balance changes. A different account that pays 1% on the whole balance once it exceeds $100,000 would earn $1,200 on that same simple basis. The word 'up to' does not tell you which calculation applies. Find the treatment of balances above the limit, and check what happens when an interest credit itself pushes the balance across it."
+      ],
+      [
+        "Make a comparison note you can update",
+        "For each account, record its exact product name, the date checked, the rate after any introduction, the maximum eligible balance, the conditions you must meet and any linked-account costs. Save the provider's product URL alongside that note. Use the same opening balance and deposit plan for every calculation. If one offer requires card spending you would not otherwise do, record that practical requirement separately instead of treating the interest result as a complete comparison. A provider page and its terms are the place to resolve a discrepancy with a dated feed."
       ],
       [
         "Use the explorer with the right expectations",
@@ -81,6 +121,10 @@
   },
   {
     "slug": "offset-vs-extra-repayments",
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "updateNote": "Added first-payment arithmetic, an offset-fee break-even example, a daily-balance illustration and guidance against counting the same cash twice.",
     "title": "An offset or extra repayments. What’s the difference?",
     "category": "HOME LOANS",
     "minutes": 6,
@@ -104,6 +148,22 @@
         "An offset feature can come with a package fee, account fee or different loan rate. A calculator that ignores those costs is useful for understanding the mechanics but cannot establish which loan is cheaper overall. Compare the total cost of the actual loan offers. If the offset balance is small or frequently withdrawn, use a lower average balance in your scenario."
       ],
       [
+        "Separate interest saved from repayment reduced",
+        "For the $600,000, 30-year loan at a constant hypothetical 6%, the model's standard monthly repayment is $3,597.30. In the first month without an offset, $3,000 is interest and about $597.30 reduces the debt. With a $30,000 offset, the interest is $2,850 and about $747.30 reduces the debt, assuming the same repayment. Your account has not received $150 of savings interest: the loan has been charged $150 less. That distinction matters when comparing the displayed loan balance with money you still hold in the offset account."
+      ],
+      [
+        "Use a fee break-even check before a long projection",
+        "Suppose an otherwise identical loan charges an extra $390 a year for a full offset, and both loans have the same hypothetical 6% rate. Dividing $390 by 0.06 gives $6,500. A constant $6,500 offset would roughly cover that additional annual fee before timing effects. A constant $30,000 would initially avoid about $1,800 of annual interest, leaving about $1,410 after the fee. This shortcut is only a first comparison. It assumes the loan balance stays above the offset and there is no rate difference; it cannot price a package with a higher loan rate."
+      ],
+      [
+        "Do not enter payday's balance as a permanent balance",
+        "An offset containing $30,000 on payday may hold much less after bills are paid. For a simple 30-day example, $30,000 held for 15 days and $10,000 for the other 15 days gives a $20,000 average daily balance. Entering $30,000 as a constant balance would exaggerate that pattern. Try $20,000 as an approximation and a lower balance as another scenario. Howloop does not model a daily cash-flow schedule, so its result will still differ from a lender calculating daily interest and individual transaction dates."
+      ],
+      [
+        "Avoid using the same cash twice",
+        "If you have $30,000 of available savings, you cannot both leave the full $30,000 in offset and pay that same $30,000 into the loan. To explore a lump-sum repayment, reduce the starting loan balance by that amount and set the offset to the cash actually left there. This also recalculates Howloop's scheduled repayment; your lender may handle repayments differently. The calculator's extra-repayment field means a new payment every month, not a one-off deposit. Comparing those two entries as though they represent the same cash commitment would be misleading."
+      ],
+      [
         "Keep access and future use in mind",
         "Before making extra repayments, check restrictions, redraw minimums and whether a fixed-rate period changes the rules. If the property could later have a different use, seek qualified tax advice about your own situation rather than assuming offset and redraw have the same tax consequences. The Howloop model makes no tax calculations."
       ],
@@ -125,6 +185,10 @@
   },
   {
     "slug": "planning-a-home-deposit",
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "updateNote": "Added monthly contribution examples at three rates, timeframe and target sensitivity checks, a purchase-cost worksheet and guidance on allocating existing savings.",
     "title": "Give your home deposit a plan, not just a number.",
     "category": "HOME BUYING",
     "minutes": 5,
@@ -148,6 +212,22 @@
         "A target is useful when it becomes an amount you can compare with your actual monthly budget. Enter the goal, existing savings and years available. Then lower the assumed interest rate or extend the timeframe to see how much the monthly requirement changes. If the result would leave you without room for ordinary bills, revise the plan instead of treating the calculator as an instruction to save that amount."
       ],
       [
+        "Turn the example into a monthly requirement",
+        "For the $117,500 target and $25,000 already saved, a five-year plan at a hypothetical constant 4% requires about $1,311.86 at each month's end. At 2%, the requirement becomes $1,425.48. At 0%, it is $1,541.67, simply the $92,500 gap divided by 60 months. These figures assume monthly compounding and exclude fees, tax and withdrawals. If $1,300 is the amount your budget supports, the first result does not mean the goal is comfortably funded: it already exceeds that budget and depends on interest being earned."
+      ],
+      [
+        "Test the target as well as the rate",
+        "Keeping the example's 4% rate but allowing six years instead of five reduces the modelled monthly contribution to about $1,055.51. Raising the cash target by $10,000 while keeping the five-year term adds about $150.83 a month to the requirement. Neither change predicts property prices or buying costs. Together they show which parts of this particular plan are sensitive: the date, the target and the contribution all matter. Record the reason for each target change so that an updated estimate is not mistaken for unexplained savings underperformance."
+      ],
+      [
+        "Keep a purchase-cost worksheet beside the calculator",
+        "A useful worksheet has five entries for each cost: what it is, who supplied the estimate, the amount, the date checked and when payment is due. Mark uncertain amounts as estimates. Add any concession only after checking your eligibility and how it is applied; do not enter the maximum advertised assistance as money you already hold. Include inspections that may be paid before a successful purchase, not just settlement costs. The calculator has one target field, so it cannot tell you whether each cost has been included twice or left out."
+      ],
+      [
+        "Allocate existing savings before entering them",
+        "An account balance is not necessarily an available house deposit. If you hold $30,000 but have reserved $5,000 for an emergency buffer, this example would start with $25,000 available for the purchase. Keep the reserve outside the deposit projection. Also distinguish a future gift or expected bonus from money already received and available: a separate scenario can show its possible effect without making your main plan depend on it. Ask the lender what evidence it needs for the source and history of funds. The tool does not assess those requirements."
+      ],
+      [
         "Keep the deposit plan separate from the borrowing decision",
         "Savings growth does not tell you whether repayments will be affordable. A lender considers income, expenses, debts, credit history and its own assessment rules. Once you have a possible loan amount, use the mortgage calculator to explore monthly repayments and a higher-rate scenario. Those figures are still estimates, not pre-approval. Revisit the deposit target when prices, costs or your circumstances change."
       ]
@@ -160,11 +240,19 @@
       [
         "ASIC Moneysmart: home loans",
         "https://moneysmart.gov.au/home-loans"
+      ],
+      [
+        "ASIC Moneysmart: buying a house",
+        "https://moneysmart.gov.au/home-loans/buying-a-house"
       ]
     ]
   },
   {
     "slug": "building-an-emergency-fund",
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "updateNote": "Added an itemised expense example, annual-bill conversions, first-milestone calculations and a worked replenishment scenario after using the fund.",
     "title": "Build a little breathing room into your budget.",
     "category": "EVERYDAY MONEY",
     "minutes": 4,
@@ -184,6 +272,22 @@
         "If essential expenses are $3,500 a month, a three-month target is $10,500. With $2,000 already set aside, the remaining gap is $8,500. Saving $400 at the end of each month would take 22 whole months to close that gap when interest is excluded. This calculation assumes you do not need to spend the buffer along the way."
       ],
       [
+        "Build a monthly expense number you can explain",
+        "Here is an illustrative $3,500 monthly budget: $1,700 for housing, $600 for groceries, $300 for utilities and communications, $250 for transport, $200 for insurance, $250 for minimum debt repayments and $200 for other essentials. Replace every amount with your own records. If a $1,200 annual insurance premium is part of the $200 insurance allowance, it contributes $100 a month to that allowance; do not add another $1,200 to the monthly figure. A quarterly bill is divided by three. The calculator can multiply an expense total, but it cannot detect a frequency mistake inside that total."
+      ],
+      [
+        "Separate a known bill from a surprise",
+        "A registration renewal you expect in six months is a planned cost, even if it is large. You can track money for that bill separately from the buffer available for unexpected expenses. For example, a $3,200 savings account containing $1,200 reserved for a known bill leaves $2,000 for the emergency-fund calculation. Entering all $3,200 as available would make the emergency gap look $1,200 smaller while leaving the same cash committed to two jobs. This is a planning distinction; it does not require opening multiple bank accounts."
+      ],
+      [
+        "Give the first milestone its own calculation",
+        "In the $10,500 target example, moving from $2,000 to one month of essentials, $3,500, takes four $400 monthly contributions when interest is ignored. After those four contributions the balance is $3,600. The full three-month buffer takes 22 months, reaching $10,800 because the calculator rounds the required time up to a whole contribution period. It does not mean an additional $300 was required. If regular savings fall to $200, the original $8,500 gap takes 43 months. These smaller checks help distinguish progress from a change in the final target."
+      ],
+      [
+        "Recalculate after using the fund",
+        "Suppose the fund reaches $6,000 and then a necessary expense uses $1,500. The available balance becomes $4,500. Against the same $10,500 target, the new gap is $6,000, or 15 further monthly contributions of $400 without interest. Do not keep the old finish date if the balance or contribution has changed. If essentials are not currently affordable, entering a larger savings contribution will not solve that shortfall. Start with a budget and consider the free financial-counselling resources linked by Moneysmart when bills or debts are becoming difficult to manage."
+      ],
+      [
         "Keep the buffer accessible",
         "Think about how you would reach the money during an unexpected expense. A product with withdrawal restrictions or a risk of losing principal may behave differently from an accessible savings balance. If you use an offset as your cash buffer, check the account and loan terms. Avoid double-counting the same money as both a home deposit and emergency savings when planning two goals."
       ],
@@ -200,11 +304,19 @@
       [
         "ASIC Moneysmart: starting to save",
         "https://moneysmart.gov.au/saving/how-to-start-saving"
+      ],
+      [
+        "ASIC Moneysmart: how to do a budget",
+        "https://moneysmart.gov.au/budgeting/how-to-do-a-budget"
       ]
     ]
   },
   {
     "slug": "read-a-savings-projection",
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "updateNote": "Added a three-rate sensitivity comparison, year-table reconciliation, steps for comparing calculator assumptions and an illustrative purchasing-power calculation.",
     "title": "Read a savings projection like a plan, not a promise.",
     "category": "MONEY BASICS",
     "minutes": 4,
@@ -226,6 +338,26 @@
       [
         "Allow for rates to change",
         "A variable bank rate can move during a multi-year plan. A welcome offer may last only a few months. Test a lower constant rate as a sensitivity check, and separately calculate a short introductory period if you want to understand it. Do not use a temporary promotional rate as though it were guaranteed for ten years."
+      ],
+      [
+        "Use three scenarios with the same deposits",
+        "Take the $10,000 starting balance and $500 monthly deposits over ten years. With monthly compounding and end-of-month deposits, hypothetical constant annual rates of 3%, 4.5% and 6% produce about $83,364, $91,269 and $100,134 respectively. Your deposits remain $70,000 in every case; the modelled interest is about $13,364, $21,269 and $30,134. The middle figure is not the most likely forecast, and the other two are not statistical confidence limits. They simply show what these three chosen assumptions would produce. Actual rates could fall outside them."
+      ],
+      [
+        "Reconcile a row before relying on the total",
+        "Each year-end row combines the opening balance, accumulated deposits and accumulated interest. For the example above, total deposits after year one should be $16,000: the initial $10,000 plus twelve payments of $500. After year five they should be $40,000. At 0% interest, the closing balance should equal the deposit total. These checks can catch an incorrect starting amount or payment frequency before you spend time interpreting a graph. Interest shown in a year-end row is cumulative from the start, not necessarily the interest earned in that one year."
+      ],
+      [
+        "Find the cause of a difference between calculators",
+        "Write the inputs beside each result: opening balance, contribution amount, contribution frequency, annual rate, years, compounding frequency and deposit timing. If one calculator uses actual weekly payments and another converts them to monthly averages, matching the visible rate and dollar inputs is not enough. Compare both at 0% first to reconcile total deposits. Then use a zero-contribution run to isolate the compounding convention. Finally restore the deposits. This sequence helps identify a timing difference without assuming that the larger result is the more accurate one."
+      ],
+      [
+        "Keep the calculation separate from purchasing power",
+        "A dollar target can be reached while the item it was meant to buy becomes more expensive. To see the arithmetic, suppose an item costs $80,000 today and its price rises by a purely hypothetical 3% each year for five years. Its price would be about $92,742 at the end of that period. This is not an inflation forecast or a claim about any specific purchase. Howloop displays future dollar balances and does not automatically raise your target, so update the target separately when you review actual expected costs."
+      ],
+      [
+        "Leave a trail for the next review",
+        "Save the input amounts, the date and why you chose the rate. Export the year table if you want to compare it with a later run. Howloop's optional saved scenario stays in the browser on that device; it is not a bank record or an account synced across devices. At your next review, begin with the money actually available and the time still remaining. Keep the old projection for comparison, but do not add interest from the old forecast to a current balance that already includes interest."
       ],
       [
         "Remember what is outside the number",
