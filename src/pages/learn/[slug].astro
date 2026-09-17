@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import guides from '../../data/learning.json';
+export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
+const {guide}=Astro.props;
+---
+<Base title={guide.title} description={guide.summary} type="article" publishedTime={new Date('2026-09-18T00:00:00+10:00')} jsonLd={{'@context':'https://schema.org','@type':'Article',headline:guide.title,description:guide.summary,author:{'@type':'Organization',name:'Howloop'},datePublished:'2026-09-18',publisher:{'@type':'Organization',name:'Howloop',url:'https://howloop.how'}}}>
+<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/learn">Money guides</a> / {guide.category.toLowerCase()}</div><span class="hl-eyebrow">{guide.category} · {guide.minutes} MIN READ</span><h1 style="max-width:850px">{guide.title}</h1><p>{guide.summary}</p></header>
+<article class="hl-wrap hl-content"><div class="hl-page-meta">By Howloop · Published 18 September 2026 · General education</div>{guide.sections.map(([title,text])=><section><h2>{title}</h2><p>{text}</p></section>)}
+<aside class="hl-callout"><h2>Make it your own.</h2><p>Try the example with numbers that fit your plan. The calculator shows its assumptions and a breakdown you can download.</p><a class="hl-button" href={'/calculators/'+guide.tool}>Open the calculator <span>↗</span></a></aside>
+<h2>Sources and further reading</h2><ul>{guide.sources.map(([title,url])=><li><a href={url} rel="noopener noreferrer">{title} ↗</a></li>)}</ul><p class="hl-help">Sources checked 18 September 2026. Product terms and official guidance can change. This guide does not assess your financial circumstances.</p><p>Something unclear or incorrect? <a href="/contact">Tell us what to improve →</a></p></article>
+</Base>
+

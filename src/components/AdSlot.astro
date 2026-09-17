@@ -16,7 +16,8 @@ interface Props {
 }
 
 const { slot = '', layout = 'display', class: cls = '' } = Astro.props;
-const enabled = Boolean(SITE.adsensePublisherId);
+// Ads remain disabled until account approval and consent configuration are complete.
+const enabled = false;
 ---
 
 {

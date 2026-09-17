@@ -1,0 +1,9 @@
+---
+import Base from '../../layouts/Base.astro';
+import {calculators} from '../../data/tools';
+import Icon from '../../components/ToolIcon.astro';
+---
+<Base title="Free Australian financial calculators" description="Plan your savings, mortgage repayments and emergency fund with free, transparent Australian financial calculators. No sign-up needed.">
+<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Calculators</div><span class="hl-eyebrow">A SMALL STEP TOWARDS A CLEARER PICTURE</span><h1>Make your next move<br/>with a little more clarity.</h1><p>Start with a question. Add your numbers. See what changes when you give your money a plan.</p></header>
+<div class="hl-wrap hl-page-main"><div class="hl-tool-grid">{calculators.map((t,i)=><a class={'hl-tool-card '+t.color} href={'/calculators/'+t.slug}><div class="hl-tool-top"><span class="hl-icon-box"><Icon name={t.icon}/></span><span class="hl-tool-number">0{i+1}</span></div><span class="hl-card-kicker">{t.tag}</span><h2 style="font-size:22px;margin:10px 0">{t.name}</h2><p>{t.description}</p><span class="hl-card-link">Open calculator <span>↗</span></span></a>)}</div><div class="hl-explainer"><div><h2>Built to help you explore.</h2><p>Every calculator shows its assumptions and a breakdown you can check. Start with the example, then try your own numbers. Results are estimates, not a financial recommendation or a loan offer.</p><p>Your numbers stay in your browser. If you choose “Save on this device”, we keep a copy in that browser’s local storage until you delete it or clear site data.</p></div><div><h2>Not sure where to begin?</h2><p><a href="/learn/how-compound-interest-works">Understand compound interest →</a></p><p><a href="/learn/planning-a-home-deposit">Plan your first home deposit →</a></p><p><a href="/methodology">Read our calculation methods →</a></p></div></div></div>
+</Base>
