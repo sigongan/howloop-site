@@ -64,7 +64,7 @@ for (const [route, { html }] of pages) {
   if (!title) fail(route + ': missing title');
   if (!description) fail(route + ': missing description');
   if (canonical.length !== 1) fail(route + ': needs one canonical');
-  const expected = origin + route;
+  const expected = origin + (route === '/' ? '/' : route + '/');
   if (canonical[0]?.href !== expected) fail(route + ': canonical differs from ' + expected);
   if (!noindex && excluded) fail(route + ': archive/error page must have its declared noindex');
   if (noindex && !excluded) fail(route + ': maintained public page is accidentally noindex');
@@ -91,6 +91,7 @@ for (const [route, { html }] of pages) {
     try { url = new URL(href, expected); } catch { fail(route + ': invalid URL ' + href); continue; }
     if (url.origin !== origin) continue;
     if (!await resolves(url.pathname)) fail(route + ': broken internal link ' + href);
+    if (url.pathname !== '/' && pages.has(normalise(url.pathname)) && !url.pathname.endsWith('/')) fail(route + ': internal page link needs canonical trailing slash: ' + href);
   }
   if (/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle/i.test(html)) {
     fail(route + ': ads are enabled before the separate consent/publishing decision');
@@ -113,7 +114,7 @@ const guides = JSON.parse(await read(path.join(root, 'src/data/learning.json')))
 const rssItems = [...rss.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
 if (rssItems.length !== guides.length) fail('RSS does not contain every maintained money guide');
 for (const guide of guides) {
-  const target = origin + '/learn/' + guide.slug;
+  const target = origin + '/learn/' + guide.slug + '/';
   if (!rssItems.some((item) => item.includes('<link>' + target + '</link>'))) fail('RSS is missing ' + guide.slug);
 }
 if (/<link>[^<]*\/guides\//.test(rss)) fail('RSS still publishes archived household content');

@@ -4,7 +4,7 @@ export function savings({principal,contribution=0,frequency='monthly',annualRate
 finite(principal,'Starting balance',0,1e8);finite(annualRate,'Interest rate',0,30);finite(years,'Years',1/12,50);
 const months=Math.round(years*12),payment=monthlyContribution(contribution,frequency);let balance=principal,deposits=principal;
 const rows=[{month:0,year:0,balance,deposits,interest:0}];
-for(let month=1;month<=months;month++){const annual=rateForBalance?rateForBalance(balance):annualRate;finite(annual,'Product rate',0,30);balance+=balance*annual/1200+payment;deposits+=payment;if(month%12===0||month===months)rows.push({month,year:month/12,balance,deposits,interest:balance-deposits});}
+for(let month=1;month<=months;month++){const annual=rateForBalance?rateForBalance(balance,month):annualRate;finite(annual,'Product rate',0,30);balance+=balance*annual/1200+payment;deposits+=payment;if(month%12===0||month===months)rows.push({month,year:month/12,balance,deposits,interest:balance-deposits});}
 return {balance,deposits,interest:balance-deposits,rows,monthly:payment};
 }
 export function requiredSavings({principal,target,annualRate=0,years=5}){

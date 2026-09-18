@@ -11,9 +11,9 @@ export async function GET(context) {
       title: guide.title,
       description: guide.summary,
       pubDate: new Date(guide.datePublished ?? '2026-09-18T00:00:00+10:00'),
-      link: `/learn/${guide.slug}`,
+      link: `/learn/${guide.slug}/`,
     })),
-    trailingSlash: false,
+    trailingSlash: true,
     customData: `<language>en-au</language>`,
   });
 }

@@ -95,7 +95,7 @@
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "Added a short explanation, simple example and knowledge check; retained the detailed guide and source record.",
+    "updateNote": "Added explicit base and conditional scenario guidance, including expiry of supported introductory rates.",
     "title": "Which savings rate will I actually get?",
     "category": "BANKING",
     "minutes": 5,
@@ -124,7 +124,7 @@
       ],
       [
         "A short promotion needs two calculations",
-        "Suppose $20,000 earns a hypothetical 5% a year for four months, followed by 2% for eight months, with monthly compounding and no deposits or withdrawals. The first period ends at $20,335.42; carrying that balance into the second period gives $20,608.15 after a year. Using 5% for the entire year gives $21,023.24, overstating this particular scenario by $415.09. These are invented rates, not a current offer. The Howloop interface accepts whole years, so this short-period example is worked separately using the monthly formula; entering one year at the promotional rate will not reproduce it."
+        "Suppose $20,000 earns a hypothetical 5% a year for four months, followed by 2% for eight months, with monthly compounding and no deposits or withdrawals. The first period ends at $20,335.42; carrying that balance into the second period gives $20,608.15 after a year. Using 5% for the entire year gives $21,023.24, overstating this particular scenario by $415.09. These are invented rates, not a current offer. For supported whole-month or whole-year introductory offers, Howloop can model the welcome period followed by the base rate. A custom rate still stays constant for the full term."
       ],
       [
         "Two tier structures can share the same headline",
@@ -136,7 +136,7 @@
       ],
       [
         "Use the explorer with the right expectations",
-        "The Howloop bank explorer presents dated public CDR snapshots, alphabetically. It is not a ranked list of best accounts and does not cover every bank or product. Where a base variable-rate structure is unambiguous, the calculator can model it and re-evaluate supported balance tiers as savings grow. Bonus and introductory entries stay visible for inspection. For a complex offer, confirm the applicable total with the provider and enter your own scenario. A constant custom rate is held for the full term, so model a welcome period separately from the rate after it ends."
+        "The Howloop bank explorer presents dated public CDR snapshots, alphabetically. It is not a ranked list of best accounts and does not cover every bank or product. The calculator starts with a supported base-rate model. Where an unambiguous bonus or introductory adjustment can be modelled for the whole plan, it shows a second balance for comparison. You must check the provider conditions and explicitly choose that scenario. Welcome offers end after their supported duration, then revert to base. This assumes eligibility; it does not verify it. Stacked, incomplete, stale or unsupported offers need manual checking."
       ]
     ],
     "sources": [
@@ -616,6 +616,22 @@
       [
         "What to check before choosing",
         "Ask the lender which valuation it uses, whether the quoted loan includes financed fees and whether LMI applies. If a premium is added to your loan, you may pay interest on it too. A cheaper upfront cost does not automatically mean a cheaper loan overall."
+      ],
+      [
+        "Calculate the loan before the percentage",
+        "Imagine an $800,000 home and $80,000 available for the deposit towards its price. With buying costs paid separately, the loan is $720,000. Divide $720,000 by $800,000 and multiply by 100: the LVR is 90%. The deposit is 10% of the price, but the LVR describes the borrowed share. In the Howloop calculator, enter the deposit actually used towards the purchase, rather than all the cash in your savings account. Keeping money aside for duty and moving costs reduces what is available for that deposit."
+      ],
+      [
+        "A lower valuation changes the answer",
+        "Keep the same $720,000 loan, but suppose the lender values the home at $760,000. The LVR becomes about 94.74%, even though the agreed purchase price has not changed. If a further $10,000 of costs is financed, the loan becomes $730,000 and the LVR becomes about 96.05%. These are arithmetic examples, not lending offers. Ask which value and loan amount the lender will use before treating an online result as the ratio that will appear on an application."
+      ],
+      [
+        "Compare two deposits using the same home",
+        "For that $800,000 price and matching valuation, an $80,000 deposit means $720,000 borrowed; a $160,000 deposit means $640,000 borrowed. The difference is $80,000 less debt. Try both loan amounts in the mortgage calculator using the same interest rate and term. Then separately compare any actual LMI premium, fees and rate differences in the lender quotes. Do not add an assumed LMI saving to the repayment calculation if the quoted loan amount already includes that premium."
+      ],
+      [
+        "Take a short question list to the lender",
+        "Write down the property price, expected valuation, deposit towards the price, buying costs paid in cash and costs proposed to be added to the loan. Ask for an itemised quote showing the LMI premium, whether it is financed, the interest rate and ongoing fees. If a waiver or government guarantee is mentioned, request its eligibility conditions and confirmation for your application. Keep a second budget showing the money left after settlement. A low LVR and a comfortable household cash buffer measure different things."
       ]
     ],
     "sources": [
@@ -636,12 +652,12 @@
       "label": "Try the LVR calculator",
       "href": "/calculators/lvr"
     },
-    "minutes": 3,
+    "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
     "reviewDays": 30,
-    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date."
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic."
   },
   {
     "slug": "first-home-guarantee",
@@ -690,6 +706,22 @@
       [
         "Three different kinds of help",
         "A guarantee supports a loan. A grant is a payment if you qualify. A duty concession reduces a state or territory tax. Qualifying for one does not establish eligibility for the others. Add buying costs and test repayments before treating a deposit target as a complete plan."
+      ],
+      [
+        "Put a smaller deposit beside a larger loan",
+        "Take a hypothetical $700,000 eligible property. A 5% deposit is $35,000 and the remaining price is $665,000. A 20% deposit is $140,000 and leaves $560,000 to borrow. The smaller-deposit route uses $105,000 less cash towards the price, but also leaves $105,000 more debt before any financed costs. The guarantee does not pay that difference into your bank account. Use the same loan term and interest assumption when comparing repayments, so the effect of the extra borrowing is clear."
+      ],
+      [
+        "Check the property and applicant together",
+        "Open the official scheme page for the first-home-buyer pathway, then check the location price cap for the exact property. A house being advertised as suitable for first-home buyers does not confirm scheme eligibility. Prepare a note of every applicant, citizenship or permanent-residency status, ownership history and the intended use of the property. The participating lender checks those details alongside its lending requirements. Record which version of the rules you checked and ask the lender to explain any uncertainty before relying on the scheme."
+      ],
+      [
+        "Build a complete cash target",
+        "The deposit towards the price is only one line in the budget. Add a separate estimate for transfer duty after any confirmed concession, legal work, inspections, moving and a cash buffer. If some costs will be financed, show that clearly in the loan amount instead of counting them twice. Use our savings-goal tool for the total cash still needed, then the mortgage tool for the proposed debt. A scheme can address the size of the deposit without solving an ongoing repayment shortfall."
+      ],
+      [
+        "Practise the repayment before making a commitment",
+        "As an exercise, write down the estimated repayment, council and water costs, insurance and expected maintenance next to your current monthly housing budget. Compare the difference with what you actually have left after ordinary expenses. Run another mortgage example at a higher hypothetical rate to see the sensitivity; this does not reproduce a lender’s assessment. Keep the lender’s eligibility confirmation, property-cap check and cost estimates together. Recheck them if the property, applicants, contract timing or intended living arrangements change."
       ]
     ],
     "sources": [
@@ -710,12 +742,12 @@
       "label": "Compare your deposit",
       "href": "/calculators/lvr"
     },
-    "minutes": 3,
+    "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
     "reviewDays": 14,
-    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
     "policyIds": [
       "deposit-scheme"
     ]
@@ -771,6 +803,22 @@
       [
         "Get an estimate you can explain",
         "Have the location, contract date, price or required value, buyer details and property type ready. Use the relevant revenue office tool and read its exclusions. Mixed ownership, foreign-buyer rules or unusual transactions may require a separate calculation."
+      ],
+      [
+        "Turn the buying budget into separate lines",
+        "Consider a made-up $700,000 purchase with $70,000 towards the price. For a budgeting exercise only, allow $20,000 for duty, $2,500 for legal work, $700 for inspections and a $10,000 cash buffer. The cash target is $103,200. The $20,000 is an invented placeholder, not the duty payable in any state. Replace it with the relevant revenue office estimate for the actual transaction. Notice that entering all $103,200 as a deposit in an LVR calculator would incorrectly shrink the loan."
+      ],
+      [
+        "Keep the inputs with the estimate",
+        "A saved duty number is difficult to check without its assumptions. Beside it, record the state or territory, property price and any other required value, contract date, property type, buyer details and the concession selected. Save the official tool URL and the date you used it. If you change from an existing home to vacant land, or add a joint buyer, run the official calculation again. Do not assume an earlier result follows you to a different property or ownership arrangement."
+      ],
+      [
+        "Read what must happen after purchase",
+        "A concession can depend on more than what is true on signing day. Read the revenue office conditions about occupation and any later change in use, and ask your conveyancer which dates and records apply. Put confirmed obligations in your calendar with the official source. The federal deposit guarantee and state duty relief have separate purposes and tests. A lender saying that you qualify for a guarantee does not establish that the property transfer is exempt from duty."
+      ],
+      [
+        "Reconcile the estimate before settlement",
+        "Compare the duty estimate with the itemised settlement statement and ask about differences while there is time to understand them. Keep government charges, professional fees, loan costs and property adjustments on separate lines. If an amount will come from the loan, check that it has not also been counted as cash you must supply. This guide is a way to organise the calculation, not a national rate table. Use the state links below for the transaction rules and the official calculators they provide."
       ]
     ],
     "sources": [
@@ -791,12 +839,12 @@
       "label": "Plan your cash target",
       "href": "/calculators/savings-goal"
     },
-    "minutes": 3,
+    "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
     "reviewDays": 14,
-    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
     "stateLinks": true
   },
   {
@@ -845,6 +893,22 @@
       [
         "Dates matter, especially for future sales",
         "Do not apply a remembered “50% discount” to every sale. Holding period, ownership type, losses and the applicable law matter. The reform note above separates the future rules from a simple explanation of what a capital gain means."
+      ],
+      [
+        "Separate sale proceeds, debt and gain",
+        "Suppose an asset sells for $460,000 and its correctly established tax cost base is $410,000. The initial gain is $50,000. If an outstanding loan of $200,000 is repaid at settlement, that changes the cash you receive, not that subtraction. Loan balances and tax cost bases answer different questions. In a worksheet, keep sale proceeds and eligible cost-base items in one calculation, then show debt repayment and other cash movements separately. This avoids treating the cash left in the bank as the taxable gain."
+      ],
+      [
+        "Apply adjustments in the right order",
+        "For an eligible Australian-resident individual under the rules applying before the future reform begins, imagine that the $50,000 gain can use $10,000 of capital losses. That leaves $40,000. If the remaining gain qualifies for a 50% discount, the net amount is $20,000. This is an illustration of the order, not a $20,000 tax bill or confirmation of eligibility. Do not carry this example into a sale under the rules starting from 1 July 2027; read the dated reform note above for that change."
+      ],
+      [
+        "Make a record trail for the cost base",
+        "Start a folder with the acquisition contract, settlement statement, eligible transaction costs, improvement records and sale paperwork. Label what each expense was for instead of merging all property spending into one total. A repaired tap, an extension and a loan repayment are different transactions; paying for something does not automatically make it a cost-base addition. Record periods of private and rental use and any changes in ownership or residency. The source guidance, rather than the mortgage statement, determines the tax treatment of each item."
+      ],
+      [
+        "Use the correct event date and tax year",
+        "For a disposal under a contract, the CGT event is generally tied to the contract date, rather than the day all sale money arrives. Keep both dates and check the ATO guidance for the particular event. With jointly owned assets, a main residence used to earn income, inherited property or overseas periods, the simple example may not describe the calculation. Write down the uncertain point and gather the relevant records before completing a return. A remembered discount percentage cannot answer those questions by itself."
       ]
     ],
     "sources": [
@@ -865,12 +929,12 @@
       "label": "See dated rule changes",
       "href": "/updates"
     },
-    "minutes": 3,
+    "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
     "reviewDays": 14,
-    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
     "policyIds": [
       "cgt-reform"
     ]
@@ -929,6 +993,22 @@
       [
         "Do not buy only for a deduction",
         "Consider vacancies, maintenance, interest changes and what happens if the property value falls. The date you acquire an established property also matters under the upcoming reforms. Read the dated change note before relying on a loss offset against wages."
+      ],
+      [
+        "See the loss after a hypothetical tax benefit",
+        "Imagine annual rent of $30,000 and $34,000 of expenses that are all assumed deductible for this example. The rental tax loss is $4,000. If that entire loss could reduce other income taxed at a made-up 30%, the tax reduction would be $1,200, leaving $2,800 of the loss after that benefit. This is arithmetic, not a current entitlement or personal tax estimate. It excludes levies, other income interactions and the future-law changes described above. A smaller loss after tax is still a cost to fund."
+      ],
+      [
+        "Build a cash column next to the tax column",
+        "List the actual money received and paid during the period. Then, separately, identify the tax treatment to check for each entry. A hypothetical $12,000 principal repayment is money leaving your account to reduce debt; it is not another $12,000 rental deduction. An amount deducted over time can affect taxable results differently from cash paid this year. Comparing the two columns helps explain why a tax loss can differ from the shortfall you need to cover each month. Do not use the tax figure as your whole household budget."
+      ],
+      [
+        "Try a vacancy and repair scenario",
+        "Using the $30,000 annual rent example, a simple one-month gap removes about $2,500 of expected rent. Add a hypothetical $3,000 repair bill and the cash pressure rises by $5,500 before considering any tax treatment. This does not say that every repair is immediately deductible. The exercise asks whether the available buffer could carry an interruption without assuming a refund arrives first. Repeat with the loan interest and property costs in your own quotes; do not keep the advertised rent in every scenario."
+      ],
+      [
+        "Keep acquisition and borrowing records together",
+        "Save the purchase date and contract, rental statements, loan drawdowns, expense records and a clear explanation of how borrowed funds were used. Flag any private use instead of assuming that every payment on a property-secured loan belongs to the investment. Before relying on losses to offset wages, check the rules for the property, ownership and relevant year, including the upcoming restrictions in the reform note. The investment still needs to make sense when its future sale price, occupancy and costs differ from your first estimate."
       ]
     ],
     "sources": [
@@ -937,8 +1017,8 @@
         "https://moneysmart.gov.au/how-to-invest/investing-and-tax"
       ],
       [
-        "ATO: loan-purpose principles (2019 guide; not current-year filing instructions)",
-        "https://www.ato.gov.au/forms-and-instructions/rental-properties-2019/introduction/expenses-for-which-you-can-claim-an-immediate-deduction"
+        "ATO: rental interest and private-use borrowing",
+        "https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/interest-expenses"
       ],
       [
         "2026 tax reform legislation",
@@ -953,12 +1033,12 @@
       "label": "Read the rule-change summary",
       "href": "/updates"
     },
-    "minutes": 3,
+    "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
     "reviewDays": 14,
-    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
     "policyIds": [
       "negative-gearing-reform"
     ]
@@ -1009,6 +1089,22 @@
       [
         "Check before committing",
         "Use the current Treasury and ATO guidance for the intended buyer, ownership structure and property. Confirm approval requirements before entering a binding purchase. Keep the approval conditions and check ongoing reporting and vacancy requirements."
+      ],
+      [
+        "Identify the buyer before the property budget",
+        "Create a short worksheet naming the proposed buyer and ownership structure, citizenship or residency facts, the state, property type and intended acquisition date. Federal foreign-investment rules and state revenue rules can ask different questions about the same buyer. Someone being an Australian tax resident does not, by itself, answer every foreign-person test. The purpose of the worksheet is to take the same facts to each official source, rather than selecting whichever definition appears most favourable. Keep the date and link for every conclusion."
+      ],
+      [
+        "Do not confuse affordability with permission",
+        "Imagine two buyers who each have a $200,000 deposit for the same existing home. Their bank balances are equal, but their legal ability to acquire that home may differ because their status or the applicable exceptions differ. A loan pre-approval, an agent’s advertisement and a willingness to pay extra tax do not replace the foreign-investment check. Establish the permitted purchase pathway and any necessary approval before making an unconditional commitment. Use the current restriction period shown in the rule note, not an older saved article."
+      ],
+      [
+        "Prepare three separate cost lists",
+        "Keep acquisition costs, ongoing ownership costs and borrowing costs apart. The first list may include an applicable federal application fee, state transfer duty, any purchaser surcharge and professional fees. The second may include ordinary property costs and any applicable land-tax or vacancy obligations. The third covers the loan and its fees. Do not insert a nationwide foreign-buyer percentage: the relevant definitions, exemptions and charges need their own checks. An approval application fee also should not be mistaken for a promise that approval will be granted."
+      ],
+      [
+        "Keep a calendar after an approved purchase",
+        "Retain the approval and its conditions with the property records. Make a list of required notifications, any development or use conditions and the evidence needed for each. If someone will manage the property for you, agree who will keep occupancy and letting records and who will watch deadlines. Check official guidance again before changing the ownership structure or use of the property. This guide supplies the order of questions; it cannot determine a purchaser’s legal status or replace approval for a particular transaction."
       ]
     ],
     "sources": [
@@ -1029,12 +1125,12 @@
       "label": "Find state duty information",
       "href": "/learn/stamp-duty#state-duty"
     },
-    "minutes": 3,
+    "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
     "reviewDays": 14,
-    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
     "policyIds": [
       "foreign-home-ban"
     ]
@@ -1089,6 +1185,22 @@
       [
         "Before making a change",
         "Check whether insurance would change or end, and what fees or restrictions apply. Super normally has access conditions; it is not an everyday spending account. Extra contributions also have tax and contribution-limit rules."
+      ],
+      [
+        "Read a balance change as several movements",
+        "For a made-up account, start with $10,000, add $1,200 of contributions and $500 of investment earnings, then subtract $100 of fees, $150 of tax and $80 of insurance premiums. The closing balance is $11,370. These amounts are invented, not standard charges or a tax calculation. The $1,370 increase is not all investment return. Separating the movements helps you ask whether a change came from your employer, the markets or costs, rather than judging performance only by the difference between two balances."
+      ],
+      [
+        "Check money arriving, not only the payslip",
+        "Payday Super began on 1 July 2026. The linked Moneysmart guide explains the timing and the usual seven-business-day arrival period. Match pay dates and super amounts on your payslips with contributions recorded by the fund, allowing for the applicable processing rules. Keep any unmatched entries in a small list with dates. A super amount printed on a payslip is a reason to check the account, not proof that the fund has received that amount. Raise discrepancies with payroll and follow the current ATO process if needed."
+      ],
+      [
+        "Compare costs on the same balance",
+        "The $50,000 fee example above shows why percentages need a dollar translation: 0.5% is $250 and 1% is $500. Now imagine an additional fixed fee of $60 a year. That adds 0.12% of a $50,000 balance, but 1.2% of a $5,000 balance. These are hypothetical figures, and actual fee schedules can have caps and multiple parts. Use each fund’s published fee example and product documents, comparing equivalent balances and investment options. Keep insurance premiums separate so you can see what cover the payment buys."
+      ],
+      [
+        "Make one understandable review note",
+        "Record the fund name, investment option, account balance and date, recent contributions, fees and insurance cover. Next to any proposed change, write what you are trying to improve and what could change with it. For example, combining two accounts may simplify administration, but first check whether cover in the account being closed is needed and whether replacement cover is available. Do not treat a savings-account rate in the compound-interest calculator as a forecast for a super option containing shares. The risks and access rules are different."
       ]
     ],
     "sources": [
@@ -1102,19 +1214,23 @@
       ],
       [
         "Moneysmart: how super works",
-        "https://moneysmart.gov.au/how-super-works"
+        "https://moneysmart.gov.au/how-super-works/superannuation"
+      ],
+      [
+        "Moneysmart: Payday Super from 1 July 2026",
+        "https://moneysmart.gov.au/how-super-works/what-is-payday-super"
       ]
     ],
     "action": {
       "label": "Read the official super guide",
       "href": "https://moneysmart.gov.au/how-super-works"
     },
-    "minutes": 3,
+    "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
     "reviewDays": 30,
-    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date."
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic."
   },
   {
     "slug": "asx-dividends",
@@ -1162,6 +1278,22 @@
       [
         "Keep the records together",
         "Keep purchase and sale confirmations, brokerage costs, dividend statements and reinvestment records. Selling shares raises a separate capital-gains question. ETF and managed-fund distributions can have different components: use their annual tax statement rather than treating everything as a company dividend."
+      ],
+      [
+        "Follow the dividend through three numbers",
+        "For a simplified example, suppose a statement shows a $70 cash dividend and a $30 franking credit. For an eligible Australian-resident individual, the illustrative assessable amount is $100, with a $30 tax offset. At a made-up 30% personal tax rate, tax on that $100 would be $30 before other effects, offset by the $30 credit. This does not establish your eligibility, final tax or refund. Use the actual statement amounts and the rules for your income year; a bank deposit alone does not show the whole tax entry."
+      ],
+      [
+        "Keep reinvestment and income separate",
+        "A dividend reinvestment plan can use the dividend to acquire more shares. The absence of cash in your bank account does not generally remove dividend reporting. Save the dividend statement and the record of the additional shares, including their acquisition date, number and relevant cost information. If you later sell, those additional parcels can matter to the capital-gains calculation. A useful personal spreadsheet has separate columns for dividend income, attached credits and shares acquired, rather than recording a reinvested dividend as if nothing happened."
+      ],
+      [
+        "A high yield can hide a falling share price",
+        "Imagine a company that paid $0.40 per share over a year. Against a $10 share price, that historical cash yield is 4%. If the price falls to $5 while you keep using the same past dividend, the displayed yield becomes 8%. The shareholder has not been promised a doubled payment; the denominator changed. A future dividend could also be reduced or omitted. For a holding of 100 shares bought at $10, a later $5 price means a $500 fall in value, which a $40 dividend does not erase."
+      ],
+      [
+        "Reconcile records before using pre-filled amounts",
+        "Collect statements from the company or share registry and compare them with the income-year entries in your tax return. Check the payment date, franked and unfranked amounts, attached credits and any withholding shown. Resolve missing or differing entries using the statements and current ATO instructions. Keep ETF or managed-fund annual tax statements in a separate group because their components are not necessarily company dividends. The Howloop employee tax guide does not calculate investment income or franking entitlements; use the official guidance for that part of a return."
       ]
     ],
     "sources": [
@@ -1170,23 +1302,19 @@
         "https://moneysmart.gov.au/shares/how-to-buy-and-sell-shares"
       ],
       [
-        "ATO: franking definitions (2021 reference)",
-        "https://www.ato.gov.au/forms-and-instructions/refund-of-franking-credits-for-individuals-2021-application-and-instructions/definitions"
-      ],
-      [
-        "ATO: dividend reporting principles (2023 reference; use your income-year instructions)",
-        "https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/paper-tax-return-instructions/2023/tax-return/income-questions-1-12/11-dividends-2023"
+        "ATO: myTax 2026 dividends, reinvestment and franking credits (2025–26 income year)",
+        "https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/mytax-instructions/2026/income/australian-income-or-losses-from-investments-or-property/dividends"
       ]
     ],
     "action": {
       "label": "Understand capital gains next",
       "href": "/learn/capital-gains-tax"
     },
-    "minutes": 3,
+    "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
     "reviewDays": 30,
-    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date."
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic."
   }
 ]
