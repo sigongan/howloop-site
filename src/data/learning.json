@@ -4,8 +4,8 @@
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "Added a contribution-versus-rate comparison, weekly payment conversion and independent arithmetic checks for the first month and zero-interest scenario.",
-    "title": "Compound interest, without the complicated bit.",
+    "updateNote": "Added a short explanation, simple example and knowledge check; retained the detailed guide and source record.",
+    "title": "How does interest earn more interest?",
     "category": "SAVING",
     "minutes": 5,
     "summary": "What interest on interest really means, and how to use a projection without mistaking it for a promise.",
@@ -57,15 +57,46 @@
         "ASIC Moneysmart: compound interest calculator",
         "https://moneysmart.gov.au/budgeting/compound-interest-calculator"
       ]
-    ]
+    ],
+    "group": "everyday",
+    "takeaway": "Once interest joins your savings, it can earn interest too.",
+    "example": {
+      "title": "A tiny snowball, in dollars",
+      "rows": [
+        [
+          "Start with",
+          "$1,000"
+        ],
+        [
+          "After year 1 at 5%",
+          "$1,050"
+        ],
+        [
+          "After year 2 at 5%",
+          "$1,102.50"
+        ]
+      ],
+      "note": "Teaching example: annual compounding, unchanged 5% rate, no deposits, withdrawals, fees or tax."
+    },
+    "quiz": {
+      "question": "Why is the second year’s interest $52.50 rather than $50?",
+      "choices": [
+        "The rate doubled",
+        "The first year’s interest also earns interest",
+        "The bank added a deposit"
+      ],
+      "answer": 1,
+      "explanation": "5% of $1,050 is $52.50. The rate stayed the same; the balance grew."
+    },
+    "reviewDays": 90
   },
   {
     "slug": "bonus-interest-conditions",
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "Added worked missed-bonus, introductory-period and balance-tier examples, plus a checklist for comparing dated product information.",
-    "title": "That savings rate comes with a little fine print.",
+    "updateNote": "Added a short explanation, simple example and knowledge check; retained the detailed guide and source record.",
+    "title": "Which savings rate will I actually get?",
     "category": "BANKING",
     "minutes": 5,
     "summary": "Learn the difference between a base rate, a bonus component and a welcome offer before you build a savings plan.",
@@ -117,15 +148,46 @@
         "Consumer Data Right: public product data",
         "https://www.cdr.gov.au/for-providers/how-find-data-holders-product-data-request-service"
       ]
-    ]
+    ],
+    "group": "everyday",
+    "takeaway": "The biggest advertised rate may depend on what you do each month.",
+    "example": {
+      "title": "Read the conditions before the percentage",
+      "rows": [
+        [
+          "Base rate in this made-up offer",
+          "1% p.a."
+        ],
+        [
+          "Total rate if conditions are met",
+          "5% p.a."
+        ],
+        [
+          "Total rate if conditions are missed",
+          "1% p.a."
+        ]
+      ],
+      "note": "Illustrative offer only. Real products have their own conditions, caps and rate structures."
+    },
+    "quiz": {
+      "question": "A 5% total rate includes a bonus. Should you assume 5% every month?",
+      "choices": [
+        "Yes, it is the headline",
+        "Only after checking the conditions",
+        "Only if the logo is familiar"
+      ],
+      "answer": 1,
+      "explanation": "Check the bonus conditions, balance limits and dates. A missed condition can change what you earn."
+    },
+    "reviewDays": 90
   },
   {
     "slug": "offset-vs-extra-repayments",
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "Added first-payment arithmetic, an offset-fee break-even example, a daily-balance illustration and guidance against counting the same cash twice.",
-    "title": "An offset or extra repayments. What’s the difference?",
+    "updateNote": "Added a short explanation, simple example and knowledge check; retained the detailed guide and source record.",
+    "title": "How does an offset account help?",
     "category": "HOME LOANS",
     "minutes": 6,
     "summary": "Two ways to reduce mortgage interest, with different implications for how you access your money.",
@@ -181,15 +243,46 @@
         "ASIC Moneysmart: pay off your mortgage faster",
         "https://moneysmart.gov.au/home-loans/pay-off-your-mortgage-faster"
       ]
-    ]
+    ],
+    "group": "home",
+    "takeaway": "Money in a full offset can reduce the loan balance used to calculate interest.",
+    "example": {
+      "title": "The loan is still $600,000",
+      "rows": [
+        [
+          "Loan balance",
+          "$600,000"
+        ],
+        [
+          "Money in a full offset",
+          "$40,000"
+        ],
+        [
+          "Balance used for interest",
+          "$560,000"
+        ]
+      ],
+      "note": "Simple full-offset illustration. Your repayment may stay the same; fees and lender rules still matter."
+    },
+    "quiz": {
+      "question": "Does putting $40,000 in an offset pay off $40,000 of the loan?",
+      "choices": [
+        "Yes, the debt disappears",
+        "No, the money stays in a separate account",
+        "Only on weekends"
+      ],
+      "answer": 1,
+      "explanation": "The offset reduces the interest calculation. It is separate money, not an automatic repayment."
+    },
+    "reviewDays": 90
   },
   {
     "slug": "planning-a-home-deposit",
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "Added monthly contribution examples at three rates, timeframe and target sensitivity checks, a purchase-cost worksheet and guidance on allocating existing savings.",
-    "title": "Give your home deposit a plan, not just a number.",
+    "updateNote": "Added a short explanation, simple example and knowledge check; retained the detailed guide and source record.",
+    "title": "How much cash do I need to buy a home?",
     "category": "HOME BUYING",
     "minutes": 5,
     "summary": "Break a large savings target into a deposit, a separate cost allowance and a monthly habit you can check.",
@@ -245,15 +338,46 @@
         "ASIC Moneysmart: buying a house",
         "https://moneysmart.gov.au/home-loans/buying-a-house"
       ]
-    ]
+    ],
+    "group": "home",
+    "takeaway": "Keep the deposit, buying costs and money for surprises in separate buckets.",
+    "example": {
+      "title": "The deposit is one part of the target",
+      "rows": [
+        [
+          "20% of a $600,000 home",
+          "$120,000"
+        ],
+        [
+          "Example buying-cost allowance",
+          "$20,000"
+        ],
+        [
+          "Cash target before an emergency buffer",
+          "$140,000"
+        ]
+      ],
+      "note": "The $20,000 is a made-up allowance, not a duty estimate. Replace it with checked costs for your purchase."
+    },
+    "quiz": {
+      "question": "You have exactly enough for the deposit. Are all buying costs covered?",
+      "choices": [
+        "Yes",
+        "Not necessarily",
+        "Only if you pay weekly"
+      ],
+      "answer": 1,
+      "explanation": "Duty, legal work, inspections and a buffer may need extra cash. Keep these separate from the deposit."
+    },
+    "reviewDays": 90
   },
   {
     "slug": "building-an-emergency-fund",
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "Added an itemised expense example, annual-bill conversions, first-milestone calculations and a worked replenishment scenario after using the fund.",
-    "title": "Build a little breathing room into your budget.",
+    "updateNote": "Added a short explanation, simple example and knowledge check; retained the detailed guide and source record.",
+    "title": "How big should my emergency fund be?",
     "category": "EVERYDAY MONEY",
     "minutes": 4,
     "summary": "Work out what essentials cost, choose a buffer and start with a contribution you can sustain.",
@@ -309,15 +433,54 @@
         "ASIC Moneysmart: how to do a budget",
         "https://moneysmart.gov.au/budgeting/how-to-do-a-budget"
       ]
-    ]
+    ],
+    "group": "everyday",
+    "takeaway": "Start with what your essentials cost, then choose how many months you want covered.",
+    "example": {
+      "title": "A three-month example",
+      "rows": [
+        [
+          "Monthly essentials",
+          "$3,000"
+        ],
+        [
+          "Chosen cover",
+          "3 months"
+        ],
+        [
+          "Target",
+          "$9,000"
+        ],
+        [
+          "Already saved",
+          "$2,000"
+        ],
+        [
+          "Still to build",
+          "$7,000"
+        ]
+      ],
+      "note": "Three months is an example, not the right target for everyone. No interest is included."
+    },
+    "quiz": {
+      "question": "What should the target be based on?",
+      "choices": [
+        "Someone else’s salary",
+        "Your own essential expenses and chosen cover",
+        "The biggest number you can imagine"
+      ],
+      "answer": 1,
+      "explanation": "Your expenses and circumstances set the starting point. Revisit the target when life changes."
+    },
+    "reviewDays": 90
   },
   {
     "slug": "read-a-savings-projection",
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "Added a three-rate sensitivity comparison, year-table reconciliation, steps for comparing calculator assumptions and an illustrative purchasing-power calculation.",
-    "title": "Read a savings projection like a plan, not a promise.",
+    "updateNote": "Added a short explanation, simple example and knowledge check; retained the detailed guide and source record.",
+    "title": "Is a savings projection a promise?",
     "category": "MONEY BASICS",
     "minutes": 4,
     "summary": "Learn which assumptions sit behind a future balance and how to test the parts that might change.",
@@ -373,6 +536,657 @@
         "Howloop: calculation methods",
         "https://howloop.how/methodology"
       ]
+    ],
+    "group": "everyday",
+    "takeaway": "A projection shows what happens if the assumptions hold. Real life can change.",
+    "example": {
+      "title": "A future balance has two parts",
+      "rows": [
+        [
+          "Money you put in",
+          "$10,000"
+        ],
+        [
+          "Modelled interest",
+          "$1,000"
+        ],
+        [
+          "Example ending balance",
+          "$11,000"
+        ]
+      ],
+      "note": "Illustrative breakdown only, not a rate or return forecast."
+    },
+    "quiz": {
+      "question": "What is a useful way to test a savings plan?",
+      "choices": [
+        "Assume the highest rate lasts forever",
+        "Try a lower rate with the same deposits",
+        "Treat the estimate as guaranteed"
+      ],
+      "answer": 1,
+      "explanation": "Changing one assumption at a time helps you understand what drives the answer."
+    },
+    "reviewDays": 90
+  },
+  {
+    "slug": "lvr-and-lmi",
+    "title": "What are LVR and LMI?",
+    "group": "home",
+    "category": "Buying a home",
+    "summary": "See how your deposit changes the share you borrow — and why mortgage insurance may appear.",
+    "takeaway": "LVR is the percentage of a property’s lender-assessed value you borrow. LMI usually protects the lender, not you.",
+    "example": {
+      "title": "An $800,000 home",
+      "rows": [
+        [
+          "Deposit towards the price",
+          "$160,000"
+        ],
+        [
+          "Loan before added costs",
+          "$640,000"
+        ],
+        [
+          "LVR if the lender values it at $800,000",
+          "80%"
+        ]
+      ],
+      "note": "$640,000 ÷ $800,000 × 100. Buying costs are separate. A lower bank valuation makes the LVR higher."
+    },
+    "quiz": {
+      "question": "Who does lenders mortgage insurance protect?",
+      "choices": [
+        "You against missed repayments",
+        "The lender if the borrower cannot repay",
+        "The property seller"
+      ],
+      "answer": 1,
+      "explanation": "You may pay the premium, but LMI protects the lender. It is different from insurance that protects your income."
+    },
+    "sections": [
+      [
+        "Why 80% comes up so often",
+        "LMI is commonly required above 80% LVR. This is a reference point, not a universal approval rule. Income, expenses, debts, the property and the lender’s policy still affect a loan application."
+      ],
+      [
+        "When can LMI be avoided?",
+        "A larger deposit may bring the LVR down. An eligible government guarantee or a lender’s specific professional waiver may also help. Waivers are not automatic: ask about eligible occupations, income, registration, loan limits and all other conditions."
+      ],
+      [
+        "What to check before choosing",
+        "Ask the lender which valuation it uses, whether the quoted loan includes financed fees and whether LMI applies. If a premium is added to your loan, you may pay interest on it too. A cheaper upfront cost does not automatically mean a cheaper loan overall."
+      ]
+    ],
+    "sources": [
+      [
+        "Moneysmart: house deposits",
+        "https://moneysmart.gov.au/saving/save-for-a-house-deposit"
+      ],
+      [
+        "Moneysmart: what LMI protects",
+        "https://moneysmart.gov.au/glossary/lenders-mortgage-insurance-lmi"
+      ],
+      [
+        "CommBank: example of professional waiver conditions",
+        "https://www.commbank.com.au/home-loans/low-deposit-home-loan-options.html"
+      ]
+    ],
+    "action": {
+      "label": "Try the LVR calculator",
+      "href": "/calculators/lvr"
+    },
+    "minutes": 3,
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "reviewDays": 30,
+    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date."
+  },
+  {
+    "slug": "first-home-guarantee",
+    "title": "Can I buy with a 5% deposit?",
+    "group": "home",
+    "category": "Buying a home",
+    "summary": "Understand government backing without confusing it with free money or loan approval.",
+    "takeaway": "An eligible government guarantee can help you buy with a smaller deposit and no LMI. You still repay the loan.",
+    "example": {
+      "title": "Small deposit does not mean small debt",
+      "rows": [
+        [
+          "Illustrative home price",
+          "$800,000"
+        ],
+        [
+          "5% deposit",
+          "$40,000"
+        ],
+        [
+          "Remaining price to borrow",
+          "$760,000"
+        ]
+      ],
+      "note": "Buying costs are extra. The example does not confirm your eligibility, a location price cap or lender approval."
+    },
+    "quiz": {
+      "question": "Does the government guarantee pay off part of your loan for you?",
+      "choices": [
+        "Yes, it is a cash gift",
+        "No, you still owe the loan",
+        "It pays your monthly interest"
+      ],
+      "answer": 1,
+      "explanation": "The guarantee supports the lender. It does not cancel your debt or make repayments affordable by itself."
+    },
+    "sections": [
+      [
+        "What is the scheme called now?",
+        "The Australian Government 5% Deposit Scheme is the current program name. Older pages may refer to the Home Guarantee Scheme or First Home Guarantee. Start with the official scheme site so you use the rules for your application date."
+      ],
+      [
+        "Who is it for?",
+        "The first-home-buyer pathway includes adult Australian citizens or permanent residents, an eligible ownership history, a minimum 5% deposit, an eligible property within its location cap and an intention to live there. A participating lender checks the full rules and whether you can repay."
+      ],
+      [
+        "Three different kinds of help",
+        "A guarantee supports a loan. A grant is a payment if you qualify. A duty concession reduces a state or territory tax. Qualifying for one does not establish eligibility for the others. Add buying costs and test repayments before treating a deposit target as a complete plan."
+      ]
+    ],
+    "sources": [
+      [
+        "Official 5% Deposit Scheme",
+        "https://firsthomebuyers.gov.au/australian-government-5-percent-deposit-scheme/first-home-buyers"
+      ],
+      [
+        "Official program overview",
+        "https://firsthomebuyers.gov.au/"
+      ],
+      [
+        "Moneysmart: ways to buy sooner",
+        "https://moneysmart.gov.au/saving/ways-to-buy-a-home-sooner"
+      ]
+    ],
+    "action": {
+      "label": "Compare your deposit",
+      "href": "/calculators/lvr"
+    },
+    "minutes": 3,
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "reviewDays": 14,
+    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "policyIds": [
+      "deposit-scheme"
     ]
+  },
+  {
+    "slug": "stamp-duty",
+    "title": "What is stamp duty?",
+    "group": "property",
+    "category": "Property & tax",
+    "summary": "A buying cost that changes with your location, contract and circumstances.",
+    "takeaway": "Stamp duty is a state or territory tax on certain property transfers. Budget for it separately from your deposit.",
+    "example": {
+      "title": "Keep the cash buckets separate",
+      "rows": [
+        [
+          "Deposit",
+          "Money towards the price"
+        ],
+        [
+          "Transfer duty",
+          "Check your state’s rules"
+        ],
+        [
+          "Legal and inspection costs",
+          "Get separate quotes"
+        ],
+        [
+          "Cash buffer",
+          "Money left for surprises"
+        ]
+      ],
+      "note": "This is a checklist, not a duty estimate. A concession or exemption only applies when its conditions are met."
+    },
+    "quiz": {
+      "question": "Does a 5% deposit guarantee automatically remove stamp duty?",
+      "choices": [
+        "Yes",
+        "No — these are different programs",
+        "Only for a large loan"
+      ],
+      "answer": 1,
+      "explanation": "The guarantee concerns the loan. Duty relief has separate state or territory rules."
+    },
+    "sections": [
+      [
+        "Why there is no single Australian amount",
+        "Rates, concessions and eligibility differ by state or territory. The value used for duty may differ from what you borrow. Contract dates, property type and whether you will live there can matter."
+      ],
+      [
+        "First home does not mean automatically free",
+        "Check the current first-home rules for the state and property. Existing homes, new homes and vacant land may receive different treatment. Occupancy and buyer-status conditions can continue after settlement."
+      ],
+      [
+        "Get an estimate you can explain",
+        "Have the location, contract date, price or required value, buyer details and property type ready. Use the relevant revenue office tool and read its exclusions. Mixed ownership, foreign-buyer rules or unusual transactions may require a separate calculation."
+      ]
+    ],
+    "sources": [
+      [
+        "Queensland Revenue Office: calculate duty",
+        "https://qro.qld.gov.au/duties/transfer-duty/calculate/"
+      ],
+      [
+        "Revenue NSW: calculating transfer duty",
+        "https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty/understanding-transfer-duty/calculate-transfer-duty"
+      ],
+      [
+        "Moneysmart: buying assistance",
+        "https://moneysmart.gov.au/saving/ways-to-buy-a-home-sooner"
+      ]
+    ],
+    "action": {
+      "label": "Plan your cash target",
+      "href": "/calculators/savings-goal"
+    },
+    "minutes": 3,
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "reviewDays": 14,
+    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "stateLinks": true
+  },
+  {
+    "slug": "capital-gains-tax",
+    "title": "What is capital gains tax?",
+    "group": "property",
+    "category": "Property & tax",
+    "summary": "Start with the gain, then check which tax rules apply to it.",
+    "takeaway": "Selling for more than your tax cost base can create a capital gain. The gain is not the same thing as the tax bill.",
+    "example": {
+      "title": "Start with the gain, not the tax",
+      "rows": [
+        [
+          "Sale proceeds",
+          "$600,000"
+        ],
+        [
+          "Assumed tax cost base",
+          "$450,000"
+        ],
+        [
+          "Capital gain before adjustments",
+          "$150,000"
+        ]
+      ],
+      "note": "This simple example assumes the cost base is already correctly worked out. It excludes losses, exemptions, discounts and tax rates."
+    },
+    "quiz": {
+      "question": "A $150,000 capital gain means you owe $150,000 tax. True?",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "The gain is an input to the tax calculation. Exemptions, losses, applicable rules and your circumstances affect the tax outcome."
+    },
+    "sections": [
+      [
+        "What is a cost base?",
+        "It is a tax figure, not simply your remaining mortgage. It can include eligible purchase and selling costs, with adjustments under the rules. Keep the purchase contract, improvement records and sale documents."
+      ],
+      [
+        "Is the home you live in exempt?",
+        "A main-residence exemption may apply, but living in a property at some point does not settle the answer. Rental or business use, ownership periods and tax residency can change the result."
+      ],
+      [
+        "Dates matter, especially for future sales",
+        "Do not apply a remembered “50% discount” to every sale. Holding period, ownership type, losses and the applicable law matter. The reform note above separates the future rules from a simple explanation of what a capital gain means."
+      ]
+    ],
+    "sources": [
+      [
+        "ATO: main residence and CGT",
+        "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/property-and-capital-gains-tax/your-main-residence-home"
+      ],
+      [
+        "ATO: discount order and capital losses",
+        "https://www.ato.gov.au/forms-and-instructions/capital-gain-or-loss-worksheet-instructions"
+      ],
+      [
+        "2026 tax reform legislation",
+        "https://www.legislation.gov.au/C2026A00049/asmade"
+      ]
+    ],
+    "action": {
+      "label": "See dated rule changes",
+      "href": "/updates"
+    },
+    "minutes": 3,
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "reviewDays": 14,
+    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "policyIds": [
+      "cgt-reform"
+    ]
+  },
+  {
+    "slug": "negative-gearing",
+    "title": "Does negative gearing make a loss disappear?",
+    "group": "property",
+    "category": "Property & tax",
+    "summary": "Understand the difference between spending money and receiving a tax benefit.",
+    "takeaway": "Negative gearing means an investment funded with borrowing makes a tax loss. A possible tax saving does not turn that loss into free money.",
+    "example": {
+      "title": "A loss still costs money",
+      "rows": [
+        [
+          "Illustrative rent received",
+          "$20,000"
+        ],
+        [
+          "Assumed deductible rental costs",
+          "$26,000"
+        ],
+        [
+          "Rental loss",
+          "$6,000"
+        ],
+        [
+          "Tax reduction at a made-up 30% rate",
+          "$1,800"
+        ],
+        [
+          "Loss remaining after that reduction",
+          "$4,200"
+        ]
+      ],
+      "note": "Teaching arithmetic only, assuming the whole loss can offset income at 30%. It is not a personal tax rate, current entitlement or future-law calculation. Cash flow and taxable losses can differ."
+    },
+    "quiz": {
+      "question": "You spend $1 to save 30 cents of tax. Have you made a profit?",
+      "choices": [
+        "Yes",
+        "No — you are still 70 cents down"
+      ],
+      "answer": 1,
+      "explanation": "A deduction reduces taxable income. It does not reimburse the full expense or guarantee an investment return."
+    },
+    "sections": [
+      [
+        "Cash flow and tax are different",
+        "A loan payment may contain both interest and repayment of debt. The principal repayment is not a rental deduction. Some capital costs are deducted over time rather than immediately, so your cash shortfall and tax loss may be different."
+      ],
+      [
+        "The use of borrowed money matters",
+        "Interest treatment depends on what the borrowed funds were used for. A loan secured against a rental property can still fund private spending. Mixed uses need records and apportionment; a property label alone does not determine deductibility."
+      ],
+      [
+        "Do not buy only for a deduction",
+        "Consider vacancies, maintenance, interest changes and what happens if the property value falls. The date you acquire an established property also matters under the upcoming reforms. Read the dated change note before relying on a loss offset against wages."
+      ]
+    ],
+    "sources": [
+      [
+        "Moneysmart: investing and tax",
+        "https://moneysmart.gov.au/how-to-invest/investing-and-tax"
+      ],
+      [
+        "ATO: loan-purpose principles (2019 guide; not current-year filing instructions)",
+        "https://www.ato.gov.au/forms-and-instructions/rental-properties-2019/introduction/expenses-for-which-you-can-claim-an-immediate-deduction"
+      ],
+      [
+        "2026 tax reform legislation",
+        "https://www.legislation.gov.au/C2026A00049/asmade"
+      ],
+      [
+        "Government: negative gearing reform",
+        "https://budget.gov.au/content/04-tax-reform.htm"
+      ]
+    ],
+    "action": {
+      "label": "Read the rule-change summary",
+      "href": "/updates"
+    },
+    "minutes": 3,
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "reviewDays": 14,
+    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "policyIds": [
+      "negative-gearing-reform"
+    ]
+  },
+  {
+    "slug": "foreign-property-buyers",
+    "title": "What must a foreign buyer check first?",
+    "group": "property",
+    "category": "Property & tax",
+    "summary": "Permission to buy and the taxes on a purchase are separate questions.",
+    "takeaway": "Check whether the purchase is allowed before calculating whether you can afford it. Foreign-investment rules and state tax rules are separate.",
+    "example": {
+      "title": "Three checks, in this order",
+      "rows": [
+        [
+          "1 · Permission",
+          "Can this buyer acquire this property?"
+        ],
+        [
+          "2 · Buying costs",
+          "Duty, possible surcharges and application fees"
+        ],
+        [
+          "3 · Ongoing obligations",
+          "Reporting, land tax and any vacancy obligations"
+        ]
+      ],
+      "note": "“Foreign person” has legal definitions. A visa label or tax-residency answer alone may not resolve every test."
+    },
+    "quiz": {
+      "question": "Does paying an extra foreign-buyer tax give permission to buy a prohibited property?",
+      "choices": [
+        "Yes",
+        "No"
+      ],
+      "answer": 1,
+      "explanation": "Tax and investment approval are separate. Paying a surcharge does not remove a purchase restriction."
+    },
+    "sections": [
+      [
+        "Existing and new homes are treated differently",
+        "An established dwelling is generally an existing home. The current federal policy generally prohibits foreign investors from buying established dwellings, with limited exceptions. New homes and vacant land have different approval and development rules."
+      ],
+      [
+        "Keep federal and state costs separate",
+        "A federal application fee is not stamp duty. A state or territory may impose additional foreign-purchaser duty or land-tax surcharges under its own definitions and exemptions. Do not apply one state’s percentage to the whole country."
+      ],
+      [
+        "Check before committing",
+        "Use the current Treasury and ATO guidance for the intended buyer, ownership structure and property. Confirm approval requirements before entering a binding purchase. Keep the approval conditions and check ongoing reporting and vacancy requirements."
+      ]
+    ],
+    "sources": [
+      [
+        "Treasury: residential land rules",
+        "https://foreigninvestment.gov.au/guidance/types-investments/residential-land"
+      ],
+      [
+        "Treasury: May 2026 foreign investment policy",
+        "https://foreigninvestment.gov.au/sites/foreigninvestment.gov.au/files/2026-05/australias-foreign-investment-policy-may-2026.pdf"
+      ],
+      [
+        "Revenue NSW: duty and purchaser surcharge",
+        "https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty/understanding-transfer-duty/calculate-transfer-duty"
+      ]
+    ],
+    "action": {
+      "label": "Find state duty information",
+      "href": "/learn/stamp-duty#state-duty"
+    },
+    "minutes": 3,
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "reviewDays": 14,
+    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date.",
+    "policyIds": [
+      "foreign-home-ban"
+    ]
+  },
+  {
+    "slug": "super-basics",
+    "title": "What is my super actually doing?",
+    "group": "everyday",
+    "category": "Everyday money",
+    "summary": "Understand the account, the investments and the costs in plain English.",
+    "takeaway": "Super is money held for retirement. Your fund invests it, so your balance can grow or fall as well as receive contributions.",
+    "example": {
+      "title": "A fund fee in dollars",
+      "rows": [
+        [
+          "Illustrative balance",
+          "$50,000"
+        ],
+        [
+          "0.5% of that balance",
+          "$250 a year"
+        ],
+        [
+          "1% of that balance",
+          "$500 a year"
+        ],
+        [
+          "Difference",
+          "$250 a year"
+        ]
+      ],
+      "note": "Simple percentage-fee comparison only. Actual fees can include fixed charges, investment costs and insurance. This is not a fund recommendation."
+    },
+    "quiz": {
+      "question": "Should you choose a super fund only because it won last year?",
+      "choices": [
+        "Yes",
+        "No — compare risk, longer-term performance, fees and insurance"
+      ],
+      "answer": 1,
+      "explanation": "One strong year does not promise future returns. Compare similar investment options and check the costs and cover."
+    },
+    "sections": [
+      [
+        "Fund and investment option are different",
+        "The fund is the provider. The investment option decides the mix of assets, such as shares, property, bonds and cash. An option with more growth assets can have bigger ups and downs."
+      ],
+      [
+        "Read your statement in three passes",
+        "First check contributions arriving. Then read fees, insurance premiums and your investment option. Finally compare performance over a suitable longer period against similar options, after relevant costs. Past returns do not promise future results."
+      ],
+      [
+        "Before making a change",
+        "Check whether insurance would change or end, and what fees or restrictions apply. Super normally has access conditions; it is not an everyday spending account. Extra contributions also have tax and contribution-limit rules."
+      ]
+    ],
+    "sources": [
+      [
+        "Moneysmart: choosing a super fund",
+        "https://moneysmart.gov.au/how-super-works/choosing-a-super-fund"
+      ],
+      [
+        "Moneysmart: investment options",
+        "https://moneysmart.gov.au/grow-your-super/super-investment-options"
+      ],
+      [
+        "Moneysmart: how super works",
+        "https://moneysmart.gov.au/how-super-works"
+      ]
+    ],
+    "action": {
+      "label": "Read the official super guide",
+      "href": "https://moneysmart.gov.au/how-super-works"
+    },
+    "minutes": 3,
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "reviewDays": 30,
+    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date."
+  },
+  {
+    "slug": "asx-dividends",
+    "title": "How do share dividends and tax fit together?",
+    "group": "everyday",
+    "category": "Everyday money",
+    "summary": "A dividend is money a company may pay you. It is not a guaranteed return.",
+    "takeaway": "Shares are small ownership interests in a company. A dividend is a payment it may make to shareholders; share prices and dividends can both fall.",
+    "example": {
+      "title": "Cash and tax credits are different",
+      "rows": [
+        [
+          "Illustrative cash dividend",
+          "$70"
+        ],
+        [
+          "Franking credit on the statement",
+          "$30"
+        ],
+        [
+          "Grossed-up income, if eligible",
+          "$100"
+        ]
+      ],
+      "note": "The $30 represents company tax attached to this example. It is not an automatic $30 refund. Eligibility and your tax position matter."
+    },
+    "quiz": {
+      "question": "Reinvesting a dividend means you can leave it off your tax return. True?",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "answer": 1,
+      "explanation": "Reinvestment does not generally remove dividend-income reporting. Keep the dividend and new-share records."
+    },
+    "sections": [
+      [
+        "What is the ASX?",
+        "The Australian Securities Exchange is a marketplace where many Australian shares trade. Owning a share does not promise a regular payment or protect your original investment. A high dividend yield can also reflect a falling share price."
+      ],
+      [
+        "Read the dividend statement",
+        "For an eligible Australian-resident individual, assessable dividend income generally includes the cash dividend and attached franking credit, with a corresponding tax offset. Residency and integrity rules can change eligibility. Use the statement and the correct year’s ATO instructions."
+      ],
+      [
+        "Keep the records together",
+        "Keep purchase and sale confirmations, brokerage costs, dividend statements and reinvestment records. Selling shares raises a separate capital-gains question. ETF and managed-fund distributions can have different components: use their annual tax statement rather than treating everything as a company dividend."
+      ]
+    ],
+    "sources": [
+      [
+        "Moneysmart: buying and selling shares",
+        "https://moneysmart.gov.au/shares/how-to-buy-and-sell-shares"
+      ],
+      [
+        "ATO: franking definitions (2021 reference)",
+        "https://www.ato.gov.au/forms-and-instructions/refund-of-franking-credits-for-individuals-2021-application-and-instructions/definitions"
+      ],
+      [
+        "ATO: dividend reporting principles (2023 reference; use your income-year instructions)",
+        "https://www.ato.gov.au/individuals-and-families/your-tax-return/instructions-to-complete-your-tax-return/paper-tax-return-instructions/2023/tax-return/income-questions-1-12/11-dividends-2023"
+      ]
+    ],
+    "action": {
+      "label": "Understand capital gains next",
+      "href": "/learn/capital-gains-tax"
+    },
+    "minutes": 3,
+    "datePublished": "2026-09-18",
+    "dateModified": "2026-09-18",
+    "sourcesChecked": "2026-09-18",
+    "reviewDays": 30,
+    "updateNote": "Initial beginner lesson, illustrative example and knowledge check. Sources verified on the stated date."
   }
 ]

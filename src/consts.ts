@@ -47,7 +47,7 @@ export const TOPICS: Record<
 
 export const NAV = [
   { href: '/calculators', label: 'Calculators' },
-  { href: '/learn', label: 'Guides' },
+  { href: '/learn', label: 'Learn' },
   { href: '/banks', label: 'Bank rates' },
   { href: '/tax-return', label: 'Tax checklist' },
 ];

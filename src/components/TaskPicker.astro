@@ -9,9 +9,10 @@ const tasks=[
   {href:'/tax-return',title:'Prepare my tax return',type:'Employee tax checklist',detail:'Organise expenses and get ready for myTax.',icon:'checklist'},
   {href:'/banks',title:'Find my bank’s rates',type:'Australian bank directory',detail:'Look up published products and conditions.',icon:'bank'},
 ];
+const shown=calculatorsOnly?[...tasks.slice(0,4),{href:'/calculators/lvr',title:'Check my home deposit',type:'LVR & home deposit',detail:'See the share of a home you would borrow.',icon:'home'}]:tasks;
 ---
 <div class:list={['hl-task-grid',{'calculators-only':calculatorsOnly}]}>
-{tasks.slice(0,calculatorsOnly?4:6).map(t=><a class="hl-task" href={t.href}>
+{shown.map(t=><a class="hl-task" href={t.href}>
   <span class="hl-task-icon"><ToolIcon name={t.icon}/></span>
   <div class="hl-task-copy"><span class="hl-task-type">{t.type}</span><h2>{t.title}</h2><p>{t.detail}</p></div>
   <span class="hl-task-arrow" aria-hidden="true">→</span>

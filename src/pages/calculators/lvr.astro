@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import Field from '../../components/MoneyField.astro';
+import '../../styles/learning.css';
+---
+<Base title="LVR & home deposit calculator Australia" description="See how much of a home you would borrow, calculate your loan-to-value ratio and compare deposits. Clear examples, with no loan approval or LMI quote implied.">
+<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/calculators">Calculators</a> / Home deposit</div><h1>How much of the home<br/>would you borrow?</h1><p>Two numbers to start. See your deposit, loan and LVR.</p></header>
+<div class="hl-wrap hl-page-main"><noscript><p class="hl-noscript">Turn on JavaScript for the calculator. The formula and educational links below remain available without it.</p></noscript>
+<div class="hl-calculator" id="lvr-calculator">
+<form class="hl-form" id="lvr-form"><h2>Your home plan <small>AUD</small></h2>
+<Field name="price" label="Home price" value={800000} min={1}/>
+<Field name="deposit" label="Deposit towards the price" value={160000} hint="Leave out money you need for duty, legal costs and your cash buffer."/>
+<div class="lvr-presets" aria-label="Try an example deposit"><span>Try a deposit</span><button type="button" data-deposit="5">5%</button><button type="button" data-deposit="10">10%</button><button type="button" data-deposit="20">20%</button></div>
+<details class="hl-product-picker"><summary>Different valuation or costs added to the loan?</summary><label class="hl-field"><span>Bank’s property valuation (optional)</span><div class="hl-input-wrap"><span>$</span><input name="valuation" type="number" inputmode="decimal" min="1" max="100000000" step="0.01" placeholder="Use the home price"/></div><small>Use the value accepted by the lender if you know it.</small></label><Field name="financedCosts" label="Costs added to the loan" value={0} hint="Only costs the lender agrees to finance. This does not estimate LMI."/></details>
+<button class="hl-button" type="submit">View result <span aria-hidden="true">→</span></button><p id="lvr-error" class="hl-error" role="alert" hidden></p><p class="hl-help">Updates as you type. No sign-up or account connection.</p></form>
+<section class="hl-results" id="lvr-result" tabindex="-1" aria-label="Your home deposit result"><p class="hl-result-label">Share of the property value borrowed</p><output class="hl-result-total" id="lvr-total" aria-live="polite">—</output><p class="hl-result-sub">This is your loan-to-value ratio, or LVR.</p><div class="lvr-visual" aria-hidden="true"><span id="lvr-deposit-bar"></span><span id="lvr-loan-bar"></span></div><p class="hl-help">Bar shows the deposit and price funded by borrowing, before added loan costs.</p><div class="hl-result-stats"><div><span>Your deposit</span><strong id="lvr-deposit">—</strong></div><div><span>Loan, including added costs</span><strong id="lvr-loan">—</strong></div></div><p id="lvr-explanation" class="lesson-one-line"></p><div class="hl-scenario"><strong id="lvr-marker"></strong><p id="lvr-context"></p></div><p class="hl-method-note">An LVR is not a borrowing limit, loan approval or LMI waiver. Lender rules and valuations vary. <a href="/learn/lvr-and-lmi">Understand LVR & LMI →</a></p></section>
+</div>
+<details class="hl-details"><summary>What this calculation includes</summary><p>Loan = home price − deposit towards the price + financed costs. LVR = loan ÷ lender valuation × 100. A blank valuation uses the home price. The extra amount shown for 80% is loan − 80% of that valuation, with a minimum of zero.</p><p>The bar separates your deposit from the price funded by a loan. It does not represent ownership shares or the bank’s valuation. LVR uses the full loan including any financed costs. Purchase costs, repayments, grants, LMI premiums and scheme eligibility are not calculated.</p><p><a href="https://moneysmart.gov.au/saving/save-for-a-house-deposit" target="_blank" rel="noopener noreferrer">ASIC Moneysmart: home deposits ↗</a> · <a href="/methodology">Calculation methods →</a></p></details>
+<aside class="hl-help-strip"><a href="/calculators/mortgage">Work out repayments →</a><a href="/learn/first-home-guarantee">Understand government support →</a><a href="/learn/stamp-duty">Check buying costs →</a></aside>
+</div></Base>
+<script>
+import {homeDeposit} from '../../lib/home-buying.mjs';
+const form=document.querySelector<HTMLFormElement>('#lvr-form')!;
+const money=(n:number)=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
+const el=(id:string)=>document.getElementById(id)!;
+function calculate(){
+ try{
+  if(!form.checkValidity())throw Error('Check the amounts entered. Home price and valuation must be above $0.');
+  const data=new FormData(form),price=Number(data.get('price')),deposit=Number(data.get('deposit')),valuation=String(data.get('valuation')).trim()?Number(data.get('valuation')):price;
+  const r=homeDeposit({price,deposit,valuation,financedCosts:Number(data.get('financedCosts'))});
+  el('lvr-error').hidden=true;el('lvr-total').textContent=r.lvr.toLocaleString('en-AU',{maximumFractionDigits:2})+'%';el('lvr-deposit').textContent=money(deposit);el('lvr-loan').textContent=money(r.loan);
+  el('lvr-deposit-bar').style.width=r.depositPercent+'%';el('lvr-loan-bar').style.width=(100-r.depositPercent)+'%';
+  el('lvr-explanation').textContent='For every $100 of the bank’s property value, you would borrow about '+money(r.lvr)+'.';
+  el('lvr-marker').textContent=r.above80?'Above the common 80% reference point':'At or below the common 80% reference point';
+  el('lvr-context').textContent=r.above80?money(r.additionalFor80)+' less borrowing would bring this plan to 80%. LMI may apply; lender waivers and government schemes have separate conditions.':'LMI is often not needed at this level, but the lender must confirm its policy and your application.';
+  return true;
+ }catch(error){el('lvr-error').textContent=error instanceof Error?error.message:'Check your amounts.';el('lvr-error').hidden=false;for(const id of ['lvr-total','lvr-deposit','lvr-loan'])el(id).textContent='—';for(const id of ['lvr-explanation','lvr-marker','lvr-context'])el(id).textContent='';el('lvr-deposit-bar').style.width='0';el('lvr-loan-bar').style.width='0';return false;}
+}
+form.addEventListener('input',calculate);
+form.addEventListener('submit',event=>{event.preventDefault();if(calculate()&&matchMedia('(max-width:600px)').matches){el('lvr-result').focus({preventScroll:true});el('lvr-result').scrollIntoView({behavior:'auto',block:'start'});}});
+document.querySelectorAll<HTMLButtonElement>('[data-deposit]').forEach(button=>button.addEventListener('click',()=>{const price=form.elements.namedItem('price') as HTMLInputElement;if(!price.checkValidity()){price.reportValidity();return;}(form.elements.namedItem('deposit') as HTMLInputElement).value=(Number(price.value)*Number(button.dataset.deposit)/100).toFixed(2);calculate();}));
+calculate();
+</script>
