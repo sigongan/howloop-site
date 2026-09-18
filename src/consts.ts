@@ -50,6 +50,7 @@ export const NAV = [
   { href: '/calculators', label: 'Calculators' },
   { href: '/learn', label: 'Money guides' },
   { href: '/banks', label: 'Bank explorer' },
+  { href: '/tax-return', label: 'Tax return guide' },
 ];
 
 export const FOOTER_LINKS = [
