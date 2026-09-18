@@ -21,3 +21,7 @@ Redeploy after configuration. Each general question requires explicit user conse
 Sources: https://developers.openai.com/api/docs/guides/text · https://developers.cloudflare.com/pages/functions/get-started/ · https://developers.cloudflare.com/turnstile/get-started/server-side-validation/ · https://www.tpb.gov.au/tpb-gs-14-2011-digital-service-providers-and-tax-agent-services-act-2009
 
 Run `node --test tests/tax-guide.test.mjs`, `npm run build`, and `npm run check:readiness`. Browser checks should cover validation, scope boundaries, back navigation, preserved selections, download content, print layout and a mobile viewport. Source content changes need an actual source review; do not refresh the source-check date automatically on builds.
+
+## Three-step interface
+
+The guided flow is Situation → Work expenses → Checklist. The first step combines year, occupation and scope questions; no status is preselected. Record review is part of the final checklist. Source explanations and examples remain available in expandable panels. Users may proceed without entering expenses; exports distinguish costs to review from deductions. Closing or refreshing the page clears entries.

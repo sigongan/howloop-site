@@ -1,60 +1,20 @@
 ---
-import BankLogo from '../components/BankLogo.astro';
 import Base from '../layouts/Base.astro';
-import ToolIcon from '../components/ToolIcon.astro';
-import '../styles/tax-guide.css';
-import {calculators} from '../data/tools';
+import TaskPicker from '../components/TaskPicker.astro';
+import BankLogo from '../components/BankLogo.astro';
+const featuredBanks=[
+  {id:'25233bad-e494-ea11-a831-000d3a8842e1',name:'CommBank'},
+  {id:'fc9352a8-ad27-eb11-a834-000d3a8842e1',name:'ING'},
+  {id:'f4562bb8-e394-ea11-a831-000d3a8842e1',name:'ANZ'},
+  {id:'25797662-e294-ea11-a831-000d3a8842e1',name:'NAB'},
+  {id:'bf1c01af-789d-eb11-a821-000d3a884a20',name:'Up'},
+];
 ---
-<Base title="Howloop" description="Free Australian money calculators. Explore compound interest, savings goals, mortgage repayments and bank product data. Clear numbers for your next money move.">
-<div class="hl-home">
-<section class="hl-hero hl-wrap">
-<div class="hl-hero-copy"><div class="hl-eyebrow"><span class="hl-dot"></span> A LITTLE CLARITY GOES A LONG WAY</div>
-<h1>Your money.<br/>Your possibilities<span class="hl-lime-dot">.</span></h1>
-<p>Less guesswork. More “I’ve got this.”<br/>Simple tools to help you save, buy a home and make your next money move.</p>
-<div class="hl-hero-actions"><a class="hl-button" href="/calculators">Find your calculator <span aria-hidden="true">↗</span></a><a class="hl-text-link" href="/start">A good place to start <span aria-hidden="true">→</span></a></div>
-<div class="hl-micro-trust"><span>✓ Free to use</span><span>✓ No sign-up</span><span>✓ Built for Australia</span></div></div>
-<div class="hl-hero-visual">
-<div class="hl-chart-card"><div class="hl-chart-top"><span><span class="hl-live-dot"></span> YOUR MONEY, IN MOTION</span><ToolIcon name="growth"/></div>
-<div class="hl-chart-label">A little today. A lot of possibility.</div><div class="hl-hero-total" data-hero-total>$68,314</div><div class="hl-chart-sub">Your projected balance in <b data-hero-years>10 years</b></div>
-<svg class="hl-hero-chart" viewBox="0 0 430 166" role="img" aria-label="Illustrative savings growth over time"><defs><linearGradient id="growth-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7ed96" stop-opacity=".28"/><stop offset="1" stop-color="#d7ed96" stop-opacity="0"/></linearGradient></defs><path class="hl-chart-grid" d="M0 30h430M0 80h430M0 130h430"/><path data-hero-deposit d="M0 150 430 72" stroke="#75828e" stroke-width="2" stroke-dasharray="5 6" fill="none"/><path data-hero-area d="M0 150C110 139 242 91 430 8V165H0Z" fill="url(#growth-fill)"/><path data-hero-line d="M0 150C110 139 242 91 430 8" fill="none" stroke="#d6ed97" stroke-width="3"/><circle data-hero-point cx="424" cy="11" r="5" fill="#d6ed97"/></svg>
-<div class="hl-chart-axis"><span>Today</span><span data-hero-end>Year 10</span></div>
-<div class="hl-hero-mini-stats"><div><span><i></i> Your deposits</span><b data-hero-deposits>$53,000</b></div><div><span><i class="interest"></i> Interest earned</span><b class="lime" data-hero-interest>+$15,314</b></div></div>
-<div class="hl-hero-control"><label for="hero-years">Give it time <strong><span data-hero-range>10</span> years</strong></label><input id="hero-years" type="range" min="1" max="30" value="10" step="1"/><div class="hl-range-labels"><span>1 year</span><span>30 years</span></div></div>
-<div class="hl-chart-footnote">$5,000 start + $400/month · 4.5% p.a. illustrative rate.<br/>Monthly compounding. Before tax and fees.</div></div>
-<div class="hl-floating-note"><span class="hl-note-icon">↗</span><div>Small steps.<br/><strong>A future you can see.</strong></div></div>
-</div></section>
-<div class="hl-proofbar"><div class="hl-wrap"><span><ToolIcon name="bank"/> Australian dollars. Australian context.</span><span>Transparent calculations</span><span>Your numbers stay in your browser</span><a href="/methodology">See how it works ↗</a></div></div>
-<section class="hl-section hl-wrap" id="tools"><div class="hl-section-head"><div><span class="hl-eyebrow">LESS MATHS. MORE MOMENTUM.</span><h2>What’s your next money move?</h2></div><a class="hl-text-link" href="/calculators">Explore all tools <span>↗</span></a></div>
-<div class="hl-tool-grid">{calculators.map((t,i)=><a href={'/calculators/'+t.slug} class={'hl-tool-card '+t.color}><div class="hl-tool-top"><span class="hl-icon-box"><ToolIcon name={t.icon}/></span><span class="hl-tool-number">0{i+1}</span></div><span class="hl-card-kicker">{t.tag}</span><h3>{t.name}</h3><p>{t.description}</p><span class="hl-card-link">Let’s work it out <span>↗</span></span></a>)}</div></section>
-<section class="hl-wrap tax-home-promo"><div><span class="hl-eyebrow">NEW · YOUR TAX-TIME COMPANION</span><h2>A simple return. A clearer way through.</h2><p>Gather your records, understand expense rules and follow the steps to lodge yourself in myTax. A free guide for Australian employees.</p></div><a class="hl-button" href="/tax-return">Build my tax checklist <span aria-hidden="true">→</span></a></section>
-<section class="hl-bank-feature hl-wrap"><div class="hl-bank-art" aria-hidden="true"><div class="hl-orbit-ring"></div><div class="hl-bank-tile tile-cba"><BankLogo id="25233bad-e494-ea11-a831-000d3a8842e1" /><span>CommBank</span></div><div class="hl-bank-tile tile-ing"><BankLogo id="fc9352a8-ad27-eb11-a834-000d3a8842e1" /><span>ING</span></div><div class="hl-bank-tile tile-anz"><BankLogo id="f4562bb8-e394-ea11-a831-000d3a8842e1" /><span>ANZ</span></div><div class="hl-bank-tile tile-nab"><BankLogo id="25797662-e294-ea11-a831-000d3a8842e1" /><span>NAB</span></div><div class="hl-bank-tile tile-up"><BankLogo id="bf1c01af-789d-eb11-a821-000d3a884a20" /><span>Up</span></div><div class="hl-bank-center"><ToolIcon name="bank"/><span>Your next<br/><b>saving move.</b></span></div><div class="hl-bank-art-caption">A little more context. A more informed choice.</div></div>
-<div class="hl-bank-feature-copy"><span class="hl-eyebrow">MEET YOUR MONEY’S NEXT HOME</span><h2>Your bank.<br/>The bigger picture.</h2><p>Explore public deposit products from Australian banking brands. See the published rates and the conditions behind them, then bring a rate into your savings plan.</p><a href="/banks" class="hl-button light">Explore bank products <span>↗</span></a><small>Public CDR product data. Coverage varies by provider.<br/>No bank login or account connection needed.</small></div></section>
-<section class="hl-section hl-wrap"><div class="hl-section-head"><div><span class="hl-eyebrow">A FEW MINUTES. A LITTLE MORE CONFIDENCE.</span><h2>Good with money starts here.</h2></div><a class="hl-text-link" href="/learn">All money guides <span>↗</span></a></div>
-<div class="hl-guide-grid"><a class="hl-guide-card" href="/learn/how-compound-interest-works"><div class="hl-guide-art art-grow" aria-hidden="true"><span>1</span><span>2</span><span>4</span><span>8</span><b>Small beginnings.<br/>Bigger possibilities.</b></div><span class="hl-card-kicker">SAVING · 5 MIN READ</span><h3>Compound interest, without the complicated bit.</h3><p>Your money can earn interest on its interest. Here’s what that actually means.</p><span class="hl-card-link">Get the idea <span>↗</span></span></a>
-<a class="hl-guide-card" href="/learn/bonus-interest-conditions"><div class="hl-guide-art art-rates" aria-hidden="true"><div>More than<br/><b>a percentage.</b></div><span class="hl-art-chip">Rates + conditions</span></div><span class="hl-card-kicker">BANKING · 5 MIN READ</span><h3>That savings rate comes with a little fine print.</h3><p>Base rates, bonus hoops and welcome offers: know which number applies to you.</p><span class="hl-card-link">Read between the lines <span>↗</span></span></a>
-<a class="hl-guide-card" href="/learn/offset-vs-extra-repayments"><div class="hl-guide-art art-home" aria-hidden="true"><svg viewBox="0 0 260 110"><path d="m50 70 52-43 52 43M66 58v46h72V58M87 103V77h29v26" fill="none" stroke="#2a3a4c" stroke-width="3"/><circle cx="190" cy="48" r="28" fill="#d4e999"/><path d="M180 48h20m-10-10v20" stroke="#2a3a4c" stroke-width="3"/></svg></div><span class="hl-card-kicker">HOME LOANS · 6 MIN READ</span><h3>An offset or extra repayments. What’s the difference?</h3><p>Two ways to reduce interest, with different trade-offs for access to your money.</p><span class="hl-card-link">Make sense of it <span>↗</span></span></a></div></section>
-<section class="hl-clarity hl-wrap"><div class="hl-clarity-mark" aria-hidden="true">✳</div><div><h2>Clear numbers. A calmer next step.</h2><p>No accounts to create. No money to connect. Just a little clarity, whenever you need it.</p></div><a class="hl-button" href="/calculators/compound-interest">Try a calculator <span>↗</span></a></section>
+<Base title="Howloop" description="Free Australian money tools. Calculate savings and mortgage repayments, find bank rates, or prepare an employee tax checklist. No sign-up needed.">
+<div class="hl-wrap hl-task-home">
+  <header class="hl-task-heading"><h1>What do you need?</h1><p>Free Australian money tools. No sign-up.</p></header>
+  <TaskPicker/>
+  <section class="hl-bank-shortcuts" aria-label="Quick bank lookup"><span>Find a bank</span><div>{featuredBanks.map(b=><a href={'/calculators/compound-interest?bank='+b.id} aria-label={'Explore '+b.name+' products'}><BankLogo id={b.id}/></a>)}</div><a class="hl-text-link" href="/banks">All banks →</a></section>
+  <aside class="hl-help-strip"><p>Want to understand the numbers?</p><a href="/learn">Read a money guide →</a><a href="/methodology">How we calculate →</a></aside>
 </div>
-<script>
-import {savings} from '../lib/finance.mjs';
-const range=document.querySelector('#hero-years') as HTMLInputElement;
-function renderHero(){
- const years=Number(range.value);
- const r=savings({principal:5000,contribution:400,annualRate:4.5,years});
- const currency=(n:number)=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
- const set=(selector:string,value:string)=>{const el=document.querySelector(selector);if(el)el.textContent=value;};
- set('[data-hero-total]',currency(r.balance));
- set('[data-hero-years]',years+(years===1?' year':' years'));
- set('[data-hero-range]',String(years));
- set('[data-hero-end]','Year '+years);
- set('[data-hero-deposits]',currency(r.deposits));
- set('[data-hero-interest]','+'+currency(r.interest));
- const path=(key:string)=>r.rows.map((p:any,i:number)=>(i?'L':'M')+(p.year/years*430).toFixed(1)+' '+(155-p[key]/Math.max(r.balance,1)*145).toFixed(1)).join(' ');
- document.querySelector('[data-hero-line]')?.setAttribute('d',path('balance'));
- document.querySelector('[data-hero-area]')?.setAttribute('d',path('balance')+' L430 165 L0 165 Z');
- document.querySelector('[data-hero-deposit]')?.setAttribute('d',path('deposits'));
- document.querySelector('[data-hero-point]')?.setAttribute('cx','430');
- document.querySelector('[data-hero-point]')?.setAttribute('cy','10');
-}
-range?.addEventListener('input',renderHero);if(range)renderHero();
-</script>
+</Base>

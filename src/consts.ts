@@ -46,11 +46,10 @@ export const TOPICS: Record<
 };
 
 export const NAV = [
-  { href: '/start', label: 'Start here' },
   { href: '/calculators', label: 'Calculators' },
-  { href: '/learn', label: 'Money guides' },
-  { href: '/banks', label: 'Bank explorer' },
-  { href: '/tax-return', label: 'Tax return guide' },
+  { href: '/learn', label: 'Guides' },
+  { href: '/banks', label: 'Bank rates' },
+  { href: '/tax-return', label: 'Tax checklist' },
 ];
 
 export const FOOTER_LINKS = [

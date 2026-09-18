@@ -5,7 +5,7 @@ const {kind='compound-interest'}=Astro.props;
 ---
 <div class="hl-calculator" data-calculator={kind}>
 <form class="hl-form">
-<h2>Your starting point</h2>
+<h2>Your numbers <small>AUD</small></h2>
 {kind==='compound-interest'&&<>
 <Field name="principal" label="Starting balance" value={10000}/>
 <div class="hl-field-row"><Field name="contribution" label="Regular contribution" value={500} max={1000000}/><label class="hl-field"><span>How often?</span><select name="frequency" aria-label="Contribution frequency"><option value="monthly">Monthly</option><option value="fortnightly">Fortnightly</option><option value="weekly">Weekly</option></select></label></div>
@@ -39,11 +39,11 @@ const {kind='compound-interest'}=Astro.props;
 <Field name="contribution" label="Monthly savings towards it" value={400} max={1000000} step={0.01}/>
 <p class="hl-help">Choose a buffer that suits your circumstances. This estimate excludes interest.</p>
 </>}
-<button type="submit" class="hl-button">Calculate my numbers <span>↗</span></button>
+<button type="submit" class="hl-button">View result <span aria-hidden="true">→</span></button>
 <p class="hl-error" data-error role="alert" hidden></p>
-<p class="hl-help">All amounts in AUD. Your inputs are calculated in this browser.</p>
+<p class="hl-help">Results update as you type. Your inputs stay in this browser.</p>
 </form>
-<section class="hl-results" aria-label="Your calculation results">
+<section class="hl-results" tabindex="-1" aria-label="Your calculation results">
 <p class="hl-result-label" data-result-label>Your projected balance</p><output class="hl-result-total" data-result-total aria-live="polite">—</output><p class="hl-result-sub" data-result-sub>Enter your numbers to see the possibilities.</p>
 <div class="hl-result-stats"><div><span data-stat1-label>Your deposits</span><strong data-stat1>—</strong></div><div><span data-stat2-label>Interest earned</span><strong data-stat2>—</strong></div></div>
 <div data-chart></div>

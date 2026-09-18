@@ -15,7 +15,7 @@ if(kind==='compound-interest'){
  rateHint.id='howloop-'+kind+'-annual-rate-note';rateHint.setAttribute('aria-live','polite');
  rateInput.closest('label').append(rateHint);
  rateInput.setAttribute('aria-describedby',[rateInput.getAttribute('aria-describedby'),rateHint.id].filter(Boolean).join(' '));
- setRateHint('Illustrative custom rate. A bank selection applies a rate only when a supported product model is loaded.');
+ setRateHint('Example rate. Choose a bank below or enter your own.');
 }
 function setRateHint(message,attention=false){
  if(!rateHint)return;
@@ -65,7 +65,7 @@ headers=['Measure','Amount (AUD)'];rows=[['Monthly essentials',data.expenses],['
 table();return true;
 }catch(e){q('[data-error]').hidden=false;q('[data-error]').textContent='Please check your inputs. '+e.message;return false;}
 }
-form.addEventListener('submit',e=>{e.preventDefault();if(form.reportValidity())calculate();});
+form.addEventListener('submit',e=>{e.preventDefault();if(form.reportValidity()&&calculate()&&window.matchMedia('(max-width: 600px)').matches){const result=q('.hl-results');result.focus({preventScroll:true});result.scrollIntoView({behavior:'auto',block:'start'});}});
 form.addEventListener('input',e=>{if(e.target.name){if(e.target.name==='annualRate'&&kind==='compound-interest'){model=null;output('rate-model','Custom constant rate - your edit overrides any bank model');setRateHint('Custom annual rate entered by you. Held constant for the full projection; bank conditions are not simulated.');}calculate();}});
 const status=message=>output('action-status',message);
 q('[data-export]').addEventListener('click',()=>{if(!calculate())return;const quote=x=>'"'+String(x).replaceAll('"','""')+'"';const csv=[headers,...rows.map(r=>r.map((v,i)=>i?Number(v).toFixed(2):v))].map(r=>r.map(quote).join(',')).join('\r\n');const url=URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='howloop-'+kind+'.csv';a.hidden=true;document.body.append(a);try{a.click();status('CSV download requested. Check your browser downloads.');}finally{a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}});
