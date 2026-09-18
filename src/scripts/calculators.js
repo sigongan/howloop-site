@@ -1,4 +1,5 @@
 import {savings,requiredSavings,mortgage,emergencyFund,baseRateModel} from '../lib/finance.mjs';
+import {rateSummary,formatRate,introductoryPeriod} from '../lib/rate-summary.mjs';
 import {feeLines,tierLines,conditionText,conditionList} from '../lib/product-display.mjs';
 const money=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
 const precise=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',minimumFractionDigits:2,maximumFractionDigits:2}).format(n);
@@ -37,7 +38,7 @@ const table=document.querySelector('[data-results-table]');table.querySelector('
 const head=document.createElement('tr');headers.forEach(h=>{const th=document.createElement('th');th.scope='col';th.textContent=h;head.append(th);});table.querySelector('thead').append(head);
 rows.forEach(row=>{const tr=document.createElement('tr');row.forEach((value,i)=>{const td=document.createElement('td');td.textContent=i===0?String(value):precise(value);tr.append(td);});table.querySelector('tbody').append(tr);});
 }
-function invalidate(message){q('[data-error]').hidden=false;q('[data-error]').textContent=message;output('result-total','—');output('result-sub','Check your inputs to update this result.');output('stat1','—');output('stat2','—');output('scenario','');q('[data-chart]').replaceChildren();q('[data-legend]').replaceChildren();rows=[];table();}
+function invalidate(message){q('[data-error]').hidden=false;q('[data-error]').textContent=message;output('result-total','—');output('result-sub','Check your inputs to update this result.');output('stat1','—');output('stat2','—');output('scenario','');q('[data-chart]').replaceChildren();q('[data-legend]').replaceChildren();rows=[];table();if(kind==='compound-interest')renderRateSummary();}
 function calculate(){
 if(!form.checkValidity()){invalidate('Enter valid numbers within the limits shown in each field.');return false;}
 try{
@@ -47,6 +48,7 @@ const result=savings({...data,rateForBalance:model??undefined});output('result-l
 const more=savings({...data,contribution:data.contribution+50,rateForBalance:model??undefined});output('scenario','What if you saved $50 more '+data.frequency+'? Your projected balance would be '+money(more.balance)+' — '+money(more.balance-result.balance)+' more over the same period.');
 headers=['Year','Your deposits (AUD)','Interest (AUD)','Balance (AUD)'];rows=result.rows.map(r=>[Number(r.year.toFixed(2)),r.deposits,r.interest,r.balance]);
 if(model){const rate=model(data.principal);form.elements.annualRate.value=rate.toFixed(4);output('rate-model',modelLabel+' · base rate only, tiers recalculated as balance grows');}
+renderRateSummary();
 }else if(kind==='mortgage'){
 const result=mortgage(data);output('result-label','Your regular monthly repayment');output('result-total',money(result.payment));output('result-sub',precise(result.payment)+' monthly, plus '+money(data.extra)+' extra');output('stat1-label','Interest with your plan');output('stat1',money(result.plan.interest));output('stat2-label','Interest saved');output('stat2',money(result.interestSaved));
 const sampleMonths=[...new Set([...result.base.rows,...result.plan.rows].map(r=>r.month))].sort((a,b)=>a-b);const interpolate=(rows,m)=>{const exact=rows.find(r=>r.month===m);if(exact)return exact.balance;const before=rows.filter(r=>r.month<m).at(-1),after=rows.find(r=>r.month>m);if(!after)return 0;if(!before)return rows[0].balance;return before.balance+(after.balance-before.balance)*(m-before.month)/(after.month-before.month);};const pts=sampleMonths.map(month=>({month,baseline:interpolate(result.base.rows,month),balance:interpolate(result.plan.rows,month)}));chart(pts,['balance','baseline'],['With offset & extra','Standard loan']);
@@ -76,29 +78,59 @@ q('[data-save]').addEventListener('click',()=>{if(!calculate())return;try{localS
 q('[data-load]').addEventListener('click',async()=>{try{const saved=JSON.parse(localStorage.getItem(key));if(!saved?.values)throw Error();for(const el of form.querySelectorAll('[name]'))if(saved.values[el.name]!==undefined)el.value=String(saved.values[el.name]);model=null;if(q('[data-bank-select]')){q('[data-bank-select]').value=saved.bank??'';await loadBank(saved.product,saved.bankModel);}calculate();status('Saved inputs restored. Bank projections use the currently available dated snapshot.');}catch{status('This saved plan could not be restored.');}});
 const remove=document.createElement('button');remove.type='button';remove.className='hl-plain-button';remove.textContent='Clear saved plan';q('.hl-result-actions').append(remove);remove.addEventListener('click',()=>{try{localStorage.removeItem(key);q('[data-load]').hidden=true;status('Saved plan removed from this browser.');}catch{status('Storage could not be cleared. Use your browser’s site-data settings.');}});
 function append(parent,tag,text,cls){const el=document.createElement(tag);el.textContent=text;if(cls)el.className=cls;parent.append(el);return el;}
+function renderRateSummary(){
+ const container=q('[data-rate-summary]'),product=products.find(p=>p.id===q('[data-product-select]')?.value);
+ if(!container||!product)return;
+ const balance=form.elements.principal.checkValidity()?Number(form.elements.principal.value):NaN;
+ const summary=rateSummary(product,balance);
+ const used=model?summary.base:form.elements.annualRate.checkValidity()?Number(form.elements.annualRate.value):null;
+ container.replaceChildren();
+ const grid=append(container,'div','','bank-rate-grid');grid.setAttribute('role','group');grid.setAttribute('aria-label','Published rate comparison');
+ function card(label,value,note,cls=''){
+  const c=append(grid,'div','','bank-rate-card '+cls);append(c,'span',label);append(c,'strong',value);append(c,'small','per year · '+note);
+ }
+ if(summary.conditional){
+  card('Base rate',formatRate(summary.base),'without the bonus','is-base');
+  const intro=summary.conditional.type==='INTRODUCTORY';
+  card(intro?'During the welcome offer*':'With qualifying bonus*',formatRate(summary.conditional.total),intro?introductoryPeriod(summary.conditional.duration):'if all conditions are met',intro?'is-intro':'is-bonus');
+  append(container,'p',formatRate(summary.base)+' base + '+formatRate(summary.conditional.extra)+(intro?' introductory bonus. ':' bonus. ')+'At your starting balance; check eligibility below.','bank-rate-explainer');
+ }else{
+  const labels={VARIABLE:'Base rate',BONUS:'Conditional bonus',INTRODUCTORY:'Introductory bonus',BUNDLE_BONUS:'Bundle bonus',FIXED:'Fixed rate',FLOATING:'Floating rate',MARKET_LINKED:'Market-linked rate'};
+  if(!summary.components.length)card('Published rates','Not supplied','confirm with the bank');
+  for(const component of summary.components){
+   const appliedBase=component.type==='VARIABLE'&&summary.base!==null;
+   const value=appliedBase?formatRate(summary.base):component.min===null?'Not supplied':component.min===component.max?formatRate(component.min):formatRate(component.min)+'–'+formatRate(component.max);
+   card(labels[component.type]??'Other published rate',value,appliedBase?'at your starting balance':component.incomplete?'incomplete data · check terms':component.type==='VARIABLE'?'check balance tiers':'conditions apply',component.type==='VARIABLE'?'is-base':'is-bonus');
+  }
+  if(summary.components.some(c=>c.type!=='VARIABLE'))append(container,'p','Rates shown separately. A combined rate needs checking with the bank.','bank-rate-explainer');
+ }
+ const applied=append(container,'div','','bank-rate-applied');
+ append(applied,'span',model?'Calculator uses the base rate':'Calculator uses your own rate');
+ append(applied,'strong',formatRate(used));
+ append(applied,'small',model?'Bonus and introductory interest are not included.':'No bank rate applied. Confirm or edit your rate.');
+ if(Number.isFinite(balance)&&Number.isFinite(used))append(container,'p','About '+precise(balance*used/1200)+' first-month interest on '+money(balance)+', before tax and fees. Monthly estimate.','bank-rate-example');
+ q('.calc-bank-done').textContent=Number.isFinite(used)?'Continue with '+formatRate(used)+(model?' base rate':' custom rate'):'Back to check my numbers';
+}
 function selectProduct(auto=true){
  model=null;
  const product=products.find(p=>p.id===q('[data-product-select]').value);
  const info=q('[data-product-info]');info.replaceChildren();
- if(!product){output('rate-model','Custom constant rate - monthly compounding');setRateHint('Rate retained · choose a product or edit your rate');calculate();return;}
- append(info,'p',product.description,'hl-product-description');
- const link=safeURL(product.url);if(link){const a=append(info,'a','Check this product with the provider');a.href=link;a.target='_blank';a.rel='noopener noreferrer';}
+ if(!product){q('.calc-bank-done').textContent='Back to my calculation';output('rate-model','Custom constant rate - monthly compounding');setRateHint('Rate retained · choose a product or edit your rate');calculate();return;}
+ const overview=append(info,'div','','bank-rate-overview');overview.setAttribute('data-rate-summary','');
  const modelCandidate=baseRateModel(product);
  if(modelCandidate&&auto){
   model=modelCandidate;modelLabel=product.name;form.elements.annualRate.value=model(inputs().principal).toFixed(4);
-  append(info,'p','Base variable rate loaded. Bonus and introductory interest are excluded. Check all eligibility and fees below.','hl-product-status');
   setRateHint('Base rate only · excludes bonus and intro. Edit to override.');
  }else{
-  append(info,'p',unchangedRateNote,'hl-product-status');
-  append(info,'p',modelCandidate?'Your saved custom rate is retained. Choose this product again to load its supported base-rate model.':'This product needs manual checking. No rate has been applied from this product. Confirm the applicable rate and conditions with the provider.');
   output('rate-model',unchangedRateNote);setRateHint('Rate unchanged · confirm or edit before using',true);
  }
  const details=document.createElement('details');details.className='hl-published-rates';
- append(details,'summary','Published rates, eligibility & fees');
+ append(details,'summary','Conditions, balance tiers & fees');
+ if(product.description)append(details,'p',product.description,'hl-product-description');
  append(details,'p','These are provider data components, not verified eligibility limits or a total eligible rate. A missing tier bound does not mean bonus eligibility is unlimited. Check the provider terms, including balance caps.');
  for(const rate of product.depositRates??[]){
   const item=append(details,'div','','hl-rate-item');
-  append(item,'b',(Number(rate.rate)*100).toFixed(2)+'% p.a. - '+String(rate.depositRateType??'unspecified').toLowerCase().replaceAll('_',' '));
+  append(item,'b',formatRate(rate.rate==null||String(rate.rate).trim()===''?NaN:Number(rate.rate)*100)+' p.a. - '+String(rate.depositRateType??'unspecified').toLowerCase().replaceAll('_',' '));
   append(item,'p','Published rate component - do not assume this is the total eligible rate.');
   for(const tier of rate.tiers??[])for(const line of tierLines(tier))append(item,'p',line);
   if(rate.additionalInfo)append(item,'p',rate.additionalInfo);
@@ -117,10 +149,12 @@ function selectProduct(auto=true){
  const feeURL=safeURL(product.additionalInformation?.feesAndPricingUri);
  if(feeURL){const a=append(details,'a','Check the provider fee schedule');a.href=feeURL;a.target='_blank';a.rel='noopener noreferrer';}
  info.append(details);
- const a=append(info,'a','View source product data');a.href=safeURL(product.source)??'#';a.target='_blank';a.rel='noopener noreferrer';
+ const link=safeURL(product.url);if(link){const providerLink=append(info,'a','Check rates and conditions with the bank ↗','bank-provider-link');providerLink.href=link;providerLink.target='_blank';providerLink.rel='noopener noreferrer';}
+ const a=append(details,'a','View source product data');a.href=safeURL(product.source)??'#';a.target='_blank';a.rel='noopener noreferrer';
  calculate();
 }
 async function loadBank(productId='',auto=true){
+q('.calc-bank-done').textContent='Back to my calculation';
 const id=q('[data-bank-select]').value,version=++requestVersion;model=null;products=[];q('[data-product-info]').replaceChildren();q('[data-product-select]').replaceChildren(new Option('Choose a product',''));q('[data-product-field]').hidden=true;output('rate-model','Custom constant rate · monthly compounding');
 if(!id){output('bank-status','Using your own rate. Bank rates have not been applied.');setRateHint('Your rate · fixed for the full projection');calculate();return;}
 setRateHint('Rate unchanged · choose a product or edit your rate',true);
