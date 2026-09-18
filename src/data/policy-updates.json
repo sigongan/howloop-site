@@ -1,0 +1,38 @@
+[
+  {
+    "id":"deposit-scheme","title":"A smaller first-home deposit","stage":"in-effect","effectiveDate":"2025-10-01","checkedAt":"2026-09-18","reviewDays":14,
+    "who":"Eligible first-home buyers using a participating lender.",
+    "before":"The earlier guarantee scheme had income limits and capped places.",
+    "after":"The expanded Australian Government 5% Deposit Scheme has no income caps or limit on places. Eligible borrowers can avoid LMI; property price caps and lender checks still apply.",
+    "nextStep":"Check the property's location cap and your eligibility before planning around a 5% deposit.",
+    "lesson":"first-home-guarantee",
+    "sources":[["Australian Government: scheme and eligibility","https://firsthomebuyers.gov.au/australian-government-5-percent-deposit-scheme/first-home-buyers"],["Housing Australia: scheme overview","https://firsthomebuyers.gov.au/"]]
+  },
+  {
+    "id":"cgt-reform","title":"Capital gains tax rules are changing","stage":"law-future","effectiveDate":"2027-07-01","checkedAt":"2026-09-18","reviewDays":14,
+    "who":"Investors affected by the new CGT arrangements, including individuals and trusts.",
+    "before":"The existing 50% discount can apply to eligible capital gains after the required holding period.",
+    "after":"Legislated reforms replace that discount with inflation adjustments and a minimum 30% tax on real gains arising from 1 July 2027. Transitional rules and exceptions, including a choice for eligible new builds, matter.",
+    "nextStep":"Keep purchase, improvement and sale records. Do not apply a flat 50% discount to a future sale without checking the applicable rules.",
+    "lesson":"capital-gains-tax",
+    "sources":[["Federal Register: Tax Reform No. 1 Act 2026","https://www.legislation.gov.au/C2026A00049/asmade"],["Treasury: CGT and negative gearing explainer","https://budget.gov.au/content/factsheets/download/tax-explainers-negative-gearing-capital-gains-tax.pdf"]]
+  },
+  {
+    "id":"negative-gearing-reform","title":"Rental losses: the purchase date matters","stage":"law-future","effectiveDate":"2027-07-01","checkedAt":"2026-09-18","reviewDays":14,
+    "who":"Investors who buy established residential property after 7:30 pm AEST on 12 May 2026.",
+    "before":"Under existing rules, eligible rental losses can generally reduce other taxable income.",
+    "after":"From 2027–28, affected losses can offset residential property income, with unused losses carried forward, rather than wages. Earlier holdings, eligible new builds and other exceptions have different treatment.",
+    "nextStep":"Check your acquisition date, property type and the transition rules before estimating any tax benefit.",
+    "lesson":"negative-gearing",
+    "sources":[["Federal Register: Tax Reform No. 1 Act 2026","https://www.legislation.gov.au/C2026A00049/asmade"],["Treasury: CGT and negative gearing explainer","https://budget.gov.au/content/factsheets/download/tax-explainers-negative-gearing-capital-gains-tax.pdf"]]
+  },
+  {
+    "id":"foreign-home-ban","title":"Foreign buyers: established-home restriction","stage":"in-effect","effectiveDate":"2025-04-01","endsAt":"2029-06-30","checkedAt":"2026-09-18","reviewDays":14,
+    "who":"People treated as foreign investors under the federal rules.",
+    "before":"Earlier guidance described a restriction ending on 31 March 2027.",
+    "after":"Treasury's guidance, updated 1 July 2026, states the restriction runs to 30 June 2029. Foreign investors are generally prohibited from buying established homes, with limited exceptions.",
+    "nextStep":"Check the current Treasury guidance and approval requirements before signing. State surcharges are a separate check.",
+    "lesson":"foreign-property-buyers",
+    "sources":[["Treasury: residential land guidance","https://foreigninvestment.gov.au/guidance/types-investments/residential-land"],["Australia's foreign investment policy, May 2026","https://foreigninvestment.gov.au/sites/foreigninvestment.gov.au/files/2026-05/australias-foreign-investment-policy-may-2026.pdf"]]
+  }
+]

@@ -1,16 +1,24 @@
 ---
 import Base from '../../layouts/Base.astro';
 import guides from '../../data/learning.json';
-const groups=[
-{title:'Build your savings',description:'Separate the money you contribute from the interest it earns. Start with a savings habit, then test the assumptions behind the result.',slugs:['how-compound-interest-works','read-a-savings-projection','building-an-emergency-fund']},
-{title:'Understand the account',description:'The headline rate is only one part of a product. Learn how conditions, time limits and fees change the comparison.',slugs:['bonus-interest-conditions']},
-{title:'Plan for a home',description:'Turn a deposit target into a contribution plan, or explore how repayments and an offset affect an existing loan.',slugs:['planning-a-home-deposit','offset-vs-extra-repayments']}
-];
+import '../../styles/learning.css';
+const groups=[{id:'home',title:'Buying a home',sub:'Deposits, loans & offsets'},{id:'property',title:'Property & tax',sub:'Buying costs & changing rules'},{id:'everyday',title:'Everyday money',sub:'Saving, super & investing'}];
 ---
-<Base title="Australian money guides" description="Understand saving, bank-rate conditions, home deposits and mortgage offsets through worked examples, scenario comparisons and primary sources.">
-<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Money guides</div><h1>Money guides.</h1><p>Practical answers, worked examples and tools to try.</p></header>
-<div class="hl-wrap hl-page-main">
-<nav class="hl-topic-nav" aria-label="Guide topics">{groups.map((group,i)=><a href={'#topic-'+i}>{group.title} ↓</a>)}</nav>
-{groups.map((group,i)=><section class="hl-guide-group" id={'topic-'+i}><div class="hl-section-head"><div><h2>{group.title}</h2></div></div><div class="hl-guide-grid">{group.slugs.map(slug=>{const g=guides.find(g=>g.slug===slug)!;return <a class="hl-tool-card" href={'/learn/'+g.slug}><span class="hl-card-kicker">{g.category} · {g.minutes} MIN READ</span><h3>{g.title}</h3><p>{g.summary}</p><span class="hl-card-link">Read the guide <span aria-hidden="true">↗</span></span></a>;})}</div></section>)}
-<aside class="hl-help-strip"><a href="/editorial-policy">Editorial policy →</a><a href="/methodology">Calculation methods →</a><a href="/contact">Report a correction →</a></aside>
+<Base title="Money, made easy" description="Short Australian money lessons. Understand home deposits, tax, savings, super and shares through one clear example, then try it yourself.">
+<header class="hl-page-head hl-wrap learn-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Learn</div><h1>Money, made easy.</h1><p>One idea. One example. Something you can use.</p></header>
+<div class="hl-wrap hl-page-main learn-wrap">
+<label class="hl-field lesson-search"><span>What would you like to understand?</span><input type="search" id="lesson-search" placeholder="Try deposit, tax, super…" aria-controls="lesson-groups"/></label>
+<nav class="learn-topics" aria-label="Learning topics">{groups.map(g=><a href={'#'+g.id}>{g.title}<small>{g.sub} →</small></a>)}</nav>
+<aside class="learn-update-link"><span>Rules change. See what it means for you.</span><a href="/updates">What's changed? →</a></aside>
+<div id="lesson-groups">{groups.map(group=><section class="lesson-group" id={group.id}><h2>{group.title}</h2><div class="lesson-list">{guides.filter(g=>g.group===group.id).map(g=><a class="lesson-card" href={'/learn/'+g.slug} data-lesson-search={[g.title,g.category,g.summary,g.slug].join(' ').toLowerCase()}><div><h3>{g.title}</h3><small>{g.category} · {g.minutes} min</small></div><span aria-hidden="true">→</span></a>)}</div></section>)}</div>
+<p class="learn-empty" data-lesson-empty hidden role="status">No matching lessons. Try “home”, “savings” or “tax”.</p>
+<aside class="hl-help-strip"><a href="/editorial-policy">How we check our content →</a><a href="/contact">Suggest a topic or correction →</a></aside>
 </div></Base>
+<script>
+document.querySelector<HTMLInputElement>('#lesson-search')?.addEventListener('input',event=>{
+ const query=(event.target as HTMLInputElement).value.toLowerCase().trim();let total=0;
+ document.querySelectorAll<HTMLElement>('[data-lesson-search]').forEach(el=>{el.hidden=!el.dataset.lessonSearch!.includes(query);if(!el.hidden)total++;});
+ document.querySelectorAll<HTMLElement>('.lesson-group').forEach(el=>el.hidden=![...el.querySelectorAll<HTMLElement>('[data-lesson-search]')].some(card=>!card.hidden));
+ document.querySelector<HTMLElement>('[data-lesson-empty]')!.hidden=total>0;
+});
+</script>

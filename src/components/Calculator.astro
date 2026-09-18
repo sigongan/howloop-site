@@ -5,18 +5,19 @@ const {kind='compound-interest'}=Astro.props;
 ---
 <div class="hl-calculator" data-calculator={kind}>
 <form class="hl-form">
-<h2>Your numbers <small>AUD</small></h2>
+<h2>Your numbers <small>AUD · updates instantly</small></h2>
 {kind==='compound-interest'&&<>
 <Field name="principal" label="Starting balance" value={10000}/>
 <div class="hl-field-row"><Field name="contribution" label="Regular contribution" value={500} max={1000000}/><label class="hl-field"><span>How often?</span><select name="frequency" aria-label="Contribution frequency"><option value="monthly">Monthly</option><option value="fortnightly">Fortnightly</option><option value="weekly">Weekly</option></select></label></div>
-<div class="hl-field-row"><Field name="annualRate" label="Annual interest rate (%)" value={4.5} max={30} step="any" prefix="" hint="Illustrative until you choose a bank."/><Field name="years" label="Years to grow" value={10} min={1} max={50} step={1} prefix=""/></div>
-<details class="hl-product-picker" data-bank-picker><summary>Choose an Australian bank rate</summary>
+<div class="hl-field-row"><Field name="annualRate" label="Interest rate (% p.a.)" value={4.5} max={30} step="any" prefix=""/><Field name="years" label="Years" value={10} min={1} max={50} step={1} prefix=""/></div>
+<button type="button" class="calc-bank-button" data-open-bank><span class="calc-bank-symbol" aria-hidden="true">$</span><span>Choose a bank rate<small>Australian banks & published products</small></span><span aria-hidden="true">→</span></button>
+<dialog class="calc-bank-dialog" data-bank-dialog aria-labelledby="bank-picker-title"><div class="calc-bank-dialog-head"><h2 id="bank-picker-title">Choose a bank rate</h2><button type="button" data-close-bank aria-label="Close bank picker">✕</button></div><div class="hl-product-picker" data-bank-picker>
 <label class="hl-field"><span>Find a bank or provider</span><input type="search" data-bank-search placeholder="Search by name…" aria-label="Search banks"/></label>
 <label class="hl-field"><span>Bank or provider</span><select data-bank-select aria-label="Bank or provider"><option value="">Custom / illustrative rate</option>{banks.banks.map(b=><option value={b.id}>{b.name}{b.productCount===0?' — no product data':''}</option>)}</select></label>
 <label class="hl-field" data-product-field hidden><span>Deposit product</span><select data-product-select aria-label="Deposit product"><option value="">Choose a product</option></select></label>
 <p class="hl-product-status" data-bank-status aria-live="polite">Published product data checked {new Date(banks.fetchedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'})}. Not a whole-market comparison.</p>
 <div data-product-info></div>
-</details>
+</div><button type="button" class="hl-button calc-bank-done" data-close-bank>Back to my calculation →</button></dialog>
 <p class="hl-rate-model" data-rate-model>Custom constant rate · monthly compounding</p>
 </>}
 {kind==='mortgage'&&<>
@@ -39,19 +40,22 @@ const {kind='compound-interest'}=Astro.props;
 <Field name="contribution" label="Monthly savings towards it" value={400} max={1000000} step={0.01}/>
 <p class="hl-help">Choose a buffer that suits your circumstances. This estimate excludes interest.</p>
 </>}
-<button type="submit" class="hl-button">View result <span aria-hidden="true">→</span></button>
+<button type="submit" class="hl-button calc-update-button">Update result <span aria-hidden="true">→</span></button>
 <p class="hl-error" data-error role="alert" hidden></p>
-<p class="hl-help">Results update as you type. Your inputs stay in this browser.</p>
+<p class="hl-help calc-local-note">Free to use · your inputs stay on this device</p>
 </form>
 <section class="hl-results" tabindex="-1" aria-label="Your calculation results">
-<p class="hl-result-label" data-result-label>Your projected balance</p><output class="hl-result-total" data-result-total aria-live="polite">—</output><p class="hl-result-sub" data-result-sub>Enter your numbers to see the possibilities.</p>
+<div class="calc-overview" tabindex="-1"><p class="hl-result-label" data-result-label>Your projected balance</p><output class="hl-result-total" data-result-total aria-live="polite">—</output><p class="hl-result-sub" data-result-sub>Enter your numbers to see the possibilities.</p>
 <div class="hl-result-stats"><div><span data-stat1-label>Your deposits</span><strong data-stat1>—</strong></div><div><span data-stat2-label>Interest earned</span><strong data-stat2>—</strong></div></div>
-<div data-chart></div>
+</div>
+<details class="calc-insights" open><summary>Growth chart & what-if</summary><div data-chart></div>
 <div class="hl-chart-legend" data-legend><span>Projected balance</span><span>Your deposits</span></div>
-<div class="hl-scenario" data-scenario></div>
+<div class="hl-scenario" data-scenario></div></details>
+<details class="calc-extras"><summary>Save, export & assumptions</summary>
 <div class="hl-result-actions"><button type="button" class="hl-plain-button" data-save>Save on this device</button><button type="button" class="hl-plain-button" data-load hidden>Restore saved plan</button><button type="button" class="hl-plain-button" data-export>Download CSV</button></div>
 <p class="hl-help" data-action-status aria-live="polite"></p>
 <p class="hl-method-note" data-method-note>Estimates only. Assumes unchanged rates, no withdrawals, tax or fees. Monthly approximation; your bank’s daily calculation and product rules may differ. <a href="/methodology">Calculation details →</a></p>
+</details>
 </section>
 </div>
 <noscript><p class="hl-noscript">Turn on JavaScript to use the interactive calculator. The explanations and calculation methods below are available without it.</p></noscript>

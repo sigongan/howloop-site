@@ -1,26 +1,38 @@
 ---
 import Base from '../../layouts/Base.astro';
 import guides from '../../data/learning.json';
+import SourceStatus from '../../components/SourceStatus.astro';
+import PolicyNote from '../../components/PolicyNote.astro';
+import {formatDate} from '../../lib/content-status.mjs';
+import '../../styles/learning.css';
 export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
 const {guide}=Astro.props;
-const published=guide.datePublished ?? '2026-09-18';
-const modified=guide.dateModified ?? published;
-const checked=guide.sourcesChecked ?? published;
-const fmt=(value:string)=>new Date(value+'T12:00:00+10:00').toLocaleDateString('en-AU',{day:'numeric',month:'long',year:'numeric',timeZone:'Australia/Brisbane'});
-const sections=guide.sections.map(([title,text],i)=>({title,text,id:'section-'+(i+1)}));
-const related=guides.filter(g=>g.slug!==guide.slug).sort((a,b)=>Number(b.tool===guide.tool)-Number(a.tool===guide.tool)).slice(0,2);
-const url='https://howloop.how/learn/'+guide.slug;
+const published=guide.datePublished,modified=guide.dateModified,checked=guide.sourcesChecked;
+const related=guides.filter(g=>g.slug!==guide.slug&&g.group===guide.group).slice(0,2);
+const action=guide.action??{href:'/calculators/'+guide.tool,label:'Try it with your numbers'};
+const states=[['QLD','https://qro.qld.gov.au/duties/transfer-duty/calculate/'],['NSW','https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty/understanding-transfer-duty/calculate-transfer-duty'],['VIC','https://sro.vic.gov.au/buying-property/land-transfer-stamp-duty/land-transfer-stamp-duty-calculator'],['WA','https://www.wa.gov.au/organisation/department-of-treasury-and-finance/transfer-duty-assessment'],['SA','https://www.revenuesa.sa.gov.au/stamp-duty-land/calculate-stamp-duty'],['ACT','https://www.revenue.act.gov.au/help-and-resources/calculators/calculate-your-conveyance-duty'],['TAS','https://www.sro.tas.gov.au/resources/tasmanian-revenue-online/property-transfer-duties/duty-transactions/calculate-property-transfer-duty'],['NT','https://nt.gov.au/property/buying-and-selling-a-home/settle-the-sale/stamp-duty-buying-or-selling-a-home/conveyance-calculator']];
 ---
-<Base title={guide.title} description={guide.summary} type="article" publishedTime={new Date(published+'T00:00:00+10:00')} modifiedTime={new Date(modified+'T00:00:00+10:00')} jsonLd={{'@context':'https://schema.org','@type':'Article',headline:guide.title,description:guide.summary,mainEntityOfPage:url,author:{'@type':'Organization',name:'Howloop',url:'https://howloop.how/about#publisher'},datePublished:published,dateModified:modified,publisher:{'@type':'Organization',name:'Howloop',url:'https://howloop.how'}}}>
-<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/learn">Money guides</a> / {guide.category.toLowerCase()}</div><span class="hl-eyebrow">{guide.category} · {guide.minutes} MIN READ</span><h1 style="max-width:850px">{guide.title}</h1><p>{guide.summary}</p></header>
-<div class="hl-wrap hl-reading-layout">
-<aside class="hl-reading-sidebar"><details class="hl-reading-toc"><summary>In this guide</summary><nav aria-label="On this page"><ol>{sections.map(s=><li><a href={'#'+s.id}>{s.title}</a></li>)}</ol><a href="#sources">Sources & update record</a></nav></details></aside>
-<article class="hl-content hl-reading-content">
-<div class="hl-byline">Published by <a href="/about#publisher">Howloop</a><br/><time datetime={published}>Published {fmt(published)}</time> · <time datetime={modified}>Updated {fmt(modified)}</time><br/><a href="/editorial-policy">How this content is prepared</a> · General education</div>
-{sections.map(s=><section id={s.id}><h2>{s.title}</h2>{s.text.split('\n\n').map(paragraph=><p>{paragraph}</p>)}</section>)}
-<aside class="hl-callout"><h2>Try the idea with your numbers.</h2><p>Run the example, change one input and compare the result. Keep the assumptions alongside any figure you save.</p><a class="hl-button" href={'/calculators/'+guide.tool}>Open the calculator <span aria-hidden="true">↗</span></a></aside>
-<section id="sources"><h2>Sources and update record</h2><p>These primary sources provide context. The worked examples use Howloop's stated assumptions, so a provider's actual calculation can differ.</p><ul>{guide.sources.map(([title,url])=><li><a href={url} rel="noopener noreferrer">{title} ↗</a></li>)}</ul><p class="hl-help">Sources checked {fmt(checked)}. Product terms and guidance can change. {guide.updateNote ?? 'Initial publication with worked examples and source references.'}</p><p>AI tools assist with preparation. This article has not been reviewed by a licensed financial adviser. See our <a href="/editorial-policy">publishing and correction process</a>.</p></section>
-<section class="hl-next-reading"><h2>Keep building the picture.</h2>{related.map(g=><p><a href={'/learn/'+g.slug}>{g.title} →</a></p>)}</section>
-<p>Found an error or a confusing explanation? <a href={'/contact?topic='+encodeURIComponent(guide.title)}>Send a correction</a>. Include the page and an example using sample numbers.</p>
-</article></div>
-</Base>
+<Base title={guide.title} description={guide.summary} type="article" publishedTime={new Date(published+'T00:00:00+10:00')} modifiedTime={new Date(modified+'T00:00:00+10:00')} jsonLd={{'@context':'https://schema.org','@type':'Article',headline:guide.title,description:guide.summary,mainEntityOfPage:'https://howloop.how/learn/'+guide.slug,author:{'@type':'Organization',name:'Howloop',url:'https://howloop.how/about#publisher'},datePublished:published,dateModified:modified,publisher:{'@type':'Organization',name:'Howloop',url:'https://howloop.how'}}}>
+<header class="hl-page-head hl-wrap lesson-header"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / {guide.category}</div><span class="lesson-kicker">{guide.minutes} MIN · GENERAL EDUCATION</span><h1>{guide.title}</h1></header>
+<article class="hl-wrap lesson-shell">
+<p class="lesson-takeaway">{guide.takeaway}</p>
+{guide.policyIds?.map(id=><PolicyNote id={id}/>)}
+<figure class="lesson-example"><figcaption>ONE SIMPLE EXAMPLE · {guide.example.title}</figcaption><dl>{guide.example.rows.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><p>{guide.example.note}</p></figure>
+{guide.stateLinks&&<section id="state-duty"><h2>Choose your state or territory</h2><p class="hl-help">Official duty tools and guidance. Check concessions, foreign-buyer charges and the tool's exclusions.</p><nav class="duty-states" aria-label="Official state duty guidance">{states.map(([name,href])=><a href={href} target="_blank" rel="noopener noreferrer">{name} ↗</a>)}</nav></section>}
+<div class="lesson-action"><a class="hl-button" href={action.href} rel={action.href.startsWith('https:')?'noopener noreferrer':undefined}>{action.label}<span aria-hidden="true">→</span></a></div>
+<section class="lesson-quiz" data-quiz data-answer={guide.quiz.answer} data-explanation={guide.quiz.explanation}><span>A QUICK CHECK</span><h2>{guide.quiz.question}</h2><div class="lesson-quiz-options">{guide.quiz.choices.map((choice,i)=><button type="button" data-choice={i} aria-pressed="false">{choice}</button>)}</div><p data-quiz-feedback role="status" hidden></p><noscript><p>{guide.quiz.explanation}</p></noscript></section>
+{guide.sections.map(([title,text])=><details class="lesson-more"><summary>{title}</summary>{text.split('\n\n').map(paragraph=><p>{paragraph}</p>)}</details>)}
+<SourceStatus checked={checked} days={guide.reviewDays}/>
+<details class="lesson-more" id="sources"><summary>Sources & update record</summary><ul>{guide.sources.map(([title,href])=><li><a href={href} target="_blank" rel="noopener noreferrer">{title} ↗</a></li>)}</ul><p>{guide.updateNote}</p><p>Published {formatDate(published)} · Updated {formatDate(modified)}. These dates do not guarantee rules are unchanged.</p><p>Published by <a href="/about#publisher">Howloop</a>. AI assists preparation. This lesson has not been reviewed by a licensed financial adviser. <a href="/editorial-policy">How we check our content →</a></p></details>
+<aside class="lesson-next"><strong>Keep learning</strong>{related.map(g=><a href={'/learn/'+g.slug}>{g.title} →</a>)}</aside>
+<p class="lesson-page-footer">Something unclear? <a href={'/contact?topic='+encodeURIComponent(guide.title)}>Tell us what to improve</a>.</p>
+</article></Base>
+<script>
+for(const quiz of document.querySelectorAll<HTMLElement>('[data-quiz]')){
+ for(const button of quiz.querySelectorAll<HTMLButtonElement>('[data-choice]'))button.addEventListener('click',()=>{
+  quiz.querySelectorAll('[data-choice]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+  const feedback=quiz.querySelector<HTMLElement>('[data-quiz-feedback]')!;
+  feedback.textContent=(button.dataset.choice===quiz.dataset.answer?'That’s right. ':'Not quite. ')+quiz.dataset.explanation;feedback.hidden=false;
+ });
+}
+</script>

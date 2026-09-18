@@ -1,0 +1,19 @@
+---
+import policies from '../data/policy-updates.json';
+import SourceStatus from './SourceStatus.astro';
+import {policyLabel,formatDate} from '../lib/content-status.mjs';
+const {id,full=false}=Astro.props;
+const policy=policies.find(p=>p.id===id);
+---
+{policy&&<aside class:list={['policy-note',{'policy-note-full':full}]} id={full?policy.id:undefined}>
+<span class="policy-stage" data-policy-label data-stage={policy.stage} data-effective={policy.effectiveDate} data-ends={policy.endsAt}>{policyLabel(policy)}</span>
+<h2>{policy.title}</h2>
+{full?<><p class="policy-who">Who: {policy.who}</p><div class="policy-comparison"><div><span>Before</span><p>{policy.before}</p></div><div><span>What changes</span><p>{policy.after}</p></div></div><p><strong>Your next step:</strong> {policy.nextStep}</p></>:<p>{policy.after}</p>}
+{full&&<p class="policy-date">Applies from {formatDate(policy.effectiveDate)}{policy.endsAt?' · Published end '+formatDate(policy.endsAt):''}</p>}
+<SourceStatus checked={policy.checkedAt} days={policy.reviewDays}/>
+{full?<><div class="policy-sources">{policy.sources.map(([label,href])=><a href={href} target="_blank" rel="noopener noreferrer">{label} ↗</a>)}</div><a class="lesson-text-link" href={'/learn/'+policy.lesson}>Understand the basics →</a></>:<a class="lesson-text-link" href={'/updates#'+policy.id}>What changed & official sources →</a>}
+</aside>}
+<script>
+import {policyLabel} from '../lib/content-status.mjs';
+for(const el of document.querySelectorAll<HTMLElement>('[data-policy-label]'))el.textContent=policyLabel({stage:el.dataset.stage,effectiveDate:el.dataset.effective,endsAt:el.dataset.ends});
+</script>

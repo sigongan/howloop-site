@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import TaskPicker from '../components/TaskPicker.astro';
+import '../styles/learning.css';
 import BankLogo from '../components/BankLogo.astro';
 const featuredBanks=[
   {id:'25233bad-e494-ea11-a831-000d3a8842e1',name:'CommBank'},
@@ -15,6 +16,6 @@ const featuredBanks=[
   <header class="hl-task-heading"><h1>What do you need?</h1><p>Free Australian money tools. No sign-up.</p></header>
   <TaskPicker/>
   <section class="hl-bank-shortcuts" aria-label="Quick bank lookup"><span>Find a bank</span><div>{featuredBanks.map(b=><a href={'/calculators/compound-interest?bank='+b.id} aria-label={'Explore '+b.name+' products'}><BankLogo id={b.id}/></a>)}</div><a class="hl-text-link" href="/banks">All banks →</a></section>
-  <aside class="hl-help-strip"><p>Want to understand the numbers?</p><a href="/learn">Read a money guide →</a><a href="/methodology">How we calculate →</a></aside>
+  <nav class="learn-topics" aria-label="Learn about money"><a href="/learn#home">Buying a home<small>Deposits & loans →</small></a><a href="/learn#property">Property & tax<small>Costs & rules →</small></a><a href="/learn#everyday">Everyday money<small>Saving, super & shares →</small></a></nav><aside class="hl-help-strip"><p>Small lessons. More confidence with money.</p><a href="/learn">Explore all lessons →</a><a href="/updates">What changed? →</a></aside>
 </div>
 </Base>
