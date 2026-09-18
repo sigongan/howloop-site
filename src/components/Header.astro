@@ -7,6 +7,6 @@ const links=NAV.map(({href,label})=>[href,label]);
 <header class="hl-header"><div class="hl-wrap hl-nav">
 <a class="hl-brand" href="/" aria-label="Howloop home"><Logo /></a>
 <nav class="hl-desktop-nav" aria-label="Main navigation">{links.map(([href,label])=><a href={href} aria-current={path.startsWith(href)?'page':undefined}>{label}</a>)}</nav>
-<a class="hl-nav-cta" href="/calculators/compound-interest">Start calculating <span aria-hidden="true">↗</span></a>
+
 <details class="hl-mobile-menu"><summary aria-label="Open navigation">Menu <span aria-hidden="true">☰</span></summary><nav aria-label="Mobile navigation">{links.map(([href,label])=><a href={href}>{label}</a>)}</nav></details>
 </div></header>
