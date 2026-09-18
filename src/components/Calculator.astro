@@ -45,7 +45,7 @@ const {kind='compound-interest'}=Astro.props;
 <p class="hl-help calc-local-note">Free to use · your inputs stay on this device</p>
 </form>
 <section class="hl-results" tabindex="-1" aria-label="Your calculation results">
-<div class="calc-overview" tabindex="-1"><p class="hl-result-label" data-result-label>Your projected balance</p><output class="hl-result-total" data-result-total aria-live="polite">—</output><p class="hl-result-sub" data-result-sub>Enter your numbers to see the possibilities.</p>
+<div class="calc-overview" tabindex="-1"><p class="calc-example-note" data-example-note>Example plan · try your own numbers</p><p class="hl-result-label" data-result-label>Your projected balance</p><output class="hl-result-total" data-result-total aria-live="polite">—</output><p class="hl-result-sub" data-result-sub>Enter your numbers to see the possibilities.</p>
 <div class="hl-result-stats"><div><span data-stat1-label>Your deposits</span><strong data-stat1>—</strong></div><div><span data-stat2-label>Interest earned</span><strong data-stat2>—</strong></div></div>
 </div>
 <details class="calc-insights" open><summary>{kind==='mortgage'?'Loan balance & payoff':kind==='emergency-fund'?'Progress & timeframe':'Growth chart & what-if'}</summary><div data-chart></div>

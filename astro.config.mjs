@@ -2,10 +2,11 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import {normaliseBuiltLinks} from './scripts/canonical-links.mjs';
 
 export default defineConfig({
   site: 'https://howloop.how',
-  trailingSlash: 'ignore',
+  trailingSlash: 'always',
   devToolbar: { enabled: false },
   vite: {
     plugins: [{
@@ -25,9 +26,10 @@ export default defineConfig({
       filter: (page) => !/^\/(?:404(?:\.html)?|guides|topics|desk|trade)(?:\/|$)/.test(new URL(page).pathname),
       serialize: (item) => ({
         ...item,
-        url: new URL(item.url).pathname === '/' ? item.url : item.url.replace(/\/$/, ''),
+        url: new URL(item.url).pathname === '/' ? item.url : item.url.replace(/\/?$/, '/'),
       }),
     }),
+    { name: 'howloop-canonical-links', hooks: { 'astro:build:done': normaliseBuiltLinks } },
   ],
   build: {
     inlineStylesheets: 'auto',

@@ -16,3 +16,5 @@
 
 .tax-print-only{display:none}
 @media print{#tax-form section[data-tax-step="2"]>*{display:none!important}#tax-form section[data-tax-step="2"]>.tax-print-only{display:block!important;font:11px/1.6 Arial,sans-serif;white-space:pre-wrap;overflow-wrap:anywhere;color:#172b36}}
+
+.tax-draft{border-top:1px solid #dce3d5;margin-top:24px;padding-top:18px;font-size:16px;line-height:1.7}.tax-draft summary{font-weight:700;cursor:pointer;min-height:44px}.tax-draft p{color:#405541}.tax-draft .tax-result-actions{flex-wrap:wrap}.tax-draft button{min-height:48px}body .tax-entry-grid small{line-height:1.6}@media(max-width:800px){body .tax-controls{position:static}body .tax-draft{font-size:1.0625rem}}@media print{.tax-draft{display:none!important}}
