@@ -1,10 +1,11 @@
 ---
 import {savings} from '../lib/finance.mjs';
+import ToolIcon from './ToolIcon.astro';
 const example=savings({principal:10000,contribution:500,annualRate:4.5,years:10});
 const money=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
 ---
-<section class="quick-savings" id="try-savings" aria-labelledby="quick-title">
-<div class="quick-heading"><h2 id="quick-title">How much could I save?</h2><p>Try your numbers. See the difference.</p></div>
+<section class="quick-savings" id="try-savings" aria-labelledby="quick-title" data-money-area="savings">
+<div class="quick-heading"><div class="money-area-heading"><span class="money-area-icon"><ToolIcon name="growth"/></span><h2 id="quick-title">Savings</h2></div><p>See how your money could grow.</p></div>
 <form id="quick-savings-form" novalidate>
   <div class="quick-inputs">
     <label for="quick-principal">Saved so far<div class="quick-money"><span aria-hidden="true">$</span><input id="quick-principal" name="principal" type="text" inputmode="decimal" value="10,000" data-money-input data-min="0" data-max="100000000" required aria-describedby="quick-currency"/></div></label>
@@ -14,7 +15,7 @@ const money=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',ma
   <div class="quick-result" aria-live="polite" aria-atomic="true"><span data-quick-label>In 10 years, you could have</span><strong data-quick-total>{money(example.balance)}</strong><div class="quick-bar" aria-hidden="true"><span data-quick-deposit-bar style={'width:'+example.deposits/example.balance*100+'%'}></span></div><dl><div><dt><i class="quick-dot-deposits" aria-hidden="true"></i>Money you put in</dt><dd data-quick-deposits>{money(example.deposits)}</dd></div><div><dt><i class="quick-dot-interest" aria-hidden="true"></i>Interest earned</dt><dd data-quick-interest>{money(example.interest)}</dd></div></dl></div>
   <p class="quick-error" data-quick-error role="status" hidden>Check your amounts, rate and years to see an estimate.</p>
   <p class="quick-disclaimer" id="quick-currency">AUD · Example only. Monthly compounding at a constant rate. Before tax, fees and inflation.</p>
-  <button class="home-action quick-continue" type="submit" disabled>Explore my savings plan <span aria-hidden="true">→</span></button>
+  <button class="home-action quick-continue" type="submit" disabled>Open savings calculator <span aria-hidden="true">→</span></button>
   <p class="quick-storage-note">Your numbers stay in this browser.</p>
 </form>
 <noscript><p>Enable JavaScript to change this example. <a href="/learn/how-compound-interest-works/">Read how compound interest works.</a></p></noscript>
