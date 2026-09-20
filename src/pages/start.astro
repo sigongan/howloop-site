@@ -1,8 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 import TaskPicker from '../components/TaskPicker.astro';
+import ToolIcon from '../components/ToolIcon.astro';
 ---
-<Base title="Find the right money tool" description="Choose a free Australian tool for savings, mortgages, a cash buffer, bank products or employee tax-return preparation.">
-<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Start here</div><h1>Start with what you need.</h1><p>Choose a task to get straight to the tool.</p></header>
-<div class="hl-wrap hl-page-main"><TaskPicker/><aside class="hl-help-strip"><p>New to these topics?</p><a href="/learn">Browse the practical guides →</a><a href="/about">About Howloop →</a></aside></div>
+<Base title="Find the right money tool" description="Choose a free Australian tool for take-home pay, savings, home deposits, mortgages, bank products or employee tax-return preparation.">
+<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Start here</div><h1>Start with what you need.</h1><p>Find your topic, then choose the tool that helps.</p></header>
+<div class="hl-wrap hl-page-main">
+  <TaskPicker/>
+  <aside class="tool-directory-help" aria-labelledby="start-help-title">
+    <h2 id="start-help-title">New to these topics?</h2>
+    <div class="tool-help-grid">
+      <a class="tool-help-card" data-money-area="learn" href="/learn/"><span class="tool-help-icon"><ToolIcon name="book"/></span><span><strong>Learn about money</strong><small>Start with a simple example.</small></span><ToolIcon name="arrow"/></a>
+      <a class="tool-help-card" href="/about/"><span class="tool-help-icon"><ToolIcon name="checklist"/></span><span><strong>About Howloop</strong><small>Who we are and how we check our content.</small></span><ToolIcon name="arrow"/></a>
+    </div>
+  </aside>
+</div>
 </Base>

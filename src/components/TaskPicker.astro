@@ -1,22 +1,40 @@
 ---
 import ToolIcon from './ToolIcon.astro';
+import '../styles/tool-directory.css';
 const {calculatorsOnly=false}=Astro.props;
-const areaLabels: Record<string,string>={savings:'Savings',pay:'Take-home pay',home:'Home loans',tax:'Tax returns'};
-const salary={href:'/calculators/salary',title:'Work out my take-home pay',type:'Salary, tax & super',detail:'See weekly, fortnightly or monthly pay after tax.',icon:'wallet',area:'pay'};
-const tasks=[
-  {href:'/calculators/compound-interest',title:'Grow my savings',type:'Compound interest',detail:'See your future balance and interest.',icon:'growth',area:'savings'},
-  {href:'/calculators/mortgage',title:'Work out repayments',type:'Mortgage & offset',detail:'See monthly payments and potential savings.',icon:'home',area:'home'},
-  {href:'/calculators/savings-goal',title:'Reach a savings goal',type:'Savings goal',detail:'Find how much to put aside each month.',icon:'target',area:'savings'},
-  {href:'/calculators/emergency-fund',title:'Build a cash buffer',type:'Emergency fund',detail:'Set a target for unexpected expenses.',icon:'shield',area:'savings'},
-  {href:'/tax-return',title:'Prepare my tax return',type:'Employee tax checklist',detail:'Organise expenses and get ready for myTax.',icon:'checklist',area:'tax'},
-  {href:'/banks',title:'Find my bank’s rates',type:'Australian bank directory',detail:'Look up published products and conditions.',icon:'bank',area:'savings'},
+const groups=[
+  {id:'pay',title:'Take-home pay',icon:'wallet',description:'Know what lands in your bank account.',tools:[
+    {href:'/calculators/salary/',title:'Pay after tax',detail:'See your weekly, fortnightly or monthly pay, with super shown separately.',icon:'wallet',action:'Calculate my pay'},
+  ]},
+  {id:'savings',title:'Savings',icon:'growth',description:'Grow your savings, reach a goal or build a buffer.',tools:[
+    {href:'/calculators/compound-interest/',title:'Savings growth',detail:'See your future balance and how much interest you could earn.',icon:'growth',action:'Calculate my savings'},
+    {href:'/calculators/savings-goal/',title:'Save for a goal',detail:'Work out how much to save each month to reach your target.',icon:'target',action:'Plan my savings'},
+    {href:'/calculators/emergency-fund/',title:'Money for emergencies',detail:'Work out a cash buffer for your essential living costs.',icon:'shield',action:'Calculate my buffer'},
+    ...(!calculatorsOnly?[{href:'/banks/',title:'Bank savings rates',detail:'Find your bank’s published products, rates and conditions.',icon:'bank',action:'Find my bank'}]:[]),
+  ]},
+  {id:'home',title:'Home loans',icon:'home',description:'Plan your deposit and your repayments.',tools:[
+    {href:'/calculators/mortgage/',title:'Mortgage & offset',detail:'See your repayments, then try an offset or extra payments.',icon:'home',action:'Calculate repayments'},
+    {href:'/calculators/lvr/',title:'Home deposit & loan',detail:'See how much you would borrow compared with the home’s value (LVR).',icon:'home',action:'Check my deposit'},
+  ]},
+  ...(!calculatorsOnly?[{id:'tax',title:'Tax returns',icon:'checklist',description:'Get organised before you lodge.',tools:[
+    {href:'/tax-return/',title:'Employee tax checklist',detail:'Gather your records and review work expenses before using myTax.',icon:'checklist',action:'Build my tax checklist'},
+  ]}]:[]),
 ];
-const shown=calculatorsOnly?[salary,...tasks.slice(0,4),{href:'/calculators/lvr',title:'Check my home deposit',type:'LVR & home deposit',detail:'See the share of a home you would borrow.',icon:'home',area:'home'}]:[salary,...tasks];
 ---
-<div class:list={['hl-task-grid',{'calculators-only':calculatorsOnly}]}>
-{shown.map(t=><a class="hl-task" href={t.href} data-money-area={t.area}>
-  <span class="hl-task-icon"><ToolIcon name={t.icon}/></span>
-  <div class="hl-task-copy"><span class="hl-task-category">{areaLabels[t.area]}</span><span class="hl-task-type">{t.type}</span><h2>{t.title}</h2><p>{t.detail}</p></div>
-  <span class="hl-task-arrow" aria-hidden="true">→</span>
-</a>)}
+<div class="tool-directory">
+  <nav class="tool-directory-jumps" aria-label="Jump to a money topic">
+    {groups.map(group=><a href={'#tools-'+group.id} data-money-area={group.id}><ToolIcon name={group.icon}/><span>{group.title}</span></a>)}
+  </nav>
+  <div class="tool-directory-groups">
+    {groups.map(group=><section class="tool-topic" id={'tools-'+group.id} aria-labelledby={'tools-'+group.id+'-title'} data-money-area={group.id}>
+      <header class="tool-topic-heading"><span class="money-area-icon"><ToolIcon name={group.icon}/></span><div><h2 id={'tools-'+group.id+'-title'}>{group.title}</h2><p>{group.description}</p></div></header>
+      <div class="tool-topic-grid">
+        {group.tools.map(tool=><a class="tool-choice" href={tool.href}>
+          <div class="tool-choice-heading"><span class="tool-choice-icon"><ToolIcon name={tool.icon}/></span><h3>{tool.title}</h3></div>
+          <p>{tool.detail}</p>
+          <span class="tool-choice-action"><span>{tool.action}</span><ToolIcon name="arrow"/></span>
+        </a>)}
+      </div>
+    </section>)}
+  </div>
 </div>
