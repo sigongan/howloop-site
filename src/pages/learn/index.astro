@@ -1,16 +1,22 @@
 ---
 import Base from '../../layouts/Base.astro';
+import ToolIcon from '../../components/ToolIcon.astro';
 import guides from '../../data/learning.json';
 import '../../styles/learning.css';
-const groups=[{id:'home',title:'Buying a home',sub:'Deposits, loans & offsets'},{id:'property',title:'Property & tax',sub:'Buying costs & changing rules'},{id:'everyday',title:'Everyday money',sub:'Saving, super & investing'}];
+const groups=[{id:'home',title:'Buying a home',sub:'Deposits, loans & offsets',area:'home',icon:'home'},{id:'property',title:'Property & tax',sub:'Buying costs & changing rules',area:'tax',icon:'checklist'},{id:'everyday',title:'Everyday money',sub:'Saving, super & investing',area:'savings',icon:'growth'}];
 ---
 <Base title="Money, made easy" description="Short Australian money lessons. Understand home deposits, tax, savings, super and shares through one clear example, then try it yourself.">
-<header class="hl-page-head hl-wrap learn-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Learn</div><h1>Money, made easy.</h1><p>One idea. One example. Something you can use.</p></header>
+<header class="hl-page-head hl-wrap learn-wrap learn-page-heading" data-money-area="learn">
+  <div class="hl-breadcrumb"><a href="/">Home</a> / Learn</div>
+  <div class="learn-section-identity"><span class="learn-section-icon"><ToolIcon name="book"/></span><span>Learn</span></div>
+  <h1>Money, made easy.</h1>
+  <p>Understand savings, home loans and tax with simple examples.</p>
+</header>
 <div class="hl-wrap hl-page-main learn-wrap">
 <label class="hl-field lesson-search"><span>What would you like to understand?</span><input type="search" id="lesson-search" placeholder="Try deposit, tax, super…" aria-controls="lesson-groups"/></label>
-<nav class="learn-topics" aria-label="Learning topics">{groups.map(g=><a href={'#'+g.id}>{g.title}<small>{g.sub} →</small></a>)}</nav>
+<nav class="learn-topics" aria-label="Learning topics">{groups.map(g=><a href={'#'+g.id} data-money-area={g.area}><span class="learn-topic-icon"><ToolIcon name={g.icon}/></span><span class="learn-topic-copy"><strong>{g.title}</strong><small>{g.sub} <span aria-hidden="true">→</span></small></span></a>)}</nav>
 <aside class="learn-update-link"><span>Rules change. See what it means for you.</span><a href="/updates">What's changed? →</a></aside>
-<div id="lesson-groups">{groups.map(group=><section class="lesson-group" id={group.id}><h2>{group.title}</h2><div class="lesson-list">{guides.filter(g=>g.group===group.id).map(g=><a class="lesson-card" href={'/learn/'+g.slug} data-lesson-search={[g.title,g.category,g.summary,g.slug].join(' ').toLowerCase()}><div><h3>{g.title}</h3><small>{g.category} · {g.minutes} min</small></div><span aria-hidden="true">→</span></a>)}</div></section>)}</div>
+<div id="lesson-groups">{groups.map(group=><section class="lesson-group" id={group.id} data-money-area={group.area}><div class="learn-area-heading" data-money-area={group.area}><span class="learn-topic-icon"><ToolIcon name={group.icon}/></span><div><h2>{group.title}</h2><p>{group.sub}</p></div></div><div class="lesson-list">{guides.filter(g=>g.group===group.id).map(g=><a class="lesson-card" href={'/learn/'+g.slug} data-lesson-search={[g.title,g.category,g.summary,g.slug].join(' ').toLowerCase()}><div><h3>{g.title}</h3><small>{g.category} · {g.minutes} min</small></div><span aria-hidden="true">→</span></a>)}</div></section>)}</div>
 <p class="learn-empty" data-lesson-empty hidden role="status">No matching lessons. Try “home”, “savings” or “tax”.</p>
 <aside class="hl-help-strip"><a href="/editorial-policy">How we check our content →</a><a href="/contact">Suggest a topic or correction →</a></aside>
 </div></Base>

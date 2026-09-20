@@ -1,21 +1,22 @@
 ---
 import ToolIcon from './ToolIcon.astro';
 const {calculatorsOnly=false}=Astro.props;
-const salary={href:'/calculators/salary',title:'Work out my take-home pay',type:'Salary, tax & super',detail:'See weekly, fortnightly or monthly pay after tax.',icon:'bank'};
+const areaLabels: Record<string,string>={savings:'Savings',pay:'Take-home pay',home:'Home loans',tax:'Tax returns'};
+const salary={href:'/calculators/salary',title:'Work out my take-home pay',type:'Salary, tax & super',detail:'See weekly, fortnightly or monthly pay after tax.',icon:'wallet',area:'pay'};
 const tasks=[
-  {href:'/calculators/compound-interest',title:'Grow my savings',type:'Compound interest',detail:'See your future balance and interest.',icon:'growth'},
-  {href:'/calculators/mortgage',title:'Work out repayments',type:'Mortgage & offset',detail:'See monthly payments and potential savings.',icon:'home'},
-  {href:'/calculators/savings-goal',title:'Reach a savings goal',type:'Savings goal',detail:'Find how much to put aside each month.',icon:'target'},
-  {href:'/calculators/emergency-fund',title:'Build a cash buffer',type:'Emergency fund',detail:'Set a target for unexpected expenses.',icon:'shield'},
-  {href:'/tax-return',title:'Prepare my tax return',type:'Employee tax checklist',detail:'Organise expenses and get ready for myTax.',icon:'checklist'},
-  {href:'/banks',title:'Find my bank’s rates',type:'Australian bank directory',detail:'Look up published products and conditions.',icon:'bank'},
+  {href:'/calculators/compound-interest',title:'Grow my savings',type:'Compound interest',detail:'See your future balance and interest.',icon:'growth',area:'savings'},
+  {href:'/calculators/mortgage',title:'Work out repayments',type:'Mortgage & offset',detail:'See monthly payments and potential savings.',icon:'home',area:'home'},
+  {href:'/calculators/savings-goal',title:'Reach a savings goal',type:'Savings goal',detail:'Find how much to put aside each month.',icon:'target',area:'savings'},
+  {href:'/calculators/emergency-fund',title:'Build a cash buffer',type:'Emergency fund',detail:'Set a target for unexpected expenses.',icon:'shield',area:'savings'},
+  {href:'/tax-return',title:'Prepare my tax return',type:'Employee tax checklist',detail:'Organise expenses and get ready for myTax.',icon:'checklist',area:'tax'},
+  {href:'/banks',title:'Find my bank’s rates',type:'Australian bank directory',detail:'Look up published products and conditions.',icon:'bank',area:'savings'},
 ];
-const shown=calculatorsOnly?[salary,...tasks.slice(0,4),{href:'/calculators/lvr',title:'Check my home deposit',type:'LVR & home deposit',detail:'See the share of a home you would borrow.',icon:'home'}]:[salary,...tasks];
+const shown=calculatorsOnly?[salary,...tasks.slice(0,4),{href:'/calculators/lvr',title:'Check my home deposit',type:'LVR & home deposit',detail:'See the share of a home you would borrow.',icon:'home',area:'home'}]:[salary,...tasks];
 ---
 <div class:list={['hl-task-grid',{'calculators-only':calculatorsOnly}]}>
-{shown.map(t=><a class="hl-task" href={t.href}>
+{shown.map(t=><a class="hl-task" href={t.href} data-money-area={t.area}>
   <span class="hl-task-icon"><ToolIcon name={t.icon}/></span>
-  <div class="hl-task-copy"><span class="hl-task-type">{t.type}</span><h2>{t.title}</h2><p>{t.detail}</p></div>
+  <div class="hl-task-copy"><span class="hl-task-category">{areaLabels[t.area]}</span><span class="hl-task-type">{t.type}</span><h2>{t.title}</h2><p>{t.detail}</p></div>
   <span class="hl-task-arrow" aria-hidden="true">→</span>
 </a>)}
 </div>

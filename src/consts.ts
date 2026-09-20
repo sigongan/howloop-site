@@ -46,10 +46,11 @@ export const TOPICS: Record<
 };
 
 export const NAV = [
-  { href: '/calculators', label: 'Calculators' },
-  { href: '/learn', label: 'Learn' },
-  { href: '/banks', label: 'Bank rates' },
-  { href: '/tax-return', label: 'Tax checklist' },
+  { id: 'savings', href: '/calculators/compound-interest/', label: 'Savings', icon: 'growth', hint: 'Grow your savings', matches: ['/calculators/compound-interest', '/calculators/savings-goal', '/calculators/emergency-fund', '/banks'] },
+  { id: 'pay', href: '/calculators/salary/', label: 'Take-home pay', icon: 'wallet', hint: 'See pay after tax', matches: ['/calculators/salary'] },
+  { id: 'home', href: '/calculators/mortgage/', label: 'Home loans', icon: 'home', hint: 'Plan your repayments', matches: ['/calculators/mortgage', '/calculators/lvr'] },
+  { id: 'tax', href: '/tax-return/', label: 'Tax returns', icon: 'checklist', hint: 'Prepare your tax checklist', matches: ['/tax-return'] },
+  { id: 'learn', href: '/learn/', label: 'Learn', icon: 'book', hint: 'Understand your money', matches: ['/learn', '/updates'] },
 ];
 
 export const FOOTER_LINKS = [
