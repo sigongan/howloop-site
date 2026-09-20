@@ -1,1 +1,983 @@
-{"name":"Health Professionals Bank","checkedAt":"2026-09-17T21:42:01.952Z","status":"available","products":[{"id":"f79ad2ac-29f3-4580-b847-118566c38adf","name":"Essential Saver account","description":"An interest bearing online savings account with a tiered interest rate structure","url":"https://www.hpbank.com.au/banking/essential-saver","lastUpdated":"2026-09-16T12:20:47.000+10:00","source":"https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/f79ad2ac-29f3-4580-b847-118566c38adf","depositRates":[{"depositRateType":"VARIABLE","rate":"0.05","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Essential Saver account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"250000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.05","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Essential Saver account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"250000.01","maximumValue":"500000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.05","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Essential Saver account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"500000.01","maximumValue":"1000000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.03","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Essential Saver account_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"1000000.01","maximumValue":"5000000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.03","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Essential Saver account_Tier_5","unitOfMeasure":"DOLLAR","minimumValue":"5000000.01","rateApplicationMethod":"PER_TIER"}]}],"fees":[],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or retired employees of the Australian education sector or family members of members (i.e. shareholders) of the Bank.","additionalInfoUri":"https://www.hpbank.com.au/banking/essential-saver"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Individuals must be citizens or permanent residents of Australia."}],"constraints":[],"features":[{"featureType":"UNLIMITED_TXNS"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts."},{"featureType":"OTHER","additionalInfo":"No fees for accessing your account online or via phone banking."},{"featureType":"OTHER","additionalInfo":"No monthly access fee."},{"featureType":"OTHER","additionalInfo":"No minimum balance."}],"additionalInformation":{"overviewUri":"https://www.hpbank.com.au/banking/essential-saver","termsUri":"https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf","eligibilityUri":"https://www.hpbank.com.au/banking/essential-saver","feesAndPricingUri":"https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"}},{"id":"3ea81fb6-ab26-4044-ab83-8de6fe73ab1d","name":"Pension Advantage account","description":"An account for members receiving a pension or allowance from Centrelink or Veteran Affairs.","url":"https://www.hpbank.com.au/banking/pension-advantage","lastUpdated":"2026-09-09T15:11:34.000+10:00","source":"https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/3ea81fb6-ab26-4044-ab83-8de6fe73ab1d","depositRates":[{"depositRateType":"VARIABLE","rate":"0.03","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pension Advantage account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"50000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.03","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pension Advantage account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"50000.01","rateApplicationMethod":"PER_TIER"}]}],"fees":[{"name":"CASH_ADVANCES_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.00"},"currency":"AUD","additionalInfo":"Visa Debit and Visa Credit card cash advances at other financial institutions in Australia and overseas. Individual bank branches may not offer this service and may charge additional fees (at cost)."},{"name":"ATM_WITHDRAWALS_OVERSEAS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.00"},"currency":"AUD"},{"name":"INTERNATIONAL_CONVERSION_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.029"},"currency":"AUD","additionalInfo":"2.90% of transaction value in $AUD collected by Cuscal Limited - 0.90% paid to Us; 1.00% retained by Cuscal; 1.00% paid to Visa International. Payable when you transact in a foreign currency using your Visa card either online or at a merchant point of sale (irrespective of where the transaction occurs; performed not in Australian Dollar; or overseas merchants transact in a foreign currency.)"},{"name":"TELE_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"13.00"},"currency":"AUD","additionalInfo":"Tele transfer within Australia to an account at another financial institution."}],"eligibility":[{"eligibilityType":"NATURAL_PERSON","additionalInfo":"You must be a member. Membership is open to citizens or permanent residents of Australia who are current or retired employees in the Australian health sector or are family members of members (i.e. shareholders) of the Bank.","additionalInfoUri":"https://www.hpbank.com.au/banking/pension-advantage"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Individuals must be citizens or permanent residents of Australia."},{"eligibilityType":"PENSION_RECIPIENT","additionalValue":"An account for members receiving a pension or allowance from Centrelink or Veteran Affairs.","additionalInfo":"You must be receiving a pension or allowance from Centrelink or Veteran Affairs and the pension or allowance must be paid directly into the account."}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts."},{"featureType":"ADDITIONAL_CARDS"},{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit with payWave"},{"featureType":"UNLIMITED_TXNS"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay","additionalInfoUri":"https://www.hpbank.com.au/ways-to-bank/mobile-wallet"},{"featureType":"DIGITAL_WALLET","additionalValue":"Google Pay","additionalInfoUri":"https://www.hpbank.com.au/ways-to-bank/mobile-wallet"},{"featureType":"DIGITAL_WALLET","additionalValue":"Samsung Pay","additionalInfoUri":"https://www.hpbank.com.au/ways-to-bank/mobile-wallet"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance."},{"featureType":"OTHER","additionalInfo":"Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.","additionalInfoUri":"https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf"}],"additionalInformation":{"overviewUri":"https://www.hpbank.com.au/banking/pension-advantage","termsUri":"https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf","eligibilityUri":"https://www.hpbank.com.au/banking/pension-advantage","feesAndPricingUri":"https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"}},{"id":"1e296861-5b3e-4288-a383-ac8723ffdf39","name":"Everyday Direct account","description":"Your everyday transaction account with VISA Debit access.","url":"https://www.hpbank.com.au/banking/everyday-direct","lastUpdated":"2026-09-09T15:08:05.000+10:00","source":"https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/1e296861-5b3e-4288-a383-ac8723ffdf39","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Everyday Direct account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"9999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Everyday Direct account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"10000.00","maximumValue":"19999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Everyday Direct account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Everyday Direct account_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"WHOLE_BALANCE"}]}],"fees":[{"name":"CASH_ADVANCES_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.00"},"currency":"AUD","additionalInfo":"Visa Debit and Visa Credit card cash advances at other financial institutions in Australia and overseas. Individual bank branches may not offer this service and may charge additional fees (at cost)."},{"name":"ATM_WITHDRAWALS_OVERSEAS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.00"},"currency":"AUD"},{"name":"INTERNATIONAL_CONVERSION_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.029"},"currency":"AUD","additionalInfo":"2.90% of transaction value in $AUD collected by Cuscal Limited - 0.90% paid to Us; 1.00% retained by Cuscal; 1.00% paid to Visa International. Payable when you transact in a foreign currency using your Visa card either online or at a merchant point of sale (irrespective of where the transaction occurs; performed not in Australian Dollar; or overseas merchants transact in a foreign currency.)"},{"name":"TELE_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"13.00"},"currency":"AUD","additionalInfo":"Tele transfer within Australia to an account at another financial institution."}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to citizens or permanent residents of Australia who are current or retired employees in the Australian health sector or are family members of members (i.e. shareholders) of the Bank.","additionalInfoUri":"https://www.hpbank.com.au/banking/everyday-direct"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Individuals must be citizens or permanent residents of Australia."}],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit with payWave"},{"featureType":"ADDITIONAL_CARDS"},{"featureType":"UNLIMITED_TXNS"},{"featureType":"OVERDRAFT","additionalInfo":"You can apply to have an overdraft (RediCredit) linked to the Everyday Direct account. All applications for credit are subject to responsible lending criteria and fees and charges apply. For full details visit our website.","additionalInfoUri":"https://www.hpbank.com.au/banking/everyday-direct"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay","additionalInfoUri":"https://www.hpbank.com.au/ways-to-bank/mobile-wallet"},{"featureType":"DIGITAL_WALLET","additionalValue":"Google Pay","additionalInfoUri":"https://www.hpbank.com.au/ways-to-bank/mobile-wallet"},{"featureType":"DIGITAL_WALLET","additionalValue":"Samsung Pay","additionalInfoUri":"https://www.hpbank.com.au/ways-to-bank/mobile-wallet"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance."},{"featureType":"OTHER","additionalInfo":"Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.","additionalInfoUri":"https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf"}],"additionalInformation":{"overviewUri":"https://www.hpbank.com.au/banking/everyday-direct","termsUri":"https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf","eligibilityUri":"https://www.hpbank.com.au/banking/everyday-direct","feesAndPricingUri":"https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"}},{"id":"ba995be0-6c0c-11f0-91fb-325096b39f47","name":"MOMENTUM SAVER","description":"The Momentum Saver account rewards savers with an ongoing bonus interest rate when you deposit a minimum of $100 and make no withdrawals during the month.","url":"https://www.hpbank.com.au/banking/momentum-saver","lastUpdated":"2026-08-26T11:26:22.000+10:00","source":"https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/ba995be0-6c0c-11f0-91fb-325096b39f47","depositRates":[{"depositRateType":"VARIABLE","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"MOMENTUM SAVER_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"250000.00","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"MIN_DEPOSIT_AMOUNT","additionalValue":"100.00"}]},{"depositRateType":"VARIABLE","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"MOMENTUM SAVER_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"250000.01","maximumValue":"500000.01","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"MIN_DEPOSIT_AMOUNT","additionalValue":"100.00"}]},{"depositRateType":"VARIABLE","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"MOMENTUM SAVER_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"500000.02","maximumValue":"1000000.01","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"MIN_DEPOSIT_AMOUNT","additionalValue":"100.00"}]},{"depositRateType":"VARIABLE","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"MOMENTUM SAVER_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"1000000.02","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"MIN_DEPOSIT_AMOUNT","additionalValue":"100.00"}]},{"depositRateType":"BONUS","rate":"0.05","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"MOMENTUM SAVER_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"250000.00","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"MIN_DEPOSIT_AMOUNT","additionalValue":"100.00"}],"additionalValue":"Bonus interest earned for each month you deposit a miniumum of $100, make no withdrawals during the month and the account has a credit balance at all times during the month."},{"depositRateType":"BONUS","rate":"0.049","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"MOMENTUM SAVER_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"250000.01","maximumValue":"500000.01","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"MIN_DEPOSIT_AMOUNT","additionalValue":"100.00"}],"additionalValue":"Bonus interest earned for each month you deposit a miniumum of $100, make no withdrawals during the month and the account has a credit balance at all times during the month."},{"depositRateType":"BONUS","rate":"0.049","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"MOMENTUM SAVER_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"500000.02","maximumValue":"1000000.01","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"MIN_DEPOSIT_AMOUNT","additionalValue":"100.00"}],"additionalValue":"Bonus interest earned for each month you deposit a miniumum of $100, make no withdrawals during the month and the account has a credit balance at all times during the month."},{"depositRateType":"BONUS","rate":"0.0465","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"MOMENTUM SAVER_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"1000000.02","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"MIN_DEPOSIT_AMOUNT","additionalValue":"100.00"}],"additionalValue":"Bonus interest earned for each month you deposit a miniumum of $100, make no withdrawals during the month and the account has a credit balance at all times during the month."}],"fees":[],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or retired employees of the Australian education sector or family members of members (i.e. shareholders) of the Bank.","additionalInfoUri":"https://www.hpbank.com.au/banking/momentum-saver"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Individuals must be citizens or permanent residents of Australia."}],"constraints":[],"features":[{"featureType":"OTHER","additionalInfo":"Bonus interest earned for each month you deposit a minimum of $100, make no withdrawals during the month and the account has a credit balance at all times during that month."},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts."},{"featureType":"OTHER","additionalInfo":"No fees for accessing your account online or via phone banking."},{"featureType":"OTHER","additionalInfo":"No monthly access fee."},{"featureType":"OTHER","additionalInfo":"No minimum balances."}],"additionalInformation":{"overviewUri":"https://www.hpbank.com.au/banking/momentum-saver","termsUri":"https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf","eligibilityUri":"https://www.hpbank.com.au/banking/momentum-saver","feesAndPricingUri":"https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"}},{"id":"1fcd6386-92f5-411a-87b7-2b0d67aab1ba","name":"Edvest Cash Management account","description":"Exclusive to Edvest members, our higher interest rates make your money work harder for you.","url":"https://www.hpbank.com.au/banking/edvest-cash-management-account","lastUpdated":"2026-07-13T17:17:40.000+10:00","source":"https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/1fcd6386-92f5-411a-87b7-2b0d67aab1ba","depositRates":[{"depositRateType":"VARIABLE","rate":"0.01","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Edvest Cash Management account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"1999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.01","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Edvest Cash Management account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"2000.00","maximumValue":"4999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.01","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Edvest Cash Management account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"9999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.01","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Edvest Cash Management account_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"10000.00","maximumValue":"19999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.01","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Edvest Cash Management account_Tier_5","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.01","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Edvest Cash Management account_Tier_6","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"WHOLE_BALANCE"}]}],"fees":[{"name":"EDVEST_MEMBERSHIP","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalValue":"P1Y","additionalInfo":"An annual charge debited from the Everyday Direct account on each Edvest membership in January and on a pro-rata basis for new Edvest members."}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"This product is only available to members who are 50 years or older and part of our Edvest benefit scheme and currently hold an Everyday Direct or Bill Paying account with us.","additionalInfoUri":"https://www.hpbank.com.au/banking/edvest-cash-management-account"},{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to citizens or permanent residents of Australia who are current or retired employees in the Australian health sector or are family members of members (i.e. shareholders) of the Bank.","additionalInfoUri":"https://www.hpbank.com.au/banking/edvest-cash-management-account"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Individuals must be citizens or permanent residents of Australia."}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts."},{"featureType":"OTHER","additionalInfo":"Higher interest rate for balances $2,000 and over."},{"featureType":"OTHER","additionalInfo":"No minimum balance."}],"additionalInformation":{"overviewUri":"https://www.hpbank.com.au/banking/edvest-cash-management-account","termsUri":"https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf","eligibilityUri":"https://www.hpbank.com.au/banking/edvest-cash-management-account","feesAndPricingUri":"https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"}},{"id":"ae92e68a-4104-4894-ba54-408c590a200b","name":"Starter Saver account","description":"Starter Saver Account is a high interest savings account for Under 30 year olds that rewards savings.","url":"https://www.hpbank.com.au/banking/starter-saver","lastUpdated":"2026-06-30T10:18:30.000+10:00","source":"https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/ae92e68a-4104-4894-ba54-408c590a200b","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0525","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Starter Saver account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"50000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"The product pays members a higher rate of interest on balances up to $20,000.00, with a stepped down rate for balances $20,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."},{"depositRateType":"VARIABLE","rate":"0.0425","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Starter Saver account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"50000.01","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"The product pays members a higher rate of interest on balances up to $20,000.00, with a stepped down rate for balances $20,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."}],"fees":[],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to citizens or permanent residents of Australia who are current or retired employees in the Australian health sector or are family members of members (i.e. shareholders) of the Bank.","additionalInfoUri":"https://www.hpbank.com.au/banking/starter-saver"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Individuals must be citizens or permanent residents of Australia."},{"eligibilityType":"MAX_AGE","additionalValue":"29","additionalInfo":"This Product is only available for members aged under 30 years and Students"}],"constraints":[],"features":[{"featureType":"OTHER","additionalInfo":"The product pays members a higher rate of interest on balances up to $50,000.00, with a stepped down rate for balances $50,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts."},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.hpbank.com.au/banking/starter-saver","termsUri":"https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf","eligibilityUri":"https://www.hpbank.com.au/banking/starter-saver","feesAndPricingUri":"https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"}}]}
+{
+  "name": "Health Professionals Bank",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "1e296861-5b3e-4288-a383-ac8723ffdf39",
+      "name": "Everyday Direct account",
+      "description": "Your everyday transaction account with VISA Debit access.",
+      "url": "https://www.hpbank.com.au/banking/everyday-direct",
+      "lastUpdated": "2026-09-09T15:08:05.000+10:00",
+      "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/1e296861-5b3e-4288-a383-ac8723ffdf39",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Everyday Direct account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "9999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Everyday Direct account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "10000.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Everyday Direct account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Everyday Direct account_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "CASH_ADVANCES_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Visa Debit and Visa Credit card cash advances at other financial institutions in Australia and overseas. Individual bank branches may not offer this service and may charge additional fees (at cost)."
+        },
+        {
+          "name": "ATM_WITHDRAWALS_OVERSEAS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "INTERNATIONAL_CONVERSION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.029"
+          },
+          "currency": "AUD",
+          "additionalInfo": "2.90% of transaction value in $AUD collected by Cuscal Limited - 0.90% paid to Us; 1.00% retained by Cuscal; 1.00% paid to Visa International. Payable when you transact in a foreign currency using your Visa card either online or at a merchant point of sale (irrespective of where the transaction occurs; performed not in Australian Dollar; or overseas merchants transact in a foreign currency.)"
+        },
+        {
+          "name": "TELE_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "13.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Tele transfer within Australia to an account at another financial institution."
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to citizens or permanent residents of Australia who are current or retired employees in the Australian health sector or are family members of members (i.e. shareholders) of the Bank.",
+          "additionalInfoUri": "https://www.hpbank.com.au/banking/everyday-direct"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit with payWave"
+        },
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "OVERDRAFT",
+          "additionalInfo": "You can apply to have an overdraft (RediCredit) linked to the Everyday Direct account. All applications for credit are subject to responsible lending criteria and fees and charges apply. For full details visit our website.",
+          "additionalInfoUri": "https://www.hpbank.com.au/banking/everyday-direct"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay",
+          "additionalInfoUri": "https://www.hpbank.com.au/ways-to-bank/mobile-wallet"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfoUri": "https://www.hpbank.com.au/ways-to-bank/mobile-wallet"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Samsung Pay",
+          "additionalInfoUri": "https://www.hpbank.com.au/ways-to-bank/mobile-wallet"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.",
+          "additionalInfoUri": "https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.hpbank.com.au/banking/everyday-direct",
+        "termsUri": "https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf",
+        "eligibilityUri": "https://www.hpbank.com.au/banking/everyday-direct",
+        "feesAndPricingUri": "https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"
+      }
+    },
+    {
+      "id": "1fcd6386-92f5-411a-87b7-2b0d67aab1ba",
+      "name": "Edvest Cash Management account",
+      "description": "Exclusive to Edvest members, our higher interest rates make your money work harder for you.",
+      "url": "https://www.hpbank.com.au/banking/edvest-cash-management-account",
+      "lastUpdated": "2026-07-13T17:17:40.000+10:00",
+      "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/1fcd6386-92f5-411a-87b7-2b0d67aab1ba",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.01",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Edvest Cash Management account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "1999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.01",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Edvest Cash Management account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "2000.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.01",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Edvest Cash Management account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "9999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.01",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Edvest Cash Management account_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "10000.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.01",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Edvest Cash Management account_Tier_5",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.01",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Edvest Cash Management account_Tier_6",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "EDVEST_MEMBERSHIP",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "P1Y",
+          "additionalInfo": "An annual charge debited from the Everyday Direct account on each Edvest membership in January and on a pro-rata basis for new Edvest members."
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "This product is only available to members who are 50 years or older and part of our Edvest benefit scheme and currently hold an Everyday Direct or Bill Paying account with us.",
+          "additionalInfoUri": "https://www.hpbank.com.au/banking/edvest-cash-management-account"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to citizens or permanent residents of Australia who are current or retired employees in the Australian health sector or are family members of members (i.e. shareholders) of the Bank.",
+          "additionalInfoUri": "https://www.hpbank.com.au/banking/edvest-cash-management-account"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Higher interest rate for balances $2,000 and over."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No minimum balance."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.hpbank.com.au/banking/edvest-cash-management-account",
+        "termsUri": "https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf",
+        "eligibilityUri": "https://www.hpbank.com.au/banking/edvest-cash-management-account",
+        "feesAndPricingUri": "https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"
+      }
+    },
+    {
+      "id": "3ea81fb6-ab26-4044-ab83-8de6fe73ab1d",
+      "name": "Pension Advantage account",
+      "description": "An account for members receiving a pension or allowance from Centrelink or Veteran Affairs.",
+      "url": "https://www.hpbank.com.au/banking/pension-advantage",
+      "lastUpdated": "2026-09-09T15:11:34.000+10:00",
+      "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/3ea81fb6-ab26-4044-ab83-8de6fe73ab1d",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.03",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pension Advantage account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.03",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pension Advantage account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "CASH_ADVANCES_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Visa Debit and Visa Credit card cash advances at other financial institutions in Australia and overseas. Individual bank branches may not offer this service and may charge additional fees (at cost)."
+        },
+        {
+          "name": "ATM_WITHDRAWALS_OVERSEAS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "INTERNATIONAL_CONVERSION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.029"
+          },
+          "currency": "AUD",
+          "additionalInfo": "2.90% of transaction value in $AUD collected by Cuscal Limited - 0.90% paid to Us; 1.00% retained by Cuscal; 1.00% paid to Visa International. Payable when you transact in a foreign currency using your Visa card either online or at a merchant point of sale (irrespective of where the transaction occurs; performed not in Australian Dollar; or overseas merchants transact in a foreign currency.)"
+        },
+        {
+          "name": "TELE_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "13.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Tele transfer within Australia to an account at another financial institution."
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON",
+          "additionalInfo": "You must be a member. Membership is open to citizens or permanent residents of Australia who are current or retired employees in the Australian health sector or are family members of members (i.e. shareholders) of the Bank.",
+          "additionalInfoUri": "https://www.hpbank.com.au/banking/pension-advantage"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+        },
+        {
+          "eligibilityType": "PENSION_RECIPIENT",
+          "additionalValue": "An account for members receiving a pension or allowance from Centrelink or Veteran Affairs.",
+          "additionalInfo": "You must be receiving a pension or allowance from Centrelink or Veteran Affairs and the pension or allowance must be paid directly into the account."
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts."
+        },
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit with payWave"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay",
+          "additionalInfoUri": "https://www.hpbank.com.au/ways-to-bank/mobile-wallet"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfoUri": "https://www.hpbank.com.au/ways-to-bank/mobile-wallet"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Samsung Pay",
+          "additionalInfoUri": "https://www.hpbank.com.au/ways-to-bank/mobile-wallet"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.",
+          "additionalInfoUri": "https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.hpbank.com.au/banking/pension-advantage",
+        "termsUri": "https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf",
+        "eligibilityUri": "https://www.hpbank.com.au/banking/pension-advantage",
+        "feesAndPricingUri": "https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"
+      }
+    },
+    {
+      "id": "ae92e68a-4104-4894-ba54-408c590a200b",
+      "name": "Starter Saver account",
+      "description": "Starter Saver Account is a high interest savings account for Under 30 year olds that rewards savings.",
+      "url": "https://www.hpbank.com.au/banking/starter-saver",
+      "lastUpdated": "2026-06-30T10:18:30.000+10:00",
+      "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/ae92e68a-4104-4894-ba54-408c590a200b",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0525",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Starter Saver account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "The product pays members a higher rate of interest on balances up to $20,000.00, with a stepped down rate for balances $20,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0425",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Starter Saver account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "The product pays members a higher rate of interest on balances up to $20,000.00, with a stepped down rate for balances $20,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to citizens or permanent residents of Australia who are current or retired employees in the Australian health sector or are family members of members (i.e. shareholders) of the Bank.",
+          "additionalInfoUri": "https://www.hpbank.com.au/banking/starter-saver"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+        },
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "29",
+          "additionalInfo": "This Product is only available for members aged under 30 years and Students"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "The product pays members a higher rate of interest on balances up to $50,000.00, with a stepped down rate for balances $50,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts."
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.hpbank.com.au/banking/starter-saver",
+        "termsUri": "https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf",
+        "eligibilityUri": "https://www.hpbank.com.au/banking/starter-saver",
+        "feesAndPricingUri": "https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"
+      }
+    },
+    {
+      "id": "ba995be0-6c0c-11f0-91fb-325096b39f47",
+      "name": "MOMENTUM SAVER",
+      "description": "The Momentum Saver account rewards savers with an ongoing bonus interest rate when you deposit a minimum of $100 and make no withdrawals during the month.",
+      "url": "https://www.hpbank.com.au/banking/momentum-saver",
+      "lastUpdated": "2026-08-26T11:26:22.000+10:00",
+      "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/ba995be0-6c0c-11f0-91fb-325096b39f47",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "MOMENTUM SAVER_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "250000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "100.00"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "MOMENTUM SAVER_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "250000.01",
+              "maximumValue": "500000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "100.00"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "MOMENTUM SAVER_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "500000.02",
+              "maximumValue": "1000000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "100.00"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "MOMENTUM SAVER_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1000000.02",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "100.00"
+            }
+          ]
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.05",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "MOMENTUM SAVER_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "250000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "100.00"
+            }
+          ],
+          "additionalValue": "Bonus interest earned for each month you deposit a miniumum of $100, make no withdrawals during the month and the account has a credit balance at all times during the month."
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.049",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "MOMENTUM SAVER_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "250000.01",
+              "maximumValue": "500000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "100.00"
+            }
+          ],
+          "additionalValue": "Bonus interest earned for each month you deposit a miniumum of $100, make no withdrawals during the month and the account has a credit balance at all times during the month."
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.049",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "MOMENTUM SAVER_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "500000.02",
+              "maximumValue": "1000000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "100.00"
+            }
+          ],
+          "additionalValue": "Bonus interest earned for each month you deposit a miniumum of $100, make no withdrawals during the month and the account has a credit balance at all times during the month."
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0465",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "MOMENTUM SAVER_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1000000.02",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "100.00"
+            }
+          ],
+          "additionalValue": "Bonus interest earned for each month you deposit a miniumum of $100, make no withdrawals during the month and the account has a credit balance at all times during the month."
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or retired employees of the Australian education sector or family members of members (i.e. shareholders) of the Bank.",
+          "additionalInfoUri": "https://www.hpbank.com.au/banking/momentum-saver"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Bonus interest earned for each month you deposit a minimum of $100, make no withdrawals during the month and the account has a credit balance at all times during that month."
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No fees for accessing your account online or via phone banking."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No monthly access fee."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No minimum balances."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.hpbank.com.au/banking/momentum-saver",
+        "termsUri": "https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf",
+        "eligibilityUri": "https://www.hpbank.com.au/banking/momentum-saver",
+        "feesAndPricingUri": "https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"
+      }
+    },
+    {
+      "id": "f79ad2ac-29f3-4580-b847-118566c38adf",
+      "name": "Essential Saver account",
+      "description": "An interest bearing online savings account with a tiered interest rate structure",
+      "url": "https://www.hpbank.com.au/banking/essential-saver",
+      "lastUpdated": "2026-09-16T12:20:47.000+10:00",
+      "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/f79ad2ac-29f3-4580-b847-118566c38adf",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.05",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Essential Saver account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "250000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.05",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Essential Saver account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "250000.01",
+              "maximumValue": "500000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.05",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Essential Saver account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "500000.01",
+              "maximumValue": "1000000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.03",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Essential Saver account_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1000000.01",
+              "maximumValue": "5000000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.03",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Essential Saver account_Tier_5",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or retired employees of the Australian education sector or family members of members (i.e. shareholders) of the Bank.",
+          "additionalInfoUri": "https://www.hpbank.com.au/banking/essential-saver"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No fees for accessing your account online or via phone banking."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No monthly access fee."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No minimum balance."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.hpbank.com.au/banking/essential-saver",
+        "termsUri": "https://www.hpbank.com.au/content/dam/documents/collateral/conditions-of-use.pdf",
+        "eligibilityUri": "https://www.hpbank.com.au/banking/essential-saver",
+        "feesAndPricingUri": "https://www.hpbank.com.au/content/dam/documents/collateral/fees-and-charges.pdf"
+      }
+    }
+  ]
+}

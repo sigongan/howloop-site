@@ -1,1 +1,2438 @@
-{"name":"QBANK","checkedAt":"2026-09-17T21:42:11.282Z","status":"available","products":[{"id":"S19_Intro","name":"Intro Saver","description":"Earn Interest with unlimited transactions","url":"https://www.qbank.com.au/banking-accounts/savings-accounts/intro-saver/","lastUpdated":"2026-09-17T13:23:51.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S19_Intro","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0535","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Intro Saver_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"250000.00","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"NEW_ACCOUNTS","additionalInfo":"New to bank funds are defined as funds from an external account. Internal QBANK to QBANK transfers will not be eligible.","additionalInfoUri":"https://www.qbank.com.au/banking-accounts/savings-accounts/intro-saver/"}]},{"depositRateType":"VARIABLE","rate":"0.0245","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Intro Saver_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"250000.01","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"NEW_ACCOUNTS","additionalInfo":"New to bank funds are defined as funds from an external account. Internal QBANK to QBANK transfers will not be eligible.","additionalInfoUri":"https://www.qbank.com.au/banking-accounts/savings-accounts/intro-saver/"}]}],"fees":[{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"},{"name":"RECALL_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to citizens or permanent residents of Australia who are current or former emplayees or volunteers in the Australian emergency services sector or are family members of members (i.e. shareholders) of the Bank.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"}],"constraints":[],"features":[{"featureType":"UNLIMITED_TXNS","additionalInfo":"Unlimited free internet transfers"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance.","additionalInfoUri":"https://www.qbank.com.au/terms-conditions"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.qbank.com.au/banking-accounts/savings-accounts/intro-saver/","termsUri":"https://www.qbank.com.au/terms-conditions/","eligibilityUri":"https://www.qbank.com.au/who-can-join/","feesAndPricingUri":"https://www.qbank.com.au/rates-fees/"}},{"id":"S70_Bonus","name":"Bonus Saver","description":"Be rewarded with bonus interest for regular saving","url":"https://www.qbank.com.au/products/accounts/savings-accounts/bonus-saver/","lastUpdated":"2026-06-01T08:08:42.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S70_Bonus","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Bonus Saver_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"1000000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Bonus Saver_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"1000000.01","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"BONUS","rate":"0.0494","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Bonus Saver_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"1000000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"BONUS","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Bonus Saver_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"1000000.01","rateApplicationMethod":"PER_TIER"}]}],"fees":[{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"}],"constraints":[],"features":[{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"OTHER","additionalInfo":"Bonus Interest paid if you deposit $200 or more in a month and no withdrawals."}],"additionalInformation":{"overviewUri":"https://www.qbank.com.au/products/accounts/savings-accounts/bonus-saver/","termsUri":"https://www.qbank.com.au/terms-conditions/","eligibilityUri":"https://www.qbank.com.au/who-can-join/","feesAndPricingUri":"https://www.qbank.com.au/rates-fees/"}},{"id":"S12_Pension","name":"Pension Plus Account","description":"A high interest account for retired members or members with an eligible pension card.","url":"https://www.qbank.com.au/products/accounts/retirement-accounts","lastUpdated":"2026-05-22T07:58:21.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S12_Pension","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pension Plus Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.0145","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pension Plus Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"49999.99","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.0285","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pension Plus Account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"PER_TIER"}]}],"fees":[{"name":"ACCOUNT_AUDIT_CONFIRMATION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"ATM_DISPUTE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"27.50"},"currency":"AUD"},{"name":"BANK@POST_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD"},{"name":"BANK_CHEQUE_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"13.00"},"currency":"AUD"},{"name":"CASH_ADVANCE_____AUSTRALIA_&_INTERNATIONAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"CHEQUE_DEPOSIT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfo":"Special Clearance"},{"name":"CHEQUE_DISHONOURS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.50"},"currency":"AUD","additionalInfo":"Cheque Deposit subsequently dishonoured through Bank@Post Australia Post may charge a fee"},{"name":"COPY_OF_PAID_CORPORATE_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.50"},"currency":"AUD"},{"name":"COPY_OF_PERSONAL_CHEQUE/VOUCHER_30_TO_90_DAYS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"16.50"},"currency":"AUD"},{"name":"COPY_OF_PERSONAL_CHEQUE/VOUCHER_OVER_90_DAYS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"33.00"},"currency":"AUD"},{"name":"COPY_OF_PERSONAL_CHEQUE/VOUCHER_UNDER_30_DAYS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.00"},"currency":"AUD"},{"name":"COPY_OF_VISA_TRANSACTION_VOUCHER","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"CORPORATE_CHEQUE_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"currency":"AUD"},{"name":"DEBIT_EXTERNAL_ACCOUNT_REJECTION_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"DIRECT_DEBIT_DISHONOURS/NON_PAYMENT","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.50"},"currency":"AUD"},{"name":"DIRECT_DEBIT_INVESTIGATION","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD"},{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"},{"name":"EMERGENCY_VISA_CASH_OR_CARD_(OVERSEAS)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"175.00"},"currency":"AUD","additionalInfo":"$175.00 USD"},{"name":"FOREIGN_CASH_DEPOSIT_(PER_CURRENCY)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"8.00"},"currency":"AUD"},{"name":"FOREIGN_CHEQUE_DEPOSIT","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"INTERNATIONAL_ATM_TRANSACTION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"OVERDRAWN_SAVINGS_ACCOUNTS","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Debit interest is charged if the balance of your Savings Accounts are overdrawn where an Overdraft limit exists.Unauthorised Overdrawn Savings and Overlimit Overdraft Fee"},{"name":"PURCHASE_FOREIGN_CASH_(MINIMUM_ORDER_$250_AU)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.00"},"currency":"AUD","additionalInfo":"Purchase Foreign Cash (minimum order $250 AU)"},{"name":"RE-PURCHASE_FOREIGN_CASH_(CANCELLATION_OF_PURCHASE_ORDER)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"8.00"},"currency":"AUD"},{"name":"RECALL_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"REPLACEMENT_OF_CUE_&_VISA_CARD","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Under 18 y/o and renewal cards exempt"},{"name":"REPLACEMENT_VISA_WRISTBAND_(INCLUDING_CHIP)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"STATEMENTS_/_VOUCHER_SEARCHES","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"No charge for current transaction list.Reissue more than 6 months.$5 per page"},{"name":"STOP_PAYMENT_OF_CORPORATE_CHEQUES","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"TELEGRAPHIC_TRANSFERS_OVERSEAS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"},{"name":"TELEGRAPHIC_TRANSFERS_WITHIN_AUSTRALIA","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"TRACE_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"TRACE_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"TRACE_OF_PAID_PERSONAL_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"22.00"},"currency":"AUD"},{"name":"TRACE_OF_PAID_CORPORATE_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"17.50"},"currency":"AUD"},{"name":"TRAVELLERS_CHEQUE_DEPOSIT_(PER_CURRENCY)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"8.00"},"currency":"AUD"},{"name":"VISA_CARD_ADMIN_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD","additionalInfo":"Visa Debit Card per account and waived for loan balances over $50,000 or savings balances over $20,000"},{"name":"VISA_CHARGEBACK_TRANSACTION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"VISA_INTERNATIONAL_TRANSACTION_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0365","amountRange":{}},"currency":"AUD","additionalInfo":"International Transaction Fee transaction when converted to $AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"}],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit with payWave"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay","additionalInfoUri":"https://www.qbank.com.au/ways-to-bank/applepay"},{"featureType":"DIGITAL_WALLET","additionalValue":"Google Pay","additionalInfoUri":"https://www.qbank.com.au/ways-to-bank/googlepay"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"OTHER","additionalInfo":"High Rate of Interest with easy access to your money"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"OTHER","additionalInfo":"Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.","additionalInfoUri":"https://www.qbank.com.au/terms-conditions"},{"featureType":"UNLIMITED_TXNS","additionalInfoUri":"https://www.qbank.com.au/products/accounts/retirement-accounts"},{"featureType":"DIGITAL_BANKING"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwiese exceed your transasction account's available balance."},{"featureType":"ADDITIONAL_CARDS"}],"additionalInformation":{"overviewUri":"https://www.qbank.com.au/products/accounts/retirement-accounts","termsUri":"https://www.qbank.com.au/terms-conditions","eligibilityUri":"https://www.qbank.com.au/who-can-join","feesAndPricingUri":"https://www.qbank.com.au/rates-fees"}},{"id":"S8_Xmas","name":"Christmas Club","description":"Lock away your savings to relax and enjoy the festive season","url":"https://www.qbank.com.au/products/accounts/savings-accounts/christmas-club-account/","lastUpdated":"2026-05-22T07:56:33.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S8_Xmas","depositRates":[{"depositRateType":"VARIABLE","rate":"0.024","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[{"name":"CHRISTMAS_CLUB_WITHDRAWAL_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Charged on all withdrawals and transfers from the account between 1 January and 31 October."},{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"},{"name":"RECALL_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"}],"constraints":[],"features":[{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"UNLIMITED_TXNS","additionalInfo":"$5 fee on each withdrawal and transfer from this account bewteen 1 January and 31 October each year","additionalInfoUri":"https://www.qbank.com.au/products/accounts/savings-accounts/christmas-club-account"},{"featureType":"BONUS_REWARDS","additionalInfo":"Fee free withdrawals and transfers between 1 November and 31 December","additionalInfoUri":"https://www.qbank.com.au/terms-conditions"}],"additionalInformation":{"overviewUri":"https://www.qbank.com.au/products/accounts/savings-accounts/christmas-club-account/","termsUri":"https://www.qbank.com.au/terms-conditions/","eligibilityUri":"https://www.qbank.com.au/who-can-join/","feesAndPricingUri":"https://www.qbank.com.au/rates-fees/"}},{"id":"S18_Teen_Netlink","name":"Teen Netlink Direct Savings","description":"An online savings account for teens","url":"https://www.qbank.com.au/products/accounts/junior-and-teen-accounts/teen-netlink-direct-savings","lastUpdated":"2026-05-22T07:55:17.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S18_Teen_Netlink","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0285","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"}],"constraints":[],"features":[{"featureType":"UNLIMITED_TXNS"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwiese exceed your transasction account's available balance."}],"additionalInformation":{"overviewUri":"https://www.qbank.com.au/products/accounts/junior-and-teen-accounts/teen-netlink-direct-savings","termsUri":"https://www.qbank.com.au/terms-conditions","eligibilityUri":"https://www.qbank.com.au/who-can-join","feesAndPricingUri":"https://www.qbank.com.au/rates-fees"}},{"id":"S7_Junior","name":"Junior Saver","description":"Exclusive account for children 12 and under","url":"https://qbank.com.au/banking-accounts/savings-accounts/junior-saver/","lastUpdated":"2026-05-22T07:54:28.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S7_Junior","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0245","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"},{"eligibilityType":"MAX_AGE","additionalValue":"12","additionalInfo":"must be 12 and under"}],"constraints":[],"features":[{"featureType":"UNLIMITED_TXNS"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwiese exceed your transasction account's available balance."}],"additionalInformation":{"overviewUri":"https://qbank.com.au/banking-accounts/savings-accounts/junior-saver/","termsUri":"https://www.qbank.com.au/terms-conditions/","eligibilityUri":"https://www.qbank.com.au/who-can-join/","feesAndPricingUri":"https://www.qbank.com.au/rates-fees/"}},{"id":"S20_Netlink","name":"Netlink","description":"Earn Interest with unlimited transactions","url":"https://www.qbank.com.au/products/accounts/savings-accounts/netlink-direct/","lastUpdated":"2026-05-22T07:53:29.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S20_Netlink","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0245","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"},{"name":"RECALL_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to citizens or permanent residents of Australia who are current or former emplayees or volunteers in the Australian emergency services sector or are family members of members (i.e. shareholders) of the Bank.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"}],"constraints":[],"features":[{"featureType":"UNLIMITED_TXNS","additionalInfo":"Unlimited free internet transfers"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance.","additionalInfoUri":"https://www.qbank.com.au/terms-conditions"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.qbank.com.au/products/accounts/savings-accounts/netlink-direct/","termsUri":"https://www.qbank.com.au/terms-conditions/","eligibilityUri":"https://www.qbank.com.au/who-can-join/","feesAndPricingUri":"https://www.qbank.com.au/rates-fees/"}},{"id":"S6_Everyday","name":"Everyday Plus","description":"Your everyday transaction account with Visa Debit access","url":"https://www.qbank.com.au/products/accounts/transaction-accounts/everyday-plus-transaction-account/","lastUpdated":"2026-05-07T10:13:00.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S6_Everyday","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Everyday Plus_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"19999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Everyday Plus_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Everyday Plus_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"WHOLE_BALANCE"}]}],"fees":[{"name":"ACCOUNT_AUDIT_CONFIRMATION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"ACCOUNT_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.50"},"currency":"AUD","additionalInfo":"Waive if monthly deposit $1500. Full time student.","additionalInfoUri":"https://www.qbank.com.au/rates-fees"},{"name":"ATM_DISPUTE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"27.50"},"currency":"AUD"},{"name":"BANK@POST_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD"},{"name":"BANK_CHEQUE_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"13.00"},"currency":"AUD"},{"name":"CASH_ADVANCE_____AUSTRALIA_&_INTERNATIONAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"CHEQUE_DEPOSIT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfo":"Special Clearance"},{"name":"CHEQUE_DISHONOURS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.50"},"currency":"AUD","additionalInfo":"Cheque Deposit subsequently dishonoured through Bank@Post Australia Post may charge a fee"},{"name":"COPY_OF_PAID_CORPORATE_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.50"},"currency":"AUD"},{"name":"COPY_OF_PERSONAL_CHEQUE/VOUCHER_30_TO_90_DAYS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"16.50"},"currency":"AUD"},{"name":"COPY_OF_PERSONAL_CHEQUE/VOUCHER_OVER_90_DAYS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"33.00"},"currency":"AUD"},{"name":"COPY_OF_PERSONAL_CHEQUE/VOUCHER_UNDER_30_DAYS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.00"},"currency":"AUD"},{"name":"COPY_OF_VISA_TRANSACTION_VOUCHER","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"CORPORATE_CHEQUE_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"currency":"AUD"},{"name":"DEBIT_EXTERNAL_ACCOUNT_REJECTION_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"DIRECT_DEBIT_DISHONOURS/NON_PAYMENT","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.50"},"currency":"AUD"},{"name":"DIRECT_DEBIT_INVESTIGATION","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD"},{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"},{"name":"EMERGENCY_VISA_CASH_OR_CARD_(OVERSEAS)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"175.00"},"currency":"AUD","additionalInfo":"$175.00 USD"},{"name":"FOREIGN_CASH_DEPOSIT_(PER_CURRENCY)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"8.00"},"currency":"AUD"},{"name":"FOREIGN_CHEQUE_DEPOSIT","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"INTERNATIONAL_ATM_TRANSACTION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"OVERDRAWN_SAVINGS_ACCOUNTS","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Debit interest is charged if the balance of your Savings Accounts are overdrawn where an Overdraft limit exists.Unauthorised Overdrawn Savings and Overlimit Overdraft Fee"},{"name":"PURCHASE_FOREIGN_CASH_(MINIMUM_ORDER_$250_AU)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.00"},"currency":"AUD","additionalInfo":"Purchase Foreign Cash (minimum order $250 AU)"},{"name":"RE-PURCHASE_FOREIGN_CASH_(CANCELLATION_OF_PURCHASE_ORDER)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"8.00"},"currency":"AUD"},{"name":"RECALL_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"REPLACEMENT_OF_CUE_&_VISA_CARD","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Under 18 y/o and renewal cards exempt"},{"name":"REPLACEMENT_VISA_WRISTBAND_(INCLUDING_CHIP)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"STATEMENTS_/_VOUCHER_SEARCHES","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"No charge for current transaction list.Reissue more than 6 months.$5 per page"},{"name":"STOP_PAYMENT_OF_CORPORATE_CHEQUES","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"TELEGRAPHIC_TRANSFERS_OVERSEAS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"},{"name":"TELEGRAPHIC_TRANSFERS_WITHIN_AUSTRALIA","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"TRACE_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"TRACE_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"TRACE_OF_PAID_PERSONAL_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"22.00"},"currency":"AUD"},{"name":"TRACE_OF_PAID_CORPORATE_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"17.50"},"currency":"AUD"},{"name":"TRAVELLERS_CHEQUE_DEPOSIT_(PER_CURRENCY)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"8.00"},"currency":"AUD"},{"name":"VISA_CARD_ADMIN_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD","additionalInfo":"Visa Debit Card per account and waived for loan balances over $50,000 or savings balances over $20,000"},{"name":"VISA_CHARGEBACK_TRANSACTION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"VISA_INTERNATIONAL_TRANSACTION_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0365","amountRange":{}},"currency":"AUD","additionalInfo":"International Transaction Fee transaction when converted to $AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"}],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit with payWave"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay","additionalInfoUri":"https://www.qbank.com.au/ways-to-bank/applepay"},{"featureType":"DIGITAL_WALLET","additionalValue":"Google Pay","additionalInfoUri":"https://www.qbank.com.au/ways-to-bank/googlepay"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance."},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"OTHER","additionalInfo":"Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.","additionalInfoUri":"https://www.qbank.com.au/terms-conditions"},{"featureType":"UNLIMITED_TXNS","additionalInfo":"Monthly credit $1500","additionalInfoUri":"https://www.qbank.com.au/products/accounts/transaction-accounts/everyday-plus-transaction-account"},{"featureType":"OTHER","additionalInfo":"Wearables","additionalInfoUri":"https://www.qbank.com.au/ways-to-bank/wearables"},{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.qbank.com.au/products/accounts/transaction-accounts/everyday-plus-transaction-account/","termsUri":"https://www.qbank.com.au/terms-conditions/","eligibilityUri":"https://www.qbank.com.au/who-can-join/","feesAndPricingUri":"https://www.qbank.com.au/rates-fees/"}},{"id":"S1_Oncall","name":"On Call","description":"Transactional account with flexible access options","url":"https://www.qbank.com.au/products/accounts/transaction-accounts/on-call-transaction-account","lastUpdated":"2025-10-16T15:38:34.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S1_Oncall","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"On Call_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"19999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"On Call_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}]},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"On Call_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"WHOLE_BALANCE"}]}],"fees":[{"name":"ACCOUNT_AUDIT_CONFIRMATION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"ATM_DISPUTE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"27.50"},"currency":"AUD"},{"name":"BANK@POST_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD"},{"name":"BANK_CHEQUE_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"13.00"},"currency":"AUD"},{"name":"CASH_ADVANCE_____AUSTRALIA_&_INTERNATIONAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"CHEQUE_DEPOSIT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfo":"Special Clearance"},{"name":"CHEQUE_DISHONOURS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.50"},"currency":"AUD","additionalInfo":"Cheque Deposit subsequently dishonoured through Bank@Post Australia Post may charge a fee"},{"name":"COPY_OF_PAID_CORPORATE_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.50"},"currency":"AUD"},{"name":"COPY_OF_PERSONAL_CHEQUE/VOUCHER_30_TO_90_DAYS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"16.50"},"currency":"AUD"},{"name":"COPY_OF_PERSONAL_CHEQUE/VOUCHER_OVER_90_DAYS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"33.00"},"currency":"AUD"},{"name":"COPY_OF_PERSONAL_CHEQUE/VOUCHER_UNDER_30_DAYS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.00"},"currency":"AUD"},{"name":"COPY_OF_VISA_TRANSACTION_VOUCHER","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"CORPORATE_CHEQUE_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"currency":"AUD"},{"name":"DEBIT_EXTERNAL_ACCOUNT_REJECTION_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"DIRECT_DEBITS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfo":"5 free then $0.50 per transaction per month"},{"name":"DIRECT_DEBIT_DISHONOURS/NON_PAYMENT","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.50"},"currency":"AUD"},{"name":"DIRECT_DEBIT_INVESTIGATION","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD"},{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"},{"name":"EFTPOS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"currency":"AUD","additionalInfo":"12 Free then $1 per transaction a month"},{"name":"EMERGENCY_VISA_CASH_OR_CARD_(OVERSEAS)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"175.00"},"currency":"AUD","additionalInfo":"$175.00 USD"},{"name":"EXTERNAL_TRANSFERS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions to other financial institutions"},{"name":"FOREIGN_CASH_DEPOSIT_(PER_CURRENCY)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"8.00"},"currency":"AUD"},{"name":"FOREIGN_CHEQUE_DEPOSIT","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"INTERNATIONAL_ATM_TRANSACTION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"OVERDRAWN_SAVINGS_ACCOUNTS","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Debit interest is charged if the balance of your Savings Accounts are overdrawn where an Overdraft limit exists.Unauthorised Overdrawn Savings and Overlimit Overdraft Fee"},{"name":"PERSONAL_CHEQUES","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"currency":"AUD"},{"name":"PURCHASE_FOREIGN_CASH_(MINIMUM_ORDER_$250_AU)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.00"},"currency":"AUD","additionalInfo":"Purchase Foreign Cash (minimum order $250 AU)"},{"name":"RE-PURCHASE_FOREIGN_CASH_(CANCELLATION_OF_PURCHASE_ORDER)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"8.00"},"currency":"AUD"},{"name":"RECALL_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"REPLACEMENT_OF_CUE_&_VISA_CARD","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Under 18 y/o and renewal cards exempt"},{"name":"REPLACEMENT_VISA_WRISTBAND_(INCLUDING_CHIP)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"STATEMENTS_/_VOUCHER_SEARCHES","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"No charge for current transaction list.Reissue more than 6 months.$5 per page"},{"name":"STOP_PAYMENT_OF_CORPORATE_CHEQUES","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"TELEGRAPHIC_TRANSFERS_OVERSEAS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"},{"name":"TELEGRAPHIC_TRANSFERS_WITHIN_AUSTRALIA","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"TRACE_OF_BPAY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"TRACE_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"TRACE_OF_PAID_PERSONAL_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"22.00"},"currency":"AUD"},{"name":"TRACE_OF_PAID_CORPORATE_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"17.50"},"currency":"AUD"},{"name":"TRAVELLERS_CHEQUE_DEPOSIT_(PER_CURRENCY)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"8.00"},"currency":"AUD"},{"name":"VISA_CARD_ADMIN_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD","additionalInfo":"Visa Debit Card per account and waived for loan balances over $50,000 or savings balances over $20,000"},{"name":"VISA_CHARGEBACK_TRANSACTION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"VISA_INTERNATIONAL_TRANSACTION_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0365","amountRange":{}},"currency":"AUD","additionalInfo":"International Transaction Fee transaction when converted to $AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"}],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit with payWave"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay","additionalInfoUri":"https://www.qbank.com.au/ways-to-bank/applepay"},{"featureType":"DIGITAL_WALLET","additionalValue":"Google Pay","additionalInfoUri":"https://www.qbank.com.au/ways-to-bank/googlepay"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance."},{"featureType":"FREE_TXNS_ALLOWANCE","additionalInfo":"12 free Eftpos transactions and 5 free Direct Debits"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"OTHER","additionalInfo":"Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.","additionalInfoUri":"https://www.qbank.com.au/terms-conditions"}],"additionalInformation":{"overviewUri":"https://www.qbank.com.au/products/accounts/transaction-accounts/on-call-transaction-account","termsUri":"https://www.qbank.com.au/terms-conditions/","eligibilityUri":"https://www.qbank.com.au/who-can-join","feesAndPricingUri":"https://www.qbank.com.au/rates-fees"}},{"id":"S17_Teen","name":"Teen On Call","description":"Everyday account for teens 13-17","url":"https://qbank.com.au/banking-accounts/transaction-accounts/teen-on-call/","lastUpdated":"2025-10-16T15:08:59.000+10:00","source":"https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S17_Teen","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[{"name":"BANK@POST_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD"},{"name":"BANK_CHEQUE_WITHDRAWALS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"13.00"},"currency":"AUD"},{"name":"ATM_DISPUTE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"27.50"},"currency":"AUD"},{"name":"INTERNATIONAL_ATM_TRANSACTION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD"},{"name":"FOREIGN_CHEQUE_DEPOSIT","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"TRACE_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_EXTERNAL_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"40.00"},"currency":"AUD","additionalInfo":"Includes NPP and OSKO transactions  to other financial institutions"},{"name":"RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"TRACE_OF_PAID_PERSONAL_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"22.00"},"currency":"AUD"},{"name":"TRACE_OF_PAID_CORPORATE_CHEQUE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"17.50"},"currency":"AUD"},{"name":"STOP_PAYMENT_OF_CORPORATE_CHEQUES","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"VISA_CHARGEBACK_TRANSACTION","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"VISA_INTERNATIONAL_TRANSACTION_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0365","amountRange":{}},"currency":"AUD","additionalInfo":"International Transaction Fee transaction when converted to $AUD"},{"name":"DORMANCY","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"Charge $10 every 6 months"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.","additionalInfoUri":"https://www.qbank.com.au/who-can-join"}],"constraints":[],"features":[{"featureType":"UNLIMITED_TXNS"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NOTIFICATIONS","additionalValue":"Track payments with SMS and email alerts"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwiese exceed your transasction account's available balance."}],"additionalInformation":{"overviewUri":"https://qbank.com.au/banking-accounts/transaction-accounts/teen-on-call/","termsUri":"https://www.qbank.com.au/terms-conditions/","eligibilityUri":"https://www.qbank.com.au/who-can-join","feesAndPricingUri":"https://www.qbank.com.au/rates-fees"}}]}
+{
+  "name": "QBANK",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "S1_Oncall",
+      "name": "On Call",
+      "description": "Transactional account with flexible access options",
+      "url": "https://www.qbank.com.au/products/accounts/transaction-accounts/on-call-transaction-account",
+      "lastUpdated": "2025-10-16T15:38:34.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S1_Oncall",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "On Call_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "On Call_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "On Call_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "ACCOUNT_AUDIT_CONFIRMATION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "ATM_DISPUTE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "27.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BANK@POST_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BANK_CHEQUE_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "13.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "CASH_ADVANCE_____AUSTRALIA_&_INTERNATIONAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "CHEQUE_DEPOSIT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Special Clearance"
+        },
+        {
+          "name": "CHEQUE_DISHONOURS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Cheque Deposit subsequently dishonoured through Bank@Post Australia Post may charge a fee"
+        },
+        {
+          "name": "COPY_OF_PAID_CORPORATE_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_PERSONAL_CHEQUE/VOUCHER_30_TO_90_DAYS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "16.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_PERSONAL_CHEQUE/VOUCHER_OVER_90_DAYS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "33.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_PERSONAL_CHEQUE/VOUCHER_UNDER_30_DAYS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_VISA_TRANSACTION_VOUCHER",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DEBIT_EXTERNAL_ACCOUNT_REJECTION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DIRECT_DEBITS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "5 free then $0.50 per transaction per month"
+        },
+        {
+          "name": "DIRECT_DEBIT_DISHONOURS/NON_PAYMENT",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DIRECT_DEBIT_INVESTIGATION",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        },
+        {
+          "name": "EFTPOS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "12 Free then $1 per transaction a month"
+        },
+        {
+          "name": "EMERGENCY_VISA_CASH_OR_CARD_(OVERSEAS)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "175.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$175.00 USD"
+        },
+        {
+          "name": "EXTERNAL_TRANSFERS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions to other financial institutions"
+        },
+        {
+          "name": "FOREIGN_CASH_DEPOSIT_(PER_CURRENCY)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "8.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "FOREIGN_CHEQUE_DEPOSIT",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "INTERNATIONAL_ATM_TRANSACTION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "OVERDRAWN_SAVINGS_ACCOUNTS",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Debit interest is charged if the balance of your Savings Accounts are overdrawn where an Overdraft limit exists.Unauthorised Overdrawn Savings and Overlimit Overdraft Fee"
+        },
+        {
+          "name": "PERSONAL_CHEQUES",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "PURCHASE_FOREIGN_CASH_(MINIMUM_ORDER_$250_AU)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Purchase Foreign Cash (minimum order $250 AU)"
+        },
+        {
+          "name": "RE-PURCHASE_FOREIGN_CASH_(CANCELLATION_OF_PURCHASE_ORDER)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "8.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "REPLACEMENT_OF_CUE_&_VISA_CARD",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Under 18 y/o and renewal cards exempt"
+        },
+        {
+          "name": "REPLACEMENT_VISA_WRISTBAND_(INCLUDING_CHIP)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "STATEMENTS_/_VOUCHER_SEARCHES",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "No charge for current transaction list.Reissue more than 6 months.$5 per page"
+        },
+        {
+          "name": "STOP_PAYMENT_OF_CORPORATE_CHEQUES",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TELEGRAPHIC_TRANSFERS_OVERSEAS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TELEGRAPHIC_TRANSFERS_WITHIN_AUSTRALIA",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "TRACE_OF_PAID_PERSONAL_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "22.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_PAID_CORPORATE_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "17.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRAVELLERS_CHEQUE_DEPOSIT_(PER_CURRENCY)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "8.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "VISA_CARD_ADMIN_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Visa Debit Card per account and waived for loan balances over $50,000 or savings balances over $20,000"
+        },
+        {
+          "name": "VISA_CHARGEBACK_TRANSACTION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "VISA_INTERNATIONAL_TRANSACTION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0365",
+            "amountRange": {}
+          },
+          "currency": "AUD",
+          "additionalInfo": "International Transaction Fee transaction when converted to $AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit with payWave"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay",
+          "additionalInfoUri": "https://www.qbank.com.au/ways-to-bank/applepay"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfoUri": "https://www.qbank.com.au/ways-to-bank/googlepay"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance."
+        },
+        {
+          "featureType": "FREE_TXNS_ALLOWANCE",
+          "additionalInfo": "12 free Eftpos transactions and 5 free Direct Debits"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.",
+          "additionalInfoUri": "https://www.qbank.com.au/terms-conditions"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.qbank.com.au/products/accounts/transaction-accounts/on-call-transaction-account",
+        "termsUri": "https://www.qbank.com.au/terms-conditions/",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees"
+      }
+    },
+    {
+      "id": "S12_Pension",
+      "name": "Pension Plus Account",
+      "description": "A high interest account for retired members or members with an eligible pension card.",
+      "url": "https://www.qbank.com.au/products/accounts/retirement-accounts",
+      "lastUpdated": "2026-05-22T07:58:21.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S12_Pension",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pension Plus Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0145",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pension Plus Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0285",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pension Plus Account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "ACCOUNT_AUDIT_CONFIRMATION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "ATM_DISPUTE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "27.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BANK@POST_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BANK_CHEQUE_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "13.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "CASH_ADVANCE_____AUSTRALIA_&_INTERNATIONAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "CHEQUE_DEPOSIT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Special Clearance"
+        },
+        {
+          "name": "CHEQUE_DISHONOURS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Cheque Deposit subsequently dishonoured through Bank@Post Australia Post may charge a fee"
+        },
+        {
+          "name": "COPY_OF_PAID_CORPORATE_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_PERSONAL_CHEQUE/VOUCHER_30_TO_90_DAYS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "16.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_PERSONAL_CHEQUE/VOUCHER_OVER_90_DAYS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "33.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_PERSONAL_CHEQUE/VOUCHER_UNDER_30_DAYS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_VISA_TRANSACTION_VOUCHER",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DEBIT_EXTERNAL_ACCOUNT_REJECTION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DIRECT_DEBIT_DISHONOURS/NON_PAYMENT",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DIRECT_DEBIT_INVESTIGATION",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        },
+        {
+          "name": "EMERGENCY_VISA_CASH_OR_CARD_(OVERSEAS)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "175.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$175.00 USD"
+        },
+        {
+          "name": "FOREIGN_CASH_DEPOSIT_(PER_CURRENCY)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "8.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "FOREIGN_CHEQUE_DEPOSIT",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "INTERNATIONAL_ATM_TRANSACTION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "OVERDRAWN_SAVINGS_ACCOUNTS",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Debit interest is charged if the balance of your Savings Accounts are overdrawn where an Overdraft limit exists.Unauthorised Overdrawn Savings and Overlimit Overdraft Fee"
+        },
+        {
+          "name": "PURCHASE_FOREIGN_CASH_(MINIMUM_ORDER_$250_AU)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Purchase Foreign Cash (minimum order $250 AU)"
+        },
+        {
+          "name": "RE-PURCHASE_FOREIGN_CASH_(CANCELLATION_OF_PURCHASE_ORDER)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "8.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "REPLACEMENT_OF_CUE_&_VISA_CARD",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Under 18 y/o and renewal cards exempt"
+        },
+        {
+          "name": "REPLACEMENT_VISA_WRISTBAND_(INCLUDING_CHIP)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "STATEMENTS_/_VOUCHER_SEARCHES",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "No charge for current transaction list.Reissue more than 6 months.$5 per page"
+        },
+        {
+          "name": "STOP_PAYMENT_OF_CORPORATE_CHEQUES",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TELEGRAPHIC_TRANSFERS_OVERSEAS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TELEGRAPHIC_TRANSFERS_WITHIN_AUSTRALIA",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "TRACE_OF_PAID_PERSONAL_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "22.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_PAID_CORPORATE_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "17.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRAVELLERS_CHEQUE_DEPOSIT_(PER_CURRENCY)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "8.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "VISA_CARD_ADMIN_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Visa Debit Card per account and waived for loan balances over $50,000 or savings balances over $20,000"
+        },
+        {
+          "name": "VISA_CHARGEBACK_TRANSACTION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "VISA_INTERNATIONAL_TRANSACTION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0365",
+            "amountRange": {}
+          },
+          "currency": "AUD",
+          "additionalInfo": "International Transaction Fee transaction when converted to $AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit with payWave"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay",
+          "additionalInfoUri": "https://www.qbank.com.au/ways-to-bank/applepay"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfoUri": "https://www.qbank.com.au/ways-to-bank/googlepay"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "High Rate of Interest with easy access to your money"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.",
+          "additionalInfoUri": "https://www.qbank.com.au/terms-conditions"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfoUri": "https://www.qbank.com.au/products/accounts/retirement-accounts"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwiese exceed your transasction account's available balance."
+        },
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.qbank.com.au/products/accounts/retirement-accounts",
+        "termsUri": "https://www.qbank.com.au/terms-conditions",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees"
+      }
+    },
+    {
+      "id": "S17_Teen",
+      "name": "Teen On Call",
+      "description": "Everyday account for teens 13-17",
+      "url": "https://qbank.com.au/banking-accounts/transaction-accounts/teen-on-call/",
+      "lastUpdated": "2025-10-16T15:08:59.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S17_Teen",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [
+        {
+          "name": "BANK@POST_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BANK_CHEQUE_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "13.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "ATM_DISPUTE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "27.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "INTERNATIONAL_ATM_TRANSACTION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "FOREIGN_CHEQUE_DEPOSIT",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_PAID_PERSONAL_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "22.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_PAID_CORPORATE_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "17.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "STOP_PAYMENT_OF_CORPORATE_CHEQUES",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "VISA_CHARGEBACK_TRANSACTION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "VISA_INTERNATIONAL_TRANSACTION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0365",
+            "amountRange": {}
+          },
+          "currency": "AUD",
+          "additionalInfo": "International Transaction Fee transaction when converted to $AUD"
+        },
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwiese exceed your transasction account's available balance."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://qbank.com.au/banking-accounts/transaction-accounts/teen-on-call/",
+        "termsUri": "https://www.qbank.com.au/terms-conditions/",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees"
+      }
+    },
+    {
+      "id": "S18_Teen_Netlink",
+      "name": "Teen Netlink Direct Savings",
+      "description": "An online savings account for teens",
+      "url": "https://www.qbank.com.au/products/accounts/junior-and-teen-accounts/teen-netlink-direct-savings",
+      "lastUpdated": "2026-05-22T07:55:17.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S18_Teen_Netlink",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0285",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwiese exceed your transasction account's available balance."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.qbank.com.au/products/accounts/junior-and-teen-accounts/teen-netlink-direct-savings",
+        "termsUri": "https://www.qbank.com.au/terms-conditions",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees"
+      }
+    },
+    {
+      "id": "S19_Intro",
+      "name": "Intro Saver",
+      "description": "Earn Interest with unlimited transactions",
+      "url": "https://www.qbank.com.au/banking-accounts/savings-accounts/intro-saver/",
+      "lastUpdated": "2026-09-17T13:23:51.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S19_Intro",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0535",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Intro Saver_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "250000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "NEW_ACCOUNTS",
+              "additionalInfo": "New to bank funds are defined as funds from an external account. Internal QBANK to QBANK transfers will not be eligible.",
+              "additionalInfoUri": "https://www.qbank.com.au/banking-accounts/savings-accounts/intro-saver/"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0245",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Intro Saver_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "250000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "NEW_ACCOUNTS",
+              "additionalInfo": "New to bank funds are defined as funds from an external account. Internal QBANK to QBANK transfers will not be eligible.",
+              "additionalInfoUri": "https://www.qbank.com.au/banking-accounts/savings-accounts/intro-saver/"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        },
+        {
+          "name": "RECALL_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to citizens or permanent residents of Australia who are current or former emplayees or volunteers in the Australian emergency services sector or are family members of members (i.e. shareholders) of the Bank.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfo": "Unlimited free internet transfers"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance.",
+          "additionalInfoUri": "https://www.qbank.com.au/terms-conditions"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.qbank.com.au/banking-accounts/savings-accounts/intro-saver/",
+        "termsUri": "https://www.qbank.com.au/terms-conditions/",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join/",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees/"
+      }
+    },
+    {
+      "id": "S20_Netlink",
+      "name": "Netlink",
+      "description": "Earn Interest with unlimited transactions",
+      "url": "https://www.qbank.com.au/products/accounts/savings-accounts/netlink-direct/",
+      "lastUpdated": "2026-05-22T07:53:29.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S20_Netlink",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0245",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        },
+        {
+          "name": "RECALL_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to citizens or permanent residents of Australia who are current or former emplayees or volunteers in the Australian emergency services sector or are family members of members (i.e. shareholders) of the Bank.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfo": "Unlimited free internet transfers"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance.",
+          "additionalInfoUri": "https://www.qbank.com.au/terms-conditions"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.qbank.com.au/products/accounts/savings-accounts/netlink-direct/",
+        "termsUri": "https://www.qbank.com.au/terms-conditions/",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join/",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees/"
+      }
+    },
+    {
+      "id": "S6_Everyday",
+      "name": "Everyday Plus",
+      "description": "Your everyday transaction account with Visa Debit access",
+      "url": "https://www.qbank.com.au/products/accounts/transaction-accounts/everyday-plus-transaction-account/",
+      "lastUpdated": "2026-05-07T10:13:00.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S6_Everyday",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Everyday Plus_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Everyday Plus_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Everyday Plus_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "ACCOUNT_AUDIT_CONFIRMATION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "ACCOUNT_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Waive if monthly deposit $1500. Full time student.",
+          "additionalInfoUri": "https://www.qbank.com.au/rates-fees"
+        },
+        {
+          "name": "ATM_DISPUTE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "27.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BANK@POST_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BANK_CHEQUE_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "13.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "CASH_ADVANCE_____AUSTRALIA_&_INTERNATIONAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "CHEQUE_DEPOSIT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Special Clearance"
+        },
+        {
+          "name": "CHEQUE_DISHONOURS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Cheque Deposit subsequently dishonoured through Bank@Post Australia Post may charge a fee"
+        },
+        {
+          "name": "COPY_OF_PAID_CORPORATE_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_PERSONAL_CHEQUE/VOUCHER_30_TO_90_DAYS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "16.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_PERSONAL_CHEQUE/VOUCHER_OVER_90_DAYS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "33.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_PERSONAL_CHEQUE/VOUCHER_UNDER_30_DAYS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "COPY_OF_VISA_TRANSACTION_VOUCHER",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_WITHDRAWALS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DEBIT_EXTERNAL_ACCOUNT_REJECTION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DIRECT_DEBIT_DISHONOURS/NON_PAYMENT",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DIRECT_DEBIT_INVESTIGATION",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        },
+        {
+          "name": "EMERGENCY_VISA_CASH_OR_CARD_(OVERSEAS)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "175.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$175.00 USD"
+        },
+        {
+          "name": "FOREIGN_CASH_DEPOSIT_(PER_CURRENCY)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "8.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "FOREIGN_CHEQUE_DEPOSIT",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "INTERNATIONAL_ATM_TRANSACTION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "OVERDRAWN_SAVINGS_ACCOUNTS",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Debit interest is charged if the balance of your Savings Accounts are overdrawn where an Overdraft limit exists.Unauthorised Overdrawn Savings and Overlimit Overdraft Fee"
+        },
+        {
+          "name": "PURCHASE_FOREIGN_CASH_(MINIMUM_ORDER_$250_AU)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Purchase Foreign Cash (minimum order $250 AU)"
+        },
+        {
+          "name": "RE-PURCHASE_FOREIGN_CASH_(CANCELLATION_OF_PURCHASE_ORDER)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "8.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "REPLACEMENT_OF_CUE_&_VISA_CARD",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Under 18 y/o and renewal cards exempt"
+        },
+        {
+          "name": "REPLACEMENT_VISA_WRISTBAND_(INCLUDING_CHIP)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "STATEMENTS_/_VOUCHER_SEARCHES",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "No charge for current transaction list.Reissue more than 6 months.$5 per page"
+        },
+        {
+          "name": "STOP_PAYMENT_OF_CORPORATE_CHEQUES",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TELEGRAPHIC_TRANSFERS_OVERSEAS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TELEGRAPHIC_TRANSFERS_WITHIN_AUSTRALIA",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "TRACE_OF_PAID_PERSONAL_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "22.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRACE_OF_PAID_CORPORATE_CHEQUE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "17.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "TRAVELLERS_CHEQUE_DEPOSIT_(PER_CURRENCY)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "8.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "VISA_CARD_ADMIN_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Visa Debit Card per account and waived for loan balances over $50,000 or savings balances over $20,000"
+        },
+        {
+          "name": "VISA_CHARGEBACK_TRANSACTION",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "VISA_INTERNATIONAL_TRANSACTION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0365",
+            "amountRange": {}
+          },
+          "currency": "AUD",
+          "additionalInfo": "International Transaction Fee transaction when converted to $AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit with payWave"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay",
+          "additionalInfoUri": "https://www.qbank.com.au/ways-to-bank/applepay"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfoUri": "https://www.qbank.com.au/ways-to-bank/googlepay"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transasction account's available balance."
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Make deposits and withdrawals through a Bank@Post facility at Australia Post outlets. For full details refer to our Conditions of Use. Fees and charges apply.",
+          "additionalInfoUri": "https://www.qbank.com.au/terms-conditions"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfo": "Monthly credit $1500",
+          "additionalInfoUri": "https://www.qbank.com.au/products/accounts/transaction-accounts/everyday-plus-transaction-account"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Wearables",
+          "additionalInfoUri": "https://www.qbank.com.au/ways-to-bank/wearables"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.qbank.com.au/products/accounts/transaction-accounts/everyday-plus-transaction-account/",
+        "termsUri": "https://www.qbank.com.au/terms-conditions/",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join/",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees/"
+      }
+    },
+    {
+      "id": "S7_Junior",
+      "name": "Junior Saver",
+      "description": "Exclusive account for children 12 and under",
+      "url": "https://qbank.com.au/banking-accounts/savings-accounts/junior-saver/",
+      "lastUpdated": "2026-05-22T07:54:28.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S7_Junior",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0245",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        },
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "12",
+          "additionalInfo": "must be 12 and under"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwiese exceed your transasction account's available balance."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://qbank.com.au/banking-accounts/savings-accounts/junior-saver/",
+        "termsUri": "https://www.qbank.com.au/terms-conditions/",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join/",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees/"
+      }
+    },
+    {
+      "id": "S70_Bonus",
+      "name": "Bonus Saver",
+      "description": "Be rewarded with bonus interest for regular saving",
+      "url": "https://www.qbank.com.au/products/accounts/savings-accounts/bonus-saver/",
+      "lastUpdated": "2026-06-01T08:08:42.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S70_Bonus",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Bonus Saver_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "1000000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Bonus Saver_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1000000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0494",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Bonus Saver_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "1000000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Bonus Saver_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1000000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Bonus Interest paid if you deposit $200 or more in a month and no withdrawals."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.qbank.com.au/products/accounts/savings-accounts/bonus-saver/",
+        "termsUri": "https://www.qbank.com.au/terms-conditions/",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join/",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees/"
+      }
+    },
+    {
+      "id": "S8_Xmas",
+      "name": "Christmas Club",
+      "description": "Lock away your savings to relax and enjoy the festive season",
+      "url": "https://www.qbank.com.au/products/accounts/savings-accounts/christmas-club-account/",
+      "lastUpdated": "2026-05-22T07:56:33.000+10:00",
+      "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S8_Xmas",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.024",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [
+        {
+          "name": "CHRISTMAS_CLUB_WITHDRAWAL_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charged on all withdrawals and transfers from the account between 1 January and 31 October."
+        },
+        {
+          "name": "DORMANCY",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charge $10 every 6 months"
+        },
+        {
+          "name": "RECALL_OF_BPAY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "RECALL_OF_EXTERNAL_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "40.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Includes NPP and OSKO transactions  to other financial institutions"
+        },
+        {
+          "name": "RECALL_OF_TELEGRAPHIC_TRANSFER_(WITHIN_AUSTRALIA_&_OVERSEAS)",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a member. Membership is open to current or former employees of police, ambulance, firies, health workers, emergency services, correctional services and government employees as well as their family members.",
+          "additionalInfoUri": "https://www.qbank.com.au/who-can-join"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Track payments with SMS and email alerts"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfo": "$5 fee on each withdrawal and transfer from this account bewteen 1 January and 31 October each year",
+          "additionalInfoUri": "https://www.qbank.com.au/products/accounts/savings-accounts/christmas-club-account"
+        },
+        {
+          "featureType": "BONUS_REWARDS",
+          "additionalInfo": "Fee free withdrawals and transfers between 1 November and 31 December",
+          "additionalInfoUri": "https://www.qbank.com.au/terms-conditions"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.qbank.com.au/products/accounts/savings-accounts/christmas-club-account/",
+        "termsUri": "https://www.qbank.com.au/terms-conditions/",
+        "eligibilityUri": "https://www.qbank.com.au/who-can-join/",
+        "feesAndPricingUri": "https://www.qbank.com.au/rates-fees/"
+      }
+    }
+  ]
+}

@@ -1,1 +1,1255 @@
-{"name":"Bank of us","checkedAt":"2026-09-17T21:41:47.926Z","status":"available","products":[{"id":"SuperAdv","name":"SUPER ADVANTAGE","description":"A Self Managaed Super Fund (SMSF) cash hub account that will help take the complexities out of managing your SMSF. You get a competitive interest rate, plus it makes your super fund accounting, tax re","url":"https://bankofus.com.au/bank-accounts","lastUpdated":"2026-06-01T10:27:46.000+10:00","source":"https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/SuperAdv","depositRates":[{"depositRateType":"VARIABLE","rate":"0.015","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"SUPER ADVANTAGE_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"9999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"VARIABLE","rate":"0.015","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"SUPER ADVANTAGE_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"10000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"}],"fees":[{"name":"ASSISTED_WITHDRAWAL_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"If you have a Super Advantage or Business iCash account this fee will apply to any withdrawal or transfer from your account made at a Bank of us Retail Store or via our Contact Centre in any month.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"BPAY_ERROR_CORRECTION_PROCESSING_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"CHEQUE_DISHONOUR_(INWARD)_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD","additionalInfo":"Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"COUNTER_(CORPORATE)_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"DUPLICATE_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."},{"name":"SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STALE_CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"ALERT_FEE_(SMS)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.25"},"currency":"AUD","additionalInfo":"Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"INTERIM_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD","additionalInfo":"Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"To be eligible for this product the customer must have a registered Self Managed Super Fund"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"1.00"}],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"}],"additionalInformation":{"overviewUri":"https://bankofus.com.au/bank-accounts","termsUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","eligibilityUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","feesAndPricingUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}},{"id":"Stash_n_Splash","name":"Stash n Splash","description":"Our Stash 'n' Splash account is an online savings account that is great if you want to earn a competitive rate of interest while having the ability to continue to save or access your funds as you requ","url":"https://bankofus.com.au/bank-accounts","lastUpdated":"2026-05-31T07:46:58.000+10:00","source":"https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/Stash_n_Splash","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Stash n Splash_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"24999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Stash n Splash_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"25000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"BONUS","rate":"0.0225","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Stash n Splash_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"24999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"BONUS","rate":"0.03","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Stash n Splash_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"25000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"}],"fees":[{"name":"BPAY_ERROR_CORRECTION_PROCESSING_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"CHEQUE_DISHONOUR_(INWARD)_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD","additionalInfo":"Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"COUNTER_(CORPORATE)_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"DUPLICATE_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."},{"name":"SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STALE_CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"ALERT_FEE_(SMS)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.25"},"currency":"AUD","additionalInfo":"Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"INTERIM_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD","additionalInfo":"Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"1.00"},{"constraintType":"MAX_BALANCE","additionalValue":"1000000.00"}],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"OTHER","additionalInfo":"You can make up to 5 withdrawals or transfers from the Stash 'n' Splash account in any one month without impacting the credit interest paid on the account. However, if you make more than 5 withdrawals or transfers during a month, you won't receive any interest."},{"featureType":"NPP_PAYID"}],"additionalInformation":{"overviewUri":"https://bankofus.com.au/bank-accounts","termsUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","eligibilityUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","feesAndPricingUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}},{"id":"SpringLoad","name":"Spring Load","description":"The Spring Load account is a maximum period (term) account, which is available to Tasmanian residents who are depositing new money with Bank of us. The maximum period commences on the day the account","url":"https://bankofus.com.au/bank-accounts","lastUpdated":"2026-05-31T07:45:56.000+10:00","source":"https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/SpringLoad","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Spring Load_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"24999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Spring Load_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"25000.00","maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Spring Load_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"BONUS","rate":"0.0225","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Spring Load_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"24999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"BONUS","rate":"0.0525","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Spring Load_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"25000.00","maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"BONUS","rate":"0.0525","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Spring Load_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"}],"fees":[{"name":"BPAY_ERROR_CORRECTION_PROCESSING_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"CHEQUE_DISHONOUR_(INWARD)_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD","additionalInfo":"Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"COUNTER_(CORPORATE)_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"DUPLICATE_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."},{"name":"SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STALE_CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"ALERT_FEE_(SMS)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.25"},"currency":"AUD","additionalInfo":"Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"INTERIM_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD","additionalInfo":"Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":"Tasmanian resident"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"50000.00"},{"constraintType":"MAX_BALANCE","additionalValue":"1000000.00"}],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"OTHER","additionalInfo":"You can make up to 5 withdrawals or transfers from the Spring Load account in any one month without impacting the credit interest paid on the account. However, if you make more than 5 withdrawals or transfers during a month, you won't receive any interest."}],"additionalInformation":{"overviewUri":"https://bankofus.com.au/bank-accounts","termsUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","eligibilityUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","feesAndPricingUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}},{"id":"Save_up","name":"Save up","description":"Our 'Save up' account is the perfect account to help you save for something special or just for a rainy day. The account pays a base rate of interest and if you deposit a minimum of $50.00 per month a","url":"https://bankofus.com.au/bank-accounts","lastUpdated":"2026-05-31T07:44:23.000+10:00","source":"https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/Save_up","depositRates":[{"depositRateType":"VARIABLE","rate":"0.004","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"BONUS","rate":"0.0465","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"}],"fees":[{"name":"BPAY_ERROR_CORRECTION_PROCESSING_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"CHEQUE_DISHONOUR_(INWARD)_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD","additionalInfo":"Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"COUNTER_(CORPORATE)_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"DUPLICATE_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."},{"name":"SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STALE_CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"ALERT_FEE_(SMS)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.25"},"currency":"AUD","additionalInfo":"Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"INTERIM_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD","additionalInfo":"Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"1.00"}],"features":[{"featureType":"OTHER","additionalInfo":"To obtain the Bonus rate, you need to deposit a minimum of $50 into the account during the month and make no withdrawals or transfers from the account."},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"}],"additionalInformation":{"overviewUri":"https://bankofus.com.au/bank-accounts","termsUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","eligibilityUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","feesAndPricingUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}},{"id":"Pension_Advantage","name":"Pension Advantage","description":"If you receive a pension and need an everyday account, then the Pension Advantage delivers you the freedom to bank how and when you want and the ability to minimise or avoid transaction fees altogethe","url":"https://bankofus.com.au/bank-accounts","lastUpdated":"2026-05-31T07:38:34.000+10:00","source":"https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/Pension_Advantage","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pension Advantage_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"1999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"VARIABLE","rate":"0.0155","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pension Advantage_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"2000.00","maximumValue":"39399.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"},{"depositRateType":"VARIABLE","rate":"0.0205","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pension Advantage_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"39400.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://bankofus.com.au/everyday-and-savings-interest-rates"}],"fees":[{"name":"STAFF_ASSISTED_TRANSACTIONS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfo":"For transactions performed at a Retail Store or through our Contact Centre","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf","discounts":[{"description":"Staff Assisted Transactions","discountType":"BALANCE","discountMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"additionalValue":"10000.00","additionalInfo":"Free staff assisted transactions apply per month based on the customer's relationship balance. For relationship balances of $10k or more, unlimited staff assisted transactions apply.","eligibility":[{"discountEligibilityType":"PENSION_RECIPIENT","additionalValue":"Customer receives a government pension","additionalInfo":"Members with Pension Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."},{"discountEligibilityType":"BUSINESS","additionalInfo":"Members with Business Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."}]}]},{"name":"SELF_SERVICE_INTERNET_BANKING_TRANSACTIONS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.25"},"currency":"AUD","additionalInfo":"Applies for each transaction performed from or to your Bank of us account. These include one off or regular (Periodical Payment) transfers and BPAY transactions.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf","discounts":[{"description":"Self Service Internet Banking","discountType":"BALANCE","discountMethodUType":"fixedAmount","fixedAmount":{"amount":"0.25"},"additionalValue":"10000.00","additionalInfo":"Free Internet Banking transactions apply per month based on the customer's relationship balance.  For relationship balances of $10k or more, unlimited Internet Banking transactions apply.","eligibility":[{"discountEligibilityType":"PENSION_RECIPIENT","additionalValue":"Customer receives a government pension","additionalInfo":"Members with Pension Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."}]}]},{"name":"SELF_SERVICE_EFTPOS_TRANSACTIONS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfo":"Self-service EFTPOS transactions mean a transaction you make to purchase goods, purchase goods and withdraw cash, or withdraw cash via EFTPOS facilities.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf","discounts":[{"description":"Self Service Eftpos Transaction","discountType":"BALANCE","discountMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"additionalValue":"10000.00","additionalInfo":"Free EFTPOS transactions apply per month based on the customer's relationship balance. For relationship balances of $10k or more, unlimited EFTPOS transactions apply.","eligibility":[{"discountEligibilityType":"PENSION_RECIPIENT","additionalValue":"Customer receives a government pension","additionalInfo":"Members with Pension Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."},{"discountEligibilityType":"BUSINESS","additionalInfo":"Members with Business Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."}]}]},{"name":"BANK@POST_WITHDRAWAL_FEE","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"This fee applies where you make a cash withdrawal via Australia Post offices displaying the Bank@Post symbol. The fee is debited to your account at the end of the month in which the fee is incurred.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"OVERSEAS_DEBIT_CARD_REPLACEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"120.00"},"currency":"AUD","additionalInfo":"Applies where you request the emergency replacement through VISA International of your VISA Debit card that is lost or stolen. The fee is debited to your account at the time of your request for a replacement card.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"OVERSEAS_CARD_TRANSACTION_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.025"},"currency":"AUD","additionalInfo":"Applies to all cash advances and retail purchase transactions made in currencies other than Australian dollars. The fee is added to the total transaction amount debited to your account in Australian dollars.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"BPAY_ERROR_CORRECTION_PROCESSING_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"CHEQUE_DISHONOUR_(INWARD)_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD","additionalInfo":"Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"COUNTER_(CORPORATE)_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"DUPLICATE_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."},{"name":"OVERDRAWN_ACCOUNT_DEBIT_INTEREST","feeType":"OTHER","feeMethodUType":"variable","variable":{"feeMinimum":"1.00","feeMaximum":"200.00"},"currency":"AUD","additionalInfo":"Where your account is overdrawn* at the close of business without prior approval from us, we will charge you interest on the unauthorised overdrawn amount. Overdrawn Account Debit Interest is calculated daily and debited to your account at the end of the month","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"OVERSEAS_CARD_TRANSACTION_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.025"},"currency":"AUD","additionalInfo":"Applies to all cash advances and retail purchase transactions made in currencies other than Australian dollars. The fee is added to the total transaction amount debited to your account in Australian dollars.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"OVERSEAS_DEBIT_CARD_REPLACEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"120.00"},"currency":"AUD","additionalInfo":"Applies where you request the emergency replacement through VISA International of your VISA Debit card that is lost or stolen. The fee is debited to your account at the time of your request for a replacement card.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STALE_CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"VISA_CASH_WITHDRAWAL_FEE","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Applies where you make a VISA cash advance at an overseas ATM. The fee is debited to your account at the end of the month.","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"ALERT_FEE_(SMS)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.25"},"currency":"AUD","additionalInfo":"Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"ASSISTED_PIN_ISSUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Applies where you request us to generate a PIN for your card. The fee will be debited to your account at the end of the day in which the PIN is generated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"INTERIM_STATEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD","additionalInfo":"Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"},{"name":"REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated","additionalInfoUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}],"eligibility":[{"eligibilityType":"PENSION_RECIPIENT","additionalInfo":"To be eligible for the Pension Advantage product you must receive an Aged, Australian War Veterans or Disability Pension from the Department of Social Security (Centrelink) or Department of Veteran Affairs and be a holder of a current Pensioner Concession Card or Repatriation Health Card. For joint accounts, at least one of the account holders must satisfy this criteria to be eligible."},{"eligibilityType":"NATURAL_PERSON"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"1.00"}],"features":[{"featureType":"CARD_ACCESS","additionalInfo":"Use your Visa Debit Card to shop online, in-person and access cash at ATMs."},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay, Google Pay"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"}],"additionalInformation":{"overviewUri":"https://bankofus.com.au/bank-accounts","termsUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","eligibilityUri":"https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf","feesAndPricingUri":"https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"}}]}
+{
+  "name": "Bank of us",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "Pension_Advantage",
+      "name": "Pension Advantage",
+      "description": "If you receive a pension and need an everyday account, then the Pension Advantage delivers you the freedom to bank how and when you want and the ability to minimise or avoid transaction fees altogethe",
+      "url": "https://bankofus.com.au/bank-accounts",
+      "lastUpdated": "2026-05-31T07:38:34.000+10:00",
+      "source": "https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/Pension_Advantage",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pension Advantage_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "1999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0155",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pension Advantage_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "2000.00",
+              "maximumValue": "39399.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0205",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pension Advantage_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "39400.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "STAFF_ASSISTED_TRANSACTIONS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "For transactions performed at a Retail Store or through our Contact Centre",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf",
+          "discounts": [
+            {
+              "description": "Staff Assisted Transactions",
+              "discountType": "BALANCE",
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "2.50"
+              },
+              "additionalValue": "10000.00",
+              "additionalInfo": "Free staff assisted transactions apply per month based on the customer's relationship balance. For relationship balances of $10k or more, unlimited staff assisted transactions apply.",
+              "eligibility": [
+                {
+                  "discountEligibilityType": "PENSION_RECIPIENT",
+                  "additionalValue": "Customer receives a government pension",
+                  "additionalInfo": "Members with Pension Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."
+                },
+                {
+                  "discountEligibilityType": "BUSINESS",
+                  "additionalInfo": "Members with Business Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SELF_SERVICE_INTERNET_BANKING_TRANSACTIONS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.25"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies for each transaction performed from or to your Bank of us account. These include one off or regular (Periodical Payment) transfers and BPAY transactions.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf",
+          "discounts": [
+            {
+              "description": "Self Service Internet Banking",
+              "discountType": "BALANCE",
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "0.25"
+              },
+              "additionalValue": "10000.00",
+              "additionalInfo": "Free Internet Banking transactions apply per month based on the customer's relationship balance.  For relationship balances of $10k or more, unlimited Internet Banking transactions apply.",
+              "eligibility": [
+                {
+                  "discountEligibilityType": "PENSION_RECIPIENT",
+                  "additionalValue": "Customer receives a government pension",
+                  "additionalInfo": "Members with Pension Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SELF_SERVICE_EFTPOS_TRANSACTIONS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Self-service EFTPOS transactions mean a transaction you make to purchase goods, purchase goods and withdraw cash, or withdraw cash via EFTPOS facilities.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf",
+          "discounts": [
+            {
+              "description": "Self Service Eftpos Transaction",
+              "discountType": "BALANCE",
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "0.75"
+              },
+              "additionalValue": "10000.00",
+              "additionalInfo": "Free EFTPOS transactions apply per month based on the customer's relationship balance. For relationship balances of $10k or more, unlimited EFTPOS transactions apply.",
+              "eligibility": [
+                {
+                  "discountEligibilityType": "PENSION_RECIPIENT",
+                  "additionalValue": "Customer receives a government pension",
+                  "additionalInfo": "Members with Pension Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."
+                },
+                {
+                  "discountEligibilityType": "BUSINESS",
+                  "additionalInfo": "Members with Business Advantage account balances of $10k or more receive unlimited free staff-assisted transactions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BANK@POST_WITHDRAWAL_FEE",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee applies where you make a cash withdrawal via Australia Post offices displaying the Bank@Post symbol. The fee is debited to your account at the end of the month in which the fee is incurred.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "OVERSEAS_DEBIT_CARD_REPLACEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "120.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request the emergency replacement through VISA International of your VISA Debit card that is lost or stolen. The fee is debited to your account at the time of your request for a replacement card.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "OVERSEAS_CARD_TRANSACTION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.025"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to all cash advances and retail purchase transactions made in currencies other than Australian dollars. The fee is added to the total transaction amount debited to your account in Australian dollars.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "BPAY_ERROR_CORRECTION_PROCESSING_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "CHEQUE_DISHONOUR_(INWARD)_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "COUNTER_(CORPORATE)_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "DUPLICATE_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_DEBIT_INTEREST",
+          "feeType": "OTHER",
+          "feeMethodUType": "variable",
+          "variable": {
+            "feeMinimum": "1.00",
+            "feeMaximum": "200.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Where your account is overdrawn* at the close of business without prior approval from us, we will charge you interest on the unauthorised overdrawn amount. Overdrawn Account Debit Interest is calculated daily and debited to your account at the end of the month",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "OVERSEAS_CARD_TRANSACTION_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.025"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to all cash advances and retail purchase transactions made in currencies other than Australian dollars. The fee is added to the total transaction amount debited to your account in Australian dollars.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "OVERSEAS_DEBIT_CARD_REPLACEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "120.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request the emergency replacement through VISA International of your VISA Debit card that is lost or stolen. The fee is debited to your account at the time of your request for a replacement card.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STALE_CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "VISA_CASH_WITHDRAWAL_FEE",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you make a VISA cash advance at an overseas ATM. The fee is debited to your account at the end of the month.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "ALERT_FEE_(SMS)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.25"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "ASSISTED_PIN_ISSUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to generate a PIN for your card. The fee will be debited to your account at the end of the day in which the PIN is generated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "INTERIM_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "PENSION_RECIPIENT",
+          "additionalInfo": "To be eligible for the Pension Advantage product you must receive an Aged, Australian War Veterans or Disability Pension from the Department of Social Security (Centrelink) or Department of Veteran Affairs and be a holder of a current Pensioner Concession Card or Repatriation Health Card. For joint accounts, at least one of the account holders must satisfy this criteria to be eligible."
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "1.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalInfo": "Use your Visa Debit Card to shop online, in-person and access cash at ATMs."
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay, Google Pay"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://bankofus.com.au/bank-accounts",
+        "termsUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "eligibilityUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "feesAndPricingUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+      }
+    },
+    {
+      "id": "Save_up",
+      "name": "Save up",
+      "description": "Our 'Save up' account is the perfect account to help you save for something special or just for a rainy day. The account pays a base rate of interest and if you deposit a minimum of $50.00 per month a",
+      "url": "https://bankofus.com.au/bank-accounts",
+      "lastUpdated": "2026-05-31T07:44:23.000+10:00",
+      "source": "https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/Save_up",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.004",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0465",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "BPAY_ERROR_CORRECTION_PROCESSING_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "CHEQUE_DISHONOUR_(INWARD)_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "COUNTER_(CORPORATE)_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "DUPLICATE_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."
+        },
+        {
+          "name": "SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STALE_CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "ALERT_FEE_(SMS)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.25"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "INTERIM_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "1.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "To obtain the Bonus rate, you need to deposit a minimum of $50 into the account during the month and make no withdrawals or transfers from the account."
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://bankofus.com.au/bank-accounts",
+        "termsUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "eligibilityUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "feesAndPricingUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+      }
+    },
+    {
+      "id": "SpringLoad",
+      "name": "Spring Load",
+      "description": "The Spring Load account is a maximum period (term) account, which is available to Tasmanian residents who are depositing new money with Bank of us. The maximum period commences on the day the account",
+      "url": "https://bankofus.com.au/bank-accounts",
+      "lastUpdated": "2026-05-31T07:45:56.000+10:00",
+      "source": "https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/SpringLoad",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Spring Load_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "24999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Spring Load_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "25000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Spring Load_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0225",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Spring Load_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "24999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0525",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Spring Load_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "25000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0525",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Spring Load_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "BPAY_ERROR_CORRECTION_PROCESSING_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "CHEQUE_DISHONOUR_(INWARD)_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "COUNTER_(CORPORATE)_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "DUPLICATE_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."
+        },
+        {
+          "name": "SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STALE_CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "ALERT_FEE_(SMS)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.25"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "INTERIM_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": "Tasmanian resident"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "50000.00"
+        },
+        {
+          "constraintType": "MAX_BALANCE",
+          "additionalValue": "1000000.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "You can make up to 5 withdrawals or transfers from the Spring Load account in any one month without impacting the credit interest paid on the account. However, if you make more than 5 withdrawals or transfers during a month, you won't receive any interest."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://bankofus.com.au/bank-accounts",
+        "termsUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "eligibilityUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "feesAndPricingUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+      }
+    },
+    {
+      "id": "Stash_n_Splash",
+      "name": "Stash n Splash",
+      "description": "Our Stash 'n' Splash account is an online savings account that is great if you want to earn a competitive rate of interest while having the ability to continue to save or access your funds as you requ",
+      "url": "https://bankofus.com.au/bank-accounts",
+      "lastUpdated": "2026-05-31T07:46:58.000+10:00",
+      "source": "https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/Stash_n_Splash",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Stash n Splash_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "24999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Stash n Splash_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "25000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0225",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Stash n Splash_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "24999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.03",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Stash n Splash_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "25000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "BPAY_ERROR_CORRECTION_PROCESSING_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "CHEQUE_DISHONOUR_(INWARD)_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "COUNTER_(CORPORATE)_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "DUPLICATE_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."
+        },
+        {
+          "name": "SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STALE_CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "ALERT_FEE_(SMS)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.25"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "INTERIM_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "1.00"
+        },
+        {
+          "constraintType": "MAX_BALANCE",
+          "additionalValue": "1000000.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "You can make up to 5 withdrawals or transfers from the Stash 'n' Splash account in any one month without impacting the credit interest paid on the account. However, if you make more than 5 withdrawals or transfers during a month, you won't receive any interest."
+        },
+        {
+          "featureType": "NPP_PAYID"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://bankofus.com.au/bank-accounts",
+        "termsUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "eligibilityUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "feesAndPricingUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+      }
+    },
+    {
+      "id": "SuperAdv",
+      "name": "SUPER ADVANTAGE",
+      "description": "A Self Managaed Super Fund (SMSF) cash hub account that will help take the complexities out of managing your SMSF. You get a competitive interest rate, plus it makes your super fund accounting, tax re",
+      "url": "https://bankofus.com.au/bank-accounts",
+      "lastUpdated": "2026-06-01T10:27:46.000+10:00",
+      "source": "https://api.bankofus.com.au/OpenBanking/cds-au/v1/banking/products/SuperAdv",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.015",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "SUPER ADVANTAGE_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "9999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.015",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "SUPER ADVANTAGE_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "10000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://bankofus.com.au/everyday-and-savings-interest-rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ASSISTED_WITHDRAWAL_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "If you have a Super Advantage or Business iCash account this fee will apply to any withdrawal or transfer from your account made at a Bank of us Retail Store or via our Contact Centre in any month.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "BPAY_ERROR_CORRECTION_PROCESSING_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where we are required to process the correction of a BPAY payment that is made by you in error. The fee does not apply where you are not responsible for the error. The fee is debited to your account when your funds are retrieved following correction.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "CHEQUE_DISHONOUR_(INWARD)_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a cheque paid into your account with us is dishonoured. The fee is debited to your account on the date of dishonour.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "COUNTER_(CORPORATE)_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to draw a counter/corporate cheque against funds held in your account, whether to a third party or to yourself. The fee is debited to your account at the end of the day in which the cheque is drawn.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "DUPLICATE_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable for each duplicate paper copy of your monthly statement you request. Charged at the time of your request."
+        },
+        {
+          "name": "SPECIAL_CLEARANCE_FEE_ON_CHEQUE_DEPOSITS",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you request us to obtain fast clearance of a cheque to be deposited to your account. The fee is debited to your account at the time of request.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STALE_CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where a counter/corporate cheque that you have arranged is still unpresented after 15 months from the date of issue. The fee is payable by you when we issue a replacement counter/corporate cheque on your behalf and is subtracted from the reissued/replacement cheque. Where the cheque value is $30.00 or less, a fee equivalent to the value of the cheque will apply.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "STOP_PAYMENT_FEE_ON_CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to a request from you for a stop payment to be placed on a counter/corporate cheque due to theft or loss. The fee is debited to your account on the next business day following placement of the stop and includes the issuing of a replacement cheque.",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "ALERT_FEE_(SMS)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.25"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies to each Alert sent to you by SMS. The fee is debited to your nominated account at the end of the day in which the SMS is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "INTERIM_STATEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Per statement. Applies where you request an interim statement between your existing statement cycle. The fee is debited to your account when we issue the interim statement(s).",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        },
+        {
+          "name": "REAL_TIME_GROSS_SETTLEMENT_PAYMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Applies where you initiate the transfer of cleared funds, via RTGS, to another financial institution within Australia. The fee is debited to your account at the time the transfer is initiated",
+          "additionalInfoUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "To be eligible for this product the customer must have a registered Self Managed Super Fund"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "1.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://bankofus.com.au/bank-accounts",
+        "termsUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "eligibilityUri": "https://bankofus.com.au/source-assets/documents/compliance/Summary-of-Accounts-Availability-of-Access-Facilities-and-Transaction-Limits-15-July-2024.pdf",
+        "feesAndPricingUri": "https://bankofus.com.au/source-assets/documents/compliance/Fees-and-Charges-Schedule-1-July-2021.pdf"
+      }
+    }
+  ]
+}

@@ -1,1 +1,812 @@
-{"name":"Great Southern Bank Business+","checkedAt":"2026-09-17T21:42:01.541Z","status":"available","products":[{"id":"73bdf601-d558-4163-b774-cd449c32001f","name":"Term Deposit 1 year","description":"Term deposit maturing in 1 year","url":null,"lastUpdated":"2026-05-21T06:59:43.183034Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/73bdf601-d558-4163-b774-cd449c32001f","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.0525"}],"fees":[],"eligibility":[{"additionalValue":"18","eligibilityType":"MIN_AGE"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalInfo":"\nYou must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"},{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"},{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"}]},{"id":"0e2af951-91b5-4e64-8fe4-9bb74499556d","name":"Term Deposit 3 months","description":"Term deposit maturing in 3 months","url":null,"lastUpdated":"2026-05-21T06:55:39.317726Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/0e2af951-91b5-4e64-8fe4-9bb74499556d","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.051"}],"fees":[],"eligibility":[{"additionalValue":"18","eligibilityType":"MIN_AGE"},{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalInfo":"You must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"},{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"}]},{"id":"5f2aa472-e607-4151-9de8-4e964c1301c1","name":"Term Deposit 9 months","description":"Term deposit maturing in 9 months","url":null,"lastUpdated":"2026-04-15T08:34:38.928789Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/5f2aa472-e607-4151-9de8-4e964c1301c1","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.0495"}],"fees":[],"eligibility":[{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalValue":"18","eligibilityType":"MIN_AGE"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"You must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"},{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"}]},{"id":"6c46be65-8c6a-4c46-b226-5cd0abff20ee","name":"Term Deposit 6 months","description":"Term deposit maturing in 6 months","url":null,"lastUpdated":"2026-04-15T08:33:25.352459Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/6c46be65-8c6a-4c46-b226-5cd0abff20ee","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.0505"}],"fees":[],"eligibility":[{"additionalValue":"18","eligibilityType":"MIN_AGE"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalInfo":"\nTo open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"},{"additionalInfo":"You must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"},{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"}]},{"id":"2931b193-46a3-4d8a-9a20-d8f69be8dd5e","name":"Term Deposit 11 months","description":"Term deposit maturing in 11 months","url":null,"lastUpdated":"2026-03-18T22:40:20.410952Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/2931b193-46a3-4d8a-9a20-d8f69be8dd5e","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.04"}],"fees":[],"eligibility":[{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalValue":" 18","eligibilityType":"MIN_AGE"},{"additionalInfo":"\nYou must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"},{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"}]},{"id":"631e418d-4a09-4ce6-ba79-3053abed72d5","name":"Term Deposit 10 months","description":"Term deposit maturing in 10 months","url":null,"lastUpdated":"2026-03-18T22:39:02.163967Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/631e418d-4a09-4ce6-ba79-3053abed72d5","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.04"}],"fees":[],"eligibility":[{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalInfo":"You must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalValue":"18","eligibilityType":"MIN_AGE"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"},{"additionalValue":" All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"}]},{"id":"b73a74a3-65bd-45fb-b811-ce7a16edf601","name":"Term Deposit 8 months","description":"Term deposit maturing in 8 months","url":null,"lastUpdated":"2026-03-18T22:36:26.853182Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/b73a74a3-65bd-45fb-b811-ce7a16edf601","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.04"}],"fees":[],"eligibility":[{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must meet our ID verification requirements.\n","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalInfo":"You must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalValue":"18","eligibilityType":"MIN_AGE"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"},{"additionalInfo":"\nYou can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"}]},{"id":"cc8df964-5b3e-472e-8409-b637393675d9","name":"Term Deposit 7 months","description":"Term deposit maturing in 7 months","url":null,"lastUpdated":"2026-03-18T22:34:48.981422Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/cc8df964-5b3e-472e-8409-b637393675d9","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.04"}],"fees":[],"eligibility":[{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalValue":"18","eligibilityType":"MIN_AGE"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"},{"additionalInfo":"You must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalInfo":"\nYou can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"},{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"}]},{"id":"ab31d327-63fe-4a34-a6cc-56513d79736d","name":"Term Deposit 5 months","description":"Term deposit maturing in 5 months","url":null,"lastUpdated":"2026-03-18T22:30:15.447258Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/ab31d327-63fe-4a34-a6cc-56513d79736d","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.0425"}],"fees":[],"eligibility":[{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalValue":"18","eligibilityType":"MIN_AGE"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalInfo":"\nYou must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"},{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"}]},{"id":"5eff326b-c53a-42f5-8ada-07f894bae613","name":"Term Deposit 4 months","description":"Term deposit maturing in 4 months","url":null,"lastUpdated":"2026-03-18T22:29:24.335735Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/5eff326b-c53a-42f5-8ada-07f894bae613","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.0425"}],"fees":[],"eligibility":[{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account","eligibilityType":"OTHER"},{"additionalValue":"18","eligibilityType":"MIN_AGE"},{"additionalInfo":"To open an account, you must meet our ID verification requirements","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"You must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"},{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"}]},{"id":"69ffa86f-54ef-46d4-8244-57067a461e9e","name":"Term Deposit 2 months","description":"Term Deposit maturing in 2 months","url":null,"lastUpdated":"2026-03-18T22:24:50.877863Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/69ffa86f-54ef-46d4-8244-57067a461e9e","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.04"}],"fees":[],"eligibility":[{"additionalInfo":"\nTo open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalValue":"18","eligibilityType":"MIN_AGE"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"You must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"},{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"}]},{"id":"ad14637f-870d-43d2-a1a5-0b010dd1455b","name":"Term Deposit 1 month","description":"Term Deposit maturing in 1 month","url":null,"lastUpdated":"2026-03-18T22:22:34.644557Z","source":"https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/ad14637f-870d-43d2-a1a5-0b010dd1455b","depositRates":[{"applicationType":"MATURITY","calculationFrequency":"P1D","depositRateType":"VARIABLE","rate":"0.04"}],"fees":[],"eligibility":[{"additionalValue":"You must be an Australian tax resident.","eligibilityType":"RESIDENCY_STATUS"},{"additionalInfo":"To open an account, you will need to download, register and activate your Great Southern Bank Business app.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account with this product, you must have an Business Transaction Account.","eligibilityType":"OTHER"},{"additionalInfo":"You must have an Australian mobile number and a valid email address.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an ABN.","eligibilityType":"BUSINESS"},{"additionalInfo":"To open an account, you must meet our ID verification requirements.","eligibilityType":"OTHER"},{"additionalInfo":"To open an account, you must have an Australian Address.","eligibilityType":"OTHER"},{"additionalValue":"18","eligibilityType":"MIN_AGE"}],"constraints":[{"additionalValue":"5000.00","constraintType":"MIN_BALANCE"}],"features":[{"additionalValue":"All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.","featureType":"NOTIFICATIONS"},{"additionalInfo":"You can access your Term Deposit on your mobile and online.","featureType":"DIGITAL_BANKING"}]}]}
+{
+  "name": "Great Southern Bank Business+",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "0e2af951-91b5-4e64-8fe4-9bb74499556d",
+      "name": "Term Deposit 3 months",
+      "description": "Term deposit maturing in 3 months",
+      "url": null,
+      "lastUpdated": "2026-05-21T06:55:39.317726Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/0e2af951-91b5-4e64-8fe4-9bb74499556d",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.051"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "You must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        },
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        }
+      ]
+    },
+    {
+      "id": "2931b193-46a3-4d8a-9a20-d8f69be8dd5e",
+      "name": "Term Deposit 11 months",
+      "description": "Term deposit maturing in 11 months",
+      "url": null,
+      "lastUpdated": "2026-03-18T22:40:20.410952Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/2931b193-46a3-4d8a-9a20-d8f69be8dd5e",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.04"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": " 18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "\nYou must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        },
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        }
+      ]
+    },
+    {
+      "id": "5eff326b-c53a-42f5-8ada-07f894bae613",
+      "name": "Term Deposit 4 months",
+      "description": "Term deposit maturing in 4 months",
+      "url": null,
+      "lastUpdated": "2026-03-18T22:29:24.335735Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/5eff326b-c53a-42f5-8ada-07f894bae613",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.0425"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "You must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        }
+      ]
+    },
+    {
+      "id": "5f2aa472-e607-4151-9de8-4e964c1301c1",
+      "name": "Term Deposit 9 months",
+      "description": "Term deposit maturing in 9 months",
+      "url": null,
+      "lastUpdated": "2026-04-15T08:34:38.928789Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/5f2aa472-e607-4151-9de8-4e964c1301c1",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.0495"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "additionalInfo": "You must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        },
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        }
+      ]
+    },
+    {
+      "id": "631e418d-4a09-4ce6-ba79-3053abed72d5",
+      "name": "Term Deposit 10 months",
+      "description": "Term deposit maturing in 10 months",
+      "url": null,
+      "lastUpdated": "2026-03-18T22:39:02.163967Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/631e418d-4a09-4ce6-ba79-3053abed72d5",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.04"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "You must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalValue": " All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        },
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        }
+      ]
+    },
+    {
+      "id": "69ffa86f-54ef-46d4-8244-57067a461e9e",
+      "name": "Term Deposit 2 months",
+      "description": "Term Deposit maturing in 2 months",
+      "url": null,
+      "lastUpdated": "2026-03-18T22:24:50.877863Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/69ffa86f-54ef-46d4-8244-57067a461e9e",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.04"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "\nTo open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "You must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        }
+      ]
+    },
+    {
+      "id": "6c46be65-8c6a-4c46-b226-5cd0abff20ee",
+      "name": "Term Deposit 6 months",
+      "description": "Term deposit maturing in 6 months",
+      "url": null,
+      "lastUpdated": "2026-04-15T08:33:25.352459Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/6c46be65-8c6a-4c46-b226-5cd0abff20ee",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.0505"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "You must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "\nTo open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        },
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        }
+      ]
+    },
+    {
+      "id": "73bdf601-d558-4163-b774-cd449c32001f",
+      "name": "Term Deposit 1 year",
+      "description": "Term deposit maturing in 1 year",
+      "url": null,
+      "lastUpdated": "2026-05-21T06:59:43.183034Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/73bdf601-d558-4163-b774-cd449c32001f",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.0525"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "\nYou must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        }
+      ]
+    },
+    {
+      "id": "ab31d327-63fe-4a34-a6cc-56513d79736d",
+      "name": "Term Deposit 5 months",
+      "description": "Term deposit maturing in 5 months",
+      "url": null,
+      "lastUpdated": "2026-03-18T22:30:15.447258Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/ab31d327-63fe-4a34-a6cc-56513d79736d",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.0425"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "\nYou must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        },
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        }
+      ]
+    },
+    {
+      "id": "ad14637f-870d-43d2-a1a5-0b010dd1455b",
+      "name": "Term Deposit 1 month",
+      "description": "Term Deposit maturing in 1 month",
+      "url": null,
+      "lastUpdated": "2026-03-18T22:22:34.644557Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/ad14637f-870d-43d2-a1a5-0b010dd1455b",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.04"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "You must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalInfo": "You can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        }
+      ]
+    },
+    {
+      "id": "b73a74a3-65bd-45fb-b811-ce7a16edf601",
+      "name": "Term Deposit 8 months",
+      "description": "Term deposit maturing in 8 months",
+      "url": null,
+      "lastUpdated": "2026-03-18T22:36:26.853182Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/b73a74a3-65bd-45fb-b811-ce7a16edf601",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.04"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.\n",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "You must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        },
+        {
+          "additionalInfo": "\nYou can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        }
+      ]
+    },
+    {
+      "id": "cc8df964-5b3e-472e-8409-b637393675d9",
+      "name": "Term Deposit 7 months",
+      "description": "Term deposit maturing in 7 months",
+      "url": null,
+      "lastUpdated": "2026-03-18T22:34:48.981422Z",
+      "source": "https://od1.open-banking.business.greatsouthernbank.com.au/api/cds-au/v1/banking/products/cc8df964-5b3e-472e-8409-b637393675d9",
+      "depositRates": [
+        {
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.04"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "additionalInfo": "To open an account, you must have an ABN.",
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "additionalInfo": "To open an account, you will need to download, register and activate your Great Southern Bank Business app.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account, you must meet our ID verification requirements.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalValue": "You must be an Australian tax resident.",
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "additionalValue": "18",
+          "eligibilityType": "MIN_AGE"
+        },
+        {
+          "additionalInfo": "To open an account, you must have an Australian Address.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "To open an account with this product, you must have an Business Transaction Account.",
+          "eligibilityType": "OTHER"
+        },
+        {
+          "additionalInfo": "You must have an Australian mobile number and a valid email address.",
+          "eligibilityType": "OTHER"
+        }
+      ],
+      "constraints": [
+        {
+          "additionalValue": "5000.00",
+          "constraintType": "MIN_BALANCE"
+        }
+      ],
+      "features": [
+        {
+          "additionalValue": "All statements, notices and other communication in connection with these terms and conditions and your account may be given electronically by Great Southern Bank by:\\\\n• email, text message, in app push notifications, in app prompts, or\\\\n• letting you know by email, text message or push notification that the information is available on the app or on a website.\\\\nYou should check your emails, text messages and push notifications regularly.",
+          "featureType": "NOTIFICATIONS"
+        },
+        {
+          "additionalInfo": "\nYou can access your Term Deposit on your mobile and online.",
+          "featureType": "DIGITAL_BANKING"
+        }
+      ]
+    }
+  ]
+}

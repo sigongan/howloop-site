@@ -1,1 +1,1126 @@
-{"name":"RSL Money","checkedAt":"2026-09-17T21:42:14.032Z","status":"available","products":[{"id":"4007302f-9762-4f5e-8054-5cb2116e0f37","name":"Sub Branch Account","description":"Specifically designed for RSL Sub Branches, this flexible and easy to manage transaction account offers your Sub Branch a range of convenient banking options with no monthly account keeping fees.","url":"https://www.rslmoney.com.au/products/rsl-money-sub-branch-account","lastUpdated":"2026-09-14T17:00:00.280354Z","source":"https://public.open.rslmoney.com.au/cds-au/v1/banking/products/4007302f-9762-4f5e-8054-5cb2116e0f37","depositRates":[{"depositRateType":"VARIABLE","rate":"0.021","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1Y","calculationFrequency":"P1D","tiers":[],"applicationType":"PERIODIC","applicabilityConditions":[]}],"fees":[{"feeType":"EVENT","name":"Declined credit transactions","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.80"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Declined EFTPOS transactions","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.80"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Staff assisted external transfer and BPAY transaction","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.60"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"EFTPOS dispute fee","additionalInfo":"At cost","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"1.00","feeMaximum":null},"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Bank@Post cheque dishonour fee ","additionalInfo":"At cost","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"1.00","feeMaximum":null},"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Telegraphic transfers (online)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"EFT trace/recall of funds","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Foreign Cheque encashment (<AU$5000)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Foreign drafts","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"Overseas ATM withdrawals","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.50"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Foreign Currency Conversion fee","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"rateBased","fixedAmount":null,"rateBased":{"rateType":"TRANSACTION","rate":"0.03","accrualFrequency":null,"amountRange":null},"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Telegraphic transfers (AUD)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"20.00","feeMaximum":"50.00"},"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Visa Card replacement processing fee","additionalInfo":"At cost","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"20.00","feeMaximum":null},"feeCap":null,"feeCapPeriod":null},{"feeType":"PERIODIC","name":"Dormancy fee for accounts inactive greater\nthan 24 months","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"P1M","currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Swift transfers","additionalInfo":"Electronic funds transfer between Australian Military Bank and other financial institutions","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Direct debit dishonour","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Declined Visa dispute","additionalInfo":"If a Visa dispute lodged by you is declined and found that the claim was invalid","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Foreign Cheque encashment (>AU$5000)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Retrieval of member documents from archives","additionalInfo":"Per hour fee applies plus any expenses incurred","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"50.00","feeMaximum":null},"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Paper statements printed at branch or posted","additionalInfo":"$2.50 for printed and collect at branch or $5 if posted.\nNo statement fee for RSL Money Sub Branch accounts","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"2.50","feeMaximum":"5.00"},"feeCap":null,"feeCapPeriod":null},{"feeType":"PERIODIC","name":"Paper statement fee (per statement)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"P1M","currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Foreign Currency Encashment","additionalInfo":"Minimum encashment of AU$50 applies","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Amendment/ cancellation of\ntelegraphic transfer/swift transfers","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Buy Foreign Currency","additionalInfo":"1% of AUD value of amount purchased. Minimum order of AU$100 applies","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"rateBased","fixedAmount":null,"rateBased":{"rateType":"TRANSACTION","rate":"0.01","accrualFrequency":null,"amountRange":null},"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Audit Certificate Fee","additionalInfo":"Per audit certificate requested","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"Account can only be opened by an RSL Sub Branch","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"BUSINESS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"RSL Sub branch must be registered in Australia"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"BPAY","isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"DIGITAL_BANKING","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"ADDITIONAL_CARDS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"CARD_ACCESS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Visa Debit with payWave","isActivated":"UNKNOWN"},{"featureType":"UNLIMITED_TXNS","additionalInfo":"Unlimited Visa, EFTPOS, BPAY, Pay Anyone, Direct Debit and Bank@Post Transactions","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"OTHER","additionalInfo":"No monthly account keeping fees","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NOTIFICATIONS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Members can set up a variety of notifications in Internet Banking","isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.rslmoney.com.au/products/rsl-money-sub-branch-account","termsUri":"https://www.rslmoney.com.au/disclosuredocuments","eligibilityUri":"https://www.rslmoney.com.au/disclosuredocuments","feesAndPricingUri":"https://www.rslmoney.com.au/disclosuredocuments","bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":null,"additionalFeesAndPricingUris":null,"additionalBundleUris":null}},{"id":"53173a06-7fd8-4fc3-bdce-871dcd373830","name":"RSL Everyday Account","description":"Designed specifically for those on a Government pension and for retirees, the RSL Money Pension account allows you to grow your savings whilst supporting you with no everyday banking fees to assist you in that goal.","url":"https://www.rslmoney.com.au/products/rsl-money-everyday-account","lastUpdated":"2026-09-14T17:00:00.280346Z","source":"https://public.open.rslmoney.com.au/cds-au/v1/banking/products/53173a06-7fd8-4fc3-bdce-871dcd373830","depositRates":[{"depositRateType":"VARIABLE","rate":"0.005","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[],"applicationType":"PERIODIC","applicabilityConditions":[]}],"fees":[{"feeType":"EVENT","name":"Declined credit transactions","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.80"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Declined EFTPOS transactions","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.80"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Staff assisted external transfer and BPAY transaction","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.60"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"EFTPOS dispute fee","additionalInfo":"At cost","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"1.00","feeMaximum":null},"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Bank@Post cheque dishonour fee ","additionalInfo":"At cost","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"1.00","feeMaximum":null},"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Telegraphic transfers (online)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"EFT trace/recall of funds","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Foreign Cheque encashment (<AU$5000)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Foreign drafts","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"Overseas ATM withdrawals","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.50"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Foreign Currency Conversion fee","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"rateBased","fixedAmount":null,"rateBased":{"rateType":"TRANSACTION","rate":"0.03","accrualFrequency":null,"amountRange":null},"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Telegraphic transfers (AUD)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"20.00","feeMaximum":"50.00"},"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Visa Card replacement processing fee","additionalInfo":"At cost","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"20.00","feeMaximum":null},"feeCap":null,"feeCapPeriod":null},{"feeType":"PERIODIC","name":"Dormancy fee for accounts inactive greater\nthan 24 months","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"P1M","currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Swift transfers","additionalInfo":"Electronic funds transfer between Australian Military Bank and other financial institutions","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Direct debit dishonour","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Declined Visa dispute","additionalInfo":"If a Visa dispute lodged by you is declined and found that the claim was invalid","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Foreign Cheque encashment (>AU$5000)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Retrieval of member documents from archives","additionalInfo":"Per hour fee applies plus any expenses incurred","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"50.00","feeMaximum":null},"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Paper statements printed at branch or posted","additionalInfo":"$2.50 for printed and collect at branch or $5 if posted.\nNo statement fee for RSL Money Sub Branch accounts","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"variable","fixedAmount":null,"rateBased":null,"variable":{"feeMinimum":"2.50","feeMaximum":"5.00"},"feeCap":null,"feeCapPeriod":null},{"feeType":"PERIODIC","name":"Paper statement fee (per statement)","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"P1M","currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Foreign Currency Encashment","additionalInfo":"Minimum encashment of AU$50 applies","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Amendment/ cancellation of\ntelegraphic transfer/swift transfers","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Buy Foreign Currency","additionalInfo":"1% of AUD value of amount purchased. Minimum order of AU$100 applies","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"rateBased","fixedAmount":null,"rateBased":{"rateType":"TRANSACTION","rate":"0.01","accrualFrequency":null,"amountRange":null},"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"EVENT","name":"Audit Certificate Fee","additionalInfo":"Per audit certificate requested","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"Only RSL Sub Branch member and their families can open this account","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"MIN_AGE","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"18"},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Australian citizen or permanent resident"}],"constraints":[],"features":[{"featureType":"OTHER","additionalInfo":"0.20% of the balance is donated to RSL National per annum","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"CARD_ACCESS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Visa Debit with payWave","isActivated":"UNKNOWN"},{"featureType":"BILL_PAYMENT","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"BPAY","isActivated":"UNKNOWN"},{"featureType":"DIGITAL_BANKING","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NOTIFICATIONS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Members can set up a variety of notifications in Internet Banking","isActivated":"UNKNOWN"},{"featureType":"ADDITIONAL_CARDS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"UNLIMITED_TXNS","additionalInfo":"Unlimited Visa, EFTPOS, BPAY, Pay Anyone, Direct Debit and Bank@Post Transactions","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"OTHER","additionalInfo":"Free cheque book","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"OTHER","additionalInfo":"Pension Account holders also receive 2.00% discount on the RSL Low Rate Visa Card ","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.rslmoney.com.au/products/rsl-money-everyday-account","termsUri":"https://www.rslmoney.com.au/disclosuredocuments","eligibilityUri":"https://www.rslmoney.com.au/disclosuredocuments","feesAndPricingUri":"https://www.rslmoney.com.au/disclosuredocuments","bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":null,"additionalFeesAndPricingUris":null,"additionalBundleUris":null}}]}
+{
+  "name": "RSL Money",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "4007302f-9762-4f5e-8054-5cb2116e0f37",
+      "name": "Sub Branch Account",
+      "description": "Specifically designed for RSL Sub Branches, this flexible and easy to manage transaction account offers your Sub Branch a range of convenient banking options with no monthly account keeping fees.",
+      "url": "https://www.rslmoney.com.au/products/rsl-money-sub-branch-account",
+      "lastUpdated": "2026-09-14T17:00:00.280354Z",
+      "source": "https://public.open.rslmoney.com.au/cds-au/v1/banking/products/4007302f-9762-4f5e-8054-5cb2116e0f37",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.021",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1Y",
+          "calculationFrequency": "P1D",
+          "tiers": [],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": []
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "EVENT",
+          "name": "Declined credit transactions",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.80"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Declined EFTPOS transactions",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.80"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Staff assisted external transfer and BPAY transaction",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.60"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "EFTPOS dispute fee",
+          "additionalInfo": "At cost",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "1.00",
+            "feeMaximum": null
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Bank@Post cheque dishonour fee ",
+          "additionalInfo": "At cost",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "1.00",
+            "feeMaximum": null
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Telegraphic transfers (online)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "EFT trace/recall of funds",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Foreign Cheque encashment (<AU$5000)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Foreign drafts",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "Overseas ATM withdrawals",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.50"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Foreign Currency Conversion fee",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "fixedAmount": null,
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.03",
+            "accrualFrequency": null,
+            "amountRange": null
+          },
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Telegraphic transfers (AUD)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "20.00",
+            "feeMaximum": "50.00"
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Visa Card replacement processing fee",
+          "additionalInfo": "At cost",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "20.00",
+            "feeMaximum": null
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PERIODIC",
+          "name": "Dormancy fee for accounts inactive greater\nthan 24 months",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "P1M",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Swift transfers",
+          "additionalInfo": "Electronic funds transfer between Australian Military Bank and other financial institutions",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Direct debit dishonour",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Declined Visa dispute",
+          "additionalInfo": "If a Visa dispute lodged by you is declined and found that the claim was invalid",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Foreign Cheque encashment (>AU$5000)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Retrieval of member documents from archives",
+          "additionalInfo": "Per hour fee applies plus any expenses incurred",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "50.00",
+            "feeMaximum": null
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Paper statements printed at branch or posted",
+          "additionalInfo": "$2.50 for printed and collect at branch or $5 if posted.\nNo statement fee for RSL Money Sub Branch accounts",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "2.50",
+            "feeMaximum": "5.00"
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PERIODIC",
+          "name": "Paper statement fee (per statement)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "P1M",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Foreign Currency Encashment",
+          "additionalInfo": "Minimum encashment of AU$50 applies",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Amendment/ cancellation of\ntelegraphic transfer/swift transfers",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Buy Foreign Currency",
+          "additionalInfo": "1% of AUD value of amount purchased. Minimum order of AU$100 applies",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "fixedAmount": null,
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01",
+            "accrualFrequency": null,
+            "amountRange": null
+          },
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Audit Certificate Fee",
+          "additionalInfo": "Per audit certificate requested",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Account can only be opened by an RSL Sub Branch",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "BUSINESS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "RSL Sub branch must be registered in Australia"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "BPAY",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "ADDITIONAL_CARDS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Visa Debit with payWave",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfo": "Unlimited Visa, EFTPOS, BPAY, Pay Anyone, Direct Debit and Bank@Post Transactions",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No monthly account keeping fees",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.rslmoney.com.au/products/rsl-money-sub-branch-account",
+        "termsUri": "https://www.rslmoney.com.au/disclosuredocuments",
+        "eligibilityUri": "https://www.rslmoney.com.au/disclosuredocuments",
+        "feesAndPricingUri": "https://www.rslmoney.com.au/disclosuredocuments",
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": null,
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    },
+    {
+      "id": "53173a06-7fd8-4fc3-bdce-871dcd373830",
+      "name": "RSL Everyday Account",
+      "description": "Designed specifically for those on a Government pension and for retirees, the RSL Money Pension account allows you to grow your savings whilst supporting you with no everyday banking fees to assist you in that goal.",
+      "url": "https://www.rslmoney.com.au/products/rsl-money-everyday-account",
+      "lastUpdated": "2026-09-14T17:00:00.280346Z",
+      "source": "https://public.open.rslmoney.com.au/cds-au/v1/banking/products/53173a06-7fd8-4fc3-bdce-871dcd373830",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.005",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": []
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "EVENT",
+          "name": "Declined credit transactions",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.80"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Declined EFTPOS transactions",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.80"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Staff assisted external transfer and BPAY transaction",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.60"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "EFTPOS dispute fee",
+          "additionalInfo": "At cost",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "1.00",
+            "feeMaximum": null
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Bank@Post cheque dishonour fee ",
+          "additionalInfo": "At cost",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "1.00",
+            "feeMaximum": null
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Telegraphic transfers (online)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "EFT trace/recall of funds",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Foreign Cheque encashment (<AU$5000)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Foreign drafts",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "Overseas ATM withdrawals",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.50"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Foreign Currency Conversion fee",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "fixedAmount": null,
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.03",
+            "accrualFrequency": null,
+            "amountRange": null
+          },
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Telegraphic transfers (AUD)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "20.00",
+            "feeMaximum": "50.00"
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Visa Card replacement processing fee",
+          "additionalInfo": "At cost",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "20.00",
+            "feeMaximum": null
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PERIODIC",
+          "name": "Dormancy fee for accounts inactive greater\nthan 24 months",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "P1M",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Swift transfers",
+          "additionalInfo": "Electronic funds transfer between Australian Military Bank and other financial institutions",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Direct debit dishonour",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Declined Visa dispute",
+          "additionalInfo": "If a Visa dispute lodged by you is declined and found that the claim was invalid",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Foreign Cheque encashment (>AU$5000)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Retrieval of member documents from archives",
+          "additionalInfo": "Per hour fee applies plus any expenses incurred",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "50.00",
+            "feeMaximum": null
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Paper statements printed at branch or posted",
+          "additionalInfo": "$2.50 for printed and collect at branch or $5 if posted.\nNo statement fee for RSL Money Sub Branch accounts",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "fixedAmount": null,
+          "rateBased": null,
+          "variable": {
+            "feeMinimum": "2.50",
+            "feeMaximum": "5.00"
+          },
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PERIODIC",
+          "name": "Paper statement fee (per statement)",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "P1M",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Foreign Currency Encashment",
+          "additionalInfo": "Minimum encashment of AU$50 applies",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Amendment/ cancellation of\ntelegraphic transfer/swift transfers",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Buy Foreign Currency",
+          "additionalInfo": "1% of AUD value of amount purchased. Minimum order of AU$100 applies",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "fixedAmount": null,
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01",
+            "accrualFrequency": null,
+            "amountRange": null
+          },
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "EVENT",
+          "name": "Audit Certificate Fee",
+          "additionalInfo": "Per audit certificate requested",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Only RSL Sub Branch member and their families can open this account",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "18"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Australian citizen or permanent resident"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "0.20% of the balance is donated to RSL National per annum",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Visa Debit with payWave",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "BPAY",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "ADDITIONAL_CARDS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfo": "Unlimited Visa, EFTPOS, BPAY, Pay Anyone, Direct Debit and Bank@Post Transactions",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Free cheque book",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Pension Account holders also receive 2.00% discount on the RSL Low Rate Visa Card ",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.rslmoney.com.au/products/rsl-money-everyday-account",
+        "termsUri": "https://www.rslmoney.com.au/disclosuredocuments",
+        "eligibilityUri": "https://www.rslmoney.com.au/disclosuredocuments",
+        "feesAndPricingUri": "https://www.rslmoney.com.au/disclosuredocuments",
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": null,
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    }
+  ]
+}

@@ -1,1 +1,1283 @@
-{"name":"Beyond Bank Australia","checkedAt":"2026-09-17T21:41:53.027Z","status":"available","products":[{"id":"6","name":"Access Savings Account","description":"The Access Savings Account is no longer available as a new account","url":"https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/","lastUpdated":"2026-09-17T20:00:31.2205298Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/6","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Floating Balance Tier 1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"1999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest paid six monthly on 31 May and 30 November on deposit balances."},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Floating Balance Tier 2","unitOfMeasure":"DOLLAR","minimumValue":"2000.00","maximumValue":"4999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest paid six monthly on 31 May and 30 November on deposit balances."},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Floating Balance Tier 3","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"9999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest paid six monthly on 31 May and 30 November on deposit balances."},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Floating Balance Tier 4","unitOfMeasure":"DOLLAR","minimumValue":"10000.00","maximumValue":"19999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest paid six monthly on 31 May and 30 November on deposit balances."},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Floating Balance Tier 5","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest paid six monthly on 31 May and 30 November on deposit balances."}],"fees":[{"name":"Bank@Post Deposit Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD"},{"name":"Bank@Post Withdrawal Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.50"},"currency":"AUD"},{"name":"Cash Advance/Overseas ATM Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.50"},"currency":"AUD"},{"name":"Honour Overdrawn Account Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"11.00"},"currency":"AUD"},{"name":"Line of Credit Approval / Variation Fee","feeType":"UPFRONT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"195.00"},"currency":"AUD","additionalInfo":"Product no longer available for new accounts - no variations can be made to existing line of credits.","discounts":[{"description":"No Line of Credit Approval/Variation Fee - Life Members","discountType":"ELIGIBILITY_ONLY","discountMethodUType":"fixedAmount","fixedAmount":{"amount":"195.00"},"eligibility":[{"discountEligibilityType":"OTHER","additionalInfo":"This fee is waived for Life Members."}]}]},{"name":"Default Notice Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"This fee is payable whenever we send you a default notice because you have defaulted under the contract."},{"name":"Default Fee on Line of Credit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD","additionalInfo":"This fee is payable on the 15th day of every month whilst you are in default."}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"Product no longer available as a new account.","additionalInfoUri":"https://www.beyondbank.com.au/personal-loans/line-of-credit/"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY available.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"},{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card available"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"DIGITAL_WALLET","additionalValue":"Mobile Wallet","additionalInfo":"Load your Beyond Bank Visa Debit card to your phone to make fast and easy transactions.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"},{"featureType":"NOTIFICATIONS","additionalValue":"Text Me or Push Notification Alert","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.","additionalInfoUri":"https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"},{"featureType":"NPP_ENABLED","additionalInfo":"New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"},{"featureType":"NPP_PAYID","additionalInfo":"New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/","termsUri":"https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/","eligibilityUri":"https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/","feesAndPricingUri":"https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/"}},{"id":"2","name":"Retirement Account","description":"The Retirement Account enables retirees to earn a little, whilst still using this as an everyday bank account.","url":"https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/","lastUpdated":"2026-08-31T08:00:30.6354238Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/2","depositRates":[{"depositRateType":"VARIABLE","rate":"0.014","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Tier 1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.016","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Tier 2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"48599.99","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.0205","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Tier 3","unitOfMeasure":"DOLLAR","minimumValue":"48600.00","maximumValue":"199999.99","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.0205","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Tier 4","unitOfMeasure":"DOLLAR","minimumValue":"200000.00","rateApplicationMethod":"PER_TIER"}]}],"fees":[{"name":"Bank@Post Deposit Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD"},{"name":"Bank@Post Withdrawal Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.50"},"currency":"AUD"},{"name":"Cash Advance/Overseas ATM Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.50"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"Membership: You must be or become a Beyond Bank Australia member"},{"eligibilityType":"PENSION_RECIPIENT","additionalInfo":"Only available to self-funded retirees or those in receipt of a Superannuation or Aged Pension or the Mature Aged Allowance.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY available.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"},{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card available"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"DIGITAL_WALLET","additionalValue":"Mobile Wallet","additionalInfo":"Load your Beyond Bank Visa Debit card to your phone to make fast and easy transactions.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"},{"featureType":"NOTIFICATIONS","additionalValue":"Text Me or Push Notification Alert","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.","additionalInfoUri":"https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"},{"featureType":"NPP_ENABLED","additionalInfo":"New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"},{"featureType":"NPP_PAYID","additionalInfo":"New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/","termsUri":"https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/","eligibilityUri":"https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/","feesAndPricingUri":"https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/"}},{"id":"5","name":"BU Account","description":"The perfect account to stash your cash. If you're under 18 years old, our BU Savings Account is a transaction account designed to build your stash of cash quicker than ever!","url":"https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/","lastUpdated":"2026-08-31T08:00:30.6354238Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/5","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0315","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P3M","additionalInfo":"Interest is paid quarterly on 31 March, 30 June, 30 September and 31 December"}],"fees":[{"name":"Bank@Post Deposit Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD"},{"name":"Bank@Post Withdrawal Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.50"},"currency":"AUD"},{"name":"Cash Advance/Overseas ATM Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.50"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"MAX_AGE","additionalValue":"17"},{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"Membership: You must be or become a Beyond Bank Australia member"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY available.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"},{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card available"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"DIGITAL_WALLET","additionalValue":"Mobile Wallet","additionalInfo":"Load your Beyond Bank Visa Debit card to your phone to make fast and easy transactions.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"},{"featureType":"NOTIFICATIONS","additionalValue":"Text Me or Push Notification Alert","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.","additionalInfoUri":"https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"},{"featureType":"NPP_ENABLED","additionalInfo":"New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"},{"featureType":"NPP_PAYID","additionalInfo":"New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"},{"featureType":"OTHER","additionalInfo":"Account Conversion: Convert to Purple Transactor upon turning 18yrs"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/","termsUri":"https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/","eligibilityUri":"https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/","feesAndPricingUri":"https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/"}},{"id":"3","name":"monEsaver Internet Account","description":"The monEsaver is an online savings account with no account keeping fees. Earn interest with no minimum deposit requirements or withdrawal penalties for internet banking, phone banking and mobile banking.","url":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/","lastUpdated":"2026-05-18T16:00:30.9451522Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/3","depositRates":[{"depositRateType":"VARIABLE","rate":"0.022","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Floating Balance Tier 1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated daily on the whole balance and paid on the last day of each month."},{"depositRateType":"VARIABLE","rate":"0.025","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Floating Balance Tier 2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"199999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated daily on the whole balance and paid on the last day of each month."},{"depositRateType":"VARIABLE","rate":"0.0275","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Floating Balance Tier 3","unitOfMeasure":"DOLLAR","minimumValue":"200000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated daily on the whole balance and paid on the last day of each month."}],"fees":[{"name":"Transaction Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.00"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"BUSINESS","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/"},{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"Membership: You must be or become a Beyond Bank Australia member"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY available.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"NOTIFICATIONS","additionalValue":"Text Me or Push Notification Alert","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.","additionalInfoUri":"https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"},{"featureType":"NPP_ENABLED","additionalInfo":"New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"},{"featureType":"NPP_PAYID","additionalInfo":"New Payments Platform (NPP) is available. Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/","termsUri":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/","eligibilityUri":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/","feesAndPricingUri":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/"}},{"id":"82","name":"Bank Guarantee Facility Acct","description":"The Bank Guarantee Facility Account is an account specifically for the purpose of holding funds for cash security requirements on a Beyond Bank Australia approved Bank Guarantee","url":"https://www.beyondbank.com.au/business/lending/bank-guarantee/","lastUpdated":"2026-05-18T16:00:30.9451522Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/82","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0395","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Floating Balance Tier 1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated daily and paid on the last day of each month into your linked Business Transaction Account which must be held under the same membership."}],"fees":[],"eligibility":[{"eligibilityType":"BUSINESS","additionalInfo":"Available for Business purposes only. Conditions apply."},{"eligibilityType":"OTHER","additionalInfo":"This account can only be obtained by customers who apply for and are approved for a Beyond Bank Australia cash back, Bank Guarantee. A customer is required to hold a Beyond Bank Business Transaction Account or Community Account under the same membership where interest will be paid into by us."},{"eligibilityType":"OTHER","additionalInfo":"You must be or become a Beyond Bank Australia member."},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Australian Citizen","additionalInfo":"Must be an Australian Citizen, permanent Australian resident or hold a visa. The term of the visa must exceed the term of the guarantee."}],"constraints":[{"constraintType":"MAX_BALANCE","additionalValue":"10000000.00","additionalInfo":"Any balance in this account that exceeds the approved Bank Guarantee amount will be transferred to the customers linked Business Transaction Account or Community Account. The amount held in this account must be the equivalent value of the issued Bank Guarantee."},{"constraintType":"MIN_LIMIT","additionalValue":"0.00","additionalInfo":"The amount held in this Bank Guarantee Facility Account must be the equivalent value of the issued Bank Guarantee."}],"features":[{"featureType":"DIGITAL_BANKING","additionalInfo":"Check account balances 24/7 through Internet or Mobile Banking Services.  View Only access is permitted only on this Bank Guarantee Facility Account."},{"featureType":"OTHER","additionalInfo":"Funds are held in this account and cannot be accessed by the customer whilst the Bank Guarantee remains valid. Upon expiry or cancellation of the Bank Guarantee your funds will be released to your linked Business Transaction Account or Community Account usually within 7 business days."},{"featureType":"OTHER","additionalInfo":"Fees are applicable under the terms of the Bank Guarantee. These fees will be disclosed to you as part of your application and terms agreement of the Bank Guarantee."}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/business/lending/bank-guarantee/","termsUri":"https://www.beyondbank.com.au/business/lending/bank-guarantee/","eligibilityUri":"https://www.beyondbank.com.au/business/lending/bank-guarantee/","feesAndPricingUri":"https://www.beyondbank.com.au/business/lending/bank-guarantee/"}},{"id":"32","name":"Purple Bonus Saver","description":"The Purple Bonus Saver Account is designed to assist you to grow your savings and achieve your goals.","url":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/","lastUpdated":"2026-05-18T12:00:31.0842192Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/32","depositRates":[{"depositRateType":"BONUS","rate":"0.0464","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Tier 1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"200000.00","rateApplicationMethod":"PER_TIER"}],"applicabilityConditions":[{"rateApplicabilityType":"MIN_DEPOSIT_AMOUNT","additionalValue":"50.00","additionalInfo":"Deposit at least $50 into the account each month."}],"additionalValue":"BONUS TIERS","additionalInfo":"You will become eligible for bonus interest if you: a) deposit at least $50 during the month; and b) do not make a withdrawal during the same month. Interest is paid monthly."},{"depositRateType":"BONUS","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Tier 2","unitOfMeasure":"DOLLAR","minimumValue":"200000.01","rateApplicationMethod":"PER_TIER"}],"additionalValue":"BONUS TIERS","additionalInfo":"No bonus interest is earned on balances greater than $200,000.01 the base rate will apply. Interest is paid monthly."},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Floating Balance Tier 1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is paid monthly.  If bonus conditions are not met, the rate of interest will be the base rate."}],"fees":[{"name":"Purple Bonus Saver Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"Membership: You must be or become a Beyond Bank Australia member"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY available.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"NOTIFICATIONS","additionalValue":"Text Me or Push Notification Alert","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.","additionalInfoUri":"https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"},{"featureType":"NPP_ENABLED","additionalInfo":"New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"},{"featureType":"NPP_PAYID","additionalInfo":"New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/","termsUri":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/","eligibilityUri":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/","feesAndPricingUri":"https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/"}},{"id":"1","name":"Purple Transactor Account","description":"The Purple Transactor Account is a simple and flexible everyday transaction account. No monthly fee, no minimum deposits and no fees for card purchases in Australia.","url":"https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/","lastUpdated":"2026-03-23T08:00:30.8628823Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/1","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[{"name":"Bank@Post Deposit Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD"},{"name":"Bank@Post Withdrawal Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.50"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"18"},{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"Membership: You must be or become a Beyond Bank Australia member"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY available.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"},{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card available"},{"featureType":"CARD_ACCESS","additionalValue":"Digital Card","additionalInfo":"When you order a card you'll receive a digital card version first, so you can transact straight away while you wait to receive your physical card to arrive.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"DIGITAL_WALLET","additionalValue":"Digital Wallet","additionalInfo":"Load your Beyond Bank Visa Debit card to your phone to make fast and easy transactions.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"},{"featureType":"NOTIFICATIONS","additionalValue":"Text Me or Push Notification Alert","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.","additionalInfoUri":"https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"},{"featureType":"NPP_ENABLED","additionalInfo":"New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"},{"featureType":"NPP_PAYID","additionalInfo":"New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/","termsUri":"https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/","eligibilityUri":"https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/","feesAndPricingUri":"https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/"}},{"id":"28","name":"CBB SPC","description":"A salary packaging card (living expenses card) allows an individual to use pre-tax income for purchases associated with everyday living such as groceries, clothes, fuel or pay for expenses like utility bills.","url":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/","lastUpdated":"2025-12-03T06:00:30.5737192Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/28","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","applicationType":"PERIODIC"}],"fees":[],"eligibility":[{"eligibilityType":"EMPLOYMENT_STATUS","additionalValue":"Employment","additionalInfo":"Need to be employed by an eligible employer."},{"eligibilityType":"MIN_AGE","additionalValue":"16"},{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"Availability: The card is only available to employees who work for an eligible employer under Sections 57A and 65J of the Fringe Benefits Tax Assessment Act 1986. These sections grant eligibility to the following employer organisations - Public Benevolent Institutions (charities, etc), Hospitals, Nursing Homes, Government Departments, etc, Rebatable Non-for-Profit Organisations."},{"eligibilityType":"OTHER","additionalInfo":"Account credits and debits: Only the salary packaging provider/employer can credit the account with pre-tax funds. Cash withdrawals, transfers, direct debits and Bpay payments are not permitted."},{"eligibilityType":"OTHER","additionalInfo":"Membership: You must be or become a Beyond Bank Australia member"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT","additionalInfo":"You can use your 16 digit card number to make visa payments for your utility bills.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/salary-packaging/"},{"featureType":"CARD_ACCESS","additionalValue":"Card Access","additionalInfo":"Visa Card available."},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your account 24/7 through Internet Banking, Telephone Banking or Mobile Banking services.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"DIGITAL_WALLET","additionalValue":"Digital Wallet","additionalInfo":"Load your Beyond Bank card to your phone to make fast and easy transactions.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"},{"featureType":"NOTIFICATIONS","additionalValue":"Texts and Alerts","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS, email or push alerts. It is event triggered or on demand."},{"featureType":"OTHER","additionalInfo":"Fringe benefit tax class ruling: The card complies with fringe benefits tax Class Ruling approved and published by the ATO (CR 2016/18)"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/","termsUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/","eligibilityUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/","feesAndPricingUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/"}},{"id":"29","name":"CBB MEC","description":"A meal entertainment card allows an individual to use pre-tax income for purchases associated with food and entertainment such as dine-in meals at bistros, cafes, hotels and restaurants and pay for holiday accommodation in Australia and overseas.","url":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/","lastUpdated":"2025-12-03T06:00:30.5737192Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/29","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","applicationType":"PERIODIC"}],"fees":[],"eligibility":[{"eligibilityType":"EMPLOYMENT_STATUS","additionalValue":"Employment","additionalInfo":"Need to be employed by an eligible employer."},{"eligibilityType":"MIN_AGE","additionalValue":"16"},{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"Availability: The card is only available to employees who work for an eligible employer under Sections 57A and 65J of the Fringe Benefits Tax Assessment Act 1986. These sections grant eligibility to the following employer organisations - Public Benevolent Institutions (charities, etc), Hospitals, Nursing Homes, Government Departments, etc, Rebatable Non-for-Profit Organisations."},{"eligibilityType":"OTHER","additionalInfo":"Account credits and debits: Only the salary packaging provider/employer can credit the account with pre-tax funds. Cash withdrawals, transfers, direct debits and Bpay payments are not permitted."},{"eligibilityType":"OTHER","additionalInfo":"Membership: You must be or become a Beyond Bank Australia member"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT","additionalInfo":"You can use your 16 digit card number to make visa payments.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/salary-packaging/"},{"featureType":"CARD_ACCESS","additionalValue":"Card Access","additionalInfo":"Visa Card available."},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your account 24/7 through Internet Banking, Telephone Banking or Mobile Banking services.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"DIGITAL_WALLET","additionalValue":"Digital Wallet","additionalInfo":"Load your Beyond Bank card to your phone to make fast and easy transactions.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"},{"featureType":"NOTIFICATIONS","additionalValue":"Texts and Alerts","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS, email or push alerts. It is event triggered or on demand."},{"featureType":"OTHER","additionalInfo":"Fringe benefit tax class ruling: The card complies with fringe benefits tax Class Ruling approved and published by the ATO (CR 2016/85)"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/","termsUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/","eligibilityUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/","feesAndPricingUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/"}},{"id":"30","name":"BBA SPC","description":"A salary packaging card (living expenses card) allows an individual to use pre-tax income for purchases associated with everyday living such as groceries, clothes, fuel or pay for expenses like utility bills.","url":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/","lastUpdated":"2025-12-03T06:00:30.5737192Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/30","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","applicationType":"PERIODIC"}],"fees":[],"eligibility":[{"eligibilityType":"EMPLOYMENT_STATUS","additionalValue":"Employment","additionalInfo":"Need to be employed by an eligible employer."},{"eligibilityType":"MIN_AGE","additionalValue":"16"},{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"Availability: The card is only available to employees who work for an eligible employer under Sections 57A and 65J of the Fringe Benefits Tax Assessment Act 1986. These sections grant eligibility to the following employer organisations - Public Benevolent Institutions (charities, etc), Hospitals, Nursing Homes, Government Departments, etc, Rebatable Non-for-Profit Organisations."},{"eligibilityType":"OTHER","additionalInfo":"Account credits and debits: Only the salary packaging provider/employer can credit the account with pre-tax funds. Cash withdrawals, transfers, direct debits and Bpay payments are not permitted."},{"eligibilityType":"OTHER","additionalInfo":"Membership: You must be or become a Beyond Bank Australia member"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT","additionalInfo":"You can use your 16 digit card number to make visa payments for your utility bills.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/salary-packaging/"},{"featureType":"CARD_ACCESS","additionalValue":"Card Access","additionalInfo":"Visa Card available."},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your account 24/7 through Internet Banking, Telephone Banking or Mobile Banking services.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"DIGITAL_WALLET","additionalValue":"Digital Wallet","additionalInfo":"Load your Beyond Bank card to your phone to make fast and easy transactions.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"},{"featureType":"NOTIFICATIONS","additionalValue":"Texts and Alerts","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS, email or push alerts. It is event triggered or on demand."},{"featureType":"OTHER","additionalInfo":"Fringe benefit tax class ruling: The card complies with fringe benefits tax Class Ruling approved and published by the ATO (CR 2016/18)"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/","termsUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/","eligibilityUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/","feesAndPricingUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/"}},{"id":"31","name":"BBA MEC","description":"A meal entertainment card allows an individual to use pre-tax income for purchases associated with food and entertainment such as dine-in meals at bistros, cafes, hotels and restaurants and pay for holiday accommodation in Australia and overseas.","url":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/","lastUpdated":"2025-12-03T06:00:30.5737192Z","source":"https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/31","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","applicationType":"PERIODIC"}],"fees":[],"eligibility":[{"eligibilityType":"EMPLOYMENT_STATUS","additionalValue":"Employment","additionalInfo":"Need to be employed by an eligible employer."},{"eligibilityType":"MIN_AGE","additionalValue":"16"},{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"Availability: The card is only available to employees who work for an eligible employer under Sections 57A and 65J of the Fringe Benefits Tax Assessment Act 1986. These sections grant eligibility to the following employer organisations - Public Benevolent Institutions (charities, etc), Hospitals, Nursing Homes, Government Departments, etc, Rebatable Non-for-Profit Organisations."},{"eligibilityType":"OTHER","additionalInfo":"Account credits and debits: Only the salary packaging provider/employer can credit the account with pre-tax funds. Cash withdrawals, transfers, direct debits and Bpay payments are not permitted."},{"eligibilityType":"OTHER","additionalInfo":"Membership: You must be or become a Beyond Bank Australia member"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT","additionalInfo":"You can use your 16 digit card number to make visa payments.","additionalInfoUri":"https://www.beyondbank.com.au/help-and-contact/faqs/salary-packaging/"},{"featureType":"CARD_ACCESS","additionalValue":"Card Access","additionalInfo":"Visa Card available."},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your account 24/7 through Internet Banking, Telephone Banking or Mobile Banking services.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"},{"featureType":"DIGITAL_WALLET","additionalValue":"Digital Wallet","additionalInfo":"Load your Beyond Bank card to your phone to make fast and easy transactions.","additionalInfoUri":"https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"},{"featureType":"NOTIFICATIONS","additionalValue":"Texts and Alerts","additionalInfo":"Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS, email or push alerts. It is event triggered or on demand."},{"featureType":"OTHER","additionalInfo":"Fringe benefit tax class ruling: The card complies with fringe benefits tax Class Ruling approved and published by the ATO (CR 2016/85)"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/","termsUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/","eligibilityUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/","feesAndPricingUri":"https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/"}}]}
+{
+  "name": "Beyond Bank Australia",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "1",
+      "name": "Purple Transactor Account",
+      "description": "The Purple Transactor Account is a simple and flexible everyday transaction account. No monthly fee, no minimum deposits and no fees for card purchases in Australia.",
+      "url": "https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/",
+      "lastUpdated": "2026-03-23T08:00:30.8628823Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/1",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bank@Post Deposit Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Bank@Post Withdrawal Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.50"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "18"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Membership: You must be or become a Beyond Bank Australia member"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY available.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card available"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Digital Card",
+          "additionalInfo": "When you order a card you'll receive a digital card version first, so you can transact straight away while you wait to receive your physical card to arrive.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Digital Wallet",
+          "additionalInfo": "Load your Beyond Bank Visa Debit card to your phone to make fast and easy transactions.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Text Me or Push Notification Alert",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.",
+          "additionalInfoUri": "https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/",
+        "termsUri": "https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/",
+        "eligibilityUri": "https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Retirement Account",
+      "description": "The Retirement Account enables retirees to earn a little, whilst still using this as an everyday bank account.",
+      "url": "https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/",
+      "lastUpdated": "2026-08-31T08:00:30.6354238Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/2",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.014",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Tier 1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.016",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Tier 2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "48599.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0205",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Tier 3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "48600.00",
+              "maximumValue": "199999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0205",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Tier 4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "200000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bank@Post Deposit Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Bank@Post Withdrawal Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Cash Advance/Overseas ATM Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.50"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Membership: You must be or become a Beyond Bank Australia member"
+        },
+        {
+          "eligibilityType": "PENSION_RECIPIENT",
+          "additionalInfo": "Only available to self-funded retirees or those in receipt of a Superannuation or Aged Pension or the Mature Aged Allowance.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY available.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card available"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Mobile Wallet",
+          "additionalInfo": "Load your Beyond Bank Visa Debit card to your phone to make fast and easy transactions.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Text Me or Push Notification Alert",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.",
+          "additionalInfoUri": "https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/",
+        "termsUri": "https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/",
+        "eligibilityUri": "https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/"
+      }
+    },
+    {
+      "id": "28",
+      "name": "CBB SPC",
+      "description": "A salary packaging card (living expenses card) allows an individual to use pre-tax income for purchases associated with everyday living such as groceries, clothes, fuel or pay for expenses like utility bills.",
+      "url": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/",
+      "lastUpdated": "2025-12-03T06:00:30.5737192Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/28",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "applicationType": "PERIODIC"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "EMPLOYMENT_STATUS",
+          "additionalValue": "Employment",
+          "additionalInfo": "Need to be employed by an eligible employer."
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Availability: The card is only available to employees who work for an eligible employer under Sections 57A and 65J of the Fringe Benefits Tax Assessment Act 1986. These sections grant eligibility to the following employer organisations - Public Benevolent Institutions (charities, etc), Hospitals, Nursing Homes, Government Departments, etc, Rebatable Non-for-Profit Organisations."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Account credits and debits: Only the salary packaging provider/employer can credit the account with pre-tax funds. Cash withdrawals, transfers, direct debits and Bpay payments are not permitted."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Membership: You must be or become a Beyond Bank Australia member"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "You can use your 16 digit card number to make visa payments for your utility bills.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/salary-packaging/"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Card Access",
+          "additionalInfo": "Visa Card available."
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your account 24/7 through Internet Banking, Telephone Banking or Mobile Banking services.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Digital Wallet",
+          "additionalInfo": "Load your Beyond Bank card to your phone to make fast and easy transactions.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Texts and Alerts",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS, email or push alerts. It is event triggered or on demand."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Fringe benefit tax class ruling: The card complies with fringe benefits tax Class Ruling approved and published by the ATO (CR 2016/18)"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/",
+        "termsUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/",
+        "eligibilityUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/"
+      }
+    },
+    {
+      "id": "29",
+      "name": "CBB MEC",
+      "description": "A meal entertainment card allows an individual to use pre-tax income for purchases associated with food and entertainment such as dine-in meals at bistros, cafes, hotels and restaurants and pay for holiday accommodation in Australia and overseas.",
+      "url": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/",
+      "lastUpdated": "2025-12-03T06:00:30.5737192Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/29",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "applicationType": "PERIODIC"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "EMPLOYMENT_STATUS",
+          "additionalValue": "Employment",
+          "additionalInfo": "Need to be employed by an eligible employer."
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Availability: The card is only available to employees who work for an eligible employer under Sections 57A and 65J of the Fringe Benefits Tax Assessment Act 1986. These sections grant eligibility to the following employer organisations - Public Benevolent Institutions (charities, etc), Hospitals, Nursing Homes, Government Departments, etc, Rebatable Non-for-Profit Organisations."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Account credits and debits: Only the salary packaging provider/employer can credit the account with pre-tax funds. Cash withdrawals, transfers, direct debits and Bpay payments are not permitted."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Membership: You must be or become a Beyond Bank Australia member"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "You can use your 16 digit card number to make visa payments.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/salary-packaging/"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Card Access",
+          "additionalInfo": "Visa Card available."
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your account 24/7 through Internet Banking, Telephone Banking or Mobile Banking services.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Digital Wallet",
+          "additionalInfo": "Load your Beyond Bank card to your phone to make fast and easy transactions.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Texts and Alerts",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS, email or push alerts. It is event triggered or on demand."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Fringe benefit tax class ruling: The card complies with fringe benefits tax Class Ruling approved and published by the ATO (CR 2016/85)"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/",
+        "termsUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/",
+        "eligibilityUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-cbb/"
+      }
+    },
+    {
+      "id": "3",
+      "name": "monEsaver Internet Account",
+      "description": "The monEsaver is an online savings account with no account keeping fees. Earn interest with no minimum deposit requirements or withdrawal penalties for internet banking, phone banking and mobile banking.",
+      "url": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/",
+      "lastUpdated": "2026-05-18T16:00:30.9451522Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/3",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.022",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated daily on the whole balance and paid on the last day of each month."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.025",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "199999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated daily on the whole balance and paid on the last day of each month."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0275",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "200000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated daily on the whole balance and paid on the last day of each month."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Transaction Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "BUSINESS",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Membership: You must be or become a Beyond Bank Australia member"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY available.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Text Me or Push Notification Alert",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.",
+          "additionalInfoUri": "https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "New Payments Platform (NPP) is available. Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/",
+        "termsUri": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/",
+        "eligibilityUri": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/"
+      }
+    },
+    {
+      "id": "30",
+      "name": "BBA SPC",
+      "description": "A salary packaging card (living expenses card) allows an individual to use pre-tax income for purchases associated with everyday living such as groceries, clothes, fuel or pay for expenses like utility bills.",
+      "url": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/",
+      "lastUpdated": "2025-12-03T06:00:30.5737192Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/30",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "applicationType": "PERIODIC"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "EMPLOYMENT_STATUS",
+          "additionalValue": "Employment",
+          "additionalInfo": "Need to be employed by an eligible employer."
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Availability: The card is only available to employees who work for an eligible employer under Sections 57A and 65J of the Fringe Benefits Tax Assessment Act 1986. These sections grant eligibility to the following employer organisations - Public Benevolent Institutions (charities, etc), Hospitals, Nursing Homes, Government Departments, etc, Rebatable Non-for-Profit Organisations."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Account credits and debits: Only the salary packaging provider/employer can credit the account with pre-tax funds. Cash withdrawals, transfers, direct debits and Bpay payments are not permitted."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Membership: You must be or become a Beyond Bank Australia member"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "You can use your 16 digit card number to make visa payments for your utility bills.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/salary-packaging/"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Card Access",
+          "additionalInfo": "Visa Card available."
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your account 24/7 through Internet Banking, Telephone Banking or Mobile Banking services.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Digital Wallet",
+          "additionalInfo": "Load your Beyond Bank card to your phone to make fast and easy transactions.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Texts and Alerts",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS, email or push alerts. It is event triggered or on demand."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Fringe benefit tax class ruling: The card complies with fringe benefits tax Class Ruling approved and published by the ATO (CR 2016/18)"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/",
+        "termsUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/",
+        "eligibilityUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/"
+      }
+    },
+    {
+      "id": "31",
+      "name": "BBA MEC",
+      "description": "A meal entertainment card allows an individual to use pre-tax income for purchases associated with food and entertainment such as dine-in meals at bistros, cafes, hotels and restaurants and pay for holiday accommodation in Australia and overseas.",
+      "url": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/",
+      "lastUpdated": "2025-12-03T06:00:30.5737192Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/31",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "applicationType": "PERIODIC"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "EMPLOYMENT_STATUS",
+          "additionalValue": "Employment",
+          "additionalInfo": "Need to be employed by an eligible employer."
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Availability: The card is only available to employees who work for an eligible employer under Sections 57A and 65J of the Fringe Benefits Tax Assessment Act 1986. These sections grant eligibility to the following employer organisations - Public Benevolent Institutions (charities, etc), Hospitals, Nursing Homes, Government Departments, etc, Rebatable Non-for-Profit Organisations."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Account credits and debits: Only the salary packaging provider/employer can credit the account with pre-tax funds. Cash withdrawals, transfers, direct debits and Bpay payments are not permitted."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Membership: You must be or become a Beyond Bank Australia member"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "You can use your 16 digit card number to make visa payments.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/salary-packaging/"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Card Access",
+          "additionalInfo": "Visa Card available."
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your account 24/7 through Internet Banking, Telephone Banking or Mobile Banking services.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Digital Wallet",
+          "additionalInfo": "Load your Beyond Bank card to your phone to make fast and easy transactions.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Texts and Alerts",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS, email or push alerts. It is event triggered or on demand."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Fringe benefit tax class ruling: The card complies with fringe benefits tax Class Ruling approved and published by the ATO (CR 2016/85)"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/",
+        "termsUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/",
+        "eligibilityUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/community-sector/services/salary-packaging/salary-packaging-employees/"
+      }
+    },
+    {
+      "id": "32",
+      "name": "Purple Bonus Saver",
+      "description": "The Purple Bonus Saver Account is designed to assist you to grow your savings and achieve your goals.",
+      "url": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/",
+      "lastUpdated": "2026-05-18T12:00:31.0842192Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/32",
+      "depositRates": [
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0464",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Tier 1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "200000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "50.00",
+              "additionalInfo": "Deposit at least $50 into the account each month."
+            }
+          ],
+          "additionalValue": "BONUS TIERS",
+          "additionalInfo": "You will become eligible for bonus interest if you: a) deposit at least $50 during the month; and b) do not make a withdrawal during the same month. Interest is paid monthly."
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Tier 2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "200000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalValue": "BONUS TIERS",
+          "additionalInfo": "No bonus interest is earned on balances greater than $200,000.01 the base rate will apply. Interest is paid monthly."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is paid monthly.  If bonus conditions are not met, the rate of interest will be the base rate."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Purple Bonus Saver Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Membership: You must be or become a Beyond Bank Australia member"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY available.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Text Me or Push Notification Alert",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.",
+          "additionalInfoUri": "https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/",
+        "termsUri": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/",
+        "eligibilityUri": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/"
+      }
+    },
+    {
+      "id": "5",
+      "name": "BU Account",
+      "description": "The perfect account to stash your cash. If you're under 18 years old, our BU Savings Account is a transaction account designed to build your stash of cash quicker than ever!",
+      "url": "https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/",
+      "lastUpdated": "2026-08-31T08:00:30.6354238Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/5",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0315",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P3M",
+          "additionalInfo": "Interest is paid quarterly on 31 March, 30 June, 30 September and 31 December"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bank@Post Deposit Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Bank@Post Withdrawal Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Cash Advance/Overseas ATM Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.50"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "17"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Membership: You must be or become a Beyond Bank Australia member"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY available.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card available"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Mobile Wallet",
+          "additionalInfo": "Load your Beyond Bank Visa Debit card to your phone to make fast and easy transactions.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Text Me or Push Notification Alert",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.",
+          "additionalInfoUri": "https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Account Conversion: Convert to Purple Transactor upon turning 18yrs"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/",
+        "termsUri": "https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/",
+        "eligibilityUri": "https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Access Savings Account",
+      "description": "The Access Savings Account is no longer available as a new account",
+      "url": "https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/",
+      "lastUpdated": "2026-09-20T22:00:31.4532631Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/6",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "1999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest paid six monthly on 31 May and 30 November on deposit balances."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "2000.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest paid six monthly on 31 May and 30 November on deposit balances."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "9999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest paid six monthly on 31 May and 30 November on deposit balances."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "10000.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest paid six monthly on 31 May and 30 November on deposit balances."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 5",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest paid six monthly on 31 May and 30 November on deposit balances."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Bank@Post Deposit Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Bank@Post Withdrawal Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Cash Advance/Overseas ATM Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Honour Overdrawn Account Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "11.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Line of Credit Approval / Variation Fee",
+          "feeType": "UPFRONT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "195.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Product no longer available for new accounts - no variations can be made to existing line of credits.",
+          "discounts": [
+            {
+              "description": "No Line of Credit Approval/Variation Fee - Life Members",
+              "discountType": "ELIGIBILITY_ONLY",
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "195.00"
+              },
+              "eligibility": [
+                {
+                  "discountEligibilityType": "OTHER",
+                  "additionalInfo": "This fee is waived for Life Members."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Default Notice Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable whenever we send you a default notice because you have defaulted under the contract."
+        },
+        {
+          "name": "Default Fee on Line of Credit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable on the 15th day of every month whilst you are in default."
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Product no longer available as a new account.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/personal-loans/line-of-credit/"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY available.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/help-and-contact/faqs/internet-banking/how-do-i-use-bpay-on-internet-banking/"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card available"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your money 24/7 through Internet Banking, Telephone Banking or Mobile Banking services",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Mobile Wallet",
+          "additionalInfo": "Load your Beyond Bank Visa Debit card to your phone to make fast and easy transactions.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/mobile-wallet/"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Text Me or Push Notification Alert",
+          "additionalInfo": "Available with Internet Banking or via notifications from Mobile Banking. Service enables information about accounts to be sent via SMS to a specified mobile number. It is event triggered or on demand.",
+          "additionalInfoUri": "https://brand.beyondbank.com.au/m/3639ea02e11a40f4/original/Product-Guide-website.pdf"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "New Payments Platform (NPP) available.  Allows you to send and receive money instantly between eligible accounts with your PayID.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "New Payments Platform (NPP) is available.  Use your mobile number or email as your PayID to send and receive money instantly between eligible accounts.",
+          "additionalInfoUri": "https://www.beyondbank.com.au/bank-and-save/switch-to-beyond-bank/osko/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/",
+        "termsUri": "https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/",
+        "eligibilityUri": "https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/"
+      }
+    },
+    {
+      "id": "82",
+      "name": "Bank Guarantee Facility Acct",
+      "description": "The Bank Guarantee Facility Account is an account specifically for the purpose of holding funds for cash security requirements on a Beyond Bank Australia approved Bank Guarantee",
+      "url": "https://www.beyondbank.com.au/business/lending/bank-guarantee/",
+      "lastUpdated": "2026-05-18T16:00:30.9451522Z",
+      "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/82",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0395",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Floating Balance Tier 1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated daily and paid on the last day of each month into your linked Business Transaction Account which must be held under the same membership."
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "BUSINESS",
+          "additionalInfo": "Available for Business purposes only. Conditions apply."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "This account can only be obtained by customers who apply for and are approved for a Beyond Bank Australia cash back, Bank Guarantee. A customer is required to hold a Beyond Bank Business Transaction Account or Community Account under the same membership where interest will be paid into by us."
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be or become a Beyond Bank Australia member."
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Australian Citizen",
+          "additionalInfo": "Must be an Australian Citizen, permanent Australian resident or hold a visa. The term of the visa must exceed the term of the guarantee."
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "MAX_BALANCE",
+          "additionalValue": "10000000.00",
+          "additionalInfo": "Any balance in this account that exceeds the approved Bank Guarantee amount will be transferred to the customers linked Business Transaction Account or Community Account. The amount held in this account must be the equivalent value of the issued Bank Guarantee."
+        },
+        {
+          "constraintType": "MIN_LIMIT",
+          "additionalValue": "0.00",
+          "additionalInfo": "The amount held in this Bank Guarantee Facility Account must be the equivalent value of the issued Bank Guarantee."
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Check account balances 24/7 through Internet or Mobile Banking Services.  View Only access is permitted only on this Bank Guarantee Facility Account."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Funds are held in this account and cannot be accessed by the customer whilst the Bank Guarantee remains valid. Upon expiry or cancellation of the Bank Guarantee your funds will be released to your linked Business Transaction Account or Community Account usually within 7 business days."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Fees are applicable under the terms of the Bank Guarantee. These fees will be disclosed to you as part of your application and terms agreement of the Bank Guarantee."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.beyondbank.com.au/business/lending/bank-guarantee/",
+        "termsUri": "https://www.beyondbank.com.au/business/lending/bank-guarantee/",
+        "eligibilityUri": "https://www.beyondbank.com.au/business/lending/bank-guarantee/",
+        "feesAndPricingUri": "https://www.beyondbank.com.au/business/lending/bank-guarantee/"
+      }
+    }
+  ]
+}

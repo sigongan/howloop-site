@@ -1,1 +1,683 @@
-{"name":"ORANGE CREDIT UNION LTD","checkedAt":"2026-09-17T21:42:09.119Z","status":"available","products":[{"id":"ONLINE_SAVER","name":"ONLINE SAVER","description":"ONLINE SAVER","url":"https://www.bankorange.com.au/bank-save/savings-accounts/online-saver-account/","lastUpdated":"2026-05-08T09:08:34.000+10:00","source":"https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/ONLINE_SAVER","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"ONLINE SAVER_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"This is a high interest savings account, designed for those who like to manage their savings online, from the convenience of home or on the go","additionalInfoUri":"https://www.orangecu.com.au/bank-save/savings-accounts/online-saver-account/"},{"depositRateType":"VARIABLE","rate":"0.046","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"ONLINE SAVER_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"1000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"This is a high interest savings account, designed for those who like to manage their savings online, from the convenience of home or on the go","additionalInfoUri":"https://www.orangecu.com.au/bank-save/savings-accounts/online-saver-account/"}],"fees":[{"name":"STAFF_ASSISTED_ONLINE_SAVER_TRANSFER_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}],"eligibility":[],"constraints":[{"constraintType":"MIN_BALANCE","additionalValue":"1.00"}],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_BANKING"},{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY Interenet"},{"featureType":"OTHER","additionalInfo":"Direct Credit - Direct Credits allowed from Internet Banking and Payroll Transfers"},{"featureType":"OTHER","additionalInfo":"No Direct Debits"},{"featureType":"OTHER","additionalInfo":"At Call"}],"additionalInformation":{"overviewUri":"https://www.bankorange.com.au/bank-save/savings-accounts/online-saver-account/","termsUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","eligibilityUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","feesAndPricingUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}},{"id":"CHRISTMAS_CLUB","name":"CHRISTMAS CLUB","description":"CHRISTMAS CLUB","url":"https://www.bankorange.com.au/bank-save/savings-accounts/christmas-club-account/","lastUpdated":"2026-03-25T12:59:37.000+11:00","source":"https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/CHRISTMAS_CLUB","depositRates":[{"depositRateType":"VARIABLE","rate":"0.015","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/savings-interest-rates/"}],"fees":[{"name":"CHRISTMAS_CLUB_EARLY_WITHDRAWAL_FEE","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfoUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}],"eligibility":[],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING","additionalInfo":"Access available Nov to Jan"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access available Nov to Jan"},{"featureType":"OTHER","additionalInfo":"Access available Nov to Jan"},{"featureType":"NPP_ENABLED"}],"additionalInformation":{"overviewUri":"https://www.bankorange.com.au/bank-save/savings-accounts/christmas-club-account/","termsUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","eligibilityUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","feesAndPricingUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}},{"id":"ALL_PURPOSE_SAVINGS","name":"ALL PURPOSE SAVINGS","description":"ALL PURPOSE SAVINGS","url":"https://www.bankorange.com.au/bank-save/transaction-accounts/all-purpose-savings-account/","lastUpdated":"2026-03-09T14:02:54.000+11:00","source":"https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/ALL_PURPOSE_SAVINGS","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"ALL PURPOSE SAVINGS_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"999.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"This is an everyday account for general spending.","additionalInfoUri":"https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"ALL PURPOSE SAVINGS_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"999.01","maximumValue":"4999.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"This is an everyday account for general spending.","additionalInfoUri":"https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"ALL PURPOSE SAVINGS_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"4999.01","maximumValue":"9999.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"This is an everyday account for general spending.","additionalInfoUri":"https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"ALL PURPOSE SAVINGS_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"9999.01","maximumValue":"49999.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"This is an everyday account for general spending.","additionalInfoUri":"https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"ALL PURPOSE SAVINGS_Tier_5","unitOfMeasure":"DOLLAR","minimumValue":"49999.01","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"This is an everyday account for general spending.","additionalInfoUri":"https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"}],"fees":[],"eligibility":[],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"VISA Card","additionalInfo":"VISA Card"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Internet Banking Access"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Mobile App Access"},{"featureType":"DIGITAL_WALLET","additionalValue":"ApplePay","additionalInfo":"ApplePay"},{"featureType":"DIGITAL_WALLET","additionalValue":"Google Pay","additionalInfo":"Google Pay"},{"featureType":"DIGITAL_WALLET","additionalValue":"Samsung Pay","additionalInfo":"Samsung Pay"},{"featureType":"ADDITIONAL_CARDS"},{"featureType":"NPP_ENABLED"},{"featureType":"BILL_PAYMENT"},{"featureType":"OTHER","additionalInfo":"Periodical payments"},{"featureType":"OTHER","additionalInfo":"Direct Debits"},{"featureType":"OTHER","additionalInfo":"Direct Credits"},{"featureType":"OTHER","additionalInfo":"Eftpos and ATM"},{"featureType":"OTHER","additionalInfo":"Branch transactions"}],"additionalInformation":{"overviewUri":"https://www.bankorange.com.au/bank-save/transaction-accounts/all-purpose-savings-account/","termsUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","eligibilityUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","feesAndPricingUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}},{"id":"KIDS_SUPER_SAVER","name":"SUPER SAVER","description":"SUPER SAVER","url":"https://www.bankorange.com.au/bank-save/savings-accounts/kids-super-saver-account/","lastUpdated":"2026-03-02T13:50:54.000+11:00","source":"https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/KIDS_SUPER_SAVER","depositRates":[{"depositRateType":"VARIABLE","rate":"0.03","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfo":"You must be under 17 years of age to open this account. Junior members are required to pay a Junior share of $2.00 to become a member of Orange Credit Union and open a Super Saver account.","additionalInfoUri":"https://www.orangecu.com.au/bank-save/savings-accounts/kids-super-saver-account/"}],"fees":[],"eligibility":[{"eligibilityType":"MAX_AGE","additionalValue":"17"}],"constraints":[],"features":[],"additionalInformation":{"overviewUri":"https://www.bankorange.com.au/bank-save/savings-accounts/kids-super-saver-account/","termsUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","eligibilityUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","feesAndPricingUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}},{"id":"BONUS_SAVER","name":"BONUS SAVER","description":"BONUS SAVER","url":"https://www.bankorange.com.au/bank-save/savings-accounts/bonus-saver-account/","lastUpdated":"2026-01-20T13:58:17.000+11:00","source":"https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/BONUS_SAVER","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0025","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.orangecu.com.au/bank-save/savings-accounts/bonus-saver-account/"},{"depositRateType":"BONUS","rate":"0.035","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.orangecu.com.au/bank-save/savings-accounts/bonus-saver-account/"}],"fees":[],"eligibility":[],"constraints":[{"constraintType":"MIN_BALANCE","additionalValue":"1.00"}],"features":[{"featureType":"DIGITAL_BANKING","additionalInfo":"Internet Banking Access"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Mobile App Access"},{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY Internet"},{"featureType":"OTHER","additionalInfo":"Direct Credits"},{"featureType":"OTHER","additionalInfo":"No Direct Debits"},{"featureType":"OTHER","additionalInfo":"Minimum Deposit $50 per month","additionalInfoUri":"https://www.bankorange.com.au/bank-save/savings-accounts/bonus-saver-account#Text-9d541-Interest_Rates"},{"featureType":"OTHER","additionalInfo":"Branch Transactions"},{"featureType":"OTHER","additionalInfo":"Bonus interest earned above the base rate every month when you make a deposit (minimum $50 per month) and no withdrawals"},{"featureType":"OTHER","additionalInfo":"At Call"}],"additionalInformation":{"overviewUri":"https://www.bankorange.com.au/bank-save/savings-accounts/bonus-saver-account/","termsUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","eligibilityUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","feesAndPricingUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}},{"id":"BUDGET_ACCOUNT","name":"BUDGET ACCOUNT","description":"BUDGET ACCOUNT","url":"https://www.bankorange.com.au/bank-save/transaction-accounts/budget-account/","lastUpdated":"2026-01-20T13:50:10.000+11:00","source":"https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/BUDGET_ACCOUNT","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfo":"This is a planned savings account to pay regular bills. The Budget Account is a way to to keep your budget funds separate from your everyday spending account.","additionalInfoUri":"https://www.orangecu.com.au/quicklinks/rates-and-fees/"}],"fees":[],"eligibility":[],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING","additionalInfo":"Internet Banking Access"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Mobile App Access"},{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY"},{"featureType":"NPP_ENABLED"},{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit","additionalInfo":"Visa Debit"},{"featureType":"OTHER","additionalInfo":"Direct Credits"},{"featureType":"OTHER","additionalInfo":"Direct Debits"},{"featureType":"OTHER","additionalInfo":"Branch transactions"},{"featureType":"OTHER","additionalInfo":"Periodical payments"},{"featureType":"OTHER","additionalInfo":"At Call"}],"additionalInformation":{"overviewUri":"https://www.bankorange.com.au/bank-save/transaction-accounts/budget-account/","termsUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","eligibilityUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","feesAndPricingUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}},{"id":"PRESTIGE_ACCOUNT","name":"PRESTIGE ACCOUNT","description":"PRESTIGE ACCOUNT","url":"https://www.bankorange.com.au/bank-save/transaction-accounts/prestige-account/","lastUpdated":"2026-01-20T13:39:22.000+11:00","source":"https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/PRESTIGE_ACCOUNT","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"PRESTIGE ACCOUNT_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"1999.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"This is an everyday transaction account for anyone over 55 years of age and not working, or in receipt of an aged or veteran affairs pension","additionalInfoUri":"https://www.orangecu.com.au/bank-save/transaction-accounts/prestige-account/"},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"PRESTIGE ACCOUNT_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"1999.01","maximumValue":"44999.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"This is an everyday transaction account for anyone over 55 years of age and not working, or in receipt of an aged or veteran affairs pension","additionalInfoUri":"https://www.orangecu.com.au/bank-save/transaction-accounts/prestige-account/"},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"PRESTIGE ACCOUNT_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"44999.01","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"This is an everyday transaction account for anyone over 55 years of age and not working, or in receipt of an aged or veteran affairs pension","additionalInfoUri":"https://www.orangecu.com.au/bank-save/transaction-accounts/prestige-account/"}],"fees":[],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"55","additionalInfo":"This account is for anyone over 55 years of age not working, or in receipt of an aged or veteran affairs pension. This account offers a tiered interest rate and is an interest-earning alternative to the All Purpose Savings Account."}],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"VISA Card","additionalInfo":"VISA Card"},{"featureType":"ADDITIONAL_CARDS"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Internet Banking Access"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Mobile App Access"},{"featureType":"DIGITAL_WALLET","additionalValue":"ApplePay","additionalInfo":"ApplePay"},{"featureType":"DIGITAL_WALLET","additionalValue":"Google Pay","additionalInfo":"Google Pay"},{"featureType":"DIGITAL_WALLET","additionalValue":"Samsung Pay","additionalInfo":"Samsung Pay"},{"featureType":"NPP_ENABLED"},{"featureType":"CARD_ACCESS","additionalValue":"ATM & Eftpos","additionalInfo":"ATM & Eftpos"},{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY Internet"},{"featureType":"OTHER","additionalInfo":"At Call"},{"featureType":"OTHER","additionalInfo":"Branch Transactions"}],"additionalInformation":{"overviewUri":"https://www.bankorange.com.au/bank-save/transaction-accounts/prestige-account/","termsUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","eligibilityUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","feesAndPricingUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}},{"id":"MORTGAGE_OFFSET","name":"MORTGAGE OFFSET","description":"MORTGAGE OFFSET","url":"https://www.bankorange.com.au/bank-save/transaction-accounts/mortgage-offset-account/","lastUpdated":"2024-08-30T14:57:27.000+10:00","source":"https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/MORTGAGE_OFFSET","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"Only for members with eligible loan"}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"BILL_PAYMENT"}],"additionalInformation":{"overviewUri":"https://www.bankorange.com.au/bank-save/transaction-accounts/mortgage-offset-account/","termsUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","eligibilityUri":"https://www.bankorange.com.au/about/corporate-information/disclosure-documents/","feesAndPricingUri":"https://www.bankorange.com.au/quicklinks/rates-and-fees/"}}]}
+{
+  "name": "ORANGE CREDIT UNION LTD",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "ALL_PURPOSE_SAVINGS",
+      "name": "ALL PURPOSE SAVINGS",
+      "description": "ALL PURPOSE SAVINGS",
+      "url": "https://www.bankorange.com.au/bank-save/transaction-accounts/all-purpose-savings-account/",
+      "lastUpdated": "2026-03-09T14:02:54.000+11:00",
+      "source": "https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/ALL_PURPOSE_SAVINGS",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "ALL PURPOSE SAVINGS_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "999.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "This is an everyday account for general spending.",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "ALL PURPOSE SAVINGS_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "999.01",
+              "maximumValue": "4999.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "This is an everyday account for general spending.",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "ALL PURPOSE SAVINGS_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "4999.01",
+              "maximumValue": "9999.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "This is an everyday account for general spending.",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "ALL PURPOSE SAVINGS_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "9999.01",
+              "maximumValue": "49999.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "This is an everyday account for general spending.",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "ALL PURPOSE SAVINGS_Tier_5",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "49999.01",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "This is an everyday account for general spending.",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/transaction-accounts/all-purpose-savings-account/"
+        }
+      ],
+      "fees": [],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "VISA Card",
+          "additionalInfo": "VISA Card"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Internet Banking Access"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Mobile App Access"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "ApplePay",
+          "additionalInfo": "ApplePay"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfo": "Google Pay"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Samsung Pay",
+          "additionalInfo": "Samsung Pay"
+        },
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Periodical payments"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Direct Debits"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Direct Credits"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Eftpos and ATM"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Branch transactions"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankorange.com.au/bank-save/transaction-accounts/all-purpose-savings-account/",
+        "termsUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "eligibilityUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "feesAndPricingUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+      }
+    },
+    {
+      "id": "BONUS_SAVER",
+      "name": "BONUS SAVER",
+      "description": "BONUS SAVER",
+      "url": "https://www.bankorange.com.au/bank-save/savings-accounts/bonus-saver-account/",
+      "lastUpdated": "2026-01-20T13:58:17.000+11:00",
+      "source": "https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/BONUS_SAVER",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0025",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/savings-accounts/bonus-saver-account/"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.035",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/savings-accounts/bonus-saver-account/"
+        }
+      ],
+      "fees": [],
+      "eligibility": [],
+      "constraints": [
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "1.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Internet Banking Access"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Mobile App Access"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY Internet"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Direct Credits"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No Direct Debits"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Minimum Deposit $50 per month",
+          "additionalInfoUri": "https://www.bankorange.com.au/bank-save/savings-accounts/bonus-saver-account#Text-9d541-Interest_Rates"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Branch Transactions"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Bonus interest earned above the base rate every month when you make a deposit (minimum $50 per month) and no withdrawals"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "At Call"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankorange.com.au/bank-save/savings-accounts/bonus-saver-account/",
+        "termsUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "eligibilityUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "feesAndPricingUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+      }
+    },
+    {
+      "id": "BUDGET_ACCOUNT",
+      "name": "BUDGET ACCOUNT",
+      "description": "BUDGET ACCOUNT",
+      "url": "https://www.bankorange.com.au/bank-save/transaction-accounts/budget-account/",
+      "lastUpdated": "2026-01-20T13:50:10.000+11:00",
+      "source": "https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/BUDGET_ACCOUNT",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfo": "This is a planned savings account to pay regular bills. The Budget Account is a way to to keep your budget funds separate from your everyday spending account.",
+          "additionalInfoUri": "https://www.orangecu.com.au/quicklinks/rates-and-fees/"
+        }
+      ],
+      "fees": [],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Internet Banking Access"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Mobile App Access"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit",
+          "additionalInfo": "Visa Debit"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Direct Credits"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Direct Debits"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Branch transactions"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Periodical payments"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "At Call"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankorange.com.au/bank-save/transaction-accounts/budget-account/",
+        "termsUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "eligibilityUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "feesAndPricingUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+      }
+    },
+    {
+      "id": "CHRISTMAS_CLUB",
+      "name": "CHRISTMAS CLUB",
+      "description": "CHRISTMAS CLUB",
+      "url": "https://www.bankorange.com.au/bank-save/savings-accounts/christmas-club-account/",
+      "lastUpdated": "2026-03-25T12:59:37.000+11:00",
+      "source": "https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/CHRISTMAS_CLUB",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.015",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/savings-interest-rates/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "CHRISTMAS_CLUB_EARLY_WITHDRAWAL_FEE",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access available Nov to Jan"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access available Nov to Jan"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Access available Nov to Jan"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankorange.com.au/bank-save/savings-accounts/christmas-club-account/",
+        "termsUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "eligibilityUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "feesAndPricingUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+      }
+    },
+    {
+      "id": "KIDS_SUPER_SAVER",
+      "name": "SUPER SAVER",
+      "description": "SUPER SAVER",
+      "url": "https://www.bankorange.com.au/bank-save/savings-accounts/kids-super-saver-account/",
+      "lastUpdated": "2026-03-02T13:50:54.000+11:00",
+      "source": "https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/KIDS_SUPER_SAVER",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.03",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfo": "You must be under 17 years of age to open this account. Junior members are required to pay a Junior share of $2.00 to become a member of Orange Credit Union and open a Super Saver account.",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/savings-accounts/kids-super-saver-account/"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "17"
+        }
+      ],
+      "constraints": [],
+      "features": [],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankorange.com.au/bank-save/savings-accounts/kids-super-saver-account/",
+        "termsUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "eligibilityUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "feesAndPricingUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+      }
+    },
+    {
+      "id": "MORTGAGE_OFFSET",
+      "name": "MORTGAGE OFFSET",
+      "description": "MORTGAGE OFFSET",
+      "url": "https://www.bankorange.com.au/bank-save/transaction-accounts/mortgage-offset-account/",
+      "lastUpdated": "2024-08-30T14:57:27.000+10:00",
+      "source": "https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/MORTGAGE_OFFSET",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Only for members with eligible loan"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankorange.com.au/bank-save/transaction-accounts/mortgage-offset-account/",
+        "termsUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "eligibilityUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "feesAndPricingUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+      }
+    },
+    {
+      "id": "ONLINE_SAVER",
+      "name": "ONLINE SAVER",
+      "description": "ONLINE SAVER",
+      "url": "https://www.bankorange.com.au/bank-save/savings-accounts/online-saver-account/",
+      "lastUpdated": "2026-05-08T09:08:34.000+10:00",
+      "source": "https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/ONLINE_SAVER",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "ONLINE SAVER_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "This is a high interest savings account, designed for those who like to manage their savings online, from the convenience of home or on the go",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/savings-accounts/online-saver-account/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.046",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "ONLINE SAVER_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "This is a high interest savings account, designed for those who like to manage their savings online, from the convenience of home or on the go",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/savings-accounts/online-saver-account/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "STAFF_ASSISTED_ONLINE_SAVER_TRANSFER_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "1.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY Interenet"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Direct Credit - Direct Credits allowed from Internet Banking and Payroll Transfers"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "No Direct Debits"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "At Call"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankorange.com.au/bank-save/savings-accounts/online-saver-account/",
+        "termsUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "eligibilityUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "feesAndPricingUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+      }
+    },
+    {
+      "id": "PRESTIGE_ACCOUNT",
+      "name": "PRESTIGE ACCOUNT",
+      "description": "PRESTIGE ACCOUNT",
+      "url": "https://www.bankorange.com.au/bank-save/transaction-accounts/prestige-account/",
+      "lastUpdated": "2026-01-20T13:39:22.000+11:00",
+      "source": "https://online.orangecu.com.au/openbanking/cds-au/v1/banking/products/PRESTIGE_ACCOUNT",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "PRESTIGE ACCOUNT_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "1999.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "This is an everyday transaction account for anyone over 55 years of age and not working, or in receipt of an aged or veteran affairs pension",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/transaction-accounts/prestige-account/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "PRESTIGE ACCOUNT_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1999.01",
+              "maximumValue": "44999.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "This is an everyday transaction account for anyone over 55 years of age and not working, or in receipt of an aged or veteran affairs pension",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/transaction-accounts/prestige-account/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "PRESTIGE ACCOUNT_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "44999.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "This is an everyday transaction account for anyone over 55 years of age and not working, or in receipt of an aged or veteran affairs pension",
+          "additionalInfoUri": "https://www.orangecu.com.au/bank-save/transaction-accounts/prestige-account/"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "55",
+          "additionalInfo": "This account is for anyone over 55 years of age not working, or in receipt of an aged or veteran affairs pension. This account offers a tiered interest rate and is an interest-earning alternative to the All Purpose Savings Account."
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "VISA Card",
+          "additionalInfo": "VISA Card"
+        },
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Internet Banking Access"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Mobile App Access"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "ApplePay",
+          "additionalInfo": "ApplePay"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfo": "Google Pay"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Samsung Pay",
+          "additionalInfo": "Samsung Pay"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "ATM & Eftpos",
+          "additionalInfo": "ATM & Eftpos"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY Internet"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "At Call"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Branch Transactions"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankorange.com.au/bank-save/transaction-accounts/prestige-account/",
+        "termsUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "eligibilityUri": "https://www.bankorange.com.au/about/corporate-information/disclosure-documents/",
+        "feesAndPricingUri": "https://www.bankorange.com.au/quicklinks/rates-and-fees/"
+      }
+    }
+  ]
+}

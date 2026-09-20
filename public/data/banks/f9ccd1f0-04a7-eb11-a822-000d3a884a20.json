@@ -1,1 +1,1624 @@
-{"name":"Central Murray Bank","checkedAt":"2026-09-17T21:41:55.891Z","status":"available","products":[{"id":"S12_Std","name":"GST ACCOUNT","description":"GST ACCOUNT","url":"https://www.centralmurray.bank/business-banking/gst-account/","lastUpdated":"2026-07-31T14:40:29.000+10:00","source":"https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S12_Std","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"GST ACCOUNT_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"GST ACCOUNT_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"19999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"GST ACCOUNT_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"GST ACCOUNT_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"}],"fees":[{"name":"ATM_TRANSACTIONS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"BUSINESS_CHEQUE_DEPOSIT_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.80"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DECLINED_ATM_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DECLINED_EFTPOS_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DEPOSITED_CHEQUE_DISHONOUR_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_DISHONOUR","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_PROCESSING","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_VIA_MEMBER_CHEQUING","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DUPLICATE_DEPOSIT_BOOK","feeType":"PURCHASE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"EFTPOS_CHARGE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_EFT_-_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_OSKO","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"OTC_CASH_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_EFT_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_TRANSFERS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OVERSEAS_VISA_DEBIT_ATM_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"VISA_SERVICE_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"}],"eligibility":[],"constraints":[],"features":[{"featureType":"NPP_ENABLED","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"NPP_PAYID","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"additionalInformation":{"overviewUri":"https://www.centralmurray.bank/business-banking/gst-account/","termsUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","eligibilityUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","feesAndPricingUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}},{"id":"S5_Std","name":"CHRISTMAS CLUB ACCOUNT","description":"CHRISTMAS CLUB ACCOUNT","url":"https://www.centralmurray.bank/personal-banking/savings-accounts/christmas-club/","lastUpdated":"2026-07-31T14:39:41.000+10:00","source":"https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S5_Std","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0055","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P12Y","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"fees":[{"name":"CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_EFT_-_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_OSKO","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"OTC_CASH_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_EFT_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_TRANSFERS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"}],"eligibility":[],"constraints":[],"features":[{"featureType":"NPP_ENABLED","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"additionalInformation":{"overviewUri":"https://www.centralmurray.bank/personal-banking/savings-accounts/christmas-club/","termsUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","eligibilityUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","feesAndPricingUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}},{"id":"S1_Std","name":"AT CALL SAVINGS","description":"AT CALL SAVINGS","url":"https://www.centralmurray.bank/personal-banking/","lastUpdated":"2026-07-31T14:39:27.000+10:00","source":"https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S1_Std","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"AT CALL SAVINGS_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"AT CALL SAVINGS_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"19999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"AT CALL SAVINGS_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"AT CALL SAVINGS_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"}],"fees":[{"name":"DIRECT_DEBIT_DISHONOUR","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_PROCESSING","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_VIA_MEMBER_CHEQUING","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_EFT_-_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_OSKO","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"OTC_CASH_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_EFT_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_TRANSFERS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"}],"eligibility":[],"constraints":[],"features":[{"featureType":"NPP_ENABLED","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"NPP_PAYID","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"additionalInformation":{"overviewUri":"https://www.centralmurray.bank/personal-banking/","termsUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","eligibilityUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","feesAndPricingUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}},{"id":"S10_Std","name":"MORTGAGE OFFSET ACCOUNT","description":"MORTGAGE OFFSET ACCOUNT","url":"https://www.centralmurray.bank/personal-banking/transactional-accounts/offset-account/","lastUpdated":"2026-07-31T14:39:12.000+10:00","source":"https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S10_Std","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[{"name":"ATM_TRANSACTIONS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"BUSINESS_CHEQUE_DEPOSIT_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.80"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"DECLINED_ATM_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DECLINED_EFTPOS_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DEPOSITED_CHEQUE_DISHONOUR_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_DISHONOUR","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DUPLICATE_DEPOSIT_BOOK","feeType":"PURCHASE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"EFTPOS_CHARGE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_EFT_-_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_OSKO","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"MEMBER_CHEQUE_PRESENTMENT_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.40"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"OTC_CASH_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_EFT_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_TRANSFERS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OVERSEAS_VISA_DEBIT_ATM_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"VISA_SERVICE_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"}],"eligibility":[],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"OFFSET","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"NPP_ENABLED","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"NPP_PAYID","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"additionalInformation":{"overviewUri":"https://www.centralmurray.bank/personal-banking/transactional-accounts/offset-account/","termsUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","eligibilityUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","feesAndPricingUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}},{"id":"S4_Std","name":"AT CALL SAVINGS","description":"AT CALL SAVINGS","url":"https://www.centralmurray.bank/personal-banking/transactional-accounts/budget-account/","lastUpdated":"2026-07-31T14:38:06.000+10:00","source":"https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S4_Std","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"AT CALL SAVINGS_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"AT CALL SAVINGS_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"19999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"AT CALL SAVINGS_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"AT CALL SAVINGS_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"}],"fees":[{"name":"CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DEPOSITED_CHEQUE_DISHONOUR_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_DISHONOUR","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_PROCESSING","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_VIA_MEMBER_CHEQUING","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_EFT_-_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_OSKO","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"OTC_CASH_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_EFT_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_TRANSFERS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"}],"eligibility":[],"constraints":[],"features":[{"featureType":"NPP_ENABLED","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"NPP_PAYID","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"additionalInformation":{"overviewUri":"https://www.centralmurray.bank/personal-banking/transactional-accounts/budget-account/","termsUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","eligibilityUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","feesAndPricingUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}},{"id":"S8_Std","name":"EVERYDAY ACCESS","description":"EVERYDAY ACCESS","url":"https://www.centralmurray.bank/personal-banking/transactional-accounts/everyday-access/","lastUpdated":"2026-07-31T14:37:50.000+10:00","source":"https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S8_Std","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"EVERYDAY ACCESS_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"EVERYDAY ACCESS_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"19999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"EVERYDAY ACCESS_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"EVERYDAY ACCESS_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"fees":[{"name":"ATM_TRANSACTIONS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"BUSINESS_CHEQUE_DEPOSIT_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.80"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"DECLINED_ATM_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DECLINED_EFTPOS_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DEPOSITED_CHEQUE_DISHONOUR_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_DISHONOUR","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_PROCESSING","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DUPLICATE_DEPOSIT_BOOK","feeType":"PURCHASE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"EFTPOS_CHARGE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.75"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_EFT_-_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_OSKO","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"OTC_CASH_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_EFT_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_TRANSFERS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OVERSEAS_VISA_DEBIT_ATM_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"VISA_SERVICE_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"}],"eligibility":[],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"DIGITAL_WALLET","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"NPP_ENABLED","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"NPP_PAYID","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"additionalInformation":{"overviewUri":"https://www.centralmurray.bank/personal-banking/transactional-accounts/everyday-access/","termsUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","eligibilityUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","feesAndPricingUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}},{"id":"S15_Std","name":"NOTICE OF WITHDRAWAL","description":"NOTICE OF WITHDRAWAL","url":"https://www.centralmurray.bank/personal-banking/savings-accounts/notice-of-withdrawal/","lastUpdated":"2025-11-13T12:00:01.000+11:00","source":"https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S15_Std","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"NOTICE OF WITHDRAWAL_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"NOTICE OF WITHDRAWAL_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"9999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"NOTICE OF WITHDRAWAL_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"10000.00","maximumValue":"19999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"},{"depositRateType":"VARIABLE","rate":"0.0015","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P12Y","tiers":[{"name":"NOTICE OF WITHDRAWAL_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.centralmurray.bank/invest/interest-rate-schedule/"}],"fees":[{"name":"CORPORATE_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"OTC_CASH_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_TRANSFERS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_EFT_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"}],"eligibility":[],"constraints":[],"features":[],"additionalInformation":{"overviewUri":"https://www.centralmurray.bank/personal-banking/savings-accounts/notice-of-withdrawal/","termsUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","eligibilityUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","feesAndPricingUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}},{"id":"S6_Std","name":"SUPER SAVER ACCOUNT","description":"SUPER SAVER ACCOUNT","url":"https://www.centralmurray.bank/personal-banking/youth-accounts/youth-saver-account/","lastUpdated":"2025-11-13T11:55:16.000+11:00","source":"https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S6_Std","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0225","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P12Y","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"fees":[{"name":"DIRECT_DEBIT_DISHONOUR","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"DIRECT_DEBIT_PROCESSING","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_EFT_-_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"FUTURE_DATED_OSKO","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.20"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_BPAY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"},{"name":"OTC_CASH_WITHDRAWAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_EFT_EXTERNAL","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"},{"name":"OTC_TRANSFERS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfoUri":"https://www.cmcu.com.au/savings__investments/fees_charges_rewards"}],"eligibility":[{"eligibilityType":"MAX_AGE","additionalValue":"18","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}],"constraints":[],"features":[{"featureType":"NPP_ENABLED","additionalInfoUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"},{"featureType":"NPP_PAYID"}],"additionalInformation":{"overviewUri":"https://www.centralmurray.bank/personal-banking/youth-accounts/youth-saver-account/","termsUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","eligibilityUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/","feesAndPricingUri":"https://www.centralmurray.bank/support/regulatory/disclosure-statements/"}}]}
+{
+  "name": "Central Murray Bank",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "S1_Std",
+      "name": "AT CALL SAVINGS",
+      "description": "AT CALL SAVINGS",
+      "url": "https://www.centralmurray.bank/personal-banking/",
+      "lastUpdated": "2026-07-31T14:39:27.000+10:00",
+      "source": "https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S1_Std",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "AT CALL SAVINGS_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "AT CALL SAVINGS_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "AT CALL SAVINGS_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "AT CALL SAVINGS_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "DIRECT_DEBIT_DISHONOUR",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_PROCESSING",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_VIA_MEMBER_CHEQUING",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_EFT_-_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_OSKO",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "OTC_CASH_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_EFT_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_TRANSFERS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.centralmurray.bank/personal-banking/",
+        "termsUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "eligibilityUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "feesAndPricingUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+      }
+    },
+    {
+      "id": "S10_Std",
+      "name": "MORTGAGE OFFSET ACCOUNT",
+      "description": "MORTGAGE OFFSET ACCOUNT",
+      "url": "https://www.centralmurray.bank/personal-banking/transactional-accounts/offset-account/",
+      "lastUpdated": "2026-07-31T14:39:12.000+10:00",
+      "source": "https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S10_Std",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ATM_TRANSACTIONS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "BUSINESS_CHEQUE_DEPOSIT_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.80"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "DECLINED_ATM_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DECLINED_EFTPOS_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DEPOSITED_CHEQUE_DISHONOUR_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_DISHONOUR",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DUPLICATE_DEPOSIT_BOOK",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "EFTPOS_CHARGE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_EFT_-_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_OSKO",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "MEMBER_CHEQUE_PRESENTMENT_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.40"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "OTC_CASH_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_EFT_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_TRANSFERS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OVERSEAS_VISA_DEBIT_ATM_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "VISA_SERVICE_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "OFFSET",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.centralmurray.bank/personal-banking/transactional-accounts/offset-account/",
+        "termsUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "eligibilityUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "feesAndPricingUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+      }
+    },
+    {
+      "id": "S12_Std",
+      "name": "GST ACCOUNT",
+      "description": "GST ACCOUNT",
+      "url": "https://www.centralmurray.bank/business-banking/gst-account/",
+      "lastUpdated": "2026-07-31T14:40:29.000+10:00",
+      "source": "https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S12_Std",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "GST ACCOUNT_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "GST ACCOUNT_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "GST ACCOUNT_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "GST ACCOUNT_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ATM_TRANSACTIONS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "BUSINESS_CHEQUE_DEPOSIT_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.80"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DECLINED_ATM_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DECLINED_EFTPOS_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DEPOSITED_CHEQUE_DISHONOUR_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_DISHONOUR",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_PROCESSING",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_VIA_MEMBER_CHEQUING",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DUPLICATE_DEPOSIT_BOOK",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "EFTPOS_CHARGE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_EFT_-_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_OSKO",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "OTC_CASH_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_EFT_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_TRANSFERS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OVERSEAS_VISA_DEBIT_ATM_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "VISA_SERVICE_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.centralmurray.bank/business-banking/gst-account/",
+        "termsUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "eligibilityUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "feesAndPricingUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+      }
+    },
+    {
+      "id": "S15_Std",
+      "name": "NOTICE OF WITHDRAWAL",
+      "description": "NOTICE OF WITHDRAWAL",
+      "url": "https://www.centralmurray.bank/personal-banking/savings-accounts/notice-of-withdrawal/",
+      "lastUpdated": "2025-11-13T12:00:01.000+11:00",
+      "source": "https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S15_Std",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "NOTICE OF WITHDRAWAL_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "NOTICE OF WITHDRAWAL_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "9999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "NOTICE OF WITHDRAWAL_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "10000.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0015",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "NOTICE OF WITHDRAWAL_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "OTC_CASH_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_TRANSFERS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_EFT_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [],
+      "features": [],
+      "additionalInformation": {
+        "overviewUri": "https://www.centralmurray.bank/personal-banking/savings-accounts/notice-of-withdrawal/",
+        "termsUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "eligibilityUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "feesAndPricingUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+      }
+    },
+    {
+      "id": "S4_Std",
+      "name": "AT CALL SAVINGS",
+      "description": "AT CALL SAVINGS",
+      "url": "https://www.centralmurray.bank/personal-banking/transactional-accounts/budget-account/",
+      "lastUpdated": "2026-07-31T14:38:06.000+10:00",
+      "source": "https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S4_Std",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "AT CALL SAVINGS_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "AT CALL SAVINGS_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "AT CALL SAVINGS_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "AT CALL SAVINGS_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/invest/interest-rate-schedule/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DEPOSITED_CHEQUE_DISHONOUR_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_DISHONOUR",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_PROCESSING",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_VIA_MEMBER_CHEQUING",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_EFT_-_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_OSKO",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "OTC_CASH_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_EFT_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_TRANSFERS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.centralmurray.bank/personal-banking/transactional-accounts/budget-account/",
+        "termsUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "eligibilityUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "feesAndPricingUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+      }
+    },
+    {
+      "id": "S5_Std",
+      "name": "CHRISTMAS CLUB ACCOUNT",
+      "description": "CHRISTMAS CLUB ACCOUNT",
+      "url": "https://www.centralmurray.bank/personal-banking/savings-accounts/christmas-club/",
+      "lastUpdated": "2026-07-31T14:39:41.000+10:00",
+      "source": "https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S5_Std",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0055",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "CORPORATE_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_EFT_-_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_OSKO",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "OTC_CASH_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_EFT_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_TRANSFERS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.centralmurray.bank/personal-banking/savings-accounts/christmas-club/",
+        "termsUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "eligibilityUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "feesAndPricingUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+      }
+    },
+    {
+      "id": "S6_Std",
+      "name": "SUPER SAVER ACCOUNT",
+      "description": "SUPER SAVER ACCOUNT",
+      "url": "https://www.centralmurray.bank/personal-banking/youth-accounts/youth-saver-account/",
+      "lastUpdated": "2025-11-13T11:55:16.000+11:00",
+      "source": "https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S6_Std",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0225",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "DIRECT_DEBIT_DISHONOUR",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_PROCESSING",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_EFT_-_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_OSKO",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "OTC_CASH_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_EFT_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_TRANSFERS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "18",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.centralmurray.bank/personal-banking/youth-accounts/youth-saver-account/",
+        "termsUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "eligibilityUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "feesAndPricingUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+      }
+    },
+    {
+      "id": "S8_Std",
+      "name": "EVERYDAY ACCESS",
+      "description": "EVERYDAY ACCESS",
+      "url": "https://www.centralmurray.bank/personal-banking/transactional-accounts/everyday-access/",
+      "lastUpdated": "2026-07-31T14:37:50.000+10:00",
+      "source": "https://secure.centralmurray.bank/openbanking/cds-au/v1/banking/products/S8_Std",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "EVERYDAY ACCESS_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "EVERYDAY ACCESS_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "EVERYDAY ACCESS_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P12Y",
+          "tiers": [
+            {
+              "name": "EVERYDAY ACCESS_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ATM_TRANSACTIONS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "BUSINESS_CHEQUE_DEPOSIT_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.80"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "DECLINED_ATM_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DECLINED_EFTPOS_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DEPOSITED_CHEQUE_DISHONOUR_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_DISHONOUR",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DIRECT_DEBIT_PROCESSING",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "DUPLICATE_DEPOSIT_BOOK",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "EFTPOS_CHARGE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.75"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_EFT_-_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "FUTURE_DATED_OSKO",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.20"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_BPAY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.centralmurray.bank/personal-banking/fees-charges-and-rewards/"
+        },
+        {
+          "name": "OTC_CASH_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_EFT_EXTERNAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OTC_TRANSFERS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "OVERSEAS_VISA_DEBIT_ATM_WITHDRAWAL",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        },
+        {
+          "name": "VISA_SERVICE_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.cmcu.com.au/savings__investments/fees_charges_rewards"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfoUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.centralmurray.bank/personal-banking/transactional-accounts/everyday-access/",
+        "termsUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "eligibilityUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/",
+        "feesAndPricingUri": "https://www.centralmurray.bank/support/regulatory/disclosure-statements/"
+      }
+    }
+  ]
+}

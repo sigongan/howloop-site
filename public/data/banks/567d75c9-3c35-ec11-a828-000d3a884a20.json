@@ -1,1 +1,415 @@
-{"name":"Heartland","checkedAt":"2026-09-17T21:42:02.521Z","status":"available","products":[{"id":"S01.1","name":"Access Account","description":"Our Access account is your complete everyday transaction account.","url":"https://www.heartlandbank.com.au/generalterms","lastUpdated":"2026-03-13T03:53:48Z","source":"https://api.cdr.heartlandbank.com.au/cds-au/v1/banking/products/S01.1","depositRates":[{"rate":"0.0000","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","applicabilityConditions":[{"rateApplicabilityType":"OTHER","additionalInfo":"All the balances are eligible for advertised interest rate and is calculated as per the general terms.","additionalInfoUri":"https://www.hearatlandbank.com.au/general-terms"}],"depositRateType":"VARIABLE"}],"fees":[{"name":"Visa Debit card - replacement (express post)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"22.50"},"currency":"AUD","additionalInfo":"Visa Debit card replacement (express post). Replacement by regular post is fee-free.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Audit certificate","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD","additionalInfo":"Fee charged for Audit Certificates.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Special answer (cheque deposits)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfo":"Special answer fee for cheque deposits.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Voucher retrieval","feeType":"EVENT","feeMethodUType":"variable","variable":{},"currency":"AUD","additionalValue":"Voucher retrieval fee. Minimum $20.00 ($60 per hour).","additionalInfo":"Fee charged for voucher/information retrieval by us.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Overdrawn account","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Fee charged on overdrawn accounts (per occurrence).","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Dishonour fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Dishonour fee charged on Pay anyone, BPAY, cheque and Direct Debit dishonours.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Stop cheque fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD","additionalInfo":"Stop cheque requests - lost or stolen. Fee is per cheque.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Electronic transfer - Branch assisted","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Fee charged when one-off Pay anyone, BPAY, or transfers are made on behalf of customers by us.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Periodical payment - Branch assisted","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Fee charged when periodical Pay anyone or BPAY payments are made on behalf of customers by us. Fee charged per transaction.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Statement reissue","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Fee charged when statement is reissued on behalf of customers by us. Fee charged per statement reissue.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Emergency card replacement","feeType":"EVENT","feeMethodUType":"variable","variable":{},"currency":"AUD","additionalInfo":"Emergency card replacement fee is charged by Visa at cost. Which is usually around $175-$200 USD."},{"name":"International transaction fees","feeType":"EVENT","feeMethodUType":"variable","variable":{},"currency":"AUD","additionalInfo":"When a visa debit card is used overseas for purchase/cashout, the fees charged is 1.5% of the Australia dollar transaction amount. This is added to the total transaction, which will display on the statement."}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"To open an account, you must be an existing customer with a valid email address and an Australian mobile number.","additionalInfoUri":"https://www.heartlandbank.com.au/generalterms"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"To open an account, you must be solely a tax resident of Australia.","additionalInfoUri":"https://www.heartlandbank.com.au/generalterms"},{"eligibilityType":"MIN_AGE","additionalValue":"14","additionalInfo":"To open an account, you must be 14 years or older.","additionalInfoUri":"https://www.heartlandbank.com.au/generalterms"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT","additionalValue":"BPAY","additionalInfo":"Make unlimited fee-free bill payments using BPAY via Internet Banking or from our app."},{"featureType":"DIGITAL_BANKING","additionalInfo":"Make fee-free Pay anyone or BPAY transactions via Internet Banking or from our app."},{"featureType":"ADDITIONAL_CARDS","additionalValue":"Unlimited","additionalInfo":"Receive additional fee-free Visa Debit cards to make purchases or cash-out transactions within Australia."},{"featureType":"DIGITAL_WALLET","additionalValue":"The Visa Debit card can be added to Apple Pay."},{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit card","additionalInfo":"Receive a fee-free Visa Debit card to make purchases or cash-out transactions within Australia and worldwide."},{"featureType":"UNLIMITED_TXNS","additionalInfo":"Make unlimited fee-free transactions using the Visa Debit card, or via Internet Banking or Mobile Banking."},{"featureType":"OFFSET","additionalInfo":"The Access Account can be linked in an offset arrangement with eligible home and investment loan held with us."}],"additionalInformation":{"overviewUri":"https://www.heartlandbank.com.au/generalterms","termsUri":"https://www.heartlandbank.com.au/generalterms","eligibilityUri":"https://www.heartlandbank.com.au/generalterms","feesAndPricingUri":"https://www.heartlandbank.com.au/feescharges-schedule"}},{"id":"S02.1","name":"MySavings account","description":"Our MySavings account offers you the freedom of no minimum balance, no account keeping or transaction fees and no minimum monthly deposit requirements.","url":"https://www.heartlandbank.com.au/generalterms","lastUpdated":"2026-03-13T03:52:24Z","source":"https://api.cdr.heartlandbank.com.au/cds-au/v1/banking/products/S02.1","depositRates":[{"rate":"0.0455","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"Tier1","additionalInfo":"$0 to $300,000","tiers":[{"name":"Tier1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"300000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"applicabilityConditions":[{"rateApplicabilityType":"OTHER","additionalInfo":"Your daily balance determines which interest rate tier applies. If your balance moves to a different tier, the applicable interest rate will apply to your entire balance for that day - not just the portion within that tier."}],"depositRateType":"VARIABLE"},{"rate":"0.0455","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"300,000.01 TO 2,000,000","additionalInfo":"TIER2","tiers":[{"name":"Tier2","unitOfMeasure":"DOLLAR","minimumValue":"300000.01","maximumValue":"2000000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"applicabilityConditions":[{"rateApplicabilityType":"OTHER","additionalInfo":"Your daily balance determines which interest rate tier applies. If your balance moves to a different tier, the applicable interest rate will apply to your entire balance for that day - not just the portion within that tier."}],"depositRateType":"VARIABLE"},{"rate":"0.0150","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"GREATOR THAN 2,000,000","additionalInfo":"Tier3","tiers":[{"name":"Tier 3","unitOfMeasure":"DOLLAR","minimumValue":"2000000.01","rateApplicationMethod":"WHOLE_BALANCE"}],"applicabilityConditions":[{"rateApplicabilityType":"OTHER","additionalInfo":"Your daily balance determines which interest rate tier applies. If your balance moves to a different tier, the applicable interest rate will apply to your entire balance for that day - not just the portion within that tier."}],"depositRateType":"VARIABLE"}],"fees":[{"name":"Audit certificate","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD","additionalInfo":"Fee charged for Audit Certificates.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Electronic transfer - Branch assisted","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Fee charged when one-off Pay anyone, BPAY, or transfers are made on behalf of customers by us.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Periodical payment - Branch assisted","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Fee charged when periodical Pay anyone or BPAY payments are made on behalf of customers by us. Fee charged per transaction.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Overdrawn account","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Fee charged on overdrawn accounts (per occurrence).","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Voucher retrieval","feeType":"EVENT","feeMethodUType":"variable","variable":{},"currency":"AUD","additionalValue":"Voucher retrieval fee. Minimum $20.00 ($60 per hour).","additionalInfo":"Fee charged for voucher/information retrieval by us.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Dishonour fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalInfo":"Dishonour fee charged on Pay anyone, or BPAY dishonours.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"},{"name":"Statement reissue","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalInfo":"Fee charged when statement is reissued on behalf of customers by us. Fee charged per statement reissue.","additionalInfoUri":"https://www.heartlandbank.com.au/feescharges-schedule"}],"eligibility":[{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"To open an account, you must be solely a tax resident of Australia.","additionalInfoUri":"https://www.heartlandbank.com.au/generalterms"},{"eligibilityType":"MIN_AGE","additionalValue":"14","additionalInfo":"To open an account, you must be 14 years or older.","additionalInfoUri":"https://www.heartlandbank.com.au/generalterms"},{"eligibilityType":"OTHER","additionalInfo":"To open an account, you must be an existing customer with a valid email address and an Australian mobile number.","additionalInfoUri":"https://www.heartlandbank.com.au/generalterms"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT","additionalValue":"BPAY","additionalInfo":"Make fee-free bill payments using BPAY via Internet Banking or from our app."},{"featureType":"UNLIMITED_TXNS","additionalInfo":"Make unlimited fee-free transactions via Internet Banking or Mobile Banking."},{"featureType":"DIGITAL_BANKING","additionalInfo":"Make fee-free Pay anyone or BPAY transactions via Internet Banking or from our app."}],"additionalInformation":{"overviewUri":"https://www.heartlandbank.com.au/generalterms","termsUri":"https://www.heartlandbank.com.au/generalterms","feesAndPricingUri":"https://www.heartlandbank.com.au/feescharges-schedule"}}]}
+{
+  "name": "Heartland",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "S01.1",
+      "name": "Access Account",
+      "description": "Our Access account is your complete everyday transaction account.",
+      "url": "https://www.heartlandbank.com.au/generalterms",
+      "lastUpdated": "2026-03-13T03:53:48Z",
+      "source": "https://api.cdr.heartlandbank.com.au/cds-au/v1/banking/products/S01.1",
+      "depositRates": [
+        {
+          "rate": "0.0000",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "OTHER",
+              "additionalInfo": "All the balances are eligible for advertised interest rate and is calculated as per the general terms.",
+              "additionalInfoUri": "https://www.hearatlandbank.com.au/general-terms"
+            }
+          ],
+          "depositRateType": "VARIABLE"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Visa Debit card - replacement (express post)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "22.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Visa Debit card replacement (express post). Replacement by regular post is fee-free.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Audit certificate",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged for Audit Certificates.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Special answer (cheque deposits)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Special answer fee for cheque deposits.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Voucher retrieval",
+          "feeType": "EVENT",
+          "feeMethodUType": "variable",
+          "variable": {},
+          "currency": "AUD",
+          "additionalValue": "Voucher retrieval fee. Minimum $20.00 ($60 per hour).",
+          "additionalInfo": "Fee charged for voucher/information retrieval by us.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Overdrawn account",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged on overdrawn accounts (per occurrence).",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Dishonour fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Dishonour fee charged on Pay anyone, BPAY, cheque and Direct Debit dishonours.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Stop cheque fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Stop cheque requests - lost or stolen. Fee is per cheque.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Electronic transfer - Branch assisted",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged when one-off Pay anyone, BPAY, or transfers are made on behalf of customers by us.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Periodical payment - Branch assisted",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged when periodical Pay anyone or BPAY payments are made on behalf of customers by us. Fee charged per transaction.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Statement reissue",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged when statement is reissued on behalf of customers by us. Fee charged per statement reissue.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Emergency card replacement",
+          "feeType": "EVENT",
+          "feeMethodUType": "variable",
+          "variable": {},
+          "currency": "AUD",
+          "additionalInfo": "Emergency card replacement fee is charged by Visa at cost. Which is usually around $175-$200 USD."
+        },
+        {
+          "name": "International transaction fees",
+          "feeType": "EVENT",
+          "feeMethodUType": "variable",
+          "variable": {},
+          "currency": "AUD",
+          "additionalInfo": "When a visa debit card is used overseas for purchase/cashout, the fees charged is 1.5% of the Australia dollar transaction amount. This is added to the total transaction, which will display on the statement."
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "To open an account, you must be an existing customer with a valid email address and an Australian mobile number.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/generalterms"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "To open an account, you must be solely a tax resident of Australia.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/generalterms"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "14",
+          "additionalInfo": "To open an account, you must be 14 years or older.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/generalterms"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY",
+          "additionalInfo": "Make unlimited fee-free bill payments using BPAY via Internet Banking or from our app."
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Make fee-free Pay anyone or BPAY transactions via Internet Banking or from our app."
+        },
+        {
+          "featureType": "ADDITIONAL_CARDS",
+          "additionalValue": "Unlimited",
+          "additionalInfo": "Receive additional fee-free Visa Debit cards to make purchases or cash-out transactions within Australia."
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "The Visa Debit card can be added to Apple Pay."
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit card",
+          "additionalInfo": "Receive a fee-free Visa Debit card to make purchases or cash-out transactions within Australia and worldwide."
+        },
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfo": "Make unlimited fee-free transactions using the Visa Debit card, or via Internet Banking or Mobile Banking."
+        },
+        {
+          "featureType": "OFFSET",
+          "additionalInfo": "The Access Account can be linked in an offset arrangement with eligible home and investment loan held with us."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.heartlandbank.com.au/generalterms",
+        "termsUri": "https://www.heartlandbank.com.au/generalterms",
+        "eligibilityUri": "https://www.heartlandbank.com.au/generalterms",
+        "feesAndPricingUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+      }
+    },
+    {
+      "id": "S02.1",
+      "name": "MySavings account",
+      "description": "Our MySavings account offers you the freedom of no minimum balance, no account keeping or transaction fees and no minimum monthly deposit requirements.",
+      "url": "https://www.heartlandbank.com.au/generalterms",
+      "lastUpdated": "2026-03-13T03:52:24Z",
+      "source": "https://api.cdr.heartlandbank.com.au/cds-au/v1/banking/products/S02.1",
+      "depositRates": [
+        {
+          "rate": "0.0455",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "Tier1",
+          "additionalInfo": "$0 to $300,000",
+          "tiers": [
+            {
+              "name": "Tier1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "300000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "OTHER",
+              "additionalInfo": "Your daily balance determines which interest rate tier applies. If your balance moves to a different tier, the applicable interest rate will apply to your entire balance for that day - not just the portion within that tier."
+            }
+          ],
+          "depositRateType": "VARIABLE"
+        },
+        {
+          "rate": "0.0455",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "300,000.01 TO 2,000,000",
+          "additionalInfo": "TIER2",
+          "tiers": [
+            {
+              "name": "Tier2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "300000.01",
+              "maximumValue": "2000000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "OTHER",
+              "additionalInfo": "Your daily balance determines which interest rate tier applies. If your balance moves to a different tier, the applicable interest rate will apply to your entire balance for that day - not just the portion within that tier."
+            }
+          ],
+          "depositRateType": "VARIABLE"
+        },
+        {
+          "rate": "0.0150",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "GREATOR THAN 2,000,000",
+          "additionalInfo": "Tier3",
+          "tiers": [
+            {
+              "name": "Tier 3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "2000000.01",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "OTHER",
+              "additionalInfo": "Your daily balance determines which interest rate tier applies. If your balance moves to a different tier, the applicable interest rate will apply to your entire balance for that day - not just the portion within that tier."
+            }
+          ],
+          "depositRateType": "VARIABLE"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Audit certificate",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged for Audit Certificates.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Electronic transfer - Branch assisted",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged when one-off Pay anyone, BPAY, or transfers are made on behalf of customers by us.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Periodical payment - Branch assisted",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged when periodical Pay anyone or BPAY payments are made on behalf of customers by us. Fee charged per transaction.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Overdrawn account",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged on overdrawn accounts (per occurrence).",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Voucher retrieval",
+          "feeType": "EVENT",
+          "feeMethodUType": "variable",
+          "variable": {},
+          "currency": "AUD",
+          "additionalValue": "Voucher retrieval fee. Minimum $20.00 ($60 per hour).",
+          "additionalInfo": "Fee charged for voucher/information retrieval by us.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Dishonour fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Dishonour fee charged on Pay anyone, or BPAY dishonours.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        },
+        {
+          "name": "Statement reissue",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Fee charged when statement is reissued on behalf of customers by us. Fee charged per statement reissue.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "To open an account, you must be solely a tax resident of Australia.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/generalterms"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "14",
+          "additionalInfo": "To open an account, you must be 14 years or older.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/generalterms"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "To open an account, you must be an existing customer with a valid email address and an Australian mobile number.",
+          "additionalInfoUri": "https://www.heartlandbank.com.au/generalterms"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY",
+          "additionalInfo": "Make fee-free bill payments using BPAY via Internet Banking or from our app."
+        },
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfo": "Make unlimited fee-free transactions via Internet Banking or Mobile Banking."
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Make fee-free Pay anyone or BPAY transactions via Internet Banking or from our app."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.heartlandbank.com.au/generalterms",
+        "termsUri": "https://www.heartlandbank.com.au/generalterms",
+        "feesAndPricingUri": "https://www.heartlandbank.com.au/feescharges-schedule"
+      }
+    }
+  ]
+}

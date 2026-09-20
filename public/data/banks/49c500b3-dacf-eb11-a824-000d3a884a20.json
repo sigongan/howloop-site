@@ -1,1 +1,1851 @@
-{"name":"Maitland Mutual Limited","checkedAt":"2026-09-17T21:42:06.321Z","status":"available","products":[{"id":"Bonus_Saver","name":"Bonus Saver","description":"A savings account that pays a competitive interest rate when at least one deposit and no withdrawals are made in the calendar month.","url":"https://www.themutual.com.au/everyday-banking/savings-investment-accounts/bonus-saver/","lastUpdated":"2026-09-15T10:09:29.000+10:00","source":"https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Bonus_Saver","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"},{"depositRateType":"BONUS","rate":"0.04","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"Interest will be paid if there has been at least one deposit and no withdrawals during the calendar month. Interest credits do not constitute a deposit. If conditions not met no interest will be paid."}],"fees":[{"name":"CHEQUE_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DIRECT_ENTRY_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"Payable when a direct entry (inward and outward) is dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DOCUMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"FINANCIAL_INSTITUTION_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfo":"Payable when you request us to issue a financial institution cheque.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"MISCELLANEOUS_SERVICE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour. Payable if you request information not covered by the Document Fee.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in Australian dollars.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in a foreign currency.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"PHYSICAL_FOREIGN_CURRENCY","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.01"},"currency":"AUD","additionalInfo":"1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"UNCLAIMED_MONIES_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"The lessor $20.00 or account balance. Payable when an account is classified as dormant.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if you use online banking to transfer funds internationally.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERDRAWN_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DORMANT_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"}],"eligibility":[{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Australian citizen or a permanent resident of Australia or otherwise approved"},{"eligibilityType":"NATURAL_PERSON","additionalInfo":"Available for personal use only"},{"eligibilityType":"MIN_AGE","additionalValue":"12"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"0.00"},{"constraintType":"MIN_BALANCE","additionalValue":"0.00"}],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"NOTIFICATIONS","additionalValue":"Mutual Alerts - Balance, low and high balance, deposit, withdrawal"},{"featureType":"UNLIMITED_TXNS"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY","additionalInfo":"Pay bills using BPAY"},{"featureType":"OTHER","additionalInfo":"Staff assisted transactions - Branch and Contact Centre"}],"additionalInformation":{"overviewUri":"https://www.themutual.com.au/everyday-banking/savings-investment-accounts/bonus-saver/","termsUri":"https://www.themutual.com.au/help-support/important-documents/","eligibilityUri":"https://www.themutual.com.au/help-support/important-documents/","feesAndPricingUri":"https://www.themutual.com.au/help-support/important-documents/"}},{"id":"Christmas_Club","name":"Christmas Club","description":"A savings account for the festive period, where members can access the funds between 1 November and 31 January.","url":"https://www.themutual.com.au/everyday-banking/savings-investment-accounts/christmas-club/","lastUpdated":"2026-09-15T10:06:52.000+10:00","source":"https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Christmas_Club","depositRates":[{"depositRateType":"VARIABLE","rate":"0.01","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","additionalInfo":"Interest is paid 6 monthly on 30 June and 31 December."}],"fees":[{"name":"CHEQUE_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DIRECT_ENTRY_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"Payable when a direct entry (inward and outward) is dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DOCUMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"MISCELLANEOUS_SERVICE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour. Payable if you request information not covered by the Document Fee.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in Australian dollars.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in a foreign currency.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"PHYSICAL_FOREIGN_CURRENCY","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.01"},"currency":"AUD","additionalInfo":"1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"UNCLAIMED_MONIES_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"The lessor $20.00 or account balance. Payable when an account is classified as dormant.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if you use online banking to transfer funds internationally.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERDRAWN_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DORMANT_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"}],"eligibility":[{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Australian citizen or a permanent resident of Australia or otherwise approved"},{"eligibilityType":"NATURAL_PERSON","additionalInfo":"Available for personal use only"},{"eligibilityType":"MIN_AGE","additionalValue":"12"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"0.00"},{"constraintType":"MIN_BALANCE","additionalValue":"0.00"}],"features":[{"featureType":"DIGITAL_BANKING","additionalInfo":"Balance of account is available via Internet Banking from 1 November to 31 January each year only. Outside of these dates, withdrawals are permitted in branch"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"OTHER","additionalInfo":"Passbook account only"},{"featureType":"NOTIFICATIONS","additionalValue":"Mutual Alerts - Balance, low and high balance, deposit, withdrawal"},{"featureType":"UNLIMITED_TXNS"},{"featureType":"OTHER","additionalInfo":"Staff assisted transactions - Branch and Contact Centre"}],"additionalInformation":{"overviewUri":"https://www.themutual.com.au/everyday-banking/savings-investment-accounts/christmas-club/","termsUri":"https://www.themutual.com.au/help-support/important-documents/","eligibilityUri":"https://www.themutual.com.au/help-support/important-documents/","feesAndPricingUri":"https://www.themutual.com.au/help-support/important-documents/"}},{"id":"Mighty_Mutual","name":"Mighty Mutual Account","description":"A savings account for children.","url":"https://www.themutual.com.au/bank-save/savings-accounts/mighty-mutual/","lastUpdated":"2026-09-15T10:05:37.000+10:00","source":"https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Mighty_Mutual","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0425","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"},{"depositRateType":"BONUS","rate":"0.00425","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"Bonus interest is payable if there are no withdrawals for the month."}],"fees":[{"name":"CHEQUE_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DIRECT_ENTRY_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"Payable when a direct entry (inward and outward) is dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DOCUMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"FINANCIAL_INSTITUTION_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfo":"Payable when you request us to issue a financial institution cheque.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"MISCELLANEOUS_SERVICE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour. Payable if you request information not covered by the Document Fee.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in Australian dollars.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in a foreign currency.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"PHYSICAL_FOREIGN_CURRENCY","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.01"},"currency":"AUD","additionalInfo":"1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"UNCLAIMED_MONIES_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"The lessor $20.00 or account balance. Payable when an account is classified as dormant.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if you use online banking to transfer funds internationally.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERDRAWN_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DORMANT_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON","additionalInfo":"Available for personal use only"},{"eligibilityType":"MAX_AGE","additionalValue":"18"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Australian citizen or a permanent resident of Australia or otherwise approved"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"0.00"},{"constraintType":"MIN_BALANCE","additionalValue":"0.00"}],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"UNLIMITED_TXNS"},{"featureType":"OTHER","additionalInfo":"Passbook account only"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY","additionalInfo":"Pay bills using BPAY"},{"featureType":"NOTIFICATIONS","additionalValue":"Mutual Alerts - Balance, low/high balance, deposit, withdrawal"},{"featureType":"OTHER","additionalInfo":"Staff assisted transactions - Branch and Contact Centre"}],"additionalInformation":{"overviewUri":"https://www.themutual.com.au/bank-save/savings-accounts/mighty-mutual/","termsUri":"https://www.themutual.com.au/help-support/important-documents/","eligibilityUri":"https://www.themutual.com.au/help-support/important-documents/","feesAndPricingUri":"https://www.themutual.com.au/help-support/important-documents/"}},{"id":"Cash_Management","name":"Cash Management","description":"A passbook account that pays a higher interest rate if the minimum account balance is maintained.","url":"https://www.themutual.com.au/everyday-banking/savings-investment-accounts/cash-management/","lastUpdated":"2026-09-15T10:05:19.000+10:00","source":"https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Cash_Management","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P3M","tiers":[{"name":"Cash Management_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P3M","tiers":[{"name":"Cash Management_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"19999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P3M","tiers":[{"name":"Cash Management_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P3M","tiers":[{"name":"Cash Management_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","maximumValue":"99999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P3M","tiers":[{"name":"Cash Management_Tier_5","unitOfMeasure":"DOLLAR","minimumValue":"100000.00","maximumValue":"199999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P3M","tiers":[{"name":"Cash Management_Tier_6","unitOfMeasure":"DOLLAR","minimumValue":"200000.00","maximumValue":"499999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P3M","tiers":[{"name":"Cash Management_Tier_7","unitOfMeasure":"DOLLAR","minimumValue":"500000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."}],"fees":[{"name":"CHEQUE_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DIRECT_ENTRY_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"Payable when a direct entry (inward and outward) is dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DOCUMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"FINANCIAL_INSTITUTION_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfo":"Payable when you request us to issue a financial institution cheque.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"MISCELLANEOUS_SERVICE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour. Payable if you request information not covered by the Document Fee.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in Australian dollars.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in a foreign currency.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"PHYSICAL_FOREIGN_CURRENCY","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.01"},"currency":"AUD","additionalInfo":"1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"UNCLAIMED_MONIES_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"The lessor $20.00 or account balance. Payable when an account is classified as dormant.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if you use online banking to transfer funds internationally.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERDRAWN_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DORMANT_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"}],"eligibility":[{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Australian citizen or a permanent resident of Australia or otherwise approved"},{"eligibilityType":"MIN_AGE","additionalValue":"12"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"0.00"},{"constraintType":"MIN_BALANCE","additionalValue":"0.00"}],"features":[{"featureType":"BILL_PAYMENT","additionalValue":"BPAY","additionalInfo":"Pay bills using BPAY"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"OTHER","additionalInfo":"Passbook account only"},{"featureType":"UNLIMITED_TXNS"},{"featureType":"NOTIFICATIONS","additionalValue":"Mutual Alerts - Balance, low and high balance, deposit, withdrawal"},{"featureType":"OTHER","additionalInfo":"Staff assisted transactions - Branch and Contact Centre"}],"additionalInformation":{"overviewUri":"https://www.themutual.com.au/everyday-banking/savings-investment-accounts/cash-management/","termsUri":"https://www.themutual.com.au/help-support/important-documents/","eligibilityUri":"https://www.themutual.com.au/help-support/important-documents/","feesAndPricingUri":"https://www.themutual.com.au/help-support/important-documents/"}},{"id":"Retirement","name":"Retirement Account","description":"A transaction account that earns interest for members over 55's or in receipt of a pension.","url":"https://www.themutual.com.au/everyday-banking/transaction-accounts/retirement/","lastUpdated":"2026-09-15T09:45:30.000+10:00","source":"https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Retirement","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0025","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Retirement Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"25000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.","additionalInfoUri":"https://www.themutual.com.au/help-support/tools-services/interest-rates/"},{"depositRateType":"VARIABLE","rate":"0.035","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Retirement Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"25000.01","maximumValue":"50000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.","additionalInfoUri":"https://www.themutual.com.au/help-support/tools-services/interest-rates/"},{"depositRateType":"VARIABLE","rate":"0.0205","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Retirement Account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"50000.01","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.","additionalInfoUri":"https://www.themutual.com.au/help-support/tools-services/interest-rates/"}],"fees":[{"name":"CHEQUE_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DIRECT_ENTRY_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"Payable when a direct entry (inward and outward) is dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DOCUMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"FINANCIAL_INSTITUTION_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfo":"Payable when you request us to issue a financial institution cheque.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"FOREIGN_CURRENCY_CONVERSION_SERVICE_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.01"},"currency":"AUD","additionalInfo":"A 1% service fee on the Australian dollar equivalent is payable for foreign currency transactions using your Mutual Visa Debit Card.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"MISCELLANEOUS_SERVICE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour. Payable if you request information not covered by the Document Fee.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in Australian dollars.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in a foreign currency.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"PHYSICAL_FOREIGN_CURRENCY","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.01"},"currency":"AUD","additionalInfo":"1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"UNCLAIMED_MONIES_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"The lessor $20.00 or account balance. Payable when an account is classified as dormant.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if you use online banking to transfer funds internationally.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"REPLACEMENT_CARD_FEE_(INTERNATIONAL)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"100.00"},"currency":"AUD","additionalInfo":"Payable if you request a replacement card when overseas via Visa Global Cardholder Assistance Service (GCAS), payable when the request is processed.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"REPLACEMENT_CARD_FEE_-_VISA_DEBIT_CARD","feeType":"CASH_ADVANCE","feeMethodUType":"variable","variable":{},"currency":"AUD","additionalInfo":"$Nil - Payable if you request a replacement Visa Debit Card.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"ATM_OWNER_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"variable","variable":{},"currency":"AUD","additionalInfo":"This fee amount is disclosed at the time of the ATM transaction and charged by the ATM owner for an ATM transaction including an ATM enquiry.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERDRAWN_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DORMANT_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"55","additionalInfo":"Over 55 years unless in receipt of pension"},{"eligibilityType":"NATURAL_PERSON","additionalInfo":"Available for personal use only"},{"eligibilityType":"PENSION_RECIPIENT"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Australian citizen or a permanent resident of Australia or otherwise approved"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"0.00"},{"constraintType":"MIN_BALANCE","additionalValue":"0.00"}],"features":[{"featureType":"ADDITIONAL_CARDS","additionalInfo":"Not available with passbook option"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY","additionalInfo":"Pay bills using BPAY"},{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card - not available with Passbook option"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"UNLIMITED_TXNS"},{"featureType":"OTHER","additionalInfo":"Passbook - not available when Visa Debit Card attached"},{"featureType":"NOTIFICATIONS","additionalValue":"Mutual Alerts - Balance, low & high balance, deposit, withdrawal"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay and Google Pay - not available with Passbook option"},{"featureType":"OTHER","additionalInfo":"Staff assisted transactions - Branch and Contact Centre"}],"additionalInformation":{"overviewUri":"https://www.themutual.com.au/everyday-banking/transaction-accounts/retirement/","termsUri":"https://www.themutual.com.au/help-support/important-documents/","eligibilityUri":"https://www.themutual.com.au/help-support/important-documents/","feesAndPricingUri":"https://www.themutual.com.au/help-support/important-documents/"}},{"id":"Everyday_Account","name":"Everyday Account","description":"An everyday transaction account with no monthly account keeping fees.","url":"https://www.themutual.com.au/everyday-banking/transaction-accounts/everyday-account/","lastUpdated":"2026-09-15T09:32:06.000+10:00","source":"https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Everyday_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Everyday Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"2000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Everyday Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"2000.01","maximumValue":"5000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Everyday Account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"5000.01","maximumValue":"20000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Everyday Account_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"20000.01","maximumValue":"50000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."},{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P6M","tiers":[{"name":"Everyday Account_Tier_5","unitOfMeasure":"DOLLAR","minimumValue":"50000.01","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."}],"fees":[{"name":"CHEQUE_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DIRECT_ENTRY_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"Payable when a direct entry (inward and outward) is dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DOCUMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"FINANCIAL_INSTITUTION_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.50"},"currency":"AUD","additionalInfo":"Payable when you request us to issue a financial institution cheque.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"MISCELLANEOUS_SERVICE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour. Payable if you request information not covered by the Document Fee.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in Australian dollars.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if we assist you send funds electronically overseas in a foreign currency.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"PHYSICAL_FOREIGN_CURRENCY","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.01"},"currency":"AUD","additionalInfo":"1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"FOREIGN_CURRENCY_CONVERSION_SERVICE_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.01"},"currency":"AUD","additionalInfo":"A 1% service fee on the Australian dollar equivalent is payable for foreign currency transactions using your Mutual Visa Debit Card.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"UNCLAIMED_MONIES_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"The lessor $20.00 or account balance. Payable when an account is classified as dormant.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if you use online banking to transfer funds internationally.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"REPLACEMENT_CARD_FEE_(INTERNATIONAL)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"100.00"},"currency":"AUD","additionalInfo":"Payable if you request a replacement card when overseas via Visa Global Cardholder Assistance Service (GCAS), payable when the request is processed.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"REPLACEMENT_CARD_FEE_-_VISA_DEBIT_CARD","feeType":"CASH_ADVANCE","feeMethodUType":"variable","variable":{},"currency":"AUD","additionalInfo":"$Nil - Payable if you request a replacement Visa Debit Card.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"ATM_OWNER_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"variable","variable":{},"currency":"AUD","additionalInfo":"This fee amount is disclosed at the time of the ATM transaction and charged by the ATM owner for an ATM transaction including an ATM enquiry.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERDRAWN_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DORMANT_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON","additionalInfo":"Available for personal use only"},{"eligibilityType":"MIN_AGE","additionalValue":"12"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Australian citizen or a permanent resident of Australia or otherwise approved"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"0.00"},{"constraintType":"MIN_BALANCE","additionalValue":"0.00"}],"features":[{"featureType":"ADDITIONAL_CARDS","additionalValue":"1"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY","additionalInfo":"Pay bills using BPAY"},{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay & Google Pay"},{"featureType":"NOTIFICATIONS","additionalValue":"Mutual Alerts - Balance, low and high balance, deposit, withdrawal"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.themutual.com.au/everyday-banking/transaction-accounts/everyday-account/","termsUri":"https://www.themutual.com.au/help-support/important-documents/","eligibilityUri":"https://www.themutual.com.au/help-support/important-documents/","feesAndPricingUri":"https://www.themutual.com.au/help-support/important-documents/"}},{"id":"Internet_Saver_S1","name":"Internet Saver","description":"An online savings account.","url":"https://www.themutual.com.au/everyday-banking/savings-investment-accounts/internet-saver/","lastUpdated":"2026-08-03T07:31:39.000+10:00","source":"https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Internet_Saver_S1","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0325","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Internet Saver_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"25000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.","additionalInfoUri":"https://www.themutual.com.au/help-support/tools-services/interest-rates/"},{"depositRateType":"VARIABLE","rate":"0.0325","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Internet Saver_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"25000.01","maximumValue":"50000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.","additionalInfoUri":"https://www.themutual.com.au/help-support/tools-services/interest-rates/"},{"depositRateType":"VARIABLE","rate":"0.0325","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Internet Saver_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"50000.01","maximumValue":"100000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.","additionalInfoUri":"https://www.themutual.com.au/help-support/tools-services/interest-rates/"},{"depositRateType":"VARIABLE","rate":"0.0325","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Internet Saver_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"100000.01","maximumValue":"250000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.","additionalInfoUri":"https://www.themutual.com.au/help-support/tools-services/interest-rates/"},{"depositRateType":"VARIABLE","rate":"0.0325","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Internet Saver_Tier_5","unitOfMeasure":"DOLLAR","minimumValue":"250000.01","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.","additionalInfoUri":"https://www.themutual.com.au/help-support/tools-services/interest-rates/"}],"fees":[{"name":"DIRECT_ENTRY_DISHONOUR","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"Payable when a direct entry (inward and outward) is dishonoured.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DOCUMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"MISCELLANEOUS_SERVICE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD","additionalInfo":"$60.00 per hour. Payable if you request information not covered by the Document Fee.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"UNCLAIMED_MONIES_FEE","feeType":"CASH_ADVANCE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"The lessor $20.00 or account balance. Payable when an account is classified as dormant.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalInfo":"Payable if you use online banking to transfer funds internationally.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"OVERDRAWN_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"9.00"},"currency":"AUD","additionalInfo":"If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"},{"name":"DORMANT_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalInfo":"This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.","additionalInfoUri":"https://www.themutual.com.au/help-support/important-documents/"}],"eligibility":[{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Australian citizen or a permanent resident of Australia or otherwise approved"},{"eligibilityType":"NATURAL_PERSON","additionalInfo":"Available for personal use only"},{"eligibilityType":"MIN_AGE","additionalValue":"12"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"0.00"},{"constraintType":"MIN_BALANCE","additionalValue":"0.00"}],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"},{"featureType":"UNLIMITED_TXNS"},{"featureType":"NOTIFICATIONS","additionalValue":"Mutual Alerts - Balance, low and high balance, deposit, withdrawal"},{"featureType":"BILL_PAYMENT","additionalValue":"BPAY","additionalInfo":"Pay bills using BPAY"},{"featureType":"OTHER","additionalInfo":"Up to 3 sub accounts"}],"additionalInformation":{"overviewUri":"https://www.themutual.com.au/everyday-banking/savings-investment-accounts/internet-saver/","termsUri":"https://www.themutual.com.au/help-support/important-documents/","eligibilityUri":"https://www.themutual.com.au/help-support/important-documents/","feesAndPricingUri":"https://www.themutual.com.au/help-support/important-documents/"}}]}
+{
+  "name": "Maitland Mutual Limited",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "Bonus_Saver",
+      "name": "Bonus Saver",
+      "description": "A savings account that pays a competitive interest rate when at least one deposit and no withdrawals are made in the calendar month.",
+      "url": "https://www.themutual.com.au/everyday-banking/savings-investment-accounts/bonus-saver/",
+      "lastUpdated": "2026-09-15T10:09:29.000+10:00",
+      "source": "https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Bonus_Saver",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.04",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "Interest will be paid if there has been at least one deposit and no withdrawals during the calendar month. Interest credits do not constitute a deposit. If conditions not met no interest will be paid."
+        }
+      ],
+      "fees": [
+        {
+          "name": "CHEQUE_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DIRECT_ENTRY_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when a direct entry (inward and outward) is dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DOCUMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "FINANCIAL_INSTITUTION_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when you request us to issue a financial institution cheque.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "MISCELLANEOUS_SERVICE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour. Payable if you request information not covered by the Document Fee.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in Australian dollars.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in a foreign currency.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "PHYSICAL_FOREIGN_CURRENCY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01"
+          },
+          "currency": "AUD",
+          "additionalInfo": "1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "UNCLAIMED_MONIES_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "The lessor $20.00 or account balance. Payable when an account is classified as dormant.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if you use online banking to transfer funds internationally.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERDRAWN_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DORMANT_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Australian citizen or a permanent resident of Australia or otherwise approved"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON",
+          "additionalInfo": "Available for personal use only"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "12"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "0.00"
+        },
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "0.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Mutual Alerts - Balance, low and high balance, deposit, withdrawal"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY",
+          "additionalInfo": "Pay bills using BPAY"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Staff assisted transactions - Branch and Contact Centre"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.themutual.com.au/everyday-banking/savings-investment-accounts/bonus-saver/",
+        "termsUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "eligibilityUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "feesAndPricingUri": "https://www.themutual.com.au/help-support/important-documents/"
+      }
+    },
+    {
+      "id": "Cash_Management",
+      "name": "Cash Management",
+      "description": "A passbook account that pays a higher interest rate if the minimum account balance is maintained.",
+      "url": "https://www.themutual.com.au/everyday-banking/savings-investment-accounts/cash-management/",
+      "lastUpdated": "2026-09-15T10:05:19.000+10:00",
+      "source": "https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Cash_Management",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P3M",
+          "tiers": [
+            {
+              "name": "Cash Management_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P3M",
+          "tiers": [
+            {
+              "name": "Cash Management_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P3M",
+          "tiers": [
+            {
+              "name": "Cash Management_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P3M",
+          "tiers": [
+            {
+              "name": "Cash Management_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "maximumValue": "99999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P3M",
+          "tiers": [
+            {
+              "name": "Cash Management_Tier_5",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "100000.00",
+              "maximumValue": "199999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P3M",
+          "tiers": [
+            {
+              "name": "Cash Management_Tier_6",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "200000.00",
+              "maximumValue": "499999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P3M",
+          "tiers": [
+            {
+              "name": "Cash Management_Tier_7",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "500000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate applicable to the daily balance to the entire balance and paid three monthly on 31 March, 30 June, 30 September and 31 December."
+        }
+      ],
+      "fees": [
+        {
+          "name": "CHEQUE_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DIRECT_ENTRY_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when a direct entry (inward and outward) is dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DOCUMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "FINANCIAL_INSTITUTION_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when you request us to issue a financial institution cheque.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "MISCELLANEOUS_SERVICE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour. Payable if you request information not covered by the Document Fee.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in Australian dollars.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in a foreign currency.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "PHYSICAL_FOREIGN_CURRENCY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01"
+          },
+          "currency": "AUD",
+          "additionalInfo": "1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "UNCLAIMED_MONIES_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "The lessor $20.00 or account balance. Payable when an account is classified as dormant.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if you use online banking to transfer funds internationally.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERDRAWN_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DORMANT_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Australian citizen or a permanent resident of Australia or otherwise approved"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "12"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "0.00"
+        },
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "0.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY",
+          "additionalInfo": "Pay bills using BPAY"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Passbook account only"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Mutual Alerts - Balance, low and high balance, deposit, withdrawal"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Staff assisted transactions - Branch and Contact Centre"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.themutual.com.au/everyday-banking/savings-investment-accounts/cash-management/",
+        "termsUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "eligibilityUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "feesAndPricingUri": "https://www.themutual.com.au/help-support/important-documents/"
+      }
+    },
+    {
+      "id": "Christmas_Club",
+      "name": "Christmas Club",
+      "description": "A savings account for the festive period, where members can access the funds between 1 November and 31 January.",
+      "url": "https://www.themutual.com.au/everyday-banking/savings-investment-accounts/christmas-club/",
+      "lastUpdated": "2026-09-15T10:06:52.000+10:00",
+      "source": "https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Christmas_Club",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.01",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "additionalInfo": "Interest is paid 6 monthly on 30 June and 31 December."
+        }
+      ],
+      "fees": [
+        {
+          "name": "CHEQUE_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DIRECT_ENTRY_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when a direct entry (inward and outward) is dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DOCUMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "MISCELLANEOUS_SERVICE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour. Payable if you request information not covered by the Document Fee.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in Australian dollars.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in a foreign currency.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "PHYSICAL_FOREIGN_CURRENCY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01"
+          },
+          "currency": "AUD",
+          "additionalInfo": "1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "UNCLAIMED_MONIES_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "The lessor $20.00 or account balance. Payable when an account is classified as dormant.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if you use online banking to transfer funds internationally.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERDRAWN_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DORMANT_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Australian citizen or a permanent resident of Australia or otherwise approved"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON",
+          "additionalInfo": "Available for personal use only"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "12"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "0.00"
+        },
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "0.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Balance of account is available via Internet Banking from 1 November to 31 January each year only. Outside of these dates, withdrawals are permitted in branch"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Passbook account only"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Mutual Alerts - Balance, low and high balance, deposit, withdrawal"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Staff assisted transactions - Branch and Contact Centre"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.themutual.com.au/everyday-banking/savings-investment-accounts/christmas-club/",
+        "termsUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "eligibilityUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "feesAndPricingUri": "https://www.themutual.com.au/help-support/important-documents/"
+      }
+    },
+    {
+      "id": "Everyday_Account",
+      "name": "Everyday Account",
+      "description": "An everyday transaction account with no monthly account keeping fees.",
+      "url": "https://www.themutual.com.au/everyday-banking/transaction-accounts/everyday-account/",
+      "lastUpdated": "2026-09-15T09:32:06.000+10:00",
+      "source": "https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Everyday_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Everyday Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "2000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Everyday Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "2000.01",
+              "maximumValue": "5000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Everyday Account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.01",
+              "maximumValue": "20000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Everyday Account_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.01",
+              "maximumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P6M",
+          "tiers": [
+            {
+              "name": "Everyday Account_Tier_5",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid 6 monthly on 30 June and 31 December."
+        }
+      ],
+      "fees": [
+        {
+          "name": "CHEQUE_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DIRECT_ENTRY_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when a direct entry (inward and outward) is dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DOCUMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "FINANCIAL_INSTITUTION_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when you request us to issue a financial institution cheque.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "MISCELLANEOUS_SERVICE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour. Payable if you request information not covered by the Document Fee.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in Australian dollars.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in a foreign currency.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "PHYSICAL_FOREIGN_CURRENCY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01"
+          },
+          "currency": "AUD",
+          "additionalInfo": "1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CONVERSION_SERVICE_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01"
+          },
+          "currency": "AUD",
+          "additionalInfo": "A 1% service fee on the Australian dollar equivalent is payable for foreign currency transactions using your Mutual Visa Debit Card.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "UNCLAIMED_MONIES_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "The lessor $20.00 or account balance. Payable when an account is classified as dormant.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if you use online banking to transfer funds internationally.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "REPLACEMENT_CARD_FEE_(INTERNATIONAL)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "100.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if you request a replacement card when overseas via Visa Global Cardholder Assistance Service (GCAS), payable when the request is processed.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "REPLACEMENT_CARD_FEE_-_VISA_DEBIT_CARD",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "variable",
+          "variable": {},
+          "currency": "AUD",
+          "additionalInfo": "$Nil - Payable if you request a replacement Visa Debit Card.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "ATM_OWNER_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "variable",
+          "variable": {},
+          "currency": "AUD",
+          "additionalInfo": "This fee amount is disclosed at the time of the ATM transaction and charged by the ATM owner for an ATM transaction including an ATM enquiry.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERDRAWN_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DORMANT_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON",
+          "additionalInfo": "Available for personal use only"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "12"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Australian citizen or a permanent resident of Australia or otherwise approved"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "0.00"
+        },
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "0.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS",
+          "additionalValue": "1"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY",
+          "additionalInfo": "Pay bills using BPAY"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay & Google Pay"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Mutual Alerts - Balance, low and high balance, deposit, withdrawal"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.themutual.com.au/everyday-banking/transaction-accounts/everyday-account/",
+        "termsUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "eligibilityUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "feesAndPricingUri": "https://www.themutual.com.au/help-support/important-documents/"
+      }
+    },
+    {
+      "id": "Internet_Saver_S1",
+      "name": "Internet Saver",
+      "description": "An online savings account.",
+      "url": "https://www.themutual.com.au/everyday-banking/savings-investment-accounts/internet-saver/",
+      "lastUpdated": "2026-08-03T07:31:39.000+10:00",
+      "source": "https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Internet_Saver_S1",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0325",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Internet Saver_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "25000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/tools-services/interest-rates/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0325",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Internet Saver_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "25000.01",
+              "maximumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/tools-services/interest-rates/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0325",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Internet Saver_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.01",
+              "maximumValue": "100000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/tools-services/interest-rates/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0325",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Internet Saver_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "100000.01",
+              "maximumValue": "250000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/tools-services/interest-rates/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0325",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Internet Saver_Tier_5",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "250000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/tools-services/interest-rates/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "DIRECT_ENTRY_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when a direct entry (inward and outward) is dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DOCUMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "MISCELLANEOUS_SERVICE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour. Payable if you request information not covered by the Document Fee.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "UNCLAIMED_MONIES_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "The lessor $20.00 or account balance. Payable when an account is classified as dormant.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if you use online banking to transfer funds internationally.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERDRAWN_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DORMANT_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Australian citizen or a permanent resident of Australia or otherwise approved"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON",
+          "additionalInfo": "Available for personal use only"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "12"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "0.00"
+        },
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "0.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Mutual Alerts - Balance, low and high balance, deposit, withdrawal"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY",
+          "additionalInfo": "Pay bills using BPAY"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Up to 3 sub accounts"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.themutual.com.au/everyday-banking/savings-investment-accounts/internet-saver/",
+        "termsUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "eligibilityUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "feesAndPricingUri": "https://www.themutual.com.au/help-support/important-documents/"
+      }
+    },
+    {
+      "id": "Mighty_Mutual",
+      "name": "Mighty Mutual Account",
+      "description": "A savings account for children.",
+      "url": "https://www.themutual.com.au/bank-save/savings-accounts/mighty-mutual/",
+      "lastUpdated": "2026-09-15T10:05:37.000+10:00",
+      "source": "https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Mighty_Mutual",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0425",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.00425",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "Bonus interest is payable if there are no withdrawals for the month."
+        }
+      ],
+      "fees": [
+        {
+          "name": "CHEQUE_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DIRECT_ENTRY_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when a direct entry (inward and outward) is dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DOCUMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "FINANCIAL_INSTITUTION_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when you request us to issue a financial institution cheque.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "MISCELLANEOUS_SERVICE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour. Payable if you request information not covered by the Document Fee.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in Australian dollars.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in a foreign currency.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "PHYSICAL_FOREIGN_CURRENCY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01"
+          },
+          "currency": "AUD",
+          "additionalInfo": "1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "UNCLAIMED_MONIES_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "The lessor $20.00 or account balance. Payable when an account is classified as dormant.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if you use online banking to transfer funds internationally.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERDRAWN_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DORMANT_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON",
+          "additionalInfo": "Available for personal use only"
+        },
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "18"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Australian citizen or a permanent resident of Australia or otherwise approved"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "0.00"
+        },
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "0.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Passbook account only"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY",
+          "additionalInfo": "Pay bills using BPAY"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Mutual Alerts - Balance, low/high balance, deposit, withdrawal"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Staff assisted transactions - Branch and Contact Centre"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.themutual.com.au/bank-save/savings-accounts/mighty-mutual/",
+        "termsUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "eligibilityUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "feesAndPricingUri": "https://www.themutual.com.au/help-support/important-documents/"
+      }
+    },
+    {
+      "id": "Retirement",
+      "name": "Retirement Account",
+      "description": "A transaction account that earns interest for members over 55's or in receipt of a pension.",
+      "url": "https://www.themutual.com.au/everyday-banking/transaction-accounts/retirement/",
+      "lastUpdated": "2026-09-15T09:45:30.000+10:00",
+      "source": "https://openbanking.themutual.com.au/OpenBanking/cds-au/v1/banking/products/Retirement",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0025",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Retirement Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "25000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/tools-services/interest-rates/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.035",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Retirement Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "25000.01",
+              "maximumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/tools-services/interest-rates/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0205",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Retirement Account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "Interest is calculated by applying the daily percentage rate to the different portions of the daily balance and paid monthly on the last day of each month.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/tools-services/interest-rates/"
+        }
+      ],
+      "fees": [
+        {
+          "name": "CHEQUE_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "A dishonoured cheque is a cheque that is not paid by the financial institution on which it is drawn. A dishonour fee will apply each time the cheque is presented for payment and dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DIRECT_ENTRY_DISHONOUR",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when a direct entry (inward and outward) is dishonoured.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DOCUMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour (subject to minimum $10.00 per copy). Payable if you request copies of documents such as withdrawal forms or statements, or you ask us to verify a transaction performed on your Account e.g. evidence of a Visa Debit Card purchase.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "FINANCIAL_INSTITUTION_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.50"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable when you request us to issue a financial institution cheque.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CONVERSION_SERVICE_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01"
+          },
+          "currency": "AUD",
+          "additionalInfo": "A 1% service fee on the Australian dollar equivalent is payable for foreign currency transactions using your Mutual Visa Debit Card.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "MISCELLANEOUS_SERVICE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "$60.00 per hour. Payable if you request information not covered by the Document Fee.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_AUSTRALIAN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in Australian dollars.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERSEAS_TELEGRAPHIC_TRANSFER_(OUTWARD)_-_FOREIGN_CURRENCY",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if we assist you send funds electronically overseas in a foreign currency.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "PHYSICAL_FOREIGN_CURRENCY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.01"
+          },
+          "currency": "AUD",
+          "additionalInfo": "1% of Australian currency equivalent amount. Payable when physical foreign currency is issued or purchased.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "UNCLAIMED_MONIES_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "The lessor $20.00 or account balance. Payable when an account is classified as dormant.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "ONLINE_INTERNATIONAL_TRANSFER_(OUTWARD)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if you use online banking to transfer funds internationally.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "REPLACEMENT_CARD_FEE_(INTERNATIONAL)",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "100.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Payable if you request a replacement card when overseas via Visa Global Cardholder Assistance Service (GCAS), payable when the request is processed.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "REPLACEMENT_CARD_FEE_-_VISA_DEBIT_CARD",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "variable",
+          "variable": {},
+          "currency": "AUD",
+          "additionalInfo": "$Nil - Payable if you request a replacement Visa Debit Card.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "ATM_OWNER_FEE",
+          "feeType": "CASH_ADVANCE",
+          "feeMethodUType": "variable",
+          "variable": {},
+          "currency": "AUD",
+          "additionalInfo": "This fee amount is disclosed at the time of the ATM transaction and charged by the ATM owner for an ATM transaction including an ATM enquiry.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "OVERDRAWN_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "If your Account is overdrawn, without our prior agreement, a fee will be charged each time this occurs. Penalty interest (at the rate disclosed on the Deposit Interest Rate Schedule) will also be charged until the Account is brought back in order.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        },
+        {
+          "name": "DORMANT_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalInfo": "This fee is charged to each of your Deposit Accounts closed due to dormancy. The lesser of $20.00 or the account balance.",
+          "additionalInfoUri": "https://www.themutual.com.au/help-support/important-documents/"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "55",
+          "additionalInfo": "Over 55 years unless in receipt of pension"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON",
+          "additionalInfo": "Available for personal use only"
+        },
+        {
+          "eligibilityType": "PENSION_RECIPIENT"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Australian citizen or a permanent resident of Australia or otherwise approved"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "0.00"
+        },
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "0.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS",
+          "additionalInfo": "Not available with passbook option"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY",
+          "additionalInfo": "Pay bills using BPAY"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card - not available with Passbook option"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Passbook - not available when Visa Debit Card attached"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalValue": "Mutual Alerts - Balance, low & high balance, deposit, withdrawal"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay and Google Pay - not available with Passbook option"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Staff assisted transactions - Branch and Contact Centre"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.themutual.com.au/everyday-banking/transaction-accounts/retirement/",
+        "termsUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "eligibilityUri": "https://www.themutual.com.au/help-support/important-documents/",
+        "feesAndPricingUri": "https://www.themutual.com.au/help-support/important-documents/"
+      }
+    }
+  ]
+}

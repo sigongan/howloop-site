@@ -1,1 +1,415 @@
-{"name":"Bank of Queensland Limited","checkedAt":"2026-09-17T21:41:47.500Z","status":"partial","products":[{"id":"1a906e88-5c03-ee11-8f6e-00224814d330","name":"Simple Saver Account","description":"No hoops and no fuss when you just want to save. Simply sit back and watch your savings grow.","url":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver","lastUpdated":"2026-09-07T00:15:57Z","source":"https://api.cds.boq.com.au/cds-au/v1/banking/products/1a906e88-5c03-ee11-8f6e-00224814d330","depositRates":[{"rate":"0.0055000000000000","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"For newly opened accounts, 0.55% will be applied to the account for the first 4 months.","depositRateType":"BONUS"},{"rate":"0.0005000000000000","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver","tiers":[{"additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver","name":"over $5M","unitOfMeasure":"DOLLAR","minimumValue":"5000000.01","rateApplicationMethod":"WHOLE_BALANCE"}],"depositRateType":"VARIABLE"},{"rate":"0.0480000000000000","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver","tiers":[{"additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver","name":"$1 to $5M","unitOfMeasure":"DOLLAR","minimumValue":"1.00","maximumValue":"5000000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"depositRateType":"VARIABLE"}],"fees":[{"name":"Paper Statement - International","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.0000"},"additionalValue":"P1M","additionalInfo":"Charged for each paper statement that is required to be posted to an International Address.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Overdrawn Account","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.0000"},"additionalInfo":"There is no overdrawn fee, however a debit interest rate is applied as set out below.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Electronic Transaction Error Correction Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.0000"},"additionalInfo":"Charged when the bank is requested by you or the recipient Financial Institution or Biller, to correct an error you have made with a BPAY payment, using the 'Pay Someone' functionality, or NPP transaction.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Failed Transaction Dispute","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.0000"},"additionalInfo":"Charged when a transaction dispute is unsuccessful.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Trace","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.0000"},"currency":"AUD","additionalInfo":"Charged for each request to perform a trace on any transaction type.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"BPAY, Pay Someone, Card Transactions","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.0000"},"additionalInfo":"There is no fee charged by BOQ for performing a BPAY Payment, Pay Anyone or making a Card transaction. Merchants may charge fee in respect of card transactions which should be advised to you at the time of making the transaction.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Debit Interest Rate (applied to overdrawn Accounts)","feeType":"LATE_PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"BALANCE","rate":"0.1000000000000000"},"additionalValue":"1","additionalInfo":"Interest is charged on a daily basis on all debit balances and debited to the relevant Account monthly.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Direct Debit Dishonour","feeType":"DISHONOUR","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.0000"},"additionalInfo":"Charged for each direct debit that is dishonoured on the same day that the dishonour takes place.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Bank Cheque","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.0000"},"additionalInfo":"Charged for each bank cheque that is produced and posted to an Australian address.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Unclaimed Monies","feeType":"OTHER","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.0000"},"additionalInfo":"Charged when the unclaimed monies process starts which is after 7 years of inactivity.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Cheque Dishonour","feeType":"DISHONOUR","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.0000"},"additionalInfo":"Charged for each Cheque deposit that is dishonoured on the same day that the dishonour takes place.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Monthly Account Keeping","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.0000"},"additionalValue":"P1M","additionalInfo":"There are no monthly account keeping fees with myBOQ Accounts.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"},{"name":"Manual Statement","feeType":"ENQUIRY","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.0000"},"additionalInfo":"Charged when you request a manual statement to be generated and emailed to you. Statements are available on the myBOQ App and can be accessed for closed Accounts at no cost.Statements for periods prior to migration of an Account to the myBOQ app will not be available from the myBOQ app, but can be requested from BOQ.","additionalInfoUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"A smartphone that supports iOS 12.0+ or Android 8.0+.","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"eligibilityType":"OTHER","additionalInfo":"An Australian mobile number","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"eligibilityType":"OTHER","additionalInfo":"An Australian drivers licence or Australian passport or Medicare card","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"eligibilityType":"MIN_AGE","additionalValue":"14","additionalInfo":"Fourteen (14) years of age or over","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"eligibilityType":"NATURAL_PERSON","additionalInfo":"Applying for a personal account and not in the name of a business or trust. There should be no more than two account holders for this account","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"eligibilityType":"OTHER","additionalInfo":"An Australian residential address","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"eligibilityType":"RESIDENCY_STATUS","additionalValue":"Resident or Citizen","additionalInfo":"A citizen or permanent resident of Australia","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"}],"constraints":[],"features":[{"featureType":"OTHER","additionalInfo":"Earn interest with an ongoing interest rate, with no monthly criteria and no minimum deposit","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"featureType":"OTHER","additionalInfo":"All deposits up to $250,000 are protected by the Federal Government's deposit guarantee, so your savings are secure with us","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"featureType":"OTHER","additionalInfo":"$0 account maintenance fees","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"featureType":"OTHER","additionalInfo":"Make every cent count. Open multiple Simple Saver accounts to manage your savings across multiple goals.","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your account anytime through the myBOQ mobile app","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"},{"featureType":"NPP_PAYID","additionalInfo":"Send and receive payments using PayID","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"}],"additionalInformation":{"overviewUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver","termsUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-accounts-general-terms-and-conditions.pdf","eligibilityUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver","feesAndPricingUri":"https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"}},{"id":"b5176288-5c03-ee11-8f6e-00224814dce7","name":"Kids Savings Account","description":"It's never too early to teach kids to save! Encourage the right saving behaviour for children under 14 with a children's savings account held in their name. Make one withdrawal a month and still earn Bonus Interest variable rate. Start earning high interest from the first dollar. Deposit only access for the linked child. Manage the account on your internet banking.","url":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","lastUpdated":"2026-03-13T05:53:28Z","source":"https://api.cds.boq.com.au/cds-au/v1/banking/products/b5176288-5c03-ee11-8f6e-00224814dce7","depositRates":[{"rate":"0.0005000000000000","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfo":"Variable Base Rate","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","depositRateType":"VARIABLE"},{"rate":"0.0125000000000000","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"Total interest rate will be 1.25% p.a. (1.20% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month. Calculated daily and paid monthly.","additionalInfo":"Calculated daily and paid monthly.","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","tiers":[{"additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","name":"$5000 to less than $49999","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"49999.00","rateApplicationMethod":"WHOLE_BALANCE","applicabilityConditions":[{"rateApplicabilityType":"MAX_WITHDRAWALS","additionalValue":"1"}]}],"depositRateType":"BONUS"},{"rate":"0.0125000000000000","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"Total interest rate will be 1.25% p.a. (1.20% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month. Calculated daily and paid monthly.","additionalInfo":"Calculated daily and paid monthly.","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","tiers":[{"additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","name":"$50,000 and over","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","rateApplicationMethod":"WHOLE_BALANCE","applicabilityConditions":[{"rateApplicabilityType":"MAX_WITHDRAWALS","additionalValue":"1"}]}],"depositRateType":"BONUS"},{"rate":"0.0125000000000000","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"Total interest rate will be 1.25% p.a. (1.20% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month. Calculated daily and paid monthly.","additionalInfo":"Calculated daily and paid monthly.","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","tiers":[{"additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","name":"$1 to less than $4999","unitOfMeasure":"DOLLAR","minimumValue":"1.00","maximumValue":"4999.00","rateApplicationMethod":"WHOLE_BALANCE","applicabilityConditions":[{"rateApplicabilityType":"MAX_WITHDRAWALS","additionalValue":"1"}]}],"depositRateType":"BONUS"}],"fees":[],"eligibility":[{"eligibilityType":"MAX_AGE","additionalValue":"14","additionalInfo":"To apply for a Kids Account (under 14 years of age) the parent/guardian and the account holder (minor) must both be identified","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"}],"constraints":[],"features":[{"featureType":"OTHER","additionalInfo":"Kids receive statements in their name, so they can watch their savings grow","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"},{"featureType":"OTHER","additionalInfo":"Linked parents or guardians have full access to the account","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"},{"featureType":"OTHER","additionalInfo":"Your child can make branch deposits, but all other account access by your child is restricted","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"},{"featureType":"OTHER","additionalInfo":"Kids receive their own deposit book and wallet to track their savings","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"},{"featureType":"OTHER","additionalInfo":"Receive a high rate of interest on your kid's savings account","additionalInfoUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"}],"additionalInformation":{"overviewUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","termsUri":"https://www.boq.com.au/content/dam/boq/files/terms-and-conditions/personal/deposit-products-terms-and-conditions.pdf","eligibilityUri":"https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account","feesAndPricingUri":"https://www.boq.com.au/content/dam/boq/files/terms-and-conditions/personal/personal-banking-guide-to-fees-and-charges.pdf"}}]}
+{
+  "name": "Bank of Queensland Limited",
+  "checkedAt": "2026-09-17T21:41:47.500Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "stale",
+  "products": [
+    {
+      "id": "1a906e88-5c03-ee11-8f6e-00224814d330",
+      "name": "Simple Saver Account",
+      "description": "No hoops and no fuss when you just want to save. Simply sit back and watch your savings grow.",
+      "url": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver",
+      "lastUpdated": "2026-09-07T00:15:57Z",
+      "source": "https://api.cds.boq.com.au/cds-au/v1/banking/products/1a906e88-5c03-ee11-8f6e-00224814d330",
+      "depositRates": [
+        {
+          "rate": "0.0055000000000000",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "For newly opened accounts, 0.55% will be applied to the account for the first 4 months.",
+          "depositRateType": "BONUS"
+        },
+        {
+          "rate": "0.0005000000000000",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver",
+          "tiers": [
+            {
+              "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver",
+              "name": "over $5M",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000000.01",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "depositRateType": "VARIABLE"
+        },
+        {
+          "rate": "0.0480000000000000",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver",
+          "tiers": [
+            {
+              "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver",
+              "name": "$1 to $5M",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1.00",
+              "maximumValue": "5000000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "depositRateType": "VARIABLE"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Paper Statement - International",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.0000"
+          },
+          "additionalValue": "P1M",
+          "additionalInfo": "Charged for each paper statement that is required to be posted to an International Address.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Overdrawn Account",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.0000"
+          },
+          "additionalInfo": "There is no overdrawn fee, however a debit interest rate is applied as set out below.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Electronic Transaction Error Correction Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.0000"
+          },
+          "additionalInfo": "Charged when the bank is requested by you or the recipient Financial Institution or Biller, to correct an error you have made with a BPAY payment, using the 'Pay Someone' functionality, or NPP transaction.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Failed Transaction Dispute",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.0000"
+          },
+          "additionalInfo": "Charged when a transaction dispute is unsuccessful.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Trace",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.0000"
+          },
+          "currency": "AUD",
+          "additionalInfo": "Charged for each request to perform a trace on any transaction type.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "BPAY, Pay Someone, Card Transactions",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.0000"
+          },
+          "additionalInfo": "There is no fee charged by BOQ for performing a BPAY Payment, Pay Anyone or making a Card transaction. Merchants may charge fee in respect of card transactions which should be advised to you at the time of making the transaction.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Debit Interest Rate (applied to overdrawn Accounts)",
+          "feeType": "LATE_PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "BALANCE",
+            "rate": "0.1000000000000000"
+          },
+          "additionalValue": "1",
+          "additionalInfo": "Interest is charged on a daily basis on all debit balances and debited to the relevant Account monthly.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Direct Debit Dishonour",
+          "feeType": "DISHONOUR",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.0000"
+          },
+          "additionalInfo": "Charged for each direct debit that is dishonoured on the same day that the dishonour takes place.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Bank Cheque",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.0000"
+          },
+          "additionalInfo": "Charged for each bank cheque that is produced and posted to an Australian address.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Unclaimed Monies",
+          "feeType": "OTHER",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.0000"
+          },
+          "additionalInfo": "Charged when the unclaimed monies process starts which is after 7 years of inactivity.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Cheque Dishonour",
+          "feeType": "DISHONOUR",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.0000"
+          },
+          "additionalInfo": "Charged for each Cheque deposit that is dishonoured on the same day that the dishonour takes place.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Monthly Account Keeping",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.0000"
+          },
+          "additionalValue": "P1M",
+          "additionalInfo": "There are no monthly account keeping fees with myBOQ Accounts.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        },
+        {
+          "name": "Manual Statement",
+          "feeType": "ENQUIRY",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.0000"
+          },
+          "additionalInfo": "Charged when you request a manual statement to be generated and emailed to you. Statements are available on the myBOQ App and can be accessed for closed Accounts at no cost.Statements for periods prior to migration of an Account to the myBOQ app will not be available from the myBOQ app, but can be requested from BOQ.",
+          "additionalInfoUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "A smartphone that supports iOS 12.0+ or Android 8.0+.",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "An Australian mobile number",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "An Australian drivers licence or Australian passport or Medicare card",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "14",
+          "additionalInfo": "Fourteen (14) years of age or over",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON",
+          "additionalInfo": "Applying for a personal account and not in the name of a business or trust. There should be no more than two account holders for this account",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "An Australian residential address",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalValue": "Resident or Citizen",
+          "additionalInfo": "A citizen or permanent resident of Australia",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Earn interest with an ongoing interest rate, with no monthly criteria and no minimum deposit",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "All deposits up to $250,000 are protected by the Federal Government's deposit guarantee, so your savings are secure with us",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "$0 account maintenance fees",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Make every cent count. Open multiple Simple Saver accounts to manage your savings across multiple goals.",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your account anytime through the myBOQ mobile app",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "Send and receive payments using PayID",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver",
+        "termsUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-accounts-general-terms-and-conditions.pdf",
+        "eligibilityUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/simple-saver",
+        "feesAndPricingUri": "https://www.boq.com.au/content/dam/boq/mobile-app/boq-app/files/myboq-deposit-account-interest-rates-transaction-limits.pdf"
+      }
+    },
+    {
+      "id": "b5176288-5c03-ee11-8f6e-00224814dce7",
+      "name": "Kids Savings Account",
+      "description": "It's never too early to teach kids to save! Encourage the right saving behaviour for children under 14 with a children's savings account held in their name. Make one withdrawal a month and still earn Bonus Interest variable rate. Start earning high interest from the first dollar. Deposit only access for the linked child. Manage the account on your internet banking.",
+      "url": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+      "lastUpdated": "2026-03-13T05:53:28Z",
+      "source": "https://api.cds.boq.com.au/cds-au/v1/banking/products/b5176288-5c03-ee11-8f6e-00224814dce7",
+      "depositRates": [
+        {
+          "rate": "0.0005000000000000",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfo": "Variable Base Rate",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+          "depositRateType": "VARIABLE"
+        },
+        {
+          "rate": "0.0125000000000000",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "Total interest rate will be 1.25% p.a. (1.20% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month. Calculated daily and paid monthly.",
+          "additionalInfo": "Calculated daily and paid monthly.",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+          "tiers": [
+            {
+              "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+              "name": "$5000 to less than $49999",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "49999.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": [
+                {
+                  "rateApplicabilityType": "MAX_WITHDRAWALS",
+                  "additionalValue": "1"
+                }
+              ]
+            }
+          ],
+          "depositRateType": "BONUS"
+        },
+        {
+          "rate": "0.0125000000000000",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "Total interest rate will be 1.25% p.a. (1.20% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month. Calculated daily and paid monthly.",
+          "additionalInfo": "Calculated daily and paid monthly.",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+          "tiers": [
+            {
+              "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+              "name": "$50,000 and over",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": [
+                {
+                  "rateApplicabilityType": "MAX_WITHDRAWALS",
+                  "additionalValue": "1"
+                }
+              ]
+            }
+          ],
+          "depositRateType": "BONUS"
+        },
+        {
+          "rate": "0.0125000000000000",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "Total interest rate will be 1.25% p.a. (1.20% p.a. Bonus Interest + 0.05% p.a. Variable base rate) if no more than one (1) withdrawal is made during a calendar month. Calculated daily and paid monthly.",
+          "additionalInfo": "Calculated daily and paid monthly.",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+          "tiers": [
+            {
+              "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+              "name": "$1 to less than $4999",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1.00",
+              "maximumValue": "4999.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": [
+                {
+                  "rateApplicabilityType": "MAX_WITHDRAWALS",
+                  "additionalValue": "1"
+                }
+              ]
+            }
+          ],
+          "depositRateType": "BONUS"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "14",
+          "additionalInfo": "To apply for a Kids Account (under 14 years of age) the parent/guardian and the account holder (minor) must both be identified",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Kids receive statements in their name, so they can watch their savings grow",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Linked parents or guardians have full access to the account",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Your child can make branch deposits, but all other account access by your child is restricted",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Kids receive their own deposit book and wallet to track their savings",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Receive a high rate of interest on your kid's savings account",
+          "additionalInfoUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+        "termsUri": "https://www.boq.com.au/content/dam/boq/files/terms-and-conditions/personal/deposit-products-terms-and-conditions.pdf",
+        "eligibilityUri": "https://www.boq.com.au/personal/banking/savings-and-term-deposits/kids-savings-account",
+        "feesAndPricingUri": "https://www.boq.com.au/content/dam/boq/files/terms-and-conditions/personal/personal-banking-guide-to-fees-and-charges.pdf"
+      }
+    }
+  ]
+}

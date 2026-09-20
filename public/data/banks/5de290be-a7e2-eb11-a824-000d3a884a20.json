@@ -1,1 +1,7 @@
-{"name":"Hume Bank","checkedAt":"2026-09-17T21:42:04.172Z","status":"unavailable","products":[]}
+{
+  "name": "Hume Bank",
+  "checkedAt": null,
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "unavailable",
+  "products": []
+}

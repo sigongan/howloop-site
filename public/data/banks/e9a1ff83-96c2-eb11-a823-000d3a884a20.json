@@ -1,1 +1,919 @@
-{"name":"Police Credit Union Ltd","checkedAt":"2026-09-17T21:42:10.363Z","status":"available","products":[{"id":"Super_MyWay_Account","name":"Super MyWay Account","description":"Self Managed Super Fund Account","url":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","lastUpdated":"2026-06-01T10:26:32.000+09:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Super_MyWay_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Super MyWay Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"19999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.04","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Super MyWay Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"249999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.0475","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Super MyWay Account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"250000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"FREE_TXNS"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","termsUri":"https://www.policecu.com.au/rates/","eligibilityUri":"https://www.policecu.com.au/rates/","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}},{"id":"iSavings_Account","name":"iSavings Account","description":"Online savings account","url":"https://www.policecu.com.au/savings-investments/savings-investment-accounts/isavings/","lastUpdated":"2026-06-01T10:26:01.000+09:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/iSavings_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"iSavings Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"4999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.022","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"iSavings Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"5000.00","maximumValue":"99999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.0275","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"iSavings Account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"100000.00","maximumValue":"499999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.0425","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"iSavings Account_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"500000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED","additionalInfoUri":"https://www.policecu.com.au/support/fast-payments-faqs/"},{"featureType":"NPP_PAYID"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/savings-investments/savings-investment-accounts/isavings/","termsUri":"https://www.policecu.com.au/rates/","eligibilityUri":"https://www.policecu.com.au/terms-conditions/","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}},{"id":"Beans_Savings_Account","name":"Beans Savings Account","description":"An account exclusive to Junior Saver Members","url":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","lastUpdated":"2026-06-01T10:25:15.000+09:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Beans_Savings_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.002","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Beans Savings Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"9999999.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.002","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Beans Savings Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"9999999.01","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"BONUS","rate":"0.048","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Beans Savings Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"9999999.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"BONUS","rate":"0.048","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Beans Savings Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"9999999.01","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[{"eligibilityType":"MAX_AGE","additionalValue":"18"}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BONUS_REWARDS","additionalValue":"Bonus Rate - minimum deposit of $10.00 per month and no Withdrawals per month"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","termsUri":"https://www.policecu.com.au/rates/","eligibilityUri":"https://www.policecu.com.au/rates/","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}},{"id":"Master_Club_Account","name":"Master Club Account","description":"An account which pays interest on the savings you set aside for everyday purposes. It is designed to suit members aged 60 and over, or those in receipt of a Pension.","url":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","lastUpdated":"2026-06-01T10:24:22.000+09:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Master_Club_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Master Club Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"1999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.017","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Master Club Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"2000.00","maximumValue":"64200.01","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.023","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Master Club Account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"64200.02","maximumValue":"249999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.0375","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Master Club Account_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"250000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"60"},{"eligibilityType":"PENSION_RECIPIENT","additionalInfo":"Members aged 60 and over, or those in receipt of a Pension"},{"eligibilityType":"MIN_INCOME","additionalInfo":"Required if an Overdraft is applied for on this account"}],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card"},{"featureType":"OVERDRAFT"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay, Samsung Pay and Google Pay"},{"featureType":"FREE_TXNS_ALLOWANCE"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","termsUri":"https://www.policecu.com.au/rates/","eligibilityUri":"https://www.policecu.com.au/rates/","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}},{"id":"Focus_Saver_Account","name":"Focus Saver Account","description":"Bonus Interest Account to bring your dreams into focus.","url":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","lastUpdated":"2026-05-01T09:50:10.000+09:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Focus_Saver_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Focus Saver Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"199.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Focus Saver Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"200.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"BONUS","rate":"0.0","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Focus Saver Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"199.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"BONUS","rate":"0.05","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Focus Saver Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"200.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[],"constraints":[{"constraintType":"MAX_BALANCE","additionalValue":"1000000.00","additionalInfo":"Cumulative"}],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"BONUS_REWARDS","additionalValue":"Bonus Rate - minimum balance $200.00, minimum deposit $200.00 per month and no withdrawals per month"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","termsUri":"https://www.policecu.com.au/rates/","eligibilityUri":"https://www.policecu.com.au/rates/","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}},{"id":"Rural_On-Call_Savings_Account","name":"Rural On-Call Savings Account","description":"An account designed especially for Primary Producers.","url":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","lastUpdated":"2026-04-27T12:17:56.000+09:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Rural_On-Call_Savings_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Rural On-Call Savings Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Rural On-Call Savings Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"1000.00","maximumValue":"49999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Rural On-Call Savings Account_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","maximumValue":"99999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.0025","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Rural On-Call Savings Account_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"100000.00","maximumValue":"399999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.0045","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Rural On-Call Savings Account_Tier_5","unitOfMeasure":"DOLLAR","minimumValue":"400000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[{"eligibilityType":"MIN_INCOME","additionalInfo":"Required if applying for Overdraft facility on account"},{"eligibilityType":"MIN_AGE","additionalValue":"18"}],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay, Samsung Pay and Google Pay"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"FREE_TXNS_ALLOWANCE"},{"featureType":"OVERDRAFT"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","termsUri":"https://www.policecu.com.au/PCUDocuments/Information_Statement_Rural_Accounts.pdf","eligibilityUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}},{"id":"Mortgage_Offset","name":"Mortgage Offset Account","description":"Mortgage Offset Account can be linked to eligible Home Loan Products.","url":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","lastUpdated":"2025-05-21T11:18:38.000+09:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Mortgage_Offset","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"OFFSET"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"FREE_TXNS_ALLOWANCE"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","termsUri":"https://www.policecu.com.au/rates/","eligibilityUri":"https://www.policecu.com.au/rates/","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}},{"id":"My_Limit_Prepaid_Visa","name":"My Limit Prepaid Visa Account","description":"This account is perfect for transacting with your own funds over-the-counter, online, over-the-phone, or even overseas.","url":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","lastUpdated":"2022-08-29T21:05:14.000+09:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/My_Limit_Prepaid_Visa","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"Prepaid Visa Card"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay, Samsung Pay and Google Pay"},{"featureType":"FREE_TXNS_ALLOWANCE"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","termsUri":"https://www.policecu.com.au/rates/","eligibilityUri":"https://www.policecu.com.au/rates/","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}},{"id":"redi_Access_Account","name":"Redi Access Account","description":"The perfect account for your day to day financial needs.","url":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","lastUpdated":"2022-08-29T20:54:06.000+09:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/redi_Access_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Redi Access Account_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"9999999.99","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"},{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Redi Access Account_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"10000000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[{"eligibilityType":"MIN_INCOME","additionalInfo":"Required if an Overdraft is applied for on this account"}],"constraints":[],"features":[{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay, Samsung Pay and Google Pay"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"OVERDRAFT"},{"featureType":"BILL_PAYMENT"},{"featureType":"FREE_TXNS_ALLOWANCE"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","termsUri":"https://www.policecu.com.au/rates/","eligibilityUri":"https://www.policecu.com.au/rates/","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}},{"id":"Better_Offset_Account","name":"Better Offset Account","description":"This product can be linked to eligible PCU home loans.","url":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","lastUpdated":"2021-12-22T08:56:09.000+10:30","source":"https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Better_Offset_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"}],"fees":[],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[{"constraintType":"MAX_BALANCE","additionalValue":"'20000.00'"}],"features":[{"featureType":"CARD_ACCESS","additionalValue":"Visa Debit Card"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"OFFSET"},{"featureType":"FREE_TXNS"},{"featureType":"DIGITAL_WALLET","additionalValue":"Apple Pay, Samsung Pay and Google Pay"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.policecu.com.au/product-type/savings-and-investment-accounts/","termsUri":"https://www.policecu.com.au/rates/","eligibilityUri":"https://www.policecu.com.au/rates/","feesAndPricingUri":"https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"}}]}
+{
+  "name": "Police Credit Union Ltd",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "Beans_Savings_Account",
+      "name": "Beans Savings Account",
+      "description": "An account exclusive to Junior Saver Members",
+      "url": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+      "lastUpdated": "2026-06-01T10:25:15.000+09:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Beans_Savings_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.002",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Beans Savings Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "9999999.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.002",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Beans Savings Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "9999999.01",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.048",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Beans Savings Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "9999999.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.048",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Beans Savings Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "9999999.01",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "18"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BONUS_REWARDS",
+          "additionalValue": "Bonus Rate - minimum deposit of $10.00 per month and no Withdrawals per month"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+        "termsUri": "https://www.policecu.com.au/rates/",
+        "eligibilityUri": "https://www.policecu.com.au/rates/",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    },
+    {
+      "id": "Better_Offset_Account",
+      "name": "Better Offset Account",
+      "description": "This product can be linked to eligible PCU home loans.",
+      "url": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+      "lastUpdated": "2021-12-22T08:56:09.000+10:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Better_Offset_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "MAX_BALANCE",
+          "additionalValue": "'20000.00'"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "OFFSET"
+        },
+        {
+          "featureType": "FREE_TXNS"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay, Samsung Pay and Google Pay"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+        "termsUri": "https://www.policecu.com.au/rates/",
+        "eligibilityUri": "https://www.policecu.com.au/rates/",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    },
+    {
+      "id": "Focus_Saver_Account",
+      "name": "Focus Saver Account",
+      "description": "Bonus Interest Account to bring your dreams into focus.",
+      "url": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+      "lastUpdated": "2026-05-01T09:50:10.000+09:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Focus_Saver_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Focus Saver Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "199.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Focus Saver Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "200.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Focus Saver Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "199.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.05",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Focus Saver Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "200.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [],
+      "constraints": [
+        {
+          "constraintType": "MAX_BALANCE",
+          "additionalValue": "1000000.00",
+          "additionalInfo": "Cumulative"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "BONUS_REWARDS",
+          "additionalValue": "Bonus Rate - minimum balance $200.00, minimum deposit $200.00 per month and no withdrawals per month"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+        "termsUri": "https://www.policecu.com.au/rates/",
+        "eligibilityUri": "https://www.policecu.com.au/rates/",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    },
+    {
+      "id": "iSavings_Account",
+      "name": "iSavings Account",
+      "description": "Online savings account",
+      "url": "https://www.policecu.com.au/savings-investments/savings-investment-accounts/isavings/",
+      "lastUpdated": "2026-06-01T10:26:01.000+09:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/iSavings_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "iSavings Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.022",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "iSavings Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "5000.00",
+              "maximumValue": "99999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0275",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "iSavings Account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "100000.00",
+              "maximumValue": "499999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0425",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "iSavings Account_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "500000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfoUri": "https://www.policecu.com.au/support/fast-payments-faqs/"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/savings-investments/savings-investment-accounts/isavings/",
+        "termsUri": "https://www.policecu.com.au/rates/",
+        "eligibilityUri": "https://www.policecu.com.au/terms-conditions/",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    },
+    {
+      "id": "Master_Club_Account",
+      "name": "Master Club Account",
+      "description": "An account which pays interest on the savings you set aside for everyday purposes. It is designed to suit members aged 60 and over, or those in receipt of a Pension.",
+      "url": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+      "lastUpdated": "2026-06-01T10:24:22.000+09:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Master_Club_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Master Club Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "1999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.017",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Master Club Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "2000.00",
+              "maximumValue": "64200.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.023",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Master Club Account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "64200.02",
+              "maximumValue": "249999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0375",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Master Club Account_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "250000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "60"
+        },
+        {
+          "eligibilityType": "PENSION_RECIPIENT",
+          "additionalInfo": "Members aged 60 and over, or those in receipt of a Pension"
+        },
+        {
+          "eligibilityType": "MIN_INCOME",
+          "additionalInfo": "Required if an Overdraft is applied for on this account"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card"
+        },
+        {
+          "featureType": "OVERDRAFT"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay, Samsung Pay and Google Pay"
+        },
+        {
+          "featureType": "FREE_TXNS_ALLOWANCE"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+        "termsUri": "https://www.policecu.com.au/rates/",
+        "eligibilityUri": "https://www.policecu.com.au/rates/",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    },
+    {
+      "id": "Mortgage_Offset",
+      "name": "Mortgage Offset Account",
+      "description": "Mortgage Offset Account can be linked to eligible Home Loan Products.",
+      "url": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+      "lastUpdated": "2025-05-21T11:18:38.000+09:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Mortgage_Offset",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "OFFSET"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "FREE_TXNS_ALLOWANCE"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+        "termsUri": "https://www.policecu.com.au/rates/",
+        "eligibilityUri": "https://www.policecu.com.au/rates/",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    },
+    {
+      "id": "My_Limit_Prepaid_Visa",
+      "name": "My Limit Prepaid Visa Account",
+      "description": "This account is perfect for transacting with your own funds over-the-counter, online, over-the-phone, or even overseas.",
+      "url": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+      "lastUpdated": "2022-08-29T21:05:14.000+09:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/My_Limit_Prepaid_Visa",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Prepaid Visa Card"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay, Samsung Pay and Google Pay"
+        },
+        {
+          "featureType": "FREE_TXNS_ALLOWANCE"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+        "termsUri": "https://www.policecu.com.au/rates/",
+        "eligibilityUri": "https://www.policecu.com.au/rates/",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    },
+    {
+      "id": "redi_Access_Account",
+      "name": "Redi Access Account",
+      "description": "The perfect account for your day to day financial needs.",
+      "url": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+      "lastUpdated": "2022-08-29T20:54:06.000+09:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/redi_Access_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Redi Access Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "9999999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Redi Access Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "10000000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_INCOME",
+          "additionalInfo": "Required if an Overdraft is applied for on this account"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay, Samsung Pay and Google Pay"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "OVERDRAFT"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "FREE_TXNS_ALLOWANCE"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+        "termsUri": "https://www.policecu.com.au/rates/",
+        "eligibilityUri": "https://www.policecu.com.au/rates/",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    },
+    {
+      "id": "Rural_On-Call_Savings_Account",
+      "name": "Rural On-Call Savings Account",
+      "description": "An account designed especially for Primary Producers.",
+      "url": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+      "lastUpdated": "2026-04-27T12:17:56.000+09:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Rural_On-Call_Savings_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Rural On-Call Savings Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Rural On-Call Savings Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Rural On-Call Savings Account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "maximumValue": "99999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0025",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Rural On-Call Savings Account_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "100000.00",
+              "maximumValue": "399999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0045",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Rural On-Call Savings Account_Tier_5",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "400000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_INCOME",
+          "additionalInfo": "Required if applying for Overdraft facility on account"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "18"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Visa Debit Card"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Apple Pay, Samsung Pay and Google Pay"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "FREE_TXNS_ALLOWANCE"
+        },
+        {
+          "featureType": "OVERDRAFT"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+        "termsUri": "https://www.policecu.com.au/PCUDocuments/Information_Statement_Rural_Accounts.pdf",
+        "eligibilityUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    },
+    {
+      "id": "Super_MyWay_Account",
+      "name": "Super MyWay Account",
+      "description": "Self Managed Super Fund Account",
+      "url": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+      "lastUpdated": "2026-06-01T10:26:32.000+09:30",
+      "source": "https://api.policecu.com.au/OpenBanking/cds-au/v1/banking/products/Super_MyWay_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Super MyWay Account_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.04",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Super MyWay Account_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "249999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0475",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Super MyWay Account_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "250000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.policecu.com.au/PCUDocuments/Savings_and_Investment_Interest_Rates.pdf"
+        }
+      ],
+      "fees": [],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "FREE_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.policecu.com.au/product-type/savings-and-investment-accounts/",
+        "termsUri": "https://www.policecu.com.au/rates/",
+        "eligibilityUri": "https://www.policecu.com.au/rates/",
+        "feesAndPricingUri": "https://www.policecu.com.au/PCUDocuments/Fees_and_Charges_General_Service_Fees.pdf"
+      }
+    }
+  ]
+}

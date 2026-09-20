@@ -1,1 +1,998 @@
-{"name":"Bank of China","checkedAt":"2026-09-17T21:41:46.635Z","status":"available","products":[{"id":"55940656","name":"Online Saver Statement","description":"Online Saver Statement","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2026-05-07T04:00:00.000+10:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55940656","depositRates":[{"depositRateType":"FIXED","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate for balance < $3,000 or =$5,000,000."},{"depositRateType":"FIXED","rate":"0.021","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate for balance between $3,000 and $4,999,999.99."},{"depositRateType":"BONUS","rate":"0.0325","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"new account bonus rate 3.25% for first 3 months for balance $3,000 to $499,999.99, only new customer can enjoy this bonus rate."}],"fees":[{"name":"Over the counter withdrawals at branches","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalValue":"once-off"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"1"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55940657","name":"Online Saver","description":"Online Saver","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2025-08-22T04:00:00.000+10:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55940657","depositRates":[{"depositRateType":"FIXED","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate for balance < $3,000 or =$5,000,000."},{"depositRateType":"FIXED","rate":"0.0135","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate for balance between $3,000 and $4,999,999.99."}],"fees":[{"name":"Over the counter withdrawals at branches","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalValue":"once-off"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"1"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55020656","name":"PassbookSaving AUD Statement ","description":"PassbookSaving AUD Statement ","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2023-02-27T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020656","depositRates":[{"depositRateType":"FIXED","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.05% apply for more than 1000 AUD deposit otherwise no interest."},{"depositRateType":"FIXED","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.10% apply for more than 100000 AUD deposit."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalValue":"monthly"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"1000","additionalInfo":"minimal balance AUD 1000 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55020657","name":"PassbookSaving AUD","description":"PassbookSaving AUD","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2023-02-27T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020657","depositRates":[{"depositRateType":"FIXED","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.05% apply for more than 1000 AUD deposit otherwise no interest."},{"depositRateType":"FIXED","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.10% apply for more than 100000 AUD deposit."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalValue":"monthly"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"1000","additionalInfo":"minimal balance AUD 1000 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55920656","name":"Overseas Student Statement ","description":"Overseas Student Statement ","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912619.html","lastUpdated":"2023-02-27T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55920656","depositRates":[{"depositRateType":"FIXED","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.05% applies to deposit over 1000."},{"depositRateType":"FIXED","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.1% applies to deposit over 100000."}],"fees":[],"eligibility":[{"eligibilityType":"STUDENT","additionalInfo":"Oversea Student"},{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912619.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55920657","name":"Overseas Student","description":"Overseas Student","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912619.html","lastUpdated":"2023-02-27T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55920657","depositRates":[{"depositRateType":"FIXED","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.05% applies to deposit over 1000."},{"depositRateType":"FIXED","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.1% applies to deposit over 100000."}],"fees":[],"eligibility":[{"eligibilityType":"STUDENT","additionalInfo":"Oversea Student"},{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912619.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55020001","name":"PassbookSaving CNY Statement","description":"PassbookSaving CNY Statement","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2021-02-28T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020001","depositRates":[{"depositRateType":"FIXED","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.01% apply for more than 5000 CNY deposit otherwise no interest."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"CNY","additionalValue":"monthly"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"200","additionalInfo":"opening balance CNY 200 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55020125","name":"PassbookSaving HKD Statement ","description":"PassbookSaving HKD Statement ","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2021-02-28T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020125","depositRates":[{"depositRateType":"FIXED","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.01% apply for more than 5000 HKD deposit otherwise no interest."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"HKD","additionalValue":"monthly"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"200","additionalInfo":"opening balance HKD 200 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55020185","name":"PassbookSaving USD Statement ","description":"PassbookSaving USD Statement ","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2021-02-28T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020185","depositRates":[{"depositRateType":"FIXED","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.01% apply for more than 500 USD deposit otherwise no interest."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"USD","additionalValue":"monthly"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"50","additionalInfo":"opening balance USD 50 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55020621","name":"PassbookSaving CNY","description":"PassbookSaving CNY","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2021-02-28T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020621","depositRates":[{"depositRateType":"FIXED","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.01% apply for more than 5000 CNY deposit otherwise no interest."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"CNY","additionalValue":"monthly"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"200","additionalInfo":"opening balance CNY 200 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55020633","name":"PassbookSaving HKD","description":"PassbookSaving HKD","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2021-02-28T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020633","depositRates":[{"depositRateType":"FIXED","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.01% apply for more than 5000 HKD deposit otherwise no interest."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"HKD","additionalValue":"monthly"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"200","additionalInfo":"opening balance HKD 200 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55020637","name":"PassbookSaving USD","description":"PassbookSaving USD","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","lastUpdated":"2021-02-28T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020637","depositRates":[{"depositRateType":"FIXED","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.01% apply for more than 500 USD deposit otherwise no interest."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"USD","additionalValue":"monthly"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"50","additionalInfo":"opening balance USD 50 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"56060485","name":"Basic Transaction Account","description":"Basic Transaction Account","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","lastUpdated":"2017-03-15T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/56060485","depositRates":[{"depositRateType":"FIXED","rate":"0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[],"eligibility":[{"eligibilityType":"PENSION_RECIPIENT","additionalInfo":"Customer holds seniors health card or health care card or pensioner concession card; customer claims that he/she is vulnerable, including Aboriginal, severe diseases, violence, low income."}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"55880485","name":"Home Loan Offset Account","description":"Home Loan Offset Account","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html","lastUpdated":"2016-09-15T00:00:00.000+10:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55880485","depositRates":[{"depositRateType":"FIXED","rate":"0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"must have specific home loan products with BOCAL"}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201610/t20161020_10963641.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"56150485","name":"Current Account Statement ","description":"Current Account Statement ","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html","lastUpdated":"2009-02-05T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/56150485","depositRates":[{"depositRateType":"FIXED","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.01% applies to deposit over 2000."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalValue":"monthly"},{"name":"Over the counter withdrawals at branches","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Cheque book orders","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Outward cheque dishonour for insufficient funds-per cheque","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Outward cheque dishonour for incorrect detail-per cheque","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Stop cheque","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Cancellation of cheque book","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"100.00"},"currency":"AUD","additionalValue":"once-off"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"2000","additionalInfo":"opening balance AUD 2000 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}},{"id":"56150657","name":"Current Account","description":"Current Account","url":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html","lastUpdated":"2009-02-05T00:00:00.000+11:00","source":"https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/56150657","depositRates":[{"depositRateType":"FIXED","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"base rate 0.01% applies to deposit over 2000."}],"fees":[{"name":"Monthly Account Keeping Fee","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Over the counter withdrawals at branches","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"currency":"AUD","additionalValue":"monthly"},{"name":"Cheque book orders","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Outward cheque dishonour for insufficient funds-per cheque","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Outward cheque dishonour for incorrect detail-per cheque","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Stop cheque","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD","additionalValue":"once-off"},{"name":"Cancellation of cheque book","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"100.00"},"currency":"AUD","additionalValue":"once-off"}],"eligibility":[{"eligibilityType":"MIN_AGE","additionalValue":"16","additionalInfo":"accepted visa required"}],"constraints":[{"constraintType":"OPENING_BALANCE","additionalValue":"2000","additionalInfo":"opening balance AUD 2000 to active account"}],"features":[{"featureType":"DIGITAL_BANKING"}],"additionalInformation":{"overviewUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html","termsUri":"https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html","eligibilityUri":"https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html","feesAndPricingUri":"https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"}}]}
+{
+  "name": "Bank of China",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "55020001",
+      "name": "PassbookSaving CNY Statement",
+      "description": "PassbookSaving CNY Statement",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2021-02-28T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020001",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.01% apply for more than 5000 CNY deposit otherwise no interest."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "CNY",
+          "additionalValue": "monthly"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "200",
+          "additionalInfo": "opening balance CNY 200 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55020125",
+      "name": "PassbookSaving HKD Statement ",
+      "description": "PassbookSaving HKD Statement ",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2021-02-28T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020125",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.01% apply for more than 5000 HKD deposit otherwise no interest."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "HKD",
+          "additionalValue": "monthly"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "200",
+          "additionalInfo": "opening balance HKD 200 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55020185",
+      "name": "PassbookSaving USD Statement ",
+      "description": "PassbookSaving USD Statement ",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2021-02-28T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020185",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.01% apply for more than 500 USD deposit otherwise no interest."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "USD",
+          "additionalValue": "monthly"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "50",
+          "additionalInfo": "opening balance USD 50 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55020621",
+      "name": "PassbookSaving CNY",
+      "description": "PassbookSaving CNY",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2021-02-28T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020621",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.01% apply for more than 5000 CNY deposit otherwise no interest."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "CNY",
+          "additionalValue": "monthly"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "200",
+          "additionalInfo": "opening balance CNY 200 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55020633",
+      "name": "PassbookSaving HKD",
+      "description": "PassbookSaving HKD",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2021-02-28T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020633",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.01% apply for more than 5000 HKD deposit otherwise no interest."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "HKD",
+          "additionalValue": "monthly"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "200",
+          "additionalInfo": "opening balance HKD 200 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55020637",
+      "name": "PassbookSaving USD",
+      "description": "PassbookSaving USD",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2021-02-28T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020637",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.01% apply for more than 500 USD deposit otherwise no interest."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "USD",
+          "additionalValue": "monthly"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "50",
+          "additionalInfo": "opening balance USD 50 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55020656",
+      "name": "PassbookSaving AUD Statement ",
+      "description": "PassbookSaving AUD Statement ",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2023-02-27T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020656",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.05% apply for more than 1000 AUD deposit otherwise no interest."
+        },
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.10% apply for more than 100000 AUD deposit."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "monthly"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "1000",
+          "additionalInfo": "minimal balance AUD 1000 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55020657",
+      "name": "PassbookSaving AUD",
+      "description": "PassbookSaving AUD",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2023-02-27T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55020657",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.05% apply for more than 1000 AUD deposit otherwise no interest."
+        },
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.10% apply for more than 100000 AUD deposit."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "monthly"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "1000",
+          "additionalInfo": "minimal balance AUD 1000 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55880485",
+      "name": "Home Loan Offset Account",
+      "description": "Home Loan Offset Account",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html",
+      "lastUpdated": "2016-09-15T00:00:00.000+10:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55880485",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "must have specific home loan products with BOCAL"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201610/t20161020_10963641.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55920656",
+      "name": "Overseas Student Statement ",
+      "description": "Overseas Student Statement ",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912619.html",
+      "lastUpdated": "2023-02-27T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55920656",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.05% applies to deposit over 1000."
+        },
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.1% applies to deposit over 100000."
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "STUDENT",
+          "additionalInfo": "Oversea Student"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912619.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55920657",
+      "name": "Overseas Student",
+      "description": "Overseas Student",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912619.html",
+      "lastUpdated": "2023-02-27T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55920657",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.05% applies to deposit over 1000."
+        },
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.1% applies to deposit over 100000."
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "STUDENT",
+          "additionalInfo": "Oversea Student"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912619.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55940656",
+      "name": "Online Saver Statement",
+      "description": "Online Saver Statement",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2026-05-07T04:00:00.000+10:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55940656",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate for balance < $3,000 or =$5,000,000."
+        },
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.021",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate for balance between $3,000 and $4,999,999.99."
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0325",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "new account bonus rate 3.25% for first 3 months for balance $3,000 to $499,999.99, only new customer can enjoy this bonus rate."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Over the counter withdrawals at branches",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "1"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "55940657",
+      "name": "Online Saver",
+      "description": "Online Saver",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+      "lastUpdated": "2025-08-22T04:00:00.000+10:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55940657",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate for balance < $3,000 or =$5,000,000."
+        },
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0135",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate for balance between $3,000 and $4,999,999.99."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Over the counter withdrawals at branches",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "1"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "56060485",
+      "name": "Basic Transaction Account",
+      "description": "Basic Transaction Account",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+      "lastUpdated": "2017-03-15T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/56060485",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "PENSION_RECIPIENT",
+          "additionalInfo": "Customer holds seniors health card or health care card or pensioner concession card; customer claims that he/she is vulnerable, including Aboriginal, severe diseases, violence, low income."
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "56150485",
+      "name": "Current Account Statement ",
+      "description": "Current Account Statement ",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html",
+      "lastUpdated": "2009-02-05T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/56150485",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.01% applies to deposit over 2000."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "monthly"
+        },
+        {
+          "name": "Over the counter withdrawals at branches",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Cheque book orders",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Outward cheque dishonour for insufficient funds-per cheque",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Outward cheque dishonour for incorrect detail-per cheque",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Stop cheque",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Cancellation of cheque book",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "100.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "2000",
+          "additionalInfo": "opening balance AUD 2000 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    },
+    {
+      "id": "56150657",
+      "name": "Current Account",
+      "description": "Current Account",
+      "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html",
+      "lastUpdated": "2009-02-05T00:00:00.000+11:00",
+      "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/56150657",
+      "depositRates": [
+        {
+          "depositRateType": "FIXED",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "base rate 0.01% applies to deposit over 2000."
+        }
+      ],
+      "fees": [
+        {
+          "name": "Monthly Account Keeping Fee",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Over the counter withdrawals at branches",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "monthly"
+        },
+        {
+          "name": "Cheque book orders",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Outward cheque dishonour for insufficient funds-per cheque",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Outward cheque dishonour for incorrect detail-per cheque",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Stop cheque",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        },
+        {
+          "name": "Cancellation of cheque book",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "100.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "once-off"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "16",
+          "additionalInfo": "accepted visa required"
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "OPENING_BALANCE",
+          "additionalValue": "2000",
+          "additionalInfo": "opening balance AUD 2000 to active account"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912760.html",
+        "termsUri": "https://www.bankofchina.com/au/en/bocinfo/bi3/201906/t20190627_15531087.html",
+        "eligibilityUri": "https://www.bankofchina.com/au/en/pbservice/pb1/201906/t20190627_15530997.html",
+        "feesAndPricingUri": "https://www.bankofchina.com/au/en/bocinfo/bi2/201706/t20170629_10963936.html"
+      }
+    }
+  ]
+}

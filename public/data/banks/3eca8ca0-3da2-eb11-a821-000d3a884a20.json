@@ -1,1 +1,1145 @@
-{"name":"Dnister","checkedAt":"2026-09-17T21:41:58.750Z","status":"available","products":[{"id":"17","name":"iSaver","description":"Enjoy the freedom of online banking to save at a higher rate of return even if you spend.","url":"https://www.dnister.com.au/portfolio-items/isaver","lastUpdated":"2026-09-17T20:00:40.4209224Z","source":"https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/17","depositRates":[{"depositRateType":"INTRODUCTORY","rate":"0.027","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"P2M","additionalInfo":"Variable Interest on entire balance $1 and over - Special introductory interest rate for 3 months"}],"fees":[{"name":"Dormant Account","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD","additionalValue":"P1Y"},{"name":"Bank Cheque Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"BPAY Trans Investigation","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Corporate Cheque Stop Request","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"Inter Credit Union Withdrawal","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Presented Stopped Cheque Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"Copy of statement of accounts","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"currency":"AUD"},{"name":"Member Cheque Copy Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"Mbr Chq / PP Trace Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD"},{"name":"Foreign Cash/Chq/Travel Money","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD"},{"name":"Foreign Cash/Cheque Deposit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD"},{"name":"Thomas Cook Draft Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"BPAY/PP Returned Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"},{"name":"Inward Cheque Dishonour Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"Copy of Interest Summary","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Paper Statement Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.00"},"currency":"AUD","discounts":[{"description":"Only customers older than a minimum age receive the discount","discountType":"ELIGIBILITY_ONLY","discountMethodUType":"rateBased","rateBased":{"rateType":"FEE","rate":"1.0","amountRange":{}},"eligibility":[{"discountEligibilityType":"MIN_AGE","additionalValue":"67"}]}]},{"name":"Paper Statement Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"currency":"AUD","discounts":[{"description":"Only customers older than a minimum age receive the discount","discountType":"ELIGIBILITY_ONLY","discountMethodUType":"rateBased","rateBased":{"rateType":"FEE","rate":"1.0","amountRange":{}},"eligibility":[{"discountEligibilityType":"MIN_AGE","additionalValue":"67"}]}]},{"name":"Honour Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.10"},"currency":"AUD"},{"name":"Honour Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Dishonour of Direct Debit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"Dishonour of Direct Debit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"This product is only available through Online Banking."}],"constraints":[{"constraintType":"MIN_BALANCE","additionalValue":"0.00"}],"features":[{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY payment is enabled on this product."},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access to your accounts 24/7 with our Mobile App and Online Banking."},{"featureType":"NPP_ENABLED","additionalInfo":"This product can send and receive Osko payments in realtime."},{"featureType":"NPP_PAYID","additionalInfo":"This product can be linked with PayID, making it simpler to transfer funds between banks."}],"additionalInformation":{"overviewUri":"https://www.dnister.com.au/portfolio-items/isaver","termsUri":"https://www.dnister.com.au/wp-content/uploads/2025/10/PDS-FSG-Update-28-October-2025.pdf","eligibilityUri":"https://www.dnister.com.au/portfolio-items/isaver","feesAndPricingUri":"https://www.dnister.com.au/fees-and-charges/"}},{"id":"18","name":"Bonus Saver","description":"Be rewarded for saving!","url":"https://www.dnister.com.au/portfolio-items/bonus-saver","lastUpdated":"2026-09-17T20:00:40.4209224Z","source":"https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/18","depositRates":[{"depositRateType":"BONUS","rate":"0.045","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"Bonus Rate","additionalInfo":"Deposit $20.00 per month with no withdrawals to earn the Bonus Rate."},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfo":"$1.00 and over"}],"fees":[{"name":"Dormant Account","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD","additionalValue":"P1Y"},{"name":"Bank Cheque Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"BPAY Trans Investigation","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Corporate Cheque Stop Request","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"Inter Credit Union Withdrawal","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Presented Stopped Cheque Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"Member Cheque Copy Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"Mbr Chq / PP Trace Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD"},{"name":"Foreign Cash/Chq/Travel Money","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD"},{"name":"Foreign Cash/Cheque Deposit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD"},{"name":"Thomas Cook Draft Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"BPAY/PP Returned Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"},{"name":"Inward Cheque Dishonour Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"Paper Statement Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.00"},"currency":"AUD","discounts":[{"description":"Only customers older than a minimum age receive the discount","discountType":"ELIGIBILITY_ONLY","discountMethodUType":"rateBased","rateBased":{"rateType":"FEE","rate":"1.0","amountRange":{}},"eligibility":[{"discountEligibilityType":"MIN_AGE","additionalValue":"67"}]}]},{"name":"Paper Statement Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"currency":"AUD","discounts":[{"description":"Only customers older than a minimum age receive the discount","discountType":"ELIGIBILITY_ONLY","discountMethodUType":"rateBased","rateBased":{"rateType":"FEE","rate":"1.0","amountRange":{}},"eligibility":[{"discountEligibilityType":"MIN_AGE","additionalValue":"67"}]}]},{"name":"Dishonour of Direct Debit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"Dishonour of Direct Debit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"}],"eligibility":[],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING","additionalInfo":"Access to your accounts 24/7 with our Mobile App and Online Banking."},{"featureType":"NPP_ENABLED","additionalInfo":"This product can send and receive Osko payments in realtime."},{"featureType":"NPP_PAYID","additionalInfo":"This product can be linked with PayID, making it simpler to transfer funds between banks."},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.dnister.com.au/portfolio-items/bonus-saver","termsUri":"https://www.dnister.com.au/wp-content/uploads/2025/10/PDS-FSG-Update-28-October-2025.pdf","eligibilityUri":"https://www.dnister.com.au/portfolio-items/bonus-saver","feesAndPricingUri":"https://www.dnister.com.au/fees-and-charges/"}},{"id":"30","name":"Pensioner Savings","description":"Everyday account tailored for Seniors.","url":"https://www.dnister.com.au/portfolio-items/pensioner-savings","lastUpdated":"2026-09-17T20:00:40.4209224Z","source":"https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/30","depositRates":[{"depositRateType":"VARIABLE","rate":"0.024","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pensioner Savings Rate Tier 1","unitOfMeasure":"DOLLAR","minimumValue":"1.00","maximumValue":"75000.00","rateApplicationMethod":"PER_TIER"}],"additionalInfo":"These rates are for single account holders"},{"depositRateType":"VARIABLE","rate":"0.024","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pensioner Savings Rate Tier 2","unitOfMeasure":"DOLLAR","minimumValue":"2001.00","maximumValue":"75000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.029","calculationFrequency":"P1M","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Pensioner Savings Rate Tier 3","unitOfMeasure":"DOLLAR","minimumValue":"75001.00","maximumValue":"0.00","rateApplicationMethod":"PER_TIER"}]}],"fees":[{"name":"Dormant Account","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD","additionalValue":"P1Y"},{"name":"Counter Cash Withdrawal Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.50"},"currency":"AUD"},{"name":"ATM Withdrawal Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.20"},"currency":"AUD"},{"name":"ATM Withdrawal Fee","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"currency":"AUD"},{"name":"Bank Cheque Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"BPAY Trans Investigation","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Corporate Cheque Stop Request","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"Inter Credit Union Withdrawal","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Presented Stopped Cheque Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"Member Cheque Copy Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"Mbr Chq / PP Trace Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD"},{"name":"Foreign Cash/Chq/Travel Money","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD"},{"name":"Foreign Cash/Cheque Deposit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD"},{"name":"Thomas Cook Draft Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"BPAY/PP Returned Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"},{"name":"Inward Cheque Dishonour Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"Paper Statement Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.00"},"currency":"AUD","discounts":[{"description":"Only customers older than a minimum age receive the discount","discountType":"ELIGIBILITY_ONLY","discountMethodUType":"rateBased","rateBased":{"rateType":"FEE","rate":"1.0","amountRange":{}},"eligibility":[{"discountEligibilityType":"MIN_AGE","additionalValue":"67"}]}]},{"name":"Paper Statement Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"currency":"AUD","discounts":[{"description":"Only customers older than a minimum age receive the discount","discountType":"ELIGIBILITY_ONLY","discountMethodUType":"rateBased","rateBased":{"rateType":"FEE","rate":"1.0","amountRange":{}},"eligibility":[{"discountEligibilityType":"MIN_AGE","additionalValue":"67"}]}]},{"name":"Honour Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.10"},"currency":"AUD"},{"name":"Honour Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Dishonour of Direct Debit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"currency":"AUD"},{"name":"Dishonour of Direct Debit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"PENSION_RECIPIENT"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS","additionalInfo":"This product can have additional cards attached to the account."},{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY payment is enabled on this product."},{"featureType":"CARD_ACCESS","additionalValue":"Card Access available","additionalInfo":"Visa Debit card and Cuecard available for this product."},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your accounts 24/7 with our Mobile App and Online Banking."},{"featureType":"NPP_ENABLED","additionalInfo":"This product can send and receive Osko payments in realtime."},{"featureType":"NPP_PAYID","additionalInfo":"This product can be linked with PayID, making it simpler to transfer funds between banks."},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.dnister.com.au/portfolio-items/pensioner-savings","termsUri":"https://www.dnister.com.au/wp-content/uploads/2025/10/PDS-FSG-Update-28-October-2025.pdf","eligibilityUri":"https://www.dnister.com.au/portfolio-items/pensioner-savings","feesAndPricingUri":"https://www.dnister.com.au/fees-and-charges/"}},{"id":"31","name":"Max Saver","description":"Maximise your savings!","url":"https://www.dnister.com.au/portfolio-items/max-saver/","lastUpdated":"2026-09-17T20:00:40.4209224Z","source":"https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/31","depositRates":[{"depositRateType":"BONUS","rate":"0.046","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"Bonus Rate","additionalInfo":"To earn the Bonus Rate deposit $1,500 per month, withdraw up to $1,000 per month (maximum 4 withdrawals per month).","additionalInfoUri":"https://www.dnister.com.au/interest-rates/"},{"depositRateType":"INTRODUCTORY","rate":"0.001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalValue":"P1M","additionalInfo":"The Introductory Rate applies for a period of one month upon account opening.","additionalInfoUri":"https://www.dnister.com.au/interest-rates/"},{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfo":"Base rate - $1.00 and over"}],"fees":[{"name":"Dormant Account","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD","additionalValue":"P1Y"},{"name":"Bank Cheque Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"BPAY Trans Investigation","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Corporate Cheque Stop Request","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"12.00"},"currency":"AUD"},{"name":"Inter Credit Union Withdrawal","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Presented Stopped Cheque Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"35.00"},"currency":"AUD"},{"name":"Copy of statement of accounts","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"currency":"AUD"},{"name":"Member Cheque Copy Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"Mbr Chq / PP Trace Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"60.00"},"currency":"AUD"},{"name":"Foreign Cash/Chq/Travel Money","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD"},{"name":"Foreign Cash/Cheque Deposit","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"currency":"AUD"},{"name":"Thomas Cook Draft Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"BPAY/PP Returned Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"25.00"},"currency":"AUD"},{"name":"Inward Cheque Dishonour Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"currency":"AUD"},{"name":"Copy of Interest Summary","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"currency":"AUD"},{"name":"Paper Statement Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"4.00"},"currency":"AUD","discounts":[{"description":"Only customers older than a minimum age receive the discount","discountType":"ELIGIBILITY_ONLY","discountMethodUType":"rateBased","rateBased":{"rateType":"FEE","rate":"1.0","amountRange":{}},"eligibility":[{"discountEligibilityType":"MIN_AGE","additionalValue":"67"}]}]},{"name":"Paper Statement Fee","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"currency":"AUD","discounts":[{"description":"Only customers older than a minimum age receive the discount","discountType":"ELIGIBILITY_ONLY","discountMethodUType":"rateBased","rateBased":{"rateType":"FEE","rate":"1.0","amountRange":{}},"eligibility":[{"discountEligibilityType":"MIN_AGE","additionalValue":"67"}]}]}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"OTHER","additionalInfo":"This product is only available for personal accounts with a limit of one account per member."}],"constraints":[{"constraintType":"MAX_BALANCE","additionalValue":"1000000.00"}],"features":[{"featureType":"BILL_PAYMENT","additionalInfo":"BPAY payments is enabled on this product."},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access your account 24/7 with our Mobile App and Online Banking."},{"featureType":"NPP_ENABLED","additionalInfo":"This product can send and receive Osko payments in realtime."},{"featureType":"NPP_PAYID","additionalInfo":"This product can be linked with PayID, making it simpler to transfer funds between banks."}],"additionalInformation":{"overviewUri":"https://www.dnister.com.au/portfolio-items/max-saver/","termsUri":"https://www.dnister.com.au/wp-content/uploads/2025/10/PDS-FSG-Update-28-October-2025.pdf","eligibilityUri":"https://www.dnister.com.au/portfolio-items/max-saver/","feesAndPricingUri":"https://www.dnister.com.au/fees-and-charges/"}}]}
+{
+  "name": "Dnister",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "17",
+      "name": "iSaver",
+      "description": "Enjoy the freedom of online banking to save at a higher rate of return even if you spend.",
+      "url": "https://www.dnister.com.au/portfolio-items/isaver",
+      "lastUpdated": "2026-09-20T22:00:42.1278331Z",
+      "source": "https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/17",
+      "depositRates": [
+        {
+          "depositRateType": "INTRODUCTORY",
+          "rate": "0.027",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "P2M",
+          "additionalInfo": "Variable Interest on entire balance $1 and over - Special introductory interest rate for 3 months"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Dormant Account",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "P1Y"
+        },
+        {
+          "name": "Bank Cheque Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BPAY Trans Investigation",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Corporate Cheque Stop Request",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Inter Credit Union Withdrawal",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Presented Stopped Cheque Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Copy of statement of accounts",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Member Cheque Copy Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Mbr Chq / PP Trace Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Foreign Cash/Chq/Travel Money",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Foreign Cash/Cheque Deposit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Thomas Cook Draft Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BPAY/PP Returned Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Inward Cheque Dishonour Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Copy of Interest Summary",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Paper Statement Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Only customers older than a minimum age receive the discount",
+              "discountType": "ELIGIBILITY_ONLY",
+              "discountMethodUType": "rateBased",
+              "rateBased": {
+                "rateType": "FEE",
+                "rate": "1.0",
+                "amountRange": {}
+              },
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalValue": "67"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Paper Statement Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Only customers older than a minimum age receive the discount",
+              "discountType": "ELIGIBILITY_ONLY",
+              "discountMethodUType": "rateBased",
+              "rateBased": {
+                "rateType": "FEE",
+                "rate": "1.0",
+                "amountRange": {}
+              },
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalValue": "67"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Honour Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.10"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Honour Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Dishonour of Direct Debit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Dishonour of Direct Debit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "This product is only available through Online Banking."
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "MIN_BALANCE",
+          "additionalValue": "0.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY payment is enabled on this product."
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access to your accounts 24/7 with our Mobile App and Online Banking."
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "This product can send and receive Osko payments in realtime."
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "This product can be linked with PayID, making it simpler to transfer funds between banks."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.dnister.com.au/portfolio-items/isaver",
+        "termsUri": "https://www.dnister.com.au/wp-content/uploads/2025/10/PDS-FSG-Update-28-October-2025.pdf",
+        "eligibilityUri": "https://www.dnister.com.au/portfolio-items/isaver",
+        "feesAndPricingUri": "https://www.dnister.com.au/fees-and-charges/"
+      }
+    },
+    {
+      "id": "18",
+      "name": "Bonus Saver",
+      "description": "Be rewarded for saving!",
+      "url": "https://www.dnister.com.au/portfolio-items/bonus-saver",
+      "lastUpdated": "2026-09-20T22:00:42.1278331Z",
+      "source": "https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/18",
+      "depositRates": [
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.045",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "Bonus Rate",
+          "additionalInfo": "Deposit $20.00 per month with no withdrawals to earn the Bonus Rate."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfo": "$1.00 and over"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Dormant Account",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "P1Y"
+        },
+        {
+          "name": "Bank Cheque Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BPAY Trans Investigation",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Corporate Cheque Stop Request",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Inter Credit Union Withdrawal",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Presented Stopped Cheque Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Member Cheque Copy Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Mbr Chq / PP Trace Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Foreign Cash/Chq/Travel Money",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Foreign Cash/Cheque Deposit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Thomas Cook Draft Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BPAY/PP Returned Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Inward Cheque Dishonour Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Paper Statement Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Only customers older than a minimum age receive the discount",
+              "discountType": "ELIGIBILITY_ONLY",
+              "discountMethodUType": "rateBased",
+              "rateBased": {
+                "rateType": "FEE",
+                "rate": "1.0",
+                "amountRange": {}
+              },
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalValue": "67"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Paper Statement Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Only customers older than a minimum age receive the discount",
+              "discountType": "ELIGIBILITY_ONLY",
+              "discountMethodUType": "rateBased",
+              "rateBased": {
+                "rateType": "FEE",
+                "rate": "1.0",
+                "amountRange": {}
+              },
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalValue": "67"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dishonour of Direct Debit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Dishonour of Direct Debit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access to your accounts 24/7 with our Mobile App and Online Banking."
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "This product can send and receive Osko payments in realtime."
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "This product can be linked with PayID, making it simpler to transfer funds between banks."
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.dnister.com.au/portfolio-items/bonus-saver",
+        "termsUri": "https://www.dnister.com.au/wp-content/uploads/2025/10/PDS-FSG-Update-28-October-2025.pdf",
+        "eligibilityUri": "https://www.dnister.com.au/portfolio-items/bonus-saver",
+        "feesAndPricingUri": "https://www.dnister.com.au/fees-and-charges/"
+      }
+    },
+    {
+      "id": "30",
+      "name": "Pensioner Savings",
+      "description": "Everyday account tailored for Seniors.",
+      "url": "https://www.dnister.com.au/portfolio-items/pensioner-savings",
+      "lastUpdated": "2026-09-20T22:00:42.1278331Z",
+      "source": "https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/30",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.024",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pensioner Savings Rate Tier 1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "1.00",
+              "maximumValue": "75000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "additionalInfo": "These rates are for single account holders"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.024",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pensioner Savings Rate Tier 2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "2001.00",
+              "maximumValue": "75000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.029",
+          "calculationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Pensioner Savings Rate Tier 3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "75001.00",
+              "maximumValue": "0.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "name": "Dormant Account",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "P1Y"
+        },
+        {
+          "name": "Counter Cash Withdrawal Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.50"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "ATM Withdrawal Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.20"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "ATM Withdrawal Fee",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Bank Cheque Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BPAY Trans Investigation",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Corporate Cheque Stop Request",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Inter Credit Union Withdrawal",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Presented Stopped Cheque Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Member Cheque Copy Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Mbr Chq / PP Trace Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Foreign Cash/Chq/Travel Money",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Foreign Cash/Cheque Deposit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Thomas Cook Draft Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BPAY/PP Returned Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Inward Cheque Dishonour Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Paper Statement Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Only customers older than a minimum age receive the discount",
+              "discountType": "ELIGIBILITY_ONLY",
+              "discountMethodUType": "rateBased",
+              "rateBased": {
+                "rateType": "FEE",
+                "rate": "1.0",
+                "amountRange": {}
+              },
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalValue": "67"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Paper Statement Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Only customers older than a minimum age receive the discount",
+              "discountType": "ELIGIBILITY_ONLY",
+              "discountMethodUType": "rateBased",
+              "rateBased": {
+                "rateType": "FEE",
+                "rate": "1.0",
+                "amountRange": {}
+              },
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalValue": "67"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Honour Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.10"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Honour Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Dishonour of Direct Debit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Dishonour of Direct Debit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "PENSION_RECIPIENT"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS",
+          "additionalInfo": "This product can have additional cards attached to the account."
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY payment is enabled on this product."
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalValue": "Card Access available",
+          "additionalInfo": "Visa Debit card and Cuecard available for this product."
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your accounts 24/7 with our Mobile App and Online Banking."
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "This product can send and receive Osko payments in realtime."
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "This product can be linked with PayID, making it simpler to transfer funds between banks."
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.dnister.com.au/portfolio-items/pensioner-savings",
+        "termsUri": "https://www.dnister.com.au/wp-content/uploads/2025/10/PDS-FSG-Update-28-October-2025.pdf",
+        "eligibilityUri": "https://www.dnister.com.au/portfolio-items/pensioner-savings",
+        "feesAndPricingUri": "https://www.dnister.com.au/fees-and-charges/"
+      }
+    },
+    {
+      "id": "31",
+      "name": "Max Saver",
+      "description": "Maximise your savings!",
+      "url": "https://www.dnister.com.au/portfolio-items/max-saver/",
+      "lastUpdated": "2026-09-20T22:00:42.1278331Z",
+      "source": "https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/31",
+      "depositRates": [
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.046",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "Bonus Rate",
+          "additionalInfo": "To earn the Bonus Rate deposit $1,500 per month, withdraw up to $1,000 per month (maximum 4 withdrawals per month).",
+          "additionalInfoUri": "https://www.dnister.com.au/interest-rates/"
+        },
+        {
+          "depositRateType": "INTRODUCTORY",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalValue": "P1M",
+          "additionalInfo": "The Introductory Rate applies for a period of one month upon account opening.",
+          "additionalInfoUri": "https://www.dnister.com.au/interest-rates/"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfo": "Base rate - $1.00 and over"
+        }
+      ],
+      "fees": [
+        {
+          "name": "Dormant Account",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD",
+          "additionalValue": "P1Y"
+        },
+        {
+          "name": "Bank Cheque Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BPAY Trans Investigation",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Corporate Cheque Stop Request",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Inter Credit Union Withdrawal",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Presented Stopped Cheque Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "35.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Copy of statement of accounts",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Member Cheque Copy Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Mbr Chq / PP Trace Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "60.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Foreign Cash/Chq/Travel Money",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Foreign Cash/Cheque Deposit",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Thomas Cook Draft Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "BPAY/PP Returned Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "25.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Inward Cheque Dishonour Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Copy of Interest Summary",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "currency": "AUD"
+        },
+        {
+          "name": "Paper Statement Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Only customers older than a minimum age receive the discount",
+              "discountType": "ELIGIBILITY_ONLY",
+              "discountMethodUType": "rateBased",
+              "rateBased": {
+                "rateType": "FEE",
+                "rate": "1.0",
+                "amountRange": {}
+              },
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalValue": "67"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Paper Statement Fee",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Only customers older than a minimum age receive the discount",
+              "discountType": "ELIGIBILITY_ONLY",
+              "discountMethodUType": "rateBased",
+              "rateBased": {
+                "rateType": "FEE",
+                "rate": "1.0",
+                "amountRange": {}
+              },
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalValue": "67"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "This product is only available for personal accounts with a limit of one account per member."
+        }
+      ],
+      "constraints": [
+        {
+          "constraintType": "MAX_BALANCE",
+          "additionalValue": "1000000.00"
+        }
+      ],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": "BPAY payments is enabled on this product."
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your account 24/7 with our Mobile App and Online Banking."
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "This product can send and receive Osko payments in realtime."
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "This product can be linked with PayID, making it simpler to transfer funds between banks."
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.dnister.com.au/portfolio-items/max-saver/",
+        "termsUri": "https://www.dnister.com.au/wp-content/uploads/2025/10/PDS-FSG-Update-28-October-2025.pdf",
+        "eligibilityUri": "https://www.dnister.com.au/portfolio-items/max-saver/",
+        "feesAndPricingUri": "https://www.dnister.com.au/fees-and-charges/"
+      }
+    }
+  ]
+}

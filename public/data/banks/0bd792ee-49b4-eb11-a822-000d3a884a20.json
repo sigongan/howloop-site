@@ -1,1 +1,112 @@
-{"name":"Tyro Payments","checkedAt":"2026-09-17T21:42:18.395Z","status":"available","products":[{"id":"93efba95-f852-4455-a965-807c0de3812c","name":"Tyro Bank Account","description":"A fee-free, interest earning business bank account that provides the flexibility to move money using the Tyro App.","url":"https://www.tyro.com/solutions/bank-account","lastUpdated":"2026-02-15T00:23:55.934059Z","source":"https://public.cdr.tyro.com/cds-au/v1/banking/products/93efba95-f852-4455-a965-807c0de3812c","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0050000000000000","additionalInfo":"Rate earned on funds in the account up to 30 days.","additionalInfoUri":"https://www.tyro.com/solutions/bank-account","additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[]},{"depositRateType":"BONUS","rate":"0.0065000000000000","additionalInfo":"Bonus rate earned on funds in the account greater than 30 days.","additionalInfoUri":"https://www.tyro.com/solutions/bank-account","additionalValue":"LONGER THAN 30 DAYS","applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[]},{"depositRateType":"BONUS","rate":"0.0080000000000000","additionalInfo":"Bonus rate earned on funds in the account greater than 60 days.","additionalInfoUri":"https://www.tyro.com/solutions/bank-account","additionalValue":"LONGER THAN 60 DAYS","applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[]},{"depositRateType":"BONUS","rate":"0.0095000000000000","additionalInfo":"Bonus rate earned on funds in the account greater than 90 days.","additionalInfoUri":"https://www.tyro.com/solutions/bank-account","additionalValue":"LONGER THAN 90 DAYS","applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[]}],"fees":[],"eligibility":[{"eligibilityType":"BUSINESS","additionalInfo":"You must have an active ABN.","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"OTHER","additionalInfo":"You must be a Tyro EFTPOS/eCommerce customer.","additionalInfoUri":null,"additionalValue":null}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING","additionalInfo":"The Tyro App lets you access 24/7 mobile banking so you can stay on top of your business from anywhere plus intelligent notifications, bank transfer, BPAY® and direct debits.","additionalInfoUri":"https://www.tyro.com/solutions/bank-account","additionalValue":null},{"featureType":"NOTIFICATIONS","additionalInfo":"Just-in-time reminders will let you know if funds are low, so you can reschedule bill payments.","additionalInfoUri":"https://www.tyro.com/solutions/bank-account","additionalValue":"Just-in-time reminders"},{"featureType":"UNLIMITED_TXNS","additionalInfo":"No account keeping fees, no transaction fees and no penalties for accessing your funds.","additionalInfoUri":null,"additionalValue":"Fee-free transfers"},{"featureType":"OTHER","additionalInfo":"Seamless reconciliation with integrated bank feeds to Xero. Schedule batch payments in Xero – including BPAY and bank transfers, and Xero Payroll.","additionalInfoUri":"https://www.tyro.com/solutions/bank-account/xero","additionalValue":"Xero integration"}],"additionalInformation":{"overviewUri":"https://www.tyro.com/solutions/bank-account","termsUri":"https://www.tyro.com/terms-and-conditions/","eligibilityUri":null,"feesAndPricingUri":null,"bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":null,"additionalFeesAndPricingUris":null,"additionalBundleUris":null}}]}
+{
+  "name": "Tyro Payments",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "93efba95-f852-4455-a965-807c0de3812c",
+      "name": "Tyro Bank Account",
+      "description": "A fee-free, interest earning business bank account that provides the flexibility to move money using the Tyro App.",
+      "url": "https://www.tyro.com/solutions/bank-account",
+      "lastUpdated": "2026-02-15T00:23:55.934059Z",
+      "source": "https://public.cdr.tyro.com/cds-au/v1/banking/products/93efba95-f852-4455-a965-807c0de3812c",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0050000000000000",
+          "additionalInfo": "Rate earned on funds in the account up to 30 days.",
+          "additionalInfoUri": "https://www.tyro.com/solutions/bank-account",
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": []
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0065000000000000",
+          "additionalInfo": "Bonus rate earned on funds in the account greater than 30 days.",
+          "additionalInfoUri": "https://www.tyro.com/solutions/bank-account",
+          "additionalValue": "LONGER THAN 30 DAYS",
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": []
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0080000000000000",
+          "additionalInfo": "Bonus rate earned on funds in the account greater than 60 days.",
+          "additionalInfoUri": "https://www.tyro.com/solutions/bank-account",
+          "additionalValue": "LONGER THAN 60 DAYS",
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": []
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0095000000000000",
+          "additionalInfo": "Bonus rate earned on funds in the account greater than 90 days.",
+          "additionalInfoUri": "https://www.tyro.com/solutions/bank-account",
+          "additionalValue": "LONGER THAN 90 DAYS",
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": []
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "BUSINESS",
+          "additionalInfo": "You must have an active ABN.",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You must be a Tyro EFTPOS/eCommerce customer.",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "The Tyro App lets you access 24/7 mobile banking so you can stay on top of your business from anywhere plus intelligent notifications, bank transfer, BPAY® and direct debits.",
+          "additionalInfoUri": "https://www.tyro.com/solutions/bank-account",
+          "additionalValue": null
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": "Just-in-time reminders will let you know if funds are low, so you can reschedule bill payments.",
+          "additionalInfoUri": "https://www.tyro.com/solutions/bank-account",
+          "additionalValue": "Just-in-time reminders"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS",
+          "additionalInfo": "No account keeping fees, no transaction fees and no penalties for accessing your funds.",
+          "additionalInfoUri": null,
+          "additionalValue": "Fee-free transfers"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Seamless reconciliation with integrated bank feeds to Xero. Schedule batch payments in Xero – including BPAY and bank transfers, and Xero Payroll.",
+          "additionalInfoUri": "https://www.tyro.com/solutions/bank-account/xero",
+          "additionalValue": "Xero integration"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.tyro.com/solutions/bank-account",
+        "termsUri": "https://www.tyro.com/terms-and-conditions/",
+        "eligibilityUri": null,
+        "feesAndPricingUri": null,
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": null,
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    }
+  ]
+}

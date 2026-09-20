@@ -1,1 +1,7 @@
-{"name":"PayPal Australia","checkedAt":"2026-09-17T21:42:09.360Z","status":"available","products":[]}
+{
+  "name": "PayPal Australia",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": []
+}

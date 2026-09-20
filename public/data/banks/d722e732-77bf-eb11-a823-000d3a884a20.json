@@ -1,1 +1,1898 @@
-{"name":"The Capricornian","checkedAt":"2026-09-17T21:42:15.915Z","status":"available","products":[{"id":"8921bfda-33cd-4dbc-867d-54405ca11e1f","name":"Pension Access Account","description":"The Pension Access Account allows members 65 years and over to manage their finances wisely and enjoy a more comfortable lifestyle.","url":"https://www.capricornian.com.au/banking/pensioner-banking-account/","lastUpdated":"2026-09-06T23:14:23.354461Z","source":"https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/8921bfda-33cd-4dbc-867d-54405ca11e1f","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0035","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"50000.00","name":"PENSION ACCESS ACCOUNT_Tier_3","unitOfMeasure":"DOLLAR","additionalInfo":null,"additionalInfoUri":null,"applicabilityConditions":[],"maximumValue":null,"rateApplicationMethod":"PER_TIER"}],"applicationType":"PERIODIC","applicabilityConditions":[{"additionalInfo":"Must be age over 65 and earning a pension to have this account.","additionalInfoUri":null,"rateApplicabilityType":"OTHER","additionalValue":null}]},{"depositRateType":"VARIABLE","rate":"0.002","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"10000.00","name":"PENSION ACCESS ACCOUNT_Tier_2","unitOfMeasure":"DOLLAR","additionalInfo":null,"additionalInfoUri":null,"applicabilityConditions":[],"maximumValue":"49999.99","rateApplicationMethod":"PER_TIER"}],"applicationType":"PERIODIC","applicabilityConditions":[{"additionalInfo":"Must be age over 65 and earning a pension to have this account.","additionalInfoUri":null,"rateApplicabilityType":"OTHER","additionalValue":null}]},{"depositRateType":"VARIABLE","rate":"0.001","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"1.00","name":"PENSION ACCESS ACCOUNT_Tier_1","unitOfMeasure":"DOLLAR","additionalInfo":null,"additionalInfoUri":null,"applicabilityConditions":[],"maximumValue":"9999.99","rateApplicationMethod":"PER_TIER"}],"applicationType":"PERIODIC","applicabilityConditions":[{"additionalInfo":"Must be age over 65 and earning a pension to have this account.","additionalInfoUri":null,"rateApplicabilityType":"OTHER","additionalValue":null}]}],"fees":[{"feeType":"WITHDRAWAL","name":"Visa Debit Cash Advance","additionalInfo":"Where credit option is selected for cash/cash and purchase transaction","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.70"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"EFTPOS Including declined transactions","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.70"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"DISHONOUR","name":"Dishonour Fee","additionalInfo":"Where there is not enough money in the account to pay a direct debit that the customer has setup.","additionalInfoUri":"https://www.capricornian.com.au/banking/pensioner-banking-account/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"International Transaction Fee Over The Counter","additionalInfo":"Transaction Fee charged at the result of sending an International Transfer via a staff assisted channel.","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"International Transaction Fee via Online Banking","additionalInfo":"Transaction Fee charged at the resulting of sending an International Transfer via Online Banking.","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Foreign Currency Conversion Fees","additionalInfo":"Foreign Currency will be converted to Australian currency at the wholesale market rate by VISA.","additionalInfoUri":"https://www.capricornian.com.au/documents/conditions-of-use/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"rateBased","fixedAmount":null,"rateBased":{"rateType":"TRANSACTION","rate":"0.03","accrualFrequency":null,"amountRange":null},"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"PERIODIC","name":"Account Service Fee","additionalInfo":"Account service fee exempt on first account, $6.00 per month subsequent accounts","additionalInfoUri":"https://www.capricornian.com.au/banking/pensioner-banking-account/","additionalValue":"P1M","currency":"AUD","discounts":[{"description":"Account service fee exempt on first account","discountType":"ELIGIBILITY_ONLY","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"eligibility":[{"discountEligibilityType":"MIN_AGE","additionalInfo":"Account Service Fee Exemptions on Access Accounts where first account is exempt for eligible members on both Personal Access and Business Access Accounts. $6.00 per month subsequent accounts on Personal Access, $10 per month subsequent on Business Access Accounts. Eligibility criteria applicable on Personal Access Account; Minimum Deposit/Lending balance of $20,000 held within the membership, Members aged 25 years and younger and Members aged 65 years and older. Eligibility criteria applicable on Business Access Accounts; Minimum Deposit/Lending balance of $20,000 held within the membership.","additionalInfoUri":"https://www.capricornian.com.au/banking/pensioner-banking-account/","additionalValue":"65"}],"discountMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null}],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"NATURAL_PERSON","additionalInfo":"Must receive an aged pension into their Capricornian account or be a self-funded retiree aged over 65 years of age.","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Individuals must be citizens or permanent residents of Australia."}],"constraints":[],"features":[{"featureType":"NOTIFICATIONS","additionalInfo":"SMS and/or email notifications available","additionalInfoUri":null,"additionalValue":"Notification via email, SMS or secure message in online banking.","isActivated":"UNKNOWN"},{"featureType":"OTHER","additionalInfo":"Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_ENABLED","additionalInfo":"An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access is available to online banking features for the product. Banking app available","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":"An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"BILL_PAYMENT","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"CARD_ACCESS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Visa Debit Card","isActivated":"UNKNOWN"},{"featureType":"DIGITAL_WALLET","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/","additionalValue":"Apple Pay","isActivated":"UNKNOWN"},{"featureType":"ADDITIONAL_CARDS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"DIGITAL_WALLET","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/","additionalValue":"Google Pay","isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.capricornian.com.au/banking/pensioner-banking-account/","termsUri":"https://www.capricornian.com.au/documents/conditions-of-use/","eligibilityUri":"https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/","feesAndPricingUri":"https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/","bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":null,"additionalFeesAndPricingUris":null,"additionalBundleUris":null}},{"id":"49c287aa-289c-4919-bdff-3118ad616179","name":"Personal Access Account","description":"Easy access to your banking, every day. With the features you need, this is a simple and versatile account to use and move your money.","url":"https://www.capricornian.com.au/banking/everyday-banking/","lastUpdated":"2026-09-06T23:09:30.697176Z","source":"https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/49c287aa-289c-4919-bdff-3118ad616179","depositRates":[{"depositRateType":"VARIABLE","rate":"0.00","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[],"applicationType":"PERIODIC","applicabilityConditions":[]}],"fees":[{"feeType":"WITHDRAWAL","name":"International Transaction Fee via Online Banking","additionalInfo":"Transaction Fee charged at the result of sending an International Transfer whilst conducting it via Online Banking","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"PERIODIC","name":"Account Service Fee","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"P1M","currency":"AUD","discounts":[{"description":"Minimum Deposit/Lending balance of $20,000 held within membership","discountType":"BALANCE","additionalInfo":"$6.00 per month subsequent accounts on Personal Access Accounts.","additionalInfoUri":"https://www.capricornian.com.au/banking/everyday-banking/","additionalValue":"20000.00","eligibility":[],"discountMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null},{"description":"Currently hold a Variable Rate Offset Home Loan.","discountType":"ELIGIBILITY_ONLY","additionalInfo":"$6.00 per month subsequent accounts on Personal Access Accounts.","additionalInfoUri":"https://www.capricornian.com.au/banking/everyday-banking/","additionalValue":null,"eligibility":[{"discountEligibilityType":"MAX_AGE","additionalInfo":"First account free for eligible members. $6.00 per month subsequent accounts","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":"26"},{"discountEligibilityType":"MIN_AGE","additionalInfo":"First account free for eligible members. $6.00 per month subsequent accounts","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":"65"}],"discountMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null}],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"EFTPOS incl declined transactions","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.70"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Visa Debit Cash Advance","additionalInfo":"Where credit option is selected for cash/cash and purchase transaction","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.70"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"Foreign Currency Conversion Fees","additionalInfo":"Foreign Currency will be converted to Australian currency at the wholesale market rate by VISA.","additionalInfoUri":"https://www.capricornian.com.au/documents/conditions-of-use/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"rateBased","fixedAmount":null,"rateBased":{"rateType":"TRANSACTION","rate":"0.03","accrualFrequency":null,"amountRange":null},"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"DISHONOUR","name":"Dishonour Fee","additionalInfo":"Where there is not enough money in the account to pay a direct debit that the customer has setup.","additionalInfoUri":"https://www.capricornian.com.au/banking/everyday-banking/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"International Transaction Fee Over The Counter","additionalInfo":"Transaction Fee charged at the result of sending an International Transfer whilst assisted by staff.","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"PERIODIC","name":"Card Fee","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"P3M","currency":"AUD","discounts":[{"description":"Card Fee","discountType":"ELIGIBILITY_ONLY","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"eligibility":[{"discountEligibilityType":"MAX_AGE","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"26"},{"discountEligibilityType":"OTHER","additionalInfo":"Account Service Fee Exemptions on Access Accounts where first account is exempt for eligible members currently hold a Variable Rate Offset Home Loan. ","additionalInfoUri":"https://www.capricornian.com.au/loans/home-loans/country-to-coast-home-loan/","additionalValue":null}],"discountMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null}],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Individuals must be citizens or permanent residents of Australia"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS","additionalInfo":"Fees may apply","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"DIGITAL_WALLET","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/","additionalValue":"Apple Pay","isActivated":"UNKNOWN"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access is available to online banking features for the product. Banking app available.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_ENABLED","additionalInfo":"An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NOTIFICATIONS","additionalInfo":"SMS and/or email notifications available","additionalInfoUri":null,"additionalValue":"Notification via email, SMS or secure message in online banking.","isActivated":"UNKNOWN"},{"featureType":"CARD_ACCESS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"A Visa Debit payWave card is available for the product to access funds","isActivated":"UNKNOWN"},{"featureType":"DIGITAL_WALLET","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/","additionalValue":"Google Pay","isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":"An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.capricornian.com.au/banking/everyday-banking/","termsUri":"https://www.capricornian.com.au/conditions-of-use/","eligibilityUri":"https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/","feesAndPricingUri":"https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/","bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":null,"additionalFeesAndPricingUris":null,"additionalBundleUris":null}},{"id":"9c393395-f87c-4268-84a4-06a91b34b47c","name":"Student Access Account","description":"The Student Access Account is designed to provide support to those aged 17-25 years who are studying at University or undergoing a traineeship/apprenticeship. The account provides full branch access for deposits, withdrawals or counter cheques as well as Visa Debit access.","url":"https://www.capricornian.com.au/banking/student-youth-banking-account/","lastUpdated":"2026-09-06T23:07:00.559967Z","source":"https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/9c393395-f87c-4268-84a4-06a91b34b47c","depositRates":[{"depositRateType":"VARIABLE","rate":"0.00","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[],"applicationType":"PERIODIC","applicabilityConditions":[]}],"fees":[{"feeType":"WITHDRAWAL","name":"International Transaction Fee via Internet Banking","additionalInfo":"Transaction fee charged at the result of the processing of an international transaction via Internet Banking.","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"Visa Debit Cash Advance","additionalInfo":"Where credit option is selected for cash, or cash and purchase transactions","additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.70"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"EFTPOS Including declined transactions","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.70"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"DISHONOUR","name":"Dishonour Fee","additionalInfo":"Where there is not enough money in the account to pay a direct debit that the customer has setup.","additionalInfoUri":"https://www.capricornian.com.au/banking/student-youth-banking-account/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"International Transaction Fee Over The Counter","additionalInfo":"Transaction fee charged at the result of the processing of an International Transaction - staff assisted.","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"PERIODIC","name":"Account Service Fee","additionalInfo":"Account service fee exempt on first account, $6.00 per month subsequent accounts.","additionalInfoUri":"https://www.capricornian.com.au/banking/student-youth-banking-account/","additionalValue":"P1M","currency":"AUD","discounts":[{"description":"Account service fee exempt on first account","discountType":"ELIGIBILITY_ONLY","additionalInfo":"Account service fee exempt on first account, $6.00 per month subsequent accounts.","additionalInfoUri":"https://www.capricornian.com.au/banking/student-youth-banking-account/","additionalValue":null,"eligibility":[{"discountEligibilityType":"MAX_AGE","additionalInfo":"Members aged 25 years and younger and Members aged 65 years and older","additionalInfoUri":"https://www.capricornian.com.au/banking/student-youth-banking-account/","additionalValue":"25"}],"discountMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null}],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"PERIODIC","name":"Account Service Fee","additionalInfo":"Account service fee exempt on first account, $6.00 per month subsequent accounts.","additionalInfoUri":null,"additionalValue":"P1M","currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"PURCHASE","name":"Foreign Currency Conversion Fees","additionalInfo":"Foreign Currency will be converted to Australian currency at the wholesale market rate by VISA","additionalInfoUri":"https://www.capricornian.com.au/documents/conditions-of-use/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"rateBased","fixedAmount":null,"rateBased":{"rateType":"TRANSACTION","rate":"0.03","accrualFrequency":null,"amountRange":null},"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"MAX_AGE","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"26"},{"eligibilityType":"MIN_AGE","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"17"},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Individuals must be citizens or permanent residents of Australia"}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING","additionalInfo":"Online banking and mobile app.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NOTIFICATIONS","additionalInfo":"SMS and/or email notifications available.","additionalInfoUri":null,"additionalValue":"Notification via email, SMS or secure message in online banking.","isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":"An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_ENABLED","additionalInfo":"An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"BILL_PAYMENT","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"BPAY available","isActivated":"UNKNOWN"},{"featureType":"DIGITAL_WALLET","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/","additionalValue":"Google Pay","isActivated":"UNKNOWN"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"DIGITAL_WALLET","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/","additionalValue":"Apple Pay","isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.capricornian.com.au/banking/student-youth-banking-account/","termsUri":"https://www.capricornian.com.au/documents/conditions-of-use/","eligibilityUri":"https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/","feesAndPricingUri":"https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/","bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":[],"additionalFeesAndPricingUris":null,"additionalBundleUris":null}},{"id":"b8cd6f23-27b7-4840-ab9d-2f8bfeda0b4f","name":"Youth Access Account","description":"The award-winning, Youth Access Account is designed for young people up to the age of 16 years, offering a full transactional account, no account service fee and no minimum monthly balance.","url":"https://www.capricornian.com.au/banking/student-youth-banking-account/","lastUpdated":"2026-09-06T22:44:02.858256Z","source":"https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/b8cd6f23-27b7-4840-ab9d-2f8bfeda0b4f","depositRates":[{"depositRateType":"VARIABLE","rate":"0.02","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"0.01","name":"YOUTH ACCESS ACCOUNT_Tier_1","unitOfMeasure":"DOLLAR","additionalInfo":null,"additionalInfoUri":null,"applicabilityConditions":[],"maximumValue":"4999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"applicationType":"PERIODIC","applicabilityConditions":[{"additionalInfo":"Account only for members under 18 years of age.","additionalInfoUri":null,"rateApplicabilityType":"OTHER","additionalValue":null}]},{"depositRateType":"VARIABLE","rate":"0.015","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"5000.00","name":"YOUTH ACCESS ACCOUNT_Tier_2","unitOfMeasure":"DOLLAR","additionalInfo":null,"additionalInfoUri":null,"applicabilityConditions":[],"maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"applicationType":"PERIODIC","applicabilityConditions":[{"additionalInfo":"Account only for members under 18 years of age.","additionalInfoUri":null,"rateApplicabilityType":"OTHER","additionalValue":null}]}],"fees":[{"feeType":"PERIODIC","name":"Account Service Fee","additionalInfo":"First account free for eligible members. $6.00 per month subsequent accounts.","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":"P1M","currency":"AUD","discounts":[{"description":"First account free","discountType":"ELIGIBILITY_ONLY","additionalInfo":"Account service fee exempt on first account, $6.00 per month subsequent accounts.","additionalInfoUri":"https://www.capricornian.com.au/banking/student-youth-banking-account/","additionalValue":null,"eligibility":[{"discountEligibilityType":"OTHER","additionalInfo":"Account service fee exempt on first account, $6.00 per month subsequent accounts.","additionalInfoUri":"https://www.capricornian.com.au/banking/student-youth-banking-account/","additionalValue":null}],"discountMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null}],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"EFTPOS Including declined transactions","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.70"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"DISHONOUR","name":"Dishonour Fee","additionalInfo":"Where there is not enough money in the account to pay a direct debit that the customer has setup.","additionalInfoUri":"https://www.capricornian.com.au/banking/student-youth-banking-account/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"International Transaction Fee via Internet Banking","additionalInfo":"Transaction fee charged at the result of the processing of an international transaction via Internet Banking.","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"PAYMENT","name":"International Transaction Fee Over The Counter","additionalInfo":"Transaction fee charged at the result of an International Transaction being actioned after a staff assisted transaction.","additionalInfoUri":"https://www.capricornian.com.au/fees-and-charges/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"WITHDRAWAL","name":"Visa Debit Cash Advance","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.70"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"PURCHASE","name":"Foreign Currency Conversion Fees","additionalInfo":"Foreign Currency will be converted to Australian currency at \nthe wholesale market rate by VISA","additionalInfoUri":"https://www.capricornian.com.au/documents/conditions-of-use/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"rateBased","fixedAmount":null,"rateBased":{"rateType":"TRANSACTION","rate":"0.03","accrualFrequency":null,"amountRange":null},"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"MAX_AGE","additionalInfo":"Individuals up to the age of 16","additionalInfoUri":null,"additionalValue":"16"},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Individuals must be citizens or permanent residents of Australia"}],"constraints":[],"features":[{"featureType":"NPP_ENABLED","additionalInfo":"Osko by BPAY available.\nAn account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Banking app and Online Banking available.\nAccess is available to online banking features for the product","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"DIGITAL_WALLET","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/","additionalValue":"Apple Pay","isActivated":"UNKNOWN"},{"featureType":"DIGITAL_WALLET","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/","additionalValue":"Google Pay","isActivated":"UNKNOWN"},{"featureType":"BILL_PAYMENT","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"BPAY available","isActivated":"UNKNOWN"},{"featureType":"NOTIFICATIONS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"SMS and/or email notifications available","isActivated":"UNKNOWN"},{"featureType":"OTHER","additionalInfo":"Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":"Osko by BPAY available.\nAn account of this product type can be used as the target of an NPP PayID.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.capricornian.com.au/banking/student-youth-banking-account/","termsUri":"https://www.capricornian.com.au/documents/conditions-of-use/","eligibilityUri":"https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/","feesAndPricingUri":"https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/","bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":null,"additionalFeesAndPricingUris":null,"additionalBundleUris":null}},{"id":"33563233-c746-4110-b19e-2dbe984248fd","name":"iSaver","description":"An internet-based savings account to help reach your saving goals faster.\n\nThis online account provides anytime access and rewards you with interest. As an added bonus, the iSaver can be used as an offset account for eligible home loan products to help reduce the monthly interest on your loan.","url":"https://www.capricornian.com.au/banking/i-saver-banking-account/","lastUpdated":"2026-07-23T23:57:47.626724Z","source":"https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/33563233-c746-4110-b19e-2dbe984248fd","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0035","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"5000.00","name":"ISAVER_Tier_2","unitOfMeasure":"DOLLAR","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/banking/i-saver-banking-account/","applicabilityConditions":[],"maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"applicationType":"PERIODIC","applicabilityConditions":[{"additionalInfo":"Account to be operated online in order to avoid transaction fees.","additionalInfoUri":null,"rateApplicabilityType":"ONLINE_ONLY","additionalValue":null}]},{"depositRateType":"VARIABLE","rate":"0.00","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"0.00","name":"ISAVER_Tier_1","unitOfMeasure":"DOLLAR","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/banking/i-saver-banking-account/","applicabilityConditions":[],"maximumValue":"4999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"applicationType":"PERIODIC","applicabilityConditions":[{"additionalInfo":"Account to be operated online in order to avoid transaction fees.","additionalInfoUri":null,"rateApplicabilityType":"ONLINE_ONLY","additionalValue":null}]},{"depositRateType":"VARIABLE","rate":"0.005","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"50000.00","name":"ISAVER_Tier_3","unitOfMeasure":"DOLLAR","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/banking/i-saver-banking-account/","applicabilityConditions":[],"maximumValue":null,"rateApplicationMethod":"WHOLE_BALANCE"}],"applicationType":"PERIODIC","applicabilityConditions":[{"additionalInfo":"Account to be operated online in order to avoid transaction fees.","additionalInfoUri":null,"rateApplicabilityType":"ONLINE_ONLY","additionalValue":null}]}],"fees":[{"feeType":"TRANSACTION","name":"Direct Debits","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"BPAY","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"External Funds Transfer","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Individuals must be citizens or permanent residents of Australia"}],"constraints":[],"features":[{"featureType":"OFFSET","additionalInfo":"For eligible The Capricornian Ltd, Mortgage Loan products","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"OTHER","additionalInfo":"Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":"An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_ENABLED","additionalInfo":"An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NOTIFICATIONS","additionalInfo":"SMS and/or email notifications available","additionalInfoUri":null,"additionalValue":"Notification via email, SMS or secure message in online banking.","isActivated":"UNKNOWN"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Online banking and mobile app","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"BILL_PAYMENT","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"BPAY Transaction","isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.capricornian.com.au/banking/i-saver-banking-account/","termsUri":"https://www.capricornian.com.au/conditions-of-use/","eligibilityUri":"https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/","feesAndPricingUri":"https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/","bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":null,"additionalFeesAndPricingUris":null,"additionalBundleUris":null}},{"id":"00f87bdf-368b-490a-9946-17dc66b5b4da","name":"Club Account","description":"A transaction account designed specifically for not-for-profit organisations, clubs and community groups, offering the features your club needs to use and move your money.","url":"https://www.capricornian.com.au/banking/club-banking-account/","lastUpdated":"2026-07-23T23:50:47.3451Z","source":"https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/00f87bdf-368b-490a-9946-17dc66b5b4da","depositRates":[{"depositRateType":"VARIABLE","rate":"0.00","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[],"applicationType":"PERIODIC","applicabilityConditions":[{"additionalInfo":"Must be a legitimate recognised club to own this account.","additionalInfoUri":null,"rateApplicabilityType":"OTHER","additionalValue":null}]}],"fees":[{"feeType":"TRANSACTION","name":"BPAY - Branch and Contact Centre processed.","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"External Funds Transfer - Branch and Contact Centre processed.","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"PAYMENT","name":"Direct Debits","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.30"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"Individual Incorporated and Unincorporated Clubs and Organisations","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"OTHER","additionalInfo":"You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Individuals must be citizens or permanent residents of Australia"}],"constraints":[],"features":[{"featureType":"NPP_ENABLED","additionalInfo":"An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available","additionalInfoUri":"https://www.capricornian.com.au/banking/access-your-money/new-payments-platform/","additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NOTIFICATIONS","additionalInfo":"SMS and/or email notifications available","additionalInfoUri":null,"additionalValue":"Notification via email, SMS or secure message in online banking.","isActivated":"UNKNOWN"},{"featureType":"BILL_PAYMENT","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"BPAY available","isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":"An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available","additionalInfoUri":"https://www.capricornian.com.au/banking/access-your-money/new-payments-platform/","additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"OTHER","additionalInfo":"Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access is available to online banking features for the product. Banking app available","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.capricornian.com.au/banking/club-banking-account/","termsUri":"https://www.capricornian.com.au/documents/conditions-of-use/","eligibilityUri":"https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/","feesAndPricingUri":"https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/","bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":null,"additionalFeesAndPricingUris":null,"additionalBundleUris":null}},{"id":"56e90b70-9407-4dfe-ada8-d3396fa01c2a","name":"Everyday Saver Account","description":"An account with anytime access that rewards you with interest, as well as provides branch and staff assisted withdrawals and transfers.","url":"https://www.capricornian.com.au/banking/e-saver-banking-account/","lastUpdated":"2026-07-17T06:13:24.528915Z","source":"https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/56e90b70-9407-4dfe-ada8-d3396fa01c2a","depositRates":[{"depositRateType":"VARIABLE","rate":"0.001","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[],"applicationType":"PERIODIC","applicabilityConditions":[]}],"fees":[{"feeType":"TRANSACTION","name":"External Funds Transfer - Branch and Contact Centre processed.","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null},{"feeType":"TRANSACTION","name":"BPAY - Branch and Contact Centre processed.","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[{"eligibilityType":"OTHER","additionalInfo":"You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you","additionalInfoUri":null,"additionalValue":null},{"eligibilityType":"RESIDENCY_STATUS","additionalInfo":null,"additionalInfoUri":null,"additionalValue":"Individuals must be citizens or permanent residents of Australia."}],"constraints":[],"features":[{"featureType":"OTHER","additionalInfo":"Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NOTIFICATIONS","additionalInfo":"SMS and/or email notifications available","additionalInfoUri":null,"additionalValue":"Notification via email, SMS or secure message in online banking.","isActivated":"UNKNOWN"},{"featureType":"BILL_PAYMENT","additionalInfo":null,"additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"DIGITAL_BANKING","additionalInfo":"Access is available to online banking features for the product. Banking app available","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_ENABLED","additionalInfo":"An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":"An account of this product type can be used as the target of an NPP PayID.  Osko by BPAY available","additionalInfoUri":null,"additionalValue":null,"isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.capricornian.com.au/banking/e-saver-banking-account/","termsUri":"https://www.capricornian.com.au/conditions-of-use/","eligibilityUri":"https://www.capricornian.com.au/banking/e-saver-banking-account/","feesAndPricingUri":"https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/","bundleUri":null,"additionalOverviewUris":null,"additionalTermsUris":null,"additionalEligibilityUris":null,"additionalFeesAndPricingUris":null,"additionalBundleUris":null}},{"id":"57f2a9d4-5498-490f-82ea-61dff8720cS3","name":"Bonus Saver Account","description":"A high interest savings account offering monthly bonus interest upon meeting all the criteria and performing no debits on the account for the entirety of the calendar month. ","url":"https://www.capricornian.com.au/banking/bonus-saver-account/","lastUpdated":"2026-07-17T06:13:24.528915Z","source":"https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/57f2a9d4-5498-490f-82ea-61dff8720cS3","depositRates":[{"depositRateType":"BONUS","rate":"0.0465","additionalInfo":"0.10% interest is applied to the entirety of the balance regardless of whether or not the bonus criteria is met.","additionalInfoUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","additionalValue":"Atleast $100 has to be deposited throughout the month, No Debits/Withdrawals at all on the account during the month, Account to stay open throughout the entire duration of the calendar month.","applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"100.00","name":"Bonus Interest","unitOfMeasure":"DOLLAR","additionalInfo":"Bonus Interest is only paid up to $250,000 of the balance of the account.","additionalInfoUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","applicabilityConditions":[],"maximumValue":"250000.00","rateApplicationMethod":"PER_TIER"}],"applicationType":"PERIODIC","applicabilityConditions":[]},{"depositRateType":"VARIABLE","rate":"0.001","additionalInfo":"Base interest rate for the Bonus Saver account that is applied to the entirety of the balance of the account regardless of whether or not the Bonus Criteria was met.","additionalInfoUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","additionalValue":null,"applicationFrequency":"P1M","calculationFrequency":"P1D","tiers":[{"minimumValue":"0.00","name":"Base Interest Rate","unitOfMeasure":"DOLLAR","additionalInfo":null,"additionalInfoUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","applicabilityConditions":[],"maximumValue":null,"rateApplicationMethod":"WHOLE_BALANCE"}],"applicationType":"PERIODIC","applicabilityConditions":[]}],"fees":[{"feeType":"WITHDRAWAL","name":"Staff Assisted Withdrawal Fee","additionalInfo":"Fee is charged whenever a withdrawal is performed by a staff member on behalf of the member at their request. Exemptions apply for customer's aged 25 years and younger, as well as 65 years and older.","additionalInfoUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","additionalValue":null,"currency":"AUD","discounts":[],"feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"rateBased":null,"variable":null,"feeCap":null,"feeCapPeriod":null}],"eligibility":[],"constraints":[{"constraintType":"OTHER","additionalInfo":"No Direct Debits. Direct Debits are unable to be setup to the Bonus Saver Account.","additionalInfoUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","additionalValue":null}],"features":[{"featureType":"DIGITAL_BANKING","additionalInfo":"Offers online banking access to easily manage your money.","additionalInfoUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_ENABLED","additionalInfo":"Offers NPP Osko transactions when performed via Digital banking.","additionalInfoUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","additionalValue":null,"isActivated":"UNKNOWN"},{"featureType":"NPP_PAYID","additionalInfo":"Offers NPP PayID access when performing transfers via Digital Banking.","additionalInfoUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","additionalValue":null,"isActivated":"UNKNOWN"}],"additionalInformation":{"overviewUri":"https://www.capricornian.com.au/banking/bonus-saver-account/","termsUri":"https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/","eligibilityUri":"https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/","feesAndPricingUri":"https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/","bundleUri":null,"additionalOverviewUris":[],"additionalTermsUris":[],"additionalEligibilityUris":[],"additionalFeesAndPricingUris":[],"additionalBundleUris":[]}}]}
+{
+  "name": "The Capricornian",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "00f87bdf-368b-490a-9946-17dc66b5b4da",
+      "name": "Club Account",
+      "description": "A transaction account designed specifically for not-for-profit organisations, clubs and community groups, offering the features your club needs to use and move your money.",
+      "url": "https://www.capricornian.com.au/banking/club-banking-account/",
+      "lastUpdated": "2026-07-23T23:50:47.3451Z",
+      "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/00f87bdf-368b-490a-9946-17dc66b5b4da",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.00",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "Must be a legitimate recognised club to own this account.",
+              "additionalInfoUri": null,
+              "rateApplicabilityType": "OTHER",
+              "additionalValue": null
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "TRANSACTION",
+          "name": "BPAY - Branch and Contact Centre processed.",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "External Funds Transfer - Branch and Contact Centre processed.",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PAYMENT",
+          "name": "Direct Debits",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.30"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "Individual Incorporated and Unincorporated Clubs and Organisations",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/access-your-money/new-payments-platform/",
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": "SMS and/or email notifications available",
+          "additionalInfoUri": null,
+          "additionalValue": "Notification via email, SMS or secure message in online banking.",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "BPAY available",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/access-your-money/new-payments-platform/",
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access is available to online banking features for the product. Banking app available",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.capricornian.com.au/banking/club-banking-account/",
+        "termsUri": "https://www.capricornian.com.au/documents/conditions-of-use/",
+        "eligibilityUri": "https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/",
+        "feesAndPricingUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": null,
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    },
+    {
+      "id": "33563233-c746-4110-b19e-2dbe984248fd",
+      "name": "iSaver",
+      "description": "An internet-based savings account to help reach your saving goals faster.\n\nThis online account provides anytime access and rewards you with interest. As an added bonus, the iSaver can be used as an offset account for eligible home loan products to help reduce the monthly interest on your loan.",
+      "url": "https://www.capricornian.com.au/banking/i-saver-banking-account/",
+      "lastUpdated": "2026-07-23T23:57:47.626724Z",
+      "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/33563233-c746-4110-b19e-2dbe984248fd",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0035",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "5000.00",
+              "name": "ISAVER_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/",
+              "applicabilityConditions": [],
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "Account to be operated online in order to avoid transaction fees.",
+              "additionalInfoUri": null,
+              "rateApplicabilityType": "ONLINE_ONLY",
+              "additionalValue": null
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.00",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "0.00",
+              "name": "ISAVER_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/",
+              "applicabilityConditions": [],
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "Account to be operated online in order to avoid transaction fees.",
+              "additionalInfoUri": null,
+              "rateApplicabilityType": "ONLINE_ONLY",
+              "additionalValue": null
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.005",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "50000.00",
+              "name": "ISAVER_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/",
+              "applicabilityConditions": [],
+              "maximumValue": null,
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "Account to be operated online in order to avoid transaction fees.",
+              "additionalInfoUri": null,
+              "rateApplicabilityType": "ONLINE_ONLY",
+              "additionalValue": null
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "TRANSACTION",
+          "name": "Direct Debits",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "BPAY",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "External Funds Transfer",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "OFFSET",
+          "additionalInfo": "For eligible The Capricornian Ltd, Mortgage Loan products",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": "SMS and/or email notifications available",
+          "additionalInfoUri": null,
+          "additionalValue": "Notification via email, SMS or secure message in online banking.",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Online banking and mobile app",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "BPAY Transaction",
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/",
+        "termsUri": "https://www.capricornian.com.au/conditions-of-use/",
+        "eligibilityUri": "https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/",
+        "feesAndPricingUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": null,
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    },
+    {
+      "id": "49c287aa-289c-4919-bdff-3118ad616179",
+      "name": "Personal Access Account",
+      "description": "Easy access to your banking, every day. With the features you need, this is a simple and versatile account to use and move your money.",
+      "url": "https://www.capricornian.com.au/banking/everyday-banking/",
+      "lastUpdated": "2026-09-06T23:09:30.697176Z",
+      "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/49c287aa-289c-4919-bdff-3118ad616179",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.00",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": []
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "International Transaction Fee via Online Banking",
+          "additionalInfo": "Transaction Fee charged at the result of sending an International Transfer whilst conducting it via Online Banking",
+          "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PERIODIC",
+          "name": "Account Service Fee",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "P1M",
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Minimum Deposit/Lending balance of $20,000 held within membership",
+              "discountType": "BALANCE",
+              "additionalInfo": "$6.00 per month subsequent accounts on Personal Access Accounts.",
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/everyday-banking/",
+              "additionalValue": "20000.00",
+              "eligibility": [],
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "6.00"
+              },
+              "rateBased": null
+            },
+            {
+              "description": "Currently hold a Variable Rate Offset Home Loan.",
+              "discountType": "ELIGIBILITY_ONLY",
+              "additionalInfo": "$6.00 per month subsequent accounts on Personal Access Accounts.",
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/everyday-banking/",
+              "additionalValue": null,
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MAX_AGE",
+                  "additionalInfo": "First account free for eligible members. $6.00 per month subsequent accounts",
+                  "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+                  "additionalValue": "26"
+                },
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalInfo": "First account free for eligible members. $6.00 per month subsequent accounts",
+                  "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+                  "additionalValue": "65"
+                }
+              ],
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "6.00"
+              },
+              "rateBased": null
+            }
+          ],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "EFTPOS incl declined transactions",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Visa Debit Cash Advance",
+          "additionalInfo": "Where credit option is selected for cash/cash and purchase transaction",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Foreign Currency Conversion Fees",
+          "additionalInfo": "Foreign Currency will be converted to Australian currency at the wholesale market rate by VISA.",
+          "additionalInfoUri": "https://www.capricornian.com.au/documents/conditions-of-use/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "fixedAmount": null,
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.03",
+            "accrualFrequency": null,
+            "amountRange": null
+          },
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "DISHONOUR",
+          "name": "Dishonour Fee",
+          "additionalInfo": "Where there is not enough money in the account to pay a direct debit that the customer has setup.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/everyday-banking/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "International Transaction Fee Over The Counter",
+          "additionalInfo": "Transaction Fee charged at the result of sending an International Transfer whilst assisted by staff.",
+          "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PERIODIC",
+          "name": "Card Fee",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "P3M",
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Card Fee",
+              "discountType": "ELIGIBILITY_ONLY",
+              "additionalInfo": null,
+              "additionalInfoUri": null,
+              "additionalValue": null,
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MAX_AGE",
+                  "additionalInfo": null,
+                  "additionalInfoUri": null,
+                  "additionalValue": "26"
+                },
+                {
+                  "discountEligibilityType": "OTHER",
+                  "additionalInfo": "Account Service Fee Exemptions on Access Accounts where first account is exempt for eligible members currently hold a Variable Rate Offset Home Loan. ",
+                  "additionalInfoUri": "https://www.capricornian.com.au/loans/home-loans/country-to-coast-home-loan/",
+                  "additionalValue": null
+                }
+              ],
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "6.00"
+              },
+              "rateBased": null
+            }
+          ],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS",
+          "additionalInfo": "Fees may apply",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalInfo": null,
+          "additionalInfoUri": "https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/",
+          "additionalValue": "Apple Pay",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access is available to online banking features for the product. Banking app available.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": "SMS and/or email notifications available",
+          "additionalInfoUri": null,
+          "additionalValue": "Notification via email, SMS or secure message in online banking.",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "A Visa Debit payWave card is available for the product to access funds",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalInfo": null,
+          "additionalInfoUri": "https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/",
+          "additionalValue": "Google Pay",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.capricornian.com.au/banking/everyday-banking/",
+        "termsUri": "https://www.capricornian.com.au/conditions-of-use/",
+        "eligibilityUri": "https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/",
+        "feesAndPricingUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": null,
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    },
+    {
+      "id": "56e90b70-9407-4dfe-ada8-d3396fa01c2a",
+      "name": "Everyday Saver Account",
+      "description": "An account with anytime access that rewards you with interest, as well as provides branch and staff assisted withdrawals and transfers.",
+      "url": "https://www.capricornian.com.au/banking/e-saver-banking-account/",
+      "lastUpdated": "2026-07-17T06:13:24.528915Z",
+      "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/56e90b70-9407-4dfe-ada8-d3396fa01c2a",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": []
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "TRANSACTION",
+          "name": "External Funds Transfer - Branch and Contact Centre processed.",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "BPAY - Branch and Contact Centre processed.",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": "SMS and/or email notifications available",
+          "additionalInfoUri": null,
+          "additionalValue": "Notification via email, SMS or secure message in online banking.",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access is available to online banking features for the product. Banking app available",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "An account of this product type can be used as the target of an NPP PayID.  Osko by BPAY available",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.capricornian.com.au/banking/e-saver-banking-account/",
+        "termsUri": "https://www.capricornian.com.au/conditions-of-use/",
+        "eligibilityUri": "https://www.capricornian.com.au/banking/e-saver-banking-account/",
+        "feesAndPricingUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": null,
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    },
+    {
+      "id": "57f2a9d4-5498-490f-82ea-61dff8720cS3",
+      "name": "Bonus Saver Account",
+      "description": "A high interest savings account offering monthly bonus interest upon meeting all the criteria and performing no debits on the account for the entirety of the calendar month. ",
+      "url": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+      "lastUpdated": "2026-07-17T06:13:24.528915Z",
+      "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/57f2a9d4-5498-490f-82ea-61dff8720cS3",
+      "depositRates": [
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0465",
+          "additionalInfo": "0.10% interest is applied to the entirety of the balance regardless of whether or not the bonus criteria is met.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+          "additionalValue": "Atleast $100 has to be deposited throughout the month, No Debits/Withdrawals at all on the account during the month, Account to stay open throughout the entire duration of the calendar month.",
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "100.00",
+              "name": "Bonus Interest",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": "Bonus Interest is only paid up to $250,000 of the balance of the account.",
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+              "applicabilityConditions": [],
+              "maximumValue": "250000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": []
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "additionalInfo": "Base interest rate for the Bonus Saver account that is applied to the entirety of the balance of the account regardless of whether or not the Bonus Criteria was met.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "0.00",
+              "name": "Base Interest Rate",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+              "applicabilityConditions": [],
+              "maximumValue": null,
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": []
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "Staff Assisted Withdrawal Fee",
+          "additionalInfo": "Fee is charged whenever a withdrawal is performed by a staff member on behalf of the member at their request. Exemptions apply for customer's aged 25 years and younger, as well as 65 years and older.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [],
+      "constraints": [
+        {
+          "constraintType": "OTHER",
+          "additionalInfo": "No Direct Debits. Direct Debits are unable to be setup to the Bonus Saver Account.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+          "additionalValue": null
+        }
+      ],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Offers online banking access to easily manage your money.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "Offers NPP Osko transactions when performed via Digital banking.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "Offers NPP PayID access when performing transfers via Digital Banking.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+        "termsUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+        "eligibilityUri": "https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/",
+        "feesAndPricingUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+        "bundleUri": null,
+        "additionalOverviewUris": [],
+        "additionalTermsUris": [],
+        "additionalEligibilityUris": [],
+        "additionalFeesAndPricingUris": [],
+        "additionalBundleUris": []
+      }
+    },
+    {
+      "id": "8921bfda-33cd-4dbc-867d-54405ca11e1f",
+      "name": "Pension Access Account",
+      "description": "The Pension Access Account allows members 65 years and over to manage their finances wisely and enjoy a more comfortable lifestyle.",
+      "url": "https://www.capricornian.com.au/banking/pensioner-banking-account/",
+      "lastUpdated": "2026-09-06T23:14:23.354461Z",
+      "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/8921bfda-33cd-4dbc-867d-54405ca11e1f",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0035",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "50000.00",
+              "name": "PENSION ACCESS ACCOUNT_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": null,
+              "applicabilityConditions": [],
+              "maximumValue": null,
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "Must be age over 65 and earning a pension to have this account.",
+              "additionalInfoUri": null,
+              "rateApplicabilityType": "OTHER",
+              "additionalValue": null
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.002",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "10000.00",
+              "name": "PENSION ACCESS ACCOUNT_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": null,
+              "applicabilityConditions": [],
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "Must be age over 65 and earning a pension to have this account.",
+              "additionalInfoUri": null,
+              "rateApplicabilityType": "OTHER",
+              "additionalValue": null
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "1.00",
+              "name": "PENSION ACCESS ACCOUNT_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": null,
+              "applicabilityConditions": [],
+              "maximumValue": "9999.99",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "Must be age over 65 and earning a pension to have this account.",
+              "additionalInfoUri": null,
+              "rateApplicabilityType": "OTHER",
+              "additionalValue": null
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "Visa Debit Cash Advance",
+          "additionalInfo": "Where credit option is selected for cash/cash and purchase transaction",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "EFTPOS Including declined transactions",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "DISHONOUR",
+          "name": "Dishonour Fee",
+          "additionalInfo": "Where there is not enough money in the account to pay a direct debit that the customer has setup.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/pensioner-banking-account/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "International Transaction Fee Over The Counter",
+          "additionalInfo": "Transaction Fee charged at the result of sending an International Transfer via a staff assisted channel.",
+          "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "International Transaction Fee via Online Banking",
+          "additionalInfo": "Transaction Fee charged at the resulting of sending an International Transfer via Online Banking.",
+          "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "TRANSACTION",
+          "name": "Foreign Currency Conversion Fees",
+          "additionalInfo": "Foreign Currency will be converted to Australian currency at the wholesale market rate by VISA.",
+          "additionalInfoUri": "https://www.capricornian.com.au/documents/conditions-of-use/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "fixedAmount": null,
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.03",
+            "accrualFrequency": null,
+            "amountRange": null
+          },
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PERIODIC",
+          "name": "Account Service Fee",
+          "additionalInfo": "Account service fee exempt on first account, $6.00 per month subsequent accounts",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/pensioner-banking-account/",
+          "additionalValue": "P1M",
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Account service fee exempt on first account",
+              "discountType": "ELIGIBILITY_ONLY",
+              "additionalInfo": null,
+              "additionalInfoUri": null,
+              "additionalValue": null,
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MIN_AGE",
+                  "additionalInfo": "Account Service Fee Exemptions on Access Accounts where first account is exempt for eligible members on both Personal Access and Business Access Accounts. $6.00 per month subsequent accounts on Personal Access, $10 per month subsequent on Business Access Accounts. Eligibility criteria applicable on Personal Access Account; Minimum Deposit/Lending balance of $20,000 held within the membership, Members aged 25 years and younger and Members aged 65 years and older. Eligibility criteria applicable on Business Access Accounts; Minimum Deposit/Lending balance of $20,000 held within the membership.",
+                  "additionalInfoUri": "https://www.capricornian.com.au/banking/pensioner-banking-account/",
+                  "additionalValue": "65"
+                }
+              ],
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "6.00"
+              },
+              "rateBased": null
+            }
+          ],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON",
+          "additionalInfo": "Must receive an aged pension into their Capricornian account or be a self-funded retiree aged over 65 years of age.",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": "SMS and/or email notifications available",
+          "additionalInfoUri": null,
+          "additionalValue": "Notification via email, SMS or secure message in online banking.",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access is available to online banking features for the product. Banking app available",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "CARD_ACCESS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Visa Debit Card",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalInfo": null,
+          "additionalInfoUri": "https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/",
+          "additionalValue": "Apple Pay",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "ADDITIONAL_CARDS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalInfo": null,
+          "additionalInfoUri": "https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/",
+          "additionalValue": "Google Pay",
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.capricornian.com.au/banking/pensioner-banking-account/",
+        "termsUri": "https://www.capricornian.com.au/documents/conditions-of-use/",
+        "eligibilityUri": "https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/",
+        "feesAndPricingUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": null,
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    },
+    {
+      "id": "9c393395-f87c-4268-84a4-06a91b34b47c",
+      "name": "Student Access Account",
+      "description": "The Student Access Account is designed to provide support to those aged 17-25 years who are studying at University or undergoing a traineeship/apprenticeship. The account provides full branch access for deposits, withdrawals or counter cheques as well as Visa Debit access.",
+      "url": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+      "lastUpdated": "2026-09-06T23:07:00.559967Z",
+      "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/9c393395-f87c-4268-84a4-06a91b34b47c",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.00",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": []
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "International Transaction Fee via Internet Banking",
+          "additionalInfo": "Transaction fee charged at the result of the processing of an international transaction via Internet Banking.",
+          "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "Visa Debit Cash Advance",
+          "additionalInfo": "Where credit option is selected for cash, or cash and purchase transactions",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "EFTPOS Including declined transactions",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "DISHONOUR",
+          "name": "Dishonour Fee",
+          "additionalInfo": "Where there is not enough money in the account to pay a direct debit that the customer has setup.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "International Transaction Fee Over The Counter",
+          "additionalInfo": "Transaction fee charged at the result of the processing of an International Transaction - staff assisted.",
+          "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PERIODIC",
+          "name": "Account Service Fee",
+          "additionalInfo": "Account service fee exempt on first account, $6.00 per month subsequent accounts.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+          "additionalValue": "P1M",
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "Account service fee exempt on first account",
+              "discountType": "ELIGIBILITY_ONLY",
+              "additionalInfo": "Account service fee exempt on first account, $6.00 per month subsequent accounts.",
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+              "additionalValue": null,
+              "eligibility": [
+                {
+                  "discountEligibilityType": "MAX_AGE",
+                  "additionalInfo": "Members aged 25 years and younger and Members aged 65 years and older",
+                  "additionalInfoUri": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+                  "additionalValue": "25"
+                }
+              ],
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "6.00"
+              },
+              "rateBased": null
+            }
+          ],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PERIODIC",
+          "name": "Account Service Fee",
+          "additionalInfo": "Account service fee exempt on first account, $6.00 per month subsequent accounts.",
+          "additionalInfoUri": null,
+          "additionalValue": "P1M",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PURCHASE",
+          "name": "Foreign Currency Conversion Fees",
+          "additionalInfo": "Foreign Currency will be converted to Australian currency at the wholesale market rate by VISA",
+          "additionalInfoUri": "https://www.capricornian.com.au/documents/conditions-of-use/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "fixedAmount": null,
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.03",
+            "accrualFrequency": null,
+            "amountRange": null
+          },
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "26"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "17"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Online banking and mobile app.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": "SMS and/or email notifications available.",
+          "additionalInfoUri": null,
+          "additionalValue": "Notification via email, SMS or secure message in online banking.",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "BPAY available",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalInfo": null,
+          "additionalInfoUri": "https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/",
+          "additionalValue": "Google Pay",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalInfo": null,
+          "additionalInfoUri": "https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/",
+          "additionalValue": "Apple Pay",
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+        "termsUri": "https://www.capricornian.com.au/documents/conditions-of-use/",
+        "eligibilityUri": "https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/",
+        "feesAndPricingUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": [],
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    },
+    {
+      "id": "b8cd6f23-27b7-4840-ab9d-2f8bfeda0b4f",
+      "name": "Youth Access Account",
+      "description": "The award-winning, Youth Access Account is designed for young people up to the age of 16 years, offering a full transactional account, no account service fee and no minimum monthly balance.",
+      "url": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+      "lastUpdated": "2026-09-06T22:44:02.858256Z",
+      "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/b8cd6f23-27b7-4840-ab9d-2f8bfeda0b4f",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.02",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "0.01",
+              "name": "YOUTH ACCESS ACCOUNT_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": null,
+              "applicabilityConditions": [],
+              "maximumValue": "4999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "Account only for members under 18 years of age.",
+              "additionalInfoUri": null,
+              "rateApplicabilityType": "OTHER",
+              "additionalValue": null
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.015",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "5000.00",
+              "name": "YOUTH ACCESS ACCOUNT_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": null,
+              "applicabilityConditions": [],
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "Account only for members under 18 years of age.",
+              "additionalInfoUri": null,
+              "rateApplicabilityType": "OTHER",
+              "additionalValue": null
+            }
+          ]
+        }
+      ],
+      "fees": [
+        {
+          "feeType": "PERIODIC",
+          "name": "Account Service Fee",
+          "additionalInfo": "First account free for eligible members. $6.00 per month subsequent accounts.",
+          "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+          "additionalValue": "P1M",
+          "currency": "AUD",
+          "discounts": [
+            {
+              "description": "First account free",
+              "discountType": "ELIGIBILITY_ONLY",
+              "additionalInfo": "Account service fee exempt on first account, $6.00 per month subsequent accounts.",
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+              "additionalValue": null,
+              "eligibility": [
+                {
+                  "discountEligibilityType": "OTHER",
+                  "additionalInfo": "Account service fee exempt on first account, $6.00 per month subsequent accounts.",
+                  "additionalInfoUri": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+                  "additionalValue": null
+                }
+              ],
+              "discountMethodUType": "fixedAmount",
+              "fixedAmount": {
+                "amount": "6.00"
+              },
+              "rateBased": null
+            }
+          ],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "EFTPOS Including declined transactions",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "DISHONOUR",
+          "name": "Dishonour Fee",
+          "additionalInfo": "Where there is not enough money in the account to pay a direct debit that the customer has setup.",
+          "additionalInfoUri": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "International Transaction Fee via Internet Banking",
+          "additionalInfo": "Transaction fee charged at the result of the processing of an international transaction via Internet Banking.",
+          "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PAYMENT",
+          "name": "International Transaction Fee Over The Counter",
+          "additionalInfo": "Transaction fee charged at the result of an International Transaction being actioned after a staff assisted transaction.",
+          "additionalInfoUri": "https://www.capricornian.com.au/fees-and-charges/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "WITHDRAWAL",
+          "name": "Visa Debit Cash Advance",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "PURCHASE",
+          "name": "Foreign Currency Conversion Fees",
+          "additionalInfo": "Foreign Currency will be converted to Australian currency at \nthe wholesale market rate by VISA",
+          "additionalInfoUri": "https://www.capricornian.com.au/documents/conditions-of-use/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "fixedAmount": null,
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.03",
+            "accrualFrequency": null,
+            "amountRange": null
+          },
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "OTHER",
+          "additionalInfo": "You will need to become a member of the Credit Union before we can issue The Capricornian Account and Access Facility to you",
+          "additionalInfoUri": null,
+          "additionalValue": null
+        },
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalInfo": "Individuals up to the age of 16",
+          "additionalInfoUri": null,
+          "additionalValue": "16"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "Individuals must be citizens or permanent residents of Australia"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "NPP_ENABLED",
+          "additionalInfo": "Osko by BPAY available.\nAn account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Banking app and Online Banking available.\nAccess is available to online banking features for the product",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalInfo": null,
+          "additionalInfoUri": "https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/",
+          "additionalValue": "Apple Pay",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalInfo": null,
+          "additionalInfoUri": "https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/",
+          "additionalValue": "Google Pay",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "BILL_PAYMENT",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "BPAY available",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NOTIFICATIONS",
+          "additionalInfo": null,
+          "additionalInfoUri": null,
+          "additionalValue": "SMS and/or email notifications available",
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        },
+        {
+          "featureType": "NPP_PAYID",
+          "additionalInfo": "Osko by BPAY available.\nAn account of this product type can be used as the target of an NPP PayID.",
+          "additionalInfoUri": null,
+          "additionalValue": null,
+          "isActivated": "UNKNOWN"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
+        "termsUri": "https://www.capricornian.com.au/documents/conditions-of-use/",
+        "eligibilityUri": "https://www.capricornian.com.au/about-us/reports-policies-disclosures/target-market-determinations/",
+        "feesAndPricingUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+        "bundleUri": null,
+        "additionalOverviewUris": null,
+        "additionalTermsUris": null,
+        "additionalEligibilityUris": null,
+        "additionalFeesAndPricingUris": null,
+        "additionalBundleUris": null
+      }
+    }
+  ]
+}

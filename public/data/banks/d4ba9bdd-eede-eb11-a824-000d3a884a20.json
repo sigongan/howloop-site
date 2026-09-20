@@ -1,1 +1,3221 @@
-{"name":"bankWAW","checkedAt":"2026-09-17T21:41:50.547Z","status":"available","products":[{"id":"WAW_Pension_Plus","name":"WAW Pension Plus","description":"WAW Pension Plus","url":null,"lastUpdated":"2026-06-01T07:50:45.000+10:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Pension_Plus","depositRates":[{"depositRateType":"VARIABLE","rate":"0.012","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"WAW Pension Plus_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"100000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.016","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"WAW Pension Plus_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"100000.01","maximumValue":"250000.00","rateApplicationMethod":"PER_TIER"}]},{"depositRateType":"VARIABLE","rate":"0.0275","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"WAW Pension Plus_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"250000.01","rateApplicationMethod":"PER_TIER"}]}],"fees":[],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"},{"eligibilityType":"PENSION_RECIPIENT"},{"eligibilityType":"MIN_AGE","additionalValue":"55"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT"},{"featureType":"CARD_ACCESS"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"}],"additionalInformation":{}},{"id":"WAW_Youth_Saver","name":"WAW Youth Saver","description":"WAW Youth Saver","url":"https://www.bankwaw.com.au/Save/For-You/Youth-Saver","lastUpdated":"2026-06-01T07:46:55.000+10:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Youth_Saver","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0075","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"},{"depositRateType":"BONUS","rate":"0.0425","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BANK_AUDIT_CERTIFICATE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DIRECT_DEBITS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.40"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SPECIAL_CHQ_CLEARANCE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"},{"eligibilityType":"MIN_AGE","additionalValue":"13"},{"eligibilityType":"MAX_AGE","additionalValue":"25"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"}],"additionalInformation":{"overviewUri":"https://www.bankwaw.com.au/Save/For-You/Youth-Saver","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.bankwaw.com.au/Save/For-You/Youth-Saver","feesAndPricingUri":"https://www.bankwaw.com.au/Save/For-You/Youth-Saver"}},{"id":"WAW_Star_Saver","name":"Star Saver","description":"Star Saver","url":"https://www.bankwaw.com.au/Save/For-Your-Kids/Star-Saver","lastUpdated":"2026-06-01T07:46:10.000+10:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Star_Saver","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0075","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"},{"depositRateType":"BONUS","rate":"0.0425","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CURRENCY_CHEQUE_FEE","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BANK_AUDIT_CERTIFICATE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CURRENCY_CHEQUE_FEE","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SPECIAL_CHQ_CLEARANCE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"MAX_AGE","additionalValue":"12","additionalInfo":"0-12"},{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"},{"eligibilityType":"MIN_AGE","additionalValue":"1","additionalInfo":"0-12"}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"BILL_PAYMENT"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"}],"additionalInformation":{"overviewUri":"https://www.bankwaw.com.au/Save/For-Your-Kids/Star-Saver","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.bankwaw.com.au/Save/For-Your-Kids/Star-Saver","feesAndPricingUri":"https://www.bankwaw.com.au/Save/For-Your-Kids/Star-Saver"}},{"id":"WAW_Christmas_Saver","name":"WAW Christmas Saver","description":"WAW Christmas Saver","url":"https://www.bankwaw.com.au/Save/For-You/Christmas-Saver","lastUpdated":"2026-06-01T07:44:52.000+10:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Christmas_Saver","depositRates":[{"depositRateType":"VARIABLE","rate":"0.029","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CASH","feeType":"PURCHASE","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SPECIAL_CHQ_CLEARANCE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"}],"additionalInformation":{"overviewUri":"https://www.bankwaw.com.au/Save/For-You/Christmas-Saver","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.bankwaw.com.au/Save/For-You/Christmas-Saver","feesAndPricingUri":"https://www.bankwaw.com.au/Save/For-You/Christmas-Saver"}},{"id":"WAW_Bonus_Saver","name":"WAW Bonus Saver","description":"WAW Bonus Saver","url":"https://www.wawcu.com.au/Save/For-You/Bonus-Saver","lastUpdated":"2026-06-01T07:44:09.000+10:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Bonus_Saver","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0005","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"},{"depositRateType":"BONUS","rate":"0.0505","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BPAY_ONLINE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.40"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DIRECT_DEBITS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.40"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CASH","feeType":"PURCHASE","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CURRENCY_CHEQUE_FEE","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVER_COUNTER_STAFF_ASSISTED","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"Over counter, Cash Withdrawal, External Transfer and Bpay","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SPECIAL_CHQ_CLEARANCE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[],"features":[{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"}],"additionalInformation":{"overviewUri":"https://www.wawcu.com.au/Save/For-You/Bonus-Saver","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.wawcu.com.au/Save/For-You/Bonus-Saver","feesAndPricingUri":"https://www.wawcu.com.au/Save/For-You/Bonus-Saver"}},{"id":"WAW_Everyday_Saver","name":"WAW Everyday Saver","description":"WAW Everyday Saver","url":"https://www.bankwaw.com.au/Save/For-You/Everyday-Saver","lastUpdated":"2026-06-01T07:43:16.000+10:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Everyday_Saver","depositRates":[{"depositRateType":"VARIABLE","rate":"0.029","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BPAY_ONLINE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.40"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DIRECT_DEBITS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.40"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVER_COUNTER_STAFF_ASSISTED","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"Over counter, Cash Withdrawal, External Transfer and Bpay","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"}],"additionalInformation":{"overviewUri":"https://www.bankwaw.com.au/Save/For-You/Everyday-Saver","termsUri":"https://www.bankwaw.com.au/Save/For-You/Everyday-Saver","eligibilityUri":"https://www.bankwaw.com.au/Save/For-You/Everyday-Saver","feesAndPricingUri":"https://www.bankwaw.com.au/Save/For-You/Everyday-Saver"}},{"id":"S9_Inactive","name":"Money Managers","description":"Money Managers","url":"https://www.wawcu.com.au/Save/For-Your-Business/SMSF-Saver","lastUpdated":"2026-06-01T07:34:57.000+10:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/S9_Inactive","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0155","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Money Managers_Tier_1","unitOfMeasure":"DOLLAR","minimumValue":"0.00","maximumValue":"19999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"},{"depositRateType":"VARIABLE","rate":"0.018","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Money Managers_Tier_2","unitOfMeasure":"DOLLAR","minimumValue":"20000.00","maximumValue":"49999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"},{"depositRateType":"VARIABLE","rate":"0.02","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Money Managers_Tier_3","unitOfMeasure":"DOLLAR","minimumValue":"50000.00","maximumValue":"99999.99","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"},{"depositRateType":"VARIABLE","rate":"0.0225","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","tiers":[{"name":"Money Managers_Tier_4","unitOfMeasure":"DOLLAR","minimumValue":"100000.00","rateApplicationMethod":"WHOLE_BALANCE"}],"additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BANK_AUDIT_CERTIFICATE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BPAY_ONLINE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.40"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DIRECT_DEBITS","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"0.40"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CASH","feeType":"PURCHASE","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[],"features":[{"featureType":"BILL_PAYMENT"},{"featureType":"DIGITAL_BANKING"},{"featureType":"NPP_PAYID"},{"featureType":"NPP_ENABLED"}],"additionalInformation":{"overviewUri":"https://www.wawcu.com.au/Save/For-Your-Business/SMSF-Saver","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.wawcu.com.au/Save/For-Your-Business/SMSF-Saver","feesAndPricingUri":"https://www.wawcu.com.au/Save/For-Your-Business/SMSF-Saver"}},{"id":"Sub_Account","name":"Sub Account","description":"Sub Account","url":"https://www.bankwaw.com.au/Transact/For-You/Everyday-Transact","lastUpdated":"2025-12-12T15:47:58.000+11:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/Sub_Account","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BANK_AUDIT_CERTIFICATE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CARD_REPLACEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"EVERYDAY_TRANSACTION_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"Fee is waived when $2,000 per month is deposited into account","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CASH","feeType":"PURCHASE","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CURRENCY_CHEQUE_FEE","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CHEQUE_BOOK_ORDER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"25 book for $5.00, 50 book for $7.50, 100 book for $10.00","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_AM_ENQUIRY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_ATM_WITHDRAWAL_FEE","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVER_COUNTER_STAFF_ASSISTED","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"Over counter, Cash Withdrawal, External Transfer and Bpay","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"PERSONAL_CHEQUE_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SPECIAL_CHQ_CLEARANCE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_CHQ_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT"},{"featureType":"CARD_ACCESS"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.bankwaw.com.au/Transact/For-You/Everyday-Transact","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.bankwaw.com.au/Transact/For-You/Everyday-Transact","feesAndPricingUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}},{"id":"WAW_Youth_Transact","name":"Youth Transact","description":"Youth Transact","url":"https://www.bankwaw.com.au/Transact/For-You/Youth-Transact","lastUpdated":"2025-11-17T11:57:40.000+11:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Youth_Transact","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CARD_REPLACEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CASH","feeType":"PURCHASE","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CURRENCY_CHEQUE_FEE","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_AM_ENQUIRY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_ATM_WITHDRAWAL_FEE","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_CHQ_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"},{"eligibilityType":"MIN_AGE","additionalValue":"13"},{"eligibilityType":"MIN_AGE","additionalValue":"25"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT"},{"featureType":"CARD_ACCESS"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.bankwaw.com.au/Transact/For-You/Youth-Transact","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.bankwaw.com.au/Transact/For-You/Youth-Transact","feesAndPricingUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}},{"id":"WAW_Mortgage_Offset","name":"WAW Mortgage Offset","description":"WAW Mortgage Offset","url":"https://www.bankwaw.com.au/Transact/For-You/Mortgage-Offset","lastUpdated":"2025-11-17T11:56:03.000+11:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Mortgage_Offset","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BANK_AUDIT_CERTIFICATE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CARD_REPLACEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CHEQUE_BOOK_ORDER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"25 book for $5.00, 50 book for $7.50, 100 book for $10.00","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DEPOSIT_BOOKS","feeType":"PURCHASE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"7.50"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE_-_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CASH","feeType":"PURCHASE","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CURRENCY_CHEQUE_FEE","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_AM_ENQUIRY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_ATM_WITHDRAWAL_FEE","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"MORTGAGE_OFFSET_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"6.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVER_COUNTER_STAFF_ASSISTED","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"Over counter, Cash Withdrawal, External Transfer and Bpay","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"PERSONAL_CHEQUE_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SPECIAL_CHQ_CLEARANCE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_CHQ_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"5.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT"},{"featureType":"CARD_ACCESS"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"UNLIMITED_TXNS"},{"featureType":"OFFSET"}],"additionalInformation":{"overviewUri":"https://www.bankwaw.com.au/Transact/For-You/Mortgage-Offset","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.bankwaw.com.au/Transact/For-You/Mortgage-Offset","feesAndPricingUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}},{"id":"WAW_Disability_Support","name":"Disability Support","description":"Disability Support","url":"https://www.bankwaw.com.au/Transact/For-You/Disability-Support","lastUpdated":"2025-11-17T11:47:28.000+11:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Disability_Support","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CARD_REPLACEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CHEQUE_BOOK_ORDER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"25 book for $5.00, 50 book for $7.50, 100 book for $10.00","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DEPOSIT_BOOKS","feeType":"PURCHASE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"7.50"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE_-_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CASH","feeType":"PURCHASE","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CURRENCY_CHEQUE_FEE","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CURRENCY_CHEQUE_FEE","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_AM_ENQUIRY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_ATM_WITHDRAWAL_FEE","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SPECIAL_CHQ_CLEARANCE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_CHQ_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"},{"eligibilityType":"PENSION_RECIPIENT"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT"},{"featureType":"CARD_ACCESS"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.bankwaw.com.au/Transact/For-You/Disability-Support","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.bankwaw.com.au/Transact/For-You/Disability-Support","feesAndPricingUri":"https://www.bankwaw.com.au/Transact/For-You/Disability-Support"}},{"id":"WAW_Line_of_Credit","name":"WAW Line of Credit","description":"WAW Line of Credit","url":null,"lastUpdated":"2025-01-17T14:25:14.000+11:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Line_of_Credit","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M"}],"fees":[],"eligibility":[{"eligibilityType":"NATURAL_PERSON"},{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT"},{"featureType":"CARD_ACCESS"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"}],"additionalInformation":{}},{"id":"S55_2","name":"Everyday Transact","description":"Everyday Transact","url":"https://www.wawcu.com.au/Transact/For-Your-Business/Business-Transact","lastUpdated":"2024-06-06T15:25:09.000+10:00","source":"https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/S55_2","depositRates":[{"depositRateType":"VARIABLE","rate":"0.0001","calculationFrequency":"P1D","applicationType":"PERIODIC","applicationFrequency":"P1M","additionalInfoUri":"https://www.bankwaw.com.au/Links/Interest-Rates"}],"fees":[{"name":"ARCHIVE_SEARCH_FEE","feeType":"PAYMENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"50.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"50.00 per hour","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BANK_AUDIT_CERTIFICATE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"BUSINESS_TRANSACT_ACCOUNT_FEE","feeType":"PERIODIC","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CARD_REPLACEMENT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CHEQUE_BOOK_ORDER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"25 book for $5.00, 50 book for $7.50, 100 book for $10.00","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"CORPORATE_CHEQUE_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DEPOSIT_BOOKS","feeType":"PURCHASE","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"7.50"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE.","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"DISHONOUR_FEE_-_CHEQUE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"ELECTRONIC_PAYMENT_TRACE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"30.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CASH","feeType":"PURCHASE","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"FOREIGN_CURRENCY_CHEQUE_FEE","feeType":"DEPOSIT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INACTIVE_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_AM_ENQUIRY","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_ATM_WITHDRAWAL_FEE","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"3.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"INTERNATIONAL_FEE","feeType":"TRANSACTION","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"LARGE_CASH_WITHDRAWAL","feeType":"PAYMENT","feeMethodUType":"rateBased","rateBased":{"rateType":"TRANSACTION","rate":"0.0","amountRange":{}},"feeCap":"0.00","currency":"AUD","additionalInfo":"Price on Application","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVERDRAWN_ACCOUNT_FEE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"OVER_COUNTER_STAFF_ASSISTED","feeType":"WITHDRAWAL","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfo":"Over counter, Cash Withdrawal, External Transfer and Bpay","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"PERSONAL_CHEQUE_FEE","feeType":"TRANSACTION","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"1.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SPECIAL_CHQ_CLEARANCE","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"20.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STATEMENT_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"2.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"STOP_CHQ_REQUEST","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_INWARD_TRANSFER","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"10.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"},{"name":"SWIFT_OUTWARD_PAYMENT","feeType":"EVENT","feeMethodUType":"fixedAmount","fixedAmount":{"amount":"15.00"},"feeCap":"0.00","currency":"AUD","additionalInfoUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"}],"eligibility":[{"eligibilityType":"BUSINESS"},{"eligibilityType":"RESIDENCY_STATUS"}],"constraints":[],"features":[{"featureType":"ADDITIONAL_CARDS"},{"featureType":"BILL_PAYMENT"},{"featureType":"CARD_ACCESS"},{"featureType":"DIGITAL_BANKING"},{"featureType":"DIGITAL_WALLET"},{"featureType":"NPP_ENABLED"},{"featureType":"NPP_PAYID"},{"featureType":"UNLIMITED_TXNS"}],"additionalInformation":{"overviewUri":"https://www.wawcu.com.au/Transact/For-Your-Business/Business-Transact","termsUri":"https://www.bankwaw.com.au/Support/Disclosure-Documents","eligibilityUri":"https://www.wawcu.com.au/Transact/For-Your-Business/Business-Transact","feesAndPricingUri":"https://www.wawcu.com.au/Transact/For-Your-Business/Business-Transact"}}]}
+{
+  "name": "bankWAW",
+  "checkedAt": "2026-09-20T22:12:05.244Z",
+  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "status": "available",
+  "products": [
+    {
+      "id": "S55_2",
+      "name": "Everyday Transact",
+      "description": "Everyday Transact",
+      "url": "https://www.wawcu.com.au/Transact/For-Your-Business/Business-Transact",
+      "lastUpdated": "2024-06-06T15:25:09.000+10:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/S55_2",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BANK_AUDIT_CERTIFICATE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BUSINESS_TRANSACT_ACCOUNT_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CARD_REPLACEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CHEQUE_BOOK_ORDER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "25 book for $5.00, 50 book for $7.50, 100 book for $10.00",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DEPOSIT_BOOKS",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "7.50"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE_-_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CASH",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CHEQUE_FEE",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_AM_ENQUIRY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_ATM_WITHDRAWAL_FEE",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVER_COUNTER_STAFF_ASSISTED",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Over counter, Cash Withdrawal, External Transfer and Bpay",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "PERSONAL_CHEQUE_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SPECIAL_CHQ_CLEARANCE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_CHQ_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "BUSINESS"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "CARD_ACCESS"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.wawcu.com.au/Transact/For-Your-Business/Business-Transact",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.wawcu.com.au/Transact/For-Your-Business/Business-Transact",
+        "feesAndPricingUri": "https://www.wawcu.com.au/Transact/For-Your-Business/Business-Transact"
+      }
+    },
+    {
+      "id": "S9_Inactive",
+      "name": "Money Managers",
+      "description": "Money Managers",
+      "url": "https://www.wawcu.com.au/Save/For-Your-Business/SMSF-Saver",
+      "lastUpdated": "2026-06-01T07:34:57.000+10:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/S9_Inactive",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0155",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Money Managers_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "19999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.018",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Money Managers_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "20000.00",
+              "maximumValue": "49999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.02",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Money Managers_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "50000.00",
+              "maximumValue": "99999.99",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0225",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "Money Managers_Tier_4",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "100000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE"
+            }
+          ],
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BANK_AUDIT_CERTIFICATE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BPAY_ONLINE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.40"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DIRECT_DEBITS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.40"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CASH",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.wawcu.com.au/Save/For-Your-Business/SMSF-Saver",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.wawcu.com.au/Save/For-Your-Business/SMSF-Saver",
+        "feesAndPricingUri": "https://www.wawcu.com.au/Save/For-Your-Business/SMSF-Saver"
+      }
+    },
+    {
+      "id": "Sub_Account",
+      "name": "Sub Account",
+      "description": "Sub Account",
+      "url": "https://www.bankwaw.com.au/Transact/For-You/Everyday-Transact",
+      "lastUpdated": "2025-12-12T15:47:58.000+11:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/Sub_Account",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BANK_AUDIT_CERTIFICATE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CARD_REPLACEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "EVERYDAY_TRANSACTION_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Fee is waived when $2,000 per month is deposited into account",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CASH",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CHEQUE_FEE",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CHEQUE_BOOK_ORDER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "25 book for $5.00, 50 book for $7.50, 100 book for $10.00",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_AM_ENQUIRY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_ATM_WITHDRAWAL_FEE",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVER_COUNTER_STAFF_ASSISTED",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Over counter, Cash Withdrawal, External Transfer and Bpay",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "PERSONAL_CHEQUE_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SPECIAL_CHQ_CLEARANCE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_CHQ_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "CARD_ACCESS"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankwaw.com.au/Transact/For-You/Everyday-Transact",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.bankwaw.com.au/Transact/For-You/Everyday-Transact",
+        "feesAndPricingUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+      }
+    },
+    {
+      "id": "WAW_Bonus_Saver",
+      "name": "WAW Bonus Saver",
+      "description": "WAW Bonus Saver",
+      "url": "https://www.wawcu.com.au/Save/For-You/Bonus-Saver",
+      "lastUpdated": "2026-06-01T07:44:09.000+10:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Bonus_Saver",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0005",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0505",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BPAY_ONLINE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.40"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DIRECT_DEBITS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.40"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CASH",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CHEQUE_FEE",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVER_COUNTER_STAFF_ASSISTED",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Over counter, Cash Withdrawal, External Transfer and Bpay",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SPECIAL_CHQ_CLEARANCE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.wawcu.com.au/Save/For-You/Bonus-Saver",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.wawcu.com.au/Save/For-You/Bonus-Saver",
+        "feesAndPricingUri": "https://www.wawcu.com.au/Save/For-You/Bonus-Saver"
+      }
+    },
+    {
+      "id": "WAW_Christmas_Saver",
+      "name": "WAW Christmas Saver",
+      "description": "WAW Christmas Saver",
+      "url": "https://www.bankwaw.com.au/Save/For-You/Christmas-Saver",
+      "lastUpdated": "2026-06-01T07:44:52.000+10:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Christmas_Saver",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.029",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CASH",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SPECIAL_CHQ_CLEARANCE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankwaw.com.au/Save/For-You/Christmas-Saver",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.bankwaw.com.au/Save/For-You/Christmas-Saver",
+        "feesAndPricingUri": "https://www.bankwaw.com.au/Save/For-You/Christmas-Saver"
+      }
+    },
+    {
+      "id": "WAW_Disability_Support",
+      "name": "Disability Support",
+      "description": "Disability Support",
+      "url": "https://www.bankwaw.com.au/Transact/For-You/Disability-Support",
+      "lastUpdated": "2025-11-17T11:47:28.000+11:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Disability_Support",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CARD_REPLACEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CHEQUE_BOOK_ORDER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "25 book for $5.00, 50 book for $7.50, 100 book for $10.00",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DEPOSIT_BOOKS",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "7.50"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE_-_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CASH",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CHEQUE_FEE",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CHEQUE_FEE",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_AM_ENQUIRY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_ATM_WITHDRAWAL_FEE",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SPECIAL_CHQ_CLEARANCE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_CHQ_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "eligibilityType": "PENSION_RECIPIENT"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "CARD_ACCESS"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankwaw.com.au/Transact/For-You/Disability-Support",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.bankwaw.com.au/Transact/For-You/Disability-Support",
+        "feesAndPricingUri": "https://www.bankwaw.com.au/Transact/For-You/Disability-Support"
+      }
+    },
+    {
+      "id": "WAW_Everyday_Saver",
+      "name": "WAW Everyday Saver",
+      "description": "WAW Everyday Saver",
+      "url": "https://www.bankwaw.com.au/Save/For-You/Everyday-Saver",
+      "lastUpdated": "2026-06-01T07:43:16.000+10:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Everyday_Saver",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.029",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BPAY_ONLINE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.40"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DIRECT_DEBITS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.40"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVER_COUNTER_STAFF_ASSISTED",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Over counter, Cash Withdrawal, External Transfer and Bpay",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankwaw.com.au/Save/For-You/Everyday-Saver",
+        "termsUri": "https://www.bankwaw.com.au/Save/For-You/Everyday-Saver",
+        "eligibilityUri": "https://www.bankwaw.com.au/Save/For-You/Everyday-Saver",
+        "feesAndPricingUri": "https://www.bankwaw.com.au/Save/For-You/Everyday-Saver"
+      }
+    },
+    {
+      "id": "WAW_Line_of_Credit",
+      "name": "WAW Line of Credit",
+      "description": "WAW Line of Credit",
+      "url": null,
+      "lastUpdated": "2025-01-17T14:25:14.000+11:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Line_of_Credit",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M"
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "CARD_ACCESS"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        }
+      ],
+      "additionalInformation": {}
+    },
+    {
+      "id": "WAW_Mortgage_Offset",
+      "name": "WAW Mortgage Offset",
+      "description": "WAW Mortgage Offset",
+      "url": "https://www.bankwaw.com.au/Transact/For-You/Mortgage-Offset",
+      "lastUpdated": "2025-11-17T11:56:03.000+11:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Mortgage_Offset",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BANK_AUDIT_CERTIFICATE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CARD_REPLACEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CHEQUE_BOOK_ORDER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "25 book for $5.00, 50 book for $7.50, 100 book for $10.00",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DEPOSIT_BOOKS",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "7.50"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE_-_CHEQUE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CASH",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CHEQUE_FEE",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_AM_ENQUIRY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_ATM_WITHDRAWAL_FEE",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "MORTGAGE_OFFSET_FEE",
+          "feeType": "PERIODIC",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "6.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVER_COUNTER_STAFF_ASSISTED",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Over counter, Cash Withdrawal, External Transfer and Bpay",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "PERSONAL_CHEQUE_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SPECIAL_CHQ_CLEARANCE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_CHQ_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "CARD_ACCESS"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "OFFSET"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankwaw.com.au/Transact/For-You/Mortgage-Offset",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.bankwaw.com.au/Transact/For-You/Mortgage-Offset",
+        "feesAndPricingUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+      }
+    },
+    {
+      "id": "WAW_Pension_Plus",
+      "name": "WAW Pension Plus",
+      "description": "WAW Pension Plus",
+      "url": null,
+      "lastUpdated": "2026-06-01T07:50:45.000+10:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Pension_Plus",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.012",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "WAW Pension Plus_Tier_1",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "0.00",
+              "maximumValue": "100000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.016",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "WAW Pension Plus_Tier_2",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "100000.01",
+              "maximumValue": "250000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0275",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "tiers": [
+            {
+              "name": "WAW Pension Plus_Tier_3",
+              "unitOfMeasure": "DOLLAR",
+              "minimumValue": "250000.01",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ]
+        }
+      ],
+      "fees": [],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "eligibilityType": "PENSION_RECIPIENT"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "55"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "CARD_ACCESS"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        }
+      ],
+      "additionalInformation": {}
+    },
+    {
+      "id": "WAW_Star_Saver",
+      "name": "Star Saver",
+      "description": "Star Saver",
+      "url": "https://www.bankwaw.com.au/Save/For-Your-Kids/Star-Saver",
+      "lastUpdated": "2026-06-01T07:46:10.000+10:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Star_Saver",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0075",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0425",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CHEQUE_FEE",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BANK_AUDIT_CERTIFICATE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CHEQUE_FEE",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SPECIAL_CHQ_CLEARANCE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "12",
+          "additionalInfo": "0-12"
+        },
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "1",
+          "additionalInfo": "0-12"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankwaw.com.au/Save/For-Your-Kids/Star-Saver",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.bankwaw.com.au/Save/For-Your-Kids/Star-Saver",
+        "feesAndPricingUri": "https://www.bankwaw.com.au/Save/For-Your-Kids/Star-Saver"
+      }
+    },
+    {
+      "id": "WAW_Youth_Saver",
+      "name": "WAW Youth Saver",
+      "description": "WAW Youth Saver",
+      "url": "https://www.bankwaw.com.au/Save/For-You/Youth-Saver",
+      "lastUpdated": "2026-06-01T07:46:55.000+10:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Youth_Saver",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0075",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.0425",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "BANK_AUDIT_CERTIFICATE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DIRECT_DEBITS",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.40"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SPECIAL_CHQ_CLEARANCE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "13"
+        },
+        {
+          "eligibilityType": "MAX_AGE",
+          "additionalValue": "25"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankwaw.com.au/Save/For-You/Youth-Saver",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.bankwaw.com.au/Save/For-You/Youth-Saver",
+        "feesAndPricingUri": "https://www.bankwaw.com.au/Save/For-You/Youth-Saver"
+      }
+    },
+    {
+      "id": "WAW_Youth_Transact",
+      "name": "Youth Transact",
+      "description": "Youth Transact",
+      "url": "https://www.bankwaw.com.au/Transact/For-You/Youth-Transact",
+      "lastUpdated": "2025-11-17T11:57:40.000+11:00",
+      "source": "https://onlinebanking.wawcu.com.au/OpenBanking/cds-au/v1/banking/products/WAW_Youth_Transact",
+      "depositRates": [
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.0001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Links/Interest-Rates"
+        }
+      ],
+      "fees": [
+        {
+          "name": "ARCHIVE_SEARCH_FEE",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "50.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "50.00 per hour",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CARD_REPLACEMENT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "CORPORATE_CHEQUE_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "DISHONOUR_FEE.",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "ELECTRONIC_PAYMENT_TRACE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CASH",
+          "feeType": "PURCHASE",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "FOREIGN_CURRENCY_CHEQUE_FEE",
+          "feeType": "DEPOSIT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INACTIVE_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_AM_ENQUIRY",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "1.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_ATM_WITHDRAWAL_FEE",
+          "feeType": "WITHDRAWAL",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "INTERNATIONAL_FEE",
+          "feeType": "TRANSACTION",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "LARGE_CASH_WITHDRAWAL",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "rateBased",
+          "rateBased": {
+            "rateType": "TRANSACTION",
+            "rate": "0.0",
+            "amountRange": {}
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfo": "Price on Application",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "OVERDRAWN_ACCOUNT_FEE",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STATEMENT_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "2.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_CHQ_REQUEST",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "STOP_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_INWARD_TRANSFER",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        },
+        {
+          "name": "SWIFT_OUTWARD_PAYMENT",
+          "feeType": "EVENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "feeCap": "0.00",
+          "currency": "AUD",
+          "additionalInfoUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+        }
+      ],
+      "eligibility": [
+        {
+          "eligibilityType": "NATURAL_PERSON"
+        },
+        {
+          "eligibilityType": "RESIDENCY_STATUS"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "13"
+        },
+        {
+          "eligibilityType": "MIN_AGE",
+          "additionalValue": "25"
+        }
+      ],
+      "constraints": [],
+      "features": [
+        {
+          "featureType": "ADDITIONAL_CARDS"
+        },
+        {
+          "featureType": "BILL_PAYMENT"
+        },
+        {
+          "featureType": "CARD_ACCESS"
+        },
+        {
+          "featureType": "DIGITAL_BANKING"
+        },
+        {
+          "featureType": "DIGITAL_WALLET"
+        },
+        {
+          "featureType": "NPP_ENABLED"
+        },
+        {
+          "featureType": "NPP_PAYID"
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        }
+      ],
+      "additionalInformation": {
+        "overviewUri": "https://www.bankwaw.com.au/Transact/For-You/Youth-Transact",
+        "termsUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents",
+        "eligibilityUri": "https://www.bankwaw.com.au/Transact/For-You/Youth-Transact",
+        "feesAndPricingUri": "https://www.bankwaw.com.au/Support/Disclosure-Documents/Savings-Transaction-Accounts"
+      }
+    }
+  ]
+}
