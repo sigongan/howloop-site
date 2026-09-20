@@ -1,8 +1,19 @@
 ---
 import Base from '../../layouts/Base.astro';
 import TaskPicker from '../../components/TaskPicker.astro';
+import ToolIcon from '../../components/ToolIcon.astro';
 ---
-<Base title="Free Australian money calculators" description="Calculate compound interest, mortgage repayments, savings goals and emergency funds. Free, with clear assumptions and downloadable results.">
-<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Calculators</div><h1>Choose your calculator.</h1><p>Add your numbers. Results update as you go.</p></header>
-<div class="hl-wrap hl-page-main"><TaskPicker calculatorsOnly/><aside class="hl-help-strip"><p>All amounts in AUD. Calculations run in your browser.</p><a href="/methodology">Formulas & assumptions →</a><a href="/learn">Money guides →</a></aside></div>
+<Base title="Free Australian money calculators" description="Work out take-home pay, compound interest, mortgage repayments, home deposits, savings goals and emergency funds. Free Australian money calculators.">
+<header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Calculators</div><h1>Choose your calculator.</h1><p>Find your topic, then choose what you want to work out.</p></header>
+<div class="hl-wrap hl-page-main">
+  <TaskPicker calculatorsOnly/>
+  <aside class="tool-directory-help" aria-labelledby="calculator-help-title">
+    <p class="tool-directory-note"><ToolIcon name="shield"/><span>Free to use. All amounts in AUD. Calculations run in your browser.</span></p>
+    <h2 id="calculator-help-title">Understand the numbers.</h2>
+    <div class="tool-help-grid">
+      <a class="tool-help-card" data-money-area="learn" href="/learn/"><span class="tool-help-icon"><ToolIcon name="book"/></span><span><strong>Learn about money</strong><small>Simple guides with practical examples.</small></span><ToolIcon name="arrow"/></a>
+      <a class="tool-help-card" href="/methodology/"><span class="tool-help-icon"><ToolIcon name="checklist"/></span><span><strong>How we calculate</strong><small>See the formulas and assumptions.</small></span><ToolIcon name="arrow"/></a>
+    </div>
+  </aside>
+</div>
 </Base>
