@@ -2,9 +2,9 @@
   {
     "slug": "how-compound-interest-works",
     "datePublished": "2026-09-18",
-    "dateModified": "2026-09-18",
+    "dateModified": "2026-09-21",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "Added a short explanation, simple example and knowledge check; retained the detailed guide and source record.",
+    "updateNote": "21 September 2026: added a three-step illustrated $100 example and an explanation of interest on interest. Updated the knowledge check to match; retained the detailed guide and source-check date.",
     "title": "How does interest earn more interest?",
     "category": "SAVING",
     "minutes": 5,
@@ -61,32 +61,32 @@
     "group": "everyday",
     "takeaway": "Once interest joins your savings, it can earn interest too.",
     "example": {
-      "title": "A tiny snowball, in dollars",
+      "title": "Your interest earns interest",
       "rows": [
         [
           "Start with",
-          "$1,000"
+          "$100"
         ],
         [
           "After year 1 at 5%",
-          "$1,050"
+          "$105"
         ],
         [
           "After year 2 at 5%",
-          "$1,102.50"
+          "$110.25"
         ]
       ],
       "note": "Teaching example: annual compounding, unchanged 5% rate, no deposits, withdrawals, fees or tax."
     },
     "quiz": {
-      "question": "Why is the second year’s interest $52.50 rather than $50?",
+      "question": "Why is the second year's interest $5.25 rather than $5?",
       "choices": [
         "The rate doubled",
         "The first year’s interest also earns interest",
         "The bank added a deposit"
       ],
       "answer": 1,
-      "explanation": "5% of $1,050 is $52.50. The rate stayed the same; the balance grew."
+      "explanation": "Your original $100 earns $5 again, and last year's $5 interest earns another 25 cents. 5% of $105 is $5.25."
     },
     "reviewDays": 90
   },

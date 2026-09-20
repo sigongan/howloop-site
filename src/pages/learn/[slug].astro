@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import guides from '../../data/learning.json';
 import SourceStatus from '../../components/SourceStatus.astro';
 import PolicyNote from '../../components/PolicyNote.astro';
+import CompoundInterestLesson from '../../components/CompoundInterestLesson.astro';
 import {formatDate} from '../../lib/content-status.mjs';
 import '../../styles/learning.css';
 export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
@@ -18,7 +19,7 @@ const states=[['QLD','https://qro.qld.gov.au/duties/transfer-duty/calculate/'],[
 <p class="lesson-byline">By <a href="/about/#publisher">Howloop</a> · Updated {formatDate(modified)} · <a href="#sources">Sources & update record</a></p>
 <p class="lesson-takeaway">{guide.takeaway}</p>
 {guide.policyIds?.map(id=><PolicyNote id={id}/>)}
-<figure class="lesson-example"><figcaption>ONE SIMPLE EXAMPLE · {guide.example.title}</figcaption><dl>{guide.example.rows.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><p>{guide.example.note}</p></figure>
+{guide.slug === 'how-compound-interest-works' ? <CompoundInterestLesson context="guide"/> : <figure class="lesson-example"><figcaption>ONE SIMPLE EXAMPLE · {guide.example.title}</figcaption><dl>{guide.example.rows.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><p>{guide.example.note}</p></figure>}
 {guide.stateLinks&&<section id="state-duty"><h2>Choose your state or territory</h2><p class="hl-help">Official duty tools and guidance. Check concessions, foreign-buyer charges and the tool's exclusions.</p><nav class="duty-states" aria-label="Official state duty guidance">{states.map(([name,href])=><a href={href} target="_blank" rel="noopener noreferrer">{name} ↗</a>)}</nav></section>}
 <div class="lesson-action"><a class="hl-button" href={action.href} rel={action.href.startsWith('https:')?'noopener noreferrer':undefined}>{action.label}<span aria-hidden="true">→</span></a></div>
 
