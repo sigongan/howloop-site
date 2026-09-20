@@ -132,11 +132,13 @@ for (const bank of manifest.banks) {
   let snapshot;
   try { snapshot = JSON.parse(await read(path.join(dist, 'data/banks', bank.id + '.json'))); } catch { fail('Missing bank snapshot: ' + bank.id); continue; }
   if (snapshot.name !== bank.name || snapshot.products.length !== bank.productCount) fail('Bank snapshot/manifest mismatch: ' + bank.name);
-  if (!Number.isFinite(Date.parse(snapshot.checkedAt))) fail('Bank has an invalid checked date: ' + bank.name);
+  const neverRetrieved = snapshot.checkedAt === null && snapshot.status === 'unavailable' && snapshot.products.length === 0;
+  if (!neverRetrieved && !Number.isFinite(Date.parse(snapshot.checkedAt))) fail('Bank has an invalid checked date: ' + bank.name);
+  if (snapshot.status !== bank.status || snapshot.checkedAt !== bank.checkedAt) fail('Bank status/date mismatch: ' + bank.name);
   for (const product of snapshot.products) {
     productCount++;
     if (!product.source?.startsWith('https://')) fail('Product source must use HTTPS: ' + bank.name);
-    for (const rate of product.depositRates ?? []) if (!Number.isFinite(Number(rate.rate))) fail('Non-finite bank rate: ' + bank.name);
+    for (const rate of product.depositRates ?? []) if (rate.rate == null || String(rate.rate).trim() === '' || !Number.isFinite(Number(rate.rate))) fail('Non-finite bank rate: ' + bank.name);
   }
 }
 warnings.push('This automated result does not assess editorial quality, ownership verification, email delivery, consent compliance or Google approval.');

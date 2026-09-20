@@ -15,7 +15,7 @@ const {kind='compound-interest'}=Astro.props;
 <label class="hl-field"><span>Find a bank or provider</span><input type="search" data-bank-search placeholder="Search by name…" aria-label="Search banks"/></label>
 <label class="hl-field"><span>Bank or provider</span><select data-bank-select aria-label="Bank or provider"><option value="">Custom / illustrative rate</option>{banks.banks.map(b=><option value={b.id}>{b.name}{b.productCount===0?' — no product data':''}</option>)}</select></label>
 <label class="hl-field" data-product-field hidden><span>Deposit product</span><select data-product-select aria-label="Deposit product"><option value="">Choose a product</option></select></label>
-<p class="hl-product-status" data-bank-status aria-live="polite">Published product data checked {new Date(banks.fetchedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'})}. Not a whole-market comparison.</p>
+<p class="hl-product-status" data-bank-status aria-live="polite">Weekly bank feed. Latest refresh {new Date(banks.fetchedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'})}. Select a bank to see its own retrieval date.</p>
 <div data-product-info></div>
 </div><button type="button" class="hl-button calc-bank-done" data-close-bank>Back to my calculation →</button></dialog>
 <p class="hl-rate-model" data-rate-model>Custom constant rate · monthly compounding</p>

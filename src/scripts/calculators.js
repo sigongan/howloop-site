@@ -1,3 +1,4 @@
+import {bankFreshness} from '../lib/bank-freshness.mjs';
 import {parseAmount,prepareMoneyFields} from '../lib/money-input.mjs';
 import {QUICK_SAVINGS_KEY,readQuickSavings} from '../lib/quick-savings.mjs';
 import {compareBankScenarios} from '../lib/bank-scenarios.mjs';
@@ -143,7 +144,7 @@ function selectProduct(auto=true){
  if(!product){q('.calc-bank-done').textContent='Back to my calculation';output('rate-model','Custom constant rate - monthly compounding');setRateHint('Rate retained · choose a product or edit your rate');calculate();return;}
  const overview=append(info,'div','','bank-rate-overview');overview.setAttribute('data-rate-summary','');
  const modelCandidate=baseRateModel(product);
- if(modelCandidate&&auto){
+ if(modelCandidate&&auto&&snapshotUsable){
   model=modelCandidate;modelLabel=product.name;form.elements.annualRate.value=model(inputs().principal).toFixed(4);
   setRateHint('Base rate only · excludes bonus and intro. Edit to override.');
  }else{
@@ -185,8 +186,8 @@ if(!id){output('bank-status','Using your own rate. Bank rates have not been appl
 setRateHint('Rate unchanged · choose a product or edit your rate',true);
 output('bank-status','Loading published product data…');
 try{const response=await fetch('/data/banks/'+encodeURIComponent(id)+'.json',{signal:AbortSignal.timeout(12000)});if(!response.ok)throw Error();const data=await response.json();if(version!==requestVersion)return;products=data.products;
-const date=new Date(data.checkedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'});const age=Date.now()-Date.parse(data.checkedAt);const stale=!Number.isFinite(age)||age<0||age>7*86400000;snapshotUsable=!stale&&data.status==='available';
-output('bank-status','Retrieved '+date+'. '+(stale?'Older than 7 days: verify rates with the provider before using. ':'')+(data.status==='partial'?'Some product requests were unavailable. ':'')+(products.length?products.length+' published products.': 'No deposit product data available. Enter your own confirmed rate.'));
+const freshness=bankFreshness(data);snapshotUsable=freshness.usable;
+output('bank-status',freshness.note+' '+(products.length?products.length+' published products.':'No deposit product data available. Enter your own confirmed rate.')+(!snapshotUsable&&products.length?' Saved rates are for reference; enter a rate confirmed with the bank.':''));
 if(products.length){q('[data-product-field]').hidden=false;products.sort((a,b)=>a.name.localeCompare(b.name)).forEach(p=>q('[data-product-select]').add(new Option(p.name,p.id)));if(productId&&products.some(p=>p.id===productId)){q('[data-product-select]').value=productId;selectProduct(auto);}}
 calculate();
 }catch(e){if(version!==requestVersion)return;output('bank-status','Product data could not load. You can still enter a rate confirmed with your provider.');setRateHint('Rate unchanged · confirm or edit before using',true);calculate();}
