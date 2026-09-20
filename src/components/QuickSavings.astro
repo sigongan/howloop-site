@@ -1,0 +1,51 @@
+---
+import {savings} from '../lib/finance.mjs';
+const example=savings({principal:10000,contribution:500,annualRate:4.5,years:10});
+const money=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
+---
+<section class="quick-savings" id="try-savings" aria-labelledby="quick-title">
+<div class="quick-heading"><h2 id="quick-title">How much could I save?</h2><p>Try your numbers. See the difference.</p></div>
+<form id="quick-savings-form" novalidate>
+  <div class="quick-inputs">
+    <label for="quick-principal">Saved so far<div class="quick-money"><span aria-hidden="true">$</span><input id="quick-principal" name="principal" type="text" inputmode="decimal" value="10,000" data-money-input data-min="0" data-max="100000000" required aria-describedby="quick-currency"/></div></label>
+    <label for="quick-contribution">Add each month<div class="quick-money"><span aria-hidden="true">$</span><input id="quick-contribution" name="contribution" type="text" inputmode="decimal" value="500" data-money-input data-min="0" data-max="1000000" required aria-describedby="quick-currency"/></div></label>
+  </div>
+  <details class="quick-settings"><summary><span data-quick-assumptions>10 years · 4.5% yearly rate</span><span class="quick-edit">Change</span></summary><div class="quick-inputs"><label for="quick-years">Years<input id="quick-years" name="years" type="number" min="1" max="50" step="1" required value="10"/></label><label for="quick-rate">Interest rate (% p.a.)<input id="quick-rate" name="annualRate" type="number" min="0" max="30" step="0.01" required value="4.5"/></label></div><p>This is an example rate, not a bank offer.</p></details>
+  <div class="quick-result" aria-live="polite" aria-atomic="true"><span data-quick-label>In 10 years, you could have</span><strong data-quick-total>{money(example.balance)}</strong><div class="quick-bar" aria-hidden="true"><span data-quick-deposit-bar style={'width:'+example.deposits/example.balance*100+'%'}></span></div><dl><div><dt><i class="quick-dot-deposits" aria-hidden="true"></i>Money you put in</dt><dd data-quick-deposits>{money(example.deposits)}</dd></div><div><dt><i class="quick-dot-interest" aria-hidden="true"></i>Interest earned</dt><dd data-quick-interest>{money(example.interest)}</dd></div></dl></div>
+  <p class="quick-error" data-quick-error role="status" hidden>Check your amounts, rate and years to see an estimate.</p>
+  <p class="quick-disclaimer" id="quick-currency">AUD · Example only. Monthly compounding at a constant rate. Before tax, fees and inflation.</p>
+  <button class="home-action quick-continue" type="submit" disabled>Explore my savings plan <span aria-hidden="true">→</span></button>
+  <p class="quick-storage-note">Your numbers stay in this browser.</p>
+</form>
+<noscript><p>Enable JavaScript to change this example. <a href="/learn/how-compound-interest-works/">Read how compound interest works.</a></p></noscript>
+</section>
+<script>
+import {savings} from '../lib/finance.mjs';
+import {parseAmount,prepareMoneyFields} from '../lib/money-input.mjs';
+import {QUICK_SAVINGS_KEY} from '../lib/quick-savings.mjs';
+const form=document.querySelector<HTMLFormElement>('#quick-savings-form');
+if(form){
+ const root=form.closest('.quick-savings');
+ const fields=prepareMoneyFields(form);
+ const q=(key:string)=>root.querySelector<HTMLElement>('[data-quick-'+key+']');
+ const input=(name:string)=>form.elements.namedItem(name) as HTMLInputElement;
+ const money=(n:number)=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
+ const values=()=>({principal:parseAmount(input('principal').value),contribution:parseAmount(input('contribution').value),frequency:'monthly',years:Number(input('years').value),annualRate:Number(input('annualRate').value)});
+ function update(){
+  fields.validate();
+  if(!form.checkValidity()){
+   q('total').textContent='—';q('label').textContent='Check your numbers';q('deposits').textContent='—';q('interest').textContent='—';q('deposit-bar').style.width='0%';q('error').textContent='Check your amounts, rate and years to see an estimate.';q('error').hidden=false;return false;
+  }
+  const data=values(),result=savings(data);q('error').hidden=true;
+  q('label').textContent='In '+data.years+(data.years===1?' year':' years')+', you could have';q('total').textContent=money(result.balance);q('deposits').textContent=money(result.deposits);q('interest').textContent=money(result.interest);q('deposit-bar').style.width=(result.balance?result.deposits/result.balance*100:0)+'%';q('assumptions').textContent=data.years+(data.years===1?' year':' years')+' · '+data.annualRate+'% yearly rate';return true;
+ }
+ form.addEventListener('input',update);
+ form.addEventListener('submit',event=>{
+  event.preventDefault();if(!update()){const invalid=form.querySelector(':invalid') as HTMLInputElement;invalid?.closest('details')?.setAttribute('open','');invalid?.focus();form.reportValidity();return;}
+  try{sessionStorage.setItem(QUICK_SAVINGS_KEY,JSON.stringify({createdAt:Date.now(),...values()}));}
+  catch{q('error').textContent='Your browser cannot carry these numbers to the next page. Open the full calculator from the menu and enter them there.';q('error').hidden=false;return;}
+  location.assign('/calculators/compound-interest/');
+ });
+ (form.querySelector('button[type="submit"]') as HTMLButtonElement).disabled=false;
+}
+</script>

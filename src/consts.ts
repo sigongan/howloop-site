@@ -14,9 +14,9 @@ export const SITE = {
   locale: 'en-AU',
   email: 'hello@howloop.how',
   author: 'Howloop',
-  // Paste your AdSense publisher ID here (e.g. 'ca-pub-1234567890123456').
-  // Leave empty until AdSense is approved — no script is injected while it is empty.
-  adsensePublisherId: import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID ?? '',
+  // Public account ID verified in the owner's AdSense dashboard.
+  // Used for ownership metadata and ads.txt; this does not load advertising scripts.
+  adsensePublisherId: import.meta.env.PUBLIC_ADSENSE_PUBLISHER_ID || 'ca-pub-9777958537717885',
 };
 
 export type TopicId = 'home' | 'devices' | 'paperwork';
