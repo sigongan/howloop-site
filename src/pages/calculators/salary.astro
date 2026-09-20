@@ -1,0 +1,84 @@
+---
+import Base from '../../layouts/Base.astro';
+import Field from '../../components/MoneyField.astro';
+import SourceStatus from '../../components/SourceStatus.astro';
+import {PAYROLL} from '../../data/payroll-2026.mjs';
+import earnings from '../../data/earnings-may2025.json';
+import '../../styles/salary.css';
+const groups=earnings.populations.all.groups;
+---
+<Base title="Take-home pay calculator Australia 2026–27" description="Turn your salary into weekly, fortnightly and monthly take-home pay. Separate tax, HELP and super, then compare gross pay with official occupation-group earnings.">
+<div class="salary-page hl-wrap">
+  <header class="salary-heading"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/calculators/">Calculators</a> / Take-home pay</div><p class="salary-kicker">YOUR PAY, MADE CLEAR · {PAYROLL.year}</p><h1>What lands in your bank account?</h1><p>Start with your salary. See your pay after tax.</p></header>
+  <p class="salary-year-warning" data-pay-year-warning hidden>These are 2026–27 rules. Check the current ATO tables before using this estimate for another financial year.</p>
+  <div class="salary-workspace">
+    <form id="salary-form" class="salary-form">
+      <h2>Your pay</h2>
+      <Field name="amount" label="Pay before tax" value={85000} max={10000000}/>
+      <label class="hl-field"><span>This amount is</span><select name="inputPeriod"><option value="annual">Per year</option><option value="monthly">Per month</option><option value="fortnightly">Per fortnight (2 weeks)</option><option value="weekly">Per week</option></select></label>
+      <label class="hl-field"><span>Does it include employer super?</span><select name="includesSuper"><option value="no">No — super is on top</option><option value="yes">Yes — this is my total package</option></select></label>
+      <p class="salary-hint" data-super-explanation>Super on top goes to your super fund. It is not taken out of the salary you enter.</p>
+      <label class="salary-check"><input name="helpDebt" type="checkbox"/><span>I have a HELP / student loan debt</span></label>
+      <details class="salary-settings"><summary>Other payroll settings</summary>
+        <label class="salary-check"><input name="claimThreshold" type="checkbox" checked/><span>I claim the tax-free threshold with this employer</span></label>
+        <Field name="monthlyDeductions" label="Other after-tax deductions per month" value={0} max={1000000} hint="For example, an amount deducted from your pay after tax. Do not enter salary sacrifice here."/>
+        <label class="hl-field"><span>Employer super amount</span><select name="superMode"><option value="standard">Standard minimum: 12%, capped</option><option value="custom">Use my contract’s annual amount</option></select></label>
+        <div data-custom-super hidden><Field name="annualSuper" label="Employer super per year" value={0} max={10000000} hint="Employer contributions before super fund tax. Exclude your own salary sacrifice."/></div>
+      </details>
+      <button class="hl-button salary-submit" type="submit" disabled>Show my take-home pay <span aria-hidden="true">→</span></button>
+      <p class="salary-error" data-pay-error role="alert" hidden></p>
+      <p class="salary-hint">Australian tax residents with a TFN. Standard Medicare treatment. Your numbers stay in this page; no sign-up.</p>
+    </form>
+    <section class="salary-results" id="pay-result" tabindex="-1" aria-label="Your take-home pay">
+      <div class="salary-periods" role="group" aria-label="Show pay period">{[['weekly','Week'],['fortnightly','2 weeks'],['monthly','Month'],['annual','Year']].map(([value,label])=><button type="button" data-pay-period={value} aria-pressed={value==='fortnightly'?'true':'false'}>{label}</button>)}</div>
+      <p class="salary-hint" data-pay-example>Example salary · change it to yours</p>
+      <p class="salary-result-label" data-net-label>Estimated take-home every 2 weeks</p>
+      <output class="salary-net" data-pay-net aria-live="polite">—</output>
+      <p class="salary-hint" data-period-note>26 fortnightly pays per year.</p>
+      <dl class="salary-breakdown">
+        <div><dt>Pay before tax</dt><dd data-pay-gross>—</dd></div>
+        <div><dt>PAYG tax <small>Medicare included</small></dt><dd data-pay-tax>—</dd></div>
+        <div data-help-row hidden><dt>Student loan withholding</dt><dd data-pay-help>—</dd></div>
+        <div data-deductions-row hidden><dt>Other deductions</dt><dd data-pay-deductions>—</dd></div>
+      </dl>
+      <div class="salary-super"><div><span>Employer super</span><strong data-pay-super>—</strong></div><p>Separate from your bank deposit. An average for this period, before super fund tax.</p></div>
+      <p class="salary-hint">An estimate for regular pay, not your final annual tax bill. Payslip rounding and personal circumstances can change the amount.</p>
+      <a class="salary-next-link" href="#compare-pay">How does my pay compare? ↓</a>
+    </section>
+  </div>
+  <noscript><p class="hl-noscript">Enable JavaScript to calculate your pay. The guide and official sources below are available without it.</p></noscript>
+
+  <section class="salary-compare" id="compare-pay" aria-labelledby="compare-title">
+    <div><p class="salary-kicker">ABS SURVEY · MAY 2025</p><h2 id="compare-title">How does your pay compare?</h2><p>Compare <strong>pay before tax, excluding employer super</strong> with a broad occupation group.</p></div>
+    <div class="salary-compare-fields">
+      <label class="hl-field"><span>Your occupation group</span><select id="pay-occupation"><option value="">Choose a group…</option>{groups.map(group=><option value={group.id}>{group.name}</option>)}</select></label>
+      <label class="hl-field"><span>Compare with</span><select id="pay-population"><option value="fulltime">Full-time adults, non-managerial</option><option value="all">All employees, including part-time</option></select></label>
+    </div>
+    <p class="salary-hint">For example: retail sales → Sales workers; nurses and teachers → Professionals; electricians → Technicians and trades workers. Choose the group for the work you do, not your employer’s industry.</p>
+    <div data-earnings-result hidden>
+      <p class="salary-rank" data-earnings-band></p><p data-earnings-explanation></p>
+      <dl class="salary-compare-numbers"><div><dt>Your gross pay per week</dt><dd data-earnings-own>—</dd></div><div><dt>Group median per week</dt><dd data-earnings-median>—</dd></div></dl>
+      <p class="salary-hint" data-population-note></p>
+      <p class="salary-hint">Compared with the <strong>May 2025 survey</strong>, released January 2026. A historical pay band, not your exact current rank or a recommended salary. Experience, location and hours are not matched.</p>
+    </div>
+    <p class="salary-hint" data-earnings-empty>Choose a group to see the published pay band and median. “Median” means the middle of the group.</p>
+    <details class="salary-settings"><summary>What this comparison can tell you</summary><p>We use published ABS percentile cutoffs, not a guessed ranking derived from an average. If your weekly pay falls between the 60th and 70th percentile cutoffs, we show that range rather than inventing a precise percentage.</p><p>The full-time comparison covers non-managerial employees paid at adult rates. People with strategic management responsibilities are excluded, even though the occupation classification itself includes a “Managers” group. Choose all employees if the narrower population does not fit; that group also includes part-time workers and younger workers.</p><p>Cash earnings are before tax and include salary-sacrificed cash earnings and overtime in the survey. Employer super is excluded from your comparison. Your entered salary may not capture all these earnings. This is a discussion starter, not evidence that an employer is underpaying you.</p><p>{earnings.attribution} <a href={earnings.source}>See the original release and data cubes 3 and 8 ↗</a></p></details>
+  </section>
+
+  <article class="salary-guide" aria-labelledby="salary-guide-title">
+    <p class="salary-kicker">UNDERSTAND YOUR PAYSLIP</p><h2 id="salary-guide-title">Three numbers. Three different jobs.</h2>
+    <p><strong>Your package</strong> is the total offer. <strong>Your gross salary</strong> is the cash pay before deductions. <strong>Your take-home pay</strong> is what remains for your bank account. Comparing two job offers is much easier once you know which number each employer is quoting.</p>
+    <h3>“Plus super” and “including super” are different</h3><p>An $89,600 package including 12% employer super contains $80,000 of gross cash salary and $9,600 of employer super under this example. An $89,600 salary plus 12% super contains $89,600 of cash salary before tax. Entering the same number under the wrong option can therefore make your spending budget look larger than it is.</p>
+    <p>The standard setting estimates the 2026–27 minimum employer contribution, using 12% and the $270,830 annual qualifying-earnings limit. We assume the salary entered is qualifying earnings for one eligible adult employee. If your contract specifies another contribution, enter its annual amount under payroll settings. The displayed super is an annual average allocated across the chosen period, not a prediction of the timing or after-tax balance in your fund.</p>
+    <h3>A fortnight is not half a month</h3><p>There are 26 two-week periods in a 52-week year, and 12 calendar months. A $2,000 fortnightly amount is therefore $52,000 over 26 pays, or about $4,333 a month on average. Some months have three paydays. Plan recurring bills using the dates you are actually paid, and treat the annual result here as a budgeting estimate.</p>
+    <h3>Why the result can differ from your payslip</h3><p>This tool uses the 2026–27 ATO regular-pay withholding formulas and their rounding rules. Tax-free-threshold and student-loan settings matter. It calculates weekly, fortnightly and monthly withholding separately; the annual estimate uses twelve monthly pays. Small differences across periods are expected.</p>
+    <p>It does not handle working holiday makers, foreign tax residents, missing TFNs, salary sacrifice, bonuses, termination payments, Medicare exemptions or family adjustments, the Medicare levy surcharge, seniors’ offsets, or individual withholding variations. Enter ordinary after-tax deductions separately. If your situation includes an excluded item, use the ATO calculator or ask payroll to explain the deduction.</p>
+    <p>Student-loan withholding is money withheld during the year. Your final repayment is worked out using repayment income at tax time and can differ. We do not ask for your loan balance or cap withholding to that balance.</p>
+    <div class="salary-guide-actions"><a class="hl-button" href="/calculators/savings-goal/">Turn spare pay into a savings goal →</a><a href="/tax-return/">Get ready for tax time →</a></div>
+    <h3 id="salary-sources">Sources and calculation details</h3>
+    <ul><li><a href={PAYROLL.source}>ATO Withholding Schedules Instrument 2026 — schedules 1 and 8</a></li><li><a href={PAYROLL.superSource}>ATO super guarantee rates and maximum contribution base</a></li><li><a href={earnings.source}>ABS Employee Earnings and Hours, May 2025 — data cubes 3 and 8</a></li><li><a href="https://www.ato.gov.au/calculators-and-tools/tax-withheld-calculator">ATO tax withheld calculator</a></li></ul>
+    <SourceStatus checked={PAYROLL.checked} days={30}/><p class="salary-hint">Published by <a href="/about/#publisher">Howloop</a>. Educational estimates; not reviewed by a registered tax agent. <a href="/contact/?topic=Take-home%20pay%20calculator">Report an unexpected result</a>.</p>
+  </article>
+</div>
+</Base>
+<script>import '../../scripts/salary.js';</script>
