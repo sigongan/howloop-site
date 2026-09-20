@@ -17,76 +17,85 @@ const banks=[
 ---
 <Base title="Howloop" description="Free money tools for Australia. Calculate savings, take-home pay and home-loan repayments, prepare a tax checklist, or learn with simple examples.">
 <div class="home-page">
-<section class="home-hero home-wrap" aria-labelledby="home-title">
-  <div class="home-intro">
-    <p class="home-eyebrow">FREE MONEY TOOLS · AUSTRALIA</p>
-    <h1 id="home-title">Make sense of<br/>your money.</h1>
-    <p class="home-description">What would you like to work out?</p>
-    <nav class="home-paths" aria-label="Choose a money topic">
-      {NAV.map(item=><a href={item.id==='savings'?'#try-savings':item.href} data-money-area={item.id}>
-        <span class="money-area-icon"><ToolIcon name={item.icon}/></span>
-        <span class="home-path-copy"><strong>{item.label}</strong><small>{item.hint}</small></span>
-        <span class="home-path-arrow" aria-hidden="true">→</span>
-      </a>)}
-    </nav>
-    <p class="home-promise">Free to use · No sign-up</p>
+  <div class="home-stage">
+    <section class="home-hero home-wrap" aria-labelledby="home-title">
+      <div class="home-intro">
+        <p class="home-eyebrow"><span class="home-status-dot" aria-hidden="true"></span> Free money tools. Made for Australia.</p>
+        <h1 id="home-title">Your money.<br/><em>Made clearer.</em></h1>
+        <p class="home-description">Understand your pay, grow your savings, and plan what comes next.</p>
+        <p class="home-nav-label">What would you like to work out?</p>
+        <nav class="home-paths" aria-label="Choose a money topic">
+          {NAV.map(item=><a href={item.id==='savings'?'#try-savings':item.href} data-money-area={item.id}>
+            <span class="home-path-icon"><ToolIcon name={item.icon}/></span>
+            <span class="home-path-copy"><strong>{item.label}</strong><small>{item.hint}</small></span>
+            <ToolIcon name="arrow"/>
+          </a>)}
+        </nav>
+        <p class="home-promise"><ToolIcon name="shield"/> Free to use. No sign-up.</p>
+      </div>
+      <div class="home-demo"><QuickSavings /></div>
+    </section>
   </div>
-  <QuickSavings />
-</section>
 
-<section class="home-bank-section home-wrap" data-money-area="savings" aria-labelledby="bank-title">
-  <div class="home-section-heading">
-    <div class="money-area-heading"><span class="money-area-icon"><ToolIcon name="bank"/></span><div><p class="home-section-kicker">SAVINGS</p><h2 id="bank-title">Bank savings rates</h2></div></div>
-    <a class="home-outline-link" href="/banks/">See all banks <span aria-hidden="true">→</span></a>
-  </div>
-  <p class="home-section-description">Choose a bank to see its published products and conditions.</p>
-  <div class="home-bank-logos">{banks.map(b=><a href={'/calculators/compound-interest/?bank='+b.id} aria-label={'See '+b.name+' products'}><BankLogo id={b.id}/><span class="home-bank-name">{b.name}</span></a>)}</div>
-  <div class="home-small-tools">
-    <a href="/calculators/savings-goal/"><ToolIcon name="target"/><span><strong>Savings goal</strong><span>How much should I put aside?</span></span><span aria-hidden="true">→</span></a>
-    <a href="/calculators/emergency-fund/"><ToolIcon name="shield"/><span><strong>Emergency fund</strong><span>How much do I need as a buffer?</span></span><span aria-hidden="true">→</span></a>
-  </div>
-</section>
+  <section class="home-bank-section home-wrap" data-money-area="savings" aria-labelledby="bank-title">
+    <div class="home-section-heading">
+      <div><p class="home-section-kicker"><ToolIcon name="bank"/> Savings · bank rates</p><h2 id="bank-title">Know what your bank pays.</h2></div>
+      <a class="home-text-action" href="/banks/">See all banks <ToolIcon name="arrow"/></a>
+    </div>
+    <p class="home-section-description">Published products and rates, with the conditions that matter.</p>
+    <div class="home-bank-logos">{banks.map(b=><a href={'/calculators/compound-interest/?bank='+b.id} aria-label={'See '+b.name+' products'}><BankLogo id={b.id}/><span class="home-bank-name">{b.name}</span></a>)}</div>
+    <div class="home-small-tools">
+      <a href="/calculators/savings-goal/"><ToolIcon name="target"/><span><strong>Savings goal</strong><span>Find what to save each month.</span></span><ToolIcon name="arrow"/></a>
+      <a href="/calculators/emergency-fund/"><ToolIcon name="shield"/><span><strong>Emergency fund</strong><span>Plan a buffer for essential bills.</span></span><ToolIcon name="arrow"/></a>
+    </div>
+  </section>
 
-<section class="home-next home-wrap" aria-label="Pay, home-loan and tax tools">
-  <div class="home-features">
-    <article class="home-feature" id="take-home-pay" data-money-area="pay">
-      <div class="money-area-heading"><span class="money-area-icon"><ToolIcon name="wallet"/></span><h2>Take-home pay</h2></div>
-      <p class="home-feature-question">What lands in my bank account?</p>
-      <p class="home-feature-description">See your pay after tax, with employer super shown separately.</p>
-      <p class="home-feature-detail">Weekly · Every 2 weeks · Monthly</p>
-      <a class="home-action" href="/calculators/salary/">Calculate my pay <span aria-hidden="true">→</span></a>
-      <p class="home-feature-note">Includes a comparison with published occupation pay bands.</p>
-    </article>
-    <article class="home-feature" id="home-loan" data-money-area="home">
-      <div class="money-area-heading"><span class="money-area-icon"><ToolIcon name="home"/></span><h2>Home loans</h2></div>
-      <p class="home-feature-question">What will my repayments be?</p>
-      <p class="home-feature-description">Work out repayments, then try an offset or extra payments.</p>
-      <a class="home-action" href="/calculators/mortgage/">Calculate repayments <span aria-hidden="true">→</span></a>
-      <div class="home-related"><a href="/calculators/lvr/">Check my deposit & LVR →</a><a href="/learn/offset-vs-extra-repayments/">Understand offset accounts →</a></div>
-    </article>
-    <article class="home-feature" id="tax-time" data-money-area="tax">
-      <div class="money-area-heading"><span class="money-area-icon"><ToolIcon name="checklist"/></span><h2>Tax returns</h2></div>
-      <p class="home-feature-question">What do I need for tax time?</p>
-      <p class="home-feature-description">Find records to gather and work expenses to check before lodging.</p>
-      <a class="home-action" href="/tax-return/">Build my tax checklist <span aria-hidden="true">→</span></a>
-      <p class="home-feature-note">For employees. A preparation guide; you lodge through myTax.</p>
-    </article>
-  </div>
-  <a class="home-all-calculators" href="/calculators/">See all calculators →</a>
-</section>
+  <section class="home-next home-wrap" aria-labelledby="next-title">
+    <div class="home-section-heading home-next-heading">
+      <div><p class="home-section-kicker">Tools for everyday decisions</p><h2 id="next-title">A clearer next step.</h2></div>
+      <a class="home-text-action" href="/calculators/">All calculators <ToolIcon name="arrow"/></a>
+    </div>
+    <div class="home-features">
+      <article class="home-feature" id="take-home-pay" data-money-area="pay">
+        <div class="home-feature-heading"><span class="home-feature-icon"><ToolIcon name="wallet"/></span><h3>Take-home pay</h3></div>
+        <p class="home-feature-question">What lands in<br/>my bank account?</p>
+        <p class="home-feature-description">See your pay after tax, with employer super shown separately.</p>
+        <p class="home-feature-detail">Weekly · Every 2 weeks · Monthly</p>
+        <a class="home-tool-action" href="/calculators/salary/"><span>Calculate my pay</span><span class="home-action-arrow"><ToolIcon name="arrow"/></span></a>
+        <p class="home-feature-note">Compare your salary with published occupation pay bands.</p>
+      </article>
+      <article class="home-feature" id="home-loan" data-money-area="home">
+        <div class="home-feature-heading"><span class="home-feature-icon"><ToolIcon name="home"/></span><h3>Home loans</h3></div>
+        <p class="home-feature-question">What will my<br/>repayments be?</p>
+        <p class="home-feature-description">Work out repayments, then try an offset or extra payments.</p>
+        <a class="home-tool-action" href="/calculators/mortgage/"><span>Calculate repayments</span><span class="home-action-arrow"><ToolIcon name="arrow"/></span></a>
+        <div class="home-related"><a href="/calculators/lvr/">Check my deposit & LVR <ToolIcon name="arrow"/></a><a href="/learn/offset-vs-extra-repayments/">Understand offset accounts <ToolIcon name="arrow"/></a></div>
+      </article>
+      <article class="home-feature" id="tax-time" data-money-area="tax">
+        <div class="home-feature-heading"><span class="home-feature-icon"><ToolIcon name="checklist"/></span><h3>Tax returns</h3></div>
+        <p class="home-feature-question">What do I need<br/>for tax time?</p>
+        <p class="home-feature-description">Find records to gather and work expenses to check before lodging.</p>
+        <a class="home-tool-action" href="/tax-return/"><span>Build my tax checklist</span><span class="home-action-arrow"><ToolIcon name="arrow"/></span></a>
+        <p class="home-feature-note">For employees. A preparation guide; you lodge through myTax.</p>
+      </article>
+    </div>
+  </section>
 
-<section class="home-learn home-wrap" data-money-area="learn" aria-labelledby="learn-title">
-  <div class="home-section-heading">
-    <div class="money-area-heading"><span class="money-area-icon"><ToolIcon name="book"/></span><div><p class="home-section-kicker">PLAIN-ENGLISH GUIDES</p><h2 id="learn-title">Learn</h2></div></div>
-    <a class="home-outline-link" href="/learn/">Explore all guides <span aria-hidden="true">→</span></a>
+  <div class="home-learn-band">
+    <section class="home-learn home-wrap" data-money-area="learn" aria-labelledby="learn-title">
+      <div class="home-learn-intro">
+        <p class="home-section-kicker"><ToolIcon name="book"/> Learn</p>
+        <h2 id="learn-title">Small lessons.<br/>Useful for life.</h2>
+        <p>One clear idea, one practical example. Make sense of the money topics that matter to you.</p>
+        <a class="home-text-action" href="/learn/">Explore all guides <ToolIcon name="arrow"/></a>
+      </div>
+      <div class="home-lessons">
+        <a href="/learn/how-compound-interest-works/" data-money-area="savings"><span class="home-lesson-symbol"><ToolIcon name="growth"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Savings guide</span><h3>How does compound interest work?</h3><p>See what happens when your interest earns interest.</p><span class="home-read-guide">Read the guide <ToolIcon name="arrow"/></span></div></a>
+        <a href="/learn/planning-a-home-deposit/" data-money-area="home"><span class="home-lesson-symbol"><ToolIcon name="home"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Home loans guide</span><h3>How much do I need to buy a home?</h3><p>Understand your deposit and the other upfront costs.</p><span class="home-read-guide">Read the guide <ToolIcon name="arrow"/></span></div></a>
+        <a href="/learn/super-basics/" data-money-area="learn"><span class="home-lesson-symbol"><ToolIcon name="shield"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Super guide</span><h3>What is my super actually doing?</h3><p>Get to know the money set aside for your future.</p><span class="home-read-guide">Read the guide <ToolIcon name="arrow"/></span></div></a>
+      </div>
+    </section>
   </div>
-  <p class="home-section-description">Understand your money, one simple example at a time.</p>
-  <div class="home-lessons">
-    <a href="/learn/how-compound-interest-works/" data-money-area="savings"><div class="home-lesson-top"><span class="money-area-icon"><ToolIcon name="growth"/></span><span class="home-lesson-topic">Savings guide</span></div><h3>How does compound interest work?</h3><p>See what happens when your interest earns interest.</p><span class="home-read-guide">Read the guide <span aria-hidden="true">→</span></span></a>
-    <a href="/learn/planning-a-home-deposit/" data-money-area="home"><div class="home-lesson-top"><span class="money-area-icon"><ToolIcon name="home"/></span><span class="home-lesson-topic">Home loans guide</span></div><h3>How much do I need to buy a home?</h3><p>Understand the deposit and the other upfront costs.</p><span class="home-read-guide">Read the guide <span aria-hidden="true">→</span></span></a>
-    <a href="/learn/super-basics/" data-money-area="learn"><div class="home-lesson-top"><span class="money-area-icon"><ToolIcon name="shield"/></span><span class="home-lesson-topic">Super guide</span></div><h3>What is my super actually doing?</h3><p>Get to know the money set aside for your future.</p><span class="home-read-guide">Read the guide <span aria-hidden="true">→</span></span></a>
-  </div>
-</section>
-<div class="home-source-note home-wrap"><p>Simple explanations, with links to official sources.</p><a href="/updates/">Rule updates & corrections →</a><a href="/about/">About Howloop →</a></div>
+  <div class="home-source-note home-wrap"><p><ToolIcon name="checklist"/> Simple explanations. Official sources.</p><a href="/updates/">Rule updates & corrections <ToolIcon name="arrow"/></a><a href="/about/">About Howloop <ToolIcon name="arrow"/></a></div>
 </div>
 </Base>
