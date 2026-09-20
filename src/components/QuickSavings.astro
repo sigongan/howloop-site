@@ -5,7 +5,7 @@ const example=savings({principal:10000,contribution:500,annualRate:4.5,years:10}
 const money=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
 ---
 <section class="quick-savings" id="try-savings" aria-labelledby="quick-title" data-money-area="savings">
-<div class="quick-heading"><div class="money-area-heading"><span class="money-area-icon"><ToolIcon name="growth"/></span><h2 id="quick-title">Savings</h2></div><p>See how your money could grow.</p></div>
+<div class="quick-heading"><div class="quick-heading-meta"><span class="quick-category"><ToolIcon name="growth"/> Savings</span><span class="quick-demo-label">Try your numbers</span></div><h2 id="quick-title">What could you save?</h2></div>
 <form id="quick-savings-form" novalidate>
   <div class="quick-inputs">
     <label for="quick-principal">Saved so far<div class="quick-money"><span aria-hidden="true">$</span><input id="quick-principal" name="principal" type="text" inputmode="decimal" value="10,000" data-money-input data-min="0" data-max="100000000" required aria-describedby="quick-currency"/></div></label>
