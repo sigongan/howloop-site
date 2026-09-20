@@ -1,4 +1,5 @@
 import {parseAmount,prepareMoneyFields} from '../lib/money-input.mjs';
+import {QUICK_SAVINGS_KEY,readQuickSavings} from '../lib/quick-savings.mjs';
 import {compareBankScenarios} from '../lib/bank-scenarios.mjs';
 import {savings,requiredSavings,mortgage,emergencyFund,baseRateModel} from '../lib/finance.mjs';
 import {rateSummary,formatRate,introductoryPeriod} from '../lib/rate-summary.mjs';
@@ -75,6 +76,7 @@ table();return true;
 }catch(e){invalidate('Please check your inputs. '+e.message);return false;}
 }
 form.addEventListener('submit',e=>{e.preventDefault();if(form.reportValidity()&&calculate()&&window.matchMedia('(max-width: 600px)').matches){const result=q('.calc-overview')??q('.hl-results');result.focus({preventScroll:true});result.scrollIntoView({behavior:'auto',block:'start'});}});
+form.querySelector('[type="submit"]').disabled=false;
 form.addEventListener('input',e=>{if(e.target.name){markEdited();if(e.target.name==='annualRate'&&kind==='compound-interest'){model=null;bankMode='custom';conditionsConfirmed=false;output('rate-model','Your custom rate · unchanged for this example');setRateHint('Your rate · fixed for the full projection');}calculate();}});
 const status=message=>output('action-status',message);
 q('[data-export]').addEventListener('click',()=>{if(!calculate())return;const quote=x=>'"'+String(x).replaceAll('"','""')+'"';const csv=[headers,...rows.map(r=>r.map((v,i)=>i?Number(v).toFixed(2):v))].map(r=>r.map(quote).join(',')).join('\r\n');const url=URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='howloop-'+kind+'.csv';a.hidden=true;document.body.append(a);try{a.click();status('CSV download requested. Check your browser downloads.');}finally{a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}});
@@ -197,6 +199,16 @@ const bankAliases={nab:'nationalaustraliabank',cba:'commbank',commonwealth:'comm
 q('[data-bank-search]').addEventListener('input',()=>{const typed=normaliseBank(q('[data-bank-search]').value.trim()),query=bankAliases[typed]||typed,selected=select.value;select.replaceChildren(...options.filter(o=>!o.value||o.value===selected||normaliseBank(o.label).includes(typed)||normaliseBank(o.label).includes(query)).map(o=>new Option(o.label,o.value)));select.value=selected;});
 select.addEventListener('change',()=>loadBank());q('[data-product-select]').addEventListener('change',()=>selectProduct());
 const bankParam=new URL(location.href).searchParams.get('bank');if(bankParam&&options.some(o=>o.value===bankParam)){select.value=bankParam;dialog.showModal();loadBank();}
+}
+if(kind==='compound-interest'){
+ try{
+  const draft=readQuickSavings(sessionStorage.getItem(QUICK_SAVINGS_KEY));
+  sessionStorage.removeItem(QUICK_SAVINGS_KEY);
+  if(draft){
+   for(const [name,value] of Object.entries(draft))form.elements[name].value=String(value);
+   moneyFields.format();markEdited();setRateHint('Your example rate from the home page — edit or choose a bank');
+  }
+ }catch{}
 }
 calculate();
 }

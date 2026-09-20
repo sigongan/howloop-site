@@ -40,7 +40,7 @@ const {kind='compound-interest'}=Astro.props;
 <Field name="contribution" label="Monthly savings towards it" value={400} max={1000000} step={0.01}/>
 <p class="hl-help">Choose a buffer that suits your circumstances. This estimate excludes interest.</p>
 </>}
-<button type="submit" class="hl-button calc-update-button">See result <span aria-hidden="true">→</span></button>
+<button type="submit" class="hl-button calc-update-button" disabled>See result <span aria-hidden="true">→</span></button>
 <p class="hl-error" data-error role="alert" hidden></p>
 <p class="hl-help calc-local-note">Free to use · your inputs stay on this device</p>
 </form>
