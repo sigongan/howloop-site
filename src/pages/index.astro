@@ -40,7 +40,7 @@ const banks=[
   <section class="home-bank-section home-wrap" data-money-area="savings" aria-labelledby="bank-title">
     <div class="home-section-heading">
       <div><p class="home-section-kicker"><ToolIcon name="bank"/> Savings · bank rates</p><h2 id="bank-title">Know what your bank pays.</h2></div>
-      <a class="home-text-action" href="/banks/">See all banks <ToolIcon name="arrow"/></a>
+      <a class="home-text-action" href="/compare/savings/">Compare savings <ToolIcon name="arrow"/></a>
     </div>
     <p class="home-section-description">Published products and rates, with the conditions that matter.</p>
     <div class="home-bank-logos">{banks.map(b=><a href={'/calculators/compound-interest/?bank='+b.id} aria-label={'See '+b.name+' products'}><BankLogo id={b.id}/><span class="home-bank-name">{b.name}</span></a>)}</div>
@@ -99,3 +99,4 @@ const banks=[
   <div class="home-source-note home-wrap"><p><ToolIcon name="checklist"/> Simple explanations. Official sources.</p><a href="/updates/">Rule updates & corrections <ToolIcon name="arrow"/></a><a href="/about/">About Howloop <ToolIcon name="arrow"/></a></div>
 </div>
 </Base>
+

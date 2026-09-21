@@ -16,7 +16,9 @@ const menu=document.querySelector<HTMLDetailsElement>('.hl-mobile-menu');
 if(menu){
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.open){menu.open=false;menu.querySelector('summary')?.focus();}});
  document.addEventListener('pointerdown',event=>{if(menu.open&&!menu.contains(event.target as Node))menu.open=false;});
- menu.addEventListener('focusout',event=>{if(menu.open&&!menu.contains(event.relatedTarget as Node|null))menu.open=false;});
- menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.open=false;}));
+ // Keep native link activation intact: touch browsers may blur the summary before
+ // dispatching a link click. Closing here can hide the intended tap target.
+ window.addEventListener('pageshow',()=>{menu.open=false;});
 }
 </script>
+

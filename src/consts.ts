@@ -46,7 +46,7 @@ export const TOPICS: Record<
 };
 
 export const NAV = [
-  { id: 'savings', href: '/calculators/compound-interest/', label: 'Savings', icon: 'growth', hint: 'Grow your savings', matches: ['/calculators/compound-interest', '/calculators/savings-goal', '/calculators/emergency-fund', '/banks'] },
+  { id: 'savings', href: '/calculators/compound-interest/', label: 'Savings', icon: 'growth', hint: 'Grow your savings', matches: ['/calculators/compound-interest', '/calculators/savings-goal', '/calculators/emergency-fund', '/banks', '/compare/savings'] },
   { id: 'pay', href: '/calculators/salary/', label: 'Take-home pay', icon: 'wallet', hint: 'See pay after tax', matches: ['/calculators/salary'] },
   { id: 'home', href: '/calculators/mortgage/', label: 'Home loans', icon: 'home', hint: 'Plan your repayments', matches: ['/calculators/mortgage', '/calculators/lvr'] },
   { id: 'tax', href: '/tax-return/', label: 'Tax returns', icon: 'checklist', hint: 'Prepare your tax checklist', matches: ['/tax-return'] },
