@@ -199,7 +199,7 @@ const normaliseBank=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
 const bankAliases={nab:'nationalaustraliabank',cba:'commbank',commonwealth:'commbank',commonwealthbank:'commbank'};
 q('[data-bank-search]').addEventListener('input',()=>{const typed=normaliseBank(q('[data-bank-search]').value.trim()),query=bankAliases[typed]||typed,selected=select.value;select.replaceChildren(...options.filter(o=>!o.value||o.value===selected||normaliseBank(o.label).includes(typed)||normaliseBank(o.label).includes(query)).map(o=>new Option(o.label,o.value)));select.value=selected;});
 select.addEventListener('change',()=>loadBank());q('[data-product-select]').addEventListener('change',()=>selectProduct());
-const bankParam=new URL(location.href).searchParams.get('bank');if(bankParam&&options.some(o=>o.value===bankParam)){select.value=bankParam;dialog.showModal();loadBank();}
+const bankParam=new URL(location.href).searchParams.get('bank');if(bankParam&&options.some(o=>o.value===bankParam)){select.value=bankParam;dialog.showModal();loadBank(new URL(location.href).searchParams.get('product')??'');}
 }
 if(kind==='compound-interest'){
  try{
@@ -213,3 +213,4 @@ if(kind==='compound-interest'){
 }
 calculate();
 }
+
