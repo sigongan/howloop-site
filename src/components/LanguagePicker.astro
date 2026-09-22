@@ -1,0 +1,51 @@
+---
+import {LANGUAGES,languageForPath} from '../lib/languages.mjs';
+const active=languageForPath(Astro.url.pathname);
+---
+<details class="hl-language-picker" data-language-picker>
+ <summary aria-label={active?.copy.language||'Choose your language'}>
+  <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18"/></svg>
+  <span>{active?.name||'Language'}</span><span class="language-chevron" aria-hidden="true">⌄</span>
+ </summary>
+ <div class="hl-language-popover">
+  <p>{active?.copy.language||'Money tools in your language'}</p>
+  <nav aria-label={active?.copy.language||'Choose your language'}>
+   {LANGUAGES.map(item=><a href={`/languages/${item.code}/`} data-language-link lang={item.lang} dir={item.dir} aria-current={active?.code===item.code?'page':undefined}><strong>{item.name}</strong><small lang="en" dir="ltr">{item.english}</small>{active?.code===item.code&&<span aria-hidden="true">✓</span>}</a>)}
+  </nav>
+ </div>
+</details>
+<script>
+import {LANGUAGE_STATE_KEY,KINDS,FIELDS,defaultValues,readLanguageState,cleanValues} from '../lib/language-calculators.mjs';
+const picker=document.querySelector<HTMLDetailsElement>('[data-language-picker]');
+if(picker){
+ picker.addEventListener('toggle',()=>{if(picker.open){const menu=document.querySelector<HTMLDetailsElement>('.hl-mobile-menu');if(menu)menu.open=false;}});
+ document.querySelector('.hl-mobile-menu')?.addEventListener('toggle',event=>{if((event.target as HTMLDetailsElement).open)picker.open=false;});
+ document.addEventListener('pointerdown',event=>{if(picker.open&&!picker.contains(event.target as Node))picker.open=false;});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&picker.open){picker.open=false;picker.querySelector('summary')?.focus();}});
+ window.addEventListener('pageshow',()=>picker.open=false);
+ // Only transfer calculator inputs within this tab. Never put money in a URL,
+ // send it to a translation service, or overwrite opt-in saved English plans.
+ picker.querySelectorAll<HTMLAnchorElement>('[data-language-link]').forEach(link=>link.addEventListener('click',()=>{
+  const localized=document.querySelector<HTMLElement>('[data-language-tools]');
+  if(localized){document.dispatchEvent(new Event('howloop:save-language-inputs'));link.hash=localized.dataset.activeTool||'';return;}
+  const kind=location.pathname.match(/^\/calculators\/([^/]+)/)?.[1];
+  if(!kind||!KINDS.includes(kind))return;
+  const form=document.querySelector<HTMLFormElement>(kind==='salary'?'#salary-form':`[data-calculator="${kind}"] form`);
+  if(!form)return;
+  // A basic calculator cannot carry bank tiers, bonus conditions or custom
+  // salary deductions faithfully. Leave those cases in the original tool.
+  if(form.querySelector<HTMLSelectElement>('[data-bank-select]')?.value)return;
+  if(kind==='salary'&&(Number((form.elements.namedItem('monthlyDeductions') as HTMLInputElement)?.value||0)!==0||(form.elements.namedItem('superMode') as HTMLSelectElement)?.value==='custom'))return;
+  const values=defaultValues(kind);
+  for(const field of FIELDS[kind]){
+   const input=form.elements.namedItem(field.name) as HTMLInputElement|HTMLSelectElement|null;
+   if(input)values[field.name]=field.type==='checkbox'?(input as HTMLInputElement).checked:input.value;
+  }
+  try{
+   const previous=readLanguageState(sessionStorage.getItem(LANGUAGE_STATE_KEY));
+   sessionStorage.setItem(LANGUAGE_STATE_KEY,JSON.stringify({at:Date.now(),kind,values:{...previous?.values,[kind]:cleanValues(kind,values)}}));
+  }catch{}
+  link.hash=kind;
+ }));
+}
+</script>

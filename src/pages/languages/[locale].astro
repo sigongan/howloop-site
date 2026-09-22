@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import {LANGUAGES} from '../../lib/languages.mjs';
+import {FIELDS,KINDS,defaultValues,calculateLanguageTool,formatMoney,formatCount} from '../../lib/language-calculators.mjs';
+import {PAYROLL} from '../../data/payroll-2026.mjs';
+export function getStaticPaths(){return LANGUAGES.map(language=>({params:{locale:language.code},props:{language}}));}
+const {language}=Astro.props;
+const c=language.copy;
+const interpolate=(text,values={})=>Object.entries(values).reduce((str,[key,value])=>str.replaceAll('{'+key+'}',String(value)),text);
+const themes=['savings','home','savings','savings','pay'];
+---
+<Base title={c.title} description={c.description}>
+ <div class="language-page hl-wrap" data-language-tools data-active-tool="compound-interest" data-locale={language.lang}>
+  <header class="language-heading"><p class="language-eyebrow">{c.eyebrow}</p><h1>{c.title}</h1><p>{c.intro}</p></header>
+  <div class="language-choose"><label for="language-tool">{c.chooseTool}</label><select id="language-tool" data-tool-select>{KINDS.map((kind,index)=><option value={kind}>{c.tools[index]}</option>)}</select><p>{c.aud}</p></div>
+  <noscript><p class="language-scope" lang="en">Enable JavaScript to change the example and switch calculators. The explanations below can be read without JavaScript.</p></noscript>
+  {KINDS.map((kind,index)=>{
+   const initial=calculateLanguageTool(kind,defaultValues(kind));
+   return <section class="language-tool" data-tool={kind} data-money-area={themes[index]} hidden={index!==0} aria-labelledby={`tool-title-${kind}`}>
+    <div class="language-tool-intro"><h2 id={`tool-title-${kind}`}>{c.tools[index]}</h2><p>{c.toolIntro[index]}</p></div>
+    <div class="language-workspace">
+     <form class="language-form" data-tool-form={kind} novalidate>
+      <h3>{c.numbers}</h3>
+      {FIELDS[kind].map(field=>{
+       const id=`${kind}-${field.name}`;
+       const hint=field.name==='annualRate'&&kind!=='mortgage'?c.rateHint:field.name==='expenses'?c.expensesHint:null;
+       return <div class:list={['language-field',{'language-check':field.type==='checkbox'}]}>
+        {field.type==='checkbox'?<label for={id}><input id={id} name={field.name} type="checkbox" checked={field.value}/><span>{c[field.label]}</span></label>:<>
+         <label for={id}>{c[field.label]}</label>
+         {field.type==='select'?<select id={id} name={field.name}>{field.options.map(([value,key])=><option value={value} selected={value===field.value}>{c[key]}</option>)}</select>:<>
+          <div class="language-number"><input id={id} name={field.name} type="text" inputmode="decimal" value={String(field.value)} data-min={field.min} data-max={field.max} aria-describedby={`${id}-hint`} autocomplete="off" required dir="ltr"/>{field.money&&<span aria-hidden="true">AUD</span>}</div>
+          <small id={`${id}-hint`}>{hint?hint+' ':''}{interpolate(c.numberHint,{min:formatCount(field.min,language.lang),max:formatCount(field.max,language.lang)})}</small>
+         </>}
+        </>}
+       </div>;
+      })}
+      <button class="language-calculate" type="submit" disabled>{c.calculate}<span aria-hidden="true">↗</span></button>
+      <p class="language-error" role="alert" data-tool-error hidden>{c.error}</p>
+      <p class="language-local">{c.local}</p>
+     </form>
+     <div class="language-results-column">
+      <section class="language-result" tabindex="-1" aria-label={c.result} data-result>
+       <p class="language-result-label" data-result-label>{c[initial.label]}</p>
+       <output class="language-result-total" data-result-total aria-live="polite" dir="auto">{formatMoney(initial.total,language.lang)}</output>
+       <p class="language-result-sub" data-result-sub>{initial.sub?interpolate(c[initial.sub],initial.subData):c.aud}</p>
+       <div class="language-money-bar" data-money-bar hidden={initial.bar===undefined} aria-hidden="true"><span style={`width:${initial.bar??0}%`} data-deposit-bar></span></div>
+       <dl data-result-stats>{initial.stats.map(([key,value,type])=><div><dt>{c[key]}</dt><dd dir="auto">{value===null?c.noContribution:type==='number'?formatCount(value,language.lang):formatMoney(value,language.lang)}</dd></div>)}</dl>
+      </section>
+      <details class="language-assumptions"><summary>{c.assumptions}</summary><p>{c[initial.note]}</p><a href="/methodology/">{c.sources}<span aria-hidden="true"> ↗</span></a>{kind==='salary'&&<><p><a href={PAYROLL.source} lang="en">ATO withholding schedules 2026</a></p><p><a href={PAYROLL.superSource} lang="en">ATO super guarantee</a></p></>}</details>
+      {kind==='salary'&&<p class="language-error" data-pay-year-warning hidden>{c.oldYear}</p>}
+      <a class="language-advanced" href={`/calculators/${kind}/`}>{c.advanced}<span aria-hidden="true">↗</span></a>
+     </div>
+    </div>
+   </section>;
+  })}
+  <div class="language-coverage"><p>{c.scope}</p><button type="button" data-clear-language>{c.clear}</button></div>
+  <section class="language-lesson" aria-labelledby="language-lesson-title">
+   <div><p class="language-eyebrow">{c.lessonTitle}</p><h2 id="language-lesson-title">{c.lessonIntro}</h2></div>
+   <ol class="language-lesson-steps">{c.lessonSteps.map((title,index)=><li><div class="language-coins" aria-hidden="true"><span>{['100','110','121'][index]}</span><svg viewBox="0 0 120 76" width="120" height="76"><rect x="8" y="35" width="32" height="28" rx="5" fill="#1c7362"/><rect x="45" y={index?22:35} width="32" height={index?41:28} rx="5" fill="#6ebda3"/>{index>0&&<rect x="82" y={index===2?8:22} width="30" height={index===2?55:41} rx="5" fill="#c6eab7"/>}</svg></div><h3>{title}</h3><p>{c.lessonDetails[index]}</p></li>)}</ol>
+   <p class="language-lesson-note">{c.lessonNote}</p>
+  </section>
+  <section class="language-next" aria-labelledby="language-next-title"><h2 id="language-next-title">{c.next}</h2><div><a href="/compare/savings/">{c.bankLink}<span aria-hidden="true">↗</span></a><a href="/learn/">{c.guides}<span aria-hidden="true">↗</span></a></div></section>
+  <div class="language-editorial"><p>{c.translationNote}</p><a href="mailto:hello@howloop.how">{c.contact}</a><details><summary>{c.whyLanguages}</summary><p>{c.languageBasis}</p><a href="https://www.abs.gov.au/statistics/people/people-and-communities/cultural-diversity-census/2021">{c.census}</a><a href="https://www.abs.gov.au/statistics/research/2026-census-topics-and-data-release-plan">{c.censusNext}</a></details></div>
+ </div>
+ <script type="application/json" id="language-calculator-copy" set:html={JSON.stringify(c).replaceAll('<','\\u003c')}/>
+</Base>
+<script>import '../../scripts/language-calculators.js';</script>

@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE } from '../consts';
+import {LANGUAGES,languageForPath} from '../lib/languages.mjs';
 import '../styles/global.css';
 import '../styles/finance.css';
 import '../styles/focus.css';
@@ -10,6 +11,7 @@ import '../styles/money-areas.css';
 import '../styles/modern-foundation.css';
 import '../styles/modern-content.css';
 import '../styles/modern-calculators.css';
+import '../styles/languages.css';
 
 interface Props {
   title: string;
@@ -35,6 +37,7 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(canonical ?? Astro.url.pathname, Astro.site);
+const pageLanguage=languageForPath(Astro.url.pathname);
 if (canonicalURL.pathname !== '/') canonicalURL.pathname = canonicalURL.pathname.replace(/\/?$/, '/');
 canonicalURL.search = '';
 canonicalURL.hash = '';
@@ -59,13 +62,15 @@ const orgLd = {
 ---
 
 <!doctype html>
-<html lang={SITE.locale}>
+<html lang={pageLanguage?.lang||SITE.locale} dir={pageLanguage?.dir||'ltr'}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
+    {pageLanguage && LANGUAGES.map(language=><link rel="alternate" hreflang={language.lang} href={new URL(`/languages/${language.code}/`,Astro.site)}/>)}
+    {pageLanguage && <link rel="alternate" hreflang="x-default" href={new URL('/languages/en/',Astro.site)}/>}
     {noindex && <meta name="robots" content="noindex, follow" />}
 
     <link rel="icon" href="/favicon.ico?v=money-loop-20260920" sizes="16x16 32x32 48x48" />
@@ -134,7 +139,7 @@ const orgLd = {
   </head>
 
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">{pageLanguage?.copy.skip||'Skip to content'}</a>
     <Header />
     <main id="main">
       <slot />
