@@ -40,9 +40,23 @@ test('accept supported scripts but reject blanks, malformed or ambiguous numbers
  for(const input of ['1,234.50','١٬٢٣٤٫٥٠','۱۲۳۴.۵۰','੧੨੩੪.੫੦','１２３４.５０'])assert.equal(parseLocalizedNumber(input),1234.5);
  assert.equal(parseLocalizedNumber('1,23,456.50'),123456.5);
  assert.equal(parseLocalizedNumber('10,00,00,000'),100000000);
- for(const input of ['',null,' ','1,5','1.234,50','1e5','-5','123,45,678','1.234'])assert.ok(Number.isNaN(parseLocalizedNumber(input)),String(input));
+ for(const input of ['',null,' ','1.234,50','1e5','-5','123,45,678','1.234'])assert.ok(Number.isNaN(parseLocalizedNumber(input)),String(input));
  assert.throws(()=>calculateLanguageTool('compound-interest',{...defaultValues('compound-interest'),principal:''}));
  assert.throws(()=>calculateLanguageTool('emergency-fund',{...defaultValues('emergency-fund'),months:2.5}));
+});
+
+test('decimal-comma keyboards preserve amount and rate values without changing grouped thousands',()=>{
+ for(const [input,expected] of [['4,5',4.5],['4,50',4.5],['0,05',.05],['1234,50',1234.5],[' 4,5 ',4.5],['٤,٥',4.5],['４,５０',4.5],['1,500',1500],['1,500.25',1500.25],['1,00,000',100000],['١٬٥٠٠',1500]]){
+  assert.equal(parseLocalizedNumber(input),expected,input);
+ }
+ for(const input of ['4,','4,,5','4,5,0','1,500,25','4,5678','4,5.0','4٬5','٤٬٥'])assert.ok(Number.isNaN(parseLocalizedNumber(input)),input);
+ const inputs={principal:'1000,25',contribution:'0,00',frequency:'monthly',annualRate:'4,5',years:'1'};
+ const result=calculateLanguageTool('compound-interest',inputs);
+ assert.ok(Math.abs(result.total-1000.25*(1+.045/12)**12)<1e-8);
+ const at=Date.now();
+ const restored=readLanguageState(JSON.stringify({at,kind:'compound-interest',values:{'compound-interest':inputs}}),at);
+ assert.equal(restored.values['compound-interest'].principal,1000.25);
+ assert.equal(restored.values['compound-interest'].annualRate,4.5);
 });
 test('handoff expires, ignores unknown fields, validates choices and does not trust future state',()=>{
  const now=Date.now(),saved={at:now,kind:'compound-interest',values:{'compound-interest':{...defaultValues('compound-interest'),principal:12345,secret:'not retained'},salary:{...defaultValues('salary'),inputPeriod:'nonsense'}}};

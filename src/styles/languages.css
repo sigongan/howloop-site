@@ -11,7 +11,7 @@ body .hl-header .hl-language-popover nav{display:grid;grid-template-columns:repe
 .hl-language-popover nav a:hover,.hl-language-popover nav a[aria-current]{background:#edf6f3;border-color:#82b3a5}
 .hl-language-popover nav small{font-size:.75rem;font-weight:400;color:#52656c}
 .hl-language-popover nav a>span{position:absolute;inset-block-start:8px;inset-inline-end:8px;font-size:.8rem;color:#147d68}
-.language-english-home{margin-inline-start:auto;display:flex;align-items:center;gap:12px;font-size:.9375rem;min-height:44px;text-decoration:none;color:#40585f}
+.language-english-home{margin-inline-start:auto;display:flex;align-items:center;gap:12px;font-size:.9375rem;min-height:44px;min-width:0;overflow-wrap:anywhere;text-decoration:none;color:#40585f}
 .language-page{padding-block:44px 64px}
 .language-heading{max-width:820px;margin-bottom:28px}
 .language-eyebrow{font-size:.8125rem!important;font-weight:700;letter-spacing:.075em;color:#14735f!important;margin-bottom:12px!important}
@@ -67,8 +67,8 @@ body .language-form h3{font-size:1.125rem;margin:0 0 20px;line-height:1.5;letter
 body .language-lesson h2{font-size:clamp(1.5rem,2.3vw,2.1rem);line-height:1.45;max-width:32ch;margin:0 0 24px;letter-spacing:-.025em}
 .language-lesson-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:0;margin:0;list-style:none}
 .language-lesson-steps li{min-width:0}
-.language-coins{display:flex;align-items:center;justify-content:space-between;gap:12px;height:110px;margin-bottom:15px;border-bottom:1px solid #c7dbd0;direction:ltr;overflow:hidden}
-.language-coins>span{font-size:2.625rem;font-weight:700;letter-spacing:-.04em;color:#184c40;font-variant-numeric:tabular-nums}
+.language-coins{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;min-height:110px;padding-block:12px;margin-bottom:15px;border-bottom:1px solid #c7dbd0;direction:ltr}
+.language-coins>span{font-size:2.625rem;font-weight:700;line-height:1.2;letter-spacing:-.04em;color:#184c40;font-variant-numeric:tabular-nums}
 .language-coins svg{width:100px;flex:none}
 body .language-lesson-steps h3{font-size:1.125rem;line-height:1.55;letter-spacing:0;margin-bottom:10px}
 .language-lesson-steps p{font-size:1rem;line-height:1.8;color:#3c5752}
@@ -88,6 +88,7 @@ body .language-next h2{font-size:1.375rem;line-height:1.6;margin-bottom:16px;let
 .language-footer small{font-size:.8125rem;color:#aebfc6}
 html[dir=rtl] .hl-brand{direction:ltr}html[dir=rtl] .language-eyebrow{letter-spacing:0}
 html[dir=rtl] .language-page h1,html[dir=rtl] .language-page h2,html[dir=rtl] .language-page h3{letter-spacing:0;line-height:1.65}
+html[dir=rtl] :is(.language-english-home,.language-calculate,.language-assumptions a,.language-advanced,.language-next a)>span[aria-hidden]{display:inline-block;transform:scaleX(-1)}
 @media(max-width:1350px){body .hl-header .hl-desktop-nav{display:none}body .hl-header .hl-mobile-menu{display:block;margin-inline-start:auto}body .hl-header .hl-mobile-menu{order:3}.hl-language-picker{margin-inline-start:0}.language-english-home{margin-inline-start:auto}}
 @media(max-width:800px){
  .language-page{padding-top:28px}.language-heading{margin-bottom:24px}
@@ -96,7 +97,7 @@ html[dir=rtl] .language-page h1,html[dir=rtl] .language-page h2,html[dir=rtl] .l
  .language-result{padding:24px}.language-result-total{font-size:2.25rem}.language-result dd{font-size:1.25rem}
  .language-field>label{font-size:1.0625rem}.language-field small,.language-local{font-size:.9375rem}
  .language-field input[type=text],.language-field select{font-size:1.125rem;min-height:58px}
- .language-lesson{padding:24px}.language-lesson-steps{grid-template-columns:1fr;gap:24px}.language-coins{height:84px}
+ .language-lesson{padding:24px}.language-lesson-steps{grid-template-columns:1fr;gap:24px}.language-coins{min-height:84px}
  .language-coins svg{width:110px}.language-lesson-steps p{font-size:1.0625rem}.language-lesson-note{font-size:.9375rem}
  .language-next>div{grid-template-columns:1fr}.language-next a{padding:18px}.language-coverage{margin-bottom:32px}
  .hl-language-picker>summary{padding:10px;min-width:46px}.hl-language-picker>summary>span{display:none}
@@ -104,5 +105,5 @@ html[dir=rtl] .language-page h1,html[dir=rtl] .language-page h2,html[dir=rtl] .l
  .language-english-home{font-size:.8125rem;max-width:16ch;line-height:1.5;gap:7px}
  body .hl-header .hl-nav{gap:10px}
 }
-@media(max-width:360px){body .hl-header .brandmark{font-size:23px;gap:5px}body .hl-header .brandmark svg{width:36px}.language-result-total{font-size:1.875rem}.language-result dl{grid-template-columns:1fr}.language-english-home{max-width:12ch}.language-form,.language-result{padding:19px}.hl-language-popover{inset-inline:12px}}
+@media(max-width:360px){body .hl-header .brandmark{font-size:23px;gap:5px}body .hl-header .brandmark svg{width:36px}.language-result-total{font-size:1.875rem}.language-result dl{grid-template-columns:1fr}.language-english-home{max-width:12ch}.language-form,.language-result{padding:19px}.hl-language-popover{inset-inline:12px}body .hl-header .hl-language-popover nav{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.language-page *{scroll-behavior:auto!important}}
