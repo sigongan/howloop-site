@@ -20,7 +20,7 @@
  "repayment":"Khoản trả nợ hằng tháng thông thường","totalPayment":"Bao gồm khoản trả thêm","interestPlan":"Tiền lãi theo kế hoạch","interestSaved":"Tiền lãi tiết kiệm được","paidOff":"Số tháng dự kiến để trả hết nợ",
  "monthlyRequired":"Số tiền cần tiết kiệm mỗi tháng","target":"Mục tiêu của bạn","buffer":"Mục tiêu quỹ khẩn cấp","gap":"Số tiền còn cần tiết kiệm","timeToGoal":"Số tháng để đạt mục tiêu","noContribution":"Nhập khoản tiết kiệm hằng tháng để ước tính thời gian.",
  "netPay":"Lương thực nhận ước tính","tax":"Thuế PAYG bị khấu trừ","help":"Khoản HELP bị khấu trừ","super":"Super của chủ lao động (vào quỹ hưu trí)","gross":"Lương trước thuế",
- "error":"Kiểm tra dữ liệu. Nhập số trong giới hạn hiển thị; ô trống không được coi là số không.","numberHint":"Nhập từ {min} đến {max}. Dùng dấu chấm cho phần thập phân.",
+ "error":"Kiểm tra dữ liệu. Nhập số trong giới hạn hiển thị; ô trống không được coi là số không.","numberHint":"Nhập từ {min} đến {max}. Số thập phân: 4,5 hoặc 4.5.",
  "assumptions":"Cách tính ước tính này",
  "savingsNote":"Giả định lãi suất không đổi, lãi nhập gốc hằng tháng và gửi tiền vào cuối tháng. Tiền gửi theo tuần hoặc mỗi hai tuần được đổi thành trung bình tháng. Không tính rút tiền, thuế, phí hay lạm phát. Cách tính của ngân hàng và điều kiện lãi thưởng có thể khác.",
  "mortgageNote":"Khoản vay trả cả gốc và lãi, trả hằng tháng và lãi suất không đổi trong mô hình. Khoản trả thông thường được tính khi chưa có offset. Giả định số dư offset 100% không đổi để giảm dư nợ tính lãi, cộng khoản trả thêm mỗi tháng. Không tính phí, rút lại khoản trả thêm hay quy tắc riêng của bên cho vay.",

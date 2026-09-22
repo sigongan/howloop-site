@@ -16,9 +16,15 @@ export const FIELDS={
  salary:[money('amount','pay',85000,1e7),select('inputPeriod','payPeriod','annual',periods),select('includesSuper','superIncluded','no',[['no','superNo'],['yes','superYes']]),check('helpDebt','helpDebt',false),check('claimThreshold','threshold',true),select('outputPeriod','resultPeriod','fortnightly',periods)],
 };
 export function parseLocalizedNumber(value){
- const text=String(value??'').trim().replace(/[\u0660-\u0669\u06f0-\u06f9\u0a66-\u0a6f\uff10-\uff19]/g,c=>{
+ let text=String(value??'').trim().replace(/[\u0660-\u0669\u06f0-\u06f9\u0a66-\u0a6f\uff10-\uff19]/g,c=>{
   const point=c.charCodeAt(0);return String(point>=0xff10?point-0xff10:point>=0xa66&&point<=0xa6f?point-0xa66:point>=0x6f0?point-0x6f0:point-0x660);
- }).replaceAll('\u066b','.').replaceAll('\u066c',',');
+ }).replaceAll('\u066b','.');
+ // Decimal keyboards may only offer a comma. One comma with 1–2 trailing
+ // digits is a decimal; 1,500 remains a grouped whole number.
+ if(/^\d+,\d{1,2}$/.test(text))text=text.replace(',','.');
+ // Preserve the meaning of the explicit Arabic thousands separator: a
+ // malformed group such as 4\u066c5 must never become a decimal.
+ text=text.replaceAll('\u066c',',');
  // Accept both Australian grouping (100,000) and Punjabi/Indian grouping (1,00,000).
  if(!/^(?:\d+|\d{1,3}(?:,\d{3})+|\d{1,2}(?:,\d{2})+,\d{3})(?:\.\d{1,2})?$/.test(text))return NaN;
  return Number(text.replaceAll(',',''));
