@@ -1,7 +1,7 @@
 {
   "name": "Bankwest",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Retirement Advantage Account",
       "description": "An everyday bank account with no maintenance fees that rewards you with interest. For those aged 55 and over.",
       "url": "https://www.bankwest.com.au/bank-accounts/over55",
-      "lastUpdated": "2026-09-21T01:15:03.000Z",
+      "lastUpdated": "2026-09-28T01:15:03.000Z",
       "source": "https://open-api.bankwest.com.au/bwpublic/cds-au/v1/banking/products/b54379a0c72b4129887a85e7b629b3af",
       "depositRates": [
         {
@@ -314,7 +314,7 @@
       "name": "Hero Saver",
       "description": "A savings account that rewards you for growing your balance",
       "url": "https://www.bankwest.com.au/savings-accounts/bonus-interest",
-      "lastUpdated": "2026-09-21T01:15:03.000Z",
+      "lastUpdated": "2026-09-28T01:15:03.000Z",
       "source": "https://open-api.bankwest.com.au/bwpublic/cds-au/v1/banking/products/b7c55febbeab43e1b0969f28c617f780",
       "depositRates": [
         {
@@ -572,7 +572,7 @@
       "name": "Bankwest Easy Saver",
       "description": "The Easy Saver Account is our flexible savings account that lets you earn credit interest on a tiered basis on all balances in the account with no minimum monthly deposit (you can also move your money in and out of your account without affecting your interest rate). Credit interest is calculated at the applicable rate on that portion of the balance which falls within each of the tiers.",
       "url": "https://www.bankwest.com.au/savings-accounts/high-interest",
-      "lastUpdated": "2026-09-21T01:15:03.000Z",
+      "lastUpdated": "2026-09-28T01:15:03.000Z",
       "source": "https://open-api.bankwest.com.au/bwpublic/cds-au/v1/banking/products/d10438974ab8417bab388149da5053bb",
       "depositRates": [
         {

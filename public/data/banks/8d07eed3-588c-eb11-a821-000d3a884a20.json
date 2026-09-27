@@ -1,7 +1,7 @@
 {
   "name": "IMB Bank",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Reward Saver Account",
       "description": "Helps you reach your savings goals faster by rewarding you with bonus interest for regular savings",
       "url": "https://www.imb.com.au/banking/saving-accounts/reward-saver-account",
-      "lastUpdated": "2026-05-29T00:00:00+10:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-22-1",
       "depositRates": [
         {
@@ -843,8 +843,7 @@
         },
         {
           "featureType": "ADDITIONAL_CARDS",
-          "additionalValue": "",
-          "additionalInfo": "Account holders may hold both a Visa Debit and Cashcard per eligible account"
+          "additionalValue": ""
         },
         {
           "featureType": "FREE_TXNS_ALLOWANCE",
@@ -955,6 +954,9 @@
           "featureType": "OTHER",
           "additionalValue": "PayTo",
           "additionalInfo": "PayTo is available on this account type."
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {
@@ -968,7 +970,7 @@
       "name": "Reward Saver Kick Start",
       "description": "Kick Start your savings with the IMB Reward Saver Kick Start Account. Designed for teens and young adults under 30.",
       "url": "https://www.imb.com.au/banking/saving-accounts/reward-saver-kick-start-account",
-      "lastUpdated": "2026-07-01T00:00:00+10:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-22-2",
       "depositRates": [
         {
@@ -1832,8 +1834,7 @@
         },
         {
           "featureType": "ADDITIONAL_CARDS",
-          "additionalValue": "",
-          "additionalInfo": "Account holders may hold both a Visa Debit and Cashcard per eligible account"
+          "additionalValue": ""
         },
         {
           "featureType": "FREE_TXNS_ALLOWANCE",
@@ -1944,6 +1945,9 @@
           "featureType": "OTHER",
           "additionalValue": "PayTo",
           "additionalInfo": "PayTo is available on this account type."
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {
@@ -1957,7 +1961,7 @@
       "name": "Cash Management Account",
       "description": "Enjoy competitive interest rates without the need to lock your money away.",
       "url": "https://www.imb.com.au/banking/saving-accounts/cash-management-account",
-      "lastUpdated": "2026-05-29T00:00:00+10:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-23-1",
       "depositRates": [
         {
@@ -2760,8 +2764,7 @@
         },
         {
           "featureType": "ADDITIONAL_CARDS",
-          "additionalValue": "",
-          "additionalInfo": "Account holders may hold both a Visa Debit and Cashcard per eligible account"
+          "additionalValue": ""
         },
         {
           "featureType": "FREE_TXNS_ALLOWANCE",
@@ -2877,6 +2880,9 @@
           "featureType": "OTHER",
           "additionalValue": "PayTo",
           "additionalInfo": "PayTo is available on this account type."
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {
@@ -2890,7 +2896,7 @@
       "name": "Zoo Account",
       "description": "An account made for Kids. The IMB Zoo Account is a fun, interactive account that encourages kids to save by rewarding them for their efforts.",
       "url": "https://www.imb.com.au/banking/transaction-accounts/zoo-account",
-      "lastUpdated": "2026-05-29T00:00:00+10:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-29-1",
       "depositRates": [
         {
@@ -3240,6 +3246,9 @@
           "featureType": "NPP_ENABLED",
           "additionalInfo": "This account type is enabled to recieve Osko payments, via the New Payments Platform (NPP) only. Osko is the faster way to receive money from friends, family and businesses. No more waiting days for money to change hands. Now you can  be paid in a matter of seconds",
           "additionalInfoUri": "https://www.imb.com.au/banking/ways-to-bank/osko"
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {
@@ -3253,7 +3262,7 @@
       "name": "Everyday Unlimited Account",
       "description": "Access your money the way you want great features and unlimited transactions.  A monthly account keeping fee applies, but is waived if you maintain a balance above $2,000 for the month.",
       "url": "https://www.imb.com.au/banking/transaction-accounts/everyday-unlimited-account",
-      "lastUpdated": "2026-03-10T00:00:00+11:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-34-1",
       "depositRates": [
         {
@@ -3743,8 +3752,7 @@
         },
         {
           "featureType": "ADDITIONAL_CARDS",
-          "additionalValue": "",
-          "additionalInfo": "Account holders may hold both a Visa Debit and Cashcard per eligible account"
+          "additionalValue": ""
         },
         {
           "featureType": "OVERDRAFT",
@@ -3855,6 +3863,9 @@
           "featureType": "OTHER",
           "additionalValue": "PayTo",
           "additionalInfo": "PayTo is available on this account type."
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {
@@ -3868,7 +3879,7 @@
       "name": "Everyday Unlimited Kick Start Account",
       "description": "An everyday bank account made for teens and young adults under 30.",
       "url": "https://www.imb.com.au/banking/transaction-accounts/everyday-unlimited-kick-start-account",
-      "lastUpdated": "2026-07-01T00:00:00+10:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-34-2",
       "depositRates": [
         {
@@ -4344,8 +4355,7 @@
         },
         {
           "featureType": "ADDITIONAL_CARDS",
-          "additionalValue": "",
-          "additionalInfo": "Account holders may hold both a Visa Debit and Cashcard per eligible account"
+          "additionalValue": ""
         },
         {
           "featureType": "DIGITAL_BANKING",
@@ -4451,6 +4461,9 @@
           "featureType": "OTHER",
           "additionalValue": "PayTo",
           "additionalInfo": "PayTo is available on this account type."
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {
@@ -4464,7 +4477,7 @@
       "name": "DIY Super Account",
       "description": "A low cost, highly flexible investment and transaction account wrapped into one simple solution. For registered self managed super funds.",
       "url": "https://www.imb.com.au/banking/saving-accounts/diy-super-account",
-      "lastUpdated": "2026-05-29T00:00:00+10:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-35-1",
       "depositRates": [
         {
@@ -5113,6 +5126,9 @@
           "featureType": "OTHER",
           "additionalValue": "PayTo",
           "additionalInfo": "PayTo is available on this account type."
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {
@@ -5126,7 +5142,7 @@
       "name": "Everyday Account",
       "description": "The IMB Everyday Account comes with a great range of access options and no monthly account keeping fee, you'll just pay for the transactions you do.",
       "url": "https://www.imb.com.au/banking/transaction-accounts/everyday-account",
-      "lastUpdated": "2026-05-29T00:00:00+10:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-4-1",
       "depositRates": [
         {
@@ -6435,8 +6451,7 @@
         },
         {
           "featureType": "ADDITIONAL_CARDS",
-          "additionalValue": "",
-          "additionalInfo": "Account holders may hold both a Visa Debit and Cashcard per eligible account"
+          "additionalValue": ""
         },
         {
           "featureType": "FREE_TXNS_ALLOWANCE",
@@ -6552,6 +6567,9 @@
           "featureType": "OTHER",
           "additionalValue": "PayTo",
           "additionalInfo": "PayTo is available on this account type."
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {
@@ -6578,7 +6596,7 @@
       "name": "Christmas Club Account",
       "description": "Enjoy a hassle free Christmas with the IMB Christmas Club Account. Earn bonus interest for regular saving then access your savings in November and December to pay for Christmas.",
       "url": "https://www.imb.com.au/banking/saving-accounts/christmas-club-account",
-      "lastUpdated": "2026-05-29T00:00:00+10:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-6-1",
       "depositRates": [
         {
@@ -6922,6 +6940,9 @@
           "featureType": "FUNDS_AVAILABLE_AFTER",
           "additionalInfo": "Funds available after 31 October",
           "additionalInfoUri": "https://www.imb.com.au/banking/saving-accounts/christmas-club-account"
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {
@@ -6935,7 +6956,7 @@
       "name": "Everyday 50PLUS Account",
       "description": "A high interest transaction account available to members 50 years or over, or members who recieve an eligible permanent pension.",
       "url": "www.imb.com.au/banking/transaction-accounts/everyday-50plus",
-      "lastUpdated": "2026-05-29T00:00:00+10:00",
+      "lastUpdated": "2026-09-22T00:00:00+10:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-8-1",
       "depositRates": [
         {
@@ -7409,8 +7430,7 @@
         },
         {
           "featureType": "ADDITIONAL_CARDS",
-          "additionalValue": "",
-          "additionalInfo": "Account holders may hold both a Visa Debit and Cashcard per eligible account"
+          "additionalValue": ""
         },
         {
           "featureType": "FREE_TXNS_ALLOWANCE",
@@ -7526,6 +7546,12 @@
           "featureType": "OTHER",
           "additionalValue": "PayTo",
           "additionalInfo": "PayTo is available on this account type."
+        },
+        {
+          "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "FRAUD_PROTECTION"
         }
       ],
       "additionalInformation": {

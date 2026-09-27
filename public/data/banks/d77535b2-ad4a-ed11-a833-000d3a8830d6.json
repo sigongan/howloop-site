@@ -1,7 +1,7 @@
 {
   "name": "Arab Bank Australia Limited",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -22,14 +22,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "250000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "250000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -45,14 +42,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "10000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "10000.00",
               "maximumValue": "19999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -68,14 +63,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "50000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "99999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -91,14 +84,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "0.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "4999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -114,14 +105,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "5000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "5000.00",
               "maximumValue": "9999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -137,14 +126,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "20000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "20000.00",
               "maximumValue": "49999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -160,14 +147,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "100000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "100000.00",
               "maximumValue": "249999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -282,71 +267,61 @@
           "featureType": "OVERDRAFT",
           "additionalInfo": "Overdraft facility available (subject to the Bank's standard credit requirements).",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "FREE_TXNS",
           "additionalInfo": "Includes a maximum of 5 Over the Counter transactions per month, and a combined maximum of 5 transactions per month from the following: EFTPOS, Direct Debit and BPAY.",
           "additionalInfoUri": null,
-          "additionalValue": "5",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "5"
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Convenient access via ATM and EFTPOS.",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Convenient access via ATM and EFTPOS."
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Access funds with a Visa Debit payWave Card.",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Access funds with a Visa Debit payWave Card."
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Access via our internet banking service abal.online.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Statements are supplied quarterly.",
           "additionalInfoUri": "https://www.arabbank.com.au/personal/transaction-investment-accounts/cash-management-account",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Interest is calculated daily and is paid monthly and on entire balance.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "No minimum ongoing balance.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Minimum opening deposit $1,000",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Funds are at call.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -380,14 +355,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "0.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "1999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -403,14 +376,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "10000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "19999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -426,14 +397,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "1000000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -449,14 +417,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "100000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "100000.00",
               "maximumValue": "249999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -472,14 +438,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "500000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "999999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -495,14 +459,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "250000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "499999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -518,14 +480,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "2000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "2999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -541,14 +501,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "3000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "4999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -564,14 +522,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "5000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "5000.00",
               "maximumValue": "9999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -587,14 +543,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "50000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "50000.00",
               "maximumValue": "99999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -610,14 +564,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "20000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "20000.00",
               "maximumValue": "49999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -664,43 +616,37 @@
           "featureType": "OTHER",
           "additionalInfo": "No monthly account keeping or online transactional fees",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "High rate of interest paid on balances as low as $1",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": "Visa Debit payWave Card available with this account.  ",
           "additionalInfoUri": null,
-          "additionalValue": "   VDC",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "   VDC"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Receive regular statements.",
           "additionalInfoUri": "https://www.arabbank.com.au/personal/transaction-investment-accounts/personal-online-savings-account",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Interest calculated daily, and paid monthly.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "24/7 access to your money via our internet banking service abal.online, mobile app abal.mobile, ATMs and EFTPOS across Australia",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -734,14 +680,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "0.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "9999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -757,14 +701,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "10000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "49999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -780,14 +722,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "50000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "99999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -803,14 +743,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "100000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "100000.00",
               "maximumValue": "250000.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -839,36 +777,31 @@
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Access (view only) via our internet banking service abal.online.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Statements are supplied quarterly.",
           "additionalInfoUri": "https://www.arabbank.com.au/personal/foreign-exchange/statement-account",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Interest is calculated daily & paid monthly.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Competitive interest rates paid.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Minimum opening deposit AUD$50",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -902,14 +835,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "10000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "49999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -925,14 +856,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "0.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "9999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -948,14 +877,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "50000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "99999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -971,14 +898,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "100000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "100000.00",
               "maximumValue": "250000.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1007,36 +932,31 @@
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Access (view only) via our internet banking service abal.online.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Statements are supplied quarterly.",
           "additionalInfoUri": "https://www.arabbank.com.au/personal/foreign-exchange/statement-account",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Interest is calculated daily & paid monthly.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Competitive interest rates paid.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Minimum opening deposit AUD$50",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -1070,14 +990,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "0.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "1999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1093,14 +1011,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "10000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "49999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1116,14 +1032,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "50000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "50000.00",
               "maximumValue": "99999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1139,14 +1053,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "2000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "2000.00",
               "maximumValue": "9999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1162,14 +1074,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "100000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "100000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1233,29 +1142,25 @@
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Access funds with a Visa Debit payWave Card",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Access funds with a Visa Debit payWave Card"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "No monthly account keeping fee",
           "additionalInfoUri": "https://www.arabbank.com.au/personal/transaction-investment-accounts/student-account",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Fee free Internet Banking transactions are all personal Internet Banking transfers between your linked accounts, Transfer to Anyone and bill payments via BPAY®.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "FREE_TXNS",
           "additionalInfo": "A maximum of 5 free Over the Counter transactions and unlimited free EFTPOS transactions per month",
           "additionalInfoUri": null,
-          "additionalValue": "5",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "5"
         }
       ],
       "additionalInformation": {
@@ -1289,14 +1194,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "100000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "100000.00",
               "maximumValue": "250000.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1312,14 +1215,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "50000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "99999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1335,14 +1236,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "0.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "1999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1358,14 +1257,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "2000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "2000.00",
               "maximumValue": "9999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1381,14 +1278,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "10000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "10000.00",
               "maximumValue": "49999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1435,36 +1330,31 @@
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Access (view only) via our internet banking service abal.online.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Statements are supplied quarterly.",
           "additionalInfoUri": "https://www.arabbank.com.au/personal/foreign-exchange/statement-account",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Interest is calculated daily & paid monthly.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Competitive interest rates paid.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Minimum opening deposit AUD$50",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -1498,14 +1388,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "2000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "2000.00",
               "maximumValue": "9999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1521,14 +1409,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "10000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "10000.00",
               "maximumValue": "49999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1544,14 +1430,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "0.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "1999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1567,14 +1451,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
+              "name": "AMOUNT",
+              "unitOfMeasure": "DOLLAR",
               "minimumValue": "50000.00",
-              "name": "AMOUNT",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
               "maximumValue": "99999.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1590,14 +1472,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "100000.00",
               "name": "AMOUNT",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "100000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1661,57 +1540,49 @@
           "featureType": "FREE_TXNS",
           "additionalInfo": "A maximum of 5 free Over the Counter transactions and unlimited free EFTPOS transactions per month.",
           "additionalInfoUri": null,
-          "additionalValue": "5",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "5"
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Access via our internet banking service abal.online",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Available in other selected currencies.",
           "additionalInfoUri": "https://www.arabbank.com.au/personal/transaction-investment-accounts/statement-account",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Access funds available with a Visa Debit payWave Card.",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Access funds available with a Visa Debit payWave Card."
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Statements are supplied quarterly.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Interest is calculated daily & paid monthly.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Interest paid on balances of $2,000 and over.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Minimum opening deposit $1",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {

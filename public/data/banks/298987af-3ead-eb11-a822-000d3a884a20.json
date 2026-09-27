@@ -1,7 +1,7 @@
 {
   "name": "Gateway Bank",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Savings Account",
       "description": "Savings Account",
       "url": "https://www.gatewaybank.com.au/banking/bank-accounts/everyday-savings-account/",
-      "lastUpdated": "2026-09-20T22:00:31.7862684Z",
+      "lastUpdated": "2026-09-27T22:00:30.4303840Z",
       "source": "https://public.cdr-api.gatewaybank.com.au/cds-au/v1/banking/products/1",
       "depositRates": [
         {
@@ -638,7 +638,7 @@
       "name": "Eco Advantage Transaction Acct",
       "description": "Eco Advantage Transaction Account",
       "url": "https://www.gatewaybank.com.au/banking/transaction-accounts/eco-advantage-transaction-account/",
-      "lastUpdated": "2026-09-20T22:00:31.7862684Z",
+      "lastUpdated": "2026-09-27T22:00:30.4303840Z",
       "source": "https://public.cdr-api.gatewaybank.com.au/cds-au/v1/banking/products/227",
       "depositRates": [
         {

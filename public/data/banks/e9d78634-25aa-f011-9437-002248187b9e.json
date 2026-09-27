@@ -1,7 +1,7 @@
 {
   "name": "Tiimely Home",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Tiimely home Offset Account",
       "description": "The Offset Account is designed to be linked and used with the Tiimely home Offset Home Loan.  \nEligible home loan customers can receive offset benefits by linking an Offset Account to a Tiimely home Offset Home Loan which reduces the amount of interest that would otherwise accrue in relation to the Tiimely home Offset Home Loan.",
       "url": "https://tiimelyhome.com.au/",
-      "lastUpdated": "2026-09-21T07:50:20+10:00",
+      "lastUpdated": "2026-09-28T08:57:37+10:00",
       "source": "https://api.tiimely.app.bendigobank.com.au/cds-au/v1/banking/products/85eb634c-eb02-4e68-8ffd-8bed5c211feb",
       "depositRates": [
         {
@@ -235,16 +235,6 @@
             "amount": "2.50"
           },
           "additionalInfo": "Staff assisted service.",
-          "additionalInfoUri": "https://www.bendigobank.com.au/siteassets/partner/contentpages/_documents/offset-account-terms-and-conditions.pdf"
-        },
-        {
-          "name": "Agency Withdrawal",
-          "feeType": "WITHDRAWAL",
-          "feeMethodUType": "fixedAmount",
-          "fixedAmount": {
-            "amount": "2.50"
-          },
-          "additionalInfo": "Staff assisted service",
           "additionalInfoUri": "https://www.bendigobank.com.au/siteassets/partner/contentpages/_documents/offset-account-terms-and-conditions.pdf"
         },
         {

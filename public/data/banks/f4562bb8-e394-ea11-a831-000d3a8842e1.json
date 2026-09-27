@@ -1,15 +1,15 @@
 {
   "name": "ANZ",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
       "id": "3776f456-9612-1354-70db-a165f84ef653",
       "name": "ANZ Online Saver",
-      "description": "Online savings account with a standard variable interest rate",
+      "description": "An online savings account",
       "url": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/online-saver/",
-      "lastUpdated": "2026-09-02T03:30:00.000Z",
+      "lastUpdated": "2026-05-14T14:03:00.000Z",
       "source": "https://api.anz/cds-au/v1/banking/products/3776f456-9612-1354-70db-a165f84ef653",
       "depositRates": [
         {
@@ -22,20 +22,7 @@
           "tiers": []
         }
       ],
-      "fees": [
-        {
-          "additionalInfo": "Debited to your account on the day of the dishonour for determining whether to process a debit to your account using the Informal Overdraft facility, where that debit is declined. A Dishonour Fee is only debited when the payment from your account that is declined was attempted via cheque or direct debit",
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "DISHONOUR",
-          "fixedAmount": {
-            "amount": "6.00"
-          },
-          "name": "Dishonour Fee"
-        }
-      ],
+      "fees": [],
       "eligibility": [
         {
           "additionalInfo": "You must be 12 years of age or older to apply",
@@ -47,7 +34,7 @@
           "eligibilityType": "RESIDENCY_STATUS"
         },
         {
-          "additionalInfo": "ANZ Online Saver is only available to customers who open or who are the account holders of, or signatories to, eligible ANZ everyday banking accounts with ANZ Internet Banking or ANZ Phone Banking access. Eligible accounts include ANZ Access Advantage, ANZ Access Basic, ANZ Pensioner Advantage, ANZ Progress Saver, ANZ V2 PLUS and ANZ Premium Cash Management Account. Terms and conditions and fees and charges apply to the eligible account. Monthly fees may apply to the linked account.",
+          "additionalInfo": "You need to choose an eligible ANZ bank account to access your funds\nANZ Online Saver is only available to customers who open or who are the account holders of, or signatories to, eligible ANZ everyday banking accounts with ANZ Internet Banking or ANZ Phone Banking access. Eligible accounts include ANZ Access Advantage, ANZ Access Basic, ANZ Pensioner Advantage, ANZ Progress Saver, ANZ V2 PLUS and ANZ Premium Cash Management Account. Terms and conditions and fees and charges apply to the eligible account.",
           "eligibilityType": "OTHER"
         }
       ],
@@ -59,7 +46,6 @@
           "featureType": "DIGITAL_BANKING"
         },
         {
-          "additionalInfo": "Create a PayID® on your eligible account (PDF) using your mobile phone, email or ABN/ACN (if eligible). With PayID, it's easier to receive payments or set up a PayTo agreement by sharing your PayID instead of your BSB and account number.",
           "additionalInfoUri": "https://www.anz.com.au/ways-to-bank/more/pay-id/?CID=af:obank:sv",
           "featureType": "NPP_PAYID"
         },
@@ -95,11 +81,6 @@
         {
           "additionalInfo": "Access to your money anytime online via your linked bank account",
           "featureType": "OTHER"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/personal/ways-to-bank/more/pay-to/",
-          "additionalValue": "PayTo",
-          "featureType": "BILL_PAYMENT"
         }
       ],
       "additionalInformation": {
@@ -114,7 +95,7 @@
       "name": "ANZ V2 PLUS",
       "description": "Distributed via a range of approved Third Parties such as stockbrokers, accountants and SMSF administrators who open deposit accounts on behalf of their customers",
       "url": "http://www.anz.com/personal/bank-accounts/microsite/adviser-services/anz-v2-plus/?CID=af:obank:sv",
-      "lastUpdated": "2026-08-28T06:00:00.000Z",
+      "lastUpdated": "2026-05-14T14:04:00.000Z",
       "source": "https://api.anz/cds-au/v1/banking/products/78df30d3-62c7-448d-b8ed-5da59894eb79",
       "depositRates": [
         {
@@ -309,9 +290,9 @@
     {
       "id": "966088bd-e7f8-0422-ecb0-3f107f581dac",
       "name": "ANZ Premium Cash Management Account",
-      "description": "Cash management account for holding and managing investment funds.",
+      "description": "An interest bearing product that offers flexible transactional capabilities",
       "url": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/premium-cash-management/",
-      "lastUpdated": "2026-09-03T03:00:00.000Z",
+      "lastUpdated": "2026-05-14T14:04:00.000Z",
       "source": "https://api.anz/cds-au/v1/banking/products/966088bd-e7f8-0422-ecb0-3f107f581dac",
       "depositRates": [
         {
@@ -500,7 +481,7 @@
       ],
       "fees": [
         {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -511,7 +492,7 @@
           "name": "Staff Assisted Transaction"
         },
         {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -522,7 +503,7 @@
           "name": "Electronic Transaction"
         },
         {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -534,7 +515,7 @@
         },
         {
           "additionalInfo": "Applicable for a withdrawal from a non-ANZ ATM outside Australia (per withdrawal), and debited to your account at the same time as the withdrawal is debited",
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/saving-transaction-products-tcs.pdf",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -546,7 +527,7 @@
         },
         {
           "additionalInfo": "ANZ will charge 3% of the value of any International Transaction charged or credited to an ANZ account.",
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/saving-transaction-products-tcs.pdf",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "rateBased",
@@ -558,8 +539,7 @@
           }
         },
         {
-          "additionalInfo": "Debited to your account on the day of the dishonour for determining whether to process a debit to your account using the Informal Overdraft facility, where that debit is declined. A Dishonour Fee is only debited when the payment from your account that is declined was attempted via cheque or direct debit",
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfo": "A Dishonour Fee is only debited when the payment from your account that is declined was attempted via cheque or direct debit",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -568,51 +548,6 @@
             "amount": "6.00"
           },
           "name": "Dishonour Fee"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "32.50"
-          },
-          "name": "Replacement of lost or stolen bank cheque"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "25.00"
-          },
-          "name": "Bank Cheque Repurchase Fee"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "28.00"
-          },
-          "name": "Telegraphic transfer within Australia from your ANZ account to another account"
-        },
-        {
-          "additionalInfo": "Providing bank cheques (Australian dollars only) This is a charge for issuing a bank cheque to an ANZ account holder.",
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "10.00"
-          },
-          "name": "Bank Cheque Request at ANZ Branch"
         }
       ],
       "eligibility": [
@@ -640,7 +575,6 @@
           "featureType": "DIGITAL_BANKING"
         },
         {
-          "additionalInfo": "Create a PayID® on your eligible account (PDF) using your mobile phone, email or ABN/ACN (if eligible). With PayID, it's easier to receive payments or set up a PayTo agreement by sharing your PayID instead of your BSB and account number.",
           "additionalInfoUri": "https://www.anz.com.au/support/online-banking/payments/pay-id/",
           "featureType": "NPP_PAYID"
         },
@@ -707,9 +641,9 @@
     {
       "id": "e9a3b4fe-240c-388e-2282-42db8f570e63",
       "name": "ANZ Progress Saver",
-      "description": "Savings account with bonus interest if you meet the eligibility criteria.",
+      "description": "Savings account where can earn bonus interest for saving regularly",
       "url": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/progress-saver/",
-      "lastUpdated": "2026-09-02T03:30:00.000Z",
+      "lastUpdated": "2026-07-28T05:00:00.000Z",
       "source": "https://api.anz/cds-au/v1/banking/products/e9a3b4fe-240c-388e-2282-42db8f570e63",
       "depositRates": [
         {
@@ -724,16 +658,7 @@
         {
           "additionalInfo": "Bonus interest is subject to eligibility. ANZ Progress Saver pays bonus interest (in addition to the current variable base interest) in respect of a particular month if the set minimum deposit (currently $10) and no withdrawals, fees or charges are processed to the account on or before the last business day of that calendar month, and after the last business day of the previous calendar month. Bonus and base rates are variable and subject to change.",
           "additionalValue": "When you make a single deposit of $10 or more in a month and no withdrawals",
-          "applicabilityConditions": [
-            {
-              "additionalValue": "10.00",
-              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT"
-            },
-            {
-              "additionalValue": "0",
-              "rateApplicabilityType": "MAX_WITHDRAWALS"
-            }
-          ],
+          "applicabilityConditions": [],
           "applicationFrequency": "P1M",
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
@@ -744,7 +669,7 @@
       ],
       "fees": [
         {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -755,7 +680,7 @@
           "name": "Staff Assisted Transaction"
         },
         {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf?CID=af:obank:sv",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -791,7 +716,7 @@
           }
         },
         {
-          "additionalInfo": "Debited to your account on the day of the dishonour for determining whether to process a debit to your account using the Informal Overdraft facility, where that debit is declined. A Dishonour Fee is only debited when the payment from your account that is declined was attempted via cheque or direct debit\"",
+          "additionalInfo": "A Dishonour Fee is only debited when the payment from your account that is declined was attempted via cheque or direct debit",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -800,50 +725,6 @@
             "amount": "6.00"
           },
           "name": "Dishonour Fee"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "32.50"
-          },
-          "name": "Replacement of lost or stolen bank cheque"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "25.00"
-          },
-          "name": "Bank Cheque Repurchase Fee"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "28.00"
-          },
-          "name": "Telegraphic transfer within Australia from your ANZ account to another account"
-        },
-        {
-          "additionalInfo": "Providing bank cheques (Australian dollars only) This is a charge for issuing a bank cheque to an ANZ account holder.",
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "10.00"
-          },
-          "name": "Bank Cheque Request at ANZ Branch"
         }
       ],
       "eligibility": [
@@ -857,7 +738,16 @@
           "eligibilityType": "RESIDENCY_STATUS"
         }
       ],
-      "constraints": [],
+      "constraints": [
+        {
+          "additionalValue": "10.00",
+          "constraintType": "MIN_BALANCE"
+        },
+        {
+          "additionalValue": "10.00",
+          "constraintType": "OPENING_BALANCE"
+        }
+      ],
       "features": [
         {
           "additionalInfo": "Access using ANZ Internet Banking or ANZ App",
@@ -865,7 +755,6 @@
           "featureType": "DIGITAL_BANKING"
         },
         {
-          "additionalInfo": "Create a PayID® on your eligible account (PDF) using your mobile phone, email or ABN/ACN (if eligible). With PayID, it's easier to receive payments or set up a PayTo agreement by sharing your PayID instead of your BSB and account number.",
           "additionalInfoUri": "https://www.anz.com.au/support/online-banking/payments/pay-id/",
           "featureType": "NPP_PAYID"
         },
@@ -913,7 +802,7 @@
           "featureType": "FRAUD_PROTECTION"
         },
         {
-          "additionalInfo": "You can qualify for bonus interest when you make at least a single deposit of $10 or more in a month and if no withdrawals, transfers, fees or charges are processed to the account in that month. Bonus interest is subject to eligibility. Refer to ANZ Saving & Transaction Products T&Cs for further details including what’s included in your balance, how interest is calculated and how we work out if you earn and qualify for bonus interest. Interest rates are variable and subject to change.",
+          "additionalInfo": "Bonus interest if you deposit at least $10 in one transaction and don't withdraw or transfer money out\nBonus interest is subject to eligibility. ANZ Progress Saver pays bonus interest (in addition to the current variable base interest) in respect of a particular month if the set minimum deposit (currently $10) and no withdrawals, fees or charges are processed to the account on or before the last business day of that calendar month, and after the last business day of the previous calendar month. Bonus and base rates are variable and subject to change",
           "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
           "featureType": "OTHER"
         },
@@ -931,15 +820,6 @@
           "additionalInfo": "Great for kids banking\nOpen your child’s first savings account and help to start their journey of banking with ease!",
           "additionalInfoUri": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/progress-saver/",
           "featureType": "OTHER"
-        },
-        {
-          "additionalValue": "Any ANZ card",
-          "featureType": "CARD_ACCESS"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/personal/ways-to-bank/more/pay-to/",
-          "additionalValue": "PayTo",
-          "featureType": "BILL_PAYMENT"
         }
       ],
       "additionalInformation": {
@@ -952,9 +832,9 @@
     {
       "id": "f9ec7ae4-f606-0e91-9403-d6ce664eb765",
       "name": "ANZ Pensioner Advantage Account",
-      "description": "Offers affordable and convenient banking for recipients of eligible Centrelink or Veterans' Affairs pension or allowance.",
+      "description": "Basic account for recipients of eligible Centrelink or Veterans' Affairs pension or allowance",
       "url": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/",
-      "lastUpdated": "2026-09-02T03:30:00.000Z",
+      "lastUpdated": "2026-05-14T14:02:00.000Z",
       "source": "https://api.anz/cds-au/v1/banking/products/f9ec7ae4-f606-0e91-9403-d6ce664eb765",
       "depositRates": [
         {
@@ -1029,7 +909,7 @@
       "fees": [
         {
           "additionalInfo": "Applicable for a withdrawal from a non-ANZ ATM outside Australia (per withdrawal), and debited to your account at the same time as the withdrawal is debited",
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/saving-transaction-products-tcs.pdf",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -1041,7 +921,7 @@
         },
         {
           "additionalInfo": "ANZ will charge 3% of the value of any International Transaction charged or credited to an ANZ account.",
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-account-fees-charges.pdf",
+          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/saving-transaction-products-tcs.pdf",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "rateBased",
@@ -1051,51 +931,6 @@
             "rate": "0.03",
             "rateType": "TRANSACTION"
           }
-        },
-        {
-          "additionalInfo": "Providing bank cheques (Australian dollars only) This is a charge for issuing a bank cheque to an ANZ account holder.",
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "10.00"
-          },
-          "name": "Bank Cheque Request at ANZ Branch"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "28.00"
-          },
-          "name": "Telegraphic transfer within Australia from your ANZ account to another account"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "25.00"
-          },
-          "name": "Bank Cheque Repurchase Fee"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/content/dam/anzcomau/documents/pdf/personal-banking-general-fees-charges.pdf",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "32.50"
-          },
-          "name": "Replacement of lost or stolen bank cheque"
         }
       ],
       "eligibility": [
@@ -1122,7 +957,6 @@
           "featureType": "DIGITAL_BANKING"
         },
         {
-          "additionalInfo": "Create a PayID® on your eligible account (PDF) using your mobile phone, email or ABN/ACN (if eligible). With PayID, it's easier to receive payments or set up a PayTo agreement by sharing your PayID instead of your BSB and account number.",
           "additionalInfoUri": "https://www.anz.com.au/support/online-banking/payments/pay-id/",
           "featureType": "NPP_PAYID"
         },
@@ -1178,11 +1012,6 @@
           "additionalInfo": "Tap & Pay\nSet up mobile payment on your compatible devices with eligible ANZ cards so you can tap and pay",
           "additionalInfoUri": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/",
           "featureType": "OTHER"
-        },
-        {
-          "additionalInfoUri": "https://www.anz.com.au/personal/ways-to-bank/more/pay-to/",
-          "additionalValue": "PayTo",
-          "featureType": "BILL_PAYMENT"
         }
       ],
       "additionalInformation": {

@@ -1,7 +1,7 @@
 {
   "name": "Fire Service Credit Union",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "S1 On Call Savings",
       "description": "An everyday transaction account that gives you easy access to your money.",
       "url": "https://www.fscu.com.au/accounts/transaction-accounts/",
-      "lastUpdated": "2026-09-20T22:00:34.7068755Z",
+      "lastUpdated": "2026-09-27T22:00:32.3147015Z",
       "source": "https://public.cdr-api.fscu.com.au/cds-au/v1/banking/products/1",
       "depositRates": [
         {

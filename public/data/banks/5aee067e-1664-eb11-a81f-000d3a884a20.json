@@ -1,7 +1,7 @@
 {
   "name": "Beyond Bank Australia",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Purple Transactor Account",
       "description": "The Purple Transactor Account is a simple and flexible everyday transaction account. No monthly fee, no minimum deposits and no fees for card purchases in Australia.",
       "url": "https://www.beyondbank.com.au/bank-and-save/accounts/purple-transactor-account/",
-      "lastUpdated": "2026-03-23T08:00:30.8628823Z",
+      "lastUpdated": "2026-09-23T04:00:31.7116313Z",
       "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/1",
       "depositRates": [
         {
@@ -17,7 +17,8 @@
           "rate": "0.0",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
-          "applicationFrequency": "P1M"
+          "applicationFrequency": "P1M",
+          "additionalInfo": "This is a non-interest earning account."
         }
       ],
       "fees": [
@@ -28,7 +29,8 @@
           "fixedAmount": {
             "amount": "2.00"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for Bank@Post deposits made at participating Australia Post Offices."
         },
         {
           "name": "Bank@Post Withdrawal Fee",
@@ -37,7 +39,8 @@
           "fixedAmount": {
             "amount": "4.50"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for Bank@Post withdrawals made at participating Australia Post Offices."
         }
       ],
       "eligibility": [
@@ -113,7 +116,7 @@
       "name": "Retirement Account",
       "description": "The Retirement Account enables retirees to earn a little, whilst still using this as an everyday bank account.",
       "url": "https://www.beyondbank.com.au/bank-and-save/accounts/retirement-account/",
-      "lastUpdated": "2026-08-31T08:00:30.6354238Z",
+      "lastUpdated": "2026-09-23T04:00:31.7116313Z",
       "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/2",
       "depositRates": [
         {
@@ -130,7 +133,8 @@
               "maximumValue": "4999.99",
               "rateApplicationMethod": "PER_TIER"
             }
-          ]
+          ],
+          "additionalInfo": "Interest is calculated daily on portions of the balance within each tier. Interest is paid on the last day of each month."
         },
         {
           "depositRateType": "VARIABLE",
@@ -146,7 +150,8 @@
               "maximumValue": "48599.99",
               "rateApplicationMethod": "PER_TIER"
             }
-          ]
+          ],
+          "additionalInfo": "Interest is calculated daily on portions of the balance within each tier. Interest is paid on the last day of each month."
         },
         {
           "depositRateType": "VARIABLE",
@@ -162,7 +167,8 @@
               "maximumValue": "199999.99",
               "rateApplicationMethod": "PER_TIER"
             }
-          ]
+          ],
+          "additionalInfo": "Interest is calculated daily on portions of the balance within each tier. Interest is paid on the last day of each month."
         },
         {
           "depositRateType": "VARIABLE",
@@ -177,7 +183,8 @@
               "minimumValue": "200000.00",
               "rateApplicationMethod": "PER_TIER"
             }
-          ]
+          ],
+          "additionalInfo": "Interest is calculated daily on portions of the balance within each tier. Interest is paid on the last day of each month."
         }
       ],
       "fees": [
@@ -188,7 +195,8 @@
           "fixedAmount": {
             "amount": "2.00"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for Bank@Post deposits made at participating Australia Post Offices."
         },
         {
           "name": "Bank@Post Withdrawal Fee",
@@ -197,7 +205,8 @@
           "fixedAmount": {
             "amount": "4.50"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for Bank@Post withdrawals made at participating Australia Post Offices."
         },
         {
           "name": "Cash Advance/Overseas ATM Fee",
@@ -206,7 +215,8 @@
           "fixedAmount": {
             "amount": "4.50"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for each visa debit card overseas ATM withdrawal."
         }
       ],
       "eligibility": [
@@ -448,7 +458,7 @@
       "name": "monEsaver Internet Account",
       "description": "The monEsaver is an online savings account with no account keeping fees. Earn interest with no minimum deposit requirements or withdrawal penalties for internet banking, phone banking and mobile banking.",
       "url": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/monesaver-internet-savings-account/",
-      "lastUpdated": "2026-05-18T16:00:30.9451522Z",
+      "lastUpdated": "2026-09-23T04:00:31.7116313Z",
       "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/3",
       "depositRates": [
         {
@@ -510,7 +520,8 @@
           "fixedAmount": {
             "amount": "4.00"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for each over the counter cash withdrawals, staff-assisted transfers and BPAY payments made in a branch or over the phone by the Member Service Centre."
         }
       ],
       "eligibility": [
@@ -741,7 +752,7 @@
       "name": "Purple Bonus Saver",
       "description": "The Purple Bonus Saver Account is designed to assist you to grow your savings and achieve your goals.",
       "url": "https://www.beyondbank.com.au/bank-and-save/accounts/savings-accounts/purple-bonus-saver-account/",
-      "lastUpdated": "2026-05-18T12:00:31.0842192Z",
+      "lastUpdated": "2026-09-23T04:00:31.7116313Z",
       "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/32",
       "depositRates": [
         {
@@ -811,7 +822,8 @@
           "fixedAmount": {
             "amount": "2.50"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for over the counter cash withdrawals, staff assisted transfers or BPAY payments made in branch or over the phone by the Member Service Centre. Receive two free transactions per month before the fee is charged."
         }
       ],
       "eligibility": [
@@ -864,7 +876,7 @@
       "name": "BU Account",
       "description": "The perfect account to stash your cash. If you're under 18 years old, our BU Savings Account is a transaction account designed to build your stash of cash quicker than ever!",
       "url": "https://www.beyondbank.com.au/bank-and-save/accounts/youth-accounts/bu-savings-account/",
-      "lastUpdated": "2026-08-31T08:00:30.6354238Z",
+      "lastUpdated": "2026-09-23T04:00:31.7116313Z",
       "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/5",
       "depositRates": [
         {
@@ -884,7 +896,8 @@
           "fixedAmount": {
             "amount": "2.00"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for Bank@Post deposits made at participating Australia Post Offices."
         },
         {
           "name": "Bank@Post Withdrawal Fee",
@@ -893,7 +906,8 @@
           "fixedAmount": {
             "amount": "4.50"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for Bank@Post withdrawals made at participating Australia Post Offices."
         },
         {
           "name": "Cash Advance/Overseas ATM Fee",
@@ -902,7 +916,8 @@
           "fixedAmount": {
             "amount": "4.50"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for each visa debit card overseas ATM withdrawal."
         }
       ],
       "eligibility": [
@@ -976,7 +991,7 @@
       "name": "Access Savings Account",
       "description": "The Access Savings Account is no longer available as a new account",
       "url": "https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/",
-      "lastUpdated": "2026-09-20T22:00:31.4532631Z",
+      "lastUpdated": "2026-09-27T22:00:31.0312298Z",
       "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/6",
       "depositRates": [
         {
@@ -1072,7 +1087,8 @@
           "fixedAmount": {
             "amount": "2.00"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for Bank@Post deposits made at participating Australia Post Offices."
         },
         {
           "name": "Bank@Post Withdrawal Fee",
@@ -1081,7 +1097,8 @@
           "fixedAmount": {
             "amount": "4.50"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for Bank@Post withdrawals made at participating Australia Post Offices."
         },
         {
           "name": "Cash Advance/Overseas ATM Fee",
@@ -1090,7 +1107,8 @@
           "fixedAmount": {
             "amount": "4.50"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable for each visa debit card overseas ATM withdrawal."
         },
         {
           "name": "Honour Overdrawn Account Fee",
@@ -1099,7 +1117,8 @@
           "fixedAmount": {
             "amount": "11.00"
           },
-          "currency": "AUD"
+          "currency": "AUD",
+          "additionalInfo": "This fee is payable whenever you overdraw your account by $50.00 or more."
         },
         {
           "name": "Line of Credit Approval / Variation Fee",

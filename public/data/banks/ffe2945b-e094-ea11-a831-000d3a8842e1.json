@@ -1,7 +1,7 @@
 {
   "name": "Westpac",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Bump Savings",
       "description": "The trick to saving is to start early. With a Westpac Bump kids savings account, get the money-growing habits you need.",
       "url": "https://www.westpac.com.au/bank-accounts/savings-accounts/bump",
-      "lastUpdated": "2026-09-08T03:20:21Z",
+      "lastUpdated": "2026-09-23T23:56:21Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/SavBump",
       "depositRates": [
         {
@@ -20,10 +20,10 @@
           "applicationFrequency": "P1M",
           "applicabilityConditions": [
             {
-              "rateApplicabilityType": "OTHER",
-              "additionalInfo": "To earn the standard variable rate, account balance must not fall below $0 at any time."
+              "rateApplicabilityType": "OTHER"
             }
-          ]
+          ],
+          "additionalInfo": "When no standard variable bonus rate applies. "
         },
         {
           "depositRateType": "BONUS",
@@ -35,7 +35,7 @@
             {
               "rateApplicabilityType": "MIN_DEPOSITS",
               "additionalValue": "1",
-              "additionalInfo": "Make a deposit to the account; ensure the account balance is higher balance at the end of the month than at the start and account balance must not fall below $0 at any time."
+              "additionalInfo": "Make at least one eligible deposit. Interest paid into the account doesn?t count"
             },
             {
               "rateApplicabilityType": "DEPOSIT_BALANCE_INCREASED",
@@ -43,7 +43,7 @@
             }
           ],
           "additionalValue": "P1M",
-          "additionalInfo": "Bonus interest is payable each month that you: Make a deposit to the account; ensure the account balance is higher balance at the end of the month than at the start and account balance must not fall below $0 at any time."
+          "additionalInfo": "Account balance must not fall below $0 at any time. Make at least one eligible deposit. Interest paid into the account doesn?t count. Account balance on the last business day of the month is higher than the account balance on the last business day of the previous month. Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month."
         }
       ],
       "fees": [
@@ -164,7 +164,7 @@
         },
         {
           "featureType": "OTHER",
-          "additionalInfo": "Weekly spend limit - So you don't spend all your money at once. The limit can be changed as you get more experience.",
+          "additionalInfo": "Weekly payment limit ? If you're under 14, when you register for Online Banking, you'll be given a default weekly payment limit of $50. This limit can't be removed, but it can be changed in Online Banking or the Westpac App by a parent or guardian who has access to the account.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/youth/kids"
         },
         {
@@ -205,7 +205,7 @@
       "name": "Westpac eSaver",
       "description": "Westpac eSaver makes saving a breeze. You?ll get an introductory interest rate and online access to your money whenever you need it. ",
       "url": "https://www.westpac.com.au/bank-accounts/savings-accounts/esaver",
-      "lastUpdated": "2026-09-08T03:20:21Z",
+      "lastUpdated": "2026-09-23T23:56:21Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/SavESaver",
       "depositRates": [
         {
@@ -216,10 +216,10 @@
           "applicationFrequency": "P1M",
           "applicabilityConditions": [
             {
-              "rateApplicabilityType": "OTHER",
-              "additionalInfo": "To earn the standard variable rate, keep your account balance above $0 at all times"
+              "rateApplicabilityType": "OTHER"
             }
-          ]
+          ],
+          "additionalInfo": "Standard variable rate (after 5 months or existing customers). Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month. Balances, including deposits made on or after the last business day of the month, won't count towards that month's interest but will count for the next month's interest."
         },
         {
           "depositRateType": "INTRODUCTORY",
@@ -233,7 +233,7 @@
             }
           ],
           "additionalValue": "P5M",
-          "additionalInfo": "Fixed introductory rate for the first 5 months"
+          "additionalInfo": "Fixed introductory rate for the first 5 months. Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month. Balances, including deposits made on or after the last business day of the month, won't count towards that month's interest but will count for the next month's interest."
         },
         {
           "depositRateType": "BONUS",
@@ -247,7 +247,7 @@
             }
           ],
           "additionalValue": "P1M",
-          "additionalInfo": "Online bonus rate available for a limited time only. Only available for new eSaver accounts opened online by sole applicants who have never held an eSaver account before."
+          "additionalInfo": "Fixed online bonus rate for the first 5 months for opening online. Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month. Balances, including deposits made on or after the last business day of the month, won't count towards that month's interest but will count for the next month's interest."
         },
         {
           "depositRateType": "BONUS",
@@ -410,7 +410,7 @@
       "name": "Westpac Life",
       "description": "Westpac Life is a flexible savings account that supports your savings goals. ",
       "url": "https://www.westpac.com.au/bank-accounts/savings-accounts/life",
-      "lastUpdated": "2026-09-08T03:20:21Z",
+      "lastUpdated": "2026-09-23T23:56:21Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/SavLife",
       "depositRates": [
         {
@@ -421,10 +421,10 @@
           "applicationFrequency": "P1M",
           "applicabilityConditions": [
             {
-              "rateApplicabilityType": "OTHER",
-              "additionalInfo": "To earn the standard variable rate, account balance must not fall below $0 at any time."
+              "rateApplicabilityType": "OTHER"
             }
-          ]
+          ],
+          "additionalInfo": "Standard variable base rate (when no standard variable bonus rate applies). Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month."
         },
         {
           "depositRateType": "BONUS",
@@ -436,7 +436,7 @@
             {
               "rateApplicabilityType": "MIN_DEPOSITS",
               "additionalValue": "1",
-              "additionalInfo": "To earn the variable bonus interest you must make a deposit to your Westpac Life account, ensure the account balance is higher balance at the end of the month than at the start and account balance must not fall below $0 at any time."
+              "additionalInfo": "Account balance must not fall below $0 at any time. Make at least one deposit. Interest paid into the account doesn?t count. Account balance on the last business day of the month is higher than the account balance on the last business day of the previous month."
             },
             {
               "rateApplicabilityType": "DEPOSIT_BALANCE_INCREASED",
@@ -444,7 +444,7 @@
             }
           ],
           "additionalValue": "P1M",
-          "additionalInfo": "Westpac Life Variable Bonus Rate : To earn the variable bonus interest you must make a deposit to your Westpac Life account, ensure the account balance is higher balance at the end of the month than at the start and account balance must not fall below $0 at any time. Interest is calculated on the daily balance of your Westpac Life account and paid on the last business day of the month."
+          "additionalInfo": "Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month."
         },
         {
           "depositRateType": "BONUS",
@@ -464,7 +464,7 @@
           "applicabilityConditions": [
             {
               "rateApplicabilityType": "OTHER",
-              "additionalInfo": "Available to individuals aged 18-40 on new and existing sets of Westpac Life and Choice accounts from 1st July 2020 and may be varied or withdrawn at any time in accordance with the deposit account terms and conditions. Joint accounts are not eligible, and only one Spend&Save offer applies per customer."
+              "additionalInfo": "On up to $150,000 Spend&Save variable bonus rate."
             },
             {
               "rateApplicabilityType": "MIN_PURCHASES",
@@ -473,7 +473,7 @@
             }
           ],
           "additionalValue": "P1M",
-          "additionalInfo": "Spend&Save bonus variable interest: Be aged 18-40 with a Westpac Life and Westpac Choice account and linked Debit Mastercard in your name. Joint accounts are not eligible, and only one Spend&Save offer applies per customer. If you have multiple Westpac Life accounts, only the earliest opened account is eligible for bonus interest. Make?20 eligible purchases?with a Debit Mastercard� linked to a Westpac Choice account in your name. Eligible purchases must be settled (not pending) by 11:59pm on the second last business day within a month. The following transactions are ineligible: ATM transactions, PayID�,BPAY�,EFTPOS cash-out only transactions, direct debits, paying off a credit card account. If you have multiple Westpac Choice accounts, eligible debit card purchases linked to all Westpac Choice accounts in your name are counted in the 20 eligible purchases. For bonus interest qualification, a month is the period between the last business day of the previous month to the second last day of the month (inclusive). Bonus interest is calculated on the daily balance of your eligible Westpac Life account up to $150,000 and paid into your eligible Westpac Life account on the last business day of the month.",
+          "additionalInfo": "Be aged 18-40 with a Westpac Life and Westpac Choice account in your name (Joint accounts are not eligible and only one Spend&Save offer applies per customer). If you have multiple Westpac Life accounts, only the earliest opened account is eligible for bonus interest. Make at least 20 eligible purchases with the Debit Mastercard� linked to your Westpac Choice account. Purchases must be settled (not pending) by 11:59pm Sydney time on the second last business day within a month. Offer may be varied or withdrawn at any time.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/savings-accounts/spend-save-ntb"
         }
       ],

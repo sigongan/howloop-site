@@ -1,7 +1,7 @@
 {
   "name": "Unity Bank",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -2285,7 +2285,7 @@
       "name": "Essential Worker Home Loan Offset Account",
       "description": "Everyday transaction account linked to your eligible mortgage. The balance in this account is offset against your mortgage loan balance to help reduce interest payments long term.",
       "url": "https://www.unity.bank/savings/transaction-accounts/mortgage-offset-account/",
-      "lastUpdated": "2026-09-14T11:00:30.000+10:00",
+      "lastUpdated": "2026-09-21T14:18:36.000+10:00",
       "source": "https://ibank.unity.bank/OpenBanking/cds-au/v1/banking/products/S35_ESSENTIAL_WORKER_OFFSET",
       "depositRates": [
         {

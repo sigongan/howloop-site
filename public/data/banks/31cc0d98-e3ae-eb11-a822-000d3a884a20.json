@@ -1,7 +1,7 @@
 {
   "name": "St.George Bank",
-  "checkedAt": "2026-09-20T22:12:05.244Z",
-  "lastAttempt": "2026-09-20T22:12:05.244Z",
+  "checkedAt": "2026-09-27T23:06:48.746Z",
+  "lastAttempt": "2026-09-27T23:06:48.746Z",
   "status": "available",
   "products": [
     {
@@ -9,12 +9,12 @@
       "name": "Investment Cash Accounts",
       "description": "The Investment Cash Account is a bank account that offers a variable interest rate, with easy access to funds. It can be used to make deposit and withdrawals through a variety of channels for individuals and Self-Managed Superannuation Funds (SMSF).",
       "url": "https://www.stgeorge.com.au/personal/bank-accounts/savings-accounts/investment-cash-account",
-      "lastUpdated": "2026-05-14T00:40:50Z",
+      "lastUpdated": "2026-09-22T00:40:50Z",
       "source": "https://digital-api.stgeorge.com.au/cds-au/v1/banking/products/STGInvestmentCashAccounts",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0045",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -37,7 +37,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0045",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -60,7 +60,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0045",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -83,7 +83,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0045",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -106,7 +106,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0045",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -129,7 +129,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0045",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -152,7 +152,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0045",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -175,7 +175,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0045",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
