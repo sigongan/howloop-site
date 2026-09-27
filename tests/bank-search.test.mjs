@@ -6,7 +6,7 @@ const banks=[
  {name:'CBA - CommBiz'}, {name:'CommBank'}, {name:'NATIONAL AUSTRALIA BANK'},
  {name:'Bank of Queensland Limited'}, {name:'Bank of Melbourne'},
  {name:'Great Southern Bank'}, {name:'ANZ Plus'}, {name:'ANZ'},
- {name:'Macquarie Bank Limited'}
+ {name:'Macquarie Bank Limited'}, {name:'HSBC Bank Australia Limited – Wholesale Banking'}
 ];
 const first=query=>searchBanks(banks,query)[0]?.name;
 
@@ -27,4 +27,8 @@ test('a few words in any position find the right bank',()=>{
 test('blank and unmatched queries do not suggest unrelated banks',()=>{
  assert.deepEqual(searchBanks(banks,''),[]);
  assert.deepEqual(searchBanks(banks,'zzzz'),[]);
+});
+
+test('short abbreviations do not match unrelated mid-word fragments',()=>{
+ assert.deepEqual(searchBanks(banks,'CBA').map(bank=>bank.name),['CommBank','CBA - CommBiz']);
 });

@@ -24,7 +24,7 @@ export function searchBanks(banks,query){
   else if(initials.some(value=>value.startsWith(q)))score=3;
   else if(queryWords.length>1&&queryWords.every(part=>allWords.some(word=>word.startsWith(part))))score=4;
   else if(allWords.some(word=>word.startsWith(q)))score=5;
-  else if(forms.some(value=>value.includes(q)))score=6;
+  else if(q.length>=4&&forms.some(value=>value.includes(q)))score=6;
   return {bank,score};
  }).filter(result=>Number.isFinite(result.score))
   .sort((a,b)=>a.score-b.score||a.bank.name.localeCompare(b.bank.name,'en-AU'))
