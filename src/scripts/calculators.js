@@ -1,4 +1,5 @@
 import {bankFreshness} from '../lib/bank-freshness.mjs';
+import {searchBanks} from '../lib/bank-search.mjs';
 import {parseAmount,prepareMoneyFields} from '../lib/money-input.mjs';
 import {QUICK_SAVINGS_KEY,readQuickSavings} from '../lib/quick-savings.mjs';
 import {compareBankScenarios} from '../lib/bank-scenarios.mjs';
@@ -193,13 +194,52 @@ calculate();
 }catch(e){if(version!==requestVersion)return;output('bank-status','Product data could not load. You can still enter a rate confirmed with your provider.');setRateHint('Rate unchanged · confirm or edit before using',true);calculate();}
 }
 if(q('[data-bank-select]')){
-const dialog=q('[data-bank-dialog]');q('[data-open-bank]').addEventListener('click',()=>dialog.showModal());root.querySelectorAll('[data-close-bank]').forEach(button=>button.addEventListener('click',()=>dialog.close()));dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const box=dialog.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)dialog.close();});
-const select=q('[data-bank-select]');const options=[...select.options].map(o=>({value:o.value,label:o.textContent}));
-const normaliseBank=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
-const bankAliases={nab:'nationalaustraliabank',cba:'commbank',commonwealth:'commbank',commonwealthbank:'commbank'};
-q('[data-bank-search]').addEventListener('input',()=>{const typed=normaliseBank(q('[data-bank-search]').value.trim()),query=bankAliases[typed]||typed,selected=select.value;select.replaceChildren(...options.filter(o=>!o.value||o.value===selected||normaliseBank(o.label).includes(typed)||normaliseBank(o.label).includes(query)).map(o=>new Option(o.label,o.value)));select.value=selected;});
-select.addEventListener('change',()=>loadBank());q('[data-product-select]').addEventListener('change',()=>selectProduct());
-const bankParam=new URL(location.href).searchParams.get('bank');if(bankParam&&options.some(o=>o.value===bankParam)){select.value=bankParam;dialog.showModal();loadBank(new URL(location.href).searchParams.get('product')??'');}
+const dialog=q('[data-bank-dialog]'),select=q('[data-bank-select]'),search=q('[data-bank-search]'),results=q('[data-bank-results]'),searchStatus=q('[data-bank-search-status]');
+const options=[...select.options].filter(option=>option.value).map(option=>({value:option.value,name:option.dataset.bankName??option.textContent,productCount:Number(option.dataset.productCount??0)}));
+const clearResults=()=>{results.replaceChildren();results.hidden=true;searchStatus.hidden=true;};
+function chooseBank(bank){
+ select.value=bank.value;search.value=bank.name;clearResults();search.blur();loadBank();
+}
+function showResults(){
+ const query=search.value.trim();clearResults();if(!query)return;
+ const matches=searchBanks(options,query),shown=matches.slice(0,6);
+ searchStatus.hidden=false;
+ searchStatus.textContent=matches.length?(matches.length>shown.length?'Showing '+shown.length+' of '+matches.length+' banks. Type more to narrow the list.':matches.length+' '+(matches.length===1?'bank':'banks')+' found. Select one below.'):'No bank found. Try another spelling or browse all banks.';
+ for(const bank of shown){
+  const button=document.createElement('button');button.type='button';button.className='bank-search-result';
+  const name=document.createElement('strong');name.textContent=bank.name;button.append(name);
+  const detail=document.createElement('span');detail.textContent=bank.productCount?bank.productCount+' published '+(bank.productCount===1?'product':'products'):'No product data';button.append(detail);
+  button.addEventListener('click',()=>chooseBank(bank));results.append(button);
+ }
+ results.hidden=shown.length===0;
+}
+q('[data-open-bank]').addEventListener('click',()=>{search.value=options.find(option=>option.value===select.value)?.name??'';clearResults();dialog.showModal();});
+root.querySelectorAll('[data-close-bank]').forEach(button=>button.addEventListener('click',()=>dialog.close()));
+dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const box=dialog.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)dialog.close();});
+dialog.addEventListener('close',clearResults);
+search.addEventListener('input',showResults);
+search.addEventListener('keydown',event=>{
+ const first=results.querySelector('button');
+ if(event.key==='Enter'){event.preventDefault();first?.click();}
+ else if(event.key==='ArrowDown'&&first){event.preventDefault();first.focus();}
+ else if(event.key==='Escape'&&!results.hidden){event.preventDefault();clearResults();}
+});
+results.addEventListener('keydown',event=>{
+ if(event.key==='Escape'){event.preventDefault();clearResults();search.focus();return;}
+ if(event.key!=='ArrowDown'&&event.key!=='ArrowUp')return;
+ const buttons=[...results.querySelectorAll('button')],index=buttons.indexOf(document.activeElement);
+ if(index<0)return;
+ event.preventDefault();
+ const next=index+(event.key==='ArrowDown'?1:-1);
+ if(next<0)search.focus();else buttons[Math.min(next,buttons.length-1)].focus();
+});
+select.addEventListener('change',()=>{search.value=options.find(option=>option.value===select.value)?.name??'';clearResults();loadBank();});
+q('[data-product-select]').addEventListener('change',()=>selectProduct());
+const bankParam=new URL(location.href).searchParams.get('bank');
+if(bankParam&&options.some(option=>option.value===bankParam)){
+ select.value=bankParam;search.value=options.find(option=>option.value===bankParam).name;dialog.showModal();
+ loadBank(new URL(location.href).searchParams.get('product')??'');
+}
 }
 if(kind==='compound-interest'){
  try{
