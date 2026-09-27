@@ -59,7 +59,7 @@ if(root){
     const outlook=el(card,'details',undefined,'comparison-outlook');
     el(outlook,'summary','5-year rate-change example');
     const body=el(outlook,'div',undefined,'comparison-outlook-body');
-    el(body,'p','What if the published base rates stay the same, or move after year one? Bonus and welcome rates are excluded. This is not a rate forecast.');
+    el(body,'p','What if the published base rates stay the same, or move after year one and remain there through year five? Bonus and welcome rates are excluded. This is not a rate forecast.');
     const cases=el(body,'div',undefined,'comparison-outlook-cases');
     for(const [label,value,change] of [
      ['Base rates unchanged',row.longTerm.unchanged,null],
