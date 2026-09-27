@@ -701,7 +701,11 @@
       ],
       [
         "Who is it for?",
-        "The first-home-buyer pathway includes adult Australian citizens or permanent residents, an eligible ownership history, a minimum 5% deposit, an eligible property within its location cap and an intention to live there. A participating lender checks the full rules and whether you can repay."
+        "The first-home-buyer pathway includes adult Australian citizens or permanent residents, an eligible ownership history, a deposit of at least 5% but less than 20% under the savings rules, an eligible property within its location cap and an intention to live there. A participating lender checks the full rules and whether you can repay."
+      ],
+      [
+        "What if I already have a 20% deposit?",
+        "Having a 5% minimum does not mean everyone can choose to contribute only 5%. Under section 2.4 of Housing Australia’s Information Guide, a loan is ineligible if savings remaining after other buying costs are 20% or more of the Property Value assessed by the lender. For example, if that value is $800,000 and $160,000 remains after buying costs, the savings equal 20%. With less than 20%, the lender still assesses how much of the savings must go towards the deposit. Confirm this before setting aside a separate cash buffer or planning around exactly 5%."
       ],
       [
         "Three different kinds of help",
@@ -730,6 +734,10 @@
         "https://firsthomebuyers.gov.au/australian-government-5-percent-deposit-scheme/first-home-buyers"
       ],
       [
+        "Housing Australia: Information Guide, section 2.4 (1 July 2026)",
+        "https://firsthomebuyers.gov.au/sites/default/files/2025-09/Australian%20Government%205%25%20Deposit%20Scheme%20Information%20Guide.pdf"
+      ],
+      [
         "Official program overview",
         "https://firsthomebuyers.gov.au/"
       ],
@@ -744,10 +752,10 @@
     },
     "minutes": 5,
     "datePublished": "2026-09-18",
-    "dateModified": "2026-09-18",
-    "sourcesChecked": "2026-09-18",
+    "dateModified": "2026-09-27",
+    "sourcesChecked": "2026-09-27",
     "reviewDays": 14,
-    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic. 27 September 2026: clarified the savings limit and lender assessment, with a 20% example.",
     "policyIds": [
       "deposit-scheme"
     ]
@@ -842,7 +850,7 @@
     "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
-    "sourcesChecked": "2026-09-18",
+    "sourcesChecked": "2026-09-27",
     "reviewDays": 14,
     "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
     "stateLinks": true
@@ -917,8 +925,8 @@
         "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/property-and-capital-gains-tax/your-main-residence-home"
       ],
       [
-        "ATO: discount order and capital losses",
-        "https://www.ato.gov.au/forms-and-instructions/capital-gain-or-loss-worksheet-instructions"
+        "ATO: CGT discount, capital losses and event dates",
+        "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount"
       ],
       [
         "2026 tax reform legislation",
@@ -931,10 +939,10 @@
     },
     "minutes": 5,
     "datePublished": "2026-09-18",
-    "dateModified": "2026-09-18",
-    "sourcesChecked": "2026-09-18",
+    "dateModified": "2026-09-27",
+    "sourcesChecked": "2026-09-27",
     "reviewDays": 14,
-    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic. 27 September 2026: replaced the 2023 worksheet link with the current ATO CGT discount guide; retained the dated future-reform note.",
     "policyIds": [
       "cgt-reform"
     ]
@@ -1036,7 +1044,7 @@
     "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
-    "sourcesChecked": "2026-09-18",
+    "sourcesChecked": "2026-09-27",
     "reviewDays": 14,
     "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
     "policyIds": [
@@ -1128,7 +1136,7 @@
     "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
-    "sourcesChecked": "2026-09-18",
+    "sourcesChecked": "2026-09-27",
     "reviewDays": 14,
     "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
     "policyIds": [
