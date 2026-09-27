@@ -1,4 +1,4 @@
-import {savings} from './finance.mjs';
+import {baseRateModel,savings} from './finance.mjs';
 import {rateSummary} from './rate-summary.mjs';
 import {compareBankScenarios} from './bank-scenarios.mjs';
 import {bankFreshness} from './bank-freshness.mjs';
@@ -29,6 +29,18 @@ function hasAmbiguousRateText(rows){
   return /\b(?:up to|capped at|maximum of|less than|greater than|above|below|over|under|first)\s*(?:AUD\s*|\$)\s*\d/i.test(text)
    || /\bbalances?\b.{0,40}\b(?:cap|limit|maximum|exceed)/i.test(text);
  });
+}
+// Five-year figures test possible rate paths; they do not predict a bank's variable rates.
+export function fiveYearBaseOutlook(product,{principal,contribution=0}) {
+ const base=baseRateModel(product);
+ if(!base)return null;
+ const inputs={principal,contribution,frequency:'monthly',years:5};
+ const project=shift=>savings({...inputs,rateForBalance:(balance,month)=>Math.max(0,base(balance)+(month>12?shift:0))});
+ try{
+  const unchanged=project(0),lower=project(-1),higher=project(1);
+  if(![unchanged,lower,higher].every(result=>withinAccountLimits(product,principal,result.balance)))return null;
+  return {unchanged,lower,higher};
+ }catch{return null;}
 }
 export function compareSavings(banks, {principal,contribution=0,months=12,currentRate=null,scenario='base'}, now=Date.now()) {
  if(!Array.isArray(banks))throw Error('Bank data is unavailable.');
@@ -65,7 +77,7 @@ export function compareSavings(banks, {principal,contribution=0,months=12,curren
      type:conditional?.type??'BASE',welcomeMonths:conditional?.welcomeMonths??null,
      interest:result.interest,balance:result.balance,
      difference:currentRate===null?null:result.interest-baseline.interest,
-     hasExtra,conditionalAvailable});
+     hasExtra,conditionalAvailable,longTerm:fiveYearBaseOutlook(product,inputs)});
    }catch{excluded.unsupported++;}
   }
  }

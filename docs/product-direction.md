@@ -7,6 +7,13 @@ One visitor problem per screen. Put input and the useful result together. Explai
 
 Use stable lesson slugs, versioned source checks and calculation modules independent of UI. A Shorts episode should link to one matching lesson/tool, and later appear on that lesson only when a real video exists. No fake channel links or empty player placeholders.
 
+## Product comparison and AI
+Keep the free calculators and education as the centre of the site. Savings decisions should start with the visitor's balance, monthly deposits and current rate, then show dated product rates, gross dollar differences, bonus requirements and possible rate-change paths. Public CDR feeds are a partial, dated market snapshot. Never describe them as live coverage of every Australian bank or rank by a variable rate as if it were guaranteed for years.
+
+Add credit-card comparison only when the product feed, update cadence and fee/interest fields are reliable. Ask first whether the visitor usually pays the statement in full, carries a balance or values a particular card benefit. Show annual fees, purchase APR, interest-free-period conditions, reward caps and introductory offer expiry in dollars where the terms support it. Do not present one universally “best” card.
+
+Use AI to explain verified source data and calculations in plain language, with a source date and links. Code, not AI text generation, must calculate and rank numbers. An AI answer must never invent a current rate, eligibility decision or personalised investment recommendation. No financial login, account connection or private bank details are needed for these public tools.
+
 ## Traffic and learning
 Create a short story around an everyday Australian money problem. Show one hypothetical example; distinguish policy announcements from enacted rules. End with one practical action on Howloop. Measure visits to tools, completed calculations and repeat use before expanding features. Ads must not interrupt the calculation workflow.
 

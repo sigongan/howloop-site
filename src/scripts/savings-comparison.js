@@ -55,6 +55,23 @@ if(root){
    metric('Difference vs your rate*',row.difference===null?'Add your rate':(row.difference>0?'+':'')+money(row.difference),row.difference>0?'positive':row.difference<0?'negative':'');
    const note=row.type==='INTRODUCTORY'?'Welcome rate for '+row.welcomeMonths+' months from opening, then '+percent(row.baseRate)+' base. Assumes you qualify for the full welcome period.':row.type==='BONUS'?'Bonus conditions assumed met every month. Base rate at this balance: '+percent(row.baseRate)+'.':row.hasExtra?'Base rate only. This account also has conditional offers; they are excluded here.':'Base-rate scenario. Eligibility and account conditions still apply.';
    el(card,'p',note+' *Before fees and tax.','comparison-rate-note');
+   if(row.longTerm){
+    const outlook=el(card,'details',undefined,'comparison-outlook');
+    el(outlook,'summary','5-year rate-change example');
+    const body=el(outlook,'div',undefined,'comparison-outlook-body');
+    el(body,'p','What if the published base rates stay the same, or move after year one and remain there through year five? Bonus and welcome rates are excluded. This is not a rate forecast.');
+    const cases=el(body,'div',undefined,'comparison-outlook-cases');
+    for(const [label,value,change] of [
+     ['Base rates unchanged',row.longTerm.unchanged,null],
+     ['Up to 1 percentage point lower',row.longTerm.lower,row.longTerm.lower.interest-row.longTerm.unchanged.interest],
+     ['1 percentage point higher',row.longTerm.higher,row.longTerm.higher.interest-row.longTerm.unchanged.interest]
+    ]){
+     const item=el(cases,'div',undefined,'comparison-outlook-case');
+     el(item,'span',label);el(item,'strong',money(value.interest));
+     el(item,'small',change===null?'Gross interest over five years':(change>0?'+':'')+money(change)+' vs unchanged');
+    }
+    el(body,'p','In the unchanged example you put in '+money(row.longTerm.unchanged.deposits)+' and finish with '+money(row.longTerm.unchanged.balance)+'. Rates can move differently for each bank. Fees and tax are excluded.','comparison-outlook-footnote');
+   }
    terms(card,row.product);
    const actions=el(card,'div',undefined,'comparison-account-links');
    const provider=safeURL(row.product.url);if(provider)link(actions,'Check with the bank ↗',provider,true);
