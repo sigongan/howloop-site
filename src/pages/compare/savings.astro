@@ -10,7 +10,7 @@ const retrieved=new Date(comparisonData.fetchedAt).toLocaleDateString('en-AU',{t
  <header class="comparison-heading">
   <p class="comparison-eyebrow"><ToolIcon name="bank"/> SAVINGS COMPARISON</p>
   <h1>Could your savings<br/>earn more?</h1>
-  <p>Same money. Different accounts. See the difference in dollars.</p>
+  <p>Same money. Different accounts. See the difference in dollars, then test what a changing rate could mean over five years.</p>
  </header>
  <form class="comparison-form" novalidate>
   <div class="comparison-inputs">
@@ -34,6 +34,7 @@ const retrieved=new Date(comparisonData.fetchedAt).toLocaleDateString('en-AU',{t
   </div>
   <p class="comparison-baseline" data-comparison-baseline hidden></p>
   <p class="comparison-notice" data-comparison-empty hidden></p>
+  <p class="comparison-long-view">Thinking longer term? Open a <strong>5-year rate-change example</strong> on an account below. These are what-if calculations, not future rate predictions.</p>
   <div class="comparison-list" data-comparison-list></div>
   <button type="button" class="comparison-more" data-comparison-more hidden>Show more accounts</button>
   <p class="comparison-coverage" data-comparison-coverage></p>
@@ -46,6 +47,8 @@ const retrieved=new Date(comparisonData.fetchedAt).toLocaleDateString('en-AU',{t
   <h2>Base rates and conditional offers stay separate</h2>
   <p>Base-only mode excludes bonus and introductory interest. The conditional scenario assumes you satisfy every published requirement, including any prior-month requirements, from the start of the example. It does not check your age, residency, card purchases, withdrawals, linked accounts or deposit behaviour. Adding money here does not establish that you qualify. Read each account's conditions before using that scenario.</p>
   <p>Supported welcome offers last for their published number of whole months, then revert to the base rate. We use balance tiers when the feed can be interpreted without guessing. Offers with overlapping bonuses, unknown welcome periods, incomplete tiers, unclear total rates or limits described only in text are excluded. Published numerical opening and balance limits must cover the whole example; otherwise we omit that account rather than assume it pays interest above a cap.</p>
+  <h2>A longer view, without pretending to predict rates</h2>
+  <p>Each supported account also has an optional five-year illustration using its published base-rate structure. We calculate three paths: base rates stay as they are, or each base rate moves one percentage point lower or higher after the first year. Rates never fall below zero in this example. Monthly deposits continue, and welcome and bonus rates are left out of this longer view. This is a stress test, not a five-year rate forecast or a promise that an account will stay available. We omit the illustration if a published balance limit would be exceeded. A higher rate today may not remain higher, so check the account regularly.</p>
   <h2>Fees can change the outcome</h2>
   <p>These figures are gross interest, not profit after costs. Published fees are available under each account. Monthly charges, linked-account costs and transaction fees are not deducted. Missing fee data does not mean an account is free. For example, an extra $40 in estimated interest would be outweighed by $60 of extra annual fees.</p>
   <h2>Coverage and freshness</h2>

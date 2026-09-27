@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {compareSavings,isSavingsCandidate} from '../src/lib/savings-comparison.mjs';
+import {compareSavings,fiveYearBaseOutlook,isSavingsCandidate} from '../src/lib/savings-comparison.mjs';
 const now=Date.parse('2026-09-21T00:00:00Z');
 const product=(id,rate,extra=[])=>({id,name:id+' Saver',depositRates:[{depositRateType:'VARIABLE',rate},...extra]});
 const bank=products=>({id:'bank-1',name:'Example Bank',status:'available',checkedAt:'2026-09-20T00:00:00Z',products});
@@ -83,4 +83,26 @@ test('account limits are checked at opening and after growth, with no guessing m
 test('a deposit condition is an explicit assumption, not mistaken for an interest cap',()=>{
  const p=product('Monthly','.01',[{depositRateType:'BONUS',rate:'.04',additionalInfo:'Bonus is in addition to the base rate when you deposit at least $200 per month.'}]);
  assert.equal(compareSavings([bank([p])],{...opts,contribution:200,scenario:'conditional'},now).rows.length,1);
+});
+
+test('five-year base-rate scenarios follow independently calculated rate paths',()=>{
+ const p=product('Long view','.12');
+ const outlook=fiveYearBaseOutlook(p,{principal:100,contribution:0});
+ const firstYear=100*1.01**12;
+ near(outlook.unchanged.balance,100*1.01**60);
+ near(outlook.lower.balance,firstYear*(1+.11/12)**48);
+ near(outlook.higher.balance,firstYear*(1+.13/12)**48);
+ assert.ok(outlook.lower.interest<outlook.unchanged.interest);
+ assert.ok(outlook.higher.interest>outlook.unchanged.interest);
+});
+test('five-year illustration omits accounts whose balance cap is crossed',()=>{
+ const p={...product('Capped','.12'),constraints:[{constraintType:'MAX_BALANCE',additionalValue:'120'}]};
+ const r=compareSavings([bank([p])],opts,now);
+ assert.equal(r.rows.length,1);
+ assert.equal(r.rows[0].longTerm,null);
+});
+test('rate decreases cannot create negative deposit interest',()=>{
+ const outlook=fiveYearBaseOutlook(product('Small base','.005'),{principal:100,contribution:0});
+ assert.ok(outlook);
+ near(outlook.lower.balance,100*(1+.005/12)**12);
 });
