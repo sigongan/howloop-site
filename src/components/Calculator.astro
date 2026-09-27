@@ -12,8 +12,13 @@ const {kind='compound-interest'}=Astro.props;
 <div class="hl-field-row"><Field name="annualRate" label="Interest rate (% p.a.)" value={4.5} max={30} step="any" prefix=""/><Field name="years" label="Years" value={10} min={1} max={50} step={1} prefix=""/></div>
 <button type="button" class="calc-bank-button" data-open-bank><span class="calc-bank-symbol" aria-hidden="true">$</span><span>Choose a bank rate<small>Australian banks & published products</small></span><span aria-hidden="true">→</span></button>
 <dialog class="calc-bank-dialog" data-bank-dialog aria-labelledby="bank-picker-title"><div class="calc-bank-dialog-head"><h2 id="bank-picker-title">Choose a bank rate</h2><button type="button" data-close-bank aria-label="Close bank picker">✕</button></div><div class="hl-product-picker" data-bank-picker>
-<label class="hl-field"><span>Find a bank or provider</span><input type="search" data-bank-search placeholder="Search by name…" aria-label="Search banks"/></label>
-<label class="hl-field"><span>Bank or provider</span><select data-bank-select aria-label="Bank or provider"><option value="">Custom / illustrative rate</option>{banks.banks.map(b=><option value={b.id}>{b.name}{b.productCount===0?' — no product data':''}</option>)}</select></label>
+<div class="bank-search-box">
+<label class="hl-field"><span>Find a bank or provider</span><input type="search" data-bank-search placeholder="Try CBA, NAB or part of a name" aria-label="Search banks" aria-controls="bank-search-results" aria-describedby="bank-search-help" autocomplete="off"/></label>
+<p id="bank-search-help" class="bank-search-help">Type a few letters, initials or part of a bank name.</p>
+<div id="bank-search-results" class="bank-search-results" data-bank-results hidden></div>
+<p class="bank-search-status" data-bank-search-status role="status" aria-live="polite" hidden></p>
+</div>
+<label class="hl-field"><span>Or browse all banks</span><select data-bank-select aria-label="Bank or provider"><option value="">Custom / illustrative rate</option>{banks.banks.map(b=><option value={b.id} data-bank-name={b.name} data-product-count={b.productCount}>{b.name}{b.productCount===0?' — no product data':''}</option>)}</select></label>
 <label class="hl-field" data-product-field hidden><span>Deposit product</span><select data-product-select aria-label="Deposit product"><option value="">Choose a product</option></select></label>
 <p class="hl-product-status" data-bank-status aria-live="polite">Weekly bank feed. Latest refresh {new Date(banks.fetchedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'})}. Select a bank to see its own retrieval date.</p>
 <div data-product-info></div>
