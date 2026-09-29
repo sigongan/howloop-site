@@ -184,9 +184,9 @@
   {
     "slug": "offset-vs-extra-repayments",
     "datePublished": "2026-09-18",
-    "dateModified": "2026-09-18",
+    "dateModified": "2026-09-30",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "Added a short explanation, simple example and knowledge check; retained the detailed guide and source record.",
+    "updateNote": "30 September 2026: added a three-step original illustration distinguishing the loan debt from the balance charged interest, and a link to the offset-fee break-even comparison. Source-check date retained; this update does not claim all sources were re-reviewed.",
     "title": "How does an offset account help?",
     "category": "HOME LOANS",
     "minutes": 6,
@@ -1324,5 +1324,237 @@
     "sourcesChecked": "2026-09-18",
     "reviewDays": 30,
     "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic."
+  },
+  {
+    "slug": "savings-rate-reality-check",
+    "title": "A bigger savings rate: will you actually earn more?",
+    "category": "SAVING",
+    "group": "everyday",
+    "minutes": 6,
+    "tool": "compound-interest",
+    "lab": "savings",
+    "summary": "Compare bonus, welcome and steady rates using the same savings. See the cost of missing a condition, then make your own account checklist.",
+    "takeaway": "A rate is a rule, not just a number. Compare the dollars you could earn over the period you actually plan to save.",
+    "example": {
+      "title": "Same money, three different rate paths",
+      "rows": [
+        [
+          "Starting savings",
+          "$20,000"
+        ],
+        [
+          "Monthly deposit",
+          "$200"
+        ],
+        [
+          "Comparison period",
+          "12 months"
+        ]
+      ],
+      "note": "Fictional offers, before tax and fees. Change the amounts in the comparison below."
+    },
+    "sections": [
+      [
+        "Why the highest number can disappoint",
+        "Imagine two account advertisements. One says 5% a year if you meet its monthly conditions. Another says 4.2% with no bonus condition in this example. The first looks better until a month when you need to withdraw money or cannot make the required deposit. If that breaks its terms, your actual rate might fall sharply. The condition is part of the price of the account.\n\nStart your comparison by writing down three things: the base rate, the total rate when the bonus applies, and the exact action needed to earn it. Do not add a displayed total rate to a bonus rate again. That would count the bonus twice. Use the provider’s current terms rather than a search-result snippet."
+      ],
+      [
+        "Our one-year comparison, step by step",
+        "Howloop starts each fictional account with $20,000 and adds $200 at the end of each month. The bonus account pays a total 5% for the first nine months. Its conditions are missed in the final three months, so it pays 0.5% then. This produces approximately $821 of interest.\n\nThe welcome account pays 5.5% for four months, then 3.5% for eight. It earns about $890. The steady account pays 4.2% for all twelve months and earns about $903. Your own deposits are identical in all three: $22,400. The different final balances come entirely from their rate paths.\n\nChange the missed-month selector to “None”. The bonus account now earns its 5% for the entire year, and the order changes. This is why a single “best bank” label hides something important: an account can work differently depending on whether you meet its conditions."
+      ],
+      [
+        "What the model holds constant",
+        "For month one, the 5% example earns $20,000 × 0.05 ÷ 12, or $83.33 before rounding. Then the $200 deposit is added. The next month starts with that new balance. We repeat this for twelve months, changing the rate when the illustrated offer requires it.\n\nThe comparison places missed bonus months at the end of the year. Missing earlier months changes the result because interest compounds and the balance is different. Banks often use daily balances, so exact payment dates and month lengths matter. This lesson uses monthly compounding, no fees, no withdrawals and no tax. A fixed future rate is an assumption; the tool does not know what a bank will offer next year."
+      ],
+      [
+        "Make a two-account worksheet",
+        "Write your current account and one alternative side by side. Record the date checked, your opening balance, planned monthly deposits, base rate, total conditional rate, welcome expiry date and balance cap. Add any fee for a required linked account. Use the same money and timeframe for both.\n\nNext, run two situations: every condition met, and a realistic month when one condition is missed. Check how the bank assesses growth in the balance; depositing $200 may not satisfy a rule if you also withdraw $300. Check age limits and new-customer conditions separately. The illustration above does not test any real account’s eligibility."
+      ],
+      [
+        "Use the comparison without a switching promise",
+        "Howloop’s bank explorer shows dated public product data. A successful retrieval does not prove that a particular person qualifies, that every account is included, or that an offer is still available when they apply. Open the provider’s product page to confirm it.\n\nFor a short saving period, compare dollars across those months rather than applying a welcome rate to ten years. For a longer plan, test a lower ongoing rate too. Finally, think about access: money for next month’s rent cannot always be treated like untouched long-term savings. The aim is to understand the trade-off before choosing, not to make you open a particular account."
+      ]
+    ],
+    "sources": [
+      [
+        "ASIC Moneysmart — savings accounts",
+        "https://moneysmart.gov.au/banking/savings-accounts"
+      ],
+      [
+        "ASIC Moneysmart — compound interest",
+        "https://moneysmart.gov.au/saving/compound-interest"
+      ]
+    ],
+    "quiz": {
+      "question": "What should you compare after a welcome rate ends?",
+      "choices": [
+        "The welcome rate forever",
+        "The ongoing rate and its conditions",
+        "Only the account’s logo"
+      ],
+      "answer": 1,
+      "explanation": "Use the ongoing rate after the welcome period, and check the conditions and fees. A temporary rate is not a long-term promise."
+    },
+    "action": {
+      "href": "/compare/savings/",
+      "label": "Explore dated bank product data"
+    },
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "sourcesChecked": "2026-09-30",
+    "reviewDays": 30,
+    "updateNote": "30 September 2026: published an original Howloop worked comparison and adjustable example. Read the linked ASIC Moneysmart guidance; independently checked the example arithmetic. This is general education, not an assessment of personal eligibility."
+  },
+  {
+    "slug": "when-an-offset-pays-for-itself",
+    "title": "When does an offset pay for its extra costs?",
+    "category": "HOME LOANS",
+    "group": "home",
+    "minutes": 6,
+    "tool": "mortgage",
+    "lab": "offset",
+    "summary": "Find the average offset balance needed to cover a higher loan rate and annual fees. A worked example explains the break-even without changing what you owe.",
+    "takeaway": "An offset can reduce interest, but its net value depends on how much cash you keep there and what the loan costs you.",
+    "example": {
+      "title": "Offset benefit minus the extras",
+      "rows": [
+        [
+          "Loan balance",
+          "$600,000"
+        ],
+        [
+          "Average full offset",
+          "$40,000"
+        ],
+        [
+          "Additional annual fee",
+          "$395"
+        ]
+      ],
+      "note": "Compare 6% without offset against 6.2% with offset. These are hypothetical rates, not loan offers."
+    },
+    "sections": [
+      [
+        "First separate your debt from your cash",
+        "With a $600,000 loan and $40,000 in a full offset, the interest calculation uses $560,000. You still owe $600,000. The cash has not been paid into the loan: it is held separately. If you spend $10,000 from the offset, the amount charged interest increases to $570,000, before any repayments.\n\nThis is different from paying an extra $40,000 directly into the loan. An extra repayment reduces the debt. Getting that money back through redraw depends on the loan’s terms. The two approaches can create similar interest reductions while leaving you with different access arrangements."
+      ],
+      [
+        "Compare the whole loan, not the offset in isolation",
+        "Our hypothetical basic loan charges 6%. Its full-offset alternative charges 6.2% and has $395 more in annual fees. On an unchanged $600,000 loan, that 0.2 percentage-point premium costs $1,200 a year. Notice that the premium applies to the loan; it is not 0.2% of the offset cash.\n\nThe $40,000 offset avoids $2,480 in annual interest at 6.2%. Subtract $1,200 and $395 to get an estimated $885 net saving. The offset helps in this example, but the full $2,480 is not the saving after costs. Using the wrong base loan for the comparison would make the benefit look too large."
+      ],
+      [
+        "Find the break-even balance",
+        "First add the extra costs: $1,200 higher-rate interest plus $395 fees equals $1,595. Divide that by the offset loan’s decimal rate, 0.062. The break-even average offset balance is approximately $25,726. Above this amount, the simple model saves money; below it, the added costs are larger than the offset benefit.\n\nIf the offset loan has exactly the same rate and only the $395 additional fee, the calculation becomes $395 ÷ 0.06, approximately $6,583. Change the premium to zero in the comparison to see the difference. Small differences in the rate can matter when they apply to a large debt."
+      ],
+      [
+        "Why the average matters more than payday",
+        "Suppose your offset has $40,000 immediately after a transfer but falls to $10,000 while you pay bills. Entering $40,000 as though it stays there all year overstates the benefit. Use account records to estimate the money normally held there. Daily balances are more useful than a single screenshot.\n\nOur comparison holds the loan and offset balances fixed for a year so you can see the cost of the feature. A real principal-and-interest loan declines with repayments, rates can change, and your cash balance moves. Use the mortgage calculator to examine a repayment schedule, then compare actual loan quotes and charges. Its schedule excludes the fees illustrated here."
+      ],
+      [
+        "Check what is included in the offer",
+        "Ask the lender whether the offset is 100% or partial, which part of the loan it covers, and whether the quoted rate requires a package. Include any extra annual or account fees. If changing lenders, add one-off switching costs separately; an apparent annual saving may take time to recover them.\n\nThis worksheet compares only loan interest and additional fees. It does not compare interest your cash could earn elsewhere, tax consequences, investment loans, loan approval or your need for accessible emergency cash. Those questions can change a decision. Take the provider’s written terms and your own circumstances into account before changing an arrangement."
+      ]
+    ],
+    "sources": [
+      [
+        "ASIC Moneysmart — mortgage offset accounts",
+        "https://moneysmart.gov.au/home-loans/mortgage-offset-accounts"
+      ]
+    ],
+    "quiz": {
+      "question": "With $600,000 owed and $40,000 in a full offset, what is your actual debt?",
+      "choices": [
+        "$560,000",
+        "$600,000",
+        "$40,000"
+      ],
+      "answer": 1,
+      "explanation": "The debt remains $600,000. The full offset lowers the balance used to calculate interest to $560,000."
+    },
+    "action": {
+      "href": "/calculators/mortgage/",
+      "label": "Explore the repayment schedule"
+    },
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "sourcesChecked": "2026-09-30",
+    "reviewDays": 30,
+    "updateNote": "30 September 2026: published an original Howloop worked comparison and adjustable example. Read the linked ASIC Moneysmart guidance; independently checked the example arithmetic. This is general education, not an assessment of personal eligibility."
+  },
+  {
+    "slug": "salary-including-super-vs-plus-super",
+    "title": "Salary including super or plus super: what is the difference?",
+    "category": "PAY & SUPER",
+    "group": "everyday",
+    "minutes": 5,
+    "tool": "salary",
+    "lab": "salary",
+    "summary": "Split an Australian salary package into cash salary and employer super. Compare two offers fairly before estimating weekly, fortnightly or monthly take-home pay.",
+    "takeaway": "“Including super” divides the quoted amount. “Plus super” adds employer super on top. Neither is your after-tax bank deposit.",
+    "example": {
+      "title": "The same $90,000 quote",
+      "rows": [
+        [
+          "Including 12% super",
+          "$80,357 cash"
+        ],
+        [
+          "Plus 12% super",
+          "$90,000 cash"
+        ],
+        [
+          "Gross cash difference",
+          "$9,643"
+        ]
+      ],
+      "note": "Flat 12% employer contribution, no other benefits or salary sacrifice. All amounts are before tax."
+    },
+    "sections": [
+      [
+        "Read the words next to the number",
+        "An offer described as “$90,000 including super” and one described as “$90,000 plus super” do not give you the same cash salary. In the first, employer super is part of the $90,000 total. In the second, the employer adds it to the $90,000 cash salary.\n\nFor this lesson, the employer contribution is a flat 12% of cash salary, with no other package benefits. If cash salary is one whole part, the total package is 1.12 parts. Dividing the total by 1.12 finds the cash part. Simply subtracting 12% of the package is a different calculation and gives the wrong split."
+      ],
+      [
+        "Split the including-super example",
+        "Divide $90,000 by 1.12 to get approximately $80,357.14 in annual cash salary. The remaining $9,642.86 is the employer contribution. Those two amounts add back to $90,000, apart from presentation rounding.\n\nFor “$90,000 plus super”, annual cash salary is $90,000. Employer super is $90,000 × 12%, or $10,800. The total package is $100,800. The cash-salary difference between the offers is approximately $9,642.86 a year before tax. Do not call that your take-home difference: tax withholding also changes."
+      ],
+      [
+        "Put the same cash salary into each pay period",
+        "A simple annual estimate uses 52 weekly payments, 26 fortnightly payments or 12 monthly payments. Dividing an annual cash salary by those counts gives the gross amount per period. “Every two weeks” is fortnightly; it is not twice a month, which would mean 24 payments a year.\n\nFour weekly payments are also not a full average month. A weekly amount multiplied by 52 and divided by 12 is a monthly equivalent. These conversions help with a budget, but a calendar month can contain four or five weekly paydays. Check your employer’s actual payroll calendar."
+      ],
+      [
+        "Gross pay, take-home pay and super are different",
+        "Gross cash salary is the pay before withholding and deductions. Take-home pay is what remains for your bank account. Employer super is a separate contribution for retirement, not money available to spend with each pay.\n\nOnce the package split is clear, use Howloop’s take-home-pay calculator with the correct “including” or “plus” setting. Check whether the tax-free threshold is claimed and whether HELP withholding applies. Its result is a planning estimate based on the stated financial-year payroll scales, not a final tax assessment or a promise that every payslip matches. Bonuses, irregular hours and extra deductions can change the amount."
+      ],
+      [
+        "A checklist before accepting the offer",
+        "Ask for the annual cash salary and employer super as separate dollar amounts. Confirm the contribution rate, whether other benefits are included in the quoted package, and whether the advertised figure assumes overtime or a bonus. Keep the written answer with your offer.\n\nThe flat-12% comparison here accepts quotes up to $250,000. It deliberately excludes cap rules, salary sacrifice, non-cash benefits and special employment arrangements. If a quote includes a car, allowances or other benefits, subtracting those is not automatically a tax calculation. Ask payroll for the exact breakdown rather than treating every item as cash salary.\n\nWhen comparing jobs, use the same annual cash basis first. Then consider hours, leave, guaranteed versus variable pay and the costs of getting to work. A larger total package can still leave less regular money for your household if the cash component is smaller."
+      ]
+    ],
+    "sources": [
+      [
+        "ASIC Moneysmart — superannuation",
+        "https://moneysmart.gov.au/how-super-works/superannuation"
+      ]
+    ],
+    "quiz": {
+      "question": "How do you split a $90,000 package including flat 12% super?",
+      "choices": [
+        "Subtract 12% of $90,000",
+        "Divide $90,000 by 1.12",
+        "Treat all $90,000 as take-home pay"
+      ],
+      "answer": 1,
+      "explanation": "Divide the package by 1.12 to find cash salary. The employer contribution is 12% of that cash amount, not 12% of the total package."
+    },
+    "action": {
+      "href": "/calculators/salary/",
+      "label": "Estimate weekly, fortnightly or monthly pay"
+    },
+    "datePublished": "2026-09-30",
+    "dateModified": "2026-09-30",
+    "sourcesChecked": "2026-09-30",
+    "reviewDays": 30,
+    "updateNote": "30 September 2026: published an original Howloop worked comparison and adjustable example. Read the linked ASIC Moneysmart guidance; independently checked the example arithmetic. This is general education, not an assessment of personal eligibility."
   }
 ]

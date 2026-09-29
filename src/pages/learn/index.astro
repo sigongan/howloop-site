@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import ToolIcon from '../../components/ToolIcon.astro';
 import guides from '../../data/learning.json';
 import '../../styles/learning.css';
+import '../../styles/money-decisions.css';
 const groups=[{id:'home',title:'Buying a home',sub:'Deposits, loans & offsets',area:'home',icon:'home'},{id:'property',title:'Property & tax',sub:'Buying costs & changing rules',area:'tax',icon:'checklist'},{id:'everyday',title:'Everyday money',sub:'Saving, super & investing',area:'savings',icon:'growth'}];
 ---
 <Base title="Money, made easy" description="Short Australian money lessons. Understand home deposits, tax, savings, super and shares through one clear example, then try it yourself.">
@@ -13,6 +14,7 @@ const groups=[{id:'home',title:'Buying a home',sub:'Deposits, loans & offsets',a
   <p>Understand savings, home loans and tax with simple examples.</p>
 </header>
 <div class="hl-wrap hl-page-main learn-wrap">
+<section class="practical-guides" aria-labelledby="practical-guide-title"><h2 id="practical-guide-title">Small print. Real money.</h2><p>Change the numbers. Understand what the offer really means.</p><div class="practical-guide-grid">{guides.filter(g=>g.lab).map(g=><a href={'/learn/'+g.slug+'/'}><strong>{g.title}</strong><span>{g.summary}</span><small>Read & try the example →</small></a>)}</div></section>
 <label class="hl-field lesson-search"><span>What would you like to understand?</span><input type="search" id="lesson-search" placeholder="Try deposit, tax, super…" aria-controls="lesson-groups"/></label>
 <nav class="learn-topics" aria-label="Learning topics">{groups.map(g=><a href={'#'+g.id} data-money-area={g.area}><span class="learn-topic-icon"><ToolIcon name={g.icon}/></span><span class="learn-topic-copy"><strong>{g.title}</strong><small>{g.sub} <span aria-hidden="true">→</span></small></span></a>)}</nav>
 <aside class="learn-update-link"><span>Rules change. See what it means for you.</span><a href="/updates">What's changed? →</a></aside>

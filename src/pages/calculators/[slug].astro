@@ -4,6 +4,7 @@ import '../../styles/calculator-workspace.css';
 import '../../styles/bank-search.css';
 import Calculator from '../../components/Calculator.astro';
 import CompoundInterestLesson from '../../components/CompoundInterestLesson.astro';
+import CalculatorExample from '../../components/CalculatorExample.astro';
 import {calculators} from '../../data/tools';
 export function getStaticPaths(){return calculators.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
 const {tool}=Astro.props;
@@ -20,5 +21,7 @@ const c=copy[tool.slug];
 <div class="hl-wrap hl-page-main">
 <Calculator kind={tool.slug}/>
 {tool.slug === 'compound-interest' && <CompoundInterestLesson context="calculator"/>}
-<details class="hl-details hl-calculator-help"><summary>How it works & common questions</summary><div class="hl-explainer"><div><span class="hl-eyebrow">UNDERSTAND THE NUMBERS</span><h2 style="margin-top:13px">{c.heading}</h2><p>{c.body}</p><h3>How this calculator works</h3><p>{c.method}</p><p><a href="/methodology">View formulas and limitations →</a></p><p><a href={'/learn/'+c.guide}>Read the practical guide →</a></p><p>Further reading: <a href={c.source} target="_blank" rel="noopener noreferrer">ASIC’s Moneysmart ↗</a></p></div><div class="hl-faq"><h2>A few good questions.</h2>{c.faqs.map(([q,a])=><details><summary>{q}</summary><p>{a}</p></details>)}</div></div></details><div class="hl-other-tools"><span>Other calculators</span><nav class="hl-calculator-nav" aria-label="Choose a calculator">{calculators.map(t=><a href={'/calculators/'+t.slug} aria-current={t.slug===tool.slug?'page':undefined}>{t.name}</a>)}</nav></div></div>
+<CalculatorExample kind={tool.slug}/>
+<section class="hl-calculator-intro"><h2>{c.heading}</h2><p>{c.body}</p><h3>How the calculation works</h3><p>{c.method}</p><p><a href="/methodology/">Formulas and limitations →</a> · <a href={c.source} target="_blank" rel="noopener noreferrer">Official Moneysmart guidance ↗</a></p></section>
+<details class="hl-details hl-calculator-help"><summary>Common questions</summary><div class="hl-faq"><h2>A few good questions.</h2>{c.faqs.map(([q,a])=><details><summary>{q}</summary><p>{a}</p></details>)}</div></details><div class="hl-other-tools"><span>Other calculators</span><nav class="hl-calculator-nav" aria-label="Choose a calculator">{calculators.map(t=><a href={'/calculators/'+t.slug} aria-current={t.slug===tool.slug?'page':undefined}>{t.name}</a>)}</nav></div></div>
 </div></Base>

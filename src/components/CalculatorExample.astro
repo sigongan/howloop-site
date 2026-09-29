@@ -1,0 +1,16 @@
+---
+import {calculatorExample} from '../lib/money-decisions.mjs';
+import '../styles/money-decisions.css';
+const {kind}=Astro.props;
+const example=calculatorExample(kind);
+---
+<section class="money-example" data-money-area={example.area} aria-labelledby={'money-example-'+kind}>
+  <p class="money-example-kicker">Your numbers, in real life</p>
+  <h2 id={'money-example-'+kind}>{example.title}</h2>
+  <p>{example.intro}</p>
+  <p class="money-example-unit">{example.unit}</p>
+  <dl class="money-example-cards">{example.cards.map(([label,value,note])=><div><dt>{label}</dt><dd>{value}</dd><p>{note}</p></div>)}</dl>
+  <p class="money-example-takeaway">{example.takeaway}</p>
+  <p class="money-example-assumptions">{example.assumption}</p>
+  <a class="money-example-link" href={'/learn/'+example.guide+'/'}>{example.label}<span aria-hidden="true">→</span></a>
+</section>

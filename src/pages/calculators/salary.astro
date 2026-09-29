@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Field from '../../components/MoneyField.astro';
 import SourceStatus from '../../components/SourceStatus.astro';
+import CalculatorExample from '../../components/CalculatorExample.astro';
 import {PAYROLL} from '../../data/payroll-2026.mjs';
 import earnings from '../../data/earnings-may2025.json';
 import '../../styles/salary.css';
@@ -65,6 +66,7 @@ const groups=earnings.populations.all.groups;
     <details class="salary-settings"><summary>What this comparison can tell you</summary><p>We use published ABS percentile cutoffs, not a guessed ranking derived from an average. If your weekly pay falls between the 60th and 70th percentile cutoffs, we show that range rather than inventing a precise percentage.</p><p>The full-time comparison covers non-managerial employees paid at adult rates. People with strategic management responsibilities are excluded, even though the occupation classification itself includes a “Managers” group. Choose all employees if the narrower population does not fit; that group also includes part-time workers and younger workers.</p><p>Cash earnings are before tax and include salary-sacrificed cash earnings and overtime in the survey. Employer super is excluded from your comparison. Your entered salary may not capture all these earnings. This is a discussion starter, not evidence that an employer is underpaying you.</p><p>{earnings.attribution} <a href={earnings.source}>See the original release and data cubes 3 and 8 ↗</a></p></details>
   </section>
 
+  <CalculatorExample kind="salary"/>
   <article class="salary-guide" aria-labelledby="salary-guide-title">
     <p class="salary-kicker">UNDERSTAND YOUR PAYSLIP</p><h2 id="salary-guide-title">Three numbers. Three different jobs.</h2>
     <p><strong>Your package</strong> is the total offer. <strong>Your gross salary</strong> is the cash pay before deductions. <strong>Your take-home pay</strong> is what remains for your bank account. Comparing two job offers is much easier once you know which number each employer is quoting.</p>
