@@ -1,0 +1,30 @@
+---
+import {conditionList,conditionText,feeLines,tierLines} from '../lib/product-display.mjs';
+const {rows}=Astro.props;
+const money=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:2}).format(n);
+const percent=n=>new Intl.NumberFormat('en-AU',{minimumFractionDigits:2,maximumFractionDigits:4}).format(n)+'%';
+const date=value=>new Date(value).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'});
+const safeURL=value=>{try{const url=new URL(value);return url.protocol==='https:'&&!url.username&&!url.password?url.href:null;}catch{return null;}};
+const rateLines=rate=>[...new Set([rate.additionalValue,rate.additionalInfo,...conditionList(rate.applicabilityConditions).map(conditionText),...(rate.tiers??[]).flatMap(tierLines)].filter(Boolean))];
+---
+{rows.map(row=><article class="comparison-account" data-snapshot-account>
+ <div class="comparison-account-head"><div><span class="comparison-bank-name">{row.bankName}</span><h3>{row.product.name}</h3><p class="comparison-retrieved">Retrieved {date(row.checkedAt)}</p></div></div>
+ <dl class="comparison-values">
+  <div><dt>Starting base rate · p.a.</dt><dd>{percent(row.startRate)}</dd></div>
+  <div><dt>12-month interest*</dt><dd>{money(row.interest)}</dd></div>
+  <div><dt>Difference vs your rate*</dt><dd>Add your rate</dd></div>
+ </dl>
+ <p class="comparison-rate-note">Base-rate example for $10,000, no deposits or withdrawals, monthly compounding and unchanged rates. Bonus and welcome rates are excluded. *Before fees and tax. Eligibility still applies.</p>
+ <details><summary>Conditions, eligibility & fees</summary><div class="comparison-terms">
+  {row.product.description&&<p>{row.product.description}</p>}
+  <p>These are the bank's published terms. We do not check whether you qualify.</p>
+  <h4>Rates and conditions</h4><ul>{(row.product.depositRates??[]).map(rate=><li><strong>{percent(Number(rate.rate)*100)} {String(rate.depositRateType).toLowerCase().replaceAll('_',' ')}</strong>{rateLines(rate).map(line=><p>{line}</p>)}</li>)}</ul>
+  {[['Eligibility',row.product.eligibility,'eligibilityType'],['Balance limits and other constraints',row.product.constraints,'constraintType']].map(([title,entries,type])=><><h4>{title}</h4><ul>{entries?.length?entries.map(entry=><li>{[entry[type]?.replaceAll('_',' '),entry.additionalValue,entry.additionalInfo].filter(Boolean).join(' · ')}</li>):<li>No entries supplied. Confirm with the bank.</li>}</ul></>)}
+  <h4>Fees — not deducted from these estimates</h4><ul>{row.product.fees?.length?row.product.fees.map(fee=><li>{feeLines(fee).join(' ')}</li>):<li>No fee entries supplied. This does not mean the account is free.</li>}</ul>
+  {safeURL(row.product.source)&&<a href={safeURL(row.product.source)} target="_blank" rel="noopener noreferrer">View source product data</a>}
+ </div></details>
+ <div class="comparison-account-links">
+  {safeURL(row.product.url)&&<a href={safeURL(row.product.url)} target="_blank" rel="noopener noreferrer">Check with the bank ↗</a>}
+  <a href={'/calculators/compound-interest/?bank='+encodeURIComponent(row.bankId)+'&product='+encodeURIComponent(row.product.id)}>Explore this product →</a>
+ </div>
+</article>)}

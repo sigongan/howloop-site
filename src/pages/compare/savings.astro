@@ -2,8 +2,13 @@
 import Base from '../../layouts/Base.astro';
 import ToolIcon from '../../components/ToolIcon.astro';
 import {comparisonData} from '../../lib/savings-comparison-data';
+import {compareSavings} from '../../lib/savings-comparison.mjs';
+import SavingsSnapshot from '../../components/SavingsSnapshot.astro';
 import '../../styles/savings-comparison.css';
 const retrieved=new Date(comparisonData.fetchedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'});
+const builtAt=new Date().toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'});
+const snapshot=compareSavings(comparisonData.banks,{principal:10000,contribution:0,months:12,currentRate:null,scenario:'base'});
+const snapshotRows=snapshot.rows.slice(0,3);
 ---
 <Base title="Compare Australian savings interest" description="Compare estimated interest on the same savings balance, see the difference from your current rate, and inspect bonus conditions and fees using dated public bank data.">
 <div class="comparison-page hl-wrap" data-money-area="savings" data-savings-comparison>
@@ -27,17 +32,18 @@ const retrieved=new Date(comparisonData.fetchedAt).toLocaleDateString('en-AU',{t
   <p class="comparison-assumption" data-scenario-note>Base rates exclude bonus and welcome offers. All estimates are before fees and tax.</p>
  </form>
  <div class="comparison-status-line"><span><span class="comparison-status-dot" aria-hidden="true"></span> Weekly bank data · Last refresh {retrieved}</span><a href="#comparison-method">How we compare</a></div>
- <noscript><p class="comparison-notice">Enable JavaScript to compare your numbers. You can still <a href="/banks/">browse the bank directory</a> and read the comparison method below.</p></noscript>
+ <noscript><p class="comparison-notice">The dated example below is readable without JavaScript. Enable JavaScript to compare your own balance or rate, or <a href="/banks/">browse the bank directory</a>.</p></noscript>
  <section aria-labelledby="comparison-results-title" class="comparison-results">
-  <div class="comparison-results-heading"><div><h2 id="comparison-results-title" tabindex="-1">The numbers, side by side.</h2><p data-comparison-summary role="status">Loading the latest published snapshot…</p></div>
+  <div class="comparison-results-heading"><div><h2 id="comparison-results-title" tabindex="-1">The numbers, side by side.</h2><p data-comparison-summary role="status">Dated example: {snapshot.rows.length} supported accounts at build time, sorted by estimated 12-month interest.</p></div>
    <label class="comparison-search">Find a bank or account<input type="search" name="bankSearch" placeholder="e.g. CommBank, ING"/></label>
   </div>
   <p class="comparison-baseline" data-comparison-baseline hidden></p>
-  <p class="comparison-notice" data-comparison-empty hidden></p>
+  <p class="comparison-notice" data-comparison-static-note>Dated example built {builtAt} using the published snapshot above. $10,000, no extra deposits, base rates only, before fees and tax. Showing {snapshotRows.length} accounts; this is part of the market. These rates may have changed. When available, the interactive comparison checks data age again and replaces this example with your results.</p>
+  <p class="comparison-notice" data-comparison-empty hidden={snapshot.rows.length>0}>{snapshot.rows.length===0?'No fresh, supported accounts were available for this example at build time. Check current products in the bank directory.':''}</p>
   <p class="comparison-long-view">Thinking longer term? Open a <strong>5-year rate-change example</strong> on an account below. These are what-if calculations, not future rate predictions.</p>
-  <div class="comparison-list" data-comparison-list></div>
+  <div class="comparison-list" data-comparison-list><SavingsSnapshot rows={snapshotRows}/></div>
   <button type="button" class="comparison-more" data-comparison-more hidden>Show more accounts</button>
-  <p class="comparison-coverage" data-comparison-coverage></p>
+  <p class="comparison-coverage" data-comparison-coverage>At build time, {snapshot.excluded.stale} savings products were excluded for old or incomplete data and {snapshot.excluded.unsupported} for rates that could not be modelled reliably. Numerical order does not establish which account suits you. Check current rates, costs and eligibility with the provider.</p>
  </section>
  <details class="comparison-method" id="comparison-method">
   <summary>How we compare rates, conditions and costs</summary>

@@ -34,6 +34,7 @@ if(root){
  }
  function render(){
   list.replaceChildren();if(!result)return;
+  q('[data-comparison-static-note]').hidden=true;
   const normalise=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
   const aliases={cba:'commbank',commonwealth:'commbank',commonwealthbank:'commbank',nab:'nationalaustraliabank'};
   const typed=normalise(q('[name="bankSearch"]').value),query=aliases[typed]??typed;
@@ -94,7 +95,7 @@ if(root){
    note.classList.toggle('is-conditional',conditional);
    note.textContent=conditional?'Scenario only: assumes you meet every bonus condition. Welcome offers expire after their stated period. Fees and tax are excluded.':'Base rates exclude bonus and welcome offers. All estimates are before fees and tax.';
    render();return true;
-  }catch(e){error.textContent=e.message;error.hidden=false;result=null;list.replaceChildren();q('[data-comparison-baseline]').hidden=true;q('[data-comparison-more]').hidden=true;q('[data-comparison-empty]').hidden=true;q('[data-comparison-summary]').textContent='Check your inputs to compare.';q('[data-comparison-coverage]').textContent='';return false;}
+  }catch(e){error.textContent=e.message;error.hidden=false;result=null;list.replaceChildren();q('[data-comparison-static-note]').hidden=true;q('[data-comparison-baseline]').hidden=true;q('[data-comparison-more]').hidden=true;q('[data-comparison-empty]').hidden=true;q('[data-comparison-summary]').textContent='Check your inputs to compare.';q('[data-comparison-coverage]').textContent='';return false;}
  }
  form.addEventListener('submit',event=>{
   event.preventDefault();
@@ -107,5 +108,5 @@ if(root){
  q('[data-comparison-more]').addEventListener('click',()=>{limit+=10;render();});
  fetch('/data/savings-comparison.json',{signal:AbortSignal.timeout(15000)}).then(response=>{if(!response.ok)throw Error();return response.json();}).then(payload=>{
   if(!Array.isArray(payload.banks))throw Error();data=payload;q('[type="submit"]').disabled=false;calculate();
- }).catch(()=>{q('[data-comparison-summary]').textContent='Bank data could not load. Reload to try again, or use the bank directory.';const notice=q('[data-comparison-empty]');notice.hidden=false;notice.textContent='You can still browse dated product information in our bank directory.';link(notice,' Browse banks →','/banks/');});
+ }).catch(()=>{q('[data-comparison-summary]').textContent='Interactive bank data could not load. The dated example below remains available; it has not been checked again for freshness.';const notice=q('[data-comparison-empty]');notice.hidden=false;notice.textContent='Reload to compare your own numbers, or check current product information with the bank.';link(notice,' Browse banks →','/banks/');});
 }
