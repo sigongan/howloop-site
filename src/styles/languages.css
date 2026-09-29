@@ -107,3 +107,5 @@ html[dir=rtl] :is(.language-english-home,.language-calculate,.language-assumptio
 }
 @media(max-width:360px){body .hl-header .brandmark{font-size:23px;gap:5px}body .hl-header .brandmark svg{width:36px}.language-result-total{font-size:1.875rem}.language-result dl{grid-template-columns:1fr}.language-english-home{max-width:12ch}.language-form,.language-result{padding:19px}.hl-language-popover{inset-inline:12px}body .hl-header .hl-language-popover nav{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.language-page *{scroll-behavior:auto!important}}
+/* Keep the two touch controls usable when browser zoom narrows a small phone. */
+@media(max-width:320px){body .hl-header .hl-nav{gap:6px}body .hl-header .brandmark{font-size:21px;gap:4px}body .hl-header .brandmark svg{width:30px}body .hl-header .hl-mobile-menu summary{padding-inline:8px;gap:6px}}

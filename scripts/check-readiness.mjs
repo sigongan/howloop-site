@@ -4,6 +4,7 @@
  * Run after "npm run build". It does not make external requests.
  */
 import fs from 'node:fs/promises';
+import './check-client-syntax.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 

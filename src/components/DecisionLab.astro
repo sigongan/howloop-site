@@ -1,0 +1,75 @@
+---
+import {calculatorExample,savingsOfferExample,offsetCostExample,salaryPackageExample,dollars} from '../lib/money-decisions.mjs';
+import '../styles/money-decisions.css';
+const {kind}=Astro.props;
+const tool={savings:'compound-interest',offset:'mortgage',salary:'salary'}[kind];
+const e=calculatorExample(tool);
+const offset=offsetCostExample(),salary=salaryPackageExample();
+const fields={
+  savings:[['balance','Starting savings ($)',20000],['monthly','Monthly saving ($)',200]],
+  offset:[['loan','Loan balance ($)',600000],['offset','Average offset balance ($)',40000],['rate','Rate without offset (%)',6],['premium','Extra rate for offset (% points)',.2],['fee','Extra annual fees ($)',395]],
+  salary:[['quote','Annual amount in the offer ($)',90000]]
+}[kind];
+const summary={savings:'The 4.2% steady account earns more interest than the 5% bonus offer when its final 3 bonus months are missed.',offset:`At these balances, the offset saves about ${dollars(offset.net)} a year after the extra rate and fees. Break-even average offset balance: ${dollars(offset.breakEven)}.`,salary:`Including super: ${dollars(salary.includedCash)} cash salary + ${dollars(salary.includedSuper)} employer super. Plus super: ${dollars(salary.plusCash)} cash salary + ${dollars(salary.plusSuper)} employer super.`}[kind];
+---
+<section class="decision-lab" data-lab={kind} aria-labelledby={'lab-title-'+kind}>
+  <p class="decision-lab-kicker">Try a different situation</p>
+  <h2 id={'lab-title-'+kind}>{kind==='savings'?'Which offer earns more over a year?':kind==='offset'?'Where is your offset break-even?':'What does “including super” change?'}</h2>
+  <p>{kind==='salary'?'Choose a quoted amount and compare both ways of describing the offer. Employer super is a flat 12% in this example.':'Start with this example, then change the inputs below. '+e.intro}</p>
+  <form aria-label="Illustrative comparison inputs">
+    {fields.map(([name,label,value])=><label><span>{label}</span><input name={name} value={value} inputmode="decimal" type="text" required autocomplete="off"/></label>)}
+    {kind==='savings'&&<label><span>Bonus months missed</span><select name="missedMonths">{[0,1,3,6,12].map(n=><option value={n} selected={n===3}>{n===0?'None':n===1?'1 month':n+' months'}</option>)}</select></label>}
+  </form>
+  <noscript><p>You can read the worked example below without JavaScript. Turn JavaScript on to change its inputs.</p></noscript>
+  <p class="decision-lab-error" data-lab-error role="status" hidden></p>
+  <p class="money-example-unit">{e.unit}</p>
+  <dl class="money-example-cards">{e.cards.map(([label,value,note],i)=><div><dt>{kind==='salary'&&i<2?(i===0?'Including super':'Plus super'):label}</dt><dd data-lab-value={i}>{value}</dd><p data-lab-note={i}>{note}</p></div>)}</dl>
+  <p data-lab-summary aria-live="polite" aria-atomic="true">{summary}</p>
+  <p class="money-example-assumptions">{e.assumption} {kind==='savings'?'Missed bonus months are placed at the end of the year; a different order changes the result.':kind==='salary'?'This example accepts quotes up to $250,000 and shows gross cash, not take-home pay.':'Use the average money actually held in the offset, not its highest balance.'}</p>
+  <p class="money-example-assumptions">This comparison stays in this browser. Nothing is submitted or saved.</p>
+</section>
+<script>
+import {savingsOfferExample,offsetCostExample,salaryPackageExample,dollars} from '../lib/money-decisions.mjs';
+import {parseAmount} from '../lib/money-input.mjs';
+for(const root of document.querySelectorAll<HTMLElement>('[data-lab]')){
+  const form=root.querySelector<HTMLFormElement>('form')!;
+  form.addEventListener('submit',event=>event.preventDefault());
+  const error=root.querySelector<HTMLElement>('[data-lab-error]')!;
+  const summary=root.querySelector<HTMLElement>('[data-lab-summary]')!;
+  const values=[...root.querySelectorAll<HTMLElement>('[data-lab-value]')];
+  const notes=[...root.querySelectorAll<HTMLElement>('[data-lab-note]')];
+  const read=()=>Object.fromEntries([...new FormData(form)].map(([key,value])=>{
+    const s=String(value).trim();return [key,parseAmount(/^\d+,\d{1,2}$/.test(s)?s.replace(',','.'):s)];
+  }));
+  function update(){
+    try{
+      const input=read();
+      if(root.dataset.lab==='savings'){
+        const r=savingsOfferExample(input as any);
+        values.forEach((el,i)=>el.textContent=dollars([r.bonus,r.intro,r.steady][i].interest));
+        notes[0].textContent=input.missedMonths===0?'5% in all 12 months; all conditions met.':`0.5% in the final ${input.missedMonths} months when conditions are missed.`;
+        const ordered=[['Bonus offer',r.bonus.interest],['Welcome offer',r.intro.interest],['Steady-rate offer',r.steady.interest]] as [string,number][];
+        ordered.sort((a,b)=>b[1]-a[1]);
+        summary.textContent=`${ordered[0][0]} earns the most in this illustration: ${dollars(ordered[0][1],2)} interest. That is ${dollars(ordered[0][1]-ordered[2][1],2)} more than the lowest result. All offers are fictional.`;
+      }else if(root.dataset.lab==='offset'){
+        const r=offsetCostExample(input as any);
+        [r.avoidedInterest,r.extraRateCost+r.fee,r.net].forEach((n,i)=>values[i].textContent=dollars(n));
+        notes[0].textContent=`${dollars(r.eligibleOffset)} × ${r.offsetRate.toFixed(2)}%. Offset benefit is capped at the loan balance.`;
+        notes[1].textContent=`${dollars(r.extraRateCost)} higher-rate interest + ${dollars(r.fee)} extra fees.`;
+        summary.textContent=`The offset ${r.net>=0?'saves':'costs'} about ${dollars(Math.abs(r.net))} a year after the extra rate and fees. `+(r.breakEven===null?'There is no interest saving at a zero rate.':r.breakEven>input.loan?'The break-even balance exceeds this loan: a full offset cannot cover these extra costs.':`Break-even average offset balance: ${dollars(r.breakEven)}.`);
+      }else{
+        const r=salaryPackageExample(input as any);
+        [r.includedCash,r.plusCash,r.cashDifference].forEach((n,i)=>values[i].textContent=dollars(n));
+        notes[0].textContent=`${dollars(input.quote)} ÷ 1.12, before tax.`;
+        notes[1].textContent=`${dollars(r.plusSuper)} employer super is added separately.`;
+        summary.textContent=`Including super: ${dollars(r.includedCash)} cash salary + ${dollars(r.includedSuper)} employer super. Plus super: ${dollars(r.plusCash)} cash salary + ${dollars(r.plusSuper)} employer super. These are before-tax figures.`;
+      }
+      error.hidden=true;summary.hidden=false;
+    }catch(e){
+      error.textContent=e instanceof Error?e.message:'Check your numbers.';error.hidden=false;summary.hidden=true;
+      values.forEach(el=>el.textContent='—');
+    }
+  }
+  form.addEventListener('input',update);
+}
+</script>
