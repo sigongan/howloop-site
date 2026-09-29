@@ -97,7 +97,14 @@ for (const [route, { html }] of pages) {
   if (/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle/i.test(html)) {
     fail(route + ': ads are enabled before the separate consent/publishing decision');
   }
+  if (tags(html, 'script').some(script => /googletagmanager\.com\/gtag\/js/i.test(script.src ?? ''))) {
+    fail(route + ': analytics library must not load before the visitor opts in');
+  }
+  if (!html.includes('data-analytics-consent')) fail(route + ': missing analytics privacy controls');
 }
+const comparisonHTML=pages.get('/compare/savings')?.html ?? '';
+if (!comparisonHTML.includes('data-comparison-static-note')) fail('Savings comparison: missing dated HTML fallback');
+if (!comparisonHTML.includes('Conditions, eligibility &amp; fees') && !comparisonHTML.includes('Conditions, eligibility & fees') && !comparisonHTML.includes('No fresh, supported accounts were available')) fail('Savings comparison: missing static account terms or honest unavailable state');
 const robots = await read(path.join(dist, 'robots.txt'));
 if ((robots.match(/^User-agent:\s*\*\s*$/gmi) ?? []).length !== 1) fail('robots.txt: duplicate or missing wildcard group');
 if (/^Disallow:\s*\//gmi.test(robots)) fail('robots.txt: crawl restriction prevents a full readiness review');
