@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Field from '../../components/MoneyField.astro';
 import CalculatorExample from '../../components/CalculatorExample.astro';
+import QuickAnswers from '../../components/QuickAnswers.astro';
 import '../../styles/learning.css';
 ---
 <Base title="LVR & home deposit calculator Australia" description="See how much of a home you would borrow, calculate your loan-to-value ratio and compare deposits. Clear examples, with no loan approval or LMI quote implied.">
@@ -18,6 +19,7 @@ import '../../styles/learning.css';
 </div>
 <details class="hl-details"><summary>What this calculation includes</summary><p>Loan = home price − deposit towards the price + financed costs. LVR = loan ÷ lender valuation × 100. A blank valuation uses the home price. The extra amount shown for 80% is loan − 80% of that valuation, with a minimum of zero.</p><p>The bar separates your deposit from the price funded by a loan. It does not represent ownership shares or the bank’s valuation. LVR uses the full loan including any financed costs. Purchase costs, repayments, grants, LMI premiums and scheme eligibility are not calculated.</p><p><a href="https://moneysmart.gov.au/saving/save-for-a-house-deposit" target="_blank" rel="noopener noreferrer">ASIC Moneysmart: home deposits ↗</a> · <a href="/methodology">Calculation methods →</a></p></details>
 <aside class="hl-help-strip"><a href="/calculators/mortgage">Work out repayments →</a><a href="/learn/first-home-guarantee">Understand government support →</a><a href="/learn/stamp-duty">Check buying costs →</a></aside>
+<QuickAnswers id="home-questions" topics={['home']} title="Questions about buying a home?"/>
 <CalculatorExample kind="lvr"/>
 </div></Base>
 <script>

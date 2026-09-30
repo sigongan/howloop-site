@@ -5,6 +5,7 @@ import '../../styles/bank-search.css';
 import Calculator from '../../components/Calculator.astro';
 import CompoundInterestLesson from '../../components/CompoundInterestLesson.astro';
 import CalculatorExample from '../../components/CalculatorExample.astro';
+import QuickAnswers from '../../components/QuickAnswers.astro';
 import {calculators} from '../../data/tools';
 export function getStaticPaths(){return calculators.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
 const {tool}=Astro.props;
@@ -20,6 +21,7 @@ const c=copy[tool.slug];
 <div class="calculator-page" data-tool={tool.slug}><header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/calculators">Calculators</a> / {tool.name}</div><h1>{tool.name} <span class="calc-title-note">calculator</span></h1><p>{tool.detail}</p></header>
 <div class="hl-wrap hl-page-main">
 <Calculator kind={tool.slug}/>
+<QuickAnswers id="calculator-questions" topics={[tool.slug === 'mortgage' ? 'home' : 'saving']} title={tool.slug === 'mortgage' ? 'Questions about your home loan?' : 'Questions about your savings?'}/>
 {tool.slug === 'compound-interest' && <CompoundInterestLesson context="calculator"/>}
 <CalculatorExample kind={tool.slug}/>
 <section class="hl-calculator-intro"><h2>{c.heading}</h2><p>{c.body}</p><h3>How the calculation works</h3><p>{c.method}</p><p><a href="/methodology/">Formulas and limitations →</a> · <a href={c.source} target="_blank" rel="noopener noreferrer">Official Moneysmart guidance ↗</a></p></section>

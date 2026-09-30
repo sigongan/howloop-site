@@ -4,6 +4,7 @@ import ToolIcon from '../../components/ToolIcon.astro';
 import {comparisonData} from '../../lib/savings-comparison-data';
 import {compareSavings} from '../../lib/savings-comparison.mjs';
 import SavingsSnapshot from '../../components/SavingsSnapshot.astro';
+import QuickAnswers from '../../components/QuickAnswers.astro';
 import '../../styles/savings-comparison.css';
 const retrieved=new Date(comparisonData.fetchedAt).toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'});
 const builtAt=new Date().toLocaleDateString('en-AU',{timeZone:'Australia/Brisbane',day:'numeric',month:'short',year:'numeric'});
@@ -45,6 +46,7 @@ const snapshotRows=snapshot.rows.slice(0,3);
   <button type="button" class="comparison-more" data-comparison-more hidden>Show more accounts</button>
   <p class="comparison-coverage" data-comparison-coverage>At build time, {snapshot.excluded.stale} savings products were excluded for old or incomplete data and {snapshot.excluded.unsupported} for rates that could not be modelled reliably. Numerical order does not establish which account suits you. Check current rates, costs and eligibility with the provider.</p>
  </section>
+ <QuickAnswers id="savings-questions" topics={['saving']} title="Questions about savings accounts?"/>
  <details class="comparison-method" id="comparison-method">
   <summary>How we compare rates, conditions and costs</summary>
   <h2>One set of numbers, for every account</h2>
