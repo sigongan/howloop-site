@@ -5,6 +5,7 @@ import ToolIcon from '../components/ToolIcon.astro';
 import QuickSavings from '../components/QuickSavings.astro';
 import { NAV } from '../consts';
 import '../styles/home.css';
+const homeTopics=NAV.map(item=>({...item,...({savings:{label:'Savings',hint:'Interest & rates'},pay:{label:'Pay after tax',hint:'Pay calculator'},home:{label:'Home loans',hint:'Repayments'},tax:{label:'Tax checklist',hint:'Before myTax'},learn:{label:'Money lessons',hint:'See it in 3 steps'}}[item.id]||{})}));
 const banks=[
 {id:'25233bad-e494-ea11-a831-000d3a8842e1',name:'CommBank'},
 {id:'fc9352a8-ad27-eb11-a834-000d3a8842e1',name:'ING'},
@@ -20,12 +21,12 @@ const banks=[
   <div class="home-stage">
     <section class="home-hero home-wrap" aria-labelledby="home-title">
       <div class="home-intro">
-        <p class="home-eyebrow"><span class="home-status-dot" aria-hidden="true"></span> Free money tools. Made for Australia.</p>
-        <h1 id="home-title">Your money.<br/><em>Made clearer.</em></h1>
-        <p class="home-description">Understand your pay, grow your savings, and plan what comes next.</p>
-        <p class="home-nav-label">What would you like to work out?</p>
+        <p class="home-eyebrow">CALCULATE · COMPARE · LEARN</p>
+        <h1 id="home-title">Free money tools<br/>for Australia.</h1>
+        <p class="home-description">Calculate the numbers. Understand what they mean.</p>
+        <p class="home-nav-label">Choose what you need</p>
         <nav class="home-paths" aria-label="Choose a money topic">
-          {NAV.map(item=><a href={item.id==='savings'?'#try-savings':item.href} data-money-area={item.id}>
+          {homeTopics.map(item=><a href={item.href} data-money-area={item.id}>
             <span class="home-path-icon"><ToolIcon name={item.icon}/></span>
             <span class="home-path-copy"><strong>{item.label}</strong><small>{item.hint}</small></span>
             <ToolIcon name="arrow"/>
@@ -39,10 +40,10 @@ const banks=[
 
   <section class="home-bank-section home-wrap" data-money-area="savings" aria-labelledby="bank-title">
     <div class="home-section-heading">
-      <div><p class="home-section-kicker"><ToolIcon name="bank"/> Savings · bank rates</p><h2 id="bank-title">Know what your bank pays.</h2></div>
+      <div><p class="home-section-kicker"><ToolIcon name="bank"/> Savings · bank rates</p><h2 id="bank-title">Compare savings rates.</h2></div>
       <a class="home-text-action" href="/compare/savings/">Compare savings <ToolIcon name="arrow"/></a>
     </div>
-    <p class="home-section-description">Published products and rates, with the conditions that matter.</p>
+    <p class="home-section-description">See estimated interest and the conditions behind it. Howloop is independent of these banks.</p>
     <div class="home-bank-logos">{banks.map(b=><a href={'/calculators/compound-interest/?bank='+b.id} aria-label={'See '+b.name+' products'}><BankLogo id={b.id}/><span class="home-bank-name">{b.name}</span></a>)}</div>
     <div class="home-small-tools">
       <a href="/calculators/savings-goal/"><ToolIcon name="target"/><span><strong>Savings goal</strong><span>Find what to save each month.</span></span><ToolIcon name="arrow"/></a>
@@ -50,52 +51,22 @@ const banks=[
     </div>
   </section>
 
-  <section class="home-next home-wrap" aria-labelledby="next-title">
-    <div class="home-section-heading home-next-heading">
-      <div><p class="home-section-kicker">Tools for everyday decisions</p><h2 id="next-title">A clearer next step.</h2></div>
-      <a class="home-text-action" href="/calculators/">All calculators <ToolIcon name="arrow"/></a>
-    </div>
-    <div class="home-features">
-      <article class="home-feature" id="take-home-pay" data-money-area="pay">
-        <div class="home-feature-heading"><span class="home-feature-icon"><ToolIcon name="wallet"/></span><h3>Take-home pay</h3></div>
-        <p class="home-feature-question">What lands in{' '}<br/>my bank account?</p>
-        <p class="home-feature-description">See your pay after tax, with employer super shown separately.</p>
-        <p class="home-feature-detail">Weekly · Every 2 weeks · Monthly</p>
-        <a class="home-tool-action" href="/calculators/salary/"><span>Calculate my pay</span><span class="home-action-arrow"><ToolIcon name="arrow"/></span></a>
-        <p class="home-feature-note">Compare your salary with published occupation pay bands.</p>
-      </article>
-      <article class="home-feature" id="home-loan" data-money-area="home">
-        <div class="home-feature-heading"><span class="home-feature-icon"><ToolIcon name="home"/></span><h3>Home loans</h3></div>
-        <p class="home-feature-question">What will my{' '}<br/>repayments be?</p>
-        <p class="home-feature-description">Work out repayments, then try an offset or extra payments.</p>
-        <a class="home-tool-action" href="/calculators/mortgage/"><span>Calculate repayments</span><span class="home-action-arrow"><ToolIcon name="arrow"/></span></a>
-        <div class="home-related"><a href="/calculators/lvr/">Check my deposit & LVR <ToolIcon name="arrow"/></a><a href="/learn/offset-vs-extra-repayments/">Understand offset accounts <ToolIcon name="arrow"/></a></div>
-      </article>
-      <article class="home-feature" id="tax-time" data-money-area="tax">
-        <div class="home-feature-heading"><span class="home-feature-icon"><ToolIcon name="checklist"/></span><h3>Tax returns</h3></div>
-        <p class="home-feature-question">What do I need{' '}<br/>for tax time?</p>
-        <p class="home-feature-description">Find records to gather and work expenses to check before lodging.</p>
-        <a class="home-tool-action" href="/tax-return/"><span>Build my tax checklist</span><span class="home-action-arrow"><ToolIcon name="arrow"/></span></a>
-        <p class="home-feature-note">For employees. A preparation guide; you lodge through myTax.</p>
-      </article>
-    </div>
-  </section>
-
   <div class="home-learn-band">
     <section class="home-learn home-wrap" data-money-area="learn" aria-labelledby="learn-title">
       <div class="home-learn-intro">
         <p class="home-section-kicker"><ToolIcon name="book"/> Learn</p>
-        <h2 id="learn-title">Small print.<br/>Real money.</h2>
-        <p>See what an offer really means. Simple explanations, worked examples and numbers you can change.</p>
-        <a class="home-text-action" href="/learn/">Explore all guides <ToolIcon name="arrow"/></a>
+        <h2 id="learn-title">See it.<br/>Understand it.</h2>
+        <p>Start with a short picture story. Then try the numbers yourself.</p>
+        <a class="home-text-action" href="/learn/">Open money lessons <ToolIcon name="arrow"/></a>
       </div>
       <div class="home-lessons">
-        <a href="/learn/savings-rate-reality-check/" data-money-area="savings"><span class="home-lesson-symbol"><ToolIcon name="growth"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Savings · try the numbers</span><h3>Will the bigger rate earn more?</h3><p>Compare bonus, welcome and steady rates over one year.</p><span class="home-read-guide">Read & try <ToolIcon name="arrow"/></span></div></a>
-        <a href="/learn/when-an-offset-pays-for-itself/" data-money-area="home"><span class="home-lesson-symbol"><ToolIcon name="home"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Home loans · try the numbers</span><h3>Does an offset cover its costs?</h3><p>Include the higher rate and fees before counting the saving.</p><span class="home-read-guide">Read & try <ToolIcon name="arrow"/></span></div></a>
-        <a href="/learn/salary-including-super-vs-plus-super/" data-money-area="pay"><span class="home-lesson-symbol"><ToolIcon name="wallet"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Pay · try the numbers</span><h3>Is super inside your salary?</h3><p>Split the same salary quote into cash pay and employer super.</p><span class="home-read-guide">Read & try <ToolIcon name="arrow"/></span></div></a>
+        <a href="/learn/how-compound-interest-works/" data-money-area="savings"><span class="home-lesson-symbol"><ToolIcon name="growth"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Savings · 3 simple steps</span><h3>How does interest earn interest?</h3><p>Follow $100 as it earns a little more.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
+        <a href="/learn/offset-vs-extra-repayments/" data-money-area="home"><span class="home-lesson-symbol"><ToolIcon name="home"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Home loans · 3 simple steps</span><h3>What does an offset do?</h3><p>See what changes, and what you still owe.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
+        <a href="/learn/salary-including-super-vs-plus-super/" data-money-area="pay"><span class="home-lesson-symbol"><ToolIcon name="wallet"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Pay · 3 simple steps</span><h3>Is super inside your salary?</h3><p>See cash pay and super in separate pots.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
       </div>
     </section>
   </div>
+  <aside class="home-public-info home-wrap" aria-labelledby="home-about-title"><div><h2 id="home-about-title">Free tools. Clear sources.</h2><p>Howloop is an independent education project. You can use the tools without an account. Advertising may help support the site in future.</p></div><nav aria-label="About these free tools"><a href="/about/">Who makes Howloop?</a><a href="/methodology/">How the numbers work</a><a href="/contact/">Contact & corrections</a></nav></aside>
   <div class="home-source-note home-wrap"><p><ToolIcon name="checklist"/> Simple explanations. Official sources.</p><a href="/updates/">Rule updates & corrections <ToolIcon name="arrow"/></a><a href="/about/">About Howloop <ToolIcon name="arrow"/></a></div>
 </div>
 </Base>

@@ -1,0 +1,127 @@
+---
+import '../styles/money-lesson.css';
+
+interface Props {
+  topic: 'compound' | 'offset' | 'salary';
+  /** Supply a unique id if the same topic appears twice on one page. */
+  id?: string;
+}
+
+const {topic, id = `money-lesson-${Astro.props.topic}`} = Astro.props;
+const lessons = {
+  compound: {
+    title: 'Interest earns interest.',
+    example: 'Example, not a bank rate',
+    note: 'Teaching example: 10% a year, added yearly. No extra deposits, withdrawals, fees or tax. Real rates can change.',
+    steps: [
+      {title: 'You start with $100.', text: 'This is the money you put in. Leave it in the account for one year.'},
+      {title: 'Year one adds $10.', text: '10% of $100 is $10. Leave that interest in the account too. You now have $110.'},
+      {title: 'Year two adds $11.', text: 'Now 10% is calculated on $110. The earlier interest earns interest too. Your balance becomes $121.'},
+    ],
+  },
+  offset: {
+    title: 'Your cash can lower loan interest.',
+    example: 'A full-offset example',
+    note: 'Example uses a full (100%) offset. Fees, access and loan terms still matter. Offset cash is separate from the debt.',
+    steps: [
+      {title: 'Your loan is $600,000.', text: 'This is your debt: the money you still owe the lender.'},
+      {title: 'Keep $40,000 in a linked offset.', text: 'This is your cash in a separate account. It has not been paid into the loan.'},
+      {title: 'Interest is based on $560,000.', text: 'Subtract the offset cash when working out interest. Your actual loan debt is still $600,000.'},
+    ],
+  },
+  salary: {
+    title: 'Cash pay and super are different.',
+    example: 'A concept, not a payslip calculation',
+    note: 'Cash salary is before tax and deductions. Employer super goes to your retirement fund. Check the written breakdown of an actual offer.',
+    steps: [
+      {title: 'Two amounts. Two purposes.', text: 'Cash salary helps pay today’s bills after tax and deductions. Employer super goes towards retirement.'},
+      {title: '“Including super” means inside.', text: 'The quoted package contains both cash salary and employer super. The whole quote is not your cash pay.'},
+      {title: '“Plus super” means extra.', text: 'The quote is cash salary before tax. Employer super is added on top, and goes to your retirement fund.'},
+    ],
+  },
+};
+const lesson = lessons[topic];
+if (!lesson) throw new Error('MoneyLesson needs a supported topic.');
+const wallet = 'M8 14h27a5 5 0 0 1 5 5v18a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5V14a5 5 0 0 1 4-5l23-4v9M40 23H29a5 5 0 0 0 0 10h11M30 28h1';
+const home = 'M5 22 24 7l19 15M10 19v23h28V19M19 42V29h10v13';
+const fund = 'M9 42h30M13 42V22m11 20V22m11 20V22M7 20h34L24 7 7 20Z';
+---
+
+<section class="money-lesson" data-money-lesson data-topic={topic} id={id} aria-labelledby={`${id}-title`}>
+  <header class="money-lesson__header">
+    <p class="money-lesson__eyebrow">One idea, three steps</p>
+    <h2 id={`${id}-title`}>{lesson.title}</h2>
+    <p class="money-lesson__example">{lesson.example}</p>
+  </header>
+
+  <div class="money-lesson__progress" data-lesson-progress hidden>
+    <span data-lesson-count>Step 1 of 3</span>
+    <div class="money-lesson__tracks" aria-hidden="true">{lesson.steps.map((_, index) => <span data-lesson-track data-step={index}></span>)}</div>
+  </div>
+
+  <div class="money-lesson__steps" id={`${id}-steps`}>
+    {lesson.steps.map((step, index) => <section class="money-lesson__step" data-lesson-step aria-labelledby={`${id}-step-${index + 1}`}>
+      <div class={`money-lesson__art money-lesson__art--${topic}`}>
+        {topic === 'compound' && <>
+          <svg class="money-lesson__growth" viewBox="0 0 80 60" fill="none" aria-hidden="true" focusable="false">
+            <rect x="6" y="26" width="18" height="28" rx="5" fill="currentColor" opacity=".35"/>
+            {index > 0 && <rect x="31" y="15" width="18" height="39" rx="5" fill="currentColor" opacity=".6"/>}
+            {index > 1 && <rect x="56" y="4" width="18" height="50" rx="5" fill="currentColor"/>}
+          </svg>
+          <p class="money-lesson__amount-label">{['Your starting savings', 'After year one', 'After year two'][index]}</p>
+          <p class="money-lesson__amount">{['$100', '$110', '$121'][index]}</p>
+          <div class="money-lesson__parts" aria-label="What makes up the balance">
+            <span class="money-lesson__part"><i aria-hidden="true"></i>$100 you put in</span>
+            {index > 0 && <span class="money-lesson__part money-lesson__part--first"><i aria-hidden="true"></i>+$10 year-one interest</span>}
+            {index > 1 && <span class="money-lesson__part money-lesson__part--second"><i aria-hidden="true"></i>+$11 year-two interest</span>}
+          </div>
+        </>}
+
+        {topic === 'offset' && index === 0 && <>
+          <svg class="money-lesson__symbol" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d={home}/></svg>
+          <p class="money-lesson__amount-label">Your loan debt</p><p class="money-lesson__amount">$600,000</p>
+          <p class="money-lesson__art-note">Money you owe</p>
+        </>}
+        {topic === 'offset' && index === 1 && <div class="money-lesson__pots">
+          <div class="money-lesson__pot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d={home}/></svg><span>Loan debt</span><strong>$600,000</strong></div>
+          <div class="money-lesson__pot money-lesson__pot--mint"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d={wallet}/></svg><span>Separate offset cash</span><strong>$40,000</strong></div>
+        </div>}
+        {topic === 'offset' && index === 2 && <>
+          <p class="money-lesson__equation">$600,000 − $40,000</p>
+          <p class="money-lesson__amount-label">Balance used to work out interest</p><p class="money-lesson__amount">$560,000</p>
+          <p class="money-lesson__debt">Actual loan debt: <strong>$600,000</strong></p>
+        </>}
+
+        {topic === 'salary' && index === 0 && <div class="money-lesson__pots">
+          <div class="money-lesson__pot"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d={wallet}/></svg><strong>Cash salary</strong><span>Before tax and deductions</span></div>
+          <div class="money-lesson__pot money-lesson__pot--mint"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d={fund}/></svg><strong>Employer super</strong><span>For retirement</span></div>
+        </div>}
+        {topic === 'salary' && index === 1 && <div class="money-lesson__package">
+          <p>The quoted package</p>
+          <div class="money-lesson__package-parts"><span>Cash salary</span><b aria-hidden="true">+</b><span>Employer super</span></div>
+          <span class="money-lesson__package-caption">Both are inside this amount</span>
+        </div>}
+        {topic === 'salary' && index === 2 && <div class="money-lesson__plus-package">
+          <div class="money-lesson__package"><p>The quoted salary</p><strong>Cash salary</strong><span class="money-lesson__package-caption">Before tax and deductions</span></div>
+          <span class="money-lesson__plus" aria-hidden="true">+</span>
+          <div class="money-lesson__extra"><strong>Employer super</strong><span>Added on top</span></div>
+        </div>}
+      </div>
+      <div class="money-lesson__copy">
+        <h3 id={`${id}-step-${index + 1}`}><span class="money-lesson__step-number">{index + 1}.</span> {step.title}</h3>
+        <p>{step.text}</p>
+      </div>
+    </section>)}
+  </div>
+
+  <div class="money-lesson__controls" data-lesson-controls hidden role="group" aria-label={`${lesson.title} Lesson controls`}>
+    <button type="button" data-lesson-back aria-label="Previous lesson step" aria-controls={`${id}-steps`}>Back</button>
+    <button type="button" data-lesson-play aria-label={`Play the lesson: ${lesson.title}`} aria-controls={`${id}-steps`}>Play</button>
+    <button type="button" data-lesson-next aria-label="Next lesson step" aria-controls={`${id}-steps`}>Next</button>
+  </div>
+  <p class="money-lesson__motion-note" data-lesson-motion-note hidden>Reduced motion is on. Move through the lesson with Next.</p>
+  <p class="money-lesson__note">{lesson.note}</p>
+  <p class="money-lesson__sr-only" role="status" aria-live="polite" aria-atomic="true" data-lesson-announcement></p>
+</section>
+
+<script>import '../scripts/money-lesson.js';</script>

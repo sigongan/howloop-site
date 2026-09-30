@@ -3,25 +3,51 @@ import Base from '../../layouts/Base.astro';
 import ToolIcon from '../../components/ToolIcon.astro';
 import guides from '../../data/learning.json';
 import '../../styles/learning.css';
-import '../../styles/money-decisions.css';
-const groups=[{id:'home',title:'Buying a home',sub:'Deposits, loans & offsets',area:'home',icon:'home'},{id:'property',title:'Property & tax',sub:'Buying costs & changing rules',area:'tax',icon:'checklist'},{id:'everyday',title:'Everyday money',sub:'Saving, super & investing',area:'savings',icon:'growth'}];
+import '../../styles/learn-start.css';
+const groups=[
+  {id:'everyday',title:'Saving & everyday money',sub:'Savings, pay, super and shares',area:'savings',icon:'growth'},
+  {id:'home',title:'Buying a home',sub:'Deposits, loans and offsets',area:'home',icon:'home'},
+  {id:'property',title:'Property & tax',sub:'Buying costs and changing rules',area:'tax',icon:'checklist'}
+];
+const starts=[
+  {slug:'how-compound-interest-works',topic:'compound',label:'Savings',title:'How interest grows',text:'See interest earn interest.',icon:'growth'},
+  {slug:'offset-vs-extra-repayments',topic:'offset',label:'Home loans',title:'How an offset works',text:'See how savings reduce loan interest.',icon:'home'},
+  {slug:'salary-including-super-vs-plus-super',topic:'salary',label:'Your pay',title:'Where your salary goes',text:'Separate cash salary from super.',icon:'wallet'}
+];
 ---
-<Base title="Money, made easy" description="Short Australian money lessons. Understand home deposits, tax, savings, super and shares through one clear example, then try it yourself.">
-<header class="hl-page-head hl-wrap learn-wrap learn-page-heading" data-money-area="learn">
+<Base title="Learn about money, one example at a time" description="Start with a short visual example of savings, offsets or salary. Explore clear Australian money guides with practical examples, assumptions and linked sources.">
+<header class="hl-page-head hl-wrap learn-wrap learn-page-heading learn-start-index" data-money-area="learn">
   <div class="hl-breadcrumb"><a href="/">Home</a> / Learn</div>
   <div class="learn-section-identity"><span class="learn-section-icon"><ToolIcon name="book"/></span><span>Learn</span></div>
-  <h1>Money, made easy.</h1>
-  <p>Understand savings, home loans and tax with simple examples.</p>
+  <h1>Money lessons.</h1>
+  <p>See it in three steps. Read more when you need it.</p>
 </header>
-<div class="hl-wrap hl-page-main learn-wrap">
-<section class="practical-guides" aria-labelledby="practical-guide-title"><h2 id="practical-guide-title">Small print. Real money.</h2><p>Change the numbers. Understand what the offer really means.</p><div class="practical-guide-grid">{guides.filter(g=>g.lab).map(g=><a href={'/learn/'+g.slug+'/'}><strong>{g.title}</strong><span>{g.summary}</span><small>Read & try the example →</small></a>)}</div></section>
-<label class="hl-field lesson-search"><span>What would you like to understand?</span><input type="search" id="lesson-search" placeholder="Try deposit, tax, super…" aria-controls="lesson-groups"/></label>
-<nav class="learn-topics" aria-label="Learning topics">{groups.map(g=><a href={'#'+g.id} data-money-area={g.area}><span class="learn-topic-icon"><ToolIcon name={g.icon}/></span><span class="learn-topic-copy"><strong>{g.title}</strong><small>{g.sub} <span aria-hidden="true">→</span></small></span></a>)}</nav>
-<aside class="learn-update-link"><span>Rules change. See what it means for you.</span><a href="/updates">What's changed? →</a></aside>
-<div id="lesson-groups">{groups.map(group=><section class="lesson-group" id={group.id} data-money-area={group.area}><div class="learn-area-heading" data-money-area={group.area}><span class="learn-topic-icon"><ToolIcon name={group.icon}/></span><div><h2>{group.title}</h2><p>{group.sub}</p></div></div><div class="lesson-list">{guides.filter(g=>g.group===group.id).map(g=><a class="lesson-card" href={'/learn/'+g.slug} data-lesson-search={[g.title,g.category,g.summary,g.slug].join(' ').toLowerCase()}><div><h3>{g.title}</h3><small>{g.category} · {g.minutes} min</small></div><span aria-hidden="true">→</span></a>)}</div></section>)}</div>
-<p class="learn-empty" data-lesson-empty hidden role="status">No matching lessons. Try “home”, “savings” or “tax”.</p>
-<aside class="hl-help-strip"><a href="/editorial-policy">How we check our content →</a><a href="/contact">Suggest a topic or correction →</a></aside>
-</div></Base>
+<div class="hl-wrap hl-page-main learn-wrap learn-start-index">
+  <section class="learn-first" aria-labelledby="learn-first-title">
+    <div class="learn-first-heading"><h2 id="learn-first-title">See it in 30 seconds</h2><p>Three useful places to start.</p></div>
+    <div class="learn-first-grid">
+      {starts.map(lesson=><a class="learn-first-card" data-start-topic={lesson.topic} href={'/learn/'+lesson.slug+'/'}>
+        <div class="learn-first-picture" aria-hidden="true">
+          <span class="learn-picture-icon"><ToolIcon name={lesson.icon}/></span>
+          {lesson.topic==='compound'?<span class="learn-picture-bars"><i></i><i></i><i></i><i></i></span>:lesson.topic==='offset'?<span class="learn-picture-offset"><i></i><i></i></span>:<span class="learn-picture-pay"><i></i><i></i><i></i></span>}
+        </div>
+        <span class="learn-first-label">{lesson.label}</span>
+        <h3>{lesson.title}</h3><p>{lesson.text}</p>
+        <span class="learn-first-link">See the example <ToolIcon name="arrow"/></span>
+      </a>)}
+    </div>
+  </section>
+  <section class="learn-library" aria-labelledby="learn-library-title">
+    <div class="learn-library-heading"><h2 id="learn-library-title">Find your next question</h2><p>Every guide starts with an example. Longer explanations and sources are there when you need them.</p></div>
+    <label class="hl-field lesson-search"><span>Search the guides</span><input type="search" id="lesson-search" placeholder="Try deposit, pay, tax or super" aria-controls="lesson-groups"/></label>
+    <nav class="learn-topics" aria-label="Learning topics">{groups.map(g=><a href={'#'+g.id} data-money-area={g.area}><span class="learn-topic-icon"><ToolIcon name={g.icon}/></span><span class="learn-topic-copy"><strong>{g.title}</strong><small>{g.sub}</small></span></a>)}</nav>
+    <div id="lesson-groups">{groups.map(group=><section class="lesson-group" id={group.id} data-money-area={group.area}><div class="learn-area-heading" data-money-area={group.area}><span class="learn-topic-icon"><ToolIcon name={group.icon}/></span><div><h2>{group.title}</h2><p>{group.sub}</p></div></div><div class="lesson-list">{guides.filter(g=>g.group===group.id).map(g=><a class="lesson-card" href={'/learn/'+g.slug+'/'} data-lesson-search={[g.title,g.category,g.summary,g.slug,group.title,group.sub].join(' ').toLowerCase()}><div><h3>{g.title}</h3><small>{g.lab?'Adjustable example':'Worked example'} · {g.minutes} min guide</small></div><span aria-hidden="true"><ToolIcon name="arrow"/></span></a>)}</div></section>)}</div>
+    <p class="learn-empty" data-lesson-empty hidden role="status">No matching guides. Try “home”, “savings”, “pay” or “tax”.</p>
+  </section>
+  <aside class="learn-update-link"><span>Checking a rule that may have changed?</span><a href="/updates/">See rule updates &amp; corrections <span aria-hidden="true">→</span></a></aside>
+  <aside class="hl-help-strip"><a href="/editorial-policy/">How we check our content <span aria-hidden="true">→</span></a><a href="/contact/">Suggest a topic or correction <span aria-hidden="true">→</span></a></aside>
+</div>
+</Base>
 <script>
 document.querySelector<HTMLInputElement>('#lesson-search')?.addEventListener('input',event=>{
  const query=(event.target as HTMLInputElement).value.toLowerCase().trim();let total=0;
