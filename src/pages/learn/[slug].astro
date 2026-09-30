@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import guides from '../../data/learning.json';
+import {relatedGuideSlugs} from '../../data/related-guides.mjs';
 import SourceStatus from '../../components/SourceStatus.astro';
 import PolicyNote from '../../components/PolicyNote.astro';
 import CompoundInterestLesson from '../../components/CompoundInterestLesson.astro';
@@ -12,7 +13,7 @@ import '../../styles/learning.css';
 export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
 const {guide}=Astro.props;
 const published=guide.datePublished,modified=guide.dateModified,checked=guide.sourcesChecked;
-const related=guides.filter(g=>g.slug!==guide.slug&&g.group===guide.group).slice(0,2);
+const related=(relatedGuideSlugs[guide.slug]??[]).map(slug=>guides.find(g=>g.slug===slug)).filter(Boolean);
 const action=guide.action??{href:'/calculators/'+guide.tool,label:'Try it with your numbers'};
 const states=[['QLD','https://qro.qld.gov.au/duties/transfer-duty/calculate/'],['NSW','https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty/understanding-transfer-duty/calculate-transfer-duty'],['VIC','https://sro.vic.gov.au/buying-property/land-transfer-stamp-duty/land-transfer-stamp-duty-calculator'],['WA','https://www.wa.gov.au/organisation/department-of-treasury-and-finance/transfer-duty-assessment'],['SA','https://www.revenuesa.sa.gov.au/stamp-duty-land/calculate-stamp-duty'],['ACT','https://www.revenue.act.gov.au/help-and-resources/calculators/calculate-your-conveyance-duty'],['TAS','https://www.sro.tas.gov.au/resources/tasmanian-revenue-online/property-transfer-duties/duty-transactions/calculate-property-transfer-duty'],['NT','https://nt.gov.au/property/buying-and-selling-a-home/settle-the-sale/stamp-duty-buying-or-selling-a-home/conveyance-calculator']];
 ---

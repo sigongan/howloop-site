@@ -30,3 +30,19 @@ export function searchBanks(banks,query){
   .sort((a,b)=>a.score-b.score||a.bank.name.localeCompare(b.bank.name,'en-AU'))
   .map(result=>result.bank);
 }
+
+// Keep the interest ranking while matching bank aliases and account names.
+export function filterSavingsSearch(rows,query){
+ const phrase=normalise(query);
+ if(!phrase)return rows;
+ const banks=[...new Set(rows.map(row=>row.bankName))].map(name=>({name}));
+ const wholeBankMatches=new Set(searchBanks(banks,phrase).map(bank=>bank.name));
+ const parts=phrase.split(' ');
+ const partBankMatches=parts.map(part=>new Set(searchBanks(banks,part).map(bank=>bank.name)));
+ return rows.filter(row=>{
+  if(wholeBankMatches.has(row.bankName))return true;
+  const productName=normalise(row.product.name),productCompact=compact(productName);
+  if(productCompact.includes(compact(phrase)))return true;
+  return parts.every((part,index)=>partBankMatches[index].has(row.bankName)||productName.split(' ').some(word=>word.startsWith(part))||(part.length>=4&&productCompact.includes(part)));
+ });
+}

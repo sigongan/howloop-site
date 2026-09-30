@@ -106,3 +106,18 @@ test('rate decreases cannot create negative deposit interest',()=>{
  assert.ok(outlook);
  near(outlook.lower.balance,100*(1+.005/12)**12);
 });
+
+
+test('a bonus estimate retains a separate independently computed base-only outcome',()=>{
+ const p=product('Bonus contrast','.001',[{depositRateType:'BONUS',rate:'.0555',applicabilityConditions:[{rateApplicabilityType:'MIN_DEPOSIT_AMOUNT',additionalValue:'200'}]}]);
+ const row=compareSavings([bank([p])],{...opts,principal:10000,contribution:0,scenario:'conditional'},now).rows[0];
+ const base=10000*((1+.001/12)**12-1),bonus=10000*((1+.0565/12)**12-1);
+ near(row.baseInterest,base);near(row.interest,bonus);assert.equal(row.type,'BONUS');
+ assert.ok(row.interest>row.baseInterest);
+ // Zero planned additions remain an explicit assumed scenario, never proof of eligibility.
+ assert.equal(row.product.depositRates[1].applicabilityConditions[0].additionalValue,'200');
+});
+test('base mode retains its base outcome without labelling it as earned bonus interest',()=>{
+ const row=compareSavings([bank([product('Only base','.06')])],opts,now).rows[0];
+ near(row.baseInterest,100*((1+.06/12)**12-1));near(row.interest,row.baseInterest);assert.equal(row.type,'BASE');
+});

@@ -25,3 +25,19 @@
 .comparison-page [hidden]{display:none!important}.comparison-page :is(a,input,select,button,summary):focus-visible{outline:3px solid #295bb7;outline-offset:4px}
 @media(max-width:800px){.comparison-outlook-cases{grid-template-columns:1fr}.comparison-page{padding-top:30px}.comparison-inputs{grid-template-columns:1fr 1fr}.comparison-inputs>label:last-child{grid-column:1/-1}.comparison-options{grid-template-columns:1fr 1fr}.comparison-submit{grid-column:1/-1}.comparison-results-heading{align-items:stretch;flex-direction:column;gap:18px}.comparison-search{max-width:none}.comparison-values{gap:15px;padding:16px}.comparison-values dd{font-size:1.5rem}}
 @media(max-width:480px){.comparison-heading h1{font-size:2.6rem}.comparison-heading>p:last-child{font-size:1.125rem}.comparison-form{padding:20px 16px}.comparison-inputs,.comparison-options{grid-template-columns:1fr;gap:17px}.comparison-inputs>label:last-child,.comparison-submit{grid-column:auto}.comparison-form label{font-size:1.125rem}.comparison-page select{font-size:1.0625rem}.comparison-form small{font-size:1rem}.comparison-status-line{font-size:1rem}.comparison-account{padding:20px 16px}.comparison-values{grid-template-columns:1fr 1fr;gap:15px}.comparison-values>div:last-child{grid-column:1/-1;border-top:1px solid #d8e3de;padding-top:13px;display:flex;align-items:center;justify-content:space-between;gap:12px}.comparison-values>div:last-child dd{margin:0;font-size:1.5rem}.comparison-values dt{font-size:1rem}.comparison-values dd{font-size:1.625rem}.comparison-retrieved{font-size:1rem}.comparison-account h3{font-size:1.25rem}.comparison-account-head{display:block}.comparison-method>summary{font-size:1.125rem}.comparison-next{padding:20px 16px}}
+
+/* Keep important account restrictions beside the numerical estimate. */
+.comparison-requirements{margin:18px 0;padding:16px 18px;background:#f5f7fa;border-inline-start:3px solid #8b9eae;border-radius:0 10px 10px 0}
+.comparison-requirements h4,.comparison-bonus-check h4{font-size:1.125rem;line-height:1.5;margin:0 0 10px;font-weight:700;letter-spacing:0}
+.comparison-requirements ul,.comparison-bonus-check ul{padding-inline-start:21px;margin:0 0 12px}
+.comparison-requirements li,.comparison-bonus-check li{font-size:1.0625rem;line-height:1.6;margin:7px 0;overflow-wrap:anywhere}
+.comparison-requirements .comparison-requirements-note,.comparison-bonus-check .comparison-requirements-note{font-size:.9375rem;line-height:1.6;color:#52606d;margin:0}
+.comparison-bonus-check{background:#fff9ef;border:1px solid #e7d9be;border-radius:12px;padding:18px;margin:18px 0;color:#493923}
+.comparison-bonus-check>p{font-size:1rem;line-height:1.65;margin:12px 0}
+.comparison-bonus-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0}
+.comparison-bonus-values>div{background:#fff;border:1px solid #ebe2d2;padding:15px;border-radius:10px;min-width:0}
+.comparison-bonus-values dt{font-size:1rem;line-height:1.5}.comparison-bonus-values dd{font-size:1.75rem;line-height:1.4;margin:6px 0 0;font-weight:700;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.comparison-bonus-check .comparison-bonus-warning{font-weight:600;background:#fff0d9;padding:12px;border-radius:8px}
+@media(max-width:600px){.comparison-requirements li,.comparison-bonus-check li,.comparison-bonus-check>p{font-size:1.125rem}.comparison-requirements,.comparison-bonus-check{padding:16px}.comparison-bonus-values{grid-template-columns:minmax(0,1fr)}}
+
+.comparison-heading .comparison-trust{font-size:1rem;color:#146c5b;font-weight:600;margin-top:16px;line-height:1.6}
