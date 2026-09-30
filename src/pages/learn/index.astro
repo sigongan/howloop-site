@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ToolIcon from '../../components/ToolIcon.astro';
+import MoneyScene from '../../components/MoneyScene.astro';
 import guides from '../../data/learning.json';
 import '../../styles/learning.css';
 import '../../styles/learn-start.css';
@@ -10,27 +11,24 @@ const groups=[
   {id:'property',title:'Property & tax',sub:'Buying costs and changing rules',area:'tax',icon:'checklist'}
 ];
 const starts=[
-  {slug:'how-compound-interest-works',topic:'compound',label:'Savings',title:'How interest grows',text:'See interest earn interest.',icon:'growth'},
-  {slug:'offset-vs-extra-repayments',topic:'offset',label:'Home loans',title:'How an offset works',text:'See how savings reduce loan interest.',icon:'home'},
-  {slug:'salary-including-super-vs-plus-super',topic:'salary',label:'Your pay',title:'Where your salary goes',text:'Separate cash salary from super.',icon:'wallet'}
-];
+  {slug:'how-compound-interest-works',topic:'compound',step:1,label:'Savings',title:'How does interest grow?',text:'See interest earn interest.'},
+  {slug:'offset-vs-extra-repayments',topic:'offset',step:1,label:'Home loans',title:'How does an offset work?',text:'See how savings reduce loan interest.'},
+  {slug:'salary-including-super-vs-plus-super',topic:'salary',step:0,label:'Your pay',title:'What is salary plus super?',text:'Separate cash salary from super.'}
+] as const;
 ---
 <Base title="Learn about money, one example at a time" description="Start with a short visual example of savings, offsets or salary. Explore clear Australian money guides with practical examples, assumptions and linked sources.">
 <header class="hl-page-head hl-wrap learn-wrap learn-page-heading learn-start-index" data-money-area="learn">
   <div class="hl-breadcrumb"><a href="/">Home</a> / Learn</div>
   <div class="learn-section-identity"><span class="learn-section-icon"><ToolIcon name="book"/></span><span>Learn</span></div>
   <h1>Money lessons.</h1>
-  <p>See it in three steps. Read more when you need it.</p>
+  <p>A picture. A short explanation. A tool to try.</p>
 </header>
 <div class="hl-wrap hl-page-main learn-wrap learn-start-index">
   <section class="learn-first" aria-labelledby="learn-first-title">
-    <div class="learn-first-heading"><h2 id="learn-first-title">See it in 30 seconds</h2><p>Three useful places to start.</p></div>
+    <div class="learn-first-heading"><h2 id="learn-first-title">Start with a picture</h2><p>Choose a question you want to understand.</p></div>
     <div class="learn-first-grid">
       {starts.map(lesson=><a class="learn-first-card" data-start-topic={lesson.topic} href={'/learn/'+lesson.slug+'/'}>
-        <div class="learn-first-picture" aria-hidden="true">
-          <span class="learn-picture-icon"><ToolIcon name={lesson.icon}/></span>
-          {lesson.topic==='compound'?<span class="learn-picture-bars"><i></i><i></i><i></i><i></i></span>:lesson.topic==='offset'?<span class="learn-picture-offset"><i></i><i></i></span>:<span class="learn-picture-pay"><i></i><i></i><i></i></span>}
-        </div>
+        <div class="learn-first-picture"><MoneyScene topic={lesson.topic} step={lesson.step} compact/></div>
         <span class="learn-first-label">{lesson.label}</span>
         <h3>{lesson.title}</h3><p>{lesson.text}</p>
         <span class="learn-first-link">See the example <ToolIcon name="arrow"/></span>

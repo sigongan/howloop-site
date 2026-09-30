@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import BankLogo from '../components/BankLogo.astro';
 import ToolIcon from '../components/ToolIcon.astro';
+import MoneyScene from '../components/MoneyScene.astro';
 import QuickSavings from '../components/QuickSavings.astro';
 import { NAV } from '../consts';
 import '../styles/home.css';
@@ -60,9 +61,9 @@ const banks=[
         <a class="home-text-action" href="/learn/">Open money lessons <ToolIcon name="arrow"/></a>
       </div>
       <div class="home-lessons">
-        <a href="/learn/how-compound-interest-works/" data-money-area="savings"><span class="home-lesson-symbol"><ToolIcon name="growth"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Savings · 3 simple steps</span><h3>How does interest earn interest?</h3><p>Follow $100 as it earns a little more.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
-        <a href="/learn/offset-vs-extra-repayments/" data-money-area="home"><span class="home-lesson-symbol"><ToolIcon name="home"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Home loans · 3 simple steps</span><h3>What does an offset do?</h3><p>See what changes, and what you still owe.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
-        <a href="/learn/salary-including-super-vs-plus-super/" data-money-area="pay"><span class="home-lesson-symbol"><ToolIcon name="wallet"/></span><div class="home-lesson-copy"><span class="home-lesson-topic">Pay · 3 simple steps</span><h3>Is super inside your salary?</h3><p>See cash pay and super in separate pots.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
+        <a href="/learn/how-compound-interest-works/" data-money-area="savings"><div class="home-lesson-picture"><MoneyScene topic="compound" step={1} compact/></div><div class="home-lesson-copy"><span class="home-lesson-topic">Savings · 3 simple steps</span><h3>How does interest grow?</h3><p>Follow $100 as it earns a little more.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
+        <a href="/learn/offset-vs-extra-repayments/" data-money-area="home"><div class="home-lesson-picture"><MoneyScene topic="offset" step={1} compact/></div><div class="home-lesson-copy"><span class="home-lesson-topic">Home loans · 3 simple steps</span><h3>How does an offset work?</h3><p>See what changes, and what you still owe.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
+        <a href="/learn/salary-including-super-vs-plus-super/" data-money-area="pay"><div class="home-lesson-picture"><MoneyScene topic="salary" step={0} compact/></div><div class="home-lesson-copy"><span class="home-lesson-topic">Pay · 3 simple steps</span><h3>What is salary plus super?</h3><p>See salary before tax and retirement money separately.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
       </div>
     </section>
   </div>

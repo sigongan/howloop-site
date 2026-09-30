@@ -2,9 +2,9 @@
   {
     "slug": "how-compound-interest-works",
     "datePublished": "2026-09-18",
-    "dateModified": "2026-09-21",
+    "dateModified": "2026-09-30",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "21 September 2026: added a three-step illustrated $100 example and an explanation of interest on interest. Updated the knowledge check to match; retained the detailed guide and source-check date.",
+    "updateNote": "21 September 2026: added a three-step illustrated $100 example and an explanation of interest on interest. Updated the knowledge check to match; retained the detailed guide and source-check date. 30 September 2026: replaced the short introduction with original everyday-picture scenes, plain definitions and all steps visible by default. Financial-source check dates are unchanged.",
     "title": "How does interest earn more interest?",
     "category": "SAVING",
     "minutes": 5,
@@ -186,7 +186,7 @@
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-30",
     "sourcesChecked": "2026-09-18",
-    "updateNote": "30 September 2026: added a three-step original illustration distinguishing the loan debt from the balance charged interest, and a link to the offset-fee break-even comparison. Source-check date retained; this update does not claim all sources were re-reviewed.",
+    "updateNote": "30 September 2026: added a three-step original illustration distinguishing the loan debt from the balance charged interest, and a link to the offset-fee break-even comparison. Source-check date retained; this update does not claim all sources were re-reviewed. 30 September 2026: replaced the short introduction with original everyday-picture scenes, plain definitions and all steps visible by default. Financial-source check dates are unchanged.",
     "title": "How does an offset account help?",
     "category": "HOME LOANS",
     "minutes": 6,
@@ -1555,6 +1555,6 @@
     "dateModified": "2026-09-30",
     "sourcesChecked": "2026-09-30",
     "reviewDays": 30,
-    "updateNote": "30 September 2026: published an original Howloop worked comparison and adjustable example. Read the linked ASIC Moneysmart guidance; independently checked the example arithmetic. This is general education, not an assessment of personal eligibility."
+    "updateNote": "30 September 2026: published an original Howloop worked comparison and adjustable example. Read the linked ASIC Moneysmart guidance; independently checked the example arithmetic. This is general education, not an assessment of personal eligibility. 30 September 2026: replaced the short introduction with original everyday-picture scenes, plain definitions and all steps visible by default. Financial-source check dates are unchanged."
   }
 ]
