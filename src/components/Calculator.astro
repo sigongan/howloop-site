@@ -5,11 +5,11 @@ const {kind='compound-interest'}=Astro.props;
 ---
 <div class="hl-calculator" data-calculator={kind}>
 <form class="hl-form">
-<h2>Your numbers <small>AUD · updates instantly</small></h2>
+<h2>Your numbers <small>AUD</small></h2>
 {kind==='compound-interest'&&<>
 <Field name="principal" label="Starting balance" value={10000}/>
-<div class="hl-field-row"><Field name="contribution" label="Regular contribution" value={500} max={1000000}/><label class="hl-field"><span>How often?</span><select name="frequency" aria-label="Contribution frequency"><option value="monthly">Monthly</option><option value="fortnightly">Fortnightly</option><option value="weekly">Weekly</option></select></label></div>
-<div class="hl-field-row"><Field name="annualRate" label="Interest rate (% p.a.)" value={4.5} max={30} step="any" prefix=""/><Field name="years" label="Years" value={10} min={1} max={50} step={1} prefix=""/></div>
+<div class="hl-field-row"><Field name="contribution" label="Add each time" value={500} max={1000000}/><label class="hl-field"><span>How often?</span><select name="frequency" aria-label="Contribution frequency"><option value="monthly">Monthly</option><option value="fortnightly">Fortnightly</option><option value="weekly">Weekly</option></select></label></div>
+<div class="hl-field-row"><Field name="annualRate" label="Yearly rate (%)" value={4.5} max={30} step="any" prefix=""/><Field name="years" label="Years" value={10} min={1} max={50} step={1} prefix=""/></div>
 <button type="button" class="calc-bank-button" data-open-bank><span class="calc-bank-symbol" aria-hidden="true">$</span><span>Choose a bank rate<small>Australian banks & published products</small></span><span aria-hidden="true">→</span></button>
 <dialog class="calc-bank-dialog" data-bank-dialog aria-labelledby="bank-picker-title"><div class="calc-bank-dialog-head"><h2 id="bank-picker-title">Choose a bank rate</h2><button type="button" data-close-bank aria-label="Close bank picker">✕</button></div><div class="hl-product-picker" data-bank-picker>
 <div class="bank-search-box">
@@ -27,7 +27,7 @@ const {kind='compound-interest'}=Astro.props;
 </>}
 {kind==='mortgage'&&<>
 <Field name="principal" label="Loan amount" value={600000}/>
-<div class="hl-field-row"><Field name="annualRate" label="Interest rate (% p.a.)" value={6} max={30} step="any" prefix=""/><Field name="years" label="Loan term (years)" value={30} min={1} max={40} step={1} prefix=""/></div>
+<div class="hl-field-row"><Field name="annualRate" label="Yearly rate (%)" value={6} max={30} step="any" prefix=""/><Field name="years" label="Loan term (years)" value={30} min={1} max={40} step={1} prefix=""/></div>
 <Field name="offset" label="Average offset balance" value={30000} hint="Assumes a constant 100% offset balance."/>
 <Field name="extra" label="Extra monthly repayment" value={200} max={1000000} step={0.01}/>
 <p class="hl-help">Principal-and-interest loan. Your regular repayment stays the same as the loan without an offset.</p>
@@ -35,7 +35,7 @@ const {kind='compound-interest'}=Astro.props;
 {kind==='savings-goal'&&<>
 <Field name="target" label="Your savings goal" value={80000} hint="For a home deposit, include your own purchase-cost allowance."/>
 <Field name="principal" label="Already saved" value={15000}/>
-<div class="hl-field-row"><Field name="years" label="Time to reach it (years)" value={5} min={1} max={50} step={1} prefix=""/><Field name="annualRate" label="Interest rate (% p.a.)" value={4.5} max={30} step="any" prefix=""/></div>
+<div class="hl-field-row"><Field name="years" label="Time to reach it (years)" value={5} min={1} max={50} step={1} prefix=""/><Field name="annualRate" label="Yearly rate (%)" value={4.5} max={30} step="any" prefix=""/></div>
 <p class="hl-help">A constant, illustrative rate. Contributions arrive at the end of each month.</p>
 </>}
 {kind==='emergency-fund'&&<>
@@ -47,7 +47,7 @@ const {kind='compound-interest'}=Astro.props;
 </>}
 <button type="submit" class="hl-button calc-update-button" disabled>See result <span aria-hidden="true">→</span></button>
 <p class="hl-error" data-error role="alert" hidden></p>
-<p class="hl-help calc-local-note">Free to use · your inputs stay on this device</p>
+<p class="hl-help calc-local-note">Free. Inputs stay on this device.</p>
 </form>
 <section class="hl-results" tabindex="-1" aria-label="Your calculation results">
 <div class="calc-overview" tabindex="-1"><p class="calc-example-note" data-example-note>Example plan · try your own numbers</p><p class="hl-result-label" data-result-label>Your projected balance</p><output class="hl-result-total" data-result-total aria-live="polite">—</output><p class="hl-result-sub" data-result-sub>Enter your numbers to see the possibilities.</p>

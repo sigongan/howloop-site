@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import '../../styles/calculator-workspace.css';
 import '../../styles/bank-search.css';
 import Calculator from '../../components/Calculator.astro';
-import CompoundInterestLesson from '../../components/CompoundInterestLesson.astro';
+import MoneyLesson from '../../components/MoneyLesson.astro';
 import CalculatorExample from '../../components/CalculatorExample.astro';
 import QuickAnswers from '../../components/QuickAnswers.astro';
 import {calculators} from '../../data/tools';
@@ -21,9 +21,11 @@ const c=copy[tool.slug];
 <div class="calculator-page" data-tool={tool.slug}><header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/calculators">Calculators</a> / {tool.name}</div><h1>{tool.name} <span class="calc-title-note">calculator</span></h1><p>{tool.detail}</p></header>
 <div class="hl-wrap hl-page-main">
 <Calculator kind={tool.slug}/>
+{tool.slug === 'compound-interest' && <MoneyLesson topic="compound" id="compound-calculator-lesson"/>}
+{tool.slug === 'mortgage' && <MoneyLesson topic="offset" id="mortgage-calculator-lesson"/>}
 <QuickAnswers id="calculator-questions" topics={[tool.slug === 'mortgage' ? 'home' : 'saving']} title={tool.slug === 'mortgage' ? 'Questions about your home loan?' : 'Questions about your savings?'}/>
-{tool.slug === 'compound-interest' && <CompoundInterestLesson context="calculator"/>}
+<details class="hl-details hl-calculator-help"><summary>More examples & how the maths works</summary>
 <CalculatorExample kind={tool.slug}/>
-<section class="hl-calculator-intro"><h2>{c.heading}</h2><p>{c.body}</p><h3>How the calculation works</h3><p>{c.method}</p><p><a href="/methodology/">Formulas and limitations →</a> · <a href={c.source} target="_blank" rel="noopener noreferrer">Official Moneysmart guidance ↗</a></p></section>
+<section class="hl-calculator-intro"><h2>{c.heading}</h2><p>{c.body}</p><h3>How the calculation works</h3><p>{c.method}</p><p><a href="/methodology/">Formulas and limitations →</a> · <a href={c.source} target="_blank" rel="noopener noreferrer">Official Moneysmart guidance ↗</a></p></section></details>
 <details class="hl-details hl-calculator-help"><summary>Common questions</summary><div class="hl-faq"><h2>A few good questions.</h2>{c.faqs.map(([q,a])=><details><summary>{q}</summary><p>{a}</p></details>)}</div></details><div class="hl-other-tools"><span>Other calculators</span><nav class="hl-calculator-nav" aria-label="Choose a calculator">{calculators.map(t=><a href={'/calculators/'+t.slug} aria-current={t.slug===tool.slug?'page':undefined}>{t.name}</a>)}</nav></div></div>
 </div></Base>

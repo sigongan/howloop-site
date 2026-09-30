@@ -1,6 +1,6 @@
 /* Shared visual system: clear type, precise spacing, restrained color. */
 :root{
- --ui-ink:#102329;--ui-muted:#52606d;--ui-paper:#f5f6f8;--ui-line:#dfe5e9;--ui-lime:#dfff82;
+ --ui-ink:#102329;--ui-muted:#52606d;--ui-paper:#f7f9fa;--ui-line:#dfe5e9;--ui-lime:#dceee6;
  --ui-white:#fff;--ui-radius:20px;--hl-ink:var(--ui-ink);--hl-navy:var(--ui-ink);--hl-muted:var(--ui-muted);--hl-paper:var(--ui-paper);--hl-lime:var(--ui-lime);--hl-border:var(--ui-line);
  --paper:var(--ui-paper);--ink:var(--ui-ink);--brand:#147d68;--brand-deep:#126c5b;--font-display:'DM Sans',ui-sans-serif,system-ui,sans-serif;
 }
@@ -19,7 +19,7 @@ body a:focus-visible,body button:focus-visible,body input:focus-visible,body sel
 body .money-area-icon{width:44px;height:44px;border-radius:12px;background:var(--area-soft,#edf2f3);color:var(--area-color,#147d68)}
 body .money-area-icon svg{width:25px;height:25px}
 body .hl-header{background:#ffffffed;border-bottom:1px solid #e9edef;backdrop-filter:blur(18px);box-shadow:none}
-body .hl-header .hl-nav{min-height:82px;height:auto;gap:24px;padding-block:12px}
+body .hl-header .hl-nav{min-height:72px;height:auto;gap:20px;padding-block:10px}
 body .hl-header .hl-brand{color:var(--ui-ink);flex:none}
 body .hl-header .hl-desktop-nav{gap:4px}
 body .hl-header .hl-desktop-nav>a{font-size:.9375rem;font-weight:600;line-height:1.4;padding:12px 10px;gap:7px;min-height:44px;color:#4a5960;border:0;border-radius:9px;text-decoration:none}
@@ -51,20 +51,20 @@ body .hl-calculator-nav a{border-radius:999px;min-height:46px;padding:10px 16px;
 body .hl-calculator-nav a[aria-current]{color:white;background:var(--ui-ink);border-color:var(--ui-ink)}
 body .hl-help-strip{border-color:var(--ui-line);color:var(--ui-muted);font-size:1rem;line-height:1.6}
 body .hl-help-strip a{color:var(--ui-ink);padding-block:10px}
-body .hl-footer{background:#102329;color:#fff;border:0;padding:64px 0 28px}
+body .hl-footer{background:#f1f5f4;color:var(--ui-ink);border-top:1px solid #d9e3df;padding:40px 0 24px}
 body .hl-footer .hl-footer-grid{grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px}
-body .hl-footer .hl-footer-brand>a{display:inline-block;color:white;margin-bottom:24px}
+body .hl-footer .hl-footer-brand>a{display:inline-block;color:var(--ui-ink);margin-bottom:16px}
 body .hl-footer .brandmark{font-size:32px}
-body .hl-footer .brand-dot{color:var(--ui-lime)}
+body .hl-footer .brand-dot{color:#467b66}
 body .hl-footer .brandmark svg path:last-child{stroke:var(--ui-ink)}
-body .hl-footer .hl-footer-brand p{font-size:1.125rem;line-height:1.6;color:#c1ccd1;max-width:24ch}
-body .hl-footer .hl-country{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffffff24;border-radius:999px;padding:7px 12px;font-size:.875rem;line-height:1.5;color:#d6e0e3;margin-top:24px}
-body .hl-footer .hl-country>span{width:6px;height:6px;border-radius:50%;background:var(--ui-lime);padding:0}
-body .hl-footer .hl-footer-grid h2{font-size:.9375rem;font-weight:700;line-height:1.5;letter-spacing:0;color:white;margin:4px 0 16px}
-body .hl-footer .hl-footer-grid>div:not(:first-child) a{font-size:.9375rem;line-height:1.5;color:#becbd0;display:block;min-height:36px;padding:6px 0;margin:0}
-body .hl-footer a:hover{color:white;text-decoration:underline;text-underline-offset:5px}
-body .hl-footer a:focus-visible{outline-color:var(--ui-lime)}
-body .hl-footer .hl-footer-bottom{border-top:1px solid #ffffff1c;margin-top:48px;padding-top:24px;gap:36px;font-size:.875rem;line-height:1.65;color:#aebfc6}
+body .hl-footer .hl-footer-brand p{font-size:1.125rem;line-height:1.6;color:#52636a;max-width:24ch}
+body .hl-footer .hl-country{display:inline-flex;align-items:center;gap:8px;border:1px solid #d3ded9;border-radius:999px;padding:7px 12px;font-size:.875rem;line-height:1.5;color:#465e56;margin-top:16px}
+body .hl-footer .hl-country>span{width:6px;height:6px;border-radius:50%;background:#467b66;padding:0}
+body .hl-footer .hl-footer-grid h2{font-size:.9375rem;font-weight:700;line-height:1.5;letter-spacing:0;color:#203b32;margin:4px 0 12px}
+body .hl-footer .hl-footer-grid>div:not(:first-child) a{font-size:.9375rem;line-height:1.5;color:#52636a;display:block;min-height:36px;padding:6px 0;margin:0}
+body .hl-footer a:hover{color:#176b58;text-decoration:underline;text-underline-offset:5px}
+body .hl-footer a:focus-visible{outline-color:#2765b5}
+body .hl-footer .hl-footer-bottom{border-top:1px solid #d3ded9;margin-top:28px;padding-top:20px;gap:36px;font-size:.875rem;line-height:1.65;color:#53656c}
 body .hl-footer .hl-footer-bottom>p{max-width:620px}
 @media(max-width:1350px){
  body .hl-header .hl-mobile-menu summary{padding:10px 15px;min-height:46px;border:1px solid #dfe5e9;border-radius:999px;background:#fff;color:var(--ui-ink);font-size:1rem}
@@ -84,7 +84,7 @@ body .hl-footer .hl-footer-bottom>p{max-width:620px}
  body{font-size:1.125rem}
  body .hl-wrap{width:calc(100% - 40px)}
  body .hl-header{position:relative}
- body .hl-header .hl-nav{min-height:76px;padding-block:12px;gap:16px}
+ body .hl-header .hl-nav{min-height:64px;padding-block:8px;gap:12px}
  body .hl-header .hl-mobile-menu nav{padding-inline:20px}
  body .hl-page-head{padding-top:32px;padding-bottom:28px}
  body .hl-page-head h1{font-size:2.125rem;line-height:1.12;letter-spacing:-.045em;margin-bottom:16px}
@@ -112,3 +112,20 @@ body .hl-footer .hl-footer-bottom>p{max-width:620px}
  body .hl-footer .hl-footer-grid>.hl-footer-brand{grid-column:1/-1}
 }
 @media(prefers-reduced-motion:reduce){body *,body *::before,body *::after{scroll-behavior:auto!important}}
+
+/* Useful space on phones, while every header control remains a full touch target. */
+@media(max-width:800px){
+ body .hl-header .hl-nav{min-height:64px;padding-block:8px;gap:10px}
+ body .hl-header .brandmark{font-size:27px}
+ body .hl-header .brandmark>svg{width:38px;height:28px}
+ body .hl-header .hl-mobile-menu summary{min-height:44px;padding:8px 12px;font-size:1.0625rem;gap:8px}
+ body .hl-header .hl-language-picker>summary{min-width:44px;min-height:44px;padding:8px}
+ body .hl-footer .hl-footer-brand p,body .hl-footer .hl-footer-grid>div:not(:first-child) a{font-size:1.125rem}
+ body .hl-page-head{padding-block:26px 22px}
+}
+@media(max-width:360px){
+ body .hl-header .brandmark{font-size:24px;gap:6px}
+ body .hl-header .brandmark>svg{width:33px;height:25px}
+ body .hl-header .hl-nav{gap:8px}
+ body .hl-header .hl-mobile-menu summary{padding-inline:9px}
+}

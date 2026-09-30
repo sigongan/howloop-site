@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import MoneyLesson from '../../components/MoneyLesson.astro';
 import guides from '../../data/learning.json';
 import {relatedGuideSlugs} from '../../data/related-guides.mjs';
 import SourceStatus from '../../components/SourceStatus.astro';
@@ -10,37 +11,71 @@ import OffsetLesson from '../../components/OffsetLesson.astro';
 import '../../styles/money-decisions.css';
 import {formatDate} from '../../lib/content-status.mjs';
 import '../../styles/learning.css';
+import '../../styles/learn-start.css';
 export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
 const {guide}=Astro.props;
 const published=guide.datePublished,modified=guide.dateModified,checked=guide.sourcesChecked;
 const related=(relatedGuideSlugs[guide.slug]??[]).map(slug=>guides.find(g=>g.slug===slug)).filter(Boolean);
+const quickTopics={'how-compound-interest-works':'compound','offset-vs-extra-repayments':'offset','salary-including-super-vs-plus-super':'salary'};
+const quickTopic=quickTopics[guide.slug];
+// Match the short check to the picture story; the full guide retains its own examples.
+const quickChecks={
+ 'how-compound-interest-works':{question:'Why does year two earn $11 rather than $10?',choices:['The rate doubled','The first year’s interest also earns interest','The bank added a deposit'],answer:1,explanation:'10% of $110 is $11. Your original $100 earns $10, and the earlier $10 of interest earns another $1.'},
+ 'salary-including-super-vs-plus-super':{question:'Does a package “including super” all go to your bank account?',choices:['Yes, the whole package is cash pay','No, it includes employer super as well as cash salary','It depends only on weekly or monthly pay'],answer:1,explanation:'The package contains cash salary and employer super. Super goes to the retirement fund; tax and other deductions still reduce the cash paid to your bank account.'}
+};
+const quiz=quickChecks[guide.slug]??guide.quiz;
 const action=guide.action??{href:'/calculators/'+guide.tool,label:'Try it with your numbers'};
 const states=[['QLD','https://qro.qld.gov.au/duties/transfer-duty/calculate/'],['NSW','https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty/understanding-transfer-duty/calculate-transfer-duty'],['VIC','https://sro.vic.gov.au/buying-property/land-transfer-stamp-duty/land-transfer-stamp-duty-calculator'],['WA','https://www.wa.gov.au/organisation/department-of-treasury-and-finance/transfer-duty-assessment'],['SA','https://www.revenuesa.sa.gov.au/stamp-duty-land/calculate-stamp-duty'],['ACT','https://www.revenue.act.gov.au/help-and-resources/calculators/calculate-your-conveyance-duty'],['TAS','https://www.sro.tas.gov.au/resources/tasmanian-revenue-online/property-transfer-duties/duty-transactions/calculate-property-transfer-duty'],['NT','https://nt.gov.au/property/buying-and-selling-a-home/settle-the-sale/stamp-duty-buying-or-selling-a-home/conveyance-calculator']];
 ---
 <Base title={guide.title} description={guide.summary} type="article" publishedTime={new Date(published+'T00:00:00+10:00')} modifiedTime={new Date(modified+'T00:00:00+10:00')} jsonLd={{'@context':'https://schema.org','@type':'Article',headline:guide.title,description:guide.summary,mainEntityOfPage:'https://howloop.how/learn/'+guide.slug+'/',author:{'@type':'Organization',name:'Howloop',url:'https://howloop.how/about#publisher'},datePublished:published,dateModified:modified,publisher:{'@type':'Organization',name:'Howloop',url:'https://howloop.how'}}}>
-<header class="hl-page-head hl-wrap lesson-header"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / {guide.category}</div><span class="lesson-kicker">{guide.minutes} MIN · GENERAL EDUCATION</span><h1>{guide.title}</h1></header>
-<article class="hl-wrap lesson-shell">
-<p class="lesson-byline">By <a href="/about/#publisher">Howloop</a> · Updated {formatDate(modified)} · <a href="#sources">Sources & update record</a></p>
-<p class="lesson-takeaway">{guide.takeaway}</p>
-{guide.policyIds?.map(id=><PolicyNote id={id}/>)}
-{guide.lab ? <DecisionLab kind={guide.lab}/> : guide.slug === 'offset-vs-extra-repayments' ? <OffsetLesson/> : guide.slug === 'how-compound-interest-works' ? <CompoundInterestLesson context="guide"/> : <figure class="lesson-example"><figcaption>ONE SIMPLE EXAMPLE · {guide.example.title}</figcaption><dl>{guide.example.rows.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><p>{guide.example.note}</p></figure>}
-{guide.stateLinks&&<section id="state-duty"><h2>Choose your state or territory</h2><p class="hl-help">Official duty tools and guidance. Check concessions, foreign-buyer charges and the tool's exclusions.</p><nav class="duty-states" aria-label="Official state duty guidance">{states.map(([name,href])=><a href={href} target="_blank" rel="noopener noreferrer">{name} ↗</a>)}</nav></section>}
-<div class="lesson-action"><a class="hl-button" href={action.href} rel={action.href.startsWith('https:')?'noopener noreferrer':undefined}>{action.label}<span aria-hidden="true">→</span></a></div>
-
-<nav class="lesson-contents" aria-label="In this guide"><strong>In this guide</strong><ol>{guide.sections.map(([title],i)=><li><a href={'#lesson-section-'+(i+1)}>{title}</a></li>)}</ol></nav>
-<div class="lesson-prose">{guide.sections.map(([title,text],i)=><section id={'lesson-section-'+(i+1)}><h2>{title}</h2>{text.split('\n\n').map(paragraph=><p>{paragraph}</p>)}</section>)}</div>
-<section class="lesson-quiz" data-quiz data-answer={guide.quiz.answer} data-explanation={guide.quiz.explanation}><span>A QUICK CHECK</span><h2>{guide.quiz.question}</h2><div class="lesson-quiz-options">{guide.quiz.choices.map((choice,i)=><button type="button" data-choice={i} aria-pressed="false">{choice}</button>)}</div><p data-quiz-feedback role="status" hidden></p><noscript><p>{guide.quiz.explanation}</p></noscript></section>
-<SourceStatus checked={checked} days={guide.reviewDays}/>
-<details class="lesson-more" id="sources"><summary>Sources & update record</summary><ul>{guide.sources.map(([title,href])=><li><a href={href} target="_blank" rel="noopener noreferrer">{title} ↗</a></li>)}</ul><p>{guide.updateNote}</p><p>Published {formatDate(published)} · Updated {formatDate(modified)}. These dates do not guarantee rules are unchanged.</p><p>Published by <a href="/about#publisher">Howloop</a>. AI assists preparation. This lesson has not been reviewed by a licensed financial adviser. <a href="/editorial-policy">How we check our content →</a></p></details>
-<aside class="lesson-next"><strong>Keep learning</strong>{related.map(g=><a href={'/learn/'+g.slug}>{g.title} →</a>)}</aside>
-<p class="lesson-page-footer">Something unclear? <a href={'/contact?topic='+encodeURIComponent(guide.title)}>Tell us what to improve</a>.</p>
-</article></Base>
+<header class="hl-page-head hl-wrap lesson-header lesson-reading-page">
+  <div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/learn/">Learn</a> / {guide.category}</div>
+  <span class="lesson-kicker">ONE IDEA AT A TIME</span>
+  <h1>{guide.title}</h1>
+  <p class="lesson-takeaway">{guide.takeaway}</p>
+</header>
+<article class="hl-wrap lesson-shell lesson-reading-page">
+  <div class="lesson-meta-row"><p class="lesson-byline">By <a href="/about/#publisher">Howloop</a> · Updated {formatDate(modified)}</p><a href="#sources">Sources &amp; checks</a></div>
+  {guide.policyIds?.map(id=><PolicyNote id={id}/>)}
+  {quickTopic ? <section class="lesson-quick-start" aria-label="See it in 30 seconds"><MoneyLesson topic={quickTopic} id={'guide-'+guide.slug}/></section> : guide.lab ? <DecisionLab kind={guide.lab}/> : <figure class="lesson-example"><figcaption>One simple example · {guide.example.title}</figcaption><dl>{guide.example.rows.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl><p>{guide.example.note}</p></figure>}
+  {guide.stateLinks&&<section id="state-duty"><h2>Choose your state or territory</h2><p class="hl-help">Official duty tools and guidance. Check concessions, foreign-buyer charges and the tool's exclusions.</p><nav class="duty-states" aria-label="Official state duty guidance">{states.map(([name,href])=><a href={href} target="_blank" rel="noopener noreferrer">{name} <span aria-hidden="true">↗</span></a>)}</nav></section>}
+  <div class="lesson-action"><a class="hl-button" href={action.href} rel={action.href.startsWith('https:')?'noopener noreferrer':undefined}>{action.label}<span aria-hidden="true">→</span></a></div>
+  <section class="lesson-quiz" data-quiz data-answer={quiz.answer} data-explanation={quiz.explanation}><span>A QUICK CHECK</span><h2>{quiz.question}</h2><div class="lesson-quiz-options">{quiz.choices.map((choice,i)=><button type="button" data-choice={i} aria-pressed="false">{choice}</button>)}</div><p data-quiz-feedback role="status" hidden></p><noscript><p>{quiz.explanation}</p></noscript></section>
+  <details class="lesson-deep-guide" id="full-guide">
+    <summary><span><strong>Read the full guide</strong><small>{guide.minutes} min · Examples, assumptions and what to check</small></span><span class="lesson-details-mark" aria-hidden="true">+</span></summary>
+    <div class="lesson-deep-content">
+      {quickTopic&&<div class="lesson-extra-example">{guide.lab ? <DecisionLab kind={guide.lab}/> : guide.slug==='offset-vs-extra-repayments' ? <OffsetLesson/> : <CompoundInterestLesson context="guide"/>}</div>}
+      <nav class="lesson-contents" aria-label="In the full guide"><strong>In this guide</strong><ol>{guide.sections.map(([title],i)=><li><a href={'#lesson-section-'+(i+1)}>{title}</a></li>)}</ol></nav>
+      <div class="lesson-prose">{guide.sections.map(([title,text],i)=><section id={'lesson-section-'+(i+1)}><h2>{title}</h2>{text.split('\n\n').map(paragraph=><p>{paragraph}</p>)}</section>)}</div>
+    </div>
+  </details>
+  <SourceStatus checked={checked} days={guide.reviewDays}/>
+  <details class="lesson-more" id="sources"><summary>Sources &amp; update record</summary><ul>{guide.sources.map(([title,href])=><li><a href={href} target="_blank" rel="noopener noreferrer">{title} <span aria-hidden="true">↗</span></a></li>)}</ul><p>{guide.updateNote}</p><p>Published {formatDate(published)} · Updated {formatDate(modified)}. These dates do not guarantee rules are unchanged.</p><p>Published by <a href="/about/#publisher">Howloop</a>. AI assists preparation. This lesson has not been reviewed by a licensed financial adviser. <a href="/editorial-policy/">How we check our content <span aria-hidden="true">→</span></a></p></details>
+  <aside class="lesson-next"><strong>Keep learning</strong>{related.map(g=><a href={'/learn/'+g.slug+'/'}>{g.title} <span aria-hidden="true">→</span></a>)}</aside>
+  <p class="lesson-page-footer">Something unclear? <a href={'/contact/?topic='+encodeURIComponent(guide.title)}>Tell us what to improve</a>.</p>
+</article>
+</Base>
 <script>
 for(const quiz of document.querySelectorAll<HTMLElement>('[data-quiz]')){
  for(const button of quiz.querySelectorAll<HTMLButtonElement>('[data-choice]'))button.addEventListener('click',()=>{
   quiz.querySelectorAll('[data-choice]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
   const feedback=quiz.querySelector<HTMLElement>('[data-quiz-feedback]')!;
-  feedback.textContent=(button.dataset.choice===quiz.dataset.answer?'That’s right. ':'Not quite. ')+quiz.dataset.explanation;feedback.hidden=false;
+  feedback.textContent=(button.dataset.choice===quiz.dataset.answer?'That\'s right. ':'Not quite. ')+quiz.dataset.explanation;feedback.hidden=false;
  });
 }
+function openLessonSection(hash:string){
+ if(!hash)return;
+ let id:string;
+ try{id=decodeURIComponent(hash.slice(1));}catch{return;}
+ const target=document.getElementById(id);
+ if(!target)return;
+ let container:HTMLElement|null=target;
+ while(container){
+  if(container instanceof HTMLDetailsElement)container.open=true;
+  container=container.parentElement;
+ }
+}
+openLessonSection(location.hash);
+window.addEventListener('hashchange',()=>openLessonSection(location.hash));
+document.querySelectorAll<HTMLAnchorElement>('.lesson-reading-page a[href^="#"]').forEach(link=>link.addEventListener('click',()=>openLessonSection(link.hash)));
 </script>
