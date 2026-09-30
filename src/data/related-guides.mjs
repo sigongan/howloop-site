@@ -1,0 +1,20 @@
+// Explicit reading paths keep the next lessons relevant to the question at hand.
+export const relatedGuideSlugs = {
+  'how-compound-interest-works': ['bonus-interest-conditions', 'read-a-savings-projection'],
+  'bonus-interest-conditions': ['savings-rate-reality-check', 'how-compound-interest-works'],
+  'offset-vs-extra-repayments': ['when-an-offset-pays-for-itself', 'planning-a-home-deposit'],
+  'planning-a-home-deposit': ['lvr-and-lmi', 'stamp-duty'],
+  'building-an-emergency-fund': ['read-a-savings-projection', 'bonus-interest-conditions'],
+  'read-a-savings-projection': ['how-compound-interest-works', 'savings-rate-reality-check'],
+  'lvr-and-lmi': ['planning-a-home-deposit', 'first-home-guarantee'],
+  'first-home-guarantee': ['planning-a-home-deposit', 'lvr-and-lmi'],
+  'stamp-duty': ['planning-a-home-deposit', 'foreign-property-buyers'],
+  'capital-gains-tax': ['negative-gearing', 'asx-dividends'],
+  'negative-gearing': ['capital-gains-tax', 'offset-vs-extra-repayments'],
+  'foreign-property-buyers': ['stamp-duty', 'planning-a-home-deposit'],
+  'super-basics': ['salary-including-super-vs-plus-super', 'asx-dividends'],
+  'asx-dividends': ['capital-gains-tax', 'super-basics'],
+  'savings-rate-reality-check': ['bonus-interest-conditions', 'read-a-savings-projection'],
+  'when-an-offset-pays-for-itself': ['offset-vs-extra-repayments', 'building-an-emergency-fund'],
+  'salary-including-super-vs-plus-super': ['super-basics', 'building-an-emergency-fund'],
+};

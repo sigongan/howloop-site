@@ -1,6 +1,8 @@
 import {compareSavings} from '../lib/savings-comparison.mjs';
+import {filterSavingsSearch} from '../lib/bank-search.mjs';
 import {parseAmount,prepareMoneyFields} from '../lib/money-input.mjs';
 import {conditionList,conditionText,feeLines,tierLines} from '../lib/product-display.mjs';
+import {productRequirements,bonusDepositRequirement} from '../lib/product-requirements.mjs';
 const root=document.querySelector('[data-savings-comparison]');
 if(root){
  const q=s=>root.querySelector(s),form=q('form'),fields=prepareMoneyFields(form),list=q('[data-comparison-list]');
@@ -32,13 +34,38 @@ if(root){
   else for(const fee of product.fees)el(fees,'li',feeLines(fee).join(' '));
   const source=safeURL(product.source);if(source)link(content,'View source product data',source,true);
  }
+ function requirements(parent,product){
+  const notices=productRequirements(product);
+  if(!notices.length)return;
+  const box=el(parent,'div',undefined,'comparison-requirements');
+  el(box,'h4','Eligibility to check');
+  const items=el(box,'ul');
+  for(const notice of notices){const li=el(items,'li');el(li,'strong',notice.label+': ');el(li,'span',notice.text);}
+  el(box,'p',"From the bank's published feed. This is a summary; check the full terms below and with the bank.",'comparison-requirements-note');
+ }
+ function bonusCheck(parent,row){
+  if(row.type!=='BONUS')return;
+  const box=el(parent,'section',undefined,'comparison-bonus-check');
+  el(box,'h4','Bonus is not automatic');
+  const values=el(box,'dl',undefined,'comparison-bonus-values');
+  for(const [label,value] of [['Base rates only',row.baseInterest],['All bonus conditions met',row.interest]]){
+   const item=el(values,'div');el(item,'dt',label);el(item,'dd',money(value));
+  }
+  el(box,'p','Same money and '+result.months+'-month period. Both estimates are before fees and tax. This comparison assumes every bonus requirement is met from the start; it does not check your behaviour.');
+  const deposit=bonusDepositRequirement(row.product,parseAmount(form.elements.contribution.value));
+  if(deposit)el(box,'p',deposit.text,'comparison-bonus-warning');
+  const conditions=[...new Set((row.product.depositRates??[]).filter(rate=>rate.depositRateType==='BONUS').flatMap(rate=>[rate.additionalInfo,...conditionList(rate.applicabilityConditions).map(conditionText)]).filter(Boolean))].slice(0,3);
+  if(conditions.length){
+   const items=el(box,'ul');
+   for(const text of conditions){const clean=String(text).replace(/\s+/g,' ').trim();el(items,'li',clean.length>500?clean.slice(0,500)+'…':clean);}
+   el(box,'p',"Published bonus conditions. Read the full terms below; no eligibility check has been made.",'comparison-requirements-note');
+  }
+ }
  function render(){
   list.replaceChildren();if(!result)return;
   q('[data-comparison-static-note]').hidden=true;
-  const normalise=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
-  const aliases={cba:'commbank',commonwealth:'commbank',commonwealthbank:'commbank',nab:'nationalaustraliabank'};
-  const typed=normalise(q('[name="bankSearch"]').value),query=aliases[typed]??typed;
-  const rows=result.rows.filter(r=>normalise(r.bankName+' '+r.product.name).includes(query));
+  const typed=q('[name="bankSearch"]').value.trim();
+  const rows=filterSavingsSearch(result.rows,typed);
   q('[data-comparison-summary]').textContent=rows.length+' supported accounts · sorted by estimated '+result.months+'-month interest, highest first.';
   const baseline=q('[data-comparison-baseline]');
   baseline.hidden=result.baseline===null;
@@ -49,6 +76,7 @@ if(root){
    const card=el(list,'article',undefined,'comparison-account'),head=el(card,'div',undefined,'comparison-account-head'),identity=el(head,'div');
    el(identity,'span',row.bankName,'comparison-bank-name');el(identity,'h3',row.product.name);
    el(identity,'p','Retrieved '+date(row.checkedAt),'comparison-retrieved');
+   requirements(card,row.product);
    const values=el(card,'dl',undefined,'comparison-values');
    const metric=(label,value,cls)=>{const div=el(values,'div');el(div,'dt',label);el(div,'dd',value,cls);};
    metric('Starting rate · p.a.',percent(row.startRate));
@@ -56,6 +84,7 @@ if(root){
    metric('Difference vs your rate*',row.difference===null?'Add your rate':(row.difference>0?'+':'')+money(row.difference),row.difference>0?'positive':row.difference<0?'negative':'');
    const note=row.type==='INTRODUCTORY'?'Welcome rate for '+row.welcomeMonths+' months from opening, then '+percent(row.baseRate)+' base. Assumes you qualify for the full welcome period.':row.type==='BONUS'?'Bonus conditions assumed met every month. Base rate at this balance: '+percent(row.baseRate)+'.':row.hasExtra?'Base rate only. This account also has conditional offers; they are excluded here.':'Base-rate scenario. Eligibility and account conditions still apply.';
    el(card,'p',note+' *Before fees and tax.','comparison-rate-note');
+   bonusCheck(card,row);
    if(row.longTerm){
     const outlook=el(card,'details',undefined,'comparison-outlook');
     el(outlook,'summary','5-year rate-change example');

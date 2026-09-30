@@ -62,7 +62,7 @@ const howToLd = {
     position: i + 1,
     name: s.title,
     text: s.text,
-    url: `${SITE.url}/guides/${guide.id}#step-${i + 1}`,
+    ...(!d.bare ? { url: `${SITE.url}/guides/${guide.id}#step-${i + 1}` } : {}),
   })),
   ...(d.faq.length
     ? {
@@ -207,7 +207,7 @@ const howToLd = {
         </footer>
       </div>
 
-      <aside class="guide__side" hidden={d.bare}>
+      {!d.bare && <aside class="guide__side">
         <div class="sticky">
           <h2 class="side__title">At a glance</h2>
           <ol class="side__steps">
@@ -221,7 +221,7 @@ const howToLd = {
           </ol>
           <AdSlot layout="display" class="side__ad" />
         </div>
-      </aside>
+      </aside>}
     </div>
 
     <section class="wrap related">

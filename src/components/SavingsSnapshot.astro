@@ -1,5 +1,6 @@
 ---
 import {conditionList,conditionText,feeLines,tierLines} from '../lib/product-display.mjs';
+import ProductRequirements from './ProductRequirements.astro';
 const {rows}=Astro.props;
 const money=n=>new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:2}).format(n);
 const percent=n=>new Intl.NumberFormat('en-AU',{minimumFractionDigits:2,maximumFractionDigits:4}).format(n)+'%';
@@ -9,6 +10,7 @@ const rateLines=rate=>[...new Set([rate.additionalValue,rate.additionalInfo,...c
 ---
 {rows.map(row=><article class="comparison-account" data-snapshot-account>
  <div class="comparison-account-head"><div><span class="comparison-bank-name">{row.bankName}</span><h3>{row.product.name}</h3><p class="comparison-retrieved">Retrieved {date(row.checkedAt)}</p></div></div>
+ <ProductRequirements product={row.product}/>
  <dl class="comparison-values">
   <div><dt>Starting base rate · p.a.</dt><dd>{percent(row.startRate)}</dd></div>
   <div><dt>12-month interest*</dt><dd>{money(row.interest)}</dd></div>

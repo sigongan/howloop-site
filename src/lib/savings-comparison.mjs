@@ -75,7 +75,7 @@ export function compareSavings(banks, {principal,contribution=0,months=12,curren
     rows.push({key,bankId:bank.id,bankName:bank.name,checkedAt:bank.checkedAt,product,
      baseRate:summary.base,startRate:conditional?conditional.rateForBalance(principal,1):summary.base,
      type:conditional?.type??'BASE',welcomeMonths:conditional?.welcomeMonths??null,
-     interest:result.interest,balance:result.balance,
+     interest:result.interest,balance:result.balance,baseInterest:scenarios.base.interest,
      difference:currentRate===null?null:result.interest-baseline.interest,
      hasExtra,conditionalAvailable,longTerm:fiveYearBaseOutlook(product,inputs)});
    }catch{excluded.unsupported++;}
