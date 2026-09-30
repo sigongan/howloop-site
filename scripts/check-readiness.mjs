@@ -103,6 +103,11 @@ for (const [route, { html }] of pages) {
   if (!html.includes('data-analytics-consent')) fail(route + ': missing analytics privacy controls');
 }
 const comparisonHTML=pages.get('/compare/savings')?.html ?? '';
+for (const route of ['/help','/tax-return','/calculators/compound-interest','/calculators/mortgage','/calculators/salary','/calculators/lvr','/compare/savings']) {
+  const html = pages.get(route)?.html ?? '';
+  if (!html.includes('data-quick-question') || !html.includes('quick-answers__answer')) fail(route + ': prepared help must be present in static HTML');
+  if (!html.includes('data-quick-controls hidden')) fail(route + ': search controls must remain hidden until local search is ready');
+}
 if (!comparisonHTML.includes('data-comparison-static-note')) fail('Savings comparison: missing dated HTML fallback');
 if (!comparisonHTML.includes('Conditions, eligibility &amp; fees') && !comparisonHTML.includes('Conditions, eligibility & fees') && !comparisonHTML.includes('No fresh, supported accounts were available')) fail('Savings comparison: missing static account terms or honest unavailable state');
 const robots = await read(path.join(dist, 'robots.txt'));

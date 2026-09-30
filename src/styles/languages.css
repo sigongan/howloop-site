@@ -109,3 +109,11 @@ html[dir=rtl] :is(.language-english-home,.language-calculate,.language-assumptio
 @media(prefers-reduced-motion:reduce){.language-page *{scroll-behavior:auto!important}}
 /* Keep the two touch controls usable when browser zoom narrows a small phone. */
 @media(max-width:320px){body .hl-header .hl-nav{gap:6px}body .hl-header .brandmark{font-size:21px;gap:4px}body .hl-header .brandmark svg{width:30px}body .hl-header .hl-mobile-menu summary{padding-inline:8px;gap:6px}}
+/* Enlarged text can make the menu wider than the remaining header space. */
+@media(max-width:360px){body .hl-header .hl-nav{flex-wrap:wrap;row-gap:8px}}
+
+/* Closed native menus must not enlarge the document at large text sizes. */
+body .hl-header .hl-mobile-menu:not([open])>nav,body .hl-header .hl-language-picker:not([open])>.hl-language-popover{display:none}
+body .hl-header .hl-menu-utilities a{max-width:100%;overflow-wrap:anywhere}
+
+@media(max-width:360px){body .hl-footer-grid{grid-template-columns:minmax(0,1fr)}body .hl-footer a,body .hl-footer h2{overflow-wrap:anywhere}}
