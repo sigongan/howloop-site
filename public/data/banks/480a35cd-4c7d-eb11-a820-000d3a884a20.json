@@ -1,7 +1,7 @@
 {
   "name": "Teachers Mutual Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -9,12 +9,12 @@
       "name": "Pension Advantage account",
       "description": "An account for members receiving a pension or allowance from Centrelink or Veteran Affairs.",
       "url": "https://www.tmbank.com.au/banking/pension-advantage",
-      "lastUpdated": "2026-09-09T15:13:41.000+10:00",
+      "lastUpdated": "2026-10-01T03:36:48.000+10:00",
       "source": "https://ob.tmbl.com.au/tmbank/cds-au/v1/banking/products/031f8f9a-4e33-469e-b650-a54873bd3d44",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.03",
+          "rate": "0.0325",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -30,7 +30,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.03",
+          "rate": "0.0325",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -359,12 +359,12 @@
       "name": "Starter Saver account",
       "description": "Starter Saver Account is a high interest savings account for Under 30 year olds that rewards savings.",
       "url": "https://www.tmbank.com.au/banking/starter-saver",
-      "lastUpdated": "2026-07-09T13:33:57.000+10:00",
+      "lastUpdated": "2026-10-01T03:26:33.000+10:00",
       "source": "https://ob.tmbl.com.au/tmbank/cds-au/v1/banking/products/501d1af4-4a3a-4b5f-a90f-c5a0933fb4a5",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0525",
+          "rate": "0.055",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -381,7 +381,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0425",
+          "rate": "0.045",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -448,12 +448,12 @@
       "name": "Edvest Cash Management account",
       "description": "Exclusive to Edvest members, our higher interest rates make your money work harder for you.",
       "url": "https://www.tmbank.com.au/banking/edvest-cash-management-account",
-      "lastUpdated": "2026-07-13T17:00:38.000+10:00",
+      "lastUpdated": "2026-10-01T13:15:50.000+10:00",
       "source": "https://ob.tmbl.com.au/tmbank/cds-au/v1/banking/products/a56e102d-bffe-45c5-a31e-f389cb47d985",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -469,7 +469,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -485,7 +485,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -501,7 +501,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -517,7 +517,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -533,7 +533,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -612,7 +612,7 @@
       "name": "MOMENTUM SAVER",
       "description": "The Momentum Saver account rewards savers with an ongoing bonus interest rate when you deposit a minimum of $100 and make no withdrawals during the month.",
       "url": "https://www.tmbank.com.au/banking/momentum-saver",
-      "lastUpdated": "2026-08-26T11:26:22.000+10:00",
+      "lastUpdated": "2026-10-01T09:29:02.000+10:00",
       "source": "https://ob.tmbl.com.au/tmbank/cds-au/v1/banking/products/bf4d1da2-6c0c-11f0-ad11-325096b39f47",
       "depositRates": [
         {
@@ -704,7 +704,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -727,7 +727,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.049",
+          "rate": "0.0515",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -750,7 +750,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.049",
+          "rate": "0.0515",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -773,7 +773,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0465",
+          "rate": "0.049",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -850,12 +850,12 @@
       "name": "Essential Saver account",
       "description": "An interest bearing online savings account with a tiered interest rate structure",
       "url": "https://www.tmbank.com.au/banking/essential-saver",
-      "lastUpdated": "2026-09-16T12:20:47.000+10:00",
+      "lastUpdated": "2026-10-01T03:25:50.000+10:00",
       "source": "https://ob.tmbl.com.au/tmbank/cds-au/v1/banking/products/fbb42c5d-4a77-4dc6-b1f9-7ec45e439493",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -871,7 +871,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -887,7 +887,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -903,7 +903,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.03",
+          "rate": "0.0325",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -919,7 +919,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.03",
+          "rate": "0.0325",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

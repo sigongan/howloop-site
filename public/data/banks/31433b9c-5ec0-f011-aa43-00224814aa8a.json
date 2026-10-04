@@ -1,7 +1,7 @@
 {
   "name": "AFG Home Loans Alpha",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "AFG Alpha Offset Account",
       "description": "The Offset Account is designed to be linked and used with the AFG Alpha Offset Home Loan.  \nEligible home loan customers can receive offset benefits by linking an Offset Account to an AFG Alpha Offset Home Loan which reduces the amount of interest that would otherwise accrue in relation to the AFG Alpha Offset Home Loan.",
       "url": "https://www.afghomeloans.com.au/home-loans/alpha-home-loan/",
-      "lastUpdated": "2026-09-28T08:57:37+10:00",
+      "lastUpdated": "2026-10-05T10:05:11+11:00",
       "source": "https://api.afg.app.bendigobank.com.au/cds-au/v1/banking/products/bbc91f98-05e3-4711-ab53-a984c66398a4",
       "depositRates": [
         {

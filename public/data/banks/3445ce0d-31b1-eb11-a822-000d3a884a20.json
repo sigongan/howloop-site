@@ -1,7 +1,7 @@
 {
   "name": "Health Professionals Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -200,12 +200,12 @@
       "name": "Edvest Cash Management account",
       "description": "Exclusive to Edvest members, our higher interest rates make your money work harder for you.",
       "url": "https://www.hpbank.com.au/banking/edvest-cash-management-account",
-      "lastUpdated": "2026-07-13T17:17:40.000+10:00",
+      "lastUpdated": "2026-10-01T13:15:50.000+10:00",
       "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/1fcd6386-92f5-411a-87b7-2b0d67aab1ba",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -221,7 +221,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -237,7 +237,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -253,7 +253,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -269,7 +269,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -285,7 +285,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.01",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -364,12 +364,12 @@
       "name": "Pension Advantage account",
       "description": "An account for members receiving a pension or allowance from Centrelink or Veteran Affairs.",
       "url": "https://www.hpbank.com.au/banking/pension-advantage",
-      "lastUpdated": "2026-09-09T15:11:34.000+10:00",
+      "lastUpdated": "2026-10-01T03:36:48.000+10:00",
       "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/3ea81fb6-ab26-4044-ab83-8de6fe73ab1d",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.03",
+          "rate": "0.0325",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -385,7 +385,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.03",
+          "rate": "0.0325",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -519,12 +519,12 @@
       "name": "Starter Saver account",
       "description": "Starter Saver Account is a high interest savings account for Under 30 year olds that rewards savings.",
       "url": "https://www.hpbank.com.au/banking/starter-saver",
-      "lastUpdated": "2026-06-30T10:18:30.000+10:00",
+      "lastUpdated": "2026-10-01T03:26:33.000+10:00",
       "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/ae92e68a-4104-4894-ba54-408c590a200b",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0525",
+          "rate": "0.055",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -541,7 +541,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0425",
+          "rate": "0.045",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -608,7 +608,7 @@
       "name": "MOMENTUM SAVER",
       "description": "The Momentum Saver account rewards savers with an ongoing bonus interest rate when you deposit a minimum of $100 and make no withdrawals during the month.",
       "url": "https://www.hpbank.com.au/banking/momentum-saver",
-      "lastUpdated": "2026-08-26T11:26:22.000+10:00",
+      "lastUpdated": "2026-10-01T09:29:02.000+10:00",
       "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/ba995be0-6c0c-11f0-91fb-325096b39f47",
       "depositRates": [
         {
@@ -700,7 +700,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -723,7 +723,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.049",
+          "rate": "0.0515",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -746,7 +746,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.049",
+          "rate": "0.0515",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -769,7 +769,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0465",
+          "rate": "0.049",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -846,12 +846,12 @@
       "name": "Essential Saver account",
       "description": "An interest bearing online savings account with a tiered interest rate structure",
       "url": "https://www.hpbank.com.au/banking/essential-saver",
-      "lastUpdated": "2026-09-16T12:20:47.000+10:00",
+      "lastUpdated": "2026-10-01T03:25:50.000+10:00",
       "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/f79ad2ac-29f3-4580-b847-118566c38adf",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -867,7 +867,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -883,7 +883,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -899,7 +899,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.03",
+          "rate": "0.0325",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -915,7 +915,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.03",
+          "rate": "0.0325",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

@@ -1,7 +1,7 @@
 {
   "name": "The Capricornian",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -399,7 +399,7 @@
       "name": "Personal Access Account",
       "description": "Easy access to your banking, every day. With the features you need, this is a simple and versatile account to use and move your money.",
       "url": "https://www.capricornian.com.au/banking/everyday-banking/",
-      "lastUpdated": "2026-09-06T23:09:30.697176Z",
+      "lastUpdated": "2026-09-29T04:26:31.913614Z",
       "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/49c287aa-289c-4919-bdff-3118ad616179",
       "depositRates": [
         {
@@ -518,6 +518,23 @@
           "feeMethodUType": "fixedAmount",
           "fixedAmount": {
             "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "OTHER",
+          "name": "Honour Fee",
+          "additionalInfo": "An honour fee will apply if a Direct Debit Overdraws your account or is paid against uncleared funds.",
+          "additionalInfoUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
           },
           "rateBased": null,
           "variable": null,
@@ -1312,7 +1329,7 @@
       "name": "Student Access Account",
       "description": "The Student Access Account is designed to provide support to those aged 17-25 years who are studying at University or undergoing a traineeship/apprenticeship. The account provides full branch access for deposits, withdrawals or counter cheques as well as Visa Debit access.",
       "url": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
-      "lastUpdated": "2026-09-06T23:07:00.559967Z",
+      "lastUpdated": "2026-09-29T04:27:43.600051Z",
       "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/9c393395-f87c-4268-84a4-06a91b34b47c",
       "depositRates": [
         {
@@ -1357,6 +1374,23 @@
           "feeMethodUType": "fixedAmount",
           "fixedAmount": {
             "amount": "0.70"
+          },
+          "rateBased": null,
+          "variable": null,
+          "feeCap": null,
+          "feeCapPeriod": null
+        },
+        {
+          "feeType": "OTHER",
+          "name": "Honour Fee",
+          "additionalInfo": "An honour fee will apply when a Direct Debit overdraws your account or is paid against uncleared funds.",
+          "additionalInfoUri": "https://www.capricornian.com.au/about-us/product-rate-fee-disclosures/",
+          "additionalValue": null,
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "20.00"
           },
           "rateBased": null,
           "variable": null,

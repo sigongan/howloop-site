@@ -1,7 +1,7 @@
 {
   "name": "Beyond Bank Australia",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -991,7 +991,7 @@
       "name": "Access Savings Account",
       "description": "The Access Savings Account is no longer available as a new account",
       "url": "https://www.beyondbank.com.au/about-us/corporate-governance/disclosures/disclosure-documents/",
-      "lastUpdated": "2026-09-27T22:00:31.0312298Z",
+      "lastUpdated": "2026-10-04T22:00:30.5175952Z",
       "source": "https://public.cdr.api.beyondbank.com.au/cds-au/v1/banking/products/6",
       "depositRates": [
         {

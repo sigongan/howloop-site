@@ -1,7 +1,7 @@
 {
   "name": "BankVic",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -253,12 +253,12 @@
       "name": "Pension Plus",
       "description": "An everyday savings account tailored for retirees",
       "url": "https://www.bankvic.com.au/savings?filter=Regular-Savings&product=Pension-Plus",
-      "lastUpdated": "2026-06-01T09:13:38.000+10:00",
+      "lastUpdated": "2026-10-01T09:04:13.000+10:00",
       "source": "https://ib.bankvic.com.au/openbanking/cds-au/v1/banking/products/S10_Savings_Pension",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.041",
+          "rate": "0.0435",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -274,7 +274,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.044",
+          "rate": "0.0465",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -420,12 +420,12 @@
       "name": "EasyInvest",
       "description": "An online savings account with access to your money when you need it",
       "url": "https://www.bankvic.com.au/savings/",
-      "lastUpdated": "2026-06-01T09:03:30.000+10:00",
+      "lastUpdated": "2026-10-01T08:55:47.000+10:00",
       "source": "https://ib.bankvic.com.au/openbanking/cds-au/v1/banking/products/S7_Savings_Online",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.029",
+          "rate": "0.0315",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

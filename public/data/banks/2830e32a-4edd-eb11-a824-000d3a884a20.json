@@ -1,7 +1,7 @@
 {
   "name": "QBANK",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -2183,7 +2183,7 @@
       "name": "Bonus Saver",
       "description": "Be rewarded with bonus interest for regular saving",
       "url": "https://www.qbank.com.au/products/accounts/savings-accounts/bonus-saver/",
-      "lastUpdated": "2026-06-01T08:08:42.000+10:00",
+      "lastUpdated": "2026-10-01T05:59:01.000+10:00",
       "source": "https://banking.qbank.com.au/openbanking/cds-au/v1/banking/products/S70_Bonus",
       "depositRates": [
         {
@@ -2219,7 +2219,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0494",
+          "rate": "0.0519",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

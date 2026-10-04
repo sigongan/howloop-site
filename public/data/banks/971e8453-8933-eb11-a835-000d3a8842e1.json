@@ -1,7 +1,7 @@
 {
   "name": "CommFCU",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Everyday Plus",
       "description": "An everyday transaction account for members who are aged 55+. For one monthly fee, enjoy interest paid on balances and a range of ways to bank for added convenience.",
       "url": "https://communityfirst.com.au/products/everyday-plus/",
-      "lastUpdated": "2026-06-30T15:41:22.000+10:00",
+      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S14-EP",
       "depositRates": [
         {
@@ -221,7 +221,7 @@
             "amount": "35.00"
           },
           "currency": "AUD",
-          "additionalInfo": "Includes NPP Payments, incorrect amount transferred; elleged unauthorised transactions; request to recall funds",
+          "additionalInfo": "Includes NPP Payments, incorrect amount transferred; alleged unauthorised transactions; request to recall funds",
           "additionalInfoUri": "https://communityfirst.com.au/tools/rates-and-fees"
         },
         {
@@ -536,7 +536,7 @@
       "name": "Wildlife Saver account",
       "description": "An account for members aged under 18 to kick start their savings with the help of a parent or guardian. Account holders 12+ are eligible for debit card access - all balances earn competitive interest",
       "url": "https://communityfirst.com.au/products/wildlife-saver-account/",
-      "lastUpdated": "2026-06-30T15:41:22.000+10:00",
+      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S18-JS",
       "depositRates": [
         {
@@ -647,7 +647,7 @@
             "amount": "35.00"
           },
           "currency": "AUD",
-          "additionalInfo": "Includes NPP Payments, incorrect amount transferred; elleged unauthorised transactions; request to recall funds",
+          "additionalInfo": "Includes NPP Payments, incorrect amount transferred; alleged unauthorised transactions; request to recall funds",
           "additionalInfoUri": "https://communityfirst.com.au/tools/rates-and-fees"
         },
         {
@@ -853,7 +853,7 @@
       "name": "Santa Saver",
       "description": "A savings account that helps you save for Christmas throughout the year and stops you dipping in to your savings by only allowing access to funds between 1 November and 31 January each year.",
       "url": "https://communityfirst.com.au/products/christmas-saver-account",
-      "lastUpdated": "2026-07-23T16:36:09.000+10:00",
+      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S25-CS",
       "depositRates": [
         {
@@ -987,7 +987,7 @@
             "amount": "35.00"
           },
           "currency": "AUD",
-          "additionalInfo": "Includes NPP Payments, incorrect amount transferred; elleged unauthorised transactions; request to recall funds",
+          "additionalInfo": "Includes NPP Payments, incorrect amount transferred; alleged unauthorised transactions; request to recall funds",
           "additionalInfoUri": "https://communityfirst.com.au/tools/rates-and-fees"
         },
         {
@@ -1082,7 +1082,7 @@
       "name": "Goal Saver",
       "description": "A savings account that earns you bonus interest when you make at least one deposit of $50 each month, maintain a credit balance and make no withdrawals.",
       "url": "https://communityfirst.com.au/products/goal-saver",
-      "lastUpdated": "2026-08-01T11:07:16.000+10:00",
+      "lastUpdated": "2026-09-29T15:38:35.000+10:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S29-GS",
       "depositRates": [
         {
@@ -1291,12 +1291,8 @@
       "constraints": [],
       "features": [
         {
-          "featureType": "BONUS_REWARDS",
-          "additionalValue": "Bonus interest is paid on balances up to $7 million when you make at least one deposit of $50 per month, maintain credit balance and make no withdrawals",
-          "additionalInfo": "If Bonus conditions are not met, standard interest applies"
-        },
-        {
-          "featureType": "DIGITAL_BANKING"
+          "featureType": "DIGITAL_BANKING",
+          "additionalInfo": "Access your account via Internet Banking or Community First's Mobile App."
         },
         {
           "featureType": "OTHER",
@@ -1315,7 +1311,7 @@
       "name": "FirstBiz Access",
       "description": "A convenient way to manage your cash flow.",
       "url": "https://www.communityfirst.com.au/products/firstbiz-access-account",
-      "lastUpdated": "2026-06-30T15:41:22.000+10:00",
+      "lastUpdated": "2026-09-29T15:51:41.000+10:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S98-FBAA",
       "depositRates": [
         {
@@ -1519,7 +1515,7 @@
         },
         {
           "featureType": "OVERDRAFT",
-          "additionalInfo": "Optional Overdraft facility available. Credit eligibilty criteria, terms and conditions, fees and charges apply."
+          "additionalInfo": "Optional Overdraft facility available. Credit eligibility criteria, terms and conditions, fees and charges apply."
         }
       ],
       "additionalInformation": {

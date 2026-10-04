@@ -1,7 +1,7 @@
 {
   "name": "CommBank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "CommSec Notice Investor",
       "description": "A notice account that offers higher variable interest rates on your surplus funds while waiting for the next investment opportunity. Simply submit a notice to access your funds via your CDIA after the predetermined notice period.",
       "url": "https://www.commbank.com.au/content/dam/commbank-assets/investing/docs/commsec-notice-investor-account-terms.pdf",
-      "lastUpdated": "2026-09-28T08:01:06.000Z",
+      "lastUpdated": "2026-10-05T08:00:22.000Z",
       "source": "https://api.commbank.com.au/public/cds-au/v1/banking/products/71865ffd1ab249df9baa4b29c7751824",
       "depositRates": [
         {
@@ -755,7 +755,7 @@
       "name": "GoalSaver",
       "description": "Be rewarded with a variable bonus interest rate for saving regularly each month.",
       "url": "https://www.commbank.com.au/banking/goal-saver.html",
-      "lastUpdated": "2026-09-28T08:00:53.000Z",
+      "lastUpdated": "2026-10-05T02:15:34.000Z",
       "source": "https://api.commbank.com.au/public/cds-au/v1/banking/products/72f214498c7f47a98fe59b794e7c01ab",
       "depositRates": [
         {
@@ -1002,7 +1002,7 @@
       "name": "Pensioner Security Account",
       "description": "One convenient account for your transaction and savings needs - for customers aged 55 and above.",
       "url": "https://www.commbank.com.au/banking/pensioner-security.html",
-      "lastUpdated": "2026-09-28T08:00:24.000Z",
+      "lastUpdated": "2026-10-05T09:00:39.000Z",
       "source": "https://api.commbank.com.au/public/cds-au/v1/banking/products/7375f63775b4489a890655e25395e12d",
       "depositRates": [
         {
@@ -1301,8 +1301,14 @@
         },
         {
           "featureType": "CARD_ACCESS",
+          "additionalValue": "Platinum Debit Mastercard",
+          "additionalInfo": "Platinum Debit Mastercard is a premium debit card that can be linked to your CommBank transaction account and can be used everywhere Mastercard is accepted. Enjoy additional exclusive features and benefits, including complementary purchase protections, with the Platinum Debit Mastercard, subject to eligibility, approval, and terms and conditions.",
+          "additionalInfoUri": "https://www.commbank.com.au/banking/platinum-debit-upgrade.html"
+        },
+        {
+          "featureType": "CARD_ACCESS",
           "additionalValue": "World Debit Mastercard",
-          "additionalInfo": "World Debit Mastercard is a premium debit card that can be linked to your CommBank transaction account, and can be used everywhere Mastercard is accepted. Enjoy additional exclusive features and benefits with the World Debit Mastercard, subject eligibility, approval, and terms and conditions. Fees apply.",
+          "additionalInfo": "World Debit Mastercard is a premium debit card that can be linked to your CommBank transaction account and can be used everywhere Mastercard is accepted. Earn CommBank Yello points on eligible purchases using your World Debit Mastercard. The earning and redemption of CommBank Yello points are subject to meeting the eligibility criteria, including holding an eligible transaction account, as well as the applicable CommBank Yello terms and conditions. You may also enjoy additional exclusive features and benefits, including complimentary insurances and purchase protections, with the World Debit Mastercard, subject to eligibility, approval, and terms and conditions. Fees apply.",
           "additionalInfoUri": "https://www.commbank.com.au/banking/debit-cards/world-debit-mastercard.html"
         },
         {
@@ -1315,8 +1321,9 @@
           "additionalInfoUri": "https://www.commbank.com.au/digital-banking/lock-your-debit-card.html"
         },
         {
-          "featureType": "OTHER",
-          "additionalInfo": "CommBank Yello provides benefits for eligible CommBank customers, subject to terms and conditions.",
+          "featureType": "LOYALTY_PROGRAM",
+          "additionalValue": "CommBank Yello",
+          "additionalInfo": "CommBank Yello provides benefits for eligible CommBank customers, subject to terms and conditions. The earning and redemption of CommBank Yello Points are subject to meeting the eligibility criteria, including holding an eligible transaction account, as well as the applicable CommBank Yello terms and conditions.",
           "additionalInfoUri": "https://www.commbank.com.au/commbank-yello.html"
         },
         {
@@ -1407,7 +1414,7 @@
       "name": "Youthsaver Account",
       "description": "Designed to help teach saving skills to under 18s, our Youthsaver account offers bonus interest for reaching saving goals.",
       "url": "https://www.commbank.com.au/banking/youthsaver.html",
-      "lastUpdated": "2026-09-28T02:15:34.000Z",
+      "lastUpdated": "2026-10-05T02:15:34.000Z",
       "source": "https://api.commbank.com.au/public/cds-au/v1/banking/products/7aff9e0e85e6450eb052d4ff2e953223",
       "depositRates": [
         {
@@ -1566,7 +1573,7 @@
       "name": "NetBank Saver",
       "description": "An online savings account with the flexibility to move money in and out of your linked CommBank transaction account using NetBank or the CommBank app.",
       "url": "https://www.commbank.com.au/banking/netbank-saver.html",
-      "lastUpdated": "2026-09-28T08:01:01.000Z",
+      "lastUpdated": "2026-10-05T02:15:34.000Z",
       "source": "https://api.commbank.com.au/public/cds-au/v1/banking/products/ad22b1f0967349e8a5d586afe7f0d845",
       "depositRates": [
         {
@@ -1736,7 +1743,7 @@
       "name": "Commonwealth Private Bank Account",
       "description": "The Commonwealth Private Bank Account is an interest bearing transaction account which pays a banded interest rate and is exclusively available to Commonwealth Private Bank clients.",
       "url": "https://www.commbank.com.au/content/dam/commbank/personal/docs/CBA1026_Commonwealth_Private_TCs.pdf",
-      "lastUpdated": "2026-09-28T02:15:34.000Z",
+      "lastUpdated": "2026-10-05T02:15:34.000Z",
       "source": "https://api.commbank.com.au/public/cds-au/v1/banking/products/c50f2a2cf77c47248ebbb565d2d6c1cb",
       "depositRates": [
         {
@@ -2028,8 +2035,14 @@
         },
         {
           "featureType": "CARD_ACCESS",
+          "additionalValue": "Platinum Debit Mastercard",
+          "additionalInfo": "Platinum Debit Mastercard is a premium debit card that can be linked to your CommBank transaction account and can be used everywhere Mastercard is accepted. Enjoy additional exclusive features and benefits, including complementary purchase protections, with the Platinum Debit Mastercard, subject to eligibility, approval, and terms and conditions.",
+          "additionalInfoUri": "https://www.commbank.com.au/banking/platinum-debit-upgrade.html"
+        },
+        {
+          "featureType": "CARD_ACCESS",
           "additionalValue": "World Debit Mastercard",
-          "additionalInfo": "World Debit Mastercard is a premium debit card that can be linked to your CommBank transaction account, and can be used everywhere Mastercard is accepted. Enjoy additional exclusive features and benefits with the World Debit Mastercard, subject eligibility, approval, and terms and conditions. Fees apply.",
+          "additionalInfo": "World Debit Mastercard is a premium debit card that can be linked to your CommBank transaction account and can be used everywhere Mastercard is accepted. Earn CommBank Yello points on eligible purchases using your World Debit Mastercard. The earning and redemption of CommBank Yello points are subject to meeting the eligibility criteria, including holding an eligible transaction account, as well as the applicable CommBank Yello terms and conditions. You may also enjoy additional exclusive features and benefits, including complimentary insurances and purchase protections, with the World Debit Mastercard, subject to eligibility, approval, and terms and conditions. Fees apply.",
           "additionalInfoUri": "https://www.commbank.com.au/banking/debit-cards/world-debit-mastercard.html"
         },
         {
@@ -2044,7 +2057,7 @@
         {
           "featureType": "LOYALTY_PROGRAM",
           "additionalValue": "CommBank Yello",
-          "additionalInfo": "CommBank Yello provides benefits for eligible CommBank customers, subject to terms and conditions.",
+          "additionalInfo": "CommBank Yello provides benefits for eligible CommBank customers, subject to terms and conditions. The earning and redemption of CommBank Yello Points are subject to meeting the eligibility criteria, including holding an eligible transaction account, as well as the applicable CommBank Yello terms and conditions.",
           "additionalInfoUri": "https://www.commbank.com.au/commbank-yello.html"
         },
         {
@@ -2143,7 +2156,7 @@
       "name": "Commonwealth Direct Investment Account",
       "description": "A cash management account for investors allowing you to trade and transact when and where it suits you.",
       "url": "https://www.commbank.com.au/investing/commonwealth-direct-investment.html",
-      "lastUpdated": "2026-09-28T08:01:06.000Z",
+      "lastUpdated": "2026-10-05T09:00:39.000Z",
       "source": "https://api.commbank.com.au/public/cds-au/v1/banking/products/da527ba1942246edac4d5da36dbc1da8",
       "depositRates": [
         {

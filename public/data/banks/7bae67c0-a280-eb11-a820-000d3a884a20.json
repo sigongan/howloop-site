@@ -1,7 +1,7 @@
 {
   "name": "Geelong Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -422,19 +422,19 @@
       "name": "Young Achiever Savings",
       "description": "Savings and banking solutions for young children and teenagers made simple and easy.",
       "url": "https://geelongbank.com.au/savings-loans/savings-investment-accounts/young-achievers-savings-account/",
-      "lastUpdated": "2026-06-01T09:43:15.000+10:00",
+      "lastUpdated": "2026-10-01T10:49:50.000+10:00",
       "source": "https://online.geelongbank.com.au/OpenBanking/cds-au/v1/banking/products/S50",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.013",
+          "rate": "0.014",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M"
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.018",
+          "rate": "0.0195",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M"
@@ -658,7 +658,7 @@
       "name": "Achieve Saver",
       "description": "This account is ideal for the short term investor and includes bonus interest",
       "url": "https://geelongbank.com.au/savings-loans/savings-investment-accounts/achieve-savers-account/",
-      "lastUpdated": "2026-06-01T09:45:29.000+10:00",
+      "lastUpdated": "2026-10-01T10:51:11.000+10:00",
       "source": "https://online.geelongbank.com.au/OpenBanking/cds-au/v1/banking/products/S55",
       "depositRates": [
         {
@@ -679,7 +679,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0125",
+          "rate": "0.0135",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -695,7 +695,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0125",
+          "rate": "0.0135",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -710,7 +710,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0145",
+          "rate": "0.016",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -727,7 +727,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0145",
+          "rate": "0.016",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1732,7 +1732,7 @@
       "name": "Affinity Savers",
       "description": "Earn interest with this everyday transaction account",
       "url": "https://geelongbank.com.au/savings-loans/home-loans/affinity-home-loan/affinity-saver-account/",
-      "lastUpdated": "2026-06-01T09:42:28.000+10:00",
+      "lastUpdated": "2026-10-01T10:44:47.000+10:00",
       "source": "https://online.geelongbank.com.au/OpenBanking/cds-au/v1/banking/products/S8",
       "depositRates": [
         {
@@ -2031,12 +2031,12 @@
       "name": "iSaver",
       "description": "Online account only that can earn bonus interest.",
       "url": "https://geelongbank.com.au/savings-loans/savings-investment-accounts/isaver-account/",
-      "lastUpdated": "2026-06-01T09:53:04.000+10:00",
+      "lastUpdated": "2026-10-01T10:52:46.000+10:00",
       "source": "https://online.geelongbank.com.au/OpenBanking/cds-au/v1/banking/products/S80",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.012",
+          "rate": "0.013",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -2058,7 +2058,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.012",
+          "rate": "0.013",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -2079,7 +2079,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0151",
+          "rate": "0.0166",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

@@ -1,7 +1,7 @@
 {
   "name": "Coastline Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -1135,7 +1135,7 @@
       "name": "Mortgage Loan Offset",
       "description": "Mortgage Loan Offset",
       "url": "https://www.coastline.com.au/newsroom/offset-accounts-a-guide-to-saving-thousands-over-the-life-of-your-loan",
-      "lastUpdated": "2026-09-27T22:00:14.6409595Z",
+      "lastUpdated": "2026-10-04T22:00:14.1958974Z",
       "source": "https://public.cdr-api.coastline.com.au/cds-au/v1/banking/products/22",
       "depositRates": [
         {
@@ -1737,7 +1737,7 @@
       "name": "Bonus Reward Saver",
       "description": "Bonus Reward Saver",
       "url": "https://www.coastline.com.au/personal/savings-accounts",
-      "lastUpdated": "2026-09-27T22:00:14.6409595Z",
+      "lastUpdated": "2026-10-04T22:00:14.1958974Z",
       "source": "https://public.cdr-api.coastline.com.au/cds-au/v1/banking/products/3",
       "depositRates": [
         {

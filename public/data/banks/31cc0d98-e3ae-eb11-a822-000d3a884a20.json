@@ -1,7 +1,7 @@
 {
   "name": "St.George Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -370,7 +370,7 @@
       "name": "Incentive Saver",
       "description": "An account that rewards you with bonus interest for regular saving to help you save faster.",
       "url": "https://www.stgeorge.com.au/personal/bank-accounts/savings-accounts/incentive-saver",
-      "lastUpdated": "2026-08-31T01:50:36Z",
+      "lastUpdated": "2026-10-01T00:58:23Z",
       "source": "https://digital-api.stgeorge.com.au/cds-au/v1/banking/products/STGSavIncentiveSaver",
       "depositRates": [
         {
@@ -849,7 +849,7 @@
       "name": "Maxi Saver",
       "description": "A savings account that offers a great interest rate with access to funds through a linked account via Internet and Phone Banking.",
       "url": "https://www.stgeorge.com.au/personal/bank-accounts/savings-accounts/maxi-saver",
-      "lastUpdated": "2026-07-29T05:50:36Z",
+      "lastUpdated": "2026-10-01T00:58:23Z",
       "source": "https://digital-api.stgeorge.com.au/cds-au/v1/banking/products/STGSavMaxiSaver",
       "depositRates": [
         {
@@ -1074,7 +1074,11 @@
         {
           "featureType": "CASHBACK_OFFER",
           "additionalValue": "50.00",
-          "additionalInfo": "$50 cashback on your new account. Open a new Complete Freedom account with an eligible savings account by 30 September 2026. Spend $50 or more within 15 days, and we?ll drop $50 straight into your savings. T&Cs apply."
+          "additionalInfo": "$50 cashback on your new account. Open a new Complete Freedom account with an eligible savings account by 31st March 2027. Spend $50 or more within 15 days, and we?ll drop $50 straight into your savings. T&Cs apply."
+        },
+        {
+          "featureType": "OTHER",
+          "additionalInfo": "The BeMoved Promotion Terms and Conditions. You could get a minimum 10% electricity saving with One Click Switch. Compare and switch your electricity plan through One Click Switch between 18 June 2026 and 31 May 2028. Savings are calculated using your existing electricity usage from the past 12 months via Consumer Data Right (CDR). If your saving is less than 10%, the difference will be paid as a digital gift card, up to $500. Customers 18 years or older. T&Cs apply. Must already hold a St.George debit card or credit card to be eligible."
         },
         {
           "featureType": "OTHER",

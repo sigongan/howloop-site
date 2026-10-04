@@ -1,7 +1,7 @@
 {
   "name": "Bendigo Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -1175,15 +1175,15 @@
       ],
       "features": [
         {
-          "featureType": "BILL_PAYMENT",
-          "additionalValue": "BPAY"
+          "featureType": "DIGITAL_BANKING"
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalValue": "Debit Mastercard"
         },
         {
-          "featureType": "DIGITAL_BANKING"
+          "featureType": "BILL_PAYMENT",
+          "additionalValue": "BPAY"
         }
       ]
     },

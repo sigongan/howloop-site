@@ -1,7 +1,7 @@
 {
   "name": "P&N Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Concession Account",
       "description": "A P&N Bank Concession Account is a low-cost everyday bank account specifically designed for eligible concession card holders.",
       "url": "https://www.pnbank.com.au/bank-and-save/everyday-bank-accounts/concession-account/",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/140",
       "depositRates": [
         {
@@ -319,7 +319,7 @@
       "name": "Savvy Saver Account",
       "description": "Want a savings account to deposit and hold or withdraw money for personal use without being penalised? A savings account that earns you additional bonus interest when the monthly bonus interest criteria is met each month.",
       "url": "https://www.pnbank.com.au/bank-and-save/savings-accounts/savvy-saver/",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/280",
       "depositRates": [
         {
@@ -679,7 +679,7 @@
       "name": "Smart Saver Account",
       "description": "Smart way to save for your goals. A simple, goal based savings account that rewards regular saving.",
       "url": "https://www.pnbank.com.au/bank-and-save/savings-accounts/smart-saver-account/",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/293",
       "depositRates": [
         {
@@ -1037,7 +1037,7 @@
       "name": "Momentum Account",
       "description": "A transaction account for customers aged 55 and over, with easy access to funds and variable stepped interest.",
       "url": "https://www.pnbank.com.au/bank-and-save/everyday-bank-accounts/momentum-account/",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/303",
       "depositRates": [
         {
@@ -1562,7 +1562,7 @@
       "name": "Way Cool Saver",
       "description": "It's never too early to learn the value of money. And a Way Cool Saver is a great way to get started. Teach your kids to save more and spend less of their pocket money - handy skills to have down the track.",
       "url": "https://www.pnbank.com.au/bank-and-save/savings-accounts/way-cool-saver",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/35",
       "depositRates": [
         {
@@ -1816,7 +1816,7 @@
       "name": "Easypay Access Account",
       "description": "Easypay Access Account",
       "url": "https://www.pnbank.com.au/important-information/terms-and-conditions/savings-accounts-and-access-channels/",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/36",
       "depositRates": [
         {
@@ -2244,7 +2244,7 @@
       "name": "Hi Saver Account",
       "description": "Boost your savings and enjoy bonus interest for the first four months with our Hi Saver Account. It's your savings, supercharged.",
       "url": "https://www.pnbank.com.au/bank-and-save/savings-accounts/hi-saver-account/",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/37",
       "depositRates": [
         {
@@ -2611,7 +2611,7 @@
       "name": "& Transaction Account",
       "description": "A simple to use everyday bank account with unlimited free standard transactions for your everyday spending.",
       "url": "https://www.pnbank.com.au/bank-and-save/everyday-bank-accounts/and-transaction-account/",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/38",
       "depositRates": [
         {
@@ -3009,7 +3009,7 @@
       "name": "Budgeting Account",
       "description": "An account designed for you to put aside money for your bills and expenses so you can stay on top of your finances.",
       "url": "https://www.pnbank.com.au/bank-and-save/everyday-bank-accounts/budgeting-account/",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/42",
       "depositRates": [
         {
@@ -3428,7 +3428,7 @@
       "name": "& Access Account",
       "description": "A simple to use transaction account with unlimited free standard transactions that can be  linked to an eligible home loan for the purpose of 100% offset, in order  to reduce interest on the loan.",
       "url": "https://www.pnbank.com.au/bank-and-save/specialty-accounts/and-access-account/",
-      "lastUpdated": "2026-09-27T22:00:24.3577630Z",
+      "lastUpdated": "2026-10-04T22:00:23.0673472Z",
       "source": "https://public.cdr-api.pnbank.com.au/cds-au/v1/banking/products/45",
       "depositRates": [
         {

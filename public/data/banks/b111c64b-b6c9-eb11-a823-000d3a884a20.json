@@ -1,7 +1,7 @@
 {
   "name": "People First and Heritage Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -1514,7 +1514,7 @@
       "name": "Dream Fund",
       "description": "A savings account that offers bonus interest in any month your account balance grows (not including interest credits)",
       "url": "https://www.peoplefirstbank.com.au/banking/savings-accounts/dream-fund",
-      "lastUpdated": "2026-05-31T14:35:27.528Z",
+      "lastUpdated": "2026-09-30T14:35:22.658Z",
       "source": "https://public.openbanking.peoplefirstbank.com.au/cds-au/v1/banking/products/d9772ff5-78d8-46c4-b489-caa0f05d4c98",
       "depositRates": [
         {
@@ -1527,7 +1527,7 @@
           "depositRateType": "VARIABLE"
         },
         {
-          "rate": "0.0514",
+          "rate": "0.0554",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1554,7 +1554,7 @@
           "depositRateType": "BONUS"
         },
         {
-          "rate": "0.0414",
+          "rate": "0.0439",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

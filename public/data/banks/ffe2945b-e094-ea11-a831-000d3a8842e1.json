@@ -1,7 +1,7 @@
 {
   "name": "Westpac",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Bump Savings",
       "description": "The trick to saving is to start early. With a Westpac Bump kids savings account, get the money-growing habits you need.",
       "url": "https://www.westpac.com.au/bank-accounts/savings-accounts/bump",
-      "lastUpdated": "2026-09-23T23:56:21Z",
+      "lastUpdated": "2026-10-02T01:47:11Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/SavBump",
       "depositRates": [
         {
@@ -116,7 +116,7 @@
         {
           "featureType": "CASHBACK_OFFER",
           "additionalValue": "50.00",
-          "additionalInfo": "Double your $50 when you bank and save with Westpac. Open a new Choice Youth everyday account and an eligible savings account together between 1 February 2026 and 30 September 2026, and here?s how you can get $50: Deposit $50 or more into your new Choice Youth everyday account within 10 days. We?ll add $50 to your savings account once you meet the criteria. You must not have held any Westpac transaction account or savings account in the last 2 years. T&Cs apply",
+          "additionalInfo": "Double your $50 when you bank and save with Westpac. Open a new Choice Youth everyday account and an eligible savings account together by 31st March 2027, and here?s how you can get $50: Deposit $50 or more into your new Choice Youth everyday account within 10 days. We?ll add $50 to your savings account once you meet the criteria. You must not have held any Westpac transaction account or savings account in the last 2 years. T&Cs apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/campaign-faqs-youth"
         },
         {
@@ -174,12 +174,12 @@
         },
         {
           "featureType": "OTHER",
-          "additionalInfo": "Spending restrictions: To help protect you, we may decline some transactions on your Westpac Debit Mastercard based on the type of merchant. While this adds an extra layer of protection, it may not prevent all transactions with higher risk merchants.",
+          "additionalInfo": "Spending restrictions - Merchant restrictions on the Debit Mastercard block certain high-risk spending categories (e.g. gambling, alcohol, tobacco).",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/youth/kids"
         },
         {
           "featureType": "OTHER",
-          "additionalInfo": "Parental notifications - Messages for parents or guardians about your account activity so they can guide and support you.4�",
+          "additionalInfo": "Parental notifications - Messages for parents or guardians about your account activity so they can guide and support you.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/youth/kids"
         },
         {
@@ -205,7 +205,7 @@
       "name": "Westpac eSaver",
       "description": "Westpac eSaver makes saving a breeze. You?ll get an introductory interest rate and online access to your money whenever you need it. ",
       "url": "https://www.westpac.com.au/bank-accounts/savings-accounts/esaver",
-      "lastUpdated": "2026-09-23T23:56:21Z",
+      "lastUpdated": "2026-09-30T23:39:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/SavESaver",
       "depositRates": [
         {
@@ -349,7 +349,7 @@
         {
           "featureType": "CASHBACK_OFFER",
           "additionalValue": "50.00",
-          "additionalInfo": "You could earn $50 cashback with a new account. If you open a new Westpac Choice everyday account and an eligible savings account between 9 June and 30 September 2026, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). T&Cs apply",
+          "additionalInfo": "You could earn $50 cashback if you open a new Westpac Choice everyday account and an eligible savings account by 31st March 2027, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). T&Cs apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/campaign-faqs"
         },
         {
@@ -410,7 +410,7 @@
       "name": "Westpac Life",
       "description": "Westpac Life is a flexible savings account that supports your savings goals. ",
       "url": "https://www.westpac.com.au/bank-accounts/savings-accounts/life",
-      "lastUpdated": "2026-09-23T23:56:21Z",
+      "lastUpdated": "2026-10-01T05:19:42Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/SavLife",
       "depositRates": [
         {
@@ -519,6 +519,14 @@
           "fixedAmount": {
             "amount": "0.00"
           }
+        },
+        {
+          "name": "Direct Debit",
+          "feeType": "PAYMENT",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "0.00"
+          }
         }
       ],
       "eligibility": [
@@ -536,7 +544,7 @@
         {
           "featureType": "CASHBACK_OFFER",
           "additionalValue": "50.00",
-          "additionalInfo": "You could earn $50 cashback with a new account. If you open a new Westpac Choice everyday account and an eligible savings account between 9 June and 30 September 2026, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). T&Cs apply",
+          "additionalInfo": "You could earn $50 cashback if you open a new Westpac Choice everyday account and an eligible savings account by 31st March 2027, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). T&Cs apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/campaign-faqs"
         },
         {
@@ -603,7 +611,7 @@
       "name": "Westpac Choice",
       "description": "Westpac Choice is our most popular account. A simple-to-use everyday bank account.",
       "url": "https://www.westpac.com.au/bank-accounts/choice",
-      "lastUpdated": "2026-09-08T03:20:20Z",
+      "lastUpdated": "2026-10-02T01:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoice",
       "depositRates": [
         {
@@ -829,7 +837,7 @@
           "fixedAmount": {
             "amount": "0.00"
           },
-          "additionalInfo": "An automated transfer that is debited from your account and  credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
+          "additionalInfo": "An automated transfer that is debited from your account and credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
         },
         {
           "name": "Overseas Withdrawal",
@@ -916,7 +924,7 @@
         {
           "featureType": "CASHBACK_OFFER",
           "additionalValue": "50.00",
-          "additionalInfo": "You could earn $50 cashback with a new account. If you open a new Westpac Choice everyday account and an eligible savings account between 9 June and 30 September 2026, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). Must be 18 years or older. T&Cs apply.",
+          "additionalInfo": "You could earn $50 cashback if you open a new Westpac Choice everyday account and an eligible savings account by 31st March 2027, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). T&Cs apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/campaign-faqs"
         },
         {
@@ -1096,7 +1104,7 @@
       "name": "Westpac 55+ and Retired",
       "description": "The best of both worlds for retirees 55 and over. An everyday account with a debit card that gives you interest like a savings account.",
       "url": "https://www.westpac.com.au/bank-accounts/55-and-retired",
-      "lastUpdated": "2026-09-08T03:20:20Z",
+      "lastUpdated": "2026-10-02T01:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoice55",
       "depositRates": [
         {
@@ -1294,7 +1302,7 @@
           "fixedAmount": {
             "amount": "0.00"
           },
-          "additionalInfo": "An automated transfer that is debited from your account and  credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
+          "additionalInfo": "An automated transfer that is debited from your account and credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
         },
         {
           "name": "Overseas Withdrawal",
@@ -1525,7 +1533,7 @@
       "name": "Westpac Choice for concession holders",
       "description": "An everyday bank account with debit card and no monthly fees. For customers who hold a Concession or Health Care card, receive benefit payments, or low or no income earners.",
       "url": "https://www.westpac.com.au/bank-accounts/basic",
-      "lastUpdated": "2026-09-08T03:20:20Z",
+      "lastUpdated": "2026-10-02T01:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoiceConcession",
       "depositRates": [
         {
@@ -1649,7 +1657,7 @@
           "fixedAmount": {
             "amount": "0.00"
           },
-          "additionalInfo": "An automated transfer that is debited from your account and  credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
+          "additionalInfo": "An automated transfer that is debited from your account and credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
         },
         {
           "name": "Overseas Withdrawal",
@@ -1723,7 +1731,7 @@
         {
           "featureType": "CASHBACK_OFFER",
           "additionalValue": "50.00",
-          "additionalInfo": "You could earn $50 cashback with a new account. If you open a new Westpac Choice everyday account and an eligible savings account between 9 June and 30 September 2026, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). Must be 18 years or older. T&Cs apply.",
+          "additionalInfo": "You could earn $50 cashback if you open a new Westpac Choice everyday account and an eligible savings account by 31st March 2027, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). T&Cs apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/campaign-faqs"
         },
         {
@@ -1880,7 +1888,7 @@
       "name": "Westpac Choice for migrants",
       "description": "A Westpac Choice everyday bank account for people who need to already be in Australia or arriving in the next 14 days to do this.",
       "url": "https://www.westpac.com.au/international-travel/new-to-australia/choice-new-arrivals/",
-      "lastUpdated": "2026-09-08T03:20:20Z",
+      "lastUpdated": "2026-10-02T01:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoiceMigrant",
       "depositRates": [
         {
@@ -2106,7 +2114,7 @@
           "fixedAmount": {
             "amount": "0.00"
           },
-          "additionalInfo": "An automated transfer that is debited from your account and  credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
+          "additionalInfo": "An automated transfer that is debited from your account and credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
         },
         {
           "name": "Overseas Withdrawal",
@@ -2184,7 +2192,7 @@
         {
           "featureType": "CASHBACK_OFFER",
           "additionalValue": "50.00",
-          "additionalInfo": "You could earn $50 cashback with a new account. You could get $50 ?Double U? cashback when you open a new Westpac Choice everyday account and an eligible Westpac Life savings account, between 9 June and 30 September 2026. Here?s how: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). Must be 18 years or older. T&Cs apply.",
+          "additionalInfo": "You could earn $50 cashback if you open a new Westpac Choice everyday account and an eligible savings account by 31st March 2027, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). T&Cs apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/campaign-faqs"
         },
         {
@@ -2348,7 +2356,7 @@
         },
         {
           "featureType": "OTHER",
-          "additionalInfo": "GET YOUR MOBILE SORTED WITH OPTUS - Exclusive offer for Westpac customers. Not a Westpac customer yet? Open a Choice everyday account first, then get a $39 Prepaid eSIM: Just $13 for the first 28 days. T&Cs of the Optus offer apply",
+          "additionalInfo": "GET YOUR MOBILE SORTED WITH OPTUS - Exclusive offer for Westpac customers. Not a Westpac customer yet? Open a Choice everyday account first, then get a $44 Prepaid eSIM: Just $13 for the first 28 days. T&Cs of the Optus offer apply",
           "additionalInfoUri": "https://www.optus.com.au/prepaid/sim-plans/westpac/39?utm_source=display&utm_medium=partners&utm_campaign=prepaid_partners&utm_id=9901W"
         },
         {
@@ -2368,7 +2376,7 @@
       "name": "Bank account with debit card for Students and young adults ",
       "description": "An everyday account packed with features so you can bank your way with ease.",
       "url": "https://www.westpac.com.au/bank-accounts/students-and-young-adults",
-      "lastUpdated": "2026-09-08T03:20:20Z",
+      "lastUpdated": "2026-10-02T01:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoiceStudent",
       "depositRates": [
         {
@@ -2509,7 +2517,7 @@
           "fixedAmount": {
             "amount": "0.00"
           },
-          "additionalInfo": "An automated transfer that is debited from your account and  credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
+          "additionalInfo": "An automated transfer that is debited from your account and credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
         },
         {
           "name": "Overseas Withdrawal",
@@ -2584,7 +2592,7 @@
         {
           "featureType": "CASHBACK_OFFER",
           "additionalValue": "50.00",
-          "additionalInfo": "You could earn $50 cashback with a new account. If you open a new Westpac Choice everyday account and an eligible savings account between 9 June and 30 September 2026, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). Must be 18 years or older. T&Cs apply.",
+          "additionalInfo": "You could earn $50 cashback if you open a new Westpac Choice everyday account and an eligible savings account by 31st March 2027, here's how you could get $50: Spend at least $50 on your debit card within 15 days of opening on eligible purchases. You must not have held any Westpac transaction account or savings account in the last 2 years. Accounts must be in your name only (no joint accounts). T&Cs apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/campaign-faqs"
         },
         {
@@ -2759,7 +2767,7 @@
       "name": "Youth Bank Account and Debit Card",
       "description": "Get a head start with a Westpac Choice Youth account. A simple-to-use kids bank account with a debit card that will grow up with you.",
       "url": "https://www.westpac.com.au/bank-accounts/kids-and-teens",
-      "lastUpdated": "2026-09-08T03:20:20Z",
+      "lastUpdated": "2026-10-02T01:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoiceYouth",
       "depositRates": [
         {
@@ -2900,7 +2908,7 @@
           "fixedAmount": {
             "amount": "0.00"
           },
-          "additionalInfo": "An automated transfer that is debited from your account and  credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
+          "additionalInfo": "An automated transfer that is debited from your account and credited to a specified account on a regular basis on your request. Additional fees apply for Periodical Payments made by Bank Cheque and International Periodical Payments. These additional fees are not included as part of any free monthly withdrawal allowance."
         },
         {
           "name": "Overseas Withdrawal",
@@ -2991,7 +2999,7 @@
         {
           "featureType": "CASHBACK_OFFER",
           "additionalValue": "50.00",
-          "additionalInfo": "Double your $50 when you bank and save with Westpac. Open a new Choice Youth everyday account and an eligible savings account together between 1 February 2026 and 30 September 2026, and here?s how you can get $50: Deposit $50 or more into your new Choice Youth everyday account within 10 days. We?ll add $50 to your savings account once you meet the criteria. You must not have held any Westpac transaction account or savings account in the last 2 years. T&Cs apply.",
+          "additionalInfo": "Double your $50 when you bank and save with Westpac. Open a new Choice Youth everyday account and an eligible savings account together by 31st March 2027, and here?s how you can get $50: Deposit $50 or more into your new Choice Youth everyday account within 10 days. We?ll add $50 to your savings account once you meet the criteria. You must not have held any Westpac transaction account or savings account in the last 2 years. T&Cs apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/campaign-faqs-youth"
         },
         {

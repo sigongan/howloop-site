@@ -1,7 +1,7 @@
 {
   "name": "Hume Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -369,7 +369,7 @@
       "name": "Reward Saver",
       "description": "Long Term savings account with bonus for each month you deposit $10 without any withdrawals",
       "url": "https://www.humebank.com.au/savings/reward-saver-account/",
-      "lastUpdated": "2026-06-01T08:09:47.000+10:00",
+      "lastUpdated": "2026-10-01T08:04:41.000+10:00",
       "source": "https://ibankob.humebank.com.au/OpenBanking/cds-au/v1/banking/products/S15V1",
       "depositRates": [
         {
@@ -387,7 +387,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0504",
+          "rate": "0.0529",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -861,12 +861,12 @@
       "name": "Professional Cash Management",
       "description": "Flexibility of regular transactional banking",
       "url": "https://www.humebank.com.au/business/professional-cash-management-account/",
-      "lastUpdated": "2026-05-28T10:37:49.000+10:00",
+      "lastUpdated": "2026-10-01T08:01:40.000+10:00",
       "source": "https://ibankob.humebank.com.au/OpenBanking/cds-au/v1/banking/products/S20V1",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0001",
+          "rate": "0.046",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P3M"
@@ -1170,7 +1170,7 @@
       "name": "Clancy Koala",
       "description": "One for little savers out there - Youth savings account for U12 years old",
       "url": "https://www.humebank.com.au/savings/clancy-koala-account/",
-      "lastUpdated": "2026-06-01T08:10:50.000+10:00",
+      "lastUpdated": "2026-10-01T08:03:44.000+10:00",
       "source": "https://ibankob.humebank.com.au/OpenBanking/cds-au/v1/banking/products/S2V1",
       "depositRates": [
         {
@@ -1188,7 +1188,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0504",
+          "rate": "0.0529",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

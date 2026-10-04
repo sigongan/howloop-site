@@ -1,7 +1,7 @@
 {
   "name": "Easy Street",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Easy Everyday Access account",
       "description": "An account for everyday with a debit card and no monthly account keeping fees, so you can shop, pay bills, access cash and more. Keep everyday banking low fuss with no minimum monthly deposit needed.",
       "url": "https://easystreet.com.au/everyday-account",
-      "lastUpdated": "2026-06-30T15:41:22.000+10:00",
+      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
       "source": "https://ebranch.easystreet.com.au/es-OpenBanking/cds-au/v1/banking/products/S11-ES-EA",
       "depositRates": [
         {
@@ -207,7 +207,7 @@
       "name": "Flex Saver",
       "description": "An online savings account that earns you interest every month on balances up to $3 million, regardless of how you save.",
       "url": "https://easystreet.com.au/products/flex-saver-account",
-      "lastUpdated": "2026-08-18T13:42:17.000+10:00",
+      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
       "source": "https://ebranch.easystreet.com.au/es-OpenBanking/cds-au/v1/banking/products/S37-FS",
       "depositRates": [
         {

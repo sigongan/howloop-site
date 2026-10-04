@@ -1,7 +1,7 @@
 {
   "name": "Summerland Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Bonus Saver",
       "description": "Save for a holiday, car or even a deposit for a new home! Summerland's Bonus Saver account is designed to help you reach your savings goals. Deposit $100 per calendar month & make no withdrawals to earn bonus interest.",
       "url": "https://summerland.com.au/saving-investing-accounts",
-      "lastUpdated": "2026-09-27T22:00:40.9367597Z",
+      "lastUpdated": "2026-10-04T22:00:40.8762834Z",
       "source": "https://public.cdr-api.summerland.com.au/cds-au/v1/banking/products/2",
       "depositRates": [
         {
@@ -126,7 +126,7 @@
       "name": "iSave Online",
       "description": "Summerland's electronic-only account with high interest. For those aged 12 years and over who operate their own accounts; or business or community groups. Must have a linked transaction account.",
       "url": "https://summerland.com.au/my-banking/bank-accounts/savings-accounts",
-      "lastUpdated": "2026-09-27T22:00:40.9367597Z",
+      "lastUpdated": "2026-10-04T22:00:40.8762834Z",
       "source": "https://public.cdr-api.summerland.com.au/cds-au/v1/banking/products/3",
       "depositRates": [
         {
@@ -260,7 +260,7 @@
       "name": "Gold Class",
       "description": "For those aged 65 or over or receiving a Government Aged, Veteran or Disability Pension.",
       "url": "https://www.summerland.com.au/my-banking/bank-accounts/everyday-transaction-accounts",
-      "lastUpdated": "2026-09-27T22:00:40.9367597Z",
+      "lastUpdated": "2026-10-04T22:00:40.8762834Z",
       "source": "https://public.cdr-api.summerland.com.au/cds-au/v1/banking/products/8",
       "depositRates": [
         {

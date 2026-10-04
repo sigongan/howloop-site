@@ -1,7 +1,7 @@
 {
   "name": "Bank of China",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -601,7 +601,7 @@
       "name": "Online Saver Statement",
       "description": "Online Saver Statement",
       "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
-      "lastUpdated": "2026-05-07T04:00:00.000+10:00",
+      "lastUpdated": "2026-10-01T04:00:00.000+10:00",
       "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55940656",
       "depositRates": [
         {
@@ -610,15 +610,15 @@
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
-          "additionalValue": "base rate for balance < $3,000 or =$5,000,000."
+          "additionalValue": "Online Saver Statement, base rate for balance < $3,000 or =$5,000,000."
         },
         {
           "depositRateType": "FIXED",
-          "rate": "0.021",
+          "rate": "0.0235",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
-          "additionalValue": "base rate for balance between $3,000 and $4,999,999.99."
+          "additionalValue": "Online Saver Statement, base rate for balance between $3,000 and $4,999,999.99."
         },
         {
           "depositRateType": "BONUS",
@@ -626,7 +626,7 @@
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
-          "additionalValue": "new account bonus rate 3.25% for first 3 months for balance $3,000 to $499,999.99, only new customer can enjoy this bonus rate."
+          "additionalValue": "Online Saver Statement, new account bonus rate 3.25% for first 4 months for balance $3,000 to $499,999.99, only new customer can enjoy this bonus rate."
         }
       ],
       "fees": [
@@ -671,7 +671,7 @@
       "name": "Online Saver",
       "description": "Online Saver",
       "url": "https://www.bankofchina.com/au/en/pbservice/pb1/201712/t20171214_10912637.html",
-      "lastUpdated": "2025-08-22T04:00:00.000+10:00",
+      "lastUpdated": "2026-10-01T04:00:00.000+10:00",
       "source": "https://api-gateway.bankofchina.com.au/cds-au/v1/banking/products/55940657",
       "depositRates": [
         {
@@ -680,15 +680,15 @@
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
-          "additionalValue": "base rate for balance < $3,000 or =$5,000,000."
+          "additionalValue": "Online Saver, base rate for balance < $3,000 or =$5,000,000."
         },
         {
           "depositRateType": "FIXED",
-          "rate": "0.0135",
+          "rate": "0.0235",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
-          "additionalValue": "base rate for balance between $3,000 and $4,999,999.99."
+          "additionalValue": "Online Saver, base rate for balance between $3,000 and $4,999,999.99."
         }
       ],
       "fees": [

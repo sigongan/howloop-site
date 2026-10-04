@@ -1,7 +1,7 @@
 {
   "name": "RSL Money",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -490,57 +490,49 @@
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY"
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "ADDITIONAL_CARDS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Visa Debit with payWave",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Visa Debit with payWave"
         },
         {
           "featureType": "UNLIMITED_TXNS",
           "additionalInfo": "Unlimited Visa, EFTPOS, BPAY, Pay Anyone, Direct Debit and Bank@Post Transactions",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "No monthly account keeping fees",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         }
       ],
       "additionalInformation": {
@@ -1042,71 +1034,61 @@
           "featureType": "OTHER",
           "additionalInfo": "0.20% of the balance is donated to RSL National per annum",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Visa Debit with payWave",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Visa Debit with payWave"
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY"
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "ADDITIONAL_CARDS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "UNLIMITED_TXNS",
           "additionalInfo": "Unlimited Visa, EFTPOS, BPAY, Pay Anyone, Direct Debit and Bank@Post Transactions",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Free cheque book",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Pension Account holders also receive 2.00% discount on the RSL Low Rate Visa Card ",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {

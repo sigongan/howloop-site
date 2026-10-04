@@ -1,7 +1,7 @@
 {
   "name": "Australian Military Bank",
-  "checkedAt": "2026-09-27T23:06:48.746Z",
-  "lastAttempt": "2026-09-27T23:06:48.746Z",
+  "checkedAt": "2026-10-04T23:15:27.597Z",
+  "lastAttempt": "2026-10-04T23:15:27.597Z",
   "status": "available",
   "products": [
     {
@@ -642,71 +642,61 @@
           "featureType": "OTHER",
           "additionalInfo": "1% cash back on Visa payWave purchases under $100 when you deposit at least $2,000 each month(excluding transfers from other RSL Money or Australian Military Bank accounts) (capped at $25 per month)",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "ADDITIONAL_CARDS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay"
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Visa Debit with no annual fee",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Visa Debit with no annual fee"
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Cents gifting program to selected Defence charities",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -902,29 +892,25 @@
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "No monthly account keeping fees",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Withdrawals available between 1 November and 31 January each year",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -1446,57 +1432,49 @@
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "No monthly account keeping fees",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY"
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Earn high interest specifically designed for self-managed superannuation funds",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -2159,64 +2137,55 @@
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "No monthly account keeping fees",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY"
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Visa Debit",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Visa Debit"
         },
         {
           "featureType": "ADDITIONAL_CARDS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay"
         }
       ],
       "additionalInformation": {
@@ -2250,14 +2219,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "0.00",
               "name": "Tier 2",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "0.00",
               "maximumValue": "500000.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -2273,14 +2240,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "0.00",
               "name": "Tier 2",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "0.00",
               "maximumValue": "500000.00",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "MATURITY",
@@ -2436,43 +2401,37 @@
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "No monthly account keeping fees",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "A bonus interest rate for balances between $5,000 - $500,000 when no withdrawals are made during the calendar month",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -3033,57 +2992,49 @@
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY"
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Visa Debit with no annual fee",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Visa Debit with no annual fee"
         },
         {
           "featureType": "ADDITIONAL_CARDS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay"
         }
       ],
       "additionalInformation": {
@@ -3117,14 +3068,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "10000.00",
               "name": "Tier 2",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "10000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -3140,14 +3088,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "0.00",
               "name": "Tier 1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "0.00",
               "maximumValue": "9999.99",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -3163,14 +3109,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "20000.00",
               "name": "Tier 1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "20000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -3186,14 +3129,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "20000.00",
               "name": "Tier 1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "20000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -3209,14 +3149,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "20000.00",
               "name": "Tier 1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "20000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -3320,14 +3257,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "20000.00",
               "name": "Tier 1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "20000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "MATURITY",
@@ -3343,14 +3277,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "0.00",
               "name": "Tier 1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "0.00",
               "maximumValue": "9999.99",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "MATURITY",
@@ -3366,14 +3298,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "10000.00",
               "name": "Tier 2",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "10000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "MATURITY",
@@ -3389,14 +3318,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "20000.00",
               "name": "Tier 1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "20000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "MATURITY",
@@ -3412,14 +3338,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "20000.00",
               "name": "Tier 1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "minimumValue": "20000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "MATURITY",
@@ -4171,50 +4094,43 @@
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Visa Debit",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Visa Debit"
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Tiered interest rate",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay"
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -4871,64 +4787,55 @@
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY"
         },
         {
           "featureType": "ADDITIONAL_CARDS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "No monthly account keeping fees",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Visa Debit",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Visa Debit"
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Apple Pay, Google Pay, Samsung Pay. Garmin Pay, Fitbit Pay"
         }
       ],
       "additionalInformation": {
@@ -5444,50 +5351,43 @@
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Members can set up a variety of notifications in Internet Banking",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Members can set up a variety of notifications in Internet Banking"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "No monthly account keeping fees",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY"
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Free Visa Debit card available for kids 11 years and over",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Free Visa Debit card available for kids 11 years and over"
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
