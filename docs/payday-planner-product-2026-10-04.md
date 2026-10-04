@@ -100,3 +100,24 @@ text-safe labels, no initial activation and idempotent controller initialization
 Browser inspection of the Cloudflare branch preview is required before production.
 The local shell cannot launch Chromium sockets and the cloud browser blocks
 localhost. No production merge/deploy is part of this initial review increment.
+
+### Initial review outcome
+
+- 194 tests pass after the print-scope regression was added; clean `npm ci` was
+  also verified before the final CSS-only correction.
+- Build: 69 generated routes. Readiness: 48 indexable URLs, 17 money guides,
+  116 bank snapshots, 609 products and 23 client scripts; no failures.
+- Cloudflare built commit `3c7ef8a` successfully at
+  https://9272a67c.howloop-site.pages.dev. Independent browser QA passed product
+  navigation, calculation/validation, safe label rendering, manual
+  save/restore/delete/cancellation, consent choices and a real CSV download.
+- Desktop visual inspection found no document-level horizontal overflow or
+  site-script errors at the available 1180px viewport. Browser-extension metadata
+  errors are separate from site code.
+- Browser DevTools is blocked by organization policy. True 320px device emulation
+  and network payload capture were not verified; code/DOM checks must not be
+  described as a network privacy audit. Responsive rules are implemented, but
+  mobile visual QA remains an explicit pre-production verification gap.
+- A final print-scope correction limits global header/footer hiding to the
+  cash-flow page and omits promotional invitations from print. It does not change
+  the interaction/controller behavior reviewed on the original preview commit.

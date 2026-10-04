@@ -27,3 +27,11 @@ test('demo provides no-JS content and explicit manual-save and cash-order limita
   assert.match(page,/Nothing saves automatically/);assert.match(page,/without encryption/);assert.match(page,/Weekends and public holidays do not shift payments/);
   assert.match(page,/data-cash-inputs hidden/);assert.match(page,/data-cash-exports hidden/);assert.match(page,/novalidate autocomplete="off"/);
 });
+
+
+test('shared invitation CSS keeps legacy-page print chrome outside planner scope',async()=>{
+  const css=await read('src/styles/cash-flow.css');
+  assert.match(css,/body:has\(\[data-cash-flow\]\) header\.hl-header/);
+  assert.match(css,/body:has\(\[data-cash-flow\]\) footer/);
+  assert.doesNotMatch(css,/@media print\{header\.hl-header,footer/);
+});
