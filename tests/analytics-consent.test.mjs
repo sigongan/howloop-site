@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   ANALYTICS_CHOICE_KEY,
+  analyticsPageLocation,
+  analyticsPageReferrer,
   clearAnalyticsCookies,
   initAnalyticsConsent,
 } from '../src/scripts/analytics-consent.mjs';
@@ -194,4 +196,24 @@ test('cookie cleanup only expires accessible GA cookies at current paths and kno
   const f = fixture();
   assert.equal(f.cookies.get('unrelated'), 'keep');
   assert.equal(f.saved.get('howloop-saved-plan'), '{"principal":10000}');
+});
+
+
+test('initial page configuration strips URL query/hash and reduces referrer to origin', () => {
+  const f = fixture();
+  f.win.location.href = 'https://howloop.how/tools/cash-flow/?balance=123&email=private#bills';
+  f.doc.referrer = 'https://example.com/private-path?amount=100#details';
+  f.accept.click();
+  const config = f.commands().find(command => command[0] === 'config')[2];
+  assert.equal(config.page_location, 'https://howloop.how/tools/cash-flow/');
+  assert.equal(config.page_referrer, 'https://example.com/');
+  assert.equal(config.allow_google_signals, false);
+  assert.equal(config.allow_ad_personalization_signals, false);
+});
+test('analytics URL helpers fail closed and remove URL credentials', () => {
+  assert.equal(analyticsPageLocation({href:'https://username:secret@howloop.how/tools/?x=1#x'}),'https://howloop.how/tools/');
+  assert.equal(analyticsPageLocation({href:'javascript:alert(1)'}),'https://howloop.how/');
+  assert.equal(analyticsPageReferrer('not a url'),'');
+  assert.equal(analyticsPageReferrer('file:///private/file'),'');
+  assert.equal(analyticsPageReferrer('https://user:secret@example.com/private'),'https://example.com/');
 });

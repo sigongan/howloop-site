@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import PaydayPlannerInvite from '../../components/PaydayPlannerInvite.astro';
 import '../../styles/calculator-workspace.css';
 import '../../styles/bank-search.css';
 import Calculator from '../../components/Calculator.astro';
@@ -21,6 +22,7 @@ const c=copy[tool.slug];
 <div class="calculator-page" data-tool={tool.slug}><header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/calculators">Calculators</a> / {tool.name}</div><h1>{tool.name} <span class="calc-title-note">calculator</span></h1><p>{tool.detail}</p></header>
 <div class="hl-wrap hl-page-main">
 <Calculator kind={tool.slug}/>
+{['emergency-fund','savings-goal'].includes(tool.slug) && <PaydayPlannerInvite placement={tool.slug}/>}
 {tool.slug === 'compound-interest' && <MoneyLesson topic="compound" id="compound-calculator-lesson"/>}
 {tool.slug === 'mortgage' && <MoneyLesson topic="offset" id="mortgage-calculator-lesson"/>}
 <QuickAnswers id="calculator-questions" topics={[tool.slug === 'mortgage' ? 'home' : 'saving']} title={tool.slug === 'mortgage' ? 'Questions about your home loan?' : 'Questions about your savings?'}/>

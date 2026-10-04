@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import PaydayPlannerInvite from '../../components/PaydayPlannerInvite.astro';
 import TaskPicker from '../../components/TaskPicker.astro';
 import ToolIcon from '../../components/ToolIcon.astro';
 ---
@@ -7,6 +8,7 @@ import ToolIcon from '../../components/ToolIcon.astro';
 <header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / Calculators</div><h1>Choose your calculator.</h1><p>Find your topic, then choose what you want to work out.</p></header>
 <div class="hl-wrap hl-page-main">
   <TaskPicker calculatorsOnly/>
+  <PaydayPlannerInvite placement="calculators"/>
   <aside class="tool-directory-help" aria-labelledby="calculator-help-title">
     <p class="tool-directory-note"><ToolIcon name="shield"/><span>Free to use. All amounts in AUD. Calculations run in your browser.</span></p>
     <h2 id="calculator-help-title">Understand the numbers.</h2>
