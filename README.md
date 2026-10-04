@@ -37,3 +37,17 @@ Official guidance:
 npm test runs the financial engine and existing trading-engine tests. npm run build generates all static routes. Calculator assumptions are published at /methodology. Browser QA should check custom rates, bank selection, invalid/zero inputs, save/restore/clear, CSV, and mobile layouts.
 
 The Windows sandbox used to author this revision required a local WebAssembly esbuild adapter. That adaptation is confined to ignored node_modules and is not part of this project or its dependency manifest; normal Cloudflare/Linux builds use the existing native esbuild dependencies.
+
+
+## Payday Planner preview
+
+`/tools/cash-flow/` is an original 13-week, local-first demonstration. It uses
+`src/lib/cash-flow.mjs` for deterministic integer-cent/date-only arithmetic.
+`/products/payday-planner/` explains the proposed paid kit and explicitly keeps
+checkout unavailable. See `docs/payday-planner-product-2026-10-04.md` for scope,
+measurement, validation and the remaining sale gates. No financial input is
+passed between the existing calculators and this preview.
+
+The DOM regression tests use the pinned jsdom development dependency. They
+exercise the real controller with the page's static controls, without making
+network requests. Existing engine and content tests remain in `npm test`.

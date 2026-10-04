@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import PaydayPlannerInvite from '../../components/PaydayPlannerInvite.astro';
 import Field from '../../components/MoneyField.astro';
 import SourceStatus from '../../components/SourceStatus.astro';
 import CalculatorExample from '../../components/CalculatorExample.astro';
@@ -48,6 +49,7 @@ const groups=earnings.populations.all.groups;
       <a class="salary-next-link" href="#compare-pay">How does my pay compare? ↓</a>
     </section>
   </div>
+  <PaydayPlannerInvite placement="salary"/>
   <noscript><p class="hl-noscript">Enable JavaScript to calculate your pay. The guide and official sources below are available without it.</p></noscript>
 
   <section class="salary-compare" id="compare-pay" aria-labelledby="compare-title">

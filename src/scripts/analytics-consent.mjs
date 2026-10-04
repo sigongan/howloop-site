@@ -2,6 +2,22 @@
 // This controls analytics only; it is not an advertising consent platform.
 export const ANALYTICS_CHOICE_KEY = 'howloop-analytics-choice-v1';
 
+// GA supports overriding these fields. Strip query strings, fragments and
+// credentials before the first page_view as well as our explicit events.
+export function analyticsPageLocation(location) {
+  try {
+    const url = new URL(location.href || `${location.protocol}//${location.hostname}${location.pathname}`);
+    if (!['http:', 'https:'].includes(url.protocol)) return 'https://howloop.how/';
+    return url.origin + url.pathname;
+  } catch { return 'https://howloop.how/'; }
+}
+export function analyticsPageReferrer(referrer) {
+  try {
+    const url = new URL(referrer);
+    return ['http:', 'https:'].includes(url.protocol) ? url.origin + '/' : '';
+  } catch { return ''; }
+}
+
 export function parseAnalyticsChoice(raw) {
   if (!raw) return null;
   try {
@@ -123,6 +139,8 @@ export function initAnalyticsConsent(doc = document, win = window) {
     win.gtag('config', measurementId, {
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
+      page_location: analyticsPageLocation(win.location),
+      page_referrer: analyticsPageReferrer(doc.referrer),
     });
     const script = doc.createElement('script');
     script.async = true;

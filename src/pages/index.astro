@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import PaydayPlannerInvite from '../components/PaydayPlannerInvite.astro';
 import BankLogo from '../components/BankLogo.astro';
 import ToolIcon from '../components/ToolIcon.astro';
 import MoneyScene from '../components/MoneyScene.astro';
@@ -67,8 +68,8 @@ const banks=[
       </div>
     </section>
   </div>
+  <div class="home-wrap"><PaydayPlannerInvite placement="home"/></div>
   <aside class="home-public-info home-wrap" aria-labelledby="home-about-title"><div><h2 id="home-about-title">Free tools. Clear sources.</h2><p>Howloop is an independent education project. You can use the tools without an account. Advertising may help support the site in future.</p></div><nav aria-label="About these free tools"><a href="/about/">Who makes Howloop?</a><a href="/methodology/">How the numbers work</a><a href="/contact/">Contact & corrections</a></nav></aside>
   <div class="home-source-note home-wrap"><p><ToolIcon name="checklist"/> Simple explanations. Official sources.</p><a href="/updates/">Rule updates & corrections <ToolIcon name="arrow"/></a><a href="/about/">About Howloop <ToolIcon name="arrow"/></a></div>
 </div>
 </Base>
-
