@@ -1,0 +1,35 @@
+---
+import { calculateCashFlow, createSampleModel, formatMoney, parseMoneyToCents } from '../lib/cash-flow.mjs';
+import { createTimingExampleModel, TIMING_EXAMPLE_START } from '../lib/cash-flow-examples.mjs';
+const original = createSampleModel(TIMING_EXAMPLE_START);
+const model = createTimingExampleModel();
+const example = calculateCashFlow(model);
+const firstPayments = example.days.slice(0, 5).filter(day => day.transactions.length);
+const dateLabel = (date) => new Intl.DateTimeFormat('en-AU', {day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(date+'T00:00:00Z'));
+const scheduleNames = {weekly:'Every 7 days',fortnightly:'Every 14 days',monthly:'Monthly',once:'One-off'};
+---
+<section class="planner-section planner-walkthrough planner-no-print" id="worked-example" aria-labelledby="cash-example-title">
+  <p class="planner-kicker">A FIXED, REPRODUCIBLE EXAMPLE · AUD</p>
+  <h2 id="cash-example-title">A positive finish can hide a shortfall before payday.</h2>
+  <p>The sample starts with {formatMoney(parseMoneyToCents(original.openingBalance))}. Now keep every payment the same and start with only {formatMoney(example.openingBalanceCents)} on {dateLabel(example.startDate)}. Before the first fortnightly pay arrives, three expenses have already left.</p>
+  <div class="planner-table-scroll" role="region" aria-label="Worked example payments, scroll horizontally on small screens" tabindex="0">
+    <table class="planner-table planner-example-table"><caption>Follow the first payments in this fixed example (AUD)</caption><thead><tr><th scope="col">Date</th><th scope="col">What happens</th><th scope="col">End-of-day balance</th></tr></thead>
+      <tbody>{firstPayments.map(day=><tr><th scope="row">{dateLabel(day.date)}</th><td>{day.transactions.map(t=>`${t.label}: ${t.kind==='income'?'+':'−'}${formatMoney(t.amountCents)}`).join('; ')}</td><td class:list={{'planner-negative':day.closingBalanceCents<0}}>{formatMoney(day.closingBalanceCents)}</td></tr>)}</tbody>
+    </table>
+  </div>
+  <p>The lowest end-of-day balance is <strong>{formatMoney(example.minimumClosingBalance.amountCents)} on {dateLabel(example.minimumClosingBalance.date)}</strong>. Yet the same entries finish the 13 weeks at <strong>{formatMoney(example.closingBalanceCents)}</strong>. Money arriving later cannot cover a payment that left earlier. The negative figure is an arithmetic shortfall, not an available overdraft.</p>
+  <p class="planner-small">These are deliberately limited, hypothetical entries, not a typical household budget. Unlisted expenses, tax, interest and fees are excluded. This example stays fixed when you edit your own plan above.</p>
+  <details class="planner-faq"><summary>See every input and reproduce the result</summary>
+    <p>First day: {dateLabel(model.startDate)}. Starting cash: {formatMoney(example.openingBalanceCents)}. Buffer: {formatMoney(example.bufferCents)}. The buffer is only a comparison line; it is not another expense.</p>
+    <div class="planner-table-scroll" role="region" aria-label="Fixed example inputs, scroll horizontally on small screens" tabindex="0"><table class="planner-table"><caption>All entries for the fixed example (AUD)</caption><thead><tr><th scope="col">Entry</th><th scope="col">Amount</th><th scope="col">First payment</th><th scope="col">Repeats</th></tr></thead><tbody>{[...model.income,...model.bills].map(row=><tr><th scope="row">{row.label}</th><td>{formatMoney(parseMoneyToCents(row.amount))}</td><td>{dateLabel(row.anchorDate)}</td><td>{scheduleNames[row.frequency]}</td></tr>)}</tbody></table></div>
+    <p>Over 91 days, seven fortnightly pays and three monthly pays total {formatMoney(example.totalIncomeCents)}. The listed bills total {formatMoney(example.totalExpenseCents)}. Starting cash + money in − money out = {formatMoney(example.closingBalanceCents)}. The exact calendar, not a monthly average, determines those payment counts.</p>
+  </details>
+  <slot />
+  <div class="planner-explainer-grid" id="entering-bills">
+    <section><h3>Fortnightly pay is not twice a month</h3><p>Every fortnight means every 14 days. It does not mean the 1st and 15th. Enter one known payday and let the planner generate its actual dates. If your employer pays twice monthly, enter two monthly schedules instead.</p></section>
+    <section><h3>Keep monthly bills monthly</h3><p>Do not turn a monthly bill into a four-week payment. Twelve calendar months and thirteen four-week blocks are different schedules. Enter the bill amount and its due date once, then choose Monthly. Use a separate one-off entry for an annual bill within your 13 weeks.</p></section>
+    <section><h3>Read both low points</h3><p>End-of-day balance combines that day's income and bills. “Low if bills leave first” checks a more cautious order. Neither predicts your bank's posting order. Review real payment dates, including weekends and public holidays, before relying on a plan.</p></section>
+    <section><h3>Include spending between bills</h3><p>Groceries, transport and smaller purchases use cash too. If you pay a credit-card statement from this account, avoid also counting the same purchases as cash leaving this account. Include the payments and transfers that actually reduce the balance you are modelling.</p></section>
+  </div>
+  <p class="planner-small">Howloop created this example using the same deterministic calculation engine as the planner. It is general education, with no financial-adviser review. For broader budgeting context, read <a href="https://moneysmart.gov.au/budgeting/how-to-do-a-budget" target="_blank" rel="noopener noreferrer">ASIC Moneysmart's budgeting guide</a>. That source does not endorse Howloop or verify this example. <a href="/contact/">Report an error or unclear step</a>.</p>
+</section>

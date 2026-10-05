@@ -1,5 +1,6 @@
 import { calculateCashFlow, createSampleModel, exportCashFlowCsv, formatMoney, MAX_SCHEDULE_ROWS } from '../lib/cash-flow.mjs';
 import { trackPlannerEvent } from './product-events.mjs';
+import { createTimingExampleModel } from '../lib/cash-flow-examples.mjs';
 
 export const CASH_FLOW_STORAGE_KEY = 'howloop-cash-flow-v1';
 export function parseSavedCashFlow(raw) {
@@ -157,6 +158,11 @@ export function initCashFlow(doc = document, win = window) {
   }));
   const replaceAllowed=()=>mode==='sample'||win.confirm('Replace the current entries? Unsaved changes will be lost.');
   find('example').addEventListener('click',()=>{if(!replaceAllowed())return;displayModel(createSampleModel(localToday()),'sample');calculate(false,false);});
+  const timingExample = find('timing');
+  if (timingExample) {
+    timingExample.addEventListener('click',()=>{if(!replaceAllowed())return;displayModel(createTimingExampleModel(),'sample');calculate(true,false);});
+    timingExample.hidden=false;
+  }
   find('blank').addEventListener('click',()=>{if(!replaceAllowed())return;displayModel({startDate:localToday(),openingBalance:'0',buffer:'0',income:[],bills:[]},'custom');calculate(false,false);form.elements.namedItem('openingBalance').focus();});
   find('save').addEventListener('click',()=>{
     if(!calculate(false,false))return;

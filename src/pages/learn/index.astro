@@ -37,7 +37,8 @@ const starts=[
   </section>
   <section class="learn-library" aria-labelledby="learn-library-title">
     <div class="learn-library-heading"><h2 id="learn-library-title">Find your next question</h2><p>Every guide starts with an example. Longer explanations and sources are there when you need them.</p></div>
-    <label class="hl-field lesson-search"><span>Search the guides</span><input type="search" id="lesson-search" placeholder="Try deposit, pay, tax or super" aria-controls="lesson-groups"/></label>
+    <label class="hl-field lesson-search" data-lesson-controls hidden><span>Search the guides</span><input type="search" id="lesson-search" placeholder="Try deposit, pay, tax or super" aria-controls="lesson-groups"/></label>
+    <p class="lesson-search-status" data-lesson-status role="status" aria-live="polite"></p>
     <nav class="learn-topics" aria-label="Learning topics">{groups.map(g=><a href={'#'+g.id} data-money-area={g.area}><span class="learn-topic-icon"><ToolIcon name={g.icon}/></span><span class="learn-topic-copy"><strong>{g.title}</strong><small>{g.sub}</small></span></a>)}</nav>
     <div id="lesson-groups">{groups.map(group=><section class="lesson-group" id={group.id} data-money-area={group.area}><div class="learn-area-heading" data-money-area={group.area}><span class="learn-topic-icon"><ToolIcon name={group.icon}/></span><div><h2>{group.title}</h2><p>{group.sub}</p></div></div><div class="lesson-list">{guides.filter(g=>g.group===group.id).map(g=><a class="lesson-card" href={'/learn/'+g.slug+'/'} data-lesson-search={[g.title,g.category,g.summary,g.slug,group.title,group.sub].join(' ').toLowerCase()}><div><h3>{g.title}</h3><small>{g.lab?'Adjustable example':'Worked example'} · {g.minutes} min guide</small></div><span aria-hidden="true"><ToolIcon name="arrow"/></span></a>)}</div></section>)}</div>
     <p class="learn-empty" data-lesson-empty hidden role="status">No matching guides. Try “home”, “savings”, “pay” or “tax”.</p>
@@ -46,11 +47,4 @@ const starts=[
   <aside class="hl-help-strip"><a href="/editorial-policy/">How we check our content <span aria-hidden="true">→</span></a><a href="/contact/">Suggest a topic or correction <span aria-hidden="true">→</span></a></aside>
 </div>
 </Base>
-<script>
-document.querySelector<HTMLInputElement>('#lesson-search')?.addEventListener('input',event=>{
- const query=(event.target as HTMLInputElement).value.toLowerCase().trim();let total=0;
- document.querySelectorAll<HTMLElement>('[data-lesson-search]').forEach(el=>{el.hidden=!el.dataset.lessonSearch!.includes(query);if(!el.hidden)total++;});
- document.querySelectorAll<HTMLElement>('.lesson-group').forEach(el=>el.hidden=![...el.querySelectorAll<HTMLElement>('[data-lesson-search]')].some(card=>!card.hidden));
- document.querySelector<HTMLElement>('[data-lesson-empty]')!.hidden=total>0;
-});
-</script>
+<script>import '../../scripts/lesson-search.mjs';</script>

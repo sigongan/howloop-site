@@ -1,5 +1,6 @@
 import {baseRateModel,savings} from './finance.mjs';
 import {rateSummary} from './rate-summary.mjs';
+import {guardBankRateModel} from './bank-rate-safety.mjs';
 
 // A scenario is an explicit assumption, not a determination of customer eligibility.
 // Daily welcome periods cannot be represented by this monthly approximation.
@@ -19,12 +20,13 @@ export function conditionalRateModel(product,startingBalance) {
   if(!current||current.type!==c.type||current.duration!==c.duration)throw Error('The published conditions or balance tiers cannot cover this whole plan. Check a custom scenario with the bank.');
   return current.total;
  };
- return {rateForBalance,type:c.type,welcomeMonths};
+ const guarded=guardBankRateModel(product,rateForBalance);
+ return guarded?{rateForBalance:guarded,type:c.type,welcomeMonths}:null;
 }
 export function compareBankScenarios(product,inputs) {
  const base=baseRateModel(product);
  if(!base)return null;
- const basic=savings({...inputs,rateForBalance:base});
+ let basic;try{basic=savings({...inputs,rateForBalance:base});}catch{return null;}
  const candidate=conditionalRateModel(product,inputs.principal);
  if(!candidate)return {base:basic,conditional:null};
  try{return {base:basic,conditional:{...candidate,result:savings({...inputs,rateForBalance:candidate.rateForBalance})}};}

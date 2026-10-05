@@ -56,3 +56,21 @@ test('blank/example replacement cancellation retains current data and initializa
   const f=setup();f.fill('openingBalance','999');f.win.confirm=()=>false;f.el('example').click();f.el('blank').click();assert.equal(f.doc.querySelector('[name=openingBalance]').value,'999');
   initCashFlow(f.doc,f.win);f.submit();assert.equal(f.events.length,1);f.dom.window.close();
 });
+
+test('fixed walkthrough loads its exact calendar, confirms replacements and records no activation',()=>{
+  const f=setup();
+  assert.equal(f.el('timing').hidden,false);
+  f.el('timing').click();
+  assert.equal(f.doc.querySelector('[name=startDate]').value,'2026-10-05');
+  assert.equal(f.doc.querySelector('[name=openingBalance]').value,'400.00');
+  assert.equal(f.el('low').textContent,'-$525.00');
+  assert.equal(f.el('closing').textContent,'$15,885.00');
+  assert.equal(f.doc.activeElement.id,'cash-result-title');
+  assert.deepEqual(f.events,[]);
+  f.fill('openingBalance','999.99');f.win.confirm=()=>false;f.el('timing').click();
+  assert.equal(f.doc.querySelector('[name=openingBalance]').value,'999.99');
+  f.win.confirm=()=>true;f.el('timing').click();
+  assert.equal(f.doc.querySelector('[name=openingBalance]').value,'400.00');
+  assert.equal(f.win.localStorage.getItem(CASH_FLOW_STORAGE_KEY),null);
+  f.dom.window.close();
+});
