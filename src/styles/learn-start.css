@@ -132,3 +132,5 @@ body .hl-wrap.lesson-reading-page .duty-states a,body .hl-wrap.lesson-reading-pa
 @media(max-width:760px){body .hl-wrap.learn-start-index .learn-topic-copy small{font-size:18px!important}}
 
 @media(max-width:760px){body .hl-wrap.learn-start-index.learn-page-heading h1{font-size:2rem;line-height:1.2;margin-bottom:12px}body .hl-wrap.learn-start-index.learn-page-heading>p{font-size:1.125rem;line-height:1.5}body .hl-wrap.lesson-reading-page.lesson-header h1{font-size:2rem;line-height:1.2;margin-bottom:12px}}
+
+.lesson-search-status{font-size:1rem;line-height:1.5;color:#526477;margin:.7rem 0 1rem}

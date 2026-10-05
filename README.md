@@ -8,9 +8,9 @@ Node 22; npm ci; npm run dev; npm run build (output: dist). Existing lockfile re
 
 ## Features
 
-- Four client-side calculators: compound interest with public bank base rates, mortgage and offset, savings goals, emergency funds.
+- Six client-side calculators for compound interest, mortgage and offset, savings goals, emergency funds, take-home pay and home-deposit LVR, plus a dated 13-week cash-flow planner.
 - Public CDR banking-brand explorer, dated product snapshots, explicit unavailable and partial states.
-- Six original money guides, methodology, about, contact, editorial, privacy and terms pages.
+- Seventeen original money guides, methodology, about, contact, editorial, privacy and terms pages.
 - Device-local opt-in plan save/restore/delete and CSV export.
 - Previous guide URLs and existing private trading utilities remain intact; the new public navigation focuses on money education.
 
@@ -51,3 +51,21 @@ passed between the existing calculators and this preview.
 The DOM regression tests use the pinned jsdom development dependency. They
 exercise the real controller with the page's static controls, without making
 network requests. Existing engine and content tests remain in `npm test`.
+
+
+## Type-check status
+
+`npm run check` fails explicitly if `@astrojs/check` or `typescript` is missing.
+The current dependency manifest does not provide them. Tests, the Astro build,
+and `npm run check:readiness` are separate gates; none should be described as a
+full Astro type-check pass. The wrapper never silently installs packages.
+
+## Automatic bank-rate safety
+
+All bank-rate consumers share the conservative guards in
+`src/lib/bank-rate-safety.mjs`. Ambiguous total-rate wording, prose-only caps or
+expiry periods must not be converted into guessed rates. Known account limits
+are enforced at opening and after every month, including the final contribution.
+The regression fixtures retain provider counterexamples even after live snapshots
+are refreshed. A saved bank-derived rate requires current usable source data; a
+custom-only saved plan remains a user-entered illustration.

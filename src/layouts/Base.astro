@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 import { SITE } from '../consts';
+import {isIndexableRoute} from '../lib/search-indexing.mjs';
 import {LANGUAGES,languageForPath} from '../lib/languages.mjs';
 import '../styles/global.css';
 import '../styles/finance.css';
@@ -33,7 +34,7 @@ const {
   type = 'website',
   publishedTime,
   modifiedTime,
-  noindex = false,
+  noindex = !isIndexableRoute(Astro.url.pathname),
   jsonLd,
 } = Astro.props;
 

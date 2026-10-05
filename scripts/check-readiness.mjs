@@ -5,6 +5,7 @@
  */
 import fs from 'node:fs/promises';
 import './check-client-syntax.mjs';
+import {isIndexableRoute} from '../src/lib/search-indexing.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -14,7 +15,6 @@ const origin = 'https://howloop.how';
 const failures = [];
 const warnings = [];
 const fail = (message) => failures.push(message);
-const isArchive = (route) => /^\/(guides|topics)(\/|$)/.test(route);
 const isTechnical = (route) => /^\/(desk|trade)(\/|$)/.test(route);
 const normalise = (route) => route === '/' ? route : route.replace(/\/$/, '');
 const read = (file) => fs.readFile(file, 'utf8');
@@ -61,13 +61,13 @@ for (const [route, { html }] of pages) {
   const description = meta(html, 'description')?.trim();
   const canonical = tags(html, 'link').filter((item) => item.rel === 'canonical');
   const noindex = /\bnoindex\b/i.test(meta(html, 'robots') ?? '');
-  const excluded = isArchive(route) || route === '/404';
+  const excluded = !isIndexableRoute(route);
   if (!title) fail(route + ': missing title');
   if (!description) fail(route + ': missing description');
   if (canonical.length !== 1) fail(route + ': needs one canonical');
   const expected = origin + (route === '/' ? '/' : route + '/');
   if (canonical[0]?.href !== expected) fail(route + ': canonical differs from ' + expected);
-  if (!noindex && excluded) fail(route + ': archive/error page must have its declared noindex');
+  if (!noindex && excluded) fail(route + ': archive/error/unfinished page must have its declared noindex');
   if (noindex && !excluded) fail(route + ': maintained public page is accidentally noindex');
   if ((html.match(/<h1\b/gi) ?? []).length !== 1) fail(route + ': needs exactly one main heading');
   if (!tags(html, 'main').some((item) => item.id === 'main')) fail(route + ': missing main landmark/skip target');

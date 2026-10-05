@@ -1,0 +1,502 @@
+{
+  "ing": {
+    "id": "fc9352a8-ad27-eb11-a834-000d3a8842e1",
+    "name": "ING BANK (Australia) Ltd",
+    "checkedAt": "2026-10-04T23:15:27.597Z",
+    "status": "available",
+    "products": [
+      {
+        "id": "b7bb9da4-3913-484c-8d2d-3fc99b9b4a72",
+        "name": "Savings Maximiser",
+        "source": "https://id.ob.ing.com.au/cds-au/v1/banking/products/b7bb9da4-3913-484c-8d2d-3fc99b9b4a72",
+        "url": "https://www.ing.com.au/savings/savings-maximiser.html",
+        "depositRates": [
+          {
+            "depositRateType": "VARIABLE",
+            "rate": "0.0001",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M"
+          },
+          {
+            "depositRateType": "BONUS",
+            "rate": "0.0549",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [
+              {
+                "name": "Amount",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "1000.00",
+                "rateApplicationMethod": "WHOLE_BALANCE",
+                "applicabilityConditions": [
+                  {
+                    "rateApplicabilityType": "DEPOSIT_BALANCE_INCREASED",
+                    "additionalValue": "0.01",
+                    "additionalInfo": "For customers who also have an Orange Everyday bank account and do this each month: Grow their nominated Savings Maximiser balance (excluding interest earned for the current month)."
+                  },
+                  {
+                    "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+                    "additionalValue": "1000.00",
+                    "additionalInfo": "For customers who also have an Orange Everyday bank account and do this each month: Deposit at least $1,000 from an external source to an Orange Everyday, Savings Maximiser, Savings Accelerator, Personal Term Deposit, ING Personal Loan or ING Home Loan in your name."
+                  },
+                  {
+                    "rateApplicabilityType": "MIN_PURCHASES",
+                    "additionalValue": "5",
+                    "additionalInfo": "For customers who also have an Orange Everyday bank account and do this each month: Make 5 or more settled (not pending) eligible ING card purchases"
+                  }
+                ]
+              }
+            ],
+            "applicabilityConditions": [
+              {
+                "rateApplicabilityType": "DEPOSIT_BALANCE_INCREASED",
+                "additionalValue": "0.01",
+                "additionalInfo": "For customers who also have an Orange Everyday bank account and do this each month: Grow their nominated Savings Maximiser balance (excluding interest earned for the current month)."
+              },
+              {
+                "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+                "additionalValue": "1000.00",
+                "additionalInfo": "For customers who also have an Orange Everyday bank account and do this each month: Deposit at least $1,000 from an external source to an Orange Everyday, Savings Maximiser, Savings Accelerator, Personal Term Deposit, ING Personal Loan or ING Home Loan in your name."
+              },
+              {
+                "rateApplicabilityType": "MIN_PURCHASES",
+                "additionalValue": "5",
+                "additionalInfo": "For customers who also have an Orange Everyday bank account and do this each month: Make 5 or more settled (not pending) eligible ING card purchases"
+              }
+            ],
+            "additionalValue": "P1M",
+            "additionalInfo": "When the criteria is met in a calendar month, the benefits and additional variable rate will apply in the next calendar month. Available on one account for balances up to $100,000."
+          }
+        ],
+        "constraints": [
+          {
+            "constraintType": "MAX_BALANCE",
+            "additionalValue": "5000000.00",
+            "additionalInfo": "We may not accept a deposit to your Savings Maximiser if it would result in the combined deposits of all your Savings Maximiser(s) (whether in individual or joint names) exceeding $5,000,000."
+          }
+        ],
+        "eligibility": [
+          {
+            "eligibilityType": "MIN_AGE",
+            "additionalValue": "18",
+            "additionalInfo": "You must be aged 18 or over."
+          },
+          {
+            "eligibilityType": "OTHER",
+            "additionalInfo": "You must be an Australian resident for taxation purposes."
+          }
+        ]
+      }
+    ]
+  },
+  "defence": {
+    "id": "1a74d48b-7e9e-eb11-a821-000d3a884a20",
+    "name": "Defence Bank",
+    "checkedAt": "2026-10-04T23:15:27.597Z",
+    "status": "available",
+    "products": [
+      {
+        "id": "119",
+        "name": "Salute Account",
+        "source": "https://product.defencebank.com.au/cds-au/v1/banking/products/119",
+        "url": "https://www.defencebank.com.au/banking/savings-accounts/salute-account/",
+        "depositRates": [
+          {
+            "depositRateType": "BONUS",
+            "rate": "0.0550",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [],
+            "additionalInfo": "Bonus rate is the total rate payable for the first 12 months.",
+            "additionalInfoUri": "https://www.defencebank.com.au/banking/savings-accounts/salute-account/"
+          },
+          {
+            "depositRateType": "VARIABLE",
+            "rate": "0.0375",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [],
+            "additionalInfo": "Base variable rate. Account balances above $250,000. The variable rate after 12 months.",
+            "additionalInfoUri": "https://www.defencebank.com.au/banking/savings-accounts/salute-account/"
+          }
+        ],
+        "constraints": [],
+        "eligibility": [
+          {
+            "eligibilityType": "OTHER",
+            "additionalInfo": "Available to ADF members who are within 12 Months either side of milestones.",
+            "additionalInfoUri": "https://www.defencebank.com.au/tools-and-advice/legal-and-compliance/disclosure-documents/"
+          },
+          {
+            "eligibilityType": "OTHER",
+            "additionalInfo": "Product available only for members who meet a recognised ADF milestone.",
+            "additionalInfoUri": "https://www.defencebank.com.au/banking/savings-accounts/salute-account/"
+          },
+          {
+            "eligibilityType": "OTHER",
+            "additionalInfo": "$1500 per month into your Everyday Access account.",
+            "additionalInfoUri": "https://www.defencebank.com.au/banking/savings-accounts/salute-account/"
+          },
+          {
+            "eligibilityType": "EMPLOYMENT_STATUS",
+            "additionalInfo": "Our Salute account rewards those who have been deployed, have reached 15 and 25 years of service or have transitioned out with bonus interest for 12 months.",
+            "additionalInfoUri": "https://www.defencebank.com.au/banking/savings-accounts/salute-account/"
+          }
+        ]
+      }
+    ]
+  },
+  "racq": {
+    "id": "79e00408-cb0e-ec11-a826-000d3a884a20",
+    "name": "RACQ Bank",
+    "checkedAt": "2026-10-04T23:15:27.597Z",
+    "status": "available",
+    "products": [
+      {
+        "id": "404",
+        "name": "Bonus Saver Account",
+        "source": "https://cdrbank.racq.com.au/cds-au/v1/banking/products/404",
+        "url": null,
+        "depositRates": [
+          {
+            "rate": "0.0350",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "additionalValue": "Bonus rate interest is paid if deposits totalling at least $100 and no debit transactions are made to the account during the calendar month. Bonus Rate quoted includes Base Rate.",
+            "tiers": [
+              {
+                "name": "Bonus rate over $99,999",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "99999.01",
+                "rateApplicationMethod": "WHOLE_BALANCE"
+              }
+            ],
+            "applicabilityConditions": [
+              {
+                "rateApplicabilityType": "MIN_DEPOSITS",
+                "additionalValue": "1"
+              },
+              {
+                "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+                "additionalValue": "100.00"
+              },
+              {
+                "rateApplicabilityType": "MAX_WITHDRAWALS",
+                "additionalValue": "0"
+              },
+              {
+                "rateApplicabilityType": "MAX_WITHDRAWAL_AMOUNT",
+                "additionalValue": "0.00"
+              }
+            ],
+            "depositRateType": "BONUS"
+          },
+          {
+            "rate": "0.0001",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [
+              {
+                "name": "Base rate Up to $99,999",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "0",
+                "maximumValue": "99999",
+                "rateApplicationMethod": "WHOLE_BALANCE"
+              }
+            ],
+            "depositRateType": "VARIABLE"
+          },
+          {
+            "rate": "0.0575",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "additionalValue": "Bonus rate interest is paid if deposits totalling at least $100 and no debit transactions are made to the account during the calendar month. Bonus Rate quoted includes Base Rate.",
+            "tiers": [
+              {
+                "name": "Bonus rate Up to $99,999",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "0",
+                "maximumValue": "99999",
+                "rateApplicationMethod": "WHOLE_BALANCE"
+              }
+            ],
+            "applicabilityConditions": [
+              {
+                "rateApplicabilityType": "MIN_DEPOSITS",
+                "additionalValue": "1"
+              },
+              {
+                "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+                "additionalValue": "100.00"
+              },
+              {
+                "rateApplicabilityType": "MAX_WITHDRAWALS",
+                "additionalValue": "0"
+              },
+              {
+                "rateApplicabilityType": "MAX_WITHDRAWAL_AMOUNT",
+                "additionalValue": "0.00"
+              }
+            ],
+            "depositRateType": "BONUS"
+          },
+          {
+            "rate": "0.0001",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [
+              {
+                "name": "Base rate over $99,999",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "99999.01",
+                "rateApplicationMethod": "WHOLE_BALANCE"
+              }
+            ],
+            "depositRateType": "VARIABLE"
+          }
+        ],
+        "constraints": [],
+        "eligibility": [
+          {
+            "eligibilityType": "RESIDENCY_STATUS",
+            "additionalValue": "Australian Resident"
+          },
+          {
+            "eligibilityType": "MIN_AGE",
+            "additionalValue": "13"
+          },
+          {
+            "eligibilityType": "NATURAL_PERSON"
+          },
+          {
+            "eligibilityType": "OTHER",
+            "additionalInfo": "Bonus Saver accounts are restricted to maximum 2 owned per member."
+          }
+        ]
+      }
+    ]
+  },
+  "teachers": {
+    "id": "480a35cd-4c7d-eb11-a820-000d3a884a20",
+    "name": "Teachers Mutual Bank",
+    "checkedAt": "2026-10-04T23:15:27.597Z",
+    "status": "available",
+    "products": [
+      {
+        "id": "501d1af4-4a3a-4b5f-a90f-c5a0933fb4a5",
+        "name": "Starter Saver account",
+        "source": "https://ob.tmbl.com.au/tmbank/cds-au/v1/banking/products/501d1af4-4a3a-4b5f-a90f-c5a0933fb4a5",
+        "url": "https://www.tmbank.com.au/banking/starter-saver",
+        "depositRates": [
+          {
+            "depositRateType": "VARIABLE",
+            "rate": "0.055",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [
+              {
+                "name": "Starter Saver account_Tier_1",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "0.00",
+                "maximumValue": "50000.00",
+                "rateApplicationMethod": "PER_TIER"
+              }
+            ],
+            "additionalInfo": "The product pays members a higher rate of interest on balances up to $20,000.00, with a stepped down rate for balances $20,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."
+          },
+          {
+            "depositRateType": "VARIABLE",
+            "rate": "0.045",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [
+              {
+                "name": "Starter Saver account_Tier_2",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "50000.01",
+                "rateApplicationMethod": "PER_TIER"
+              }
+            ],
+            "additionalInfo": "The product pays members a higher rate of interest on balances up to $20,000.00, with a stepped down rate for balances $20,000.01 and over. Members have funds available at call, with flexibility to access their funds without forfeiting interest within a calendar month."
+          }
+        ],
+        "constraints": [],
+        "eligibility": [
+          {
+            "eligibilityType": "OTHER",
+            "additionalInfo": "You must be a member. Membership is open to current or retired employees of the Australian education sector or family members of members (i.e. shareholders) of the Bank.",
+            "additionalInfoUri": "https://www.tmbank.com.au/banking/starter-saver"
+          },
+          {
+            "eligibilityType": "RESIDENCY_STATUS",
+            "additionalValue": "Individuals must be citizens or permanent residents of Australia."
+          },
+          {
+            "eligibilityType": "MAX_AGE",
+            "additionalValue": "29",
+            "additionalInfo": "This Product is only available for members aged under 30 years and Students"
+          }
+        ]
+      }
+    ]
+  },
+  "smsf": {
+    "id": "2ee9e2a8-1c98-eb11-a821-000d3a884a20",
+    "name": "Australian Military Bank",
+    "checkedAt": "2026-10-04T23:15:27.597Z",
+    "status": "available",
+    "products": [
+      {
+        "id": "3c42c73d-8632-4304-9f0e-132ad5f1ab42",
+        "name": "DIY Super Saver",
+        "source": "https://public.open.australianmilitarybank.com.au/cds-au/v1/banking/products/3c42c73d-8632-4304-9f0e-132ad5f1ab42",
+        "url": "https://www.australianmilitarybank.com.au//superannuation/diy-super-saver-account",
+        "depositRates": [
+          {
+            "depositRateType": "VARIABLE",
+            "rate": "0.0375",
+            "additionalInfo": null,
+            "additionalInfoUri": null,
+            "additionalValue": null,
+            "applicationFrequency": "P1M",
+            "calculationFrequency": "P1D",
+            "tiers": [],
+            "applicationType": "PERIODIC",
+            "applicabilityConditions": []
+          }
+        ],
+        "constraints": [],
+        "eligibility": [
+          {
+            "eligibilityType": "OTHER",
+            "additionalInfo": "Only self-managed super funds can open a DIY Super Saver Account.",
+            "additionalInfoUri": null,
+            "additionalValue": null
+          },
+          {
+            "eligibilityType": "RESIDENCY_STATUS",
+            "additionalInfo": null,
+            "additionalInfoUri": null,
+            "additionalValue": "Self-managed super fund must be registered in Australia"
+          }
+        ]
+      }
+    ]
+  },
+  "business": {
+    "id": "971e8453-8933-eb11-a835-000d3a8842e1",
+    "name": "CommFCU",
+    "checkedAt": "2026-10-04T23:15:27.597Z",
+    "status": "available",
+    "products": [
+      {
+        "id": "S99-FBOS",
+        "name": "FIRSTBIZ ONLINE SAVER",
+        "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S99-FBOS",
+        "url": "https://www.communityfirst.com.au/products/firstbiz-online-saver",
+        "depositRates": [
+          {
+            "depositRateType": "VARIABLE",
+            "rate": "0.0325",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [
+              {
+                "name": "FIRSTBIZ ONLINE SAVER_Tier_1",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "0.00",
+                "maximumValue": "49999.99",
+                "rateApplicationMethod": "WHOLE_BALANCE"
+              }
+            ],
+            "additionalInfoUri": "https://www.communityfirst.com.au/products/firstbiz-online-saver"
+          },
+          {
+            "depositRateType": "VARIABLE",
+            "rate": "0.0275",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [
+              {
+                "name": "FIRSTBIZ ONLINE SAVER_Tier_2",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "50000.00",
+                "maximumValue": "499999.99",
+                "rateApplicationMethod": "WHOLE_BALANCE"
+              }
+            ],
+            "additionalInfoUri": "https://www.communityfirst.com.au/products/firstbiz-online-saver"
+          },
+          {
+            "depositRateType": "VARIABLE",
+            "rate": "0.0225",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "tiers": [
+              {
+                "name": "FIRSTBIZ ONLINE SAVER_Tier_3",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": "500000.00",
+                "rateApplicationMethod": "WHOLE_BALANCE"
+              }
+            ],
+            "additionalInfoUri": "https://www.communityfirst.com.au/products/firstbiz-online-saver"
+          }
+        ],
+        "constraints": [],
+        "eligibility": [
+          {
+            "eligibilityType": "BUSINESS"
+          }
+        ]
+      }
+    ]
+  },
+  "gst": {
+    "id": "19568386-2b43-eb11-a81e-000d3a884a20",
+    "name": "First Option Bank",
+    "checkedAt": "2026-10-04T23:15:27.597Z",
+    "status": "available",
+    "products": [
+      {
+        "id": "GST_TAX_SAVER",
+        "name": "GST/TAX SAVER",
+        "source": "https://internetbanking.firstoption.com.au/OpenBanking/cds-au/v1/banking/products/GST_TAX_SAVER",
+        "url": "https://firstoptionbank.com.au/disclosure-statements/",
+        "depositRates": [
+          {
+            "depositRateType": "VARIABLE",
+            "rate": "0.005",
+            "calculationFrequency": "P1D",
+            "applicationType": "PERIODIC",
+            "applicationFrequency": "P1M",
+            "additionalInfoUri": "https://www.firstoptionbank.com.au/deposit-rates/"
+          }
+        ],
+        "constraints": [],
+        "eligibility": [
+          {
+            "eligibilityType": "BUSINESS"
+          },
+          {
+            "eligibilityType": "RESIDENCY_STATUS",
+            "additionalInfo": "Australian Residents"
+          }
+        ]
+      }
+    ]
+  }
+}

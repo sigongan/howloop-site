@@ -1,6 +1,7 @@
 import {baseRateModel} from './finance.mjs';
+import {hasAmbiguousRateText,validDepositRate} from './bank-rate-safety.mjs';
 
-const validRate=value=>(typeof value==='string'&&value.trim()!==''||typeof value==='number')&&Number.isFinite(Number(value))&&Number(value)>=0&&Number(value)<=.3;
+const validRate=validDepositRate;
 export const formatRate=value=>Number.isFinite(value)?value.toLocaleString('en-AU',{minimumFractionDigits:2,maximumFractionDigits:4})+'%':'Not supplied';
 
 // Display a single qualifying rate only when the balance selects one clear adjustment.
@@ -11,9 +12,9 @@ function adjustmentAtBalance(rows,balance){
  if(rows.some(r=>r.tiers?.length!==1))return null;
  if(rows.some(r=>{const t=r.tiers[0];return t.unitOfMeasure!=='DOLLAR'||t.rateApplicationMethod!=='WHOLE_BALANCE'||t.minimumValue===undefined||t.minimumValue===null||String(t.minimumValue).trim()===''||!Number.isFinite(Number(t.minimumValue))||Number(t.minimumValue)<0||(t.maximumValue!==undefined&&(t.maximumValue===null||String(t.maximumValue).trim()===''||!Number.isFinite(Number(t.maximumValue))||Number(t.maximumValue)<Number(t.minimumValue)));}))return null;
  const sorted=[...rows].sort((a,b)=>Number(a.tiers[0].minimumValue)-Number(b.tiers[0].minimumValue));
- if(sorted.some((r,i)=>i>0&&Number(r.tiers[0].minimumValue)<=Number(sorted[i-1].tiers[0].maximumValue??Infinity)))return null;
- const matching=rows.filter(r=>balance>=Number(r.tiers[0].minimumValue)&&balance<=Number(r.tiers[0].maximumValue??Infinity));
- return matching.length===1?matching[0]:null;
+ if(sorted.some((r,i)=>i>0&&Number(r.tiers[0].minimumValue)<Number(sorted[i-1].tiers[0].maximumValue??Infinity)))return null;
+ // At a shared boundary the upper tier applies, per the CDR tier definition.
+ return sorted.findLast(r=>balance>=Number(r.tiers[0].minimumValue)&&balance<=Number(r.tiers[0].maximumValue??Infinity))??null;
 }
 export function rateSummary(product,balance){
  const rows=Array.isArray(product?.depositRates)?product.depositRates:[];
@@ -26,10 +27,12 @@ export function rateSummary(product,balance){
  // The existing model rejects conditional or ambiguous base structures.
  const baseRows=rows.filter(r=>r.depositRateType==='VARIABLE');
  const model=baseRows.length&&baseRows.every(r=>validRate(r.rate))?baseRateModel({...product,depositRates:rows}):null;
- const base=model?model(balance):null;
+ let base=null;try{base=model?model(balance):null;}catch{}
  const adjustmentTypes=[...new Set(rows.filter(r=>r.depositRateType!=='VARIABLE').map(r=>r.depositRateType))];
  if(base===null||adjustmentTypes.length!==1||!['BONUS','INTRODUCTORY'].includes(adjustmentTypes[0]))return {base,conditional:null,components};
- const type=adjustmentTypes[0],row=adjustmentAtBalance(rows.filter(r=>r.depositRateType===type),balance);
+ const type=adjustmentTypes[0],adjustments=rows.filter(r=>r.depositRateType===type);
+ if(hasAmbiguousRateText(adjustments))return {base,conditional:null,components};
+ const row=adjustmentAtBalance(adjustments,balance);
  if(!row)return {base,conditional:null,components};
  const total=base+Number(row.rate)*100;
  if(total>30)return {base,conditional:null,components};

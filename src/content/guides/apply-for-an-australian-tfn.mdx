@@ -5,7 +5,7 @@ description: 'The right way to apply for a TFN depends entirely on who you are �
 topic: 'paperwork'
 bare: true
 published: 2026-08-12
-updated: 2026-08-12
+updated: 2026-10-06
 timeNeeded: '5–30 minutes to apply; up to 28 days to receive it'
 difficulty: 'Easy'
 cost: 'Free'
@@ -21,7 +21,7 @@ steps:
   - title: 'Visa holder with current work rights'
     text: 'Apply online through the Individual Auto-Registration system. No documents to send — your visa is checked automatically against Department of Home Affairs records. Blocked by visa conditions 8101, 8103 and 8116.'
   - title: 'Australian resident without a Digital ID'
-    text: 'Apply in person at a participating Australia Post outlet or a Services Australia service centre with original identity documents, or by post using form NAT 1432 with certified copies. Free at any age.'
+    text: 'Check the ATO resident application options. Australia Post accepts eligible applications with original identity documents. The Services Australia route is for its customers; paper applications have separate conditions.'
   - title: 'Living outside Australia with Australian income'
     text: 'Apply using the paper form NAT 2628, posted with certified copies of your identity documents — never the originals.'
 faq: []
@@ -32,7 +32,7 @@ import RouteMap from '../../components/RouteMap.astro';
 
 export const tfnSafety = {
   title: 'Once you have it, guard it',
-  text: 'Only your employer (after you start work), your bank, your super fund and a registered tax agent ever need your TFN. Never put it on a resume. The ATO will never text or email you a link asking you to log in, and will never ask for payment by gift card.',
+  text: 'Only provide your TFN when the recipient is legally allowed to collect it. If you are unsure, verify the request directly with the ATO. Never put your TFN on a resume or send it to Howloop. Use official contact details rather than links in an unexpected message.',
 };
 
 export const tfnPeople = [
@@ -141,9 +141,10 @@ export const tfnLanes = [
         ],
       },
       {
-        label: 'Services Australia service centre',
+        label: 'Services Australia — eligible customers only',
         items: [
-          { icon: 'dot', text: 'Complete the paper form NAT 1432' },
+          { icon: 'dot', text: 'This route is for Services Australia or Centrelink customers; check the current ATO conditions first' },
+          { icon: 'dot', text: 'Complete the paper form NAT 1432 if this is the route that applies to you' },
           { icon: 'dot', text: 'Bring current original documents to a service centre' },
         ],
       },
@@ -192,7 +193,7 @@ anything specific to your circumstances, use the [ATO](https://www.ato.gov.au)
 directly or speak to a registered tax agent.
 </Callout>
 
-There are four completely different ways to apply for a Tax File Number.
+There are different routes for applying for a Tax File Number, with eligibility conditions for each.
 Here they all are, side by side — pick who you are and the rest fade out, or read all four.
 
 <RouteMap
@@ -203,3 +204,13 @@ Here they all are, side by side — pick who you are and the rest fade out, or r
   lanes={tfnLanes}
   safety={tfnSafety}
 />
+
+
+<Callout type="info" title="Targeted corrections — 6 October 2026">
+The TFN safety note now refers to lawful recipients rather than an incomplete
+exclusive list. The Services Australia option is limited to eligible customers.
+These two corrections do not mean every step in this archived guide was reviewed again.
+Check the [ATO resident application guidance](https://www.ato.gov.au/individuals-and-families/tax-file-number/apply-for-a-tfn/australian-residents-tfn-application)
+and the [OAIC explanation of who can ask for a TFN](https://www.oaic.gov.au/privacy/your-privacy-rights/your-personal-information/your-tax-file-number)
+before acting.
+</Callout>

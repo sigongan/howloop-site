@@ -2,33 +2,19 @@ import {baseRateModel,savings} from './finance.mjs';
 import {rateSummary} from './rate-summary.mjs';
 import {compareBankScenarios} from './bank-scenarios.mjs';
 import {bankFreshness} from './bank-freshness.mjs';
+import {withinAccountLimits,hasAmbiguousRateText} from './bank-rate-safety.mjs';
 
 const restricted = /business|trust|smsf|superannuation|corporate|community|charity|commercial|farm|statutory|solicitor|body corporate|offset|loan|pension|retire|junior|youth|kid|child|student|teen|christmas|settlement|foreign|\b(?:USD|GBP|EUR)\b/i;
 export function isSavingsCandidate(product) {
  if(!product || !/sav|optimiser|growth|stash/i.test(product.name??'') || restricted.test(product.name))return false;
- if((product.eligibility??[]).some(e=>e.eligibilityType==='MAX_AGE'||e.eligibilityType==='MIN_AGE'&&Number(e.additionalValue)>18))return false;
+ const eligibility=Array.isArray(product.eligibility)?product.eligibility:[];
+ if(eligibility.some(e=>e.eligibilityType==='MAX_AGE'||e.eligibilityType==='MIN_AGE'&&Number(e.additionalValue)>18))return false;
+ const types=new Set(eligibility.map(e=>e.eligibilityType));
+ if(types.has('BUSINESS')&&!types.has('NATURAL_PERSON'))return false;
+ if(types.has('PENSION_RECIPIENT'))return false;
+ const eligibilityText=eligibility.map(e=>[e.additionalInfo,e.additionalValue].filter(Boolean).join(' ')).join(' ');
+ if(/\bonly\b.{0,40}\b(?:self[ -]managed super(?:annuation)? funds?|SMSFs?)\b|\b(?:self[ -]managed super(?:annuation)? funds?|SMSFs?)\b.{0,30}\bonly\b/i.test(eligibilityText))return false;
  return Array.isArray(product.depositRates)&&product.depositRates.length>0;
-}
-const amount=value=>(typeof value==='string'&&/^\d+(?:\.\d+)?$/.test(value.trim())||typeof value==='number')&&Number.isFinite(Number(value))&&Number(value)>=0?Number(value):null;
-function withinAccountLimits(product,start,end){
- for(const rule of product.constraints??[]){
-  if(!['MIN_BALANCE','OPENING_BALANCE','MAX_BALANCE'].includes(rule.constraintType))continue;
-  const limit=amount(rule.additionalValue);
-  if(limit===null)return false;
-  // Balances only increase in this no-withdrawal, non-negative-interest model.
-  if(rule.constraintType==='MAX_BALANCE'?end>limit:start<limit)return false;
- }
- return true;
-}
-function hasAmbiguousRateText(rows){
- return rows.some(row=>{
-  const text=[row.additionalInfo,row.additionalValue,...(row.tiers??[]).map(t=>t.additionalInfo)].filter(Boolean).join(' ');
-  // Provider feeds sometimes label a total rate as BONUS. Never add the base twice.
-  if(/\b(?:includes?|inclusive of)\b.{0,50}\b(?:base|standard)\b/i.test(text))return true;
-  // A prose-only limit may contradict structured tiers. Exclude, never infer a cap.
-  return /\b(?:up to|capped at|maximum of|less than|greater than|above|below|over|under|first)\s*(?:AUD\s*|\$)\s*\d/i.test(text)
-   || /\bbalances?\b.{0,40}\b(?:cap|limit|maximum|exceed)/i.test(text);
- });
 }
 // Five-year figures test possible rate paths; they do not predict a bank's variable rates.
 export function fiveYearBaseOutlook(product,{principal,contribution=0}) {
