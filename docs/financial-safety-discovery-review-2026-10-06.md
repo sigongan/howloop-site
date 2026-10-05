@@ -134,3 +134,90 @@ case study.
 - [ATO: resident TFN application options](https://www.ato.gov.au/individuals-and-families/tax-file-number/apply-for-a-tfn/australian-residents-tfn-application)
 - [ASIC Moneysmart: how to do a budget](https://moneysmart.gov.au/budgeting/how-to-do-a-budget)
 - [Google: creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+
+## Independent hosted-preview QA evidence
+
+Tested 5 October 2026, approximately 22:41–22:47 UTC, using the authorized
+`9af98574.howloop-site.pages.dev` preview associated with head
+`2aae6de9eee4234b8a28401cbeea78321ee36a69`. The browser did not itself expose a
+commit identifier. Cloud Chrome reported a 1180 × 757 CSS-pixel viewport. Only
+synthetic values were entered; no account, payment or financial-data submission
+was performed. No merge or production deployment was performed.
+
+### Independently verified interactions
+
+- ING Savings Maximiser displays the 0.01% base and 5.49% published bonus row
+  separately. No combined offer is selectable. Continuing uses the supported
+  base only: $10,000 opening plus $500 monthly for ten years yields $70,040.
+- Switching from that imported rate to Defence Salute shows the 5.50% and 3.75%
+  rows separately and withholds a bank projection. Closing the picker leaves the
+  rate empty and removes the preceding result and graph. Entering an explicit
+  custom 4.5% rate restores a clearly labelled custom projection of $91,269.
+- A custom 4.5% plan was saved, changed to 1.25%, and restored successfully even
+  with the unsupported Defence product selected. A fresh Alex.Bank bank-origin
+  plan was also saved, changed to a custom rate, and restored to its supported
+  4.5% base with the appropriate provenance status.
+- Alex.Bank Savings enforces its $250,000 cap after interest. With no deposits
+  over one year, a $239,000 opening balance produces $249,980. Increasing the
+  opening balance to $239,100 crosses the cap in the final month and removes the
+  result and graph. Reducing it again restores the supported result. The
+  extra-$50 comparison is separately withheld when it would cross the cap.
+- The calculator's CSV download completed. Its actual bytes report $239,000.00
+  deposits, $10,979.62 interest and $249,979.62 balance, matching the displayed
+  rounded result. Clearing the synthetic saved plan removes its Restore control.
+- The opened navigation menu's All tools link reaches `/start/`, where the payday
+  planner is available. The footer planner link also opens the correct page.
+- Guide search `salary super` returns one relevant guide; Escape clears the
+  search and restores all 17 guides.
+- The About page no longer presents the unsupported qualification. The paid
+  concept plainly states that it is unavailable to buy and its live DOM includes
+  `noindex, follow`. The free planner has its production canonical and no robots
+  noindex directive in the observed DOM.
+- Optional analytics stayed visibly off. The observed planner script tags
+  contained local application/consent modules and no Google Analytics or ad
+  script. This was a DOM check, not a full network-transmission audit. Captured
+  warning/error logs contained browser-extension diagnostics but no site-origin
+  warning/error in the inspected log set.
+
+### Findings and limits
+
+- Two follow-up issues were reported to engineering: misleading “Rate unchanged”
+  wording beside a cleared bank rate, and the preceding result remaining visible
+  during an asynchronous saved-bank revalidation. Completed revalidation was
+  correct. A later fix must be distinguished from the original preview tested
+  here and rechecked against its own preview.
+- The Print plan control was activated, but cloud Chrome exposed no native print
+  dialog, rendered print preview or output file. Printing is **not passed**.
+- The documented browser capabilities expose no viewport resizing, device
+  emulation, JavaScript disabling or network interception. Physical mobile,
+  actual JavaScript-disabled rendering, stale/failed/future snapshot restore,
+  and artificially delayed-response browser cases were **not tested**. Existing
+  controller regressions are separate evidence, not browser coverage.
+- The initial pre-enhancement page states exposed the static example and guide
+  links, but this is not a substitute for a sustained JavaScript-disabled test.
+  Restricted-business/SMSF filtering and archived TFN wording were not separately
+  exercised in this independent browser pass.
+
+### Follow-up preview recheck
+
+The immutable `https://fa930dac.howloop-site.pages.dev` preview for source commit
+`db14310fde917f3cb890d2b95dc00c3681301925` was independently rechecked on
+5 October 2026 at approximately 22:49–22:51 UTC:
+
+- Starting a saved ING restore immediately showed a blank rate, the checking
+  message, result placeholders and no graph. The completed supported restore
+  then showed the 0.01% base and $70,040 example result.
+- A real asynchronous interaction was exercised: after Restore cleared the rate,
+  entering a custom 2.5% before completion preserved 2.5% and the $80,923 result
+  after the bank response, rather than replacing it with ING's base rate.
+- Switching imported ING to Defence Salute now explicitly says no bank rate is
+  applied and leaves result/graph empty. Entering a custom 4.5% recovers the
+  $91,269 example. The synthetic saved plan was cleared after testing.
+- Planner replay still produces −$525 / $15,885 with 13 weekly and 91 daily rows.
+  Its editable result tables now precede the separate fixed case study.
+- About and the public correction record show the intended final wording.
+
+The broader mobile, JavaScript-disabled and native-print limitations above remain
+unverified. A documentation-only evidence update after this source commit does
+not change any runtime files; production publication still requires exact-head
+review and deployment verification.
