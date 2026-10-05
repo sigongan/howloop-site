@@ -20,13 +20,13 @@ const key='howloop-plan-v1-compound-interest';
 const savedPlan=(bankModel=true)=>({values:{principal:200000,contribution:100,years:1,annualRate:5.5,frequency:'monthly'},bank:samples.ing.id,product:samples.ing.products[0].id,bankModel});
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
 
-function setup(bank=samples.ing,{saved=null,fail=false}={}){
+function setup(bank=samples.ing,{saved=null,fail=false,responseGate=null}={}){
   const dom=new JSDOM(fixture,{url:'https://howloop.how/calculators/compound-interest/',runScripts:'outside-only'});
   const win=dom.window,doc=win.document;
   let data=bank;
   Object.assign(win,search,money,quick,scenarios,finance,summary,display,{
     bankFreshness:snapshot=>freshness.bankFreshness(snapshot,now),
-    fetch:async()=>{if(fail)throw Error('offline');return {ok:true,json:async()=>data};},
+    fetch:async()=>{if(responseGate)await responseGate;if(fail)throw Error('offline');return {ok:true,json:async()=>data};},
     AbortSignal:globalThis.AbortSignal,matchMedia:()=>({matches:false}),
   });
   win.HTMLElement.prototype.scrollIntoView=()=>{};
@@ -101,6 +101,8 @@ test('switching from an imported bank rate to an unsupported account never promo
   assert.equal(f.q('[name=annualRate]').value,'');
   assert.equal(f.q('[data-result-total]').textContent,'—');
   assert.match(f.q('[data-product-info]').textContent,/Bank rate needs confirmation/);
+  assert.match(f.q('[data-rate-model]').textContent,/No bank rate applied/);
+  assert.doesNotMatch(f.q('[data-rate-model]').textContent,/unchanged/);
   f.fill('annualRate','1.25');assert.equal(f.q('[data-error]').hidden,true);
   f.dom.window.close();
 });
@@ -113,5 +115,26 @@ test('a bank plan crossing its account cap cannot auto-import or retain a plotte
   assert.equal(f.q('[name=annualRate]').value,'1.0000');
   f.fill('contribution','2000');assert.equal(f.q('[data-result-total]').textContent,'—');
   assert.equal(f.q('[data-chart]').children.length,0);assert.match(f.q('[data-error]').textContent,/account limits/);
+  f.dom.window.close();
+});
+
+
+test('bank restore clears the previous estimate immediately and a late response preserves a newer custom rate',async()=>{
+  let release;
+  const responseGate=new Promise(resolve=>{release=resolve;});
+  const f=setup(samples.ing,{saved:savedPlan(),responseGate});
+  assert.notEqual(f.q('[data-result-total]').textContent,'—');
+  f.q('[data-load]').click();
+  assert.equal(f.q('[data-result-total]').textContent,'—');
+  assert.equal(f.q('[data-chart]').children.length,0);
+  assert.equal(f.q('[name=annualRate]').value,'');
+  assert.match(f.q('[data-error]').textContent,/Checking the selected bank rate/);
+  f.fill('annualRate','3.2');
+  const customResult=f.q('[data-result-total]').textContent;
+  assert.notEqual(customResult,'—');
+  release();await tick();
+  assert.equal(f.q('[name=annualRate]').value,'3.2');
+  assert.equal(f.q('[data-result-total]').textContent,customResult);
+  assert.match(f.q('[data-product-info]').textContent,/Calculator uses your own rate/);
   f.dom.window.close();
 });

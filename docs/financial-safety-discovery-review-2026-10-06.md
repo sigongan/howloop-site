@@ -68,7 +68,7 @@ models still assume eligibility rather than assess it.
 
 ## Verification
 
-- `npm test`: **227/227 pass**.
+- `npm test`: **228/228 pass**.
 - `ASTRO_TELEMETRY_DISABLED=1 npm run build`: **pass**, 69 routes / 71 HTML files.
 - `npm run check:readiness`: **pass**, 47 indexable/sitemap URLs, 17 money guides,
   116 bank snapshots, 609 products, 23 client-script syntax checks.
@@ -83,16 +83,33 @@ models still assume eligibility rather than assess it.
 - Committed regressions exercise the real controller against a fixed control
   fixture, including native DOM button submission, failed restores and caps.
 
+### Hosted-preview browser checks
+
+The separately authorized Cloudflare preview for commit `2aae6de` was opened at
+`https://9af98574.howloop-site.pages.dev` in cloud Chrome. Actual pointer submission,
+fixed-example replay, invalid-input recovery, keyboard submission, manual local
+save, canceled and accepted restore, deletion and CSV download succeeded. Guide
+search and product `noindex, follow` metadata matched the intended state. No ad or
+analytics library appeared with essentials-only consent. The current 1180-pixel
+viewport had no document overflow and was visually inspected. The independent
+browser reviewer confirmed that ING's combined rate was unavailable and switching
+to the unsupported Defence product cleared the calculation. Their empty-rate
+wording observation was corrected in a narrow follow-up. The old bank-derived
+estimate is now cleared immediately during revalidation, and a late bank response
+cannot overwrite a newer custom rate. A deferred-response regression covers both
+transitions. Editable planner tables are kept together before the separate fixed
+case study.
+
 ### Checks not completed
 
 - Full Astro type checking did **not run**: `@astrojs/check` is absent. The old
   command could print that error and exit zero; the new wrapper exits nonzero and
   never installs anything silently. Build and tests are separate checks.
-- Visual browser QA of the local edited build was **blocked by the execution
+- Visual browser QA of the local build was **blocked by the execution
   environment**, not passed: local Chromium could not create its socket, and the
   cloud browser could not open the localhost test URL. No alternate local route
-  was used after the browser block. DOM tests do not establish responsive layout,
-  real pointer hit targets, printing or download behavior in a browser.
+  was used after the browser block. The hosted checks above are separate. Full mobile, print and JavaScript-disabled
+  browser coverage remains to be completed before claiming those checks passed.
 - This review does not verify current delivery to the public contact mailbox.
 
 ## Before production publication or re-review

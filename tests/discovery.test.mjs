@@ -60,7 +60,9 @@ test('worked-example content and input provenance render server-side without per
   assert.match(component, /not a typical household budget/);
   assert.match(component, /no financial-adviser review/);
   assert.doesNotMatch(component, /fetch\(|localStorage|location.search|location.hash/);
-  assert.match(read('src/pages/tools/cash-flow.astro'), /data-cash-timing hidden/);
+  const page=read('src/pages/tools/cash-flow.astro');
+  assert.match(page, /data-cash-timing hidden/);
+  assert.ok(page.indexOf('<CashFlowWalkthrough>')>page.indexOf('data-cash-daily'), 'Keep editable result tables together, separate from the fixed case study');
 });
 
 function fixture() {
