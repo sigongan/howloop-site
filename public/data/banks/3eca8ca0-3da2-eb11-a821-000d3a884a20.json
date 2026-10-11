@@ -1,7 +1,7 @@
 {
   "name": "Dnister",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "iSaver",
       "description": "Enjoy the freedom of online banking to save at a higher rate of return even if you spend.",
       "url": "https://www.dnister.com.au/portfolio-items/isaver",
-      "lastUpdated": "2026-10-04T22:00:40.2196760Z",
+      "lastUpdated": "2026-10-11T22:00:39.1615840Z",
       "source": "https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/17",
       "depositRates": [
         {
@@ -292,7 +292,7 @@
       "name": "Bonus Saver",
       "description": "Be rewarded for saving!",
       "url": "https://www.dnister.com.au/portfolio-items/bonus-saver",
-      "lastUpdated": "2026-10-04T22:00:40.2196760Z",
+      "lastUpdated": "2026-10-11T22:00:39.1615840Z",
       "source": "https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/18",
       "depositRates": [
         {
@@ -536,7 +536,7 @@
       "name": "Pensioner Savings",
       "description": "Everyday account tailored for Seniors.",
       "url": "https://www.dnister.com.au/portfolio-items/pensioner-savings",
-      "lastUpdated": "2026-10-04T22:00:40.2196760Z",
+      "lastUpdated": "2026-10-11T22:00:39.1615840Z",
       "source": "https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/30",
       "depositRates": [
         {
@@ -877,7 +877,7 @@
       "name": "Max Saver",
       "description": "Maximise your savings!",
       "url": "https://www.dnister.com.au/portfolio-items/max-saver/",
-      "lastUpdated": "2026-10-04T22:00:40.2196760Z",
+      "lastUpdated": "2026-10-11T22:00:39.1615840Z",
       "source": "https://public.cdr-api.dnister.com.au/cds-au/v1/banking/products/31",
       "depositRates": [
         {

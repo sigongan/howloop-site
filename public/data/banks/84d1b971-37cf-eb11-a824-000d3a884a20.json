@@ -1,7 +1,7 @@
 {
   "name": "Easy Street",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Easy Everyday Access account",
       "description": "An account for everyday with a debit card and no monthly account keeping fees, so you can shop, pay bills, access cash and more. Keep everyday banking low fuss with no minimum monthly deposit needed.",
       "url": "https://easystreet.com.au/everyday-account",
-      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
+      "lastUpdated": "2026-10-06T15:19:57.000+11:00",
       "source": "https://ebranch.easystreet.com.au/es-OpenBanking/cds-au/v1/banking/products/S11-ES-EA",
       "depositRates": [
         {
@@ -176,8 +176,8 @@
         },
         {
           "featureType": "DIGITAL_WALLET",
-          "additionalValue": "Apple Pay, Google Pay and Samsung Pay",
-          "additionalInfo": "Leave your wallet at home and make payments on the go with Google Pay, Apple Pay and Samsung Pay."
+          "additionalValue": "Apple Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Apple Pay."
         },
         {
           "featureType": "DIGITAL_BANKING",
@@ -193,6 +193,16 @@
         },
         {
           "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Google Pay."
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Samsung Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Samsung Pay."
         }
       ],
       "additionalInformation": {
@@ -207,12 +217,12 @@
       "name": "Flex Saver",
       "description": "An online savings account that earns you interest every month on balances up to $3 million, regardless of how you save.",
       "url": "https://easystreet.com.au/products/flex-saver-account",
-      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
+      "lastUpdated": "2026-10-09T11:05:54.000+11:00",
       "source": "https://ebranch.easystreet.com.au/es-OpenBanking/cds-au/v1/banking/products/S37-FS",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0505",
+          "rate": "0.053",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

@@ -1,7 +1,7 @@
 {
   "name": "UBank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,12 +9,12 @@
       "name": "Save account",
       "description": "Save account",
       "url": "https://www.ubank.com.au/banking/savings-account",
-      "lastUpdated": "2026-05-12T00:00:34.5578212Z",
+      "lastUpdated": "2026-10-08T22:00:34.2652812Z",
       "source": "https://public.cdr-api.86400.com.au/cds-au/v1/banking/products/1",
       "depositRates": [
         {
           "depositRateType": "BONUS",
-          "rate": "0.051",
+          "rate": "0.0535",
           "calculationFrequency": "P1M",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -32,7 +32,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.051",
+          "rate": "0.0535",
           "calculationFrequency": "P1M",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -50,7 +50,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.051",
+          "rate": "0.0535",
           "calculationFrequency": "P1M",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -85,7 +85,7 @@
         },
         {
           "depositRateType": "INTRODUCTORY",
-          "rate": "0.0075",
+          "rate": "0.009",
           "calculationFrequency": "P1M",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -99,11 +99,11 @@
             }
           ],
           "additionalValue": "P4M",
-          "additionalInfo": "Welcome Bonus for eligible new customers beginning 11 November 2025. Only paid when Bonus Interest criteria is met. Rates on Shared accounts may be different."
+          "additionalInfo": "Welcome Bonus for eligible new customers. Only paid when Bonus Interest criteria is met. Rates on Shared accounts may be different."
         },
         {
           "depositRateType": "INTRODUCTORY",
-          "rate": "0.0075",
+          "rate": "0.009",
           "calculationFrequency": "P1M",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -117,11 +117,11 @@
             }
           ],
           "additionalValue": "P4M",
-          "additionalInfo": "Welcome Bonus for eligible new customers beginning 11 November 2025. Only paid when Bonus Interest criteria is met. Rates on Shared accounts may be different."
+          "additionalInfo": "Welcome Bonus for eligible new customers. Only paid when Bonus Interest criteria is met. Rates on Shared accounts may be different."
         },
         {
           "depositRateType": "INTRODUCTORY",
-          "rate": "0.0075",
+          "rate": "0.009",
           "calculationFrequency": "P1M",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -135,7 +135,7 @@
             }
           ],
           "additionalValue": "P4M",
-          "additionalInfo": "Welcome Bonus for eligible new customers beginning 11 November 2025. Only paid when Bonus Interest criteria is met. Rates on Shared accounts may be different."
+          "additionalInfo": "Welcome Bonus for eligible new customers. Only paid when Bonus Interest criteria is met. Rates on Shared accounts may be different."
         },
         {
           "depositRateType": "INTRODUCTORY",
@@ -152,7 +152,7 @@
             }
           ],
           "additionalValue": "P4M",
-          "additionalInfo": "Welcome Bonus for eligible new customers beginning 11 November 2025. Only paid when Bonus Interest criteria is met. Rates on Shared accounts may be different."
+          "additionalInfo": "Welcome Bonus for eligible new customers. Only paid when Bonus Interest criteria is met. Rates on Shared accounts may be different."
         }
       ],
       "fees": [],

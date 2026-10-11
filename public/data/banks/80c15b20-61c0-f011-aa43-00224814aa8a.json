@@ -1,7 +1,7 @@
 {
   "name": "NRMA Home Loans",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "NRMA Offset Account",
       "description": "The Offset Account is designed to be linked and used with the NRMA Offset Home Loan.  \nEligible home loan customers can receive offset benefits by linking an Offset Account to an NRMA Offset Home Loan which reduces the amount of interest that would otherwise accrue in relation to the NRMA Offset Home Loan.",
       "url": "https://www.nrma.com.au/home-loans",
-      "lastUpdated": "2026-10-05T10:05:11+11:00",
+      "lastUpdated": "2026-10-12T10:14:58+11:00",
       "source": "https://api.nrma.app.bendigobank.com.au/cds-au/v1/banking/products/f6989da3-8f1c-4114-bdf3-1b961a0c086a",
       "depositRates": [
         {

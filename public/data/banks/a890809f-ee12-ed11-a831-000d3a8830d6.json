@@ -1,7 +1,7 @@
 {
   "name": "Revolut",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,12 +9,12 @@
       "name": "Revolut Instant Access Savings",
       "description": "A savings account that earns variable interest on AUD balances. Interest accrues and is applied daily. Features and fees will vary based on paid plan tier (Standard, Plus, Premium, Metal, Ultra).",
       "url": "https://www.revolut.com/en-AU/savings/",
-      "lastUpdated": "2026-08-13T11:20:43.028513Z",
+      "lastUpdated": "2026-10-07T14:13:59.739361Z",
       "source": "https://au-cdr-public.revolut.com/public/cds-au/v1/banking/products/550e8400-e29b-41d4-a716-446655440003",
       "depositRates": [
         {
           "additionalInfo": "Standard Plan p.a. variable interest rate. Interest is earnt and paid daily. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
           "rate": "0.03",
           "calculationFrequency": "P1D",
@@ -32,7 +32,7 @@
         },
         {
           "additionalInfo": "Plus Plan p.a. variable interest rate. Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all your personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
           "rate": "0.03",
           "calculationFrequency": "P1D",
@@ -50,9 +50,9 @@
         },
         {
           "additionalInfo": "Premium Plan p.a. variable interest rate (balances up to $250,000). Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all your personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
-          "rate": "0.0365",
+          "rate": "0.039",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1D",
@@ -68,7 +68,7 @@
         },
         {
           "additionalInfo": "Premium Plan p.a. variable interest rate (balances from $250,001 up to $1,000,000). Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all your personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
           "rate": "0.03",
           "calculationFrequency": "P1D",
@@ -86,9 +86,9 @@
         },
         {
           "additionalInfo": "Metal Plan p.a. variable interest rate (balances up to $250,000). Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all your personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
-          "rate": "0.0435",
+          "rate": "0.046",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1D",
@@ -104,9 +104,9 @@
         },
         {
           "additionalInfo": "Metal Plan p.a. variable interest rate (balances from $250,001 up to $1,000,000). Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all your personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
-          "rate": "0.0365",
+          "rate": "0.039",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1D",
@@ -122,9 +122,9 @@
         },
         {
           "additionalInfo": "Ultra Plan p.a. variable interest rate. Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all your personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
-          "rate": "0.0505",
+          "rate": "0.053",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1D",
@@ -140,9 +140,9 @@
         },
         {
           "additionalInfo": "Ultra Plan p.a. variable interest rate. Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all your personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
-          "rate": "0.0435",
+          "rate": "0.046",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1D",
@@ -158,19 +158,19 @@
         },
         {
           "additionalValue": "P3M",
-          "additionalInfo": "Boosted promotional rate for 3 months on balances up to $100,000, available to new Revolut AU retail customers subject to specific conditions. After 3 months, rate will revert to your default plan rate",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfo": "Boosted promotional rate for 3 months on balances up to $50,000, available to new Revolut AU retail customers subject to specific conditions. After 3 months, rate will revert to your default plan rate",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "INTRODUCTORY",
-          "rate": "0.055",
+          "rate": "0.0625",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1D",
           "tiers": [
             {
-              "name": "High Yield Savings Promotional Rate (balances up to $100,000)",
+              "name": "High Yield Savings Promotional Rate (balances up to $50,000)",
               "unitOfMeasure": "DOLLAR",
               "minimumValue": "0.0",
-              "maximumValue": "100000.0",
+              "maximumValue": "50000.0",
               "rateApplicationMethod": "PER_TIER",
               "applicabilityConditions": [
                 {
@@ -248,7 +248,7 @@
         "termsUri": "https://www.revolut.com/en-AU/legal/savings-account/",
         "overviewUri": "https://www.revolut.com/en-AU/savings/",
         "eligibilityUri": "https://www.revolut.com/en-AU/legal/savings-account/",
-        "feesAndPricingUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/"
+        "feesAndPricingUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/"
       }
     },
     {
@@ -256,12 +256,12 @@
       "name": "Revolut Kids & Teens Instant Access Savings",
       "description": "A savings sub-account linked to a parent's Revolut Personal Account intended for children aged 6 to 15, earning variable interest on AUD balances. Features and allowances vary based on the parent's subscription plan tier.",
       "url": "https://www.revolut.com/en-AU/revolut-kids-and-teens-parent-and-guardians/",
-      "lastUpdated": "2026-08-13T11:20:42.924538Z",
+      "lastUpdated": "2026-10-07T14:13:59.739361Z",
       "source": "https://au-cdr-public.revolut.com/public/cds-au/v1/banking/products/b3ad3f63-c3e5-4a92-ad48-e83edf32325e",
       "depositRates": [
         {
           "additionalInfo": "Parent's Standard Plan p.a. variable interest rate. Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all the parent's personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
           "rate": "0.03",
           "calculationFrequency": "P1D",
@@ -270,7 +270,7 @@
         },
         {
           "additionalInfo": "Parent's Plus Plan p.a. variable interest rate. Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all the parent's personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
           "rate": "0.03",
           "calculationFrequency": "P1D",
@@ -279,27 +279,27 @@
         },
         {
           "additionalInfo": "Parent's Premium Plan p.a. variable interest rate. Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all the parent's personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
-          "rate": "0.0365",
+          "rate": "0.039",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M"
         },
         {
           "additionalInfo": "Parent's Metal Plan p.a. variable interest rate. Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all the parent's personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
-          "rate": "0.0435",
+          "rate": "0.046",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M"
         },
         {
           "additionalInfo": "Parent's Ultra Plan p.a. variable interest rate. Interest is earnt and paid daily. Lower interest rates apply based on the total balance across all the parent's personal savings accounts. Rates may change at any time.",
-          "additionalInfoUri": "https://www.revolut.com/en-AU/interest-rates-and-fees/",
+          "additionalInfoUri": "https://www.revolut.com/en-AU/legal/interest-rates-and-fees/",
           "depositRateType": "VARIABLE",
-          "rate": "0.0505",
+          "rate": "0.053",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M"

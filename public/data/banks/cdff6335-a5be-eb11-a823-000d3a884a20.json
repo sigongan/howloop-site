@@ -1,7 +1,7 @@
 {
   "name": "Laboratories Credit Union",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -161,7 +161,7 @@
       "name": "Young and Free Student Account",
       "description": "Learn to save with a great interest rate and no monthly Visa card fees. Bonus rate on balances up to $1000.",
       "url": "https://lcu.com.au/product/young-free-student-account/",
-      "lastUpdated": "2026-10-01T21:11:03.000+10:00",
+      "lastUpdated": "2026-10-09T09:35:08.000+11:00",
       "source": "https://internetbanking.lcu.com.au/OpenBanking/cds-au/v1/banking/products/S33_YOUNG_AND_FREE_ACCOUNT",
       "depositRates": [
         {

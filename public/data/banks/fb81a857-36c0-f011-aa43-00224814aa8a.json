@@ -1,7 +1,7 @@
 {
   "name": "Aussie Elevate",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Aussie Elevate Offset Account",
       "description": "The Offset Account is designed to be linked and used with the Aussie Elevate Offset Home Loan.  \nEligible home loan customers can receive offset benefits by linking an Offset Account to an Aussie Elevate Offset Home Loan which reduces the amount of interest that would otherwise accrue in relation to the Aussie Elevate Offset Home Loan.",
       "url": "https://www.aussie.com.au/home-loans/aussies-own-home-loans/aussie-elevate/",
-      "lastUpdated": "2026-10-05T10:05:11+11:00",
+      "lastUpdated": "2026-10-12T10:14:58+11:00",
       "source": "https://api.aussie.app.bendigobank.com.au/cds-au/v1/banking/products/53f14446-652a-47f7-95c9-b303de86c7ac",
       "depositRates": [
         {

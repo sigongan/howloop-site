@@ -1,7 +1,7 @@
 {
   "name": "CommFCU",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Everyday Plus",
       "description": "An everyday transaction account for members who are aged 55+. For one monthly fee, enjoy interest paid on balances and a range of ways to bank for added convenience.",
       "url": "https://communityfirst.com.au/products/everyday-plus/",
-      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
+      "lastUpdated": "2026-10-06T16:02:11.000+11:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S14-EP",
       "depositRates": [
         {
@@ -396,8 +396,8 @@
         },
         {
           "featureType": "DIGITAL_WALLET",
-          "additionalValue": "Ability to load your card into your eligible digital wallet",
-          "additionalInfo": "Apple Pay, Google Pay and Samsung Pay"
+          "additionalValue": "Apple Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Apple Pay."
         },
         {
           "featureType": "NPP_ENABLED",
@@ -410,6 +410,16 @@
         {
           "featureType": "OVERDRAFT",
           "additionalInfo": "Credit eligibility criteria, terms and conditions, fees and charges apply"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Google Pay."
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Samsung Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Samsung Pay."
         }
       ],
       "additionalInformation": {
@@ -536,7 +546,7 @@
       "name": "Wildlife Saver account",
       "description": "An account for members aged under 18 to kick start their savings with the help of a parent or guardian. Account holders 12+ are eligible for debit card access - all balances earn competitive interest",
       "url": "https://communityfirst.com.au/products/wildlife-saver-account/",
-      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
+      "lastUpdated": "2026-10-06T16:06:55.000+11:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S18-JS",
       "depositRates": [
         {
@@ -748,17 +758,6 @@
           "additionalInfoUri": "https://communityfirst.com.au/tools/rates-and-fees"
         },
         {
-          "name": "FOREIGN_CHEQUE_ENCASHMENT",
-          "feeType": "EVENT",
-          "feeMethodUType": "fixedAmount",
-          "fixedAmount": {
-            "amount": "12.50"
-          },
-          "currency": "AUD",
-          "additionalInfo": "For values over $A25,000 the fee applicable is $57.50.",
-          "additionalInfoUri": "https://communityfirst.com.au/tools/rates-and-fees"
-        },
-        {
           "name": "CANCEL_REPLACEMENT_OF_VISA_CARD",
           "feeType": "EVENT",
           "feeMethodUType": "fixedAmount",
@@ -828,8 +827,8 @@
         },
         {
           "featureType": "DIGITAL_WALLET",
-          "additionalValue": "Apple Pay, Samsung Pay and Google Pay",
-          "additionalInfo": "Payment options available"
+          "additionalValue": "Apple Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Apple Pay."
         },
         {
           "featureType": "NPP_ENABLED"
@@ -839,6 +838,16 @@
         },
         {
           "featureType": "UNLIMITED_TXNS"
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Google Pay."
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Samsung Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Samsung Pay."
         }
       ],
       "additionalInformation": {
@@ -853,7 +862,7 @@
       "name": "Santa Saver",
       "description": "A savings account that helps you save for Christmas throughout the year and stops you dipping in to your savings by only allowing access to funds between 1 November and 31 January each year.",
       "url": "https://communityfirst.com.au/products/christmas-saver-account",
-      "lastUpdated": "2026-09-29T15:58:07.000+10:00",
+      "lastUpdated": "2026-10-06T10:18:19.000+11:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S25-CS",
       "depositRates": [
         {
@@ -1042,17 +1051,6 @@
           "currency": "AUD",
           "additionalInfo": "Charged at cost",
           "additionalInfoUri": "https://communityfirst.com.au/tools/rates-and-fees"
-        },
-        {
-          "name": "FOREIGN_CHEQUE_ENCASHMENT",
-          "feeType": "EVENT",
-          "feeMethodUType": "fixedAmount",
-          "fixedAmount": {
-            "amount": "12.50"
-          },
-          "currency": "AUD",
-          "additionalInfo": "For values over $A25,000 the fee applicable is $57.50.",
-          "additionalInfoUri": "https://communityfirst.com.au/tools/rates-and-fees"
         }
       ],
       "eligibility": [
@@ -1082,7 +1080,7 @@
       "name": "Goal Saver",
       "description": "A savings account that earns you bonus interest when you make at least one deposit of $50 each month, maintain a credit balance and make no withdrawals.",
       "url": "https://communityfirst.com.au/products/goal-saver",
-      "lastUpdated": "2026-09-29T15:38:35.000+10:00",
+      "lastUpdated": "2026-10-07T10:56:57.000+11:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S29-GS",
       "depositRates": [
         {
@@ -1115,7 +1113,7 @@
             },
             {
               "rateApplicabilityType": "OTHER",
-              "additionalValue": "0.00",
+              "additionalValue": "N/A",
               "additionalInfo": "To be eligible for Bonus Interest, no withdrawals can be made on the account in that month",
               "additionalInfoUri": "https://communityfirst.com.au/products/goal-saver/"
             }
@@ -1151,7 +1149,7 @@
             },
             {
               "rateApplicabilityType": "OTHER",
-              "additionalValue": "0.00",
+              "additionalValue": "N/A",
               "additionalInfo": "To be eligible for Bonus Interest, no withdrawals can be made on the account in that month",
               "additionalInfoUri": "https://communityfirst.com.au/products/goal-saver/"
             }
@@ -1188,11 +1186,12 @@
             },
             {
               "rateApplicabilityType": "OTHER",
-              "additionalValue": "0.00",
+              "additionalValue": "N/A",
               "additionalInfo": "To be eligible for Bonus Interest, no withdrawals can be made on the account in that month",
               "additionalInfoUri": "https://communityfirst.com.au/products/goal-saver/"
             }
           ],
+          "additionalValue": "0.00",
           "additionalInfoUri": "https://communityfirst.com.au/products/goal-saver"
         },
         {
@@ -1224,11 +1223,12 @@
             },
             {
               "rateApplicabilityType": "OTHER",
-              "additionalValue": "0.00",
+              "additionalValue": "N/A",
               "additionalInfo": "To be eligible for Bonus Interest, no withdrawals can be made on the account in that month",
               "additionalInfoUri": "https://communityfirst.com.au/products/goal-saver/"
             }
           ],
+          "additionalValue": "0.00",
           "additionalInfoUri": "https://communityfirst.com.au/products/goal-saver"
         }
       ],
@@ -1311,7 +1311,7 @@
       "name": "FirstBiz Access",
       "description": "A convenient way to manage your cash flow.",
       "url": "https://www.communityfirst.com.au/products/firstbiz-access-account",
-      "lastUpdated": "2026-09-29T15:51:41.000+10:00",
+      "lastUpdated": "2026-10-06T15:39:52.000+11:00",
       "source": "https://netbank.communityfirst.com.au/cf-OpenBanking/cds-au/v1/banking/products/S98-FBAA",
       "depositRates": [
         {
@@ -1502,8 +1502,8 @@
         },
         {
           "featureType": "DIGITAL_WALLET",
-          "additionalValue": "Ability to load your card into your eligible digital wallet",
-          "additionalInfo": "Apple Pay, Google Pay and Samsung Pay"
+          "additionalValue": "Apple Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Apple Pay."
         },
         {
           "featureType": "NPP_ENABLED",
@@ -1516,6 +1516,16 @@
         {
           "featureType": "OVERDRAFT",
           "additionalInfo": "Optional Overdraft facility available. Credit eligibility criteria, terms and conditions, fees and charges apply."
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Google Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Google Pay."
+        },
+        {
+          "featureType": "DIGITAL_WALLET",
+          "additionalValue": "Samsung Pay",
+          "additionalInfo": "Leave your wallet at home and make payments on the go with Samsung Pay."
         }
       ],
       "additionalInformation": {

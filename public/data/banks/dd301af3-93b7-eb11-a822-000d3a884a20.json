@@ -1,7 +1,7 @@
 {
   "name": "Judo Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,42 +9,12 @@
       "name": "Personal Savings Account",
       "description": "A High Interest at-call savings account with bonus interest rates if monthly criteria is met. ",
       "url": "https://www.judo.bank/savings-accounts/personal-savings-account",
-      "lastUpdated": "2026-08-11T01:49:55.165688Z",
+      "lastUpdated": "2026-10-07T23:43:39.471831Z",
       "source": "https://public.open.judo.bank/cds-au/v1/banking/products/63e5a9e5-f73c-434a-9221-f6f1574e4554",
       "depositRates": [
         {
           "depositRateType": "BONUS",
-          "rate": "0.00",
-          "additionalInfo": "Interest is calculated daily and paid monthly on your balance at a tiered interest rate.",
-          "additionalInfoUri": "https://www.judo.bank/savings/personal-savings-account/",
-          "additionalValue": "Deposit $300 within the month.",
-          "applicationFrequency": "P1M",
-          "calculationFrequency": "P1D",
-          "tiers": [
-            {
-              "minimumValue": "2000001.00",
-              "name": "Tier3",
-              "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "PER_TIER"
-            }
-          ],
-          "applicationType": "PERIODIC",
-          "applicabilityConditions": [
-            {
-              "additionalInfo": "To trigger the bonus rate, simply deposit $300 or more into your savings account each calendar month.",
-              "additionalInfoUri": "https://www.judo.bank/savings-accounts/personal-savings-account/#rates",
-              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
-              "additionalValue": "300.00"
-            }
-          ]
-        },
-        {
-          "depositRateType": "BONUS",
-          "rate": "0.048",
+          "rate": "0.0505",
           "additionalInfo": "Interest is calculated daily and paid monthly on your balance at a tiered interest rate.",
           "additionalInfoUri": "https://www.judo.bank/savings/personal-savings-account/",
           "additionalValue": "Deposit $300 within the month.",
@@ -74,7 +44,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.053",
+          "rate": "0.0555",
           "additionalInfo": "Interest is calculated daily and paid monthly on your balance at a tiered interest rate.",
           "additionalInfoUri": "https://www.judo.bank/savings/personal-savings-account/",
           "additionalValue": "Deposit $300 within the month.",
@@ -89,6 +59,36 @@
               "additionalInfoUri": null,
               "applicabilityConditions": [],
               "maximumValue": "250000.00",
+              "rateApplicationMethod": "PER_TIER"
+            }
+          ],
+          "applicationType": "PERIODIC",
+          "applicabilityConditions": [
+            {
+              "additionalInfo": "To trigger the bonus rate, simply deposit $300 or more into your savings account each calendar month.",
+              "additionalInfoUri": "https://www.judo.bank/savings-accounts/personal-savings-account/#rates",
+              "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
+              "additionalValue": "300.00"
+            }
+          ]
+        },
+        {
+          "depositRateType": "BONUS",
+          "rate": "0.00",
+          "additionalInfo": "Interest is calculated daily and paid monthly on your balance at a tiered interest rate.",
+          "additionalInfoUri": "https://www.judo.bank/savings/personal-savings-account/",
+          "additionalValue": "Deposit $300 within the month.",
+          "applicationFrequency": "P1M",
+          "calculationFrequency": "P1D",
+          "tiers": [
+            {
+              "minimumValue": "2000001.00",
+              "name": "Tier3",
+              "unitOfMeasure": "DOLLAR",
+              "additionalInfo": null,
+              "additionalInfoUri": null,
+              "applicabilityConditions": [],
+              "maximumValue": null,
               "rateApplicationMethod": "PER_TIER"
             }
           ],

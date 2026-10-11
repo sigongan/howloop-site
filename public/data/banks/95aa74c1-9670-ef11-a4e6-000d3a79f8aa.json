@@ -1,7 +1,7 @@
 {
   "name": "MyState Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Glide Account",
       "description": "Your day to day banking is about to get a lot simpler. Everything you need from your transaction account - easy and secure. No monthly account fee, works on all cashless payment platforms",
       "url": "https://mystate.com.au/bank-accounts/transaction-accounts/glide-account/",
-      "lastUpdated": "2026-06-18T04:29:02.770765Z",
+      "lastUpdated": "2026-10-07T19:00:00.311542Z",
       "source": "https://public.cdr.mystate.com.au/cds-au/v1/banking/products/0f637ec2-5fbf-406c-bf61-0fadc5d3ced3",
       "depositRates": [
         {
@@ -530,12 +530,12 @@
       "name": "Hello Saver account",
       "description": "A savings account that doesn't require a linked transaction account or for you to grow your account balance or deposit a defined amount of money each month or penalise you for making a withdrawal. Pay bills straight from your savings using BPAY, direct debit, PayID or automatic transfers.",
       "url": "https://mystate.com.au/wp-content/uploads/terms.pdf",
-      "lastUpdated": "2026-06-17T06:05:41.553619Z",
+      "lastUpdated": "2026-10-07T19:00:00.311558Z",
       "source": "https://public.cdr.mystate.com.au/cds-au/v1/banking/products/13002307",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0275",
+          "rate": "0.03",
           "additionalInfo": "Variable interest rate paid on portion of balance",
           "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/rates_savings.pdf",
           "additionalValue": null,
@@ -559,7 +559,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.05",
+          "rate": "0.0525",
           "additionalInfo": "Variable interest rate paid on the portion of the balance for existing customers and introductory period expiration",
           "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/rates_savings.pdf",
           "additionalValue": null,
@@ -583,7 +583,7 @@
         },
         {
           "depositRateType": "INTRODUCTORY",
-          "rate": "0.054",
+          "rate": "0.0565",
           "additionalInfo": "Variable interest rate paid for the first four months for new customers",
           "additionalInfoUri": "https://mystate.com.au/wp-content/uploads/terms.pdf",
           "additionalValue": "P4M",
@@ -938,7 +938,7 @@
       "name": "E&P High Yield Account",
       "description": "Available only through Evans & Partners.",
       "url": "https://mystate.com.au/legal/",
-      "lastUpdated": "2026-06-23T02:20:50.422548Z",
+      "lastUpdated": "2026-10-07T19:00:00.40355Z",
       "source": "https://public.cdr.mystate.com.au/cds-au/v1/banking/products/51dd511c-abf8-4aaa-941c-631a26848111",
       "depositRates": [
         {
@@ -1086,12 +1086,12 @@
       "name": "Bonus Saver",
       "description": "Enjoy bonus interest when you deposit $20 or more in to your Bonus Saver Account and make 5 or more eligible VISA Debit card transactions from your linked account each month.\nTake your money out as often as you need without losing the bonus interest you've already earned. ",
       "url": "https://mystate.com.au/bank-accounts/saving-accounts/bonus-saver-account/",
-      "lastUpdated": "2026-06-18T03:34:53.610036Z",
+      "lastUpdated": "2026-10-07T19:00:00.365716Z",
       "source": "https://public.cdr.mystate.com.au/cds-au/v1/banking/products/f2c94853-abb7-4c8e-ae43-66427d186380",
       "depositRates": [
         {
           "depositRateType": "BONUS",
-          "rate": "0.0495",
+          "rate": "0.052",
           "additionalInfo": "Eligible deposit and Visa transactions are described on our web site.",
           "additionalInfoUri": "https://mystate.com.au/bank-accounts/saving-accounts/bonus-saver-account/",
           "additionalValue": "Enjoy bonus interest when an eligible deposit of $20 or more in to your Bonus Saver Account and make 5 or more eligible VISA Debit card transactions from your linked account each month.",
@@ -1101,7 +1101,7 @@
         },
         {
           "depositRateType": "BUNDLE_BONUS",
-          "rate": "0.05",
+          "rate": "0.0525",
           "additionalInfo": "Enjoy bonus interest when an eligible deposit of $20 or more in to your Bonus Saver Account and make 5 or more eligible VISA Debit card transactions from your linked account each month.",
           "additionalInfoUri": "https://mystate.com.au/bank-accounts/saving-accounts/bonus-saver-account/",
           "additionalValue": "Linked MyState Bank Glide Account or Basic Account",

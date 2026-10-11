@@ -1,7 +1,7 @@
 {
   "name": "Firefighters Mutual Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Essential Saver account",
       "description": "An interest bearing online savings account with a tiered interest rate structure",
       "url": "https://www.fmbank.com.au/banking/essential-saver",
-      "lastUpdated": "2026-10-01T03:25:50.000+10:00",
+      "lastUpdated": "2026-10-06T09:49:56.000+11:00",
       "source": "https://ob.tmbl.com.au/fmbank/cds-au/v1/banking/products/1117eb64-3f4e-415a-8ed5-904d15457a68",
       "depositRates": [
         {
@@ -395,7 +395,7 @@
       "name": "MOMENTUM SAVER",
       "description": "The Momentum Saver account rewards savers with an ongoing bonus interest rate when you deposit a minimum of $100 and make no withdrawals during the month.",
       "url": "https://www.fmbank.com.au/banking/momentum-saver",
-      "lastUpdated": "2026-10-01T09:29:02.000+10:00",
+      "lastUpdated": "2026-10-10T06:29:27.000+11:00",
       "source": "https://ob.tmbl.com.au/fmbank/cds-au/v1/banking/products/505df462-6b43-11f0-b446-325096b39f47",
       "depositRates": [
         {
@@ -797,7 +797,7 @@
       "name": "Everyday Direct account",
       "description": "Your everyday transaction account with VISA Debit access.",
       "url": "https://www.fmbank.com.au/banking/everyday-direct",
-      "lastUpdated": "2026-09-09T15:08:32.000+10:00",
+      "lastUpdated": "2026-10-09T08:49:17.000+11:00",
       "source": "https://ob.tmbl.com.au/fmbank/cds-au/v1/banking/products/d891412c-d3d4-4c1c-97ff-80ed739f620c",
       "depositRates": [
         {

@@ -1,7 +1,7 @@
 {
   "name": "BOQ Specialist",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -356,6 +356,15 @@
       "source": "https://api.cds.boqspecialist.com.au/cds-au/v1/banking/products/0c186288-5c03-ee11-8f6e-00224814dce7",
       "depositRates": [
         {
+          "rate": "0.0400000000000000",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfo": "Interest paid monthly",
+          "additionalInfoUri": "https://www.boqspecialist.com.au/personal-banking/savings-accounts/interest-rates",
+          "depositRateType": "VARIABLE"
+        },
+        {
           "rate": "0.0095000000000000",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
@@ -381,15 +390,6 @@
             }
           ],
           "depositRateType": "INTRODUCTORY"
-        },
-        {
-          "rate": "0.0375000000000000",
-          "calculationFrequency": "P1D",
-          "applicationType": "PERIODIC",
-          "applicationFrequency": "P1M",
-          "additionalInfo": "Interest paid monthly",
-          "additionalInfoUri": "https://www.boqspecialist.com.au/personal-banking/savings-accounts/interest-rates",
-          "depositRateType": "VARIABLE"
         }
       ],
       "fees": [
@@ -601,7 +601,7 @@
       "source": "https://api.cds.boqspecialist.com.au/cds-au/v1/banking/products/81906e88-5c03-ee11-8f6e-00224814d330",
       "depositRates": [
         {
-          "rate": "0.0325000000000000",
+          "rate": "0.0350000000000000",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

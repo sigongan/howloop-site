@@ -1,7 +1,7 @@
 {
   "name": "Auswide Bank Ltd",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,12 +9,12 @@
       "name": "WEALTH MANAGEMENT ACCOUNT",
       "description": "A cash management account distributed through authorised third party's",
       "url": "https://auswidebank.com.au/help/resources/terms-and-conditions/",
-      "lastUpdated": "2026-07-01T10:45:18.000+10:00",
+      "lastUpdated": "2026-10-08T08:55:22.000+10:00",
       "source": "https://api.auswidebank.com.au/openbanking/cds-au/v1/banking/products/0f2f9cef-6eb8-4cd4-8e1f-a029dca347b6",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0425",
+          "rate": "0.045",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M"
@@ -103,12 +103,12 @@
       "name": "SELF-MANAGED SUPER FUND",
       "description": "A special on-call transaction account designed for those who are set up to self manage their superannuation fund.",
       "url": "https://auswidebank.com.au/banking/business-and-club-accounts/self-managed-superannuation-fund-account/",
-      "lastUpdated": "2026-07-01T10:40:32.000+10:00",
+      "lastUpdated": "2026-10-08T08:54:23.000+10:00",
       "source": "https://api.auswidebank.com.au/openbanking/cds-au/v1/banking/products/2a8b2cf9-0e9a-49a3-bb3a-aeab5a62042d",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0375",
+          "rate": "0.04",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -125,7 +125,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0375",
+          "rate": "0.04",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -142,7 +142,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0375",
+          "rate": "0.04",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -159,7 +159,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0375",
+          "rate": "0.04",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -176,7 +176,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0375",
+          "rate": "0.04",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -193,7 +193,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0375",
+          "rate": "0.04",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -210,7 +210,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0375",
+          "rate": "0.04",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -518,12 +518,12 @@
       "name": "ONLINE SAVER",
       "description": "An online savings account",
       "url": "https://auswidebank.com.au/banking/savings-and-term-deposits/online-saver/",
-      "lastUpdated": "2026-05-14T08:32:12.000+10:00",
+      "lastUpdated": "2026-10-08T08:48:31.000+10:00",
       "source": "https://api.auswidebank.com.au/openbanking/cds-au/v1/banking/products/4bc606d6-2ed5-4ff4-8404-5f48609536e8",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.02",
+          "rate": "0.0225",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -963,7 +963,7 @@
       "name": "CASH MANAGEMENT",
       "description": "A cash management account",
       "url": "https://auswidebank.com.au/banking/everyday-accounts/cash-management-account/",
-      "lastUpdated": "2026-07-01T10:49:58.000+10:00",
+      "lastUpdated": "2026-10-08T08:51:07.000+10:00",
       "source": "https://api.auswidebank.com.au/openbanking/cds-au/v1/banking/products/60f02256-3125-4a50-964f-bdb862efdd4e",
       "depositRates": [
         {
@@ -985,7 +985,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0095",
+          "rate": "0.012",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1002,7 +1002,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0115",
+          "rate": "0.014",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1019,7 +1019,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.014",
+          "rate": "0.0165",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1036,7 +1036,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0315",
+          "rate": "0.034",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1053,7 +1053,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.04",
+          "rate": "0.0425",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1070,7 +1070,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.04",
+          "rate": "0.0425",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1277,12 +1277,12 @@
       "name": "NATIONAL SENIORS AUSTRALIA MONEY MANAGER ACCOUNT",
       "description": "A on-call interest earning transaction account available to National Seniors Australia members.",
       "url": "https://nationalseniors.com.au/moneymanager",
-      "lastUpdated": "2026-07-01T10:47:02.000+10:00",
+      "lastUpdated": "2026-10-08T08:55:54.000+10:00",
       "source": "https://api.auswidebank.com.au/openbanking/cds-au/v1/banking/products/73a44d40-679a-44ec-aff1-67a5de45cf69",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0425",
+          "rate": "0.045",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M"

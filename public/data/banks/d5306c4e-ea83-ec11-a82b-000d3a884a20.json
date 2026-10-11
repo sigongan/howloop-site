@@ -1,7 +1,7 @@
 {
   "name": "Newcastle Permanent",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -44,25 +44,23 @@
           "name": "Card Replacement Overseas"
         },
         {
+          "additionalInfo": " $60/hour (min $10/copy)",
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "DISHONOUR",
-          "fixedAmount": {
-            "amount": "9.00"
-          },
-          "name": "Dishonour (Direct Debit and Cheque)"
+          "feeMethodUType": "variable",
+          "feeType": "ENQUIRY",
+          "name": "Document and Miscellaneous Service",
+          "variable": {}
         },
         {
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "rateBased",
-          "feeType": "PURCHASE",
-          "name": "Foreign Currency Conversion",
-          "rateBased": {
-            "rate": "0.0300",
-            "rateType": "TRANSACTION"
-          }
+          "feeMethodUType": "fixedAmount",
+          "feeType": "EVENT",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "name": "Account Overdrawn"
         },
         {
           "currency": "AUD",
@@ -85,13 +83,35 @@
           "name": "Financial Institution Cheque Replacement"
         },
         {
-          "additionalInfo": " $60/hour (min $10/copy)",
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "ENQUIRY",
-          "name": "Document and Miscellaneous Service",
-          "variable": {}
+          "feeMethodUType": "fixedAmount",
+          "feeType": "CASH_ADVANCE",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "name": "Visa Cash Advance Fee"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "DISHONOUR",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "name": "Dishonour (Direct Debit and Cheque)"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "feeType": "PURCHASE",
+          "name": "Foreign Currency Conversion",
+          "rateBased": {
+            "rate": "0.0300",
+            "rateType": "TRANSACTION"
+          }
         },
         {
           "additionalInfo": "Unascertainable",
@@ -100,6 +120,15 @@
           "feeMethodUType": "variable",
           "feeType": "DEPOSIT",
           "name": "Real Time Gross Settlements (RTGS) - Inward Third party financial institution fee",
+          "variable": {}
+        },
+        {
+          "additionalInfo": "Unascertainable",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "WITHDRAWAL",
+          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
           "variable": {}
         },
         {
@@ -113,16 +142,6 @@
           "name": "Financial Institution Cheque"
         },
         {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "CASH_ADVANCE",
-          "fixedAmount": {
-            "amount": "5.00"
-          },
-          "name": "Visa Cash Advance Fee"
-        },
-        {
           "additionalInfo": "When you send an RTGS",
           "currency": "AUD",
           "discounts": [],
@@ -132,25 +151,6 @@
             "amount": "30.00"
           },
           "name": "Real Time Gross Settlements (RTGS)"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "5.00"
-          },
-          "name": "Account Overdrawn"
-        },
-        {
-          "additionalInfo": "Unascertainable",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "WITHDRAWAL",
-          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
-          "variable": {}
         }
       ],
       "eligibility": [
@@ -244,6 +244,77 @@
       ],
       "fees": [
         {
+          "additionalInfo": "When you send an RTGS",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "WITHDRAWAL",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "name": "Real Time Gross Settlements (RTGS)"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "rateBased",
+          "feeType": "PURCHASE",
+          "name": "Foreign Currency Conversion",
+          "rateBased": {
+            "rate": "0.0300",
+            "rateType": "TRANSACTION"
+          }
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "REPLACEMENT",
+          "fixedAmount": {
+            "amount": "100.00"
+          },
+          "name": "Card Replacement Overseas"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "REPLACEMENT",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "name": "Financial Institution Cheque Replacement"
+        },
+        {
+          "additionalInfo": "Unascertainable",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "DEPOSIT",
+          "name": "Real Time Gross Settlements (RTGS) - Inward Third party financial institution fee",
+          "variable": {}
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "CASH_ADVANCE",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "name": "Visa Cash Advance Fee"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "WITHDRAWAL",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "name": "Financial Institution Cheque"
+        },
+        {
           "additionalInfo": " $60/hour (min $10/copy)",
           "currency": "AUD",
           "discounts": [],
@@ -266,61 +337,11 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "REPLACEMENT",
-          "fixedAmount": {
-            "amount": "100.00"
-          },
-          "name": "Card Replacement Overseas"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
           "feeType": "EVENT",
           "fixedAmount": {
             "amount": "5.00"
           },
           "name": "Account Overdrawn"
-        },
-        {
-          "additionalInfo": "When you send an RTGS",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "30.00"
-          },
-          "name": "Real Time Gross Settlements (RTGS)"
-        },
-        {
-          "additionalInfo": "Unascertainable",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "DEPOSIT",
-          "name": "Real Time Gross Settlements (RTGS) - Inward Third party financial institution fee",
-          "variable": {}
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "DEPOSIT",
-          "fixedAmount": {
-            "amount": "12.00"
-          },
-          "name": "Real Time Gross Settlements (RTGS) - Inward NPBS fee"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "10.00"
-          },
-          "name": "Financial Institution Cheque"
         },
         {
           "additionalInfo": "Unascertainable",
@@ -335,32 +356,11 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "CASH_ADVANCE",
+          "feeType": "DEPOSIT",
           "fixedAmount": {
-            "amount": "5.00"
+            "amount": "12.00"
           },
-          "name": "Visa Cash Advance Fee"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "rateBased",
-          "feeType": "PURCHASE",
-          "name": "Foreign Currency Conversion",
-          "rateBased": {
-            "rate": "0.0300",
-            "rateType": "TRANSACTION"
-          }
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "REPLACEMENT",
-          "fixedAmount": {
-            "amount": "15.00"
-          },
-          "name": "Financial Institution Cheque Replacement"
+          "name": "Real Time Gross Settlements (RTGS) - Inward NPBS fee"
         }
       ],
       "eligibility": [
@@ -453,12 +453,101 @@
       ],
       "fees": [
         {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "DISHONOUR",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "name": "Dishonour (Direct Debit and Cheque)"
+        },
+        {
+          "additionalInfo": " $60/hour (min $10/copy)",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "ENQUIRY",
+          "name": "Document and Miscellaneous Service",
+          "variable": {}
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "EVENT",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "name": "Account Overdrawn"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "REPLACEMENT",
+          "fixedAmount": {
+            "amount": "100.00"
+          },
+          "name": "Card Replacement Overseas"
+        },
+        {
           "additionalInfo": "Unascertainable",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "variable",
           "feeType": "DEPOSIT",
           "name": "Real Time Gross Settlements (RTGS) - Inward Third party financial institution fee",
+          "variable": {}
+        },
+        {
+          "additionalInfo": "When you send an RTGS",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "WITHDRAWAL",
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "name": "Real Time Gross Settlements (RTGS)"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "CASH_ADVANCE",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "name": "Visa Cash Advance Fee"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "REPLACEMENT",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "name": "Financial Institution Cheque Replacement"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "WITHDRAWAL",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "name": "Financial Institution Cheque"
+        },
+        {
+          "additionalInfo": "Unascertainable",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "WITHDRAWAL",
+          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
           "variable": {}
         },
         {
@@ -476,100 +565,11 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "REPLACEMENT",
-          "fixedAmount": {
-            "amount": "15.00"
-          },
-          "name": "Financial Institution Cheque Replacement"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "CASH_ADVANCE",
-          "fixedAmount": {
-            "amount": "5.00"
-          },
-          "name": "Visa Cash Advance Fee"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
           "feeType": "DEPOSIT",
           "fixedAmount": {
             "amount": "12.00"
           },
           "name": "Real Time Gross Settlements (RTGS) - Inward NPBS fee"
-        },
-        {
-          "additionalInfo": " $60/hour (min $10/copy)",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "ENQUIRY",
-          "name": "Document and Miscellaneous Service",
-          "variable": {}
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "DISHONOUR",
-          "fixedAmount": {
-            "amount": "9.00"
-          },
-          "name": "Dishonour (Direct Debit and Cheque)"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "REPLACEMENT",
-          "fixedAmount": {
-            "amount": "100.00"
-          },
-          "name": "Card Replacement Overseas"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "10.00"
-          },
-          "name": "Financial Institution Cheque"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "5.00"
-          },
-          "name": "Account Overdrawn"
-        },
-        {
-          "additionalInfo": "When you send an RTGS",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "30.00"
-          },
-          "name": "Real Time Gross Settlements (RTGS)"
-        },
-        {
-          "additionalInfo": "Unascertainable",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "WITHDRAWAL",
-          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
-          "variable": {}
         }
       ],
       "eligibility": [
@@ -637,7 +637,7 @@
       "name": "Online Savings Account (including Intro)",
       "description": "This high interest at-call savings account is designed to offer maximum flexibility with no monthly account or transaction fees.",
       "url": "https://www.newcastlepermanent.com.au/personal/saving-accounts/online-savings-account",
-      "lastUpdated": "2026-08-25T00:00:00+10:00",
+      "lastUpdated": "2026-10-09T00:00:00+11:00",
       "source": "https://openbank.newcastlepermanent.com.au/cds-au/v1/banking/products/AC_onlinesavings",
       "depositRates": [
         {
@@ -648,7 +648,7 @@
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "INTRODUCTORY",
-          "rate": "0.0400000000",
+          "rate": "0.0425000000",
           "tiers": [
             {
               "applicabilityConditions": [],
@@ -692,6 +692,24 @@
           "name": "Real Time Gross Settlements (RTGS)"
         },
         {
+          "additionalInfo": "Unascertainable",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "WITHDRAWAL",
+          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
+          "variable": {}
+        },
+        {
+          "additionalInfo": " $60/hour (min $10/copy)",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "ENQUIRY",
+          "name": "Document and Miscellaneous Service",
+          "variable": {}
+        },
+        {
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -708,24 +726,6 @@
           "feeMethodUType": "variable",
           "feeType": "DEPOSIT",
           "name": "Real Time Gross Settlements (RTGS) - Inward Third party financial institution fee",
-          "variable": {}
-        },
-        {
-          "additionalInfo": " $60/hour (min $10/copy)",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "ENQUIRY",
-          "name": "Document and Miscellaneous Service",
-          "variable": {}
-        },
-        {
-          "additionalInfo": "Unascertainable",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "WITHDRAWAL",
-          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
           "variable": {}
         }
       ],
@@ -777,84 +777,9 @@
       "name": "Smart Saver Account",
       "description": "This savings account is designed to help members reach their savings goals.",
       "url": "https://www.newcastlepermanent.com.au/personal/saving-accounts/smart-saver-account",
-      "lastUpdated": "2026-09-01T00:00:00+10:00",
+      "lastUpdated": "2026-10-09T00:00:00+11:00",
       "source": "https://openbank.newcastlepermanent.com.au/cds-au/v1/banking/products/AC_smartsaver",
       "depositRates": [
-        {
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
-          "applicabilityConditions": [],
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "BONUS",
-          "rate": "0.0445000000",
-          "tiers": [
-            {
-              "applicabilityConditions": [],
-              "maximumValue": "50000.00",
-              "minimumValue": "0.00",
-              "name": "$0 - $50000",
-              "rateApplicationMethod": "PER_TIER",
-              "unitOfMeasure": "DOLLAR"
-            }
-          ]
-        },
-        {
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
-          "applicabilityConditions": [],
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "BONUS",
-          "rate": "0.0445000000",
-          "tiers": [
-            {
-              "applicabilityConditions": [],
-              "maximumValue": "250000.00",
-              "minimumValue": "100000.00",
-              "name": "$100000 - $250000",
-              "rateApplicationMethod": "PER_TIER",
-              "unitOfMeasure": "DOLLAR"
-            }
-          ]
-        },
-        {
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
-          "applicabilityConditions": [],
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "BONUS",
-          "rate": "0.0445000000",
-          "tiers": [
-            {
-              "applicabilityConditions": [],
-              "minimumValue": "250000.00",
-              "name": "$250000 +",
-              "rateApplicationMethod": "PER_TIER",
-              "unitOfMeasure": "DOLLAR"
-            }
-          ]
-        },
-        {
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
-          "applicabilityConditions": [],
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "BONUS",
-          "rate": "0.0445000000",
-          "tiers": [
-            {
-              "applicabilityConditions": [],
-              "maximumValue": "100000.00",
-              "minimumValue": "50000.00",
-              "name": "$50000 - $100000",
-              "rateApplicationMethod": "PER_TIER",
-              "unitOfMeasure": "DOLLAR"
-            }
-          ]
-        },
         {
           "additionalInfo": "Standard interest is earned every calendar month that your smart saver account has maintained a positive balance. The standard variable rate applies to your entire balance, regardless of if the bonus conditions are met.",
           "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
@@ -873,9 +798,94 @@
               "unitOfMeasure": "DOLLAR"
             }
           ]
+        },
+        {
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
+          "applicabilityConditions": [],
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "BONUS",
+          "rate": "0.0470000000",
+          "tiers": [
+            {
+              "applicabilityConditions": [],
+              "minimumValue": "250000.00",
+              "name": "$250000 +",
+              "rateApplicationMethod": "PER_TIER",
+              "unitOfMeasure": "DOLLAR"
+            }
+          ]
+        },
+        {
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
+          "applicabilityConditions": [],
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "BONUS",
+          "rate": "0.0470000000",
+          "tiers": [
+            {
+              "applicabilityConditions": [],
+              "maximumValue": "100000.00",
+              "minimumValue": "50000.00",
+              "name": "$50000 - $100000",
+              "rateApplicationMethod": "PER_TIER",
+              "unitOfMeasure": "DOLLAR"
+            }
+          ]
+        },
+        {
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
+          "applicabilityConditions": [],
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "BONUS",
+          "rate": "0.0495000000",
+          "tiers": [
+            {
+              "applicabilityConditions": [],
+              "maximumValue": "50000.00",
+              "minimumValue": "0.00",
+              "name": "$0 - $50000",
+              "rateApplicationMethod": "PER_TIER",
+              "unitOfMeasure": "DOLLAR"
+            }
+          ]
+        },
+        {
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
+          "applicabilityConditions": [],
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "BONUS",
+          "rate": "0.0470000000",
+          "tiers": [
+            {
+              "applicabilityConditions": [],
+              "maximumValue": "250000.00",
+              "minimumValue": "100000.00",
+              "name": "$100000 - $250000",
+              "rateApplicationMethod": "PER_TIER",
+              "unitOfMeasure": "DOLLAR"
+            }
+          ]
         }
       ],
       "fees": [
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "REPLACEMENT",
+          "fixedAmount": {
+            "amount": "100.00"
+          },
+          "name": "Card Replacement Overseas"
+        },
         {
           "additionalInfo": "2 free Branch Withdrawals per month",
           "currency": "AUD",
@@ -891,21 +901,20 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "DEPOSIT",
+          "feeType": "EVENT",
           "fixedAmount": {
-            "amount": "12.00"
+            "amount": "5.00"
           },
-          "name": "Real Time Gross Settlements (RTGS) - Inward NPBS fee"
+          "name": "Account Overdrawn"
         },
         {
+          "additionalInfo": " $60/hour (min $10/copy)",
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "REPLACEMENT",
-          "fixedAmount": {
-            "amount": "100.00"
-          },
-          "name": "Card Replacement Overseas"
+          "feeMethodUType": "variable",
+          "feeType": "ENQUIRY",
+          "name": "Document and Miscellaneous Service",
+          "variable": {}
         },
         {
           "additionalInfo": "Unascertainable",
@@ -919,13 +928,22 @@
         {
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "rateBased",
-          "feeType": "PURCHASE",
-          "name": "Foreign Currency Conversion",
-          "rateBased": {
-            "rate": "0.0300",
-            "rateType": "TRANSACTION"
-          }
+          "feeMethodUType": "fixedAmount",
+          "feeType": "DISHONOUR",
+          "fixedAmount": {
+            "amount": "9.00"
+          },
+          "name": "Dishonour (Direct Debit and Cheque)"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "CASH_ADVANCE",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "name": "Visa Cash Advance Fee"
         },
         {
           "additionalInfo": "When you send an RTGS",
@@ -942,31 +960,31 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "CASH_ADVANCE",
+          "feeType": "DEPOSIT",
           "fixedAmount": {
-            "amount": "5.00"
+            "amount": "12.00"
           },
-          "name": "Visa Cash Advance Fee"
+          "name": "Real Time Gross Settlements (RTGS) - Inward NPBS fee"
         },
         {
+          "additionalInfo": "Unascertainable",
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "fixedAmount",
+          "feeMethodUType": "variable",
           "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "10.00"
-          },
-          "name": "Financial Institution Cheque"
+          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
+          "variable": {}
         },
         {
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "5.00"
-          },
-          "name": "Account Overdrawn"
+          "feeMethodUType": "rateBased",
+          "feeType": "PURCHASE",
+          "name": "Foreign Currency Conversion",
+          "rateBased": {
+            "rate": "0.0300",
+            "rateType": "TRANSACTION"
+          }
         },
         {
           "currency": "AUD",
@@ -982,29 +1000,11 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "DISHONOUR",
-          "fixedAmount": {
-            "amount": "9.00"
-          },
-          "name": "Dishonour (Direct Debit and Cheque)"
-        },
-        {
-          "additionalInfo": "Unascertainable",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
           "feeType": "WITHDRAWAL",
-          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
-          "variable": {}
-        },
-        {
-          "additionalInfo": " $60/hour (min $10/copy)",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "ENQUIRY",
-          "name": "Document and Miscellaneous Service",
-          "variable": {}
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "name": "Financial Institution Cheque"
         }
       ],
       "eligibility": [
@@ -1083,7 +1083,7 @@
       "name": "Smart Saver Account (under 25)",
       "description": "This at-call savings account is designed to help members under 25 reach their savings goals.",
       "url": "https://www.newcastlepermanent.com.au/personal/saving-accounts/smart-saver-for-under-25s-account",
-      "lastUpdated": "2026-09-01T00:00:00+10:00",
+      "lastUpdated": "2026-10-09T00:00:00+11:00",
       "source": "https://openbank.newcastlepermanent.com.au/cds-au/v1/banking/products/AC_smartsaveryouth",
       "depositRates": [
         {
@@ -1093,7 +1093,26 @@
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "BONUS",
-          "rate": "0.0570000000",
+          "rate": "0.0520000000",
+          "tiers": [
+            {
+              "applicabilityConditions": [],
+              "maximumValue": "100000.00",
+              "minimumValue": "50000.00",
+              "name": "$50000 - $100000",
+              "rateApplicationMethod": "PER_TIER",
+              "unitOfMeasure": "DOLLAR"
+            }
+          ]
+        },
+        {
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
+          "applicabilityConditions": [],
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "BONUS",
+          "rate": "0.0595000000",
           "tiers": [
             {
               "applicabilityConditions": [],
@@ -1112,12 +1131,31 @@
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "BONUS",
-          "rate": "0.0470000000",
+          "rate": "0.0495000000",
           "tiers": [
             {
               "applicabilityConditions": [],
               "minimumValue": "250000.00",
               "name": "$250000 +",
+              "rateApplicationMethod": "PER_TIER",
+              "unitOfMeasure": "DOLLAR"
+            }
+          ]
+        },
+        {
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
+          "applicabilityConditions": [],
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "BONUS",
+          "rate": "0.0520000000",
+          "tiers": [
+            {
+              "applicabilityConditions": [],
+              "maximumValue": "250000.00",
+              "minimumValue": "100000.00",
+              "name": "$100000 - $250000",
               "rateApplicationMethod": "PER_TIER",
               "unitOfMeasure": "DOLLAR"
             }
@@ -1141,67 +1179,9 @@
               "unitOfMeasure": "DOLLAR"
             }
           ]
-        },
-        {
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
-          "applicabilityConditions": [],
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "BONUS",
-          "rate": "0.0495000000",
-          "tiers": [
-            {
-              "applicabilityConditions": [],
-              "maximumValue": "100000.00",
-              "minimumValue": "50000.00",
-              "name": "$50000 - $100000",
-              "rateApplicationMethod": "PER_TIER",
-              "unitOfMeasure": "DOLLAR"
-            }
-          ]
-        },
-        {
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
-          "applicabilityConditions": [],
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "BONUS",
-          "rate": "0.0495000000",
-          "tiers": [
-            {
-              "applicabilityConditions": [],
-              "maximumValue": "250000.00",
-              "minimumValue": "100000.00",
-              "name": "$100000 - $250000",
-              "rateApplicationMethod": "PER_TIER",
-              "unitOfMeasure": "DOLLAR"
-            }
-          ]
         }
       ],
       "fees": [
-        {
-          "additionalInfo": "Unascertainable",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "DEPOSIT",
-          "name": "Real Time Gross Settlements (RTGS) - Inward Third party financial institution fee",
-          "variable": {}
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "rateBased",
-          "feeType": "PURCHASE",
-          "name": "Foreign Currency Conversion",
-          "rateBased": {
-            "rate": "0.0300",
-            "rateType": "TRANSACTION"
-          }
-        },
         {
           "currency": "AUD",
           "discounts": [],
@@ -1211,16 +1191,6 @@
             "amount": "100.00"
           },
           "name": "Card Replacement Overseas"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "10.00"
-          },
-          "name": "Financial Institution Cheque"
         },
         {
           "additionalInfo": "When you send an RTGS",
@@ -1243,6 +1213,35 @@
           "variable": {}
         },
         {
+          "additionalInfo": " $60/hour (min $10/copy)",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "ENQUIRY",
+          "name": "Document and Miscellaneous Service",
+          "variable": {}
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "REPLACEMENT",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "name": "Financial Institution Cheque Replacement"
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "CASH_ADVANCE",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "name": "Visa Cash Advance Fee"
+        },
+        {
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
@@ -1253,13 +1252,25 @@
           "name": "Account Overdrawn"
         },
         {
-          "additionalInfo": " $60/hour (min $10/copy)",
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "ENQUIRY",
-          "name": "Document and Miscellaneous Service",
-          "variable": {}
+          "feeMethodUType": "rateBased",
+          "feeType": "PURCHASE",
+          "name": "Foreign Currency Conversion",
+          "rateBased": {
+            "rate": "0.0300",
+            "rateType": "TRANSACTION"
+          }
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "WITHDRAWAL",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "name": "Financial Institution Cheque"
         },
         {
           "additionalInfo": "2 free Branch Withdrawals per month",
@@ -1286,31 +1297,20 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "CASH_ADVANCE",
-          "fixedAmount": {
-            "amount": "5.00"
-          },
-          "name": "Visa Cash Advance Fee"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "REPLACEMENT",
-          "fixedAmount": {
-            "amount": "15.00"
-          },
-          "name": "Financial Institution Cheque Replacement"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
           "feeType": "DEPOSIT",
           "fixedAmount": {
             "amount": "12.00"
           },
           "name": "Real Time Gross Settlements (RTGS) - Inward NPBS fee"
+        },
+        {
+          "additionalInfo": "Unascertainable",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "DEPOSIT",
+          "name": "Real Time Gross Settlements (RTGS) - Inward Third party financial institution fee",
+          "variable": {}
         }
       ],
       "eligibility": [
@@ -1389,7 +1389,7 @@
       "name": "Special Monthly Interest ",
       "description": "A flexible everyday account specially designed for pensioners and retirees offering the peace of mind knowing their retirement savings or pension income is working hard and earning interest.",
       "url": "https://www.newcastlepermanent.com.au/personal/everyday-banking/special-monthly-interest-account",
-      "lastUpdated": "2026-09-01T00:00:00+10:00",
+      "lastUpdated": "2026-10-09T00:00:00+11:00",
       "source": "https://openbank.newcastlepermanent.com.au/cds-au/v1/banking/products/AC_specialmonthlyinterest",
       "depositRates": [
         {
@@ -1400,13 +1400,32 @@
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "VARIABLE",
-          "rate": "0.0180000000",
+          "rate": "0.0165000000",
           "tiers": [
             {
               "applicabilityConditions": [],
-              "maximumValue": "250000.00",
-              "minimumValue": "50000.00",
-              "name": "$50000 - $249999",
+              "maximumValue": "50000.00",
+              "minimumValue": "10000.00",
+              "name": "$10000 - $49999",
+              "rateApplicationMethod": "PER_TIER",
+              "unitOfMeasure": "DOLLAR"
+            }
+          ]
+        },
+        {
+          "additionalInfo": "Credit interest you earn is worked out as strata interest at the annual rate divided by 365 on the portion of the balance within each strata. It is paid to the account on the last day of each calendar month.",
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
+          "applicabilityConditions": [],
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.0200000000",
+          "tiers": [
+            {
+              "applicabilityConditions": [],
+              "minimumValue": "250000.00",
+              "name": "$250000 plus",
               "rateApplicationMethod": "PER_TIER",
               "unitOfMeasure": "DOLLAR"
             }
@@ -1440,32 +1459,13 @@
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "VARIABLE",
-          "rate": "0.0140000000",
+          "rate": "0.0200000000",
           "tiers": [
             {
               "applicabilityConditions": [],
-              "maximumValue": "50000.00",
-              "minimumValue": "10000.00",
-              "name": "$10000 - $49999",
-              "rateApplicationMethod": "PER_TIER",
-              "unitOfMeasure": "DOLLAR"
-            }
-          ]
-        },
-        {
-          "additionalInfo": "Credit interest you earn is worked out as strata interest at the annual rate divided by 365 on the portion of the balance within each strata. It is paid to the account on the last day of each calendar month.",
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/interest-rates",
-          "applicabilityConditions": [],
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "VARIABLE",
-          "rate": "0.0180000000",
-          "tiers": [
-            {
-              "applicabilityConditions": [],
-              "minimumValue": "250000.00",
-              "name": "$250000 plus",
+              "maximumValue": "250000.00",
+              "minimumValue": "50000.00",
+              "name": "$50000 - $249999",
               "rateApplicationMethod": "PER_TIER",
               "unitOfMeasure": "DOLLAR"
             }
@@ -1473,38 +1473,6 @@
         }
       ],
       "fees": [
-        {
-          "additionalInfo": "When you send an RTGS",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "30.00"
-          },
-          "name": "Real Time Gross Settlements (RTGS)"
-        },
-        {
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "DEPOSIT",
-          "fixedAmount": {
-            "amount": "0.50"
-          },
-          "name": "Cheque Clearance"
-        },
-        {
-          "additionalInfo": "2 free per month, $10 after that",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "10.00"
-          },
-          "name": "Financial Institution Cheque Fee"
-        },
         {
           "currency": "AUD",
           "discounts": [],
@@ -1520,11 +1488,11 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "REPLACEMENT",
+          "feeType": "DISHONOUR",
           "fixedAmount": {
-            "amount": "15.00"
+            "amount": "9.00"
           },
-          "name": "Financial Institution Cheque Replacement"
+          "name": "Dishonour (Direct Debit and Cheque)"
         },
         {
           "currency": "AUD",
@@ -1532,20 +1500,9 @@
           "feeMethodUType": "fixedAmount",
           "feeType": "DEPOSIT",
           "fixedAmount": {
-            "amount": "12.00"
+            "amount": "0.50"
           },
-          "name": "Real Time Gross Settlements (RTGS) - Inward NPBS fee"
-        },
-        {
-          "additionalInfo": "6 free Branch Withdrawals per month. Can qualify for additional free transactions (up to 30) as per the product schedule.",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "3.00"
-          },
-          "name": "Branch Withdrawal"
+          "name": "Cheque Clearance"
         },
         {
           "additionalInfo": "Unascertainable",
@@ -1560,29 +1517,22 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "DISHONOUR",
+          "feeType": "CASH_ADVANCE",
           "fixedAmount": {
-            "amount": "9.00"
+            "amount": "5.00"
           },
-          "name": "Dishonour (Direct Debit and Cheque)"
+          "name": "Visa Cash Advance Fee"
         },
         {
-          "additionalInfo": "$60/hour (min $10/copy).",
+          "additionalInfo": "When you send an RTGS",
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "ENQUIRY",
-          "name": "Document and Miscellaneous Service",
-          "variable": {}
-        },
-        {
-          "additionalInfo": "Unascertainable",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "variable",
+          "feeMethodUType": "fixedAmount",
           "feeType": "WITHDRAWAL",
-          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
-          "variable": {}
+          "fixedAmount": {
+            "amount": "30.00"
+          },
+          "name": "Real Time Gross Settlements (RTGS)"
         },
         {
           "currency": "AUD",
@@ -1598,11 +1548,30 @@
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "fixedAmount",
-          "feeType": "CASH_ADVANCE",
+          "feeType": "REPLACEMENT",
           "fixedAmount": {
-            "amount": "5.00"
+            "amount": "15.00"
           },
-          "name": "Visa Cash Advance Fee"
+          "name": "Financial Institution Cheque Replacement"
+        },
+        {
+          "additionalInfo": "$60/hour (min $10/copy).",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "ENQUIRY",
+          "name": "Document and Miscellaneous Service",
+          "variable": {}
+        },
+        {
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "DEPOSIT",
+          "fixedAmount": {
+            "amount": "12.00"
+          },
+          "name": "Real Time Gross Settlements (RTGS) - Inward NPBS fee"
         },
         {
           "currency": "AUD",
@@ -1613,6 +1582,37 @@
             "amount": "100.00"
           },
           "name": "Card Replacement Overseas"
+        },
+        {
+          "additionalInfo": "Unascertainable",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "WITHDRAWAL",
+          "name": "Real Time Gross Settlements (RTGS) - Outward Third party financial institution fee",
+          "variable": {}
+        },
+        {
+          "additionalInfo": "6 free Branch Withdrawals per month. Can qualify for additional free transactions (up to 30) as per the product schedule.",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "WITHDRAWAL",
+          "fixedAmount": {
+            "amount": "3.00"
+          },
+          "name": "Branch Withdrawal"
+        },
+        {
+          "additionalInfo": "2 free per month, $10 after that",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "WITHDRAWAL",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "name": "Financial Institution Cheque Fee"
         }
       ],
       "eligibility": [
@@ -1714,13 +1714,6 @@
             },
             {
               "applicabilityConditions": [],
-              "minimumValue": "100000.00",
-              "name": "$100000 plus",
-              "rateApplicationMethod": "PER_TIER",
-              "unitOfMeasure": "DOLLAR"
-            },
-            {
-              "applicabilityConditions": [],
               "maximumValue": "10000.00",
               "minimumValue": "2000.00",
               "name": "$2000 - $9999",
@@ -1737,6 +1730,14 @@
             },
             {
               "applicabilityConditions": [],
+              "maximumValue": "2000.00",
+              "minimumValue": "0.00",
+              "name": "Up to $1999",
+              "rateApplicationMethod": "PER_TIER",
+              "unitOfMeasure": "DOLLAR"
+            },
+            {
+              "applicabilityConditions": [],
               "maximumValue": "100000.00",
               "minimumValue": "50000.00",
               "name": "$50000 - $99999",
@@ -1745,9 +1746,8 @@
             },
             {
               "applicabilityConditions": [],
-              "maximumValue": "2000.00",
-              "minimumValue": "0.00",
-              "name": "Up to $1999",
+              "minimumValue": "100000.00",
+              "name": "$100000 plus",
               "rateApplicationMethod": "PER_TIER",
               "unitOfMeasure": "DOLLAR"
             }
@@ -1756,84 +1756,14 @@
       ],
       "fees": [
         {
-          "additionalInfo": "Payable when you request that we stop a cheque",
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "5.00"
-          },
-          "name": "Stop Payment Fee"
-        },
-        {
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "REPLACEMENT",
-          "fixedAmount": {
-            "amount": "15.00"
-          },
-          "name": "Financial Institution Cheque Replacement"
-        },
-        {
-          "additionalInfo": "Payable each time any of the following transactions occur: a) a cheque you wrote is presented for payment; or b) a deposit is made by you or another person into your account over the counter at one of our branches; or c) a cheque is deposited by you or another person into your account; or d) you or another person transfers funds into your account from another NPBS account, where this was arranged over the counter at one of our branches or where we are asked to arrange this. 40 free Branch transactions per month. If the minimum balance of your account for each day of a month (other than the month in which you open the account) is $50,000 or more, then you will receive 60 free transactions for that month.",
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "TRANSACTION",
-          "fixedAmount": {
-            "amount": "0.50"
-          },
-          "name": "Transaction Fee"
-        },
-        {
-          "additionalInfo": " $60/hour (min $10/copy)",
+          "additionalInfo": "Payable when you request information from us, and your request is not covered by the document fee or certificate fee. $60.00 per hour spent by us to satisfy your request.",
           "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
           "currency": "AUD",
           "discounts": [],
           "feeMethodUType": "variable",
           "feeType": "ENQUIRY",
-          "name": "Document Fee",
+          "name": "Miscellaneous Service Fee",
           "variable": {}
-        },
-        {
-          "additionalInfo": "Payable when we issue you a deposit book.",
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "8.50"
-          },
-          "name": "Deposit Book Fee"
-        },
-        {
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "DISHONOUR",
-          "fixedAmount": {
-            "amount": "17.50"
-          },
-          "name": "Dishonoured Cheque Fee"
-        },
-        {
-          "additionalInfo": "Payable when we attempt to debit another account, but payment is dishonoured because there is not enough money to pay (the other account could be with us or another financial institution).",
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "DISHONOUR",
-          "fixedAmount": {
-            "amount": "12.50"
-          },
-          "name": "Direct Debit Dishonour Fee"
         },
         {
           "additionalInfo": "Payable when you request a Certificate of Balance or Audit Certificate. $60/hour (min $10/copy).",
@@ -1844,53 +1774,6 @@
           "feeType": "ENQUIRY",
           "name": "Certificate Fee",
           "variable": {}
-        },
-        {
-          "additionalInfo": "Applies to cash advances performed using the card via ATM, at a branch or other financial institution, or by internet banking. ",
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "CASH_ADVANCE",
-          "fixedAmount": {
-            "amount": "5.00"
-          },
-          "name": "Visa Cash Advance Fee"
-        },
-        {
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "EVENT",
-          "fixedAmount": {
-            "amount": "17.50"
-          },
-          "name": "Account Overdrawn"
-        },
-        {
-          "additionalInfo": "Payable each time a withdrawal is made from your account, where you arrange this over the counter from one of our branches. 40 free Branch transactions per month. If the minimum balance of your account for each day of a month (other than the month in which you open the account) is $50,000 or more, then you will receive 60 free transactions for that month.",
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "1.75"
-          },
-          "name": "Withdrawal Fee"
-        },
-        {
-          "additionalInfo": "Payable each time you request a Newcastle Permanent cheque.",
-          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
-          "currency": "AUD",
-          "discounts": [],
-          "feeMethodUType": "fixedAmount",
-          "feeType": "WITHDRAWAL",
-          "fixedAmount": {
-            "amount": "4.00"
-          },
-          "name": "Financial Institution Cheque"
         },
         {
           "additionalInfo": "Payable when you use your Visa Debit card to perform a transaction overseas or where a merchant processes the payment overseas (whether or not the payment is in Australian dollars). It is calculated as a percentage of the total transaction amount and is debited to your account.",
@@ -1906,14 +1789,40 @@
           }
         },
         {
-          "additionalInfo": "Payable when you request information from us, and your request is not covered by the document fee or certificate fee. $60.00 per hour spent by us to satisfy your request.",
+          "additionalInfo": "Payable each time a withdrawal is made from your account, where you arrange this over the counter from one of our branches. 40 free Branch transactions per month. If the minimum balance of your account for each day of a month (other than the month in which you open the account) is $50,000 or more, then you will receive 60 free transactions for that month.",
           "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
           "currency": "AUD",
           "discounts": [],
-          "feeMethodUType": "variable",
-          "feeType": "ENQUIRY",
-          "name": "Miscellaneous Service Fee",
-          "variable": {}
+          "feeMethodUType": "fixedAmount",
+          "feeType": "WITHDRAWAL",
+          "fixedAmount": {
+            "amount": "1.75"
+          },
+          "name": "Withdrawal Fee"
+        },
+        {
+          "additionalInfo": "Payable when we issue you a deposit book.",
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "EVENT",
+          "fixedAmount": {
+            "amount": "8.50"
+          },
+          "name": "Deposit Book Fee"
+        },
+        {
+          "additionalInfo": "Applies to cash advances performed using the card via ATM, at a branch or other financial institution, or by internet banking. ",
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "CASH_ADVANCE",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "name": "Visa Cash Advance Fee"
         },
         {
           "additionalInfo": "Payable when you deposit more than $50 worth of coins with us. $5.00 per 10 minutes spent by us counting coins. Minimum charge of $5.00 applies.",
@@ -1926,6 +1835,86 @@
           "variable": {}
         },
         {
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "EVENT",
+          "fixedAmount": {
+            "amount": "17.50"
+          },
+          "name": "Account Overdrawn"
+        },
+        {
+          "additionalInfo": "Payable each time any of the following transactions occur: a) a cheque you wrote is presented for payment; or b) a deposit is made by you or another person into your account over the counter at one of our branches; or c) a cheque is deposited by you or another person into your account; or d) you or another person transfers funds into your account from another NPBS account, where this was arranged over the counter at one of our branches or where we are asked to arrange this. 40 free Branch transactions per month. If the minimum balance of your account for each day of a month (other than the month in which you open the account) is $50,000 or more, then you will receive 60 free transactions for that month.",
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "TRANSACTION",
+          "fixedAmount": {
+            "amount": "0.50"
+          },
+          "name": "Transaction Fee"
+        },
+        {
+          "additionalInfo": "Payable when you request that we stop a cheque",
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "EVENT",
+          "fixedAmount": {
+            "amount": "5.00"
+          },
+          "name": "Stop Payment Fee"
+        },
+        {
+          "additionalInfo": " $60/hour (min $10/copy)",
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "variable",
+          "feeType": "ENQUIRY",
+          "name": "Document Fee",
+          "variable": {}
+        },
+        {
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "DISHONOUR",
+          "fixedAmount": {
+            "amount": "17.50"
+          },
+          "name": "Dishonoured Cheque Fee"
+        },
+        {
+          "additionalInfo": "Payable each time you request a Newcastle Permanent cheque.",
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "WITHDRAWAL",
+          "fixedAmount": {
+            "amount": "4.00"
+          },
+          "name": "Financial Institution Cheque"
+        },
+        {
+          "additionalInfo": "Payable when we attempt to debit another account, but payment is dishonoured because there is not enough money to pay (the other account could be with us or another financial institution).",
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "DISHONOUR",
+          "fixedAmount": {
+            "amount": "12.50"
+          },
+          "name": "Direct Debit Dishonour Fee"
+        },
+        {
           "additionalInfo": "Payable when we debit an account at another financial institution at your request.",
           "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
           "currency": "AUD",
@@ -1936,6 +1925,17 @@
             "amount": "0.70"
           },
           "name": "Direct Debit Request Fee"
+        },
+        {
+          "additionalInfoUri": "https://www.newcastlepermanent.com.au/tools-and-services/terms-and-conditions#business",
+          "currency": "AUD",
+          "discounts": [],
+          "feeMethodUType": "fixedAmount",
+          "feeType": "REPLACEMENT",
+          "fixedAmount": {
+            "amount": "15.00"
+          },
+          "name": "Financial Institution Cheque Replacement"
         }
       ],
       "eligibility": [

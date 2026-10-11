@@ -1,7 +1,7 @@
 {
   "name": "Summerland Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Bonus Saver",
       "description": "Save for a holiday, car or even a deposit for a new home! Summerland's Bonus Saver account is designed to help you reach your savings goals. Deposit $100 per calendar month & make no withdrawals to earn bonus interest.",
       "url": "https://summerland.com.au/saving-investing-accounts",
-      "lastUpdated": "2026-10-04T22:00:40.8762834Z",
+      "lastUpdated": "2026-10-11T22:00:40.8089755Z",
       "source": "https://public.cdr-api.summerland.com.au/cds-au/v1/banking/products/2",
       "depositRates": [
         {
@@ -126,21 +126,21 @@
       "name": "iSave Online",
       "description": "Summerland's electronic-only account with high interest. For those aged 12 years and over who operate their own accounts; or business or community groups. Must have a linked transaction account.",
       "url": "https://summerland.com.au/my-banking/bank-accounts/savings-accounts",
-      "lastUpdated": "2026-10-04T22:00:40.8762834Z",
+      "lastUpdated": "2026-10-11T22:00:40.8089755Z",
       "source": "https://public.cdr-api.summerland.com.au/cds-au/v1/banking/products/3",
       "depositRates": [
         {
           "depositRateType": "INTRODUCTORY",
-          "rate": "0.051",
+          "rate": "0.0545",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
-          "applicationFrequency": "P1M",
+          "applicationFrequency": "P90D",
           "tiers": [
             {
               "name": "iSave Promo Offer",
               "unitOfMeasure": "DOLLAR",
               "minimumValue": "0.00",
-              "maximumValue": "249999.00",
+              "maximumValue": "0.00",
               "rateApplicationMethod": "WHOLE_BALANCE"
             }
           ],
@@ -149,8 +149,8 @@
               "rateApplicabilityType": "NEW_CUSTOMER"
             }
           ],
-          "additionalValue": "P4M",
-          "additionalInfo": "Valid for new customers only. Introductory period is 4 months from the date of account opening.\r\nThe account will convert to the iSave Online account at the end of the 4 month introductory rate period. The rate applicable will depend on the balance of the account at the time.",
+          "additionalValue": "P90D",
+          "additionalInfo": "Valid for new customers only. Introductory period is 90 days from the date of account opening.\r\nThe account will convert to the iSave Online account at the end of the 90 day introductory rate period. The rate applicable will depend on the balance of the account at the time.",
           "additionalInfoUri": "https://summerland.com.au/files/ratesfees/savingsinterest.pdf"
         },
         {
@@ -260,7 +260,7 @@
       "name": "Gold Class",
       "description": "For those aged 65 or over or receiving a Government Aged, Veteran or Disability Pension.",
       "url": "https://www.summerland.com.au/my-banking/bank-accounts/everyday-transaction-accounts",
-      "lastUpdated": "2026-10-04T22:00:40.8762834Z",
+      "lastUpdated": "2026-10-11T22:00:40.8089755Z",
       "source": "https://public.cdr-api.summerland.com.au/cds-au/v1/banking/products/8",
       "depositRates": [
         {

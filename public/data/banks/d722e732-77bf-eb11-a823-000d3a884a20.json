@@ -1,7 +1,7 @@
 {
   "name": "The Capricornian",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -111,43 +111,37 @@
           "featureType": "NPP_ENABLED",
           "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available",
           "additionalInfoUri": "https://www.capricornian.com.au/banking/access-your-money/new-payments-platform/",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": "SMS and/or email notifications available",
           "additionalInfoUri": null,
-          "additionalValue": "Notification via email, SMS or secure message in online banking.",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Notification via email, SMS or secure message in online banking."
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY available",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY available"
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available",
           "additionalInfoUri": "https://www.capricornian.com.au/banking/access-your-money/new-payments-platform/",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Access is available to online banking features for the product. Banking app available",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -168,12 +162,12 @@
       "name": "iSaver",
       "description": "An internet-based savings account to help reach your saving goals faster.\n\nThis online account provides anytime access and rewards you with interest. As an added bonus, the iSaver can be used as an offset account for eligible home loan products to help reduce the monthly interest on your loan.",
       "url": "https://www.capricornian.com.au/banking/i-saver-banking-account/",
-      "lastUpdated": "2026-07-23T23:57:47.626724Z",
+      "lastUpdated": "2026-10-08T20:00:00.444609Z",
       "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/33563233-c746-4110-b19e-2dbe984248fd",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0035",
+          "rate": "0.0045",
           "additionalInfo": null,
           "additionalInfoUri": null,
           "additionalValue": null,
@@ -181,14 +175,13 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "5000.00",
               "name": "ISAVER_Tier_2",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/",
-              "applicabilityConditions": [],
+              "minimumValue": "5000.00",
               "maximumValue": "49999.99",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": [],
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/"
             }
           ],
           "applicationType": "PERIODIC",
@@ -211,14 +204,13 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "0.00",
               "name": "ISAVER_Tier_1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/",
-              "applicabilityConditions": [],
+              "minimumValue": "0.00",
               "maximumValue": "4999.99",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": [],
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/"
             }
           ],
           "applicationType": "PERIODIC",
@@ -233,7 +225,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.005",
+          "rate": "0.006",
           "additionalInfo": null,
           "additionalInfoUri": null,
           "additionalValue": null,
@@ -241,14 +233,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "50000.00",
               "name": "ISAVER_Tier_3",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/",
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
               "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/i-saver-banking-account/"
             }
           ],
           "applicationType": "PERIODIC",
@@ -335,50 +325,43 @@
           "featureType": "OFFSET",
           "additionalInfo": "For eligible The Capricornian Ltd, Mortgage Loan products",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": "SMS and/or email notifications available",
           "additionalInfoUri": null,
-          "additionalValue": "Notification via email, SMS or secure message in online banking.",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Notification via email, SMS or secure message in online banking."
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Online banking and mobile app",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY Transaction",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY Transaction"
         }
       ],
       "additionalInformation": {
@@ -660,57 +643,49 @@
           "featureType": "ADDITIONAL_CARDS",
           "additionalInfo": "Fees may apply",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": "https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/",
-          "additionalValue": "Apple Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Apple Pay"
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Access is available to online banking features for the product. Banking app available.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": "SMS and/or email notifications available",
           "additionalInfoUri": null,
-          "additionalValue": "Notification via email, SMS or secure message in online banking.",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Notification via email, SMS or secure message in online banking."
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "A Visa Debit payWave card is available for the product to access funds",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "A Visa Debit payWave card is available for the product to access funds"
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": "https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/",
-          "additionalValue": "Google Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Google Pay"
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -803,43 +778,37 @@
           "featureType": "OTHER",
           "additionalInfo": "Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": "SMS and/or email notifications available",
           "additionalInfoUri": null,
-          "additionalValue": "Notification via email, SMS or secure message in online banking.",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Notification via email, SMS or secure message in online banking."
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Access is available to online banking features for the product. Banking app available",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": "An account of this product type can be used as the target of an NPP PayID.  Osko by BPAY available",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -860,12 +829,12 @@
       "name": "Bonus Saver Account",
       "description": "A high interest savings account offering monthly bonus interest upon meeting all the criteria and performing no debits on the account for the entirety of the calendar month. ",
       "url": "https://www.capricornian.com.au/banking/bonus-saver-account/",
-      "lastUpdated": "2026-07-17T06:13:24.528915Z",
+      "lastUpdated": "2026-10-08T20:00:00.463202Z",
       "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/57f2a9d4-5498-490f-82ea-61dff8720cS3",
       "depositRates": [
         {
           "depositRateType": "BONUS",
-          "rate": "0.0465",
+          "rate": "0.049",
           "additionalInfo": "0.10% interest is applied to the entirety of the balance regardless of whether or not the bonus criteria is met.",
           "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
           "additionalValue": "Atleast $100 has to be deposited throughout the month, No Debits/Withdrawals at all on the account during the month, Account to stay open throughout the entire duration of the calendar month.",
@@ -873,14 +842,14 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "100.00",
               "name": "Bonus Interest",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": "Bonus Interest is only paid up to $250,000 of the balance of the account.",
-              "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
-              "applicabilityConditions": [],
+              "minimumValue": "100.00",
               "maximumValue": "250000.00",
-              "rateApplicationMethod": "PER_TIER"
+              "rateApplicationMethod": "PER_TIER",
+              "applicabilityConditions": [],
+              "additionalInfo": "Bonus Interest is only paid up to $250,000 of the balance of the account.",
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/"
             }
           ],
           "applicationType": "PERIODIC",
@@ -896,14 +865,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "0.00",
               "name": "Base Interest Rate",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
+              "minimumValue": "0.00",
+              "rateApplicationMethod": "WHOLE_BALANCE",
               "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/"
             }
           ],
           "applicationType": "PERIODIC",
@@ -943,22 +910,19 @@
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Offers online banking access to easily manage your money.",
           "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": "Offers NPP Osko transactions when performed via Digital banking.",
           "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": "Offers NPP PayID access when performing transfers via Digital Banking.",
           "additionalInfoUri": "https://www.capricornian.com.au/banking/bonus-saver-account/",
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {
@@ -979,12 +943,12 @@
       "name": "Pension Access Account",
       "description": "The Pension Access Account allows members 65 years and over to manage their finances wisely and enjoy a more comfortable lifestyle.",
       "url": "https://www.capricornian.com.au/banking/pensioner-banking-account/",
-      "lastUpdated": "2026-09-06T23:14:23.354461Z",
+      "lastUpdated": "2026-10-08T20:00:00.536679Z",
       "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/8921bfda-33cd-4dbc-867d-54405ca11e1f",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0035",
+          "rate": "0.006",
           "additionalInfo": null,
           "additionalInfoUri": null,
           "additionalValue": null,
@@ -992,14 +956,11 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "50000.00",
               "name": "PENSION ACCESS ACCOUNT_Tier_3",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
-              "maximumValue": null,
-              "rateApplicationMethod": "PER_TIER"
+              "minimumValue": "50000.00",
+              "rateApplicationMethod": "PER_TIER",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1014,7 +975,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.002",
+          "rate": "0.0045",
           "additionalInfo": null,
           "additionalInfoUri": null,
           "additionalValue": null,
@@ -1022,14 +983,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "10000.00",
               "name": "PENSION ACCESS ACCOUNT_Tier_2",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "10000.00",
               "maximumValue": "49999.99",
-              "rateApplicationMethod": "PER_TIER"
+              "rateApplicationMethod": "PER_TIER",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1052,14 +1011,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "1.00",
               "name": "PENSION ACCESS ACCOUNT_Tier_1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "1.00",
               "maximumValue": "9999.99",
-              "rateApplicationMethod": "PER_TIER"
+              "rateApplicationMethod": "PER_TIER",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1244,71 +1201,61 @@
           "featureType": "NOTIFICATIONS",
           "additionalInfo": "SMS and/or email notifications available",
           "additionalInfoUri": null,
-          "additionalValue": "Notification via email, SMS or secure message in online banking.",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Notification via email, SMS or secure message in online banking."
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Account sweep available\nOur sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Access is available to online banking features for the product. Banking app available",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "CARD_ACCESS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "Visa Debit Card",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Visa Debit Card"
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": "https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/",
-          "additionalValue": "Apple Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Apple Pay"
         },
         {
           "featureType": "ADDITIONAL_CARDS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": "https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/",
-          "additionalValue": "Google Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Google Pay"
         }
       ],
       "additionalInformation": {
@@ -1556,57 +1503,49 @@
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Online banking and mobile app.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": "SMS and/or email notifications available.",
           "additionalInfoUri": null,
-          "additionalValue": "Notification via email, SMS or secure message in online banking.",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Notification via email, SMS or secure message in online banking."
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": "An account of this product type can be used as the target of an NPP PayID. Osko by BPAY available.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_ENABLED",
           "additionalInfo": "An account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment. Osko by BPAY available.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY available",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY available"
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": "https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/",
-          "additionalValue": "Google Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Google Pay"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": "https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/",
-          "additionalValue": "Apple Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Apple Pay"
         }
       ],
       "additionalInformation": {
@@ -1627,12 +1566,12 @@
       "name": "Youth Access Account",
       "description": "The award-winning, Youth Access Account is designed for young people up to the age of 16 years, offering a full transactional account, no account service fee and no minimum monthly balance.",
       "url": "https://www.capricornian.com.au/banking/student-youth-banking-account/",
-      "lastUpdated": "2026-09-06T22:44:02.858256Z",
+      "lastUpdated": "2026-10-08T20:00:00.51366Z",
       "source": "https://public.cdr.onlinebanking.capricornian.com.au/cds-au/v1/banking/products/b8cd6f23-27b7-4840-ab9d-2f8bfeda0b4f",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.02",
+          "rate": "0.0225",
           "additionalInfo": null,
           "additionalInfoUri": null,
           "additionalValue": null,
@@ -1640,14 +1579,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "0.01",
               "name": "YOUTH ACCESS ACCOUNT_Tier_1",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "0.01",
               "maximumValue": "4999.99",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1662,7 +1599,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.015",
+          "rate": "0.0175",
           "additionalInfo": null,
           "additionalInfoUri": null,
           "additionalValue": null,
@@ -1670,14 +1607,12 @@
           "calculationFrequency": "P1D",
           "tiers": [
             {
-              "minimumValue": "5000.00",
               "name": "YOUTH ACCESS ACCOUNT_Tier_2",
               "unitOfMeasure": "DOLLAR",
-              "additionalInfo": null,
-              "additionalInfoUri": null,
-              "applicabilityConditions": [],
+              "minimumValue": "5000.00",
               "maximumValue": "49999.99",
-              "rateApplicationMethod": "WHOLE_BALANCE"
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "applicabilityConditions": []
             }
           ],
           "applicationType": "PERIODIC",
@@ -1862,57 +1797,49 @@
           "featureType": "NPP_ENABLED",
           "additionalInfo": "Osko by BPAY available.\nAn account of this product type can be used to receive funds as a result of a BSB/Number based NPP payment.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_BANKING",
           "additionalInfo": "Banking app and Online Banking available.\nAccess is available to online banking features for the product",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": "https://www.capricornian.com.au/apple-pay/apple-pay-terms-and-conditions/",
-          "additionalValue": "Apple Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Apple Pay"
         },
         {
           "featureType": "DIGITAL_WALLET",
           "additionalInfo": null,
           "additionalInfoUri": "https://www.capricornian.com.au/google-pay/google-pay-terms-and-conditions/",
-          "additionalValue": "Google Pay",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "Google Pay"
         },
         {
           "featureType": "BILL_PAYMENT",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "BPAY available",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "BPAY available"
         },
         {
           "featureType": "NOTIFICATIONS",
           "additionalInfo": null,
           "additionalInfoUri": null,
-          "additionalValue": "SMS and/or email notifications available",
-          "isActivated": "UNKNOWN"
+          "additionalValue": "SMS and/or email notifications available"
         },
         {
           "featureType": "OTHER",
           "additionalInfo": "Our sweep service automatically transfers funds from certain savings accounts to cover most transactions which would otherwise exceed your transaction account's available balance.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         },
         {
           "featureType": "NPP_PAYID",
           "additionalInfo": "Osko by BPAY available.\nAn account of this product type can be used as the target of an NPP PayID.",
           "additionalInfoUri": null,
-          "additionalValue": null,
-          "isActivated": "UNKNOWN"
+          "additionalValue": null
         }
       ],
       "additionalInformation": {

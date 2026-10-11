@@ -1,7 +1,7 @@
 {
   "name": "ANZ Plus",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "ANZ Plus Growth Saver",
       "description": "Get an ANZ Plus Growth Saver account to help smash your savings goals",
       "url": "https://anz.com/plus/products",
-      "lastUpdated": "2026-05-14T14:00:00.000Z",
+      "lastUpdated": "2026-10-08T13:00:00.000Z",
       "source": "https://cdr.apix.anz/cds-au/v1/banking/products/SAVING01",
       "depositRates": [
         {
@@ -32,7 +32,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0500",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationFrequency": "P1M",
           "additionalValue": "Grow your savings by $100 or more (on top of any interest you receive) each month to earn a bonus rate with ANZ Plus Growth Saver.",
@@ -110,12 +110,12 @@
       "name": "ANZ Plus Flex Saver",
       "description": "Earn interest, pay bills and make transfers using the ANZ Plus Flex Saver.",
       "url": "https://www.anz.com.au/plus/accounts/anz-plus-flex-saver/",
-      "lastUpdated": "2026-05-14T14:00:00.000Z",
+      "lastUpdated": "2026-10-08T13:00:00.000Z",
       "source": "https://cdr.apix.anz/cds-au/v1/banking/products/SAVING02",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0510",
+          "rate": "0.0535",
           "calculationFrequency": "P1D",
           "applicationFrequency": "P1M",
           "additionalInfo": "ANZ Plus Flex Saver Rates",
@@ -140,7 +140,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0210",
+          "rate": "0.0235",
           "calculationFrequency": "P1D",
           "applicationFrequency": "P1M",
           "additionalInfo": "ANZ Plus Flex Saver Rates",

@@ -1,7 +1,7 @@
 {
   "name": "ANZ",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "ANZ Online Saver",
       "description": "Online savings account with a standard variable interest rate",
       "url": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/online-saver/",
-      "lastUpdated": "2026-10-02T03:00:00.000Z",
+      "lastUpdated": "2026-10-08T13:02:00.000Z",
       "source": "https://api.anz/cds-au/v1/banking/products/3776f456-9612-1354-70db-a165f84ef653",
       "depositRates": [
         {
@@ -18,7 +18,7 @@
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "VARIABLE",
-          "rate": "0.0135",
+          "rate": "0.016",
           "tiers": []
         }
       ],
@@ -311,7 +311,7 @@
       "name": "ANZ Premium Cash Management Account",
       "description": "Cash management account for holding and managing investment funds.",
       "url": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/premium-cash-management/",
-      "lastUpdated": "2026-10-02T03:00:00.000Z",
+      "lastUpdated": "2026-10-08T13:03:00.000Z",
       "source": "https://api.anz/cds-au/v1/banking/products/966088bd-e7f8-0422-ecb0-3f107f581dac",
       "depositRates": [
         {
@@ -719,7 +719,7 @@
       "name": "ANZ Progress Saver",
       "description": "Savings account with bonus interest if you meet the eligibility criteria.",
       "url": "https://www.anz.com.au/personal/bank-accounts/savings-accounts/progress-saver/",
-      "lastUpdated": "2026-10-02T03:00:00.000Z",
+      "lastUpdated": "2026-10-08T13:01:00.000Z",
       "source": "https://api.anz/cds-au/v1/banking/products/e9a3b4fe-240c-388e-2282-42db8f570e63",
       "depositRates": [
         {
@@ -748,7 +748,7 @@
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "BONUS",
-          "rate": "0.0374",
+          "rate": "0.0399",
           "tiers": []
         }
       ],
@@ -960,7 +960,7 @@
       "name": "ANZ Pensioner Advantage Account",
       "description": "Offers affordable and convenient banking for recipients of eligible Centrelink or Veterans' Affairs pension or allowance.",
       "url": "https://www.anz.com.au/personal/bank-accounts/everyday-accounts/pensioner-advantage/",
-      "lastUpdated": "2026-10-02T03:00:00.000Z",
+      "lastUpdated": "2026-10-08T13:02:00.000Z",
       "source": "https://api.anz/cds-au/v1/banking/products/f9ec7ae4-f606-0e91-9403-d6ce664eb765",
       "depositRates": [
         {
@@ -992,7 +992,7 @@
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "VARIABLE",
-          "rate": "0.019",
+          "rate": "0.0205",
           "tiers": [
             {
               "applicabilityConditions": [
@@ -1015,7 +1015,7 @@
           "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "VARIABLE",
-          "rate": "0.025",
+          "rate": "0.0275",
           "tiers": [
             {
               "applicabilityConditions": [

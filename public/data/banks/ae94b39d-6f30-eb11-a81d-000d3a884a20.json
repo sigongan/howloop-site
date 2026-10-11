@@ -1,7 +1,7 @@
 {
   "name": "Bankwest",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Retirement Advantage Account",
       "description": "An everyday bank account with no maintenance fees that rewards you with interest. For those aged 55 and over.",
       "url": "https://www.bankwest.com.au/bank-accounts/over55",
-      "lastUpdated": "2026-10-05T01:15:03.000Z",
+      "lastUpdated": "2026-10-12T01:15:04.000Z",
       "source": "https://open-api.bankwest.com.au/bwpublic/cds-au/v1/banking/products/b54379a0c72b4129887a85e7b629b3af",
       "depositRates": [
         {
@@ -314,7 +314,7 @@
       "name": "Hero Saver",
       "description": "A savings account that rewards you for growing your balance",
       "url": "https://www.bankwest.com.au/savings-accounts/bonus-interest",
-      "lastUpdated": "2026-10-05T01:15:03.000Z",
+      "lastUpdated": "2026-10-12T01:15:04.000Z",
       "source": "https://open-api.bankwest.com.au/bwpublic/cds-au/v1/banking/products/b7c55febbeab43e1b0969f28c617f780",
       "depositRates": [
         {
@@ -336,7 +336,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0065",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -354,7 +354,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0065",
+          "rate": "0.001",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -423,7 +423,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0445",
+          "rate": "0.0525",
           "calculationFrequency": "P1M",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -572,12 +572,12 @@
       "name": "Bankwest Easy Saver",
       "description": "The Easy Saver Account is our flexible savings account that lets you earn credit interest on a tiered basis on all balances in the account with no minimum monthly deposit (you can also move your money in and out of your account without affecting your interest rate). Credit interest is calculated at the applicable rate on that portion of the balance which falls within each of the tiers.",
       "url": "https://www.bankwest.com.au/savings-accounts/high-interest",
-      "lastUpdated": "2026-10-05T01:15:03.000Z",
+      "lastUpdated": "2026-10-12T01:15:04.000Z",
       "source": "https://open-api.bankwest.com.au/bwpublic/cds-au/v1/banking/products/d10438974ab8417bab388149da5053bb",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.021",
+          "rate": "0.0235",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -595,7 +595,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.021",
+          "rate": "0.0235",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -613,7 +613,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.021",
+          "rate": "0.0235",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -630,7 +630,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -661,14 +661,14 @@
               "rateApplicationMethod": "PER_TIER",
               "applicabilityConditions": [
                 {
-                  "rateApplicabilityType": "OTHER",
-                  "additionalInfo": "Available only to eligible winners of the Bankwest Easy Saver 'Interesting Rates' competition, who opened a new Bankwest Easy Saver account in the Bankwest app during the relevant promotional/prize-pool period using a valid promo code, satisfy the T&Cs, and keep the account open when required. The fixed promotional rate applies for four months from the notified rate-change date, on balances up to $250,000.99, then reverts to the standard variable Easy Saver rate."
-                },
-                {
                   "rateApplicabilityType": "NEW_ACCOUNTS"
                 },
                 {
                   "rateApplicabilityType": "ONLINE_ONLY"
+                },
+                {
+                  "rateApplicabilityType": "OTHER",
+                  "additionalInfo": "Available only to eligible winners of the Bankwest Easy Saver 'Interesting Rates' competition, who opened a new Bankwest Easy Saver account in the Bankwest app during the relevant promotional/prize-pool period using a valid promo code, satisfy the T&Cs, and keep the account open when required. The fixed promotional rate applies for four months from the notified rate-change date, on balances up to $250,000.99, then reverts to the standard variable Easy Saver rate."
                 }
               ]
             }

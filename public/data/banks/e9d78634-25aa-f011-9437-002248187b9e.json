@@ -1,7 +1,7 @@
 {
   "name": "Tiimely Home",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Tiimely home Offset Account",
       "description": "The Offset Account is designed to be linked and used with the Tiimely home Offset Home Loan.  \nEligible home loan customers can receive offset benefits by linking an Offset Account to a Tiimely home Offset Home Loan which reduces the amount of interest that would otherwise accrue in relation to the Tiimely home Offset Home Loan.",
       "url": "https://tiimelyhome.com.au/",
-      "lastUpdated": "2026-10-05T10:05:11+11:00",
+      "lastUpdated": "2026-10-12T10:14:58+11:00",
       "source": "https://api.tiimely.app.bendigobank.com.au/cds-au/v1/banking/products/85eb634c-eb02-4e68-8ffd-8bed5c211feb",
       "depositRates": [
         {

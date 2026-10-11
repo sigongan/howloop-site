@@ -1,7 +1,7 @@
 {
   "name": "Darling Downs Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,12 +9,12 @@
       "name": "PENSIONER CHOICE",
       "description": "PENSIONER CHOICE",
       "url": null,
-      "lastUpdated": "2026-02-13T08:37:06.000+11:00",
+      "lastUpdated": "2026-10-06T09:42:08.000+11:00",
       "source": "https://ibanking.ddbank.com.au/OpenBanking/cds-au/v1/banking/products/S10",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0035",
+          "rate": "0.0045",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -30,7 +30,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.011",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -46,7 +46,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.016",
+          "rate": "0.0175",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -232,12 +232,12 @@
       "name": "GYMPIE SAVINGS",
       "description": "GYMPIE SAVINGS",
       "url": null,
-      "lastUpdated": "2025-05-30T08:56:34.000+10:00",
+      "lastUpdated": "2026-10-06T09:43:41.000+11:00",
       "source": "https://ibanking.ddbank.com.au/OpenBanking/cds-au/v1/banking/products/S21",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0",
+          "rate": "0.0015",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P12M"
@@ -376,7 +376,7 @@
       "name": "CASH MANAGER PLUS",
       "description": "CASH MANAGER PLUS",
       "url": null,
-      "lastUpdated": "2026-05-22T08:19:24.000+10:00",
+      "lastUpdated": "2026-10-06T09:25:10.000+11:00",
       "source": "https://ibanking.ddbank.com.au/OpenBanking/cds-au/v1/banking/products/S3",
       "depositRates": [
         {
@@ -573,7 +573,7 @@
       "name": "CHOICE ACCOUNT",
       "description": "CHOICE ACCOUNT",
       "url": null,
-      "lastUpdated": "2026-04-17T14:57:22.000+10:00",
+      "lastUpdated": "2026-10-06T09:29:46.000+11:00",
       "source": "https://ibanking.ddbank.com.au/OpenBanking/cds-au/v1/banking/products/S6",
       "depositRates": [
         {
@@ -824,12 +824,12 @@
       "name": "PASSBOOK ACCOUNT",
       "description": "PASSBOOK ACCOUNT",
       "url": null,
-      "lastUpdated": "2026-05-22T08:23:20.000+10:00",
+      "lastUpdated": "2026-10-06T09:32:40.000+11:00",
       "source": "https://ibanking.ddbank.com.au/OpenBanking/cds-au/v1/banking/products/S7",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.002",
+          "rate": "0.003",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -845,7 +845,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.004",
+          "rate": "0.0055",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -861,7 +861,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.006",
+          "rate": "0.0075",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -877,7 +877,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0065",
+          "rate": "0.008",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -893,7 +893,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.011",
+          "rate": "0.0125",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -960,7 +960,7 @@
       "name": "SMART SAVERS",
       "description": "SMART SAVERS",
       "url": null,
-      "lastUpdated": "2026-05-22T08:24:09.000+10:00",
+      "lastUpdated": "2026-10-06T09:37:08.000+11:00",
       "source": "https://ibanking.ddbank.com.au/OpenBanking/cds-au/v1/banking/products/S8",
       "depositRates": [
         {
@@ -1115,12 +1115,12 @@
       "name": "CHRISTMAS CLUB",
       "description": "CHRISTMAS CLUB",
       "url": null,
-      "lastUpdated": "2026-05-22T08:25:10.000+10:00",
+      "lastUpdated": "2026-10-06T09:39:16.000+11:00",
       "source": "https://ibanking.ddbank.com.au/OpenBanking/cds-au/v1/banking/products/S9",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0105",
+          "rate": "0.012",
           "calculationFrequency": "P1M",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P12M"

@@ -1,7 +1,7 @@
 {
   "name": "IMB Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,13 +9,13 @@
       "name": "Reward Saver Account",
       "description": "Helps you reach your savings goals faster by rewarding you with bonus interest for regular savings",
       "url": "https://www.imb.com.au/banking/saving-accounts/reward-saver-account",
-      "lastUpdated": "2026-09-22T00:00:00+10:00",
+      "lastUpdated": "2026-10-09T00:00:00+11:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-22-1",
       "depositRates": [
         {
           "applicationType": "PERIODIC",
           "depositRateType": "BONUS",
-          "rate": "0.032",
+          "rate": "0.0345",
           "calculationFrequency": "P1D",
           "applicationFrequency": "P1M",
           "tiers": [
@@ -970,7 +970,7 @@
       "name": "Reward Saver Kick Start",
       "description": "Kick Start your savings with the IMB Reward Saver Kick Start Account. Designed for teens and young adults under 30.",
       "url": "https://www.imb.com.au/banking/saving-accounts/reward-saver-kick-start-account",
-      "lastUpdated": "2026-09-22T00:00:00+10:00",
+      "lastUpdated": "2026-10-09T00:00:00+11:00",
       "source": "https://openbank.openbanking.imb.com.au/cds-au/v1/banking/products/TSA-22-2",
       "depositRates": [
         {
@@ -994,7 +994,7 @@
         {
           "applicationType": "PERIODIC",
           "depositRateType": "BONUS",
-          "rate": "0.0205",
+          "rate": "0.0215",
           "calculationFrequency": "P1D",
           "applicationFrequency": "P1M",
           "tiers": [
@@ -1025,7 +1025,7 @@
         {
           "applicationType": "PERIODIC",
           "depositRateType": "BONUS",
-          "rate": "0.032",
+          "rate": "0.0345",
           "calculationFrequency": "P1D",
           "applicationFrequency": "P1M",
           "tiers": [

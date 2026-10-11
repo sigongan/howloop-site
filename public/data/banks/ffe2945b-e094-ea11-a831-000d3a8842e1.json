@@ -1,7 +1,7 @@
 {
   "name": "Westpac",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Bump Savings",
       "description": "The trick to saving is to start early. With a Westpac Bump kids savings account, get the money-growing habits you need.",
       "url": "https://www.westpac.com.au/bank-accounts/savings-accounts/bump",
-      "lastUpdated": "2026-10-02T01:47:11Z",
+      "lastUpdated": "2026-10-09T03:52:27Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/SavBump",
       "depositRates": [
         {
@@ -20,14 +20,14 @@
           "applicationFrequency": "P1M",
           "applicabilityConditions": [
             {
-              "rateApplicabilityType": "OTHER"
+              "rateApplicabilityType": "OTHER",
+              "additionalInfo": "When no standard variable bonus rate applies. "
             }
-          ],
-          "additionalInfo": "When no standard variable bonus rate applies. "
+          ]
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.033",
+          "rate": "0.0355",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -164,21 +164,6 @@
         },
         {
           "featureType": "OTHER",
-          "additionalInfo": "Weekly payment limit ? If you're under 14, when you register for Online Banking, you'll be given a default weekly payment limit of $50. This limit can't be removed, but it can be changed in Online Banking or the Westpac App by a parent or guardian who has access to the account.",
-          "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/youth/kids"
-        },
-        {
-          "featureType": "OTHER",
-          "additionalInfo": "Card lock and unlock - Helps to keep your money safe if you?ve lost, misplaced or had your debit card stolen.",
-          "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/youth/kids"
-        },
-        {
-          "featureType": "OTHER",
-          "additionalInfo": "Spending restrictions - Merchant restrictions on the Debit Mastercard block certain high-risk spending categories (e.g. gambling, alcohol, tobacco).",
-          "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/youth/kids"
-        },
-        {
-          "featureType": "OTHER",
           "additionalInfo": "Parental notifications - Messages for parents or guardians about your account activity so they can guide and support you.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/youth/kids"
         },
@@ -205,7 +190,7 @@
       "name": "Westpac eSaver",
       "description": "Westpac eSaver makes saving a breeze. You?ll get an introductory interest rate and online access to your money whenever you need it. ",
       "url": "https://www.westpac.com.au/bank-accounts/savings-accounts/esaver",
-      "lastUpdated": "2026-09-30T23:39:10Z",
+      "lastUpdated": "2026-10-09T03:52:27Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/SavESaver",
       "depositRates": [
         {
@@ -216,14 +201,14 @@
           "applicationFrequency": "P1M",
           "applicabilityConditions": [
             {
-              "rateApplicabilityType": "OTHER"
+              "rateApplicabilityType": "OTHER",
+              "additionalInfo": "Standard variable rate (after 5 months or existing customers). Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month. Balances, including deposits made on or after the last business day of the month, won't count towards that month's interest but will count for the next month's interest."
             }
-          ],
-          "additionalInfo": "Standard variable rate (after 5 months or existing customers). Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month. Balances, including deposits made on or after the last business day of the month, won't count towards that month's interest but will count for the next month's interest."
+          ]
         },
         {
           "depositRateType": "INTRODUCTORY",
-          "rate": "0.0355",
+          "rate": "0.038",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -410,7 +395,7 @@
       "name": "Westpac Life",
       "description": "Westpac Life is a flexible savings account that supports your savings goals. ",
       "url": "https://www.westpac.com.au/bank-accounts/savings-accounts/life",
-      "lastUpdated": "2026-10-01T05:19:42Z",
+      "lastUpdated": "2026-10-09T03:52:27Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/SavLife",
       "depositRates": [
         {
@@ -421,14 +406,14 @@
           "applicationFrequency": "P1M",
           "applicabilityConditions": [
             {
-              "rateApplicabilityType": "OTHER"
+              "rateApplicabilityType": "OTHER",
+              "additionalInfo": "Standard variable base rate (when no standard variable bonus rate applies). Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month."
             }
-          ],
-          "additionalInfo": "Standard variable base rate (when no standard variable bonus rate applies). Interest is calculated daily on your account balance up to the second last business day of the month. Interest is paid into the account on the last business day of the month."
+          ]
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.049",
+          "rate": "0.0515",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -448,7 +433,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0075",
+          "rate": "0.007",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -611,7 +596,7 @@
       "name": "Westpac Choice",
       "description": "Westpac Choice is our most popular account. A simple-to-use everyday bank account.",
       "url": "https://www.westpac.com.au/bank-accounts/choice",
-      "lastUpdated": "2026-10-02T01:47:10Z",
+      "lastUpdated": "2026-10-09T00:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoice",
       "depositRates": [
         {
@@ -953,7 +938,7 @@
         },
         {
           "featureType": "OTHER",
-          "additionalInfo": "Spend&Save with Westpac - You could earn up to 5.75% p.a. variable interest on your first $150000 of savings with a Life Savings and Choice bank account. 18-40 year olds only. T&Cs and exclusions apply.",
+          "additionalInfo": "Spend&Save with Westpac - You could earn up to 5.95% p.a. variable interest on your first $150000 of savings with a Life Savings and Choice bank account. 18-40 year olds only. T&Cs and exclusions apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/savings-accounts/spend-save-ntb"
         },
         {
@@ -1104,7 +1089,7 @@
       "name": "Westpac 55+ and Retired",
       "description": "The best of both worlds for retirees 55 and over. An everyday account with a debit card that gives you interest like a savings account.",
       "url": "https://www.westpac.com.au/bank-accounts/55-and-retired",
-      "lastUpdated": "2026-10-02T01:47:10Z",
+      "lastUpdated": "2026-10-09T00:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoice55",
       "depositRates": [
         {
@@ -1131,7 +1116,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.017",
+          "rate": "0.0195",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1153,7 +1138,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0205",
+          "rate": "0.023",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1175,7 +1160,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0265",
+          "rate": "0.029",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1533,7 +1518,7 @@
       "name": "Westpac Choice for concession holders",
       "description": "An everyday bank account with debit card and no monthly fees. For customers who hold a Concession or Health Care card, receive benefit payments, or low or no income earners.",
       "url": "https://www.westpac.com.au/bank-accounts/basic",
-      "lastUpdated": "2026-10-02T01:47:10Z",
+      "lastUpdated": "2026-10-09T00:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoiceConcession",
       "depositRates": [
         {
@@ -1888,7 +1873,7 @@
       "name": "Westpac Choice for migrants",
       "description": "A Westpac Choice everyday bank account for people who need to already be in Australia or arriving in the next 14 days to do this.",
       "url": "https://www.westpac.com.au/international-travel/new-to-australia/choice-new-arrivals/",
-      "lastUpdated": "2026-10-02T01:47:10Z",
+      "lastUpdated": "2026-10-09T00:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoiceMigrant",
       "depositRates": [
         {
@@ -2225,7 +2210,7 @@
         },
         {
           "featureType": "OTHER",
-          "additionalInfo": "Spend&Save with Westpac - You could earn up to 5.75% p.a. variable interest on your first $150000 of savings with a Life Savings and Choice bank account. 18-40 year olds only. T&Cs and exclusions apply.",
+          "additionalInfo": "Spend&Save with Westpac - You could earn up to 5.95% p.a. variable interest on your first $150000 of savings with a Life Savings and Choice bank account. 18-40 year olds only. T&Cs and exclusions apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/savings-accounts/spend-save-ntb"
         },
         {
@@ -2376,7 +2361,7 @@
       "name": "Bank account with debit card for Students and young adults ",
       "description": "An everyday account packed with features so you can bank your way with ease.",
       "url": "https://www.westpac.com.au/bank-accounts/students-and-young-adults",
-      "lastUpdated": "2026-10-02T01:47:10Z",
+      "lastUpdated": "2026-10-09T00:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoiceStudent",
       "depositRates": [
         {
@@ -2620,7 +2605,7 @@
         },
         {
           "featureType": "OTHER",
-          "additionalInfo": "Spend&Save with Westpac - You could earn up to 5.75% p.a. variable interest on your first $150000 of savings with a Life Savings and Choice bank account. 18-40 year olds only. T&Cs and exclusions apply.",
+          "additionalInfo": "Spend&Save with Westpac - You could earn up to 5.95% p.a. variable interest on your first $150000 of savings with a Life Savings and Choice bank account. 18-40 year olds only. T&Cs and exclusions apply.",
           "additionalInfoUri": "https://www.westpac.com.au/bank-accounts/savings-accounts/spend-save-ntb"
         },
         {
@@ -2767,7 +2752,7 @@
       "name": "Youth Bank Account and Debit Card",
       "description": "Get a head start with a Westpac Choice Youth account. A simple-to-use kids bank account with a debit card that will grow up with you.",
       "url": "https://www.westpac.com.au/bank-accounts/kids-and-teens",
-      "lastUpdated": "2026-10-02T01:47:10Z",
+      "lastUpdated": "2026-10-09T00:47:10Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/TrChoiceYouth",
       "depositRates": [
         {
@@ -3186,7 +3171,7 @@
       "name": "Cash Investment Account",
       "description": "The Westpac Cash Investment Account has been designed with Westpac share investors in mind by offering access to low brokerage, competitive interest rates, convenient features and seamless trade settlements.",
       "url": "https://www.westpac.com.au/personal-banking/share-trading/cash-investment-account/",
-      "lastUpdated": "2026-05-15T00:00:00Z",
+      "lastUpdated": "2026-10-09T00:00:00Z",
       "source": "https://digital-api.westpac.com.au/cds-au/v1/banking/products/WestpacCashInvestmentAcc",
       "depositRates": [
         {

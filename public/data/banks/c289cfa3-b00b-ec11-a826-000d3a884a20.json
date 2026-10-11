@@ -1,7 +1,7 @@
 {
   "name": "Australian Mutual Bank LTD",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Everyday Direct Account",
       "description": "Your everyday transaction account with VISA Debit access.",
       "url": "https://australianmutual.bank/banking/savings-accounts/everyday-direct/",
-      "lastUpdated": "2026-09-16T12:25:07.000+10:00",
+      "lastUpdated": "2026-10-09T08:49:17.000+11:00",
       "source": "https://ob.tmbl.com.au/ambank/cds-au/v1/banking/products/418314aa-1e84-11f1-9ce5-325096b39f47",
       "depositRates": [
         {
@@ -213,7 +213,7 @@
       "name": "Momentum Saver account",
       "description": "The Momentum Saver account rewards savers with an ongoing bonus interest rate when you deposit a minimum of $100 and make no withdrawals during the month.",
       "url": "https://australianmutual.bank/banking/savings-accounts/momentum-saver/",
-      "lastUpdated": "2026-10-01T09:29:02.000+10:00",
+      "lastUpdated": "2026-10-10T06:30:52.000+11:00",
       "source": "https://ob.tmbl.com.au/ambank/cds-au/v1/banking/products/56cc9200-1e84-11f1-a63e-325096b39f47",
       "depositRates": [
         {

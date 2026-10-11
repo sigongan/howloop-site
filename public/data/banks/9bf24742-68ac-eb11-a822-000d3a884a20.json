@@ -1,7 +1,7 @@
 {
   "name": "Credit Union SA",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -437,6 +437,19 @@
       ],
       "fees": [
         {
+          "name": "Lost VISA Card",
+          "feeType": "EVENT",
+          "currency": "AUD",
+          "additionalValue": "Lost VISA Card",
+          "additionalInfo": "Payable when you lose or misplace your VISA Card and we need to order you a new card",
+          "additionalInfoUri": "https://www.creditunionsa.com.au/fees/other-fees/",
+          "feeMethodUType": "fixedAmount",
+          "fixedAmount": {
+            "amount": "10.00"
+          },
+          "discounts": []
+        },
+        {
           "name": "Deposit Periodic",
           "feeType": "PERIODIC",
           "currency": "AUD",
@@ -528,19 +541,6 @@
           "feeMethodUType": "fixedAmount",
           "fixedAmount": {
             "amount": "2.00"
-          },
-          "discounts": []
-        },
-        {
-          "name": "Lost VISA Card",
-          "feeType": "EVENT",
-          "currency": "AUD",
-          "additionalValue": "Lost VISA Card",
-          "additionalInfo": "Payable when you lose or misplace your VISA Card and we need to order you a new card",
-          "additionalInfoUri": "https://www.creditunionsa.com.au/fees/other-fees/",
-          "feeMethodUType": "fixedAmount",
-          "fixedAmount": {
-            "amount": "10.00"
           },
           "discounts": []
         }
@@ -1288,10 +1288,11 @@
       ],
       "fees": [
         {
-          "name": "Transaction",
-          "feeType": "TRANSACTION",
+          "name": "Deposit Periodic",
+          "feeType": "PERIODIC",
           "currency": "AUD",
-          "additionalValue": "No transaction or withdrawal fees",
+          "additionalValue": "No monthly or annual fees",
+          "additionalInfo": "Where permitted by the account terms and conditions, you can perform unlimited transactions of the following types and we will not charge you a transaction fee: ATM enquiry, ATM transfer, ATM withdrawal, Bank@Post deposit, Bank@Post withdrawal, BPAY payment, branch deposit, branch transfer, branch withdrawal, corporate cheque, direct credit, direct debit, EFTPOS cash withdrawal, EFTPOS purchase, internet banking transfer, overseas ATM enquiry, overseas ATM withdrawal, Member Contact Centre transfer or payment, mobile banking transfer, periodical payment, phone banking transfer, Visa debit cash advance, Visa debit purchase. Not all transaction types are permitted on all accounts.",
           "additionalInfoUri": "https://www.creditunionsa.com.au/fees/accounts/",
           "feeMethodUType": "fixedAmount",
           "fixedAmount": {
@@ -1300,11 +1301,10 @@
           "discounts": []
         },
         {
-          "name": "Deposit Periodic",
-          "feeType": "PERIODIC",
+          "name": "Transaction",
+          "feeType": "TRANSACTION",
           "currency": "AUD",
-          "additionalValue": "No monthly or annual fees",
-          "additionalInfo": "Where permitted by the account terms and conditions, you can perform unlimited transactions of the following types and we will not charge you a transaction fee: ATM enquiry, ATM transfer, ATM withdrawal, Bank@Post deposit, Bank@Post withdrawal, BPAY payment, branch deposit, branch transfer, branch withdrawal, corporate cheque, direct credit, direct debit, EFTPOS cash withdrawal, EFTPOS purchase, internet banking transfer, overseas ATM enquiry, overseas ATM withdrawal, Member Contact Centre transfer or payment, mobile banking transfer, periodical payment, phone banking transfer, Visa debit cash advance, Visa debit purchase. Not all transaction types are permitted on all accounts.",
+          "additionalValue": "No transaction or withdrawal fees",
           "additionalInfoUri": "https://www.creditunionsa.com.au/fees/accounts/",
           "feeMethodUType": "fixedAmount",
           "fixedAmount": {

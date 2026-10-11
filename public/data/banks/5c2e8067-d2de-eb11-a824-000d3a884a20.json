@@ -1,7 +1,7 @@
 {
   "name": "Horizon Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -167,7 +167,7 @@
       "name": "HORIZON DIRECT",
       "description": "Horizon Direct is our online savings account that attracts a higher interest rate than a normal savings account, because you manage it online without branch assistance or branch access.",
       "url": "https://horizonbank.com.au/savings/savings-accounts/popular-savings-accounts/",
-      "lastUpdated": "2026-07-01T09:11:31.000+10:00",
+      "lastUpdated": "2026-10-12T09:50:38.000+11:00",
       "source": "https://onlinebanking.horizonbank.com.au/openbanking/cds-au/v1/banking/products/S10_S100001",
       "depositRates": [
         {
@@ -514,12 +514,12 @@
       "name": "TEEN ACCOUNT",
       "description": "A flexible everyday account for teenagers aged 13-17 years that   s easily managed with no transaction fees.",
       "url": "https://horizonbank.com.au/savings/youth-accounts/teen-saver/",
-      "lastUpdated": "2026-07-01T09:10:17.000+10:00",
+      "lastUpdated": "2026-10-12T09:50:50.000+11:00",
       "source": "https://onlinebanking.horizonbank.com.au/openbanking/cds-au/v1/banking/products/S18_S180001",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.04",
+          "rate": "0.0425",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M"
@@ -1130,7 +1130,7 @@
       "name": "ADVANTAGE 55",
       "description": "Our most popular everyday transaction account for customers aged 55 and over, featuring a wide range of account access options.",
       "url": "https://horizonbank.com.au/savings/everyday-accounts/advantage-55/",
-      "lastUpdated": "2026-07-01T09:16:52.000+10:00",
+      "lastUpdated": "2026-10-12T09:51:09.000+11:00",
       "source": "https://onlinebanking.horizonbank.com.au/openbanking/cds-au/v1/banking/products/S55_S550001",
       "depositRates": [
         {
@@ -1152,7 +1152,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0175",
+          "rate": "0.02",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1169,7 +1169,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.02",
+          "rate": "0.0225",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1186,7 +1186,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.025",
+          "rate": "0.0275",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1348,7 +1348,7 @@
       "name": "CASH MANAGEMENT",
       "description": "Enjoy competitive interest rates without the need to lock your money away. The Cash Management account is used for flexible and quick access to large sums.",
       "url": "https://horizonbank.com.au/savings/savings-accounts/cash-management/",
-      "lastUpdated": "2026-07-01T09:08:25.000+10:00",
+      "lastUpdated": "2026-10-12T09:51:45.000+11:00",
       "source": "https://onlinebanking.horizonbank.com.au/openbanking/cds-au/v1/banking/products/S6_S60001",
       "depositRates": [
         {
@@ -1370,7 +1370,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.02",
+          "rate": "0.0225",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1387,7 +1387,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0325",
+          "rate": "0.035",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -1907,12 +1907,12 @@
       "name": "CHRISTMAS CLUB",
       "description": "Christmas is an expensive time of year. Start budgeting early and be prepared with a Christmas Club account. Funds are available for withdrawal from 1 November to 31 January each year.",
       "url": "https://horizonbank.com.au/savings/savings-accounts/christmas-club/",
-      "lastUpdated": "2026-07-01T09:08:16.000+10:00",
+      "lastUpdated": "2026-10-12T09:50:07.000+11:00",
       "source": "https://onlinebanking.horizonbank.com.au/openbanking/cds-au/v1/banking/products/S8_S80001",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.02",
+          "rate": "0.0225",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

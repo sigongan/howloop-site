@@ -1,7 +1,7 @@
 {
   "name": "BankVic",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Everyday Account",
       "description": "A day to day bank account that gives you easy access to your money",
       "url": "https://www.bankvic.com.au/savings/",
-      "lastUpdated": "2026-03-26T10:49:31.000+11:00",
+      "lastUpdated": "2026-10-09T15:46:55.000+11:00",
       "source": "https://ib.bankvic.com.au/openbanking/cds-au/v1/banking/products/S1_Txn_Everyday",
       "depositRates": [
         {

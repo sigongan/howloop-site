@@ -1,7 +1,7 @@
 {
   "name": "BCU Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Scoot Super Saver",
       "description": "A savings account suitable for children aged 0 to 12.",
       "url": "https://www.bcu.com.au/everyday-banking/savings-accounts/kids-savings-account/",
-      "lastUpdated": "2026-10-04T22:00:40.8513064Z",
+      "lastUpdated": "2026-10-11T22:01:01.6917089Z",
       "source": "https://public.cdr-api.bcu.com.au/cds-au/v1/banking/products/138",
       "depositRates": [
         {
@@ -313,7 +313,7 @@
       "name": "Mortgage Offset Saving",
       "description": "A simple to use transaction account with unlimited free standard transactions that can be  linked to an eligible home loan for the purpose of 100% offset, in order to reduce interest on the loan.",
       "url": "https://www.bcu.com.au/everyday-banking/everyday-bank-accounts/mortgage-offset-saver/",
-      "lastUpdated": "2026-10-04T22:00:40.8513064Z",
+      "lastUpdated": "2026-10-11T22:01:01.6917089Z",
       "source": "https://public.cdr-api.bcu.com.au/cds-au/v1/banking/products/148",
       "depositRates": [
         {
@@ -689,7 +689,7 @@
       "name": "Concession Account",
       "description": "A low-cost transaction account designed specifically for eligible Commonwealth Government concession card holders.",
       "url": "https://www.bcu.com.au/everyday-banking/everyday-bank-accounts/concession-account/",
-      "lastUpdated": "2026-10-04T22:00:40.8513064Z",
+      "lastUpdated": "2026-10-11T22:01:01.6917089Z",
       "source": "https://public.cdr-api.bcu.com.au/cds-au/v1/banking/products/240",
       "depositRates": [
         {
@@ -1313,7 +1313,7 @@
       "name": "Boss Saver",
       "description": "Want a savings account to deposit and hold or withdraw money for personal use without being penalised? A savings account that earns you additional bonus interest when the monthly bonus interest criteria is met each month.",
       "url": "https://www.bcu.com.au/everyday-banking/savings-accounts/boss-saver/",
-      "lastUpdated": "2026-10-04T22:00:40.8513064Z",
+      "lastUpdated": "2026-10-11T22:01:01.6917089Z",
       "source": "https://public.cdr-api.bcu.com.au/cds-au/v1/banking/products/281",
       "depositRates": [
         {
@@ -1668,7 +1668,7 @@
       "name": "Power Saver",
       "description": "Power up your savings. A simple, goal based savings account that rewards regular saving.",
       "url": "https://www.bcu.com.au/everyday-banking/savings-accounts/power-saver/",
-      "lastUpdated": "2026-10-04T22:00:40.8513064Z",
+      "lastUpdated": "2026-10-11T22:01:01.6917089Z",
       "source": "https://public.cdr-api.bcu.com.au/cds-au/v1/banking/products/292",
       "depositRates": [
         {
@@ -2008,7 +2008,7 @@
       "name": "Golden Account",
       "description": "A transaction account for customers aged 55 and over, with easy access to funds and variable stepped interest.",
       "url": "ttps://www.bcu.com.au/everyday-banking/everyday-bank-accounts/golden-account/",
-      "lastUpdated": "2026-10-04T22:00:40.8513064Z",
+      "lastUpdated": "2026-10-11T22:01:01.6917089Z",
       "source": "https://public.cdr-api.bcu.com.au/cds-au/v1/banking/products/304",
       "depositRates": [
         {
@@ -2507,7 +2507,7 @@
       "name": "Access Account",
       "description": "An everyday bank account with unlimited free standard transactions for all your daily spending needs.",
       "url": "https://www.bcu.com.au/everyday-banking/everyday-bank-accounts/access-account/",
-      "lastUpdated": "2026-10-04T22:00:40.8513064Z",
+      "lastUpdated": "2026-10-11T22:01:01.6917089Z",
       "source": "https://public.cdr-api.bcu.com.au/cds-au/v1/banking/products/96",
       "depositRates": [
         {

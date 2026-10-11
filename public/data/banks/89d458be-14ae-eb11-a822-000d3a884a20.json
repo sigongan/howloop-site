@@ -1,7 +1,7 @@
 {
   "name": "MoveBank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -29,57 +29,6 @@
           ]
         },
         {
-          "additionalInfo": "Rate for a 13 - 24 month term, interest paid yearly.",
-          "additionalValue": "P24M",
-          "applicationFrequency": "P1Y",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "FIXED",
-          "rate": "0.0525",
-          "tiers": [
-            {
-              "maximumValue": "24",
-              "minimumValue": "13",
-              "name": "13 - 24 month term, yearly interest",
-              "rateApplicationMethod": "WHOLE_BALANCE",
-              "unitOfMeasure": "MONTH"
-            }
-          ]
-        },
-        {
-          "additionalInfo": "Rate for a 7 month term, interest paid at maturity.",
-          "additionalValue": "P7M",
-          "applicationType": "MATURITY",
-          "calculationFrequency": "P1D",
-          "depositRateType": "FIXED",
-          "rate": "0.0535",
-          "tiers": [
-            {
-              "minimumValue": "7",
-              "name": "7 month term",
-              "rateApplicationMethod": "WHOLE_BALANCE",
-              "unitOfMeasure": "MONTH"
-            }
-          ]
-        },
-        {
-          "additionalInfo": "Rate for a 12 month term, interest paid monthly",
-          "additionalValue": "P12M",
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "FIXED",
-          "rate": "0.0525",
-          "tiers": [
-            {
-              "minimumValue": "12",
-              "name": "12 month term, monthly interest",
-              "rateApplicationMethod": "WHOLE_BALANCE",
-              "unitOfMeasure": "MONTH"
-            }
-          ]
-        },
-        {
           "additionalInfo": "Rate for a 11 month term, interest paid at maturity.",
           "additionalValue": "P11M",
           "applicationType": "MATURITY",
@@ -96,82 +45,16 @@
           ]
         },
         {
-          "additionalInfo": "Rate for a 10 month term, interest paid at maturity.",
-          "additionalValue": "P10M",
+          "additionalInfo": "Rate for a 7 month term, interest paid at maturity.",
+          "additionalValue": "P7M",
           "applicationType": "MATURITY",
-          "calculationFrequency": "P1D",
-          "depositRateType": "FIXED",
-          "rate": "0.053",
-          "tiers": [
-            {
-              "minimumValue": "10",
-              "name": "10 month term",
-              "rateApplicationMethod": "WHOLE_BALANCE",
-              "unitOfMeasure": "MONTH"
-            }
-          ]
-        },
-        {
-          "additionalValue": "P9M",
-          "applicationType": "MATURITY",
-          "calculationFrequency": "P1D",
-          "depositRateType": "FIXED",
-          "rate": "0.053",
-          "tiers": [
-            {
-              "minimumValue": "9",
-              "name": "9 month term",
-              "rateApplicationMethod": "WHOLE_BALANCE",
-              "unitOfMeasure": "MONTH"
-            }
-          ]
-        },
-        {
-          "additionalInfo": "Rate for a 5 month term, interest paid at maturity.",
-          "additionalValue": "P5M",
-          "applicationType": "MATURITY",
-          "calculationFrequency": "P1D",
-          "depositRateType": "FIXED",
-          "rate": "0.052",
-          "tiers": [
-            {
-              "minimumValue": "5",
-              "name": "5 month term",
-              "rateApplicationMethod": "WHOLE_BALANCE",
-              "unitOfMeasure": "MONTH"
-            }
-          ]
-        },
-        {
-          "additionalInfo": "Rate for a 13 - 24 month term, interest paid monthly.",
-          "additionalValue": "P24M",
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "FIXED",
-          "rate": "0.0515",
-          "tiers": [
-            {
-              "maximumValue": "24",
-              "minimumValue": "13",
-              "name": "13 - 24 month term, monthly interest",
-              "rateApplicationMethod": "WHOLE_BALANCE",
-              "unitOfMeasure": "MONTH"
-            }
-          ]
-        },
-        {
-          "additionalInfo": "Rate for a 12 month term, interest paid yearly.",
-          "additionalValue": "P12M",
-          "applicationFrequency": "P1Y",
-          "applicationType": "PERIODIC",
           "calculationFrequency": "P1D",
           "depositRateType": "FIXED",
           "rate": "0.0535",
           "tiers": [
             {
-              "minimumValue": "12",
-              "name": "12 month term, yearly interest",
+              "minimumValue": "7",
+              "name": "7 month term",
               "rateApplicationMethod": "WHOLE_BALANCE",
               "unitOfMeasure": "MONTH"
             }
@@ -210,6 +93,21 @@
           ]
         },
         {
+          "additionalValue": "P9M",
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "FIXED",
+          "rate": "0.053",
+          "tiers": [
+            {
+              "minimumValue": "9",
+              "name": "9 month term",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "unitOfMeasure": "MONTH"
+            }
+          ]
+        },
+        {
           "additionalInfo": "Rate for a 3 month term, interest paid at maturity.",
           "additionalValue": "P3M",
           "applicationType": "MATURITY",
@@ -220,6 +118,108 @@
             {
               "minimumValue": "3",
               "name": "3 month term",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "unitOfMeasure": "MONTH"
+            }
+          ]
+        },
+        {
+          "additionalInfo": "Rate for a 13 - 24 month term, interest paid monthly.",
+          "additionalValue": "P24M",
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "FIXED",
+          "rate": "0.0515",
+          "tiers": [
+            {
+              "maximumValue": "24",
+              "minimumValue": "13",
+              "name": "13 - 24 month term, monthly interest",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "unitOfMeasure": "MONTH"
+            }
+          ]
+        },
+        {
+          "additionalInfo": "Rate for a 10 month term, interest paid at maturity.",
+          "additionalValue": "P10M",
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "FIXED",
+          "rate": "0.053",
+          "tiers": [
+            {
+              "minimumValue": "10",
+              "name": "10 month term",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "unitOfMeasure": "MONTH"
+            }
+          ]
+        },
+        {
+          "additionalInfo": "Rate for a 13 - 24 month term, interest paid yearly.",
+          "additionalValue": "P24M",
+          "applicationFrequency": "P1Y",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "FIXED",
+          "rate": "0.0525",
+          "tiers": [
+            {
+              "maximumValue": "24",
+              "minimumValue": "13",
+              "name": "13 - 24 month term, yearly interest",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "unitOfMeasure": "MONTH"
+            }
+          ]
+        },
+        {
+          "additionalInfo": "Rate for a 5 month term, interest paid at maturity.",
+          "additionalValue": "P5M",
+          "applicationType": "MATURITY",
+          "calculationFrequency": "P1D",
+          "depositRateType": "FIXED",
+          "rate": "0.052",
+          "tiers": [
+            {
+              "minimumValue": "5",
+              "name": "5 month term",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "unitOfMeasure": "MONTH"
+            }
+          ]
+        },
+        {
+          "additionalInfo": "Rate for a 12 month term, interest paid monthly",
+          "additionalValue": "P12M",
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "FIXED",
+          "rate": "0.0525",
+          "tiers": [
+            {
+              "minimumValue": "12",
+              "name": "12 month term, monthly interest",
+              "rateApplicationMethod": "WHOLE_BALANCE",
+              "unitOfMeasure": "MONTH"
+            }
+          ]
+        },
+        {
+          "additionalInfo": "Rate for a 12 month term, interest paid yearly.",
+          "additionalValue": "P12M",
+          "applicationFrequency": "P1Y",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "FIXED",
+          "rate": "0.0535",
+          "tiers": [
+            {
+              "minimumValue": "12",
+              "name": "12 month term, yearly interest",
               "rateApplicationMethod": "WHOLE_BALANCE",
               "unitOfMeasure": "MONTH"
             }
@@ -263,6 +263,13 @@
       "source": "https://od1.cdr.digital.move.bank/api/cds-au/v1/banking/products/4bb8798f-6059-4dea-89f9-db5015a30c89",
       "depositRates": [
         {
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.001"
+        },
+        {
           "additionalInfo": "Bonus rate payable for a calendar month when the eligibility criteria below are met, in addition to the base rate.",
           "additionalValue": "Monthly deposit and no-withdrawal bonus",
           "applicabilityConditions": [
@@ -290,13 +297,6 @@
               "unitOfMeasure": "DOLLAR"
             }
           ]
-        },
-        {
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "VARIABLE",
-          "rate": "0.001"
         }
       ],
       "fees": [],
@@ -409,6 +409,13 @@
       "source": "https://od1.cdr.digital.move.bank/api/cds-au/v1/banking/products/ff2bc097-6390-4e1d-b97a-a3ebc42df30c",
       "depositRates": [
         {
+          "applicationFrequency": "P1M",
+          "applicationType": "PERIODIC",
+          "calculationFrequency": "P1D",
+          "depositRateType": "VARIABLE",
+          "rate": "0.001"
+        },
+        {
           "additionalInfo": "Bonus rate payable for a calendar month when the eligibility criteria below are met, in addition to the base rate.",
           "additionalValue": "Monthly deposit and no-withdrawal bonus",
           "applicabilityConditions": [
@@ -436,13 +443,6 @@
               "unitOfMeasure": "DOLLAR"
             }
           ]
-        },
-        {
-          "applicationFrequency": "P1M",
-          "applicationType": "PERIODIC",
-          "calculationFrequency": "P1D",
-          "depositRateType": "VARIABLE",
-          "rate": "0.001"
         }
       ],
       "fees": [],

@@ -1,7 +1,7 @@
 {
   "name": "NATIONAL AUSTRALIA BANK",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "NAB Retirement Account",
       "description": "Get more from your money in retirement and enjoy easy access to your money while earning a competitive interest rate.",
       "url": "https://www.nab.com.au/personal/accounts/transaction-accounts/nab-retirement-account",
-      "lastUpdated": "2026-05-15T13:59:59Z",
+      "lastUpdated": "2026-10-09T13:59:59Z",
       "source": "https://openbank.api.nab.com.au/cds-au/v1/banking/products/11662a88-dfad-489a-b1c0-d837ff49ea27",
       "depositRates": [
         {
@@ -45,7 +45,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0155",
+          "rate": "0.0175",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P3M",
@@ -76,7 +76,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0205",
+          "rate": "0.0225",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P3M",
@@ -107,7 +107,7 @@
         },
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.022",
+          "rate": "0.024",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P3M",
@@ -293,7 +293,7 @@
       "name": "NAB Reward Saver",
       "description": "Grow your savings faster with bonus interest for regular deposits and no withdrawals.",
       "url": "https://www.nab.com.au/personal/accounts/savings-accounts/nab-reward-saver",
-      "lastUpdated": "2026-05-15T13:59:59Z",
+      "lastUpdated": "2026-10-09T13:59:59Z",
       "source": "https://openbank.api.nab.com.au/cds-au/v1/banking/products/2d188a0a-4e27-4c0f-9a6c-2eccdf534f91",
       "depositRates": [
         {
@@ -313,7 +313,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0499",
+          "rate": "0.0524",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -370,12 +370,12 @@
       "name": "NAB iSaver",
       "description": "Access your savings whenever you need them, without affecting your interest rate.",
       "url": "https://www.nab.com.au/personal/accounts/savings-accounts/nab-isaver",
-      "lastUpdated": "2026-05-15T13:59:59Z",
+      "lastUpdated": "2026-10-09T13:59:59Z",
       "source": "https://openbank.api.nab.com.au/cds-au/v1/banking/products/a97fad3e-9d44-4b4e-8279-3722edefae52",
       "depositRates": [
         {
           "depositRateType": "VARIABLE",
-          "rate": "0.0165",
+          "rate": "0.0185",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -390,7 +390,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.036",
+          "rate": "0.0365",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

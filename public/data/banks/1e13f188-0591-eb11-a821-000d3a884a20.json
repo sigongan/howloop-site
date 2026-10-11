@@ -1,7 +1,7 @@
 {
   "name": "Suncorp Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -387,20 +387,12 @@
       "name": "Growth Saver Account",
       "description": "A higher interest savings account that rewards you with Bonus Interest for regular savings.",
       "url": "https://www.suncorpbank.com.au/bank-and-save/savings-accounts/growth-saver.html",
-      "lastUpdated": "2026-05-28T14:00:00.000Z",
+      "lastUpdated": "2026-10-07T13:00:00.000Z",
       "source": "https://id-ob.suncorpbank.com.au/cds-au/v1/banking/products/GS",
       "depositRates": [
         {
-          "depositRateType": "VARIABLE",
-          "rate": "0.001",
-          "calculationFrequency": "P1D",
-          "applicationType": "PERIODIC",
-          "applicationFrequency": "P1M",
-          "additionalInfo": "Standard Interest calculated daily and paid monthly. If you do not meet the Bonus Conditions in a calendar month you still earn Standard Interest on daily balances."
-        },
-        {
           "depositRateType": "BONUS",
-          "rate": "0.05",
+          "rate": "0.0525",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",
@@ -418,6 +410,14 @@
           ],
           "additionalValue": "Closing balance on the last day of the month (excl. interest) at least $200 greater than the closing balance on the last day of the previous month and no more than 1 withdrawal in the month.",
           "additionalInfo": "Bonus Interest - conditions must be met for bonus interest to be paid."
+        },
+        {
+          "depositRateType": "VARIABLE",
+          "rate": "0.001",
+          "calculationFrequency": "P1D",
+          "applicationType": "PERIODIC",
+          "applicationFrequency": "P1M",
+          "additionalInfo": "Standard Interest calculated daily and paid monthly. If you do not meet the Bonus Conditions in a calendar month you still earn Standard Interest on daily balances."
         }
       ],
       "fees": [
@@ -614,7 +614,7 @@
       "name": "Kids Savings",
       "description": "A savings account for under-18s that offers bonus interest for regular savers",
       "url": "https://www.suncorpbank.com.au/bank-and-save/kids-bank-accounts/kids-savings-account.html",
-      "lastUpdated": "2026-05-13T14:00:00.000Z",
+      "lastUpdated": "2026-10-07T13:00:00.000Z",
       "source": "https://id-ob.suncorpbank.com.au/cds-au/v1/banking/products/KS",
       "depositRates": [
         {
@@ -627,7 +627,7 @@
         },
         {
           "depositRateType": "BONUS",
-          "rate": "0.0395",
+          "rate": "0.042",
           "calculationFrequency": "P1D",
           "applicationType": "PERIODIC",
           "applicationFrequency": "P1M",

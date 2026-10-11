@@ -1,7 +1,7 @@
 {
   "name": "Health Professionals Bank",
-  "checkedAt": "2026-10-04T23:15:27.597Z",
-  "lastAttempt": "2026-10-04T23:15:27.597Z",
+  "checkedAt": "2026-10-11T23:43:37.194Z",
+  "lastAttempt": "2026-10-11T23:43:37.194Z",
   "status": "available",
   "products": [
     {
@@ -9,7 +9,7 @@
       "name": "Everyday Direct account",
       "description": "Your everyday transaction account with VISA Debit access.",
       "url": "https://www.hpbank.com.au/banking/everyday-direct",
-      "lastUpdated": "2026-09-09T15:08:05.000+10:00",
+      "lastUpdated": "2026-10-09T08:49:17.000+11:00",
       "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/1e296861-5b3e-4288-a383-ac8723ffdf39",
       "depositRates": [
         {
@@ -608,7 +608,7 @@
       "name": "MOMENTUM SAVER",
       "description": "The Momentum Saver account rewards savers with an ongoing bonus interest rate when you deposit a minimum of $100 and make no withdrawals during the month.",
       "url": "https://www.hpbank.com.au/banking/momentum-saver",
-      "lastUpdated": "2026-10-01T09:29:02.000+10:00",
+      "lastUpdated": "2026-10-10T04:08:37.000+11:00",
       "source": "https://ob.tmbl.com.au/hpbank/cds-au/v1/banking/products/ba995be0-6c0c-11f0-91fb-325096b39f47",
       "depositRates": [
         {
@@ -627,6 +627,10 @@
             }
           ],
           "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MAX_WITHDRAWALS",
+              "additionalValue": "0"
+            },
             {
               "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
               "additionalValue": "100.00"
@@ -650,6 +654,10 @@
           ],
           "applicabilityConditions": [
             {
+              "rateApplicabilityType": "MAX_WITHDRAWALS",
+              "additionalValue": "0"
+            },
+            {
               "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
               "additionalValue": "100.00"
             }
@@ -672,6 +680,10 @@
           ],
           "applicabilityConditions": [
             {
+              "rateApplicabilityType": "MAX_WITHDRAWALS",
+              "additionalValue": "0"
+            },
+            {
               "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
               "additionalValue": "100.00"
             }
@@ -692,6 +704,10 @@
             }
           ],
           "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MAX_WITHDRAWALS",
+              "additionalValue": "0"
+            },
             {
               "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
               "additionalValue": "100.00"
@@ -715,6 +731,10 @@
           ],
           "applicabilityConditions": [
             {
+              "rateApplicabilityType": "MAX_WITHDRAWALS",
+              "additionalValue": "0"
+            },
+            {
               "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
               "additionalValue": "100.00"
             }
@@ -737,6 +757,10 @@
             }
           ],
           "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MAX_WITHDRAWALS",
+              "additionalValue": "0"
+            },
             {
               "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
               "additionalValue": "100.00"
@@ -761,6 +785,10 @@
           ],
           "applicabilityConditions": [
             {
+              "rateApplicabilityType": "MAX_WITHDRAWALS",
+              "additionalValue": "0"
+            },
+            {
               "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
               "additionalValue": "100.00"
             }
@@ -782,6 +810,10 @@
             }
           ],
           "applicabilityConditions": [
+            {
+              "rateApplicabilityType": "MAX_WITHDRAWALS",
+              "additionalValue": "0"
+            },
             {
               "rateApplicabilityType": "MIN_DEPOSIT_AMOUNT",
               "additionalValue": "100.00"
