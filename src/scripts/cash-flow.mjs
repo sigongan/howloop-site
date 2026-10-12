@@ -1,6 +1,6 @@
 import { calculateCashFlow, createSampleModel, exportCashFlowCsv, formatMoney, MAX_SCHEDULE_ROWS } from '../lib/cash-flow.mjs';
 import { trackPlannerEvent } from './product-events.mjs';
-import { createTimingExampleModel } from '../lib/cash-flow-examples.mjs';
+import { createHomeExampleModel, createTimingExampleModel, HOME_EXAMPLE_PRESET_ID } from '../lib/cash-flow-examples.mjs';
 
 export const CASH_FLOW_STORAGE_KEY = 'howloop-cash-flow-v1';
 export function parseSavedCashFlow(raw) {
@@ -31,6 +31,8 @@ export function initCashFlow(doc = document, win = window) {
   let dirty = false;
   let result = null;
   let validModel = null;
+  let exampleKind = 'default';
+  let restoredPlan = false;
   const setText = (suffix, text) => { find(suffix).textContent = text; };
   const create = (tag, text, className) => {
     const node = doc.createElement(tag);
@@ -86,11 +88,12 @@ export function initCashFlow(doc = document, win = window) {
     setText('row-count',`${count} of ${MAX_SCHEDULE_ROWS} schedule entries used. Repeating payments are expanded automatically.`);
     root.querySelectorAll('[data-cash-add]').forEach(button => { button.disabled=count>=MAX_SCHEDULE_ROWS; });
   }
-  function displayModel(model, nextMode) {
+  function displayModel(model, nextMode, nextExampleKind = 'default') {
     for (const key of ['startDate','openingBalance','buffer']) form.elements.namedItem(key).value = model[key];
     renderRows('income',model.income); renderRows('bills',model.bills); refreshCount();
-    mode = nextMode; exampleEdited = false; dirty = true;
-    setText('mode', mode==='sample'?'EXAMPLE NUMBERS':'YOUR ENTRIES');
+    mode = nextMode; exampleKind = nextExampleKind; exampleEdited = false; dirty = true; restoredPlan = false;
+    find('stale-start').hidden = true;
+    setText('mode', mode==='sample'?(exampleKind==='home'?'RENT BEFORE PAY EXAMPLE':'EXAMPLE NUMBERS'):'YOUR ENTRIES');
     error.hidden=true;
   }
   function markDirty() {
@@ -120,7 +123,7 @@ export function initCashFlow(doc = document, win = window) {
     find('output').hidden=empty;
     find('weeks').closest('section').hidden=empty;
     find('daily').hidden=empty;
-    setText('result-mode',empty?'START YOUR PLAN':mode==='sample'?(exampleEdited?'EDITED EXAMPLE':'WORKED EXAMPLE'):'YOUR CALCULATED PLAN');
+    setText('result-mode',empty?'START YOUR PLAN':mode==='sample'?(exampleEdited?'EDITED EXAMPLE':exampleKind==='home'?'RENT BEFORE PAY EXAMPLE':'WORKED EXAMPLE'):'YOUR CALCULATED PLAN');
     setText('period',`${dateLabel(result.startDate)} – ${dateLabel(result.endDate)} · 91 days`);
     setText('low',formatMoney(result.minimumClosingBalance.amountCents));
     setText('low-date',dateLabel(result.minimumClosingBalance.date));
@@ -128,7 +131,10 @@ export function initCashFlow(doc = document, win = window) {
     setText('total-in',formatMoney(result.totalIncomeCents));setText('total-out',formatMoney(result.totalExpenseCents));
     const firstShortDay=result.days.find(day=>day.date===result.firstBelowZeroDate);
     const shortfall=firstShortDay?`Your first shortfall is ${formatMoney(-firstShortDay.closingBalanceCents)} on ${dateLabel(firstShortDay.date)}.`:'These entries stay at or above zero at the end of each day.';
-    status.textContent=empty?'Add your pay and bills to see your plan. Starting cash alone is not a cash-flow plan.':(mode==='sample'?(exampleEdited?'Edited example. Other sample amounts and dates may remain. Start a blank plan to use only your entries. ':'Example updated. These are illustrative numbers. '):'Plan updated. ')+shortfall+(model.bills.length===0?' Income-only scenario: no bills or expenses are included. This does not show whether your bills are covered.':model.income.length===0?' Expenses-only scenario: no income is included. Check whether this is intentional.':'');
+    status.textContent=empty?'Add your pay and bills to see your plan. Starting cash alone is not a cash-flow plan.':(mode==='sample'?(exampleEdited?'Edited example. Other sample amounts and dates may remain. Start a blank plan to use only your entries. ':exampleKind==='home'?'Homepage example loaded with illustrative 2026 dates. Edit the entries to try your own plan. ':'Example updated. These are illustrative numbers. '):'Plan updated. ')+shortfall+(model.bills.length===0?' Income-only scenario: no bills or expenses are included. This does not show whether your bills are covered.':model.income.length===0?' Expenses-only scenario: no income is included. Check whether this is intentional.':'');
+    const staleStart = find('stale-start');
+    staleStart.hidden = !(restoredPlan && model.startDate < localToday());
+    if (!staleStart.hidden) staleStart.textContent = `This restored plan starts on ${dateLabel(model.startDate)}, before today. Check the first day, opening cash and payment dates, then select Show my plan. Nothing was changed automatically.`;
     setText('warning',`Low if bills leave before pay: ${formatMoney(result.conservativeMinimum.amountCents)} on ${dateLabel(result.conservativeMinimum.date)}. Actual bank processing order may differ. This also includes your opening cash.`);
     setText('buffer-result',`Money you want to keep aside: ${formatMoney(result.bufferCents)}. ${result.firstBelowBufferDate?`First day ending below your target: ${dateLabel(result.firstBelowBufferDate)}.`:'No day ends below your target.'} Check the bills-first low separately.`);
     renderTable('weeks',result.weeks,false);renderTable('days',result.days,true);
@@ -165,6 +171,7 @@ export function initCashFlow(doc = document, win = window) {
   }));
   const replaceAllowed=()=>mode==='sample'&&!exampleEdited||win.confirm('Replace the current entries? Unsaved changes will be lost.');
   find('example').addEventListener('click',()=>{if(!replaceAllowed())return;displayModel(createSampleModel(localToday()),'sample');calculate(false,false);});
+  find('home-example').addEventListener('click',()=>{if(!replaceAllowed())return;displayModel(createHomeExampleModel(),'sample','home');calculate(true,false);});
   const timingExample = find('timing');
   if (timingExample) {
     timingExample.addEventListener('click',()=>{if(!replaceAllowed())return;displayModel(createTimingExampleModel(),'sample');calculate(true,false);});
@@ -181,7 +188,7 @@ export function initCashFlow(doc = document, win = window) {
     try { const raw=win.localStorage.getItem(CASH_FLOW_STORAGE_KEY);if(!raw){storageStatus.textContent='No saved plan was found in this browser.';return;}model=parseSavedCashFlow(raw);exampleBased=JSON.parse(raw).exampleBased===true; }
     catch { storageStatus.textContent='The saved plan could not be read or is invalid. Your current entries have not changed.';return; }
     if(!replaceAllowed())return;
-    displayModel(model,exampleBased?'sample':'custom');if(exampleBased){exampleEdited=true;setText('mode','EDITED EXAMPLE');}calculate(false,false);storageStatus.textContent='Saved plan restored. New edits are not saved automatically.';
+    displayModel(model,exampleBased?'sample':'custom');restoredPlan=true;if(exampleBased){exampleEdited=true;setText('mode','EDITED EXAMPLE');}calculate(false,false);storageStatus.textContent='Saved plan restored. Check the first day, opening cash and payment dates before using it again. New edits are not saved automatically.';
   });
   find('delete').addEventListener('click',()=>{
     try { win.localStorage.removeItem(CASH_FLOW_STORAGE_KEY);storageStatus.textContent='Saved plan deleted from this browser. The current working entries are still on screen.'; }
@@ -194,8 +201,10 @@ export function initCashFlow(doc = document, win = window) {
     win.setTimeout(()=>win.URL.revokeObjectURL(url),1000);
   });
   find('print').addEventListener('click',()=>{if(!dirty&&result)win.print();});
-  displayModel(createSampleModel(localToday()),'sample');
+  const homePreset = new URL(win.location.href).searchParams.get('preset') === HOME_EXAMPLE_PRESET_ID;
+  displayModel(homePreset?createHomeExampleModel():createSampleModel(localToday()),'sample',homePreset?'home':'default');
   renderResult(getModel());
   find('inputs').hidden=false;
 }
 if(typeof document!=='undefined')initCashFlow();
+

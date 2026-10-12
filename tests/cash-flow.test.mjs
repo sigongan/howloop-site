@@ -13,12 +13,24 @@ import {
   parseDateOnly,
   parseMoneyToCents,
 } from '../src/lib/cash-flow.mjs';
+import {createHomeExampleModel, HOME_EXAMPLE_PRESET_ID} from '../src/lib/cash-flow-examples.mjs';
 
 const emptyModel = (extra = {}) => ({
   startDate: '2026-10-05', openingBalance: '0', buffer: '0', income: [], bills: [], ...extra,
 });
 const row = (extra = {}) => ({ label: 'Item', amount: '1.00', anchorDate: '2026-10-05', frequency: 'once', ...extra });
 const paymentDates = (result, kind = 'income') => result.days.filter((day) => day.transactions.some((item) => item.kind === kind)).map((day) => day.date);
+
+test('homepage public preset has fixed dates and exposes the shortfall before pay', () => {
+  assert.equal(HOME_EXAMPLE_PRESET_ID, 'rent-before-pay-2026');
+  const result=calculateCashFlow(createHomeExampleModel());
+  assert.equal(result.days.find(day=>day.date==='2026-10-12').closingBalanceCents,-25000);
+  assert.equal(result.days.find(day=>day.date==='2026-10-14').closingBalanceCents,195000);
+  assert.equal(result.minimumClosingBalance.amountCents,-25000);
+  assert.equal(result.closingBalanceCents,195000);
+  assert.equal(result.totalIncomeCents,220000);
+  assert.equal(result.totalExpenseCents,65000);
+});
 function invalidAt(fn, field) {
   assert.throws(fn, (error) => error instanceof CashFlowValidationError && error.field === field && error.message.length > 0);
 }
@@ -378,3 +390,4 @@ test('CSV multiple label lists preserve each distinct entry and do not duplicate
   assert.equal(rows.slice(1).reduce((sum, csvRow) => sum + Math.round(Number(csvRow[5]) * 100), 0), result.totalIncomeCents);
   assert.equal(rows.slice(1).reduce((sum, csvRow) => sum + Math.round(Number(csvRow[6]) * 100), 0), result.totalExpenseCents);
 });
+

@@ -2,9 +2,10 @@
 import Base from '../layouts/Base.astro';
 import ToolIcon from '../components/ToolIcon.astro';
 import {calculateCashFlow} from '../lib/cash-flow.mjs';
+import {createHomeExampleModel, HOME_EXAMPLE_PRESET_ID} from '../lib/cash-flow-examples.mjs';
 import '../styles/home.css';
 import '../styles/cash-flow.css';
-const example=calculateCashFlow({startDate:'2026-10-12',openingBalance:'400',buffer:'0',income:[{label:'Pay',amount:'2200',anchorDate:'2026-10-14',frequency:'once'}],bills:[{label:'Rent',amount:'650',anchorDate:'2026-10-12',frequency:'once'}]});
+const example=calculateCashFlow(createHomeExampleModel());
 ---
 <Base title="Will your money last until payday?" description="Add money you have now, your paydays and your bills. See when cash could run short with Howloop's free Australian payday planner. No account or bank connection.">
 <div class="home-page">
@@ -24,7 +25,7 @@ const example=calculateCashFlow({startDate:'2026-10-12',openingBalance:'400',buf
         <div class="planner-day"><span>WEDNESDAY</span><strong>A$1,950</strong><small>After A$2,200 pay</small></div>
       </div>
       <p class="planner-small">Illustrative dates: 12–14 October 2026. These entries finish with A${(example.closingBalanceCents/100).toLocaleString('en-AU')}, but Monday is A$250 short. The planner checks days, not just totals.</p>
-      <a class="home-text-action" href="/tools/cash-flow/#worked-example">See the example &amp; try your numbers →</a>
+      <a class="home-text-action" href={`/tools/cash-flow/?preset=${HOME_EXAMPLE_PRESET_ID}#planner`}>Run this exact example &amp; try your numbers →</a>
     </aside>
   </section></div>
   <section class="home-wrap" style="padding-block:2rem" aria-labelledby="home-steps"><h2 id="home-steps">Three things to add.</h2><div class="planner-steps">
@@ -40,3 +41,4 @@ const example=calculateCashFlow({startDate:'2026-10-12',openingBalance:'400',buf
 </div>
 <script>import '../scripts/product-events.mjs';</script>
 </Base>
+

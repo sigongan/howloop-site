@@ -8,8 +8,8 @@ import { ANALYTICS_CHOICE_KEY } from '../src/scripts/analytics-consent.mjs';
 // Exercise the real controller against the page's static control structure.
 // Astro rendering and the emitted client bundle are checked separately by build.
 const template = (await fs.readFile(new URL('../src/pages/tools/cash-flow.astro',import.meta.url),'utf8')).split('---').slice(2).join('---');
-function setup() {
-  const dom=new JSDOM(template,{url:'https://howloop.how/tools/cash-flow/'});
+function setup(url='https://howloop.how/tools/cash-flow/') {
+  const dom=new JSDOM(template,{url});
   const win=dom.window;const doc=win.document;
   win.confirm=()=>true;win.print=()=>{};
   const events=[];win.gtag=(...event)=>events.push(event);win['ga-disable-G-TEST123']=false;
@@ -75,6 +75,45 @@ test('fixed walkthrough loads its exact calendar, confirms replacements and reco
   f.dom.window.close();
 });
 
+test('public homepage preset runs its two-entry example without saving or tracking visitor amounts',()=>{
+  const f=setup('https://howloop.how/tools/cash-flow/?preset=rent-before-pay-2026#planner');
+  assert.equal(f.doc.querySelector('[name=startDate]').value,'2026-10-12');
+  assert.equal(f.doc.querySelector('[name=openingBalance]').value,'400.00');
+  assert.equal(f.doc.querySelectorAll('[data-cash-row]').length,2);
+  assert.equal(f.el('result-mode').textContent,'RENT BEFORE PAY EXAMPLE');
+  assert.equal(f.el('low').textContent,'-$250.00');
+  assert.equal(f.el('closing').textContent,'$1,950.00');
+  assert.match(f.el('status').textContent,/Homepage example loaded/);
+  const days=[...f.el('days').children];
+  assert.match(days[0].textContent,/12 Oct 2026.*Rent.*-\$250\.00/);
+  assert.match(days[2].textContent,/14 Oct 2026.*Pay.*\$1,950\.00/);
+  assert.equal(f.win.localStorage.getItem(CASH_FLOW_STORAGE_KEY),null);
+  assert.deepEqual(f.events,[]);
+  f.el('example').click();
+  assert.equal(f.doc.querySelectorAll('[data-cash-row]').length,7);
+  f.el('home-example').click();
+  assert.equal(f.doc.querySelectorAll('[data-cash-row]').length,2);
+  f.dom.window.close();
+});
+
+test('old restored start date is flagged until recalculated with a current start; saved data is unchanged',()=>{
+  const f=setup();
+  const old={startDate:'2000-01-01',openingBalance:'400.00',buffer:'0.00',income:[{label:'Pay',amount:'2200.00',anchorDate:'2000-01-03',frequency:'once'}],bills:[{label:'Rent',amount:'650.00',anchorDate:'2000-01-01',frequency:'once'}]};
+  const saved=JSON.stringify({version:1,model:old,exampleBased:false});
+  f.win.localStorage.setItem(CASH_FLOW_STORAGE_KEY,saved);
+  f.el('restore').click();
+  assert.equal(f.doc.querySelector('[name=startDate]').value,'2000-01-01');
+  assert.equal(f.el('stale-start').hidden,false);
+  assert.match(f.el('stale-start').textContent,/before today.*Nothing was changed automatically/);
+  assert.equal(f.win.localStorage.getItem(CASH_FLOW_STORAGE_KEY),saved);
+  f.fill('openingBalance','500.00');f.submit();
+  assert.equal(f.el('stale-start').hidden,false);
+  f.fill('startDate','2099-01-01');f.submit();
+  assert.equal(f.el('stale-start').hidden,true);
+  assert.equal(f.win.localStorage.getItem(CASH_FLOW_STORAGE_KEY),saved);
+  f.dom.window.close();
+});
+
 test('empty plan and one-sided scenarios never claim that omitted bills are covered',()=>{
  const f=setup();f.el('blank').click();
  assert.match(f.el('status').textContent,/Add your pay and bills/);assert.equal(f.el('output').hidden,true);assert.equal(f.el('export').disabled,true);assert.equal(f.el('daily').hidden,true);
@@ -109,3 +148,4 @@ test('saved edited examples retain their example warning when restored',()=>{
  f.el('blank').click();f.el('restore').click();assert.equal(f.el('result-mode').textContent,'EDITED EXAMPLE');assert.match(f.el('status').textContent,/Other sample amounts and dates may remain/);
  f.dom.window.close();
 });
+

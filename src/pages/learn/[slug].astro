@@ -43,7 +43,7 @@ const states=[['QLD','https://qro.qld.gov.au/duties/transfer-duty/calculate/'],[
   {guide.stateLinks&&<section id="state-duty"><h2>Choose your state or territory</h2><p class="hl-help">Official duty tools and guidance. Check concessions, foreign-buyer charges and the tool's exclusions.</p><nav class="duty-states" aria-label="Official state duty guidance">{states.map(([name,href])=><a href={href} target="_blank" rel="noopener noreferrer">{name} <span aria-hidden="true">↗</span></a>)}</nav></section>}
   <div class="lesson-action"><a class="hl-button" href={action.href} rel={action.href.startsWith('https:')?'noopener noreferrer':undefined}>{action.label}<span aria-hidden="true">→</span></a></div>
   <section class="lesson-quiz" data-quiz data-answer={quiz.answer} data-explanation={quiz.explanation}><span>A QUICK CHECK</span><h2>{quiz.question}</h2><div class="lesson-quiz-options">{quiz.choices.map((choice,i)=><button type="button" data-choice={i} aria-pressed="false">{choice}</button>)}</div><p data-quiz-feedback role="status" hidden></p><noscript><p>{quiz.explanation}</p></noscript></section>
-  <details class="lesson-deep-guide" id="full-guide">
+  <details class="lesson-deep-guide" id="full-guide" open>
     <summary><span><strong>Read the full guide</strong><small>{guide.minutes} min · Examples, assumptions and what to check</small></span><span class="lesson-details-mark" aria-hidden="true">+</span></summary>
     <div class="lesson-deep-content">
       {quickTopic&&<div class="lesson-extra-example">{guide.lab ? <DecisionLab kind={guide.lab}/> : guide.slug==='offset-vs-extra-repayments' ? <OffsetLesson/> : <CompoundInterestLesson context="guide"/>}</div>}
@@ -81,3 +81,4 @@ openLessonSection(location.hash);
 window.addEventListener('hashchange',()=>openLessonSection(location.hash));
 document.querySelectorAll<HTMLAnchorElement>('.lesson-reading-page a[href^="#"]').forEach(link=>link.addEventListener('click',()=>openLessonSection(link.hash)));
 </script>
+
