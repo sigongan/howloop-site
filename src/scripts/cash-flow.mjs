@@ -15,7 +15,7 @@ function localToday() {
   return `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
 }
 const dateLabel = date => new Intl.DateTimeFormat('en-AU', {day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(date+'T00:00:00Z'));
-const frequencies = [['once','One-off'],['weekly','Weekly'],['fortnightly','Fortnightly'],['monthly','Monthly']];
+const frequencies = [['once','Just once'],['weekly','Every week'],['fortnightly','Every 2 weeks'],['monthly','Every month']];
 
 export function initCashFlow(doc = document, win = window) {
   const root = doc.querySelector('[data-cash-flow]');
@@ -27,6 +27,7 @@ export function initCashFlow(doc = document, win = window) {
   const storageStatus = find('storage');
   const status = find('status');
   let mode = 'sample';
+  let exampleEdited = false;
   let dirty = false;
   let result = null;
   let validModel = null;
@@ -63,14 +64,14 @@ export function initCashFlow(doc = document, win = window) {
     const nodes = entries.map((entry, index) => {
       const row = create('div', undefined, 'planner-row'); row.dataset.cashRow = kind;
       const grid = create('div', undefined, 'planner-fields');
-      for (const [key,caption,type] of [['label','Label','text'],['amount','Amount (A$)','text'],['anchorDate',kind==='income'?'Known payday':'Known payment date','date']]) {
+      for (const [key,caption,type] of [['label','Label','text'],['amount','Amount (A$)','text'],['anchorDate',kind==='income'?'Day money arrives':'Day money goes out','date']]) {
         const control = input(`${kind}.${index}.${key}`,type,entry[key]); control.dataset.field = key;
         grid.append(field(caption,control,key==='label'));
       }
       const select = doc.createElement('select'); select.name = `${kind}.${index}.frequency`; select.id = `cash-${kind}-${index}-frequency`; select.dataset.field = 'frequency';
       for (const [value,caption] of frequencies) { const option = create('option',caption); option.value=value; select.append(option); }
       select.value = entry.frequency;
-      grid.append(field('Repeats', select));
+      grid.append(field('How often?', select));
       const remove = create('button', `Remove ${kind==='income'?'income':'expense'} ${index+1}`, 'planner-remove'); remove.type = 'button';
       remove.addEventListener('click', () => {
         const model = getModel(); model[kind].splice(index,1); renderRows(kind,model[kind]); refreshCount(); markDirty();
@@ -88,13 +89,14 @@ export function initCashFlow(doc = document, win = window) {
   function displayModel(model, nextMode) {
     for (const key of ['startDate','openingBalance','buffer']) form.elements.namedItem(key).value = model[key];
     renderRows('income',model.income); renderRows('bills',model.bills); refreshCount();
-    mode = nextMode; dirty = true;
+    mode = nextMode; exampleEdited = false; dirty = true;
     setText('mode', mode==='sample'?'EXAMPLE NUMBERS':'YOUR ENTRIES');
     error.hidden=true;
   }
   function markDirty() {
-    mode='custom';dirty=true;
-    setText('mode','YOUR ENTRIES');
+    if(mode==='sample')exampleEdited=true;
+    dirty=true;
+    setText('mode',mode==='sample'?'EDITED EXAMPLE':'YOUR ENTRIES');
     status.textContent='Inputs changed. Update the plan to refresh these results.';
     find('export').disabled=true;find('print').disabled=true;
     find('results').setAttribute('aria-label','Previous calculation; inputs have changed');
@@ -114,28 +116,33 @@ export function initCashFlow(doc = document, win = window) {
   function renderResult(model) {
     const calculated=calculateCashFlow(model);
     result=calculated;validModel=JSON.parse(JSON.stringify(model));dirty=false;
-    setText('result-mode',mode==='sample'?'WORKED EXAMPLE':'YOUR CALCULATED PLAN');
+    const empty = model.income.length===0 && model.bills.length===0;
+    find('output').hidden=empty;
+    find('weeks').closest('section').hidden=empty;
+    find('daily').hidden=empty;
+    setText('result-mode',empty?'START YOUR PLAN':mode==='sample'?(exampleEdited?'EDITED EXAMPLE':'WORKED EXAMPLE'):'YOUR CALCULATED PLAN');
     setText('period',`${dateLabel(result.startDate)} – ${dateLabel(result.endDate)} · 91 days`);
     setText('low',formatMoney(result.minimumClosingBalance.amountCents));
     setText('low-date',dateLabel(result.minimumClosingBalance.date));
     setText('closing',formatMoney(result.closingBalanceCents));
     setText('total-in',formatMoney(result.totalIncomeCents));setText('total-out',formatMoney(result.totalExpenseCents));
-    const shortfall=result.firstBelowZeroDate?`First negative end-of-day balance: ${dateLabel(result.firstBelowZeroDate)}.`:'No negative end-of-day balance in these entries.';
-    status.textContent=(mode==='sample'?'Example updated. These are illustrative numbers. ':'Plan updated. ')+shortfall+(model.bills.length===0?' No bills or expenses are included.':'');
+    const firstShortDay=result.days.find(day=>day.date===result.firstBelowZeroDate);
+    const shortfall=firstShortDay?`Your first shortfall is ${formatMoney(-firstShortDay.closingBalanceCents)} on ${dateLabel(firstShortDay.date)}.`:'These entries stay at or above zero at the end of each day.';
+    status.textContent=empty?'Add your pay and bills to see your plan. Starting cash alone is not a cash-flow plan.':(mode==='sample'?(exampleEdited?'Edited example. Other sample amounts and dates may remain. Start a blank plan to use only your entries. ':'Example updated. These are illustrative numbers. '):'Plan updated. ')+shortfall+(model.bills.length===0?' Income-only scenario: no bills or expenses are included. This does not show whether your bills are covered.':model.income.length===0?' Expenses-only scenario: no income is included. Check whether this is intentional.':'');
     setText('warning',`Low if bills leave before pay: ${formatMoney(result.conservativeMinimum.amountCents)} on ${dateLabel(result.conservativeMinimum.date)}. Actual bank processing order may differ. This also includes your opening cash.`);
-    setText('buffer-result',`Your chosen buffer: ${formatMoney(result.bufferCents)}. ${result.firstBelowBufferDate?`First end-of-day balance below it: ${dateLabel(result.firstBelowBufferDate)}.`:'No end-of-day balance falls below it.'} Check the bills-first low separately.`);
+    setText('buffer-result',`Money you want to keep aside: ${formatMoney(result.bufferCents)}. ${result.firstBelowBufferDate?`First day ending below your target: ${dateLabel(result.firstBelowBufferDate)}.`:'No day ends below your target.'} Check the bills-first low separately.`);
     renderTable('weeks',result.weeks,false);renderTable('days',result.days,true);
     const peak=Math.max(1,...result.weeks.map(week=>Math.abs(week.closingBalanceCents)));
     find('chart').replaceChildren(...result.weeks.map(week=>{const cell=create('div',undefined,'planner-chart-cell');const bar=create('div',undefined,'planner-bar');bar.style.height=`${Math.max(.5,Math.abs(week.closingBalanceCents)/peak*48)}%`;bar.dataset.negative=String(week.closingBalanceCents<0);bar.title=`Week ${week.weekNumber}: ${formatMoney(week.closingBalanceCents)}`;cell.append(bar);return cell;}));
     find('results').removeAttribute('aria-label');
-    find('exports').hidden=false;find('export-note').hidden=false;find('export').disabled=false;find('print').disabled=false;
+    find('exports').hidden=empty;find('export-note').hidden=empty;find('export').disabled=empty;find('print').disabled=empty;
     error.hidden=true;form.querySelectorAll('[aria-invalid]').forEach(node=>node.removeAttribute('aria-invalid'));
   }
   function calculate(focus = false, track = false) {
     try {
       renderResult(getModel());
       if(track)trackPlannerEvent('planner_demo_calculate','demo',mode,win);
-      if(focus)find('results').querySelector('h2').focus();
+      if(focus){const heading=find('results').querySelector('h2');heading.focus({preventScroll:true});heading.scrollIntoView?.({block:'start'});}
       return true;
     } catch (exception) {
       error.textContent=exception.message||'Check your entries and try again.';error.hidden=false;
@@ -156,7 +163,7 @@ export function initCashFlow(doc = document, win = window) {
     renderRows(kind,model[kind]);refreshCount();markDirty();
     find(kind).lastElementChild.querySelector('[data-field="amount"]').focus();
   }));
-  const replaceAllowed=()=>mode==='sample'||win.confirm('Replace the current entries? Unsaved changes will be lost.');
+  const replaceAllowed=()=>mode==='sample'&&!exampleEdited||win.confirm('Replace the current entries? Unsaved changes will be lost.');
   find('example').addEventListener('click',()=>{if(!replaceAllowed())return;displayModel(createSampleModel(localToday()),'sample');calculate(false,false);});
   const timingExample = find('timing');
   if (timingExample) {
@@ -166,15 +173,15 @@ export function initCashFlow(doc = document, win = window) {
   find('blank').addEventListener('click',()=>{if(!replaceAllowed())return;displayModel({startDate:localToday(),openingBalance:'0',buffer:'0',income:[],bills:[]},'custom');calculate(false,false);form.elements.namedItem('openingBalance').focus();});
   find('save').addEventListener('click',()=>{
     if(!calculate(false,false))return;
-    try { win.localStorage.setItem(CASH_FLOW_STORAGE_KEY,JSON.stringify({version:1,model:validModel}));storageStatus.textContent='Saved one plan in this browser. Later edits are not saved automatically.'; }
+    try { win.localStorage.setItem(CASH_FLOW_STORAGE_KEY,JSON.stringify({version:1,model:validModel,exampleBased:mode==='sample'}));storageStatus.textContent='Saved one plan in this browser. Later edits are not saved automatically.'; }
     catch { storageStatus.textContent='This browser could not save the plan. Your entries still work in this tab; download a CSV if useful.'; }
   });
   find('restore').addEventListener('click',()=>{
-    let model;
-    try { const raw=win.localStorage.getItem(CASH_FLOW_STORAGE_KEY);if(!raw){storageStatus.textContent='No saved plan was found in this browser.';return;}model=parseSavedCashFlow(raw); }
+    let model;let exampleBased=false;
+    try { const raw=win.localStorage.getItem(CASH_FLOW_STORAGE_KEY);if(!raw){storageStatus.textContent='No saved plan was found in this browser.';return;}model=parseSavedCashFlow(raw);exampleBased=JSON.parse(raw).exampleBased===true; }
     catch { storageStatus.textContent='The saved plan could not be read or is invalid. Your current entries have not changed.';return; }
     if(!replaceAllowed())return;
-    displayModel(model,'custom');calculate(false,false);storageStatus.textContent='Saved plan restored. New edits are not saved automatically.';
+    displayModel(model,exampleBased?'sample':'custom');if(exampleBased){exampleEdited=true;setText('mode','EDITED EXAMPLE');}calculate(false,false);storageStatus.textContent='Saved plan restored. New edits are not saved automatically.';
   });
   find('delete').addEventListener('click',()=>{
     try { win.localStorage.removeItem(CASH_FLOW_STORAGE_KEY);storageStatus.textContent='Saved plan deleted from this browser. The current working entries are still on screen.'; }

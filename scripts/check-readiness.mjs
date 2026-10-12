@@ -6,6 +6,8 @@
 import fs from 'node:fs/promises';
 import './check-client-syntax.mjs';
 import {isIndexableRoute} from '../src/lib/search-indexing.mjs';
+import {reviewStatus, brisbaneDate} from '../src/lib/content-status.mjs';
+import {bankFreshness} from '../src/lib/bank-freshness.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -124,6 +126,17 @@ for (const url of canonicalURLs) if (!sitemapURLs.includes(url)) fail('Indexable
 if (new Set(sitemapURLs).size !== sitemapURLs.length) fail('Sitemap contains duplicate URLs');
 const rss = await read(path.join(dist, 'rss.xml'));
 const guides = JSON.parse(await read(path.join(root, 'src/data/learning.json')));
+const reviewDate = brisbaneDate();
+const editorialReviewsDue = guides.flatMap(guide => {
+  const status = reviewStatus(guide.sourcesChecked, guide.reviewDays, reviewDate);
+  return status.needsReview ? [{route: '/learn/' + guide.slug + '/', checked: guide.sourcesChecked, due: status.due}] : [];
+});
+const policies = JSON.parse(await read(path.join(root, 'src/data/policy-updates.json')));
+const policyReviewsDue = policies.flatMap(policy => {
+  const status = reviewStatus(policy.checkedAt, policy.reviewDays, reviewDate);
+  return status.needsReview ? [{id: policy.id, checked: policy.checkedAt, due: status.due}] : [];
+});
+if (editorialReviewsDue.length || policyReviewsDue.length) warnings.push('Source reviews are due. Revalidate the cited sources; do not renew dates merely because a build passed.');
 const rssItems = [...rss.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
 if (rssItems.length !== guides.length) fail('RSS does not contain every maintained money guide');
 for (const guide of guides) {
@@ -139,6 +152,7 @@ for (const name of ['desk', 'trade']) {
 const manifest = JSON.parse(await read(path.join(dist, 'data/banks.json')));
 const ids = new Set();
 let productCount = 0;
+const bankSnapshotsNotUsable = [];
 for (const bank of manifest.banks) {
   if (!/^[A-Za-z0-9-]+$/.test(bank.id) || ids.has(bank.id)) fail('Invalid or repeated bank ID: ' + bank.id);
   ids.add(bank.id);
@@ -148,13 +162,16 @@ for (const bank of manifest.banks) {
   const neverRetrieved = snapshot.checkedAt === null && snapshot.status === 'unavailable' && snapshot.products.length === 0;
   if (!neverRetrieved && !Number.isFinite(Date.parse(snapshot.checkedAt))) fail('Bank has an invalid checked date: ' + bank.name);
   if (snapshot.status !== bank.status || snapshot.checkedAt !== bank.checkedAt) fail('Bank status/date mismatch: ' + bank.name);
+  const freshness = bankFreshness(snapshot);
+  if (!freshness.usable) bankSnapshotsNotUsable.push({id: bank.id, name: bank.name, checkedAt: snapshot.checkedAt, status: snapshot.status, note: freshness.note});
   for (const product of snapshot.products) {
     productCount++;
     if (!product.source?.startsWith('https://')) fail('Product source must use HTTPS: ' + bank.name);
     for (const rate of product.depositRates ?? []) if (rate.rate == null || String(rate.rate).trim() === '' || !Number.isFinite(Number(rate.rate))) fail('Non-finite bank rate: ' + bank.name);
   }
 }
+if (bankSnapshotsNotUsable.length) warnings.push('Some bank snapshots are unavailable for automatic calculations. The latest overall refresh does not make every bank current.');
 warnings.push('This automated result does not assess editorial quality, ownership verification, email delivery, consent compliance or Google approval.');
-console.log(JSON.stringify({ technicalGatePassed: failures.length === 0, htmlPages: htmlFiles.length, indexablePages, sitemapURLs: sitemapURLs.length, moneyGuides: guides.length, bankSnapshots: ids.size, products: productCount, failures, warnings }, null, 2));
+console.log(JSON.stringify({ technicalGatePassed: failures.length === 0, reviewDate, htmlPages: htmlFiles.length, indexablePages, sitemapURLs: sitemapURLs.length, moneyGuides: guides.length, bankSnapshots: ids.size, products: productCount, editorialReviewsDue, policyReviewsDue, bankSnapshotsNotUsable, failures, warnings }, null, 2));
 process.exitCode = failures.length ? 1 : 0;
 

@@ -9,27 +9,27 @@ const dateLabel = (date) => new Intl.DateTimeFormat('en-AU', {day:'numeric',mont
 <Base title="Free fortnightly budget & cash-flow planner Australia" description="Plan weekly or fortnightly pay around monthly bills. See 13 weeks of daily cash balances, follow a worked example, and export your plan. Free, no sign-up.">
 <div class="planner-page planner-wrap" data-cash-flow>
   <header class="planner-hero">
-    <div><p class="planner-kicker">PAYDAY PLANNER · FREE WORKING PREVIEW</p><h1>Fortnightly pay. Monthly bills. One clear plan.</h1><p class="planner-lead">See when cash could run low between paydays. Put weekly, fortnightly and monthly payments on one 13-week calendar, then try your own numbers.</p><p class="planner-small" style="margin-top:.8rem">13 weeks · Australian dollars · No account or bank connection</p></div>
-    <div class="planner-note"><strong>Dates matter as much as totals.</strong><p>A weekly budget can look fine while one day runs short. This preview shows end-of-day balances and a separate low point if bills leave before pay on the same day.</p><p class="planner-small" style="margin-top:.8rem">Enter take-home amounts. No tax, interest, fees or bank-holiday adjustments are calculated.</p></div>
+    <div><p class="planner-kicker">FREE PAYDAY &amp; BILLS PLANNER</p><h1>Will your money last until payday?</h1><p class="planner-lead">See when cash could run low between paydays. Put weekly, fortnightly and monthly payments on one 13-week calendar, then try your own numbers.</p><p class="planner-small" style="margin-top:.8rem">13 weeks · Australian dollars · No account or bank connection</p></div>
+    <div class="planner-note"><strong>Your numbers stay in this browser.</strong><p>No account or bank connection. Nothing saves unless you choose to save it.</p><p class="planner-small">Use the money you receive after tax. The planner does not add tax, interest or fees.</p></div>
   </header>
-  <nav class="planner-page-links planner-no-print" aria-label="On this planner"><a href="#planner">Use the planner</a><a href="#worked-example">Follow a worked example</a><a href="#entering-bills">How to enter bills</a></nav>
+  <nav class="planner-page-links planner-no-print" aria-label="On this planner"><a href="#planner">Use the planner</a><a href="#worked-example">Follow a worked example</a><a href="/methodology/#cash-flow">Calculation method &amp; sources</a></nav>
   <noscript><div class="planner-note">JavaScript is needed to edit and calculate a plan. The worked example below remains readable. No financial entries are sent to a server.</div></noscript>
   <div class="planner-workspace" id="planner">
     <section class="planner-panel planner-input-panel" data-cash-inputs hidden aria-labelledby="cash-input-title">
-      <span class="planner-mode" data-cash-mode>EXAMPLE NUMBERS</span><h2 id="cash-input-title">Build your timeline.</h2>
+      <span class="planner-mode" data-cash-mode>EXAMPLE NUMBERS</span><h2 id="cash-input-title">Add your money and payments.</h2>
       <p class="planner-small">Use labels like “Pay 1” and “Rent”. Don't enter account numbers or other identifying details.</p>
-      <div class="planner-actions"><button type="button" class="planner-btn" data-cash-blank>Start my plan</button><button type="button" class="planner-btn" data-cash-example>Use example</button></div>
+      <div class="planner-actions"><button type="button" class="planner-btn planner-btn--primary" data-cash-blank>Enter my numbers</button><button type="button" class="planner-btn" data-cash-example>Use example</button></div>
       <form data-cash-form novalidate autocomplete="off">
         <div class="planner-fields">
           <label class="planner-field planner-field--wide" for="cash-start">First day<input id="cash-start" name="startDate" type="date" min="2000-01-01" max="2099-10-02" required/><small>Includes this date and the next 90 days.</small></label>
-          <label class="planner-field" for="cash-opening">Starting cash (A$)<input id="cash-opening" name="openingBalance" inputmode="decimal" type="text" required/><small>Immediately before the first day's payments. Negative is allowed.</small></label>
-          <label class="planner-field" for="cash-buffer">Your buffer (A$)<input id="cash-buffer" name="buffer" inputmode="decimal" type="text" required/><small>A comparison line you choose, not an amount we recommend.</small></label>
+          <label class="planner-field" for="cash-opening">Money you have now (A$)<input id="cash-opening" name="openingBalance" inputmode="decimal" type="text" required/><small>Your balance before the first payment. Use a minus sign if you owe money.</small></label>
+          <label class="planner-field" for="cash-buffer">Money to keep aside (A$)<input id="cash-buffer" name="buffer" inputmode="decimal" type="text" required/><small>A target you choose. Enter 0 to skip it. This money is not taken out.</small></label>
         </div>
-        <fieldset class="planner-group"><legend>Money coming in</legend><p class="planner-small">Use a known payday as the anchor, including a past date for a repeating schedule.</p><div data-cash-income></div><button type="button" class="planner-btn" data-cash-add="income">Add income</button></fieldset>
-        <fieldset class="planner-group"><legend>Bills and money going out</legend><p class="planner-small">Include everyday spending as well as bills. Only listed payments are modelled.</p><div data-cash-bills></div><button type="button" class="planner-btn" data-cash-add="bills">Add a bill or expense</button></fieldset>
+        <fieldset class="planner-group"><legend>1. Money coming in</legend><p class="planner-small">Add the amount you receive and the day it arrives.</p><div data-cash-income></div><button type="button" class="planner-btn" data-cash-add="income">Add pay or other money</button></fieldset>
+        <fieldset class="planner-group"><legend>2. Money going out</legend><p class="planner-small">Add bills, groceries and other spending. Only these payments count.</p><div data-cash-bills></div><button type="button" class="planner-btn" data-cash-add="bills">Add a bill or expense</button></fieldset>
         <p class="planner-small" data-cash-row-count></p>
         <div class="planner-error" data-cash-error role="alert" tabindex="-1" hidden></div>
-        <div class="planner-actions"><button class="planner-btn planner-btn--primary" type="submit">Update 13-week plan</button></div>
+        <div class="planner-actions"><button class="planner-btn planner-btn--primary" type="submit">Show my plan</button></div>
       </form>
       <div class="planner-note"><strong>Your entries stay here.</strong><p class="planner-small">Nothing saves automatically. “Save on this device” keeps one plan in this browser, without encryption. Anyone using this browser profile may be able to restore it.</p></div>
       <div class="planner-actions"><button class="planner-btn" type="button" data-cash-save>Save on this device</button><button class="planner-btn" type="button" data-cash-restore>Restore saved plan</button><button class="planner-btn" type="button" data-cash-delete>Delete saved plan</button></div>
@@ -37,12 +37,13 @@ const dateLabel = (date) => new Intl.DateTimeFormat('en-AU', {day:'numeric',mont
     </section>
     <section class="planner-panel" aria-labelledby="cash-result-title" data-cash-results>
       <p class="planner-print-only">Howloop Payday Planner preview · howloop.how/tools/cash-flow/</p>
-      <span class="planner-mode" data-cash-result-mode>WORKED EXAMPLE</span><h2 id="cash-result-title" tabindex="-1">Your 13-week view.</h2>
+      <span class="planner-mode" data-cash-result-mode>WORKED EXAMPLE</span><h2 id="cash-result-title" tabindex="-1">Your money over the next 13 weeks.</h2>
       <p class="planner-small" data-cash-period>{dateLabel(sample.startDate)} – {dateLabel(sample.endDate)} · 91 days</p>
       <p class="planner-note" data-cash-status role="status">Illustrative numbers only. Edit the example to build your own plan.</p>
+      <div data-cash-output>
       <dl class="planner-summary">
-        <div class="planner-metric"><dt>Lowest end-of-day balance</dt><dd data-cash-low>{formatMoney(sample.minimumClosingBalance.amountCents)}</dd><small data-cash-low-date>{dateLabel(sample.minimumClosingBalance.date)}</small></div>
-        <div class="planner-metric"><dt>Balance after 13 weeks</dt><dd data-cash-closing>{formatMoney(sample.closingBalanceCents)}</dd><small>After every listed payment</small></div>
+        <div class="planner-metric"><dt>Lowest balance at the end of a day</dt><dd data-cash-low>{formatMoney(sample.minimumClosingBalance.amountCents)}</dd><small data-cash-low-date>{dateLabel(sample.minimumClosingBalance.date)}</small></div>
+        <div class="planner-metric"><dt>Money left after 13 weeks</dt><dd data-cash-closing>{formatMoney(sample.closingBalanceCents)}</dd><small>After every listed payment</small></div>
         <div class="planner-metric"><dt>Total money in</dt><dd data-cash-total-in>{formatMoney(sample.totalIncomeCents)}</dd><small>Expected take-home amounts</small></div>
         <div class="planner-metric"><dt>Total money out</dt><dd data-cash-total-out>{formatMoney(sample.totalExpenseCents)}</dd><small>Only the payments you include</small></div>
       </dl>
@@ -51,6 +52,7 @@ const dateLabel = (date) => new Intl.DateTimeFormat('en-AU', {day:'numeric',mont
       <p class="planner-small" data-cash-buffer-result>Check your chosen buffer against the daily balances below.</p>
       <div class="planner-actions planner-no-print" data-cash-exports hidden><button type="button" class="planner-btn" data-cash-export>Download daily CSV</button><button type="button" class="planner-btn" data-cash-print>Print plan</button></div>
       <p class="planner-small planner-no-print" data-cash-export-note hidden style="margin-top:.7rem">Downloads and printouts contain your entries. Keep them private.</p>
+      </div>
     </section>
   </div>
   <section class="planner-section" aria-labelledby="cash-weeks-title"><h2 id="cash-weeks-title">All 13 weeks.</h2><p class="planner-small">Weeks are seven-day blocks starting on your chosen first day. “Low if bills leave first” includes the opening balance and assumes that day's bills clear before that day's income.</p>
@@ -58,8 +60,8 @@ const dateLabel = (date) => new Intl.DateTimeFormat('en-AU', {day:'numeric',mont
   </section>
   <details class="planner-faq planner-no-print" data-cash-daily><summary>Inspect every day and the payments behind it</summary><div class="planner-table-scroll" role="region" aria-label="Daily cash-flow table, scroll horizontally on small screens" tabindex="0"><table class="planner-table"><caption>Daily cash-flow detail (AUD)</caption><thead><tr><th scope="col">Date / payments</th><th scope="col">Money in</th><th scope="col">Money out</th><th scope="col">Low if bills leave first</th><th scope="col">Closing balance</th></tr></thead><tbody data-cash-days>{sample.days.map(day=><tr><td>{dateLabel(day.date)}<small>{day.transactions.map(t=>t.label).join(', ')||'No listed payments'}</small></td><td>{formatMoney(day.incomeCents)}</td><td>{formatMoney(day.expenseCents)}</td><td>{formatMoney(day.withinDayMinimumCents)}</td><td>{formatMoney(day.closingBalanceCents)}</td></tr>)}</tbody></table></div></details>
   <CashFlowWalkthrough><div class="planner-actions"><button type="button" class="planner-btn" data-cash-timing hidden>Try this exact example in the planner</button></div></CashFlowWalkthrough>
-  <section class="planner-section planner-no-print" aria-labelledby="cash-assumptions"><h2 id="cash-assumptions">What the preview assumes.</h2><ul><li>Dates and amounts are supplied by you. It does not connect to a bank or verify an expected payment.</li><li>Weekly means every 7 days; fortnightly means every 14 days. Monthly payments keep their original day, or use the month's last day when that day does not exist. A 31 January anchor becomes 28/29 February, then 31 March.</li><li>Weekends and public holidays do not shift payments. Enter separate one-off dates when actual timing differs.</li><li>Amounts stay constant on a recurring schedule. For variable pay, add separate one-off entries or edit and recalculate.</li><li>No interest, tax, grants, inflation or fees are added. A positive result does not establish affordability or guarantee that bills will clear.</li></ul></section>
-  <aside class="planner-callout planner-no-print"><div><p class="planner-kicker">EXPLORE THE POSSIBLE KIT</p><h2>A plan to reuse, with room for “what if”.</h2><p>See the proposed offline kit and price. It's not available to buy yet.</p></div><a class="planner-btn" href="/products/payday-planner/" data-planner-link="planner_offer_open" data-placement="demo">See the product preview</a></aside>
+  <details class="planner-faq planner-no-print"><summary id="cash-assumptions">Calculation assumptions &amp; limits</summary><ul><li>Dates and amounts are supplied by you. It does not connect to a bank or verify an expected payment.</li><li>Weekly means every 7 days; fortnightly means every 14 days. Monthly payments keep their original day, or use the month's last day when that day does not exist. A 31 January anchor becomes 28/29 February, then 31 March.</li><li>Weekends and public holidays do not shift payments. Enter separate one-off dates when actual timing differs.</li><li>Amounts stay constant on a recurring schedule. For variable pay, add separate one-off entries or edit and recalculate.</li><li>No interest, tax, grants, inflation or fees are added. A positive result does not establish affordability or guarantee that bills will clear.</li></ul></details>
+
 </div>
 <script>import '../../scripts/cash-flow.mjs';import '../../scripts/product-events.mjs';</script>
 </Base>

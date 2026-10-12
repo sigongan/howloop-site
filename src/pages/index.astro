@@ -1,75 +1,42 @@
 ---
 import Base from '../layouts/Base.astro';
-import PaydayPlannerInvite from '../components/PaydayPlannerInvite.astro';
-import BankLogo from '../components/BankLogo.astro';
 import ToolIcon from '../components/ToolIcon.astro';
-import MoneyScene from '../components/MoneyScene.astro';
-import QuickSavings from '../components/QuickSavings.astro';
-import { NAV } from '../consts';
+import {calculateCashFlow} from '../lib/cash-flow.mjs';
 import '../styles/home.css';
-const homeTopics=NAV.map(item=>({...item,...({savings:{label:'Savings',hint:'Interest & rates'},pay:{label:'Pay after tax',hint:'Pay calculator'},home:{label:'Home loans',hint:'Repayments'},tax:{label:'Tax checklist',hint:'Before myTax'},learn:{label:'Money lessons',hint:'See it in 3 steps'}}[item.id]||{})}));
-const banks=[
-{id:'25233bad-e494-ea11-a831-000d3a8842e1',name:'CommBank'},
-{id:'fc9352a8-ad27-eb11-a834-000d3a8842e1',name:'ING'},
-{id:'f4562bb8-e394-ea11-a831-000d3a8842e1',name:'ANZ'},
-{id:'25797662-e294-ea11-a831-000d3a8842e1',name:'NAB'},
-{id:'bf1c01af-789d-eb11-a821-000d3a884a20',name:'Up'},
-{id:'ffe2945b-e094-ea11-a831-000d3a8842e1',name:'Westpac'},
-{id:'d64b7811-21bc-eb11-a823-000d3a884a20',name:'Macquarie'},
-];
+import '../styles/cash-flow.css';
+const example=calculateCashFlow({startDate:'2026-10-12',openingBalance:'400',buffer:'0',income:[{label:'Pay',amount:'2200',anchorDate:'2026-10-14',frequency:'once'}],bills:[{label:'Rent',amount:'650',anchorDate:'2026-10-12',frequency:'once'}]});
 ---
-<Base title="Howloop" description="Free money tools for Australia. Calculate savings, take-home pay and home-loan repayments, prepare a tax checklist, or learn with simple examples.">
+<Base title="Will your money last until payday?" description="Add money you have now, your paydays and your bills. See when cash could run short with Howloop's free Australian payday planner. No account or bank connection.">
 <div class="home-page">
-  <div class="home-stage">
-    <section class="home-hero home-wrap" aria-labelledby="home-title">
-      <div class="home-intro">
-        <p class="home-eyebrow">CALCULATE · COMPARE · LEARN</p>
-        <h1 id="home-title">Free money tools<br/>for Australia.</h1>
-        <p class="home-description">Calculate the numbers. Understand what they mean.</p>
-        <p class="home-nav-label">Choose what you need</p>
-        <nav class="home-paths" aria-label="Choose a money topic">
-          {homeTopics.map(item=><a href={item.href} data-money-area={item.id}>
-            <span class="home-path-icon"><ToolIcon name={item.icon}/></span>
-            <span class="home-path-copy"><strong>{item.label}</strong><small>{item.hint}</small></span>
-            <ToolIcon name="arrow"/>
-          </a>)}
-        </nav>
-        <p class="home-promise"><ToolIcon name="shield"/> Free to use. No sign-up.</p>
-      </div>
-      <div class="home-demo"><QuickSavings /></div>
-    </section>
-  </div>
-
-  <section class="home-bank-section home-wrap" data-money-area="savings" aria-labelledby="bank-title">
-    <div class="home-section-heading">
-      <div><p class="home-section-kicker"><ToolIcon name="bank"/> Savings · bank rates</p><h2 id="bank-title">Compare savings rates.</h2></div>
-      <a class="home-text-action" href="/compare/savings/">Compare savings <ToolIcon name="arrow"/></a>
+  <div class="home-stage"><section class="home-hero home-wrap" aria-labelledby="home-title">
+    <div class="home-intro">
+      <p class="home-eyebrow">FREE PAYDAY &amp; BILLS PLANNER · AUSTRALIA</p>
+      <h1 id="home-title">Will your money last until payday?</h1>
+      <p class="home-description">Add the money you have, the money coming in and the money going out. See which day could come up short.</p>
+      <a class="planner-btn planner-btn--primary" href="/tools/cash-flow/" data-planner-link="planner_demo_open" data-placement="home">Plan my pay and bills <ToolIcon name="arrow"/></a>
+      <p class="home-promise"><ToolIcon name="shield"/> Free. No sign-up. No bank connection.</p>
     </div>
-    <p class="home-section-description">See estimated interest and the conditions behind it. Howloop is independent of these banks.</p>
-    <div class="home-bank-logos">{banks.map(b=><a href={'/calculators/compound-interest/?bank='+b.id} aria-label={'See '+b.name+' products'}><BankLogo id={b.id}/><span class="home-bank-name">{b.name}</span></a>)}</div>
-    <div class="home-small-tools">
-      <a href="/calculators/savings-goal/"><ToolIcon name="target"/><span><strong>Savings goal</strong><span>Find what to save each month.</span></span><ToolIcon name="arrow"/></a>
-      <a href="/calculators/emergency-fund/"><ToolIcon name="shield"/><span><strong>Emergency fund</strong><span>Plan a buffer for essential bills.</span></span><ToolIcon name="arrow"/></a>
-    </div>
-  </section>
-
-  <div class="home-learn-band">
-    <section class="home-learn home-wrap" data-money-area="learn" aria-labelledby="learn-title">
-      <div class="home-learn-intro">
-        <p class="home-section-kicker"><ToolIcon name="book"/> Learn</p>
-        <h2 id="learn-title">See it.<br/>Understand it.</h2>
-        <p>Start with a short picture story. Then try the numbers yourself.</p>
-        <a class="home-text-action" href="/learn/">Open money lessons <ToolIcon name="arrow"/></a>
+    <aside class="quick-savings" aria-labelledby="home-example-title">
+      <p class="home-section-kicker">A SIMPLE EXAMPLE · AUD</p><h2 id="home-example-title">Pay comes Wednesday. Rent leaves Monday.</h2>
+      <div class="planner-timeline">
+        <div class="planner-day"><span>START</span><strong>A$400</strong><small>Money you have</small></div>
+        <div class="planner-day planner-day--bill"><span>MONDAY</span><strong>−A$250</strong><small>After A$650 rent</small></div>
+        <div class="planner-day"><span>WEDNESDAY</span><strong>A$1,950</strong><small>After A$2,200 pay</small></div>
       </div>
-      <div class="home-lessons">
-        <a href="/learn/how-compound-interest-works/" data-money-area="savings"><div class="home-lesson-picture"><MoneyScene topic="compound" step={1} compact/></div><div class="home-lesson-copy"><span class="home-lesson-topic">Savings · 3 simple steps</span><h3>How does interest grow?</h3><p>Follow $100 as it earns a little more.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
-        <a href="/learn/offset-vs-extra-repayments/" data-money-area="home"><div class="home-lesson-picture"><MoneyScene topic="offset" step={1} compact/></div><div class="home-lesson-copy"><span class="home-lesson-topic">Home loans · 3 simple steps</span><h3>How does an offset work?</h3><p>See what changes, and what you still owe.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
-        <a href="/learn/salary-including-super-vs-plus-super/" data-money-area="pay"><div class="home-lesson-picture"><MoneyScene topic="salary" step={0} compact/></div><div class="home-lesson-copy"><span class="home-lesson-topic">Pay · 3 simple steps</span><h3>What is salary plus super?</h3><p>See salary before tax and retirement money separately.</p><span class="home-read-guide">See the lesson <ToolIcon name="arrow"/></span></div></a>
-      </div>
-    </section>
-  </div>
-  <div class="home-wrap"><PaydayPlannerInvite placement="home"/></div>
-  <aside class="home-public-info home-wrap" aria-labelledby="home-about-title"><div><h2 id="home-about-title">Free tools. Clear sources.</h2><p>Howloop is an independent education project. You can use the tools without an account. Advertising may help support the site in future.</p></div><nav aria-label="About these free tools"><a href="/about/">Who makes Howloop?</a><a href="/methodology/">How the numbers work</a><a href="/contact/">Contact & corrections</a></nav></aside>
-  <div class="home-source-note home-wrap"><p><ToolIcon name="checklist"/> Simple explanations. Official sources.</p><a href="/updates/">Rule updates & corrections <ToolIcon name="arrow"/></a><a href="/about/">About Howloop <ToolIcon name="arrow"/></a></div>
+      <p class="planner-small">Illustrative dates: 12–14 October 2026. These entries finish with A${(example.closingBalanceCents/100).toLocaleString('en-AU')}, but Monday is A$250 short. The planner checks days, not just totals.</p>
+      <a class="home-text-action" href="/tools/cash-flow/#worked-example">See the example &amp; try your numbers →</a>
+    </aside>
+  </section></div>
+  <section class="home-wrap" style="padding-block:2rem" aria-labelledby="home-steps"><h2 id="home-steps">Three things to add.</h2><div class="planner-steps">
+    <article><span class="planner-step-number">01</span><h3>Money you have now</h3><p>Your balance before the first payment.</p></article>
+    <article><span class="planner-step-number">02</span><h3>Money coming in</h3><p>Your pay or other money, its amount and the date it arrives.</p></article>
+    <article><span class="planner-step-number">03</span><h3>Money going out</h3><p>Bills and everyday spending, with the dates they leave.</p></article>
+  </div><p class="planner-small" style="margin-top:1rem">The plan covers 13 weeks in Australian dollars. It uses only your entries and does not add tax, interest or fees. It is a planning tool, not a guarantee that payments will clear.</p></section>
+  <section class="home-wrap" style="padding-block:1rem 3rem" aria-labelledby="home-support"><h2 id="home-support">Need a different number?</h2><details class="planner-faq"><summary>Other free money tools</summary><div class="home-small-tools">
+    <a href="/calculators/salary/"><ToolIcon name="wallet"/><span><strong>Pay after tax</strong><span>Estimate the pay you receive.</span></span><ToolIcon name="arrow"/></a>
+    <a href="/calculators/compound-interest/"><ToolIcon name="growth"/><span><strong>Savings</strong><span>Try a savings projection.</span></span><ToolIcon name="arrow"/></a>
+    <a href="/calculators/mortgage/"><ToolIcon name="home"/><span><strong>Home-loan payments</strong><span>Estimate repayments.</span></span><ToolIcon name="arrow"/></a>
+  </div><p><a href="/help/">All tools and help →</a></p></details><p class="planner-small" style="margin-top:1rem">Independent education project. <a href="/about/">About Howloop</a> · <a href="/methodology/#cash-flow">How the planner works</a> · <a href="/contact/">Contact &amp; corrections</a></p></section>
 </div>
+<script>import '../scripts/product-events.mjs';</script>
 </Base>

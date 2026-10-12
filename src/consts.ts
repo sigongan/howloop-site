@@ -46,6 +46,7 @@ export const TOPICS: Record<
 };
 
 export const NAV = [
+  { id: 'planner', href: '/tools/cash-flow/', label: 'Pay & bills', icon: 'wallet', hint: 'Plan until payday', matches: ['/tools/cash-flow', '/products/payday-planner'] },
   { id: 'savings', href: '/calculators/compound-interest/', label: 'Savings', icon: 'growth', hint: 'Grow your savings', matches: ['/calculators/compound-interest', '/calculators/savings-goal', '/calculators/emergency-fund', '/banks', '/compare/savings'] },
   { id: 'pay', href: '/calculators/salary/', label: 'Take-home pay', icon: 'wallet', hint: 'See pay after tax', matches: ['/calculators/salary'] },
   { id: 'home', href: '/calculators/mortgage/', label: 'Home loans', icon: 'home', hint: 'Plan your repayments', matches: ['/calculators/mortgage', '/calculators/lvr'] },

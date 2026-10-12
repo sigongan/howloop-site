@@ -6,11 +6,17 @@ const model = createTimingExampleModel();
 const example = calculateCashFlow(model);
 const firstPayments = example.days.slice(0, 5).filter(day => day.transactions.length);
 const dateLabel = (date) => new Intl.DateTimeFormat('en-AU', {day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(date+'T00:00:00Z'));
+const timingComparisons = ['2026-10-12','2026-10-14'].map(payDate => {
+  const result = calculateCashFlow({startDate:'2026-10-12',openingBalance:'400.00',buffer:'0.00',income:[{label:'Pay',amount:'2200.00',anchorDate:payDate,frequency:'once'}],bills:[{label:'Rent',amount:'650.00',anchorDate:'2026-10-12',frequency:'once'}]});
+  if (!result.minimumClosingBalance || !result.conservativeMinimum) throw new Error('The fixed timing example requires daily balances.');
+  return {payDate, result, minimum:result.minimumClosingBalance, conservative:result.conservativeMinimum};
+});
 const scheduleNames = {weekly:'Every 7 days',fortnightly:'Every 14 days',monthly:'Monthly',once:'One-off'};
 ---
 <section class="planner-section planner-walkthrough planner-no-print" id="worked-example" aria-labelledby="cash-example-title">
   <p class="planner-kicker">A FIXED, REPRODUCIBLE EXAMPLE · AUD</p>
   <h2 id="cash-example-title">A positive finish can hide a shortfall before payday.</h2>
+  <details class="planner-faq"><summary>Show the worked example and payment-entry tips</summary>
   <p>The sample starts with {formatMoney(parseMoneyToCents(original.openingBalance))}. Now keep every payment the same and start with only {formatMoney(example.openingBalanceCents)} on {dateLabel(example.startDate)}. Before the first fortnightly pay arrives, three expenses have already left.</p>
   <div class="planner-table-scroll" role="region" aria-label="Worked example payments, scroll horizontally on small screens" tabindex="0">
     <table class="planner-table planner-example-table"><caption>Follow the first payments in this fixed example (AUD)</caption><thead><tr><th scope="col">Date</th><th scope="col">What happens</th><th scope="col">End-of-day balance</th></tr></thead>
@@ -24,6 +30,11 @@ const scheduleNames = {weekly:'Every 7 days',fortnightly:'Every 14 days',monthly
     <div class="planner-table-scroll" role="region" aria-label="Fixed example inputs, scroll horizontally on small screens" tabindex="0"><table class="planner-table"><caption>All entries for the fixed example (AUD)</caption><thead><tr><th scope="col">Entry</th><th scope="col">Amount</th><th scope="col">First payment</th><th scope="col">Repeats</th></tr></thead><tbody>{[...model.income,...model.bills].map(row=><tr><th scope="row">{row.label}</th><td>{formatMoney(parseMoneyToCents(row.amount))}</td><td>{dateLabel(row.anchorDate)}</td><td>{scheduleNames[row.frequency]}</td></tr>)}</tbody></table></div>
     <p>Over 91 days, seven fortnightly pays and three monthly pays total {formatMoney(example.totalIncomeCents)}. The listed bills total {formatMoney(example.totalExpenseCents)}. Starting cash + money in − money out = {formatMoney(example.closingBalanceCents)}. The exact calendar, not a monthly average, determines those payment counts.</p>
   </details>
+  <section aria-labelledby="cash-timing-comparison"><h3 id="cash-timing-comparison">Same totals, two different payday dates.</h3>
+    <p>Start on 12 October 2026 with A$400. Pay A$650 rent that day and receive one A$2,200 pay. Include no other payments. Change only the pay date:</p>
+    <div class="planner-table-scroll" role="region" aria-label="Payday timing comparison, scroll horizontally on small screens" tabindex="0"><table class="planner-table"><caption>Two scenarios calculated by the planner engine (AUD)</caption><thead><tr><th scope="col">Pay arrives</th><th scope="col">Lowest closing balance</th><th scope="col">Low if bills leave first</th><th scope="col">Final balance</th></tr></thead><tbody>{timingComparisons.map(({payDate,result,minimum,conservative})=><tr><th scope="row">{dateLabel(payDate)}</th><td>{formatMoney(minimum.amountCents)}</td><td>{formatMoney(conservative.amountCents)}</td><td>{formatMoney(result.closingBalanceCents)}</td></tr>)}</tbody></table></div>
+    <p>With same-day pay, the closing balance stays positive but bills-first processing still exposes a A$250 shortfall. With pay two days later, 12 and 13 October close at −A$250. Both finish at A$1,950. Equal totals therefore do not establish that each payment can clear. Reproduce either scenario by starting a blank plan with the inputs above.</p>
+  </section>
   <slot />
   <div class="planner-explainer-grid" id="entering-bills">
     <section><h3>Fortnightly pay is not twice a month</h3><p>Every fortnight means every 14 days. It does not mean the 1st and 15th. Enter one known payday and let the planner generate its actual dates. If your employer pays twice monthly, enter two monthly schedules instead.</p></section>
@@ -32,4 +43,5 @@ const scheduleNames = {weekly:'Every 7 days',fortnightly:'Every 14 days',monthly
     <section><h3>Include spending between bills</h3><p>Groceries, transport and smaller purchases use cash too. If you pay a credit-card statement from this account, avoid also counting the same purchases as cash leaving this account. Include the payments and transfers that actually reduce the balance you are modelling.</p></section>
   </div>
   <p class="planner-small">Howloop created this example using the same deterministic calculation engine as the planner. It is general education, with no financial-adviser review. For broader budgeting context, read <a href="https://moneysmart.gov.au/budgeting/how-to-do-a-budget" target="_blank" rel="noopener noreferrer">ASIC Moneysmart's budgeting guide</a>. That source does not endorse Howloop or verify this example. <a href="/contact/">Report an error or unclear step</a>.</p>
+  </details>
 </section>
