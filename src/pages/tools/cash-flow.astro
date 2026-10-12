@@ -18,7 +18,8 @@ const dateLabel = (date) => new Intl.DateTimeFormat('en-AU', {day:'numeric',mont
     <section class="planner-panel planner-input-panel" data-cash-inputs hidden aria-labelledby="cash-input-title">
       <span class="planner-mode" data-cash-mode>EXAMPLE NUMBERS</span><h2 id="cash-input-title">Add your money and payments.</h2>
       <p class="planner-small">Use labels like “Pay 1” and “Rent”. Don't enter account numbers or other identifying details.</p>
-      <div class="planner-actions"><button type="button" class="planner-btn planner-btn--primary" data-cash-blank>Enter my numbers</button><button type="button" class="planner-btn" data-cash-example>Use example</button></div>
+      <p class="planner-note" data-cash-stale-start role="status" hidden></p>
+      <div class="planner-actions"><button type="button" class="planner-btn planner-btn--primary" data-cash-blank>Enter my numbers</button><button type="button" class="planner-btn" data-cash-home-example>Try rent-before-pay example</button><button type="button" class="planner-btn" data-cash-example>Use 13-week example</button></div>
       <form data-cash-form novalidate autocomplete="off">
         <div class="planner-fields">
           <label class="planner-field planner-field--wide" for="cash-start">First day<input id="cash-start" name="startDate" type="date" min="2000-01-01" max="2099-10-02" required/><small>Includes this date and the next 90 days.</small></label>
@@ -31,7 +32,7 @@ const dateLabel = (date) => new Intl.DateTimeFormat('en-AU', {day:'numeric',mont
         <div class="planner-error" data-cash-error role="alert" tabindex="-1" hidden></div>
         <div class="planner-actions"><button class="planner-btn planner-btn--primary" type="submit">Show my plan</button></div>
       </form>
-      <div class="planner-note"><strong>Your entries stay here.</strong><p class="planner-small">Nothing saves automatically. “Save on this device” keeps one plan in this browser, without encryption. Anyone using this browser profile may be able to restore it.</p></div>
+      <div class="planner-note"><strong>Your entries stay here.</strong><p class="planner-small">Nothing saves automatically. “Save on this device” keeps one plan in this browser, without encryption. Anyone using this browser profile may be able to restore it.</p><p class="planner-small">Coming back later? Restore your plan, update the first day, opening cash and payment dates, then select Show my plan. Save again if you want to keep those changes.</p></div>
       <div class="planner-actions"><button class="planner-btn" type="button" data-cash-save>Save on this device</button><button class="planner-btn" type="button" data-cash-restore>Restore saved plan</button><button class="planner-btn" type="button" data-cash-delete>Delete saved plan</button></div>
       <p class="planner-small" data-cash-storage role="status" style="margin-top:.7rem"></p>
     </section>
@@ -65,3 +66,4 @@ const dateLabel = (date) => new Intl.DateTimeFormat('en-AU', {day:'numeric',mont
 </div>
 <script>import '../../scripts/cash-flow.mjs';import '../../scripts/product-events.mjs';</script>
 </Base>
+

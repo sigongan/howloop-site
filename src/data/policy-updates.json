@@ -19,10 +19,10 @@
   },
   {
     "id":"negative-gearing-reform","title":"Rental losses: the purchase date matters","stage":"law-future","effectiveDate":"2027-07-01","checkedAt":"2026-10-12","reviewDays":14,
-    "who":"Investors who buy established residential property after 7:30 pm AEST on 12 May 2026.",
+    "who":"Investors whose contract to buy established residential property was entered into at or after 7:30 pm AEST on 12 May 2026.",
     "before":"Under existing rules, eligible rental losses can generally reduce other taxable income.",
     "after":"From 2027–28, affected losses can offset residential property income, with unused losses carried forward, rather than wages. Earlier holdings, eligible new builds and other exceptions have different treatment.",
-    "nextStep":"Check your acquisition date, property type and the transition rules before estimating any tax benefit.",
+    "nextStep":"Check when your purchase contract was entered into, rather than the settlement date, plus the property type and transition rules before estimating any tax benefit.",
     "lesson":"negative-gearing",
     "sources":[["Federal Register: Tax Reform No. 1 Act 2026","https://www.legislation.gov.au/C2026A00049/asmade"],["Treasury: CGT and negative gearing explainer","https://budget.gov.au/content/factsheets/download/tax-explainers-negative-gearing-capital-gains-tax.pdf"]]
   },
@@ -36,3 +36,4 @@
     "sources":[["Treasury: residential land guidance","https://foreigninvestment.gov.au/guidance/types-investments/residential-land"],["Australia's foreign investment policy, May 2026","https://foreigninvestment.gov.au/sites/foreigninvestment.gov.au/files/2026-05/australias-foreign-investment-policy-may-2026.pdf"]]
   }
 ]
+
