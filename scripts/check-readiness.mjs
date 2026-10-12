@@ -20,7 +20,13 @@ const fail = (message) => failures.push(message);
 const isTechnical = (route) => /^\/(desk|trade)(\/|$)/.test(route);
 const normalise = (route) => route === '/' ? route : route.replace(/\/$/, '');
 const read = (file) => fs.readFile(file, 'utf8');
-const decode = (value) => value.replaceAll('&amp;', '&').replaceAll('&quot;', '"').replaceAll('&#39;', "'").replaceAll('&lt;', '<').replaceAll('&gt;', '>');
+const decode = value => value.replace(/&(?:amp|quot|apos|lt|gt|#(?:x[\da-f]+|\d+));/gi, entity => {
+  const key = entity.slice(1, -1).toLowerCase();
+  const named = {amp:'&', quot:'"', apos:"'", lt:'<', gt:'>'};
+  if (key in named) return named[key];
+  const point = key.startsWith('#x') ? parseInt(key.slice(2), 16) : Number(key.slice(1));
+  return Number.isInteger(point) && point > 0 && point <= 0x10ffff ? String.fromCodePoint(point) : entity;
+});
 const attributes = (tag) => Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g)].map((m) => [m[1].toLowerCase(), decode(m[2] ?? m[3])]));
 const tags = (html, name) => [...html.matchAll(new RegExp('<' + name + '\\b[^>]*>', 'gi'))].map((m) => attributes(m[0]));
 const meta = (html, name) => tags(html, 'meta').find((item) => item.name === name || item.property === name)?.content;
@@ -51,7 +57,11 @@ for (const file of htmlFiles) {
   const relative = path.relative(dist, file).replaceAll(path.sep, '/');
   const route = normalise('/' + relative.replace(/(^|\/)index\.html$/, '$1').replace(/\.html$/, ''));
   const html = await read(file);
-  pages.set(route, { file, html });
+  const targets = new Set([...html.matchAll(/<[a-z][^>]*>/gi)].flatMap(match => {
+    const attrs = attributes(match[0]);
+    return [attrs.id, attrs.name].filter(Boolean);
+  }));
+  pages.set(route, { file, html, targets });
 }
 const titles = new Map();
 const descriptions = new Map();
@@ -88,12 +98,18 @@ for (const [route, { html }] of pages) {
   }
   for (const link of [...tags(html, 'a'), ...tags(html, 'link'), ...tags(html, 'script'), ...tags(html, 'img')]) {
     const href = link.href ?? link.src;
+    if (href === '' || href === '#') fail(route + ': empty link target');
     if (!href) continue;
     if (/^(?:javascript|vbscript):/i.test(href)) fail(route + ': unsafe URL scheme');
     let url;
     try { url = new URL(href, expected); } catch { fail(route + ': invalid URL ' + href); continue; }
     if (url.origin !== origin) continue;
     if (!await resolves(url.pathname)) fail(route + ': broken internal link ' + href);
+    if (url.hash && pages.has(normalise(url.pathname))) {
+      let fragment;
+      try { fragment = decodeURIComponent(url.hash.slice(1)); } catch { fail(route + ': malformed link fragment ' + href); continue; }
+      if (!pages.get(normalise(url.pathname)).targets.has(fragment)) fail(route + ': missing internal fragment ' + href);
+    }
     if (url.pathname !== '/' && pages.has(normalise(url.pathname)) && !url.pathname.endsWith('/')) fail(route + ': internal page link needs canonical trailing slash: ' + href);
   }
   if (/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle/i.test(html)) {

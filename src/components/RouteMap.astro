@@ -136,7 +136,7 @@ const { id, title, intro, people, lanes, safety } = Astro.props;
 <section class="rm" data-routemap id={id} aria-label={title}>
   <div class="rm__head">
     <p class="rm__eyebrow">Work out your route</p>
-    <h3 class="rm__title">{title}</h3>
+    <h2 class="rm__title">{title}</h2>
     {intro && <p class="rm__intro">{intro}</p>}
   </div>
 
@@ -184,7 +184,7 @@ const { id, title, intro, people, lanes, safety } = Astro.props;
             </div>
             <div class="rm__strip4">
               <div class="rm__cell">
-                <h4>What you need</h4>
+                <h3>What you need</h3>
                 <ul>
                   {l.need.map((n) => {
                     const NeedIcon = ICONS[n.icon];
@@ -201,7 +201,7 @@ const { id, title, intro, people, lanes, safety } = Astro.props;
                 </ul>
               </div>
               <div class="rm__cell">
-                <h4>What you do</h4>
+                <h3>What you do</h3>
                 {l.doit.map((block) => (
                   <div class="rm__doblock">
                     {block.label && <p class="rm__dolabel">{block.label}</p>}
@@ -221,7 +221,7 @@ const { id, title, intro, people, lanes, safety } = Astro.props;
                 {l.flag && <p class="rm__flag">{l.flag}</p>}
               </div>
               <div class="rm__cell">
-                <h4>How long</h4>
+                <h3>How long</h3>
                 <div class="rm__big">
                   {WaitIcon && <WaitIcon />}
                   <div>
@@ -231,7 +231,7 @@ const { id, title, intro, people, lanes, safety } = Astro.props;
                 </div>
               </div>
               <div class="rm__cell">
-                <h4>What arrives</h4>
+                <h3>What arrives</h3>
                 <div class="rm__big">
                   {ArriveIcon && <ArriveIcon />}
                   <div>
@@ -528,7 +528,7 @@ const { id, title, intro, people, lanes, safety } = Astro.props;
     }
   }
 
-  .rm__cell h4 {
+  .rm__cell h3 {
     margin: 0 0 0.6rem;
     font-family: var(--font-display);
     font-size: 0.66rem;

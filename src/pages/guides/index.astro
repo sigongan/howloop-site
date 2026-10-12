@@ -40,7 +40,7 @@ const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort(
 
   <div class="wrap listing">
     <div class="grid">
-      {guides.map((g) => <GuideCard guide={g} />)}
+      {guides.map((g) => <GuideCard guide={g} headingLevel="h2" />)}
     </div>
     <AdSlot layout="display" />
   </div>

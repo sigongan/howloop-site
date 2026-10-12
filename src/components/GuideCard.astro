@@ -5,9 +5,10 @@ import type { CollectionEntry } from 'astro:content';
 interface Props {
   guide: CollectionEntry<'guides'>;
   size?: 'default' | 'large';
+  headingLevel?: 'h2' | 'h3';
 }
 
-const { guide, size = 'default' } = Astro.props;
+const { guide, size = 'default', headingLevel: Heading = 'h3' } = Astro.props;
 const { data, id } = guide;
 const topic = TOPICS[data.topic];
 ---
@@ -19,9 +20,9 @@ const topic = TOPICS[data.topic];
     <span class="chip">{data.difficulty}</span>
   </div>
 
-  <h3 class="card__title">
+  <Heading class="card__title">
     <a href={`/guides/${id}`}>{data.cardTitle ?? data.title}</a>
-  </h3>
+  </Heading>
 
   <p class="card__desc">{data.description}</p>
 

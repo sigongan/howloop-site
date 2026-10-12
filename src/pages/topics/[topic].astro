@@ -50,7 +50,7 @@ const { topic, guides } = Astro.props;
 
   <div class="wrap listing">
     <div class="grid">
-      {guides.map((g) => <GuideCard guide={g} />)}
+      {guides.map((g) => <GuideCard guide={g} headingLevel="h2" />)}
     </div>
     <AdSlot layout="display" />
   </div>
