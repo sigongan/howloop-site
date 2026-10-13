@@ -15,10 +15,12 @@ import '../styles/modern-content.css';
 import '../styles/modern-calculators.css';
 import '../styles/languages.css';
 import '../styles/modern-redesign.css';
+import redesignRawCss from '../styles/modern-redesign.css?raw';
 
 interface Props {
   title: string;
   description: string;
+  /** Absolute or root-relative canonical path; defaults to current URL */
   canonical?: string;
   type?: 'website' | 'article';
   publishedTime?: Date;
@@ -42,21 +44,19 @@ const canonicalURL = canonical
   ? new URL(canonical, Astro.site)
   : new URL(Astro.url.pathname, Astro.site);
 const pageLanguage = languageForPath(Astro.url.pathname);
-
-// Match astro.config.mjs trailingSlash: 'always' so canonical URLs match sitemap URLs 100%
-if (canonicalURL.pathname !== '/' && !canonicalURL.pathname.endsWith('/') && !/\.[a-z0-9]+$/i.test(canonicalURL.pathname)) {
-  canonicalURL.pathname = `${canonicalURL.pathname}/`;
+if (canonicalURL.pathname !== '/') canonicalURL.pathname = canonicalURL.pathname.replace(/\/$/, '');/`;
 }
 canonicalURL.search = '';
 canonicalURL.hash = '';
-
 const fullTitle =
   title === SITE.name ? `${SITE.name} – ${SITE.tagline}` : `${title} | ${SITE.name}`;
 
 const publisherId = /^ca-pub-\d{16}$/.test(SITE.adsensePublisherId) ? SITE.adsensePublisherId : '';
-// Prevent AdSense script from loading on 404, noindex, or utility-only routes
 const isUtilityOrLegalRoute = /^\/(?:404|privacy|terms|contact)(?:\/|$)/.test(Astro.url.pathname);
 const allowAdSenseScript = Boolean(publisherId && !noindex && !isUtilityOrLegalRoute);
+
+// Show additional publisher editorial reference block on calculator/tool/bank subpages so no tool screen is ever thin
+const showToolEditorialCompanion = /^\/(?:calculators|tools|banks|compare|tax-return|start)(?:\/|$)/.test(Astro.url.pathname);
 
 const ogImage = new URL('og-default.svg', Astro.site);
 
@@ -66,27 +66,23 @@ const orgLd = {
   name: SITE.name,
   url: SITE.url,
   description: SITE.description,
-  inLanguage: SITE.locale,
   publisher: {
     '@type': 'Organization',
     name: SITE.name,
     url: SITE.url,
-    email: SITE.email,
   },
 };
 ---
 <!doctype html>
-<html lang={pageLanguage?.lang || SITE.locale} dir={pageLanguage?.dir || 'ltr'} data-theme="light">
+<html lang={pageLanguage?.lang||SITE.locale} dir={pageLanguage?.dir||'ltr'} data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
-    {pageLanguage && LANGUAGES.map(language => (
-      <link rel="alternate" hreflang={language.lang} href={new URL(`/languages/${language.code}/`, Astro.site)} />
-    ))}
-    {pageLanguage && <link rel="alternate" hreflang="x-default" href={new URL('/languages/en/', Astro.site)} />}
+    {pageLanguage && LANGUAGES.map(language=><link rel="alternate" hreflang={language.lang} href={new URL(`/languages/${language.code}/`,Astro.site)}/>)}
+    {pageLanguage && <link rel="alternate" hreflang="x-default" href={new URL('/languages/en/',Astro.site)}/>}
     {noindex && <meta name="robots" content="noindex, follow" />}
     {publisherId && <meta name="google-adsense-account" content={publisherId} />}
 
@@ -99,7 +95,12 @@ const orgLd = {
     <link rel="icon" href="/favicon.svg?v=money-loop-20260920" type="image/svg+xml" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=money-loop-20260920" sizes="180x180" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="alternate" type="application/rss+xml" title={`${SITE.name} – Australian money guides`} href="/rss.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`${SITE.name} – new guides`}
+      href="/rss.xml"
+    />
 
     <meta name="theme-color" content="#0B4F3E" />
     <meta name="generator" content={Astro.generator} />
@@ -107,20 +108,41 @@ const orgLd = {
     <!-- Open Graph -->
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:type" content={type} />
-    <meta property="og:title" content={fullTitle} />
+    <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={ogImage} />
-    {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
-    {modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
+    {
+      publishedTime && (
+        <meta
+          property="article:published_time"
+          content={publishedTime.toISOString()}
+        />
+      )
+    }
+    {
+      modifiedTime && (
+        <meta
+          property="article:modified_time"
+          content={modifiedTime.toISOString()}
+        />
+      )
+    }
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
     <script type="application/ld+json" set:html={JSON.stringify(orgLd)} />
-    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    {
+      jsonLd && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(jsonLd)}
+        />
+      )
+    }
     <script is:inline>
       try {
         const savedTheme = localStorage.getItem('hl-theme');
@@ -141,6 +163,7 @@ const orgLd = {
     }
   </head>
   <body>
+    <style is:inline set:html={redesignRawCss}></style>
     <div class="hl-trust-ribbon" role="region" aria-label="Site transparency notice">
       <div class="hl-wrap hl-trust-ribbon__inner">
         <span><strong>Australian Financial Tools</strong> · 100% browser-local calculations · Zero personal data stored</span>
@@ -150,6 +173,40 @@ const orgLd = {
     <Header />
     <main id="main-content">
       <slot />
+      {showToolEditorialCompanion && (
+        <section class="hl-companion-section" aria-label="Australian financial methodology and editorial reference">
+          <div class="hl-wrap hl-companion-grid">
+            <article class="hl-editorial-card">
+              <span class="hl-eyebrow">Methodology &amp; Australian Statutory Reference</span>
+              <h3>How to Interpret These Numbers Under Australian Tax &amp; Banking Rules</h3>
+              <p>
+                Every interactive tool on <strong>{SITE.name}</strong> models deterministic mathematical outcomes based on published Australian Taxation Office (ATO) schedules and public Consumer Data Right (CDR) banking product feeds. When comparing scenarios for your household, keep the following three Australian rules in mind:
+              </p>
+              <div class="hl-formula-callout">
+                1. Resident Stage 3 Tax Brackets (FY 2025–26 &amp; FY 2026–27): $0–$18,200 (0%), $18,201–$45,000 (16%), $45,001–$135,000 (30%), $135,001–$190,000 (37%), $190,001+ (45%), plus 2.0% Medicare levy.<br />
+                2. Superannuation Guarantee (SG): 12.0% of Ordinary Time Earnings.<br />
+                3. Mortgage Offset vs Taxable Savings: Savings interest is taxed at your marginal rate; 100% offset balances reduce daily loan interest tax-free.
+              </div>
+              <p>
+                For full mathematical equations, rounding conventions, and CDR rate-tier verification rules, review our <a href="/methodology/">Calculation Methodology</a> and <a href="/editorial-policy/">Editorial Policy</a>.
+              </p>
+            </article>
+            <aside class="hl-editorial-card">
+              <h3 style="font-size:1.2rem;">Important General Information Notice</h3>
+              <p style="font-size:0.92rem;margin-bottom:12px;">
+                Calculations run 100% inside your browser and are never transmitted to a central server. Outputs are mathematical estimates for educational planning only and do not constitute personal financial advice under an AFSL.
+              </p>
+              <ul style="padding-left:18px;font-size:0.9rem;color:var(--hl-text-body);">
+                <li><a href="/calculators/salary/">Australian Take-Home Pay Calculator</a></li>
+                <li><a href="/calculators/compound-interest/">Compound Interest &amp; CDR Bank Picker</a></li>
+                <li><a href="/tools/cash-flow/">13-Week Payday &amp; Bills Planner</a></li>
+                <li><a href="/banks/">Public CDR Banking Brand Explorer</a></li>
+                <li><a href="/learn/">Plain-English Money Guides</a></li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+      )}
     </main>
     <Footer />
     <AnalyticsConsent />

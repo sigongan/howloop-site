@@ -2,8 +2,10 @@
 import Logo from './Logo.astro';
 import ToolIcon from './ToolIcon.astro';
 import LanguagePicker from './LanguagePicker.astro';
+import { languageForPath } from '../lib/languages.mjs';
 import { NAV } from '../consts';
 
+const language = languageForPath(Astro.url.pathname);
 const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const current = (item: typeof NAV[number]) =>
   item.matches.some(route => path === route || path.startsWith(route + '/'))
@@ -13,6 +15,9 @@ const current = (item: typeof NAV[number]) =>
 <header class="hl-header">
   <div class="hl-wrap hl-nav">
     <a class="hl-brand" href="/" aria-label="Howloop home"><Logo /></a>
+    {language && (
+      <a class="language-english-home" href="/">{language.copy.home}<span aria-hidden="true">↗</span></a>
+    )}
     <nav class="hl-desktop-nav" aria-label="Main navigation">
       {NAV.map(item => (
         <a href={item.href} data-money-area={item.area || undefined} aria-current={current(item)}>

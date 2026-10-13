@@ -1,13 +1,15 @@
-/* Howloop Master Design System — Australian Fintech Editorial */
+/* Howloop V2 Full-Site Master Design System — Australian Fintech Editorial */
 :root {
   --hl-bg: #FAF9F5;
   --hl-surface: #FFFFFF;
   --hl-surface-muted: #F2F0E8;
+  --hl-emerald-950: #041F18;
   --hl-emerald-900: #072F25;
   --hl-emerald-800: #0B4F3E;
   --hl-emerald-700: #0F624C;
   --hl-emerald-600: #0D9488;
   --hl-emerald-100: #E6F4F1;
+  --hl-emerald-50: #F2FBF9;
   --hl-amber-500: #D97706;
   --hl-amber-100: #FEF3C7;
   --hl-text-strong: #0F172A;
@@ -23,17 +25,29 @@
   --hl-font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --hl-font-serif: 'Fraunces', Georgia, serif;
   --hl-font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Override legacy CSS custom properties across all 24 stylesheet files */
+  --bg: var(--hl-bg);
+  --surface: var(--hl-surface);
+  --surface-muted: var(--hl-surface-muted);
+  --text: var(--hl-text-strong);
+  --text-muted: var(--hl-text-muted);
+  --border: var(--hl-border);
+  --accent: var(--hl-emerald-800);
+  --accent-soft: var(--hl-emerald-100);
 }
 
 html[data-theme="dark"] {
   --hl-bg: #0B111E;
   --hl-surface: #131C2E;
   --hl-surface-muted: #1E293B;
+  --hl-emerald-950: #02130E;
   --hl-emerald-900: #041E17;
   --hl-emerald-800: #2DD4BF;
   --hl-emerald-700: #14B8A6;
   --hl-emerald-600: #14B8A6;
   --hl-emerald-100: rgba(20, 184, 166, 0.16);
+  --hl-emerald-50: rgba(20, 184, 166, 0.08);
   --hl-amber-100: rgba(217, 119, 6, 0.16);
   --hl-text-strong: #F8FAFC;
   --hl-text-body: #CBD5E1;
@@ -52,10 +66,90 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, .hl-serif-title, .hl-prose h1 {
-  font-family: var(--hl-font-serif);
+h1, h2, .hl-serif-title, .hl-prose h1, main h1 {
+  font-family: var(--hl-font-serif) !important;
   letter-spacing: -0.02em;
   color: var(--hl-text-strong);
+}
+
+/* Global Form Controls, Inputs, Selects & Buttons Across All Calculators */
+main input[type="text"],
+main input[type="number"],
+main input[type="email"],
+main input[type="date"],
+main input[type="search"],
+main select,
+main textarea {
+  font-family: var(--hl-font-mono);
+  background-color: var(--hl-surface) !important;
+  color: var(--hl-text-strong) !important;
+  border: 1.5px solid var(--hl-border-strong) !important;
+  border-radius: var(--hl-radius-sm) !important;
+  padding: 10px 14px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+main input:focus,
+main select:focus,
+main textarea:focus {
+  border-color: var(--hl-emerald-600) !important;
+  box-shadow: 0 0 0 3px var(--hl-emerald-100) !important;
+  outline: none !important;
+}
+
+/* Global Tables Across Bank Explorer, Tax & Calculators */
+main table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--hl-surface);
+  border: 1px solid var(--hl-border);
+  border-radius: var(--hl-radius-md);
+  overflow: hidden;
+  box-shadow: var(--hl-shadow-sm);
+  margin: 20px 0;
+}
+
+main th {
+  background: var(--hl-surface-muted) !important;
+  color: var(--hl-text-strong) !important;
+  font-weight: 700;
+  text-align: left;
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--hl-border);
+  font-size: 0.875rem;
+}
+
+main td {
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--hl-border);
+  color: var(--hl-text-body);
+  font-size: 0.9375rem;
+}
+
+main tr:last-child td {
+  border-bottom: none;
+}
+
+/* Global Cards, Containers & Calculator Panels Across Subpages */
+.card,
+.calc-workspace,
+.tool-card,
+.bank-card,
+.guide-card,
+.learn-card,
+.quick-answer-card,
+.decision-card,
+.summary-card,
+.result-card,
+main section > article,
+main .panel,
+main .box {
+  background: var(--hl-surface) !important;
+  border: 1px solid var(--hl-border) !important;
+  border-radius: var(--hl-radius-md) !important;
+  box-shadow: var(--hl-shadow-sm) !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 /* Top Trust Ribbon */
@@ -79,7 +173,7 @@ h1, h2, .hl-serif-title, .hl-prose h1 {
   position: sticky;
   top: 0;
   z-index: 95;
-  background: color-mix(in srgb, var(--hl-surface) 90%, transparent) !important;
+  background: color-mix(in srgb, var(--hl-surface) 92%, transparent) !important;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--hl-border) !important;
   box-shadow: var(--hl-shadow-sm);
@@ -314,14 +408,16 @@ h1, h2, .hl-serif-title, .hl-prose h1 {
 }
 .hl-input-box input,
 .hl-input-box select {
-  border: none;
-  background: transparent;
+  border: none !important;
+  background: transparent !important;
   width: 100%;
   font-family: var(--hl-font-mono);
   font-size: 1.02rem;
   font-weight: 600;
   color: var(--hl-text-strong);
   outline: none;
+  padding: 0 !important;
+  box-shadow: none !important;
 }
 
 .hl-result-panel {
@@ -497,6 +593,20 @@ h1, h2, .hl-serif-title, .hl-prose h1 {
   font-size: 0.95rem;
 }
 
+/* Route-Aware Publisher Companion Block on All Calculator & Tool Pages */
+.hl-companion-section {
+  padding: 48px 0 56px;
+  margin-top: 40px;
+  border-top: 1px solid var(--hl-border);
+  background: color-mix(in srgb, var(--hl-surface-muted) 55%, transparent);
+}
+.hl-companion-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 24px;
+  align-items: start;
+}
+
 /* Upgraded Prose & Policy Pages */
 .hl-prose-wrap {
   padding: 48px 20px 72px;
@@ -545,15 +655,6 @@ h1, h2, .hl-serif-title, .hl-prose h1 {
   margin: 22px 0;
 }
 
-/* Cards & Existing Calculators Upgrade */
-.card, .calc-workspace, .tool-card, .bank-card {
-  background: var(--hl-surface) !important;
-  border: 1px solid var(--hl-border) !important;
-  border-radius: var(--hl-radius-md) !important;
-  box-shadow: var(--hl-shadow-sm) !important;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-}
-
 /* CLS-Safe AdSlot Styling */
 .adslot {
   margin: 28px auto;
@@ -583,7 +684,7 @@ h1, h2, .hl-serif-title, .hl-prose h1 {
   color: #CBD5E1 !important;
   padding: 64px 0 40px !important;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 64px;
+  margin-top: 0;
 }
 
 .hl-footer-grid {
@@ -594,7 +695,7 @@ h1, h2, .hl-serif-title, .hl-prose h1 {
 }
 
 .hl-footer-grid h2 {
-  font-family: var(--hl-font-sans);
+  font-family: var(--hl-font-sans) !important;
   font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -629,6 +730,7 @@ h1, h2, .hl-serif-title, .hl-prose h1 {
 @media (max-width: 960px) {
   .hl-hero-grid,
   .hl-editorial-grid,
+  .hl-companion-grid,
   .hl-bento-grid {
     grid-template-columns: 1fr;
   }

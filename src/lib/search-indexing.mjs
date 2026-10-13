@@ -1,9 +1,8 @@
 /**
- * Keep search discovery on all finished public tools, guides, and explanations.
- * Unblocks /guides and /topics so Google AdSense and Search can index all 16+ long-form guides.
+ * Keep search discovery on finished, maintained public tools and explanations.
  */
 export function isIndexableRoute(pathname) {
   const route = pathname.replace(/\/+$/, '') || '/';
-  return !/^\/(?:404(?:\.html)?|desk|trade)(?:\/|$)/.test(route)
+  return !/^\/(?:404(?:\.html)?|guides|topics|desk|trade)(?:\/|$)/.test(route)
     && route !== '/products/payday-planner';
 }
