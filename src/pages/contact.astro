@@ -1,4 +1,34 @@
 ---
 import Base from '../layouts/Base.astro';
+import { SITE } from '../consts';
 ---
-<Base title="A question. A correction. A better idea." description="Contact Howloop about calculator errors, bank product data, accessibility, privacy or a tool you would find useful."><header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / contact</div><span class="hl-eyebrow">HOWLOOP · THE DETAILS</span><h1 style="max-width:900px">A question. A correction. A better idea.</h1></header><article class="hl-wrap hl-content"><p class="hl-page-meta">Updated 18 September 2026</p><h2>Contact Howloop</h2><p>Write to <a href="mailto:hello@howloop.how">hello@howloop.how</a> for corrections, feedback, accessibility issues or privacy questions.</p><h2>Help us reproduce a calculation</h2><p>Include the page address, the inputs you used and the result you expected. Use sample amounts where possible. Do not send bank account numbers, passwords, tax file numbers, identity documents or other sensitive information.</p><h2>Report a bank data issue</h2><p>Tell us the provider and product name, the snapshot date shown on the page and a link to the provider’s current official information. Rates may have changed since a snapshot; the source and date help distinguish a stale rate from a calculation error.</p><h2>Suggest a useful tool</h2><p>Describe the decision you are trying to make and the part that is difficult to calculate. We use feedback to identify useful improvements, but cannot promise that every request will be implemented.</p><h2>Scope of replies</h2><p>We can receive reports about the website. We cannot access accounts, resolve banking disputes, arrange loans or provide personal financial, legal or tax advice. Contact your provider for account-specific questions.</p></article></Base>
+<Base
+  title="Contact & Feedback"
+  description="Contact the Howloop team regarding calculator formulas, Australian CDR bank data updates, or editorial corrections."
+>
+  <div class="hl-wrap hl-prose-wrap">
+    <article class="hl-prose">
+      <h1>Contact Howloop</h1>
+      <p>
+        We welcome bug reports, formula verification questions, CDR bank coverage feedback, and editorial corrections from readers across Australia.
+      </p>
+
+      <div class="hl-policy-callout">
+        <strong>Direct Email:</strong> <a href={`mailto:${SITE.email}`}>{SITE.email}</a><br />
+        <span>Typical response window: 1–2 Australian business days (AEST/AEDT).</span>
+      </div>
+
+      <h2>How to Report a Calculation or Rate Issue</h2>
+      <ul>
+        <li><strong>Calculator Formula Check:</strong> Include the page URL (e.g., <code>/calculators/salary/</code>), the approximate input figures tested, and the expected ATO or lender rule.</li>
+        <li><strong>CDR Bank Snapshot Feedback:</strong> Mention the banking brand name and product name as listed on our <a href="/banks/">Bank Explorer</a> page.</li>
+        <li><strong>Editorial or Accessibility Issue:</strong> Let us know your device/browser and the guide URL so we can reproduce and fix any layout or readability issue promptly.</li>
+      </ul>
+
+      <h2>Important Privacy Reminder</h2>
+      <p>
+        Please do not include sensitive personal identifiers such as Tax File Numbers (TFNs), bank account numbers, or full financial statements when emailing us.
+      </p>
+    </article>
+  </div>
+</Base>

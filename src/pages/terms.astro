@@ -1,4 +1,44 @@
 ---
 import Base from '../layouts/Base.astro';
+import { SITE } from '../consts';
 ---
-<Base title="The practical details." description="Terms for using Howloop’s educational calculators, guides and public banking product information."><header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / terms</div><span class="hl-eyebrow">HOWLOOP · THE DETAILS</span><h1 style="max-width:900px">The practical details.</h1></header><article class="hl-wrap hl-content"><p class="hl-page-meta">Updated 18 September 2026</p><h2>Educational use</h2><p>Howloop provides general educational tools and information. It does not provide personal financial advice, credit assistance, legal advice or tax advice. A result is not a recommendation, a forecast, a quote, loan approval or an offer from a financial institution.</p><h2>Assumptions and accuracy</h2><p>Calculator results depend on the values you enter and the stated assumptions. Real outcomes may differ because of changing rates, dates, fees, rounding, tax, product conditions or your circumstances. Read the relevant <a href="/methodology">calculation method</a> and check current information with the provider before relying on an estimate.</p><h2>Product information</h2><p>The bank directory uses dated public data snapshots. Coverage is incomplete and some feeds may be unavailable. Bank names and marks belong to their respective owners; inclusion does not establish an endorsement, partnership or product ranking.</p><h2>Your use of the site</h2><p>Use the site lawfully. Do not interfere with availability, attempt unauthorised access or misrepresent the source of our content. You can use calculator results for your own planning and may link to the site. Third-party material remains subject to its owner’s rights.</p><h2>Availability and responsibility</h2><p>We aim to make the tools useful but cannot guarantee uninterrupted access or that every source remains current. Nothing in these terms is intended to exclude rights or remedies that cannot lawfully be excluded. For decisions requiring advice about your circumstances, speak with an appropriately qualified professional.</p><h2>Contact</h2><p>Send questions and correction reports to <a href="mailto:hello@howloop.how">hello@howloop.how</a>. Our <a href="/privacy">privacy policy</a> explains how calculator inputs and correspondence are handled.</p></article></Base>
+<Base
+  title="Terms of Use"
+  description="Terms of use and general financial information disclaimer for Howloop calculators, CDR banking data snapshots, and educational guides."
+>
+  <div class="hl-wrap hl-prose-wrap">
+    <article class="hl-prose">
+      <h1>Terms of Use</h1>
+      <p><strong>Effective date:</strong> October 2026 · <strong>Website:</strong> <a href={SITE.url}>{SITE.domain}</a></p>
+
+      <div class="hl-policy-callout">
+        <strong>General Financial Information Disclaimer:</strong> All calculators, projections, banking data snapshots, and written guides on {SITE.name} are provided for general educational and informational purposes only. Nothing on this website constitutes personal financial, taxation, legal, or credit advice.
+      </div>
+
+      <h2>1. No Financial Services Licence or Fiduciary Relationship</h2>
+      <p>
+        {SITE.name} does not hold an Australian Financial Services Licence (AFSL) or an Australian Credit Licence (ACL). Our calculators apply simplified mathematical models to user-entered assumptions and do not account for your individual objectives, financial situation, or needs. Before making any financial decision, you should review the relevant Product Disclosure Statement (PDS), Target Market Determination (TMD), and consult a registered tax agent or licensed financial adviser.
+      </p>
+
+      <h2>2. Accuracy of Calculators &amp; Public CDR Data</h2>
+      <p>
+        While we test our formulas against published Australian Taxation Office (ATO) schedules and retrieve banking snapshots from the official Consumer Data Right (CDR) register, bank interest rates, fees, and eligibility rules change frequently without notice. We make no warranty that any rate snapshot is real-time or covers the whole market.
+      </p>
+
+      <h2>3. Acceptable Use &amp; Intellectual Property</h2>
+      <p>
+        You may use {SITE.name} calculators and export your personal plans (including CSV exports) for personal, non-commercial household planning. Automated scraping or commercial redistribution of our original guides and illustrations without attribution is prohibited.
+      </p>
+
+      <h2>4. Limitation of Liability</h2>
+      <p>
+        To the maximum extent permitted by Australian Consumer Law, {SITE.name} and its contributors are not liable for any loss or damage arising from reliance on calculator outputs, rate snapshots, or guide content.
+      </p>
+
+      <h2>5. Contact</h2>
+      <p>
+        Questions regarding these terms may be sent to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+      </p>
+    </article>
+  </div>
+</Base>

@@ -1,14 +1,4 @@
 ---
-/**
- * A reserved, labelled ad slot.
- *
- * Ad serving is deliberately disabled. The publisher ID is used separately
- * for ownership verification and ads.txt; setting it does not enable ads.
- * Before future activation, review approval, consent and each screen’s purpose.
- * When enabled, the reserved height prevents layout shift,
- * and the label keeps you on the right side of AdSense's "clearly
- * distinguishable from content" rule.
- */
 import { SITE } from '../consts';
 
 interface Props {
@@ -18,21 +8,19 @@ interface Props {
 }
 
 const { slot = '', layout = 'display', class: cls = '' } = Astro.props;
-// Ads remain disabled until account approval and consent configuration are complete.
+// Keep false until AdSense account approval is confirmed, then switch to true.
 const enabled = false;
 ---
-
 {
   enabled && (
     <aside class:list={['adslot', `adslot--${layout}`, cls]} aria-label="Advertisement">
       <p class="adslot__label">Advertisement</p>
       <ins
         class="adsbygoogle"
-        style="display:block"
+        style="display:block;min-height:250px;width:100%;"
         data-ad-client={SITE.adsensePublisherId}
-        data-ad-slot={slot}
+        data-ad-slot={slot || undefined}
         data-ad-format={layout === 'in-article' ? 'fluid' : 'auto'}
-        data-ad-layout={layout === 'in-article' ? 'in-article' : undefined}
         data-full-width-responsive="true"
       />
       <script is:inline>
@@ -41,22 +29,3 @@ const enabled = false;
     </aside>
   )
 }
-
-<style>
-  .adslot {
-    margin-block: 2.5rem;
-    padding: 0.75rem;
-    border: 1px dashed var(--line);
-    border-radius: var(--radius);
-    background: color-mix(in srgb, var(--paper-deep) 55%, transparent);
-    min-height: 8rem;
-  }
-
-  .adslot__label {
-    margin: 0 0 0.5rem;
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-3);
-  }
-</style>

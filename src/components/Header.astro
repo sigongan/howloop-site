@@ -2,29 +2,75 @@
 import Logo from './Logo.astro';
 import ToolIcon from './ToolIcon.astro';
 import LanguagePicker from './LanguagePicker.astro';
-import {languageForPath} from '../lib/languages.mjs';
-const language=languageForPath(Astro.url.pathname);
-const path=Astro.url.pathname.replace(/\/+$/,'')||'/';
 import { NAV } from '../consts';
-const current=(item:typeof NAV[number])=>item.matches.some(route=>path===route||path.startsWith(route+'/'))?(path===item.href.replace(/\/$/,'')?'page':'location'):undefined;
+
+const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const current = (item: typeof NAV[number]) =>
+  item.matches.some(route => path === route || path.startsWith(route + '/'))
+    ? (path === item.href ? 'page' : 'true')
+    : undefined;
 ---
-<header class="hl-header"><div class="hl-wrap hl-nav">
-<a class="hl-brand" href="/" aria-label="Howloop home"><Logo /></a>
-{language ? <a class="language-english-home" href="/">{language.copy.home}<span aria-hidden="true">↗</span></a> : <>
-<nav class="hl-desktop-nav" aria-label="Main navigation">{NAV.map(item=><a href={item.href} data-money-area={item.id} aria-current={current(item)}><ToolIcon name={item.icon}/><span>{item.label}</span></a>)}<a class="hl-all-tools" href="/start/" aria-current={path==='/start'?'page':undefined}>All tools <ToolIcon name="arrow"/></a></nav>
-
-<details class="hl-mobile-menu"><summary aria-label="Navigation menu">Menu <svg class="menu-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="menu-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></summary><nav aria-label="Mobile navigation">{NAV.map(item=><a href={item.href} data-money-area={item.id} aria-current={current(item)}><span class="money-area-icon"><ToolIcon name={item.icon}/></span><span class="hl-menu-copy"><strong>{item.label}</strong><small>{item.hint}</small></span><span aria-hidden="true">→</span></a>)}<div class="hl-menu-utilities"><a href="/start/">All tools →</a><a href="/banks/">All bank rates →</a><a href="/help/">Quick answers →</a></div></nav></details>
-</>}
-<LanguagePicker/>
-</div></header>
+<header class="hl-header">
+  <div class="hl-wrap hl-nav">
+    <a class="hl-brand" href="/" aria-label="Howloop home"><Logo /></a>
+    <nav class="hl-desktop-nav" aria-label="Main navigation">
+      {NAV.map(item => (
+        <a href={item.href} data-money-area={item.area || undefined} aria-current={current(item)}>
+          <ToolIcon name={item.icon} />{item.label}
+        </a>
+      ))}
+    </nav>
+    <div class="hl-header-actions">
+      <button type="button" class="hl-theme-toggle" id="hl-theme-btn" aria-label="Toggle dark or light theme">
+        ◑ Theme
+      </button>
+      <details class="hl-mobile-menu">
+        <summary aria-label="Navigation menu">
+          Menu
+          <svg class="menu-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="17" x2="20" y2="17" />
+          </svg>
+        </summary>
+        <div class="hl-mobile-dropdown">
+          <nav class="hl-mobile-nav" aria-label="Mobile navigation">
+            {NAV.map(item => (
+              <a href={item.href} data-money-area={item.area || undefined} aria-current={current(item)}>
+                <ToolIcon name={item.icon} />{item.label}
+              </a>
+            ))}
+          </nav>
+        </div>
+      </details>
+      <LanguagePicker />
+    </div>
+  </div>
+</header>
 <script>
-const menu=document.querySelector<HTMLDetailsElement>('.hl-mobile-menu');
-if(menu){
- document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.open){menu.open=false;menu.querySelector('summary')?.focus();}});
- document.addEventListener('pointerdown',event=>{if(menu.open&&!menu.contains(event.target as Node))menu.open=false;});
- // Keep native link activation intact: touch browsers may blur the summary before
- // dispatching a link click. Closing here can hide the intended tap target.
- window.addEventListener('pageshow',()=>{menu.open=false;});
-}
-</script>
+  const menu = document.querySelector<HTMLDetailsElement>('.hl-mobile-menu');
+  if (menu) {
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menu.open) {
+        menu.open = false;
+        menu.querySelector('summary')?.focus();
+      }
+    });
+    document.addEventListener('pointerdown', event => {
+      if (menu.open && !menu.contains(event.target as Node)) menu.open = false;
+    });
+    window.addEventListener('pageshow', () => (menu.open = false));
+  }
 
+  const themeBtn = document.getElementById('hl-theme-btn');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      const html = document.documentElement;
+      const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
+      html.dataset.theme = next;
+      try {
+        localStorage.setItem('hl-theme', next);
+      } catch (_) {}
+    });
+  }
+</script>
