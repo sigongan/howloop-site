@@ -26,10 +26,8 @@ const current = (item: typeof NAV[number]) =>
       ))}
     </nav>
     <div class="hl-header-actions">
-      <a class="hl-all-tools" href="/start/">All tools</a>
-<button type="button" class="hl-theme-toggle" id="hl-theme-btn" aria-label="Toggle dark or light theme">
-      
-◑ Theme
+      <button type="button" class="hl-theme-toggle" id="hl-theme-btn" aria-label="Toggle dark or light theme">
+        ◑ Theme
       </button>
       <details class="hl-mobile-menu">
         <summary aria-label="Navigation menu">
@@ -47,8 +45,7 @@ const current = (item: typeof NAV[number]) =>
                 <ToolIcon name={item.icon} />{item.label}
               </a>
             ))}
-      <a href="/start/">All tools</a>
-</nav>
+          </nav>
         </div>
       </details>
       <LanguagePicker />
