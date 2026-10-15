@@ -2,36 +2,21 @@
 import Base from '../layouts/Base.astro';
 import { SITE } from '../consts';
 ---
-<Base
-  title="Editorial Policy"
-  description="Howloop's editorial standards for accuracy, independence, source verification, and correction handling across Australian financial guides."
->
-  <div class="hl-wrap hl-prose-wrap">
-    <article class="hl-prose">
-      <h1>Editorial Policy</h1>
-      <p>
-        {SITE.name} publishes practical Australian financial calculators and plain-English guides. Because household money decisions require high trust, every guide and tool follows strict verification and independence rules.
-      </p>
-
-      <h2>1. Primary Source Verification</h2>
-      <p>
-        Tax thresholds, Superannuation Guarantee rates, HELP/HECS repayment tables, and Medicare rules are checked directly against statutory schedules published by the Australian Taxation Office (ATO), Services Australia, and Treasury. Banking product rates are sourced from the public Consumer Data Right (CDR) register.
-      </p>
-
-      <h2>2. Commercial Independence</h2>
-      <p>
-        We do not accept paid placements in our calculator results or bank rate tables. If display advertising is served via Google AdSense, advertisements are clearly labelled with an <code>Advertisement</code> header and have zero influence over which banking brands or rates appear in our tools.
-      </p>
-
-      <h2>3. Clear Separation of Base vs Bonus Rates</h2>
-      <p>
-        Our editorial policy prohibits combining conditional introductory or bonus interest rates into default long-term compound interest projections unless the conditions are explicitly disclosed.
-      </p>
-
-      <h2>4. Corrections &amp; Updates</h2>
-      <p>
-        When statutory thresholds change (such as annual July 1 tax and super updates) or a reader reports an error via <a href={`mailto:${SITE.email}`}>{SITE.email}</a>, we verify the primary source, update the relevant calculator or guide, and log substantive changes on our <a href="/updates/">Updates</a> page.
-      </p>
-    </article>
-  </div>
+<Base title="Editorial policy" description="How Howloop prepares original worked examples, uses public sources and AI assistance, records corrections and explains financial-review limits.">
+ <div class="hl-wrap hl-prose-wrap"><article class="hl-prose">
+  <h1>Editorial policy</h1>
+  <p>Our aim is to help a reader understand a money question and use a tool with realistic expectations. A page should explain a specific problem, show an inspectable example, and state what the result cannot tell you.</p>
+  <h2>Sources and original examples</h2>
+  <p>We use primary references where available: ATO tax and payroll schedules, ABS statistical releases, state revenue offices and the public CDR product feeds. Links are provided beside the relevant explanation. Worked examples are Howloop scenarios, not copied household records or claims about typical results.</p>
+  <p>Calculator regression checks compare selected outputs against fixed examples and edge cases. Passing those checks does not establish that every financial circumstance is covered. The <a href="/methodology/">methodology</a> describes the actual model, rounding and exclusions.</p>
+  <h2>Authorship, AI and review limits</h2>
+  <p>Howloop is the organizational publisher. AI assists preparation, translation and code development. We do not invent personal experience, licensed reviewers or qualifications. These pages have not been reviewed by a licensed financial adviser or registered tax agent. Our <a href="/about/#publisher">publisher description</a> explains those limits.</p>
+  <h2>Dates have different meanings</h2>
+  <p>A publication date is when a guide first appeared. An edit date records a material content change. A source-check date records the most recent recorded check of the cited rules. Layout edits do not renew financial-rule checks. Where a check is due, we flag it; that is not a claim the rule has changed.</p>
+  <p>Bank retrieval dates describe separate snapshots. A successful overall refresh does not mean every bank responded. Base, bonus and introductory rates remain distinct; unsupported or stale terms must not become a guessed automatic projection.</p>
+  <h2>Independence and advertising</h2>
+  <p>We do not take commissions or payment to change calculator outputs or rank bank products. Ad serving is disabled in this release. Any future advertising must be labelled and must follow the privacy and consent controls described in our <a href="/privacy/">privacy policy</a>.</p>
+  <h2>Corrections</h2>
+  <p>Send the page URL, sample inputs, the unexpected output and a relevant source to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Do not send private financial records. When we verify a material error, we correct the page and record the change on <a href="/updates/">Updates</a> or the article’s update note. A correction is not a claim that every other statement has been checked again.</p>
+ </article></div>
 </Base>

@@ -12,7 +12,7 @@ Node 22; npm ci; npm run dev; npm run build (output: dist). Existing lockfile re
 - Public CDR banking-brand explorer, dated product snapshots, explicit unavailable and partial states.
 - Seventeen original money guides, methodology, about, contact, editorial, privacy and terms pages.
 - Device-local opt-in plan save/restore/delete and CSV export.
-- Previous guide URLs and existing private trading utilities remain intact; the new public navigation focuses on money education.
+- Existing published guide URLs and technical utilities are retained; public navigation focuses on money tools and education.
 
 ## Rate data
 
@@ -43,8 +43,8 @@ The Windows sandbox used to author this revision required a local WebAssembly es
 
 `/tools/cash-flow/` is an original 13-week, local-first demonstration. It uses
 `src/lib/cash-flow.mjs` for deterministic integer-cent/date-only arithmetic.
-`/products/payday-planner/` explains the proposed paid kit and explicitly keeps
-checkout unavailable. See `docs/payday-planner-product-2026-10-04.md` for scope,
+The unavailable paid concept is retained only as an unpublished source draft in
+`src/pages/_products/payday-planner.astro`. See `docs/payday-planner-product-2026-10-04.md` for scope,
 measurement, validation and the remaining sale gates. No financial input is
 passed between the existing calculators and this preview.
 

@@ -2,37 +2,19 @@
 import Base from '../layouts/Base.astro';
 import { SITE } from '../consts';
 ---
-<Base
-  title={`About ${SITE.name}`}
-  description="Learn how Howloop builds transparent Australian financial calculators, verifies public CDR bank rates, and maintains independent editorial standards."
->
-  <div class="hl-wrap hl-prose-wrap">
-    <article class="hl-prose">
-      <h1>About Howloop</h1>
-      <p>
-        <strong>{SITE.name}</strong> (<a href={SITE.url}>{SITE.domain}</a>) is an independent Australian financial education and calculator platform designed to help households model everyday money decisions in plain English.
-      </p>
-
-      <div class="hl-policy-callout">
-        <strong>General Information Notice:</strong> Howloop provides mathematical modelling tools, public data summaries, and educational guides. We do not hold an Australian Financial Services Licence (AFSL) and do not provide personal financial, taxation, or credit advice. Always verify product Product Disclosure Statements (PDS) and Target Market Determinations (TMD) directly with the issuing institution.
-      </div>
-
-      <h2>What We Build &amp; Maintain</h2>
-      <ul>
-        <li><strong>Client-Side Financial Calculators:</strong> Six transparent calculators covering Australian resident take-home pay (FY 2025–26 &amp; FY 2026–27 Stage 3 tax brackets, Medicare levy, HELP/HECS repayments, and Superannuation Guarantee), mortgage offset vs savings comparisons, compound interest, emergency fund sizing, and home deposit LVR.</li>
-        <li><strong>13-Week Cash-Flow &amp; Payday Planner:</strong> A practical calendar workspace that maps fortnightly or monthly pay cycles against quarterly Australian household bills (electricity, council/strata rates, water, and vehicle registration).</li>
-        <li><strong>Public CDR Banking Explorer:</strong> Dated snapshots retrieved from the Australian Government Consumer Data Right (CDR) register, clearly distinguishing unambiguous base variable rates from conditional bonus tiers.</li>
-      </ul>
-
-      <h2>Our Editorial &amp; Data Integrity Principles</h2>
-      <p>
-        Every calculator on Howloop documents its exact mathematical assumptions, statutory tax/super thresholds, and rounding behaviour on our <a href="/methodology/">Calculation Methodology</a> page. When an external CDR bank endpoint is unreachable or older than seven days, our interface explicitly flags the snapshot age rather than claiming live whole-market coverage.
-      </p>
-
-      <h2>Get in Touch</h2>
-      <p>
-        Spotted a calculation edge case, an updated bank product rule, or a guide you would like us to write? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or visit our <a href="/contact/">Contact page</a>.
-      </p>
-    </article>
-  </div>
+<Base title="About Howloop" description="Who publishes Howloop, what our Australian money tools do, and the limits of our sources, AI assistance and financial review.">
+ <div class="hl-wrap hl-prose-wrap"><article class="hl-prose">
+  <h1>About Howloop</h1>
+  <p>Howloop is an independent Australian money education project. We make everyday questions easier to work through: what lands in your bank account, how regular savings add up, and whether your next payday arrives before a bill.</p>
+  <h2 id="publisher">About the publisher</h2>
+  <p>Howloop publishes these tools and guides under the Howloop name. This is a small independent project, not a bank, government agency or financial-advice firm. The publisher does not claim financial-adviser or tax-agent registration. No licensed financial adviser has reviewed these guides or calculators.</p>
+  <p>AI assists with drafting, translation and development. AI assistance does not establish accuracy. Each maintained guide links its sources and separates its publication, edit and source-check dates. Translations may contain errors; use the linked primary sources when a rule affects a decision.</p>
+  <h2>What you can do here</h2>
+  <ul><li><a href="/calculators/salary/">Estimate regular take-home pay</a> with employer super shown separately.</li><li><a href="/calculators/compound-interest/">Model savings</a> and separate your deposits from interest.</li><li><a href="/tools/cash-flow/">Plan 13 weeks of paydays and bills</a> and see the lowest projected balance.</li><li><a href="/tools/">Explore the other tools</a> for home loans, deposits, emergency funds and tax-return preparation.</li></ul>
+  <h2>How to judge our numbers</h2>
+  <p>Our examples are educational scenarios. They are not forecasts or recommendations to buy a product. The <a href="/methodology/">methodology</a> explains the models and their limits. Bank data comes from dated public Consumer Data Right product feeds. Missing, old or ambiguous information must not be treated as a current offer; always check with the provider.</p>
+  <p>We do not accept commissions or payment to rank bank products. Ad serving is currently disabled in this release. Any future advertising must be labelled and described in our <a href="/privacy/">privacy policy</a>.</p>
+  <h2>Corrections and contact</h2>
+  <p>Report an unexpected result, confusing explanation or accessibility problem at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Please use sample amounts and leave out account numbers, TFNs and other private identifiers. Material corrections appear on <a href="/updates/">Updates</a>. See our <a href="/editorial-policy/">editorial policy</a> for what a review date means.</p>
+ </article></div>
 </Base>

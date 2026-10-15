@@ -10,10 +10,10 @@ const language = languageForPath(Astro.url.pathname);
     <div class="hl-footer-grid">
       <div class="hl-footer-brand">
         <a class="hl-brand" href="/" lang="en" aria-label="Howloop home"><Logo size={32} /></a>
-        <p style="margin-top:12px;font-size:0.9rem;color:#94A3B8;max-width:34ch;">
+        <p >
           Free Australian financial calculators, public CDR bank snapshots, and plain-English money guides.
         </p>
-        <p style="margin-top:8px;font-size:0.825rem;color:#5EEAD4;">Contact: {SITE.email}</p>
+        <p ><a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
       </div>
       <div>
         <h2>Tools</h2>

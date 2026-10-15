@@ -1,334 +1,53 @@
 ---
 import Base from '../layouts/Base.astro';
+import ToolIcon from '../components/ToolIcon.astro';
 import { SITE } from '../consts';
-
-const faqLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'How is Australian take-home pay calculated for FY 2025–26 and FY 2026–27?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Australian resident take-home pay is calculated by subtracting resident income tax (using the Stage 3 tax brackets: 0% up to $18,200, 16% from $18,201 to $45,000, 30% from $45,001 to $135,000, 37% from $135,001 to $190,000, and 45% above $190,000), the 2% Medicare levy, and any applicable HELP/HECS repayment from gross annual salary. Employer Superannuation Guarantee is calculated separately at 12.0%.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Why does a mortgage offset account often beat a high-interest savings account in Australia?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Interest earned in a high-interest savings account is assessable income taxed at your marginal tax rate plus Medicare levy. Money held in a 100% mortgage offset account reduces your home loan principal for daily interest calculations without generating taxable income.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Where does Howloop source its Australian bank interest rates?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Howloop retrieves public product snapshots from the Australian Government Consumer Data Right (CDR) banking register. Only unambiguous base variable rates are modelled automatically, while conditional bonus tiers are separated.',
-      },
-    },
-  ],
-};
+import { savings } from '../lib/finance.mjs';
+import guides from '../data/learning.json';
+import '../styles/home.css';
+const example = savings({principal:1000,contribution:200,annualRate:4,years:5});
+const more = savings({principal:1000,contribution:250,annualRate:4,years:5});
+const money = n => new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
+const tasks = [
+ {number:'01',icon:'wallet',title:'What’s my take-home pay?',text:'Turn your salary into weekly, fortnightly or monthly pay. See tax and super separately.',href:'/calculators/salary/',action:'Calculate my pay',area:'pay'},
+ {number:'02',icon:'growth',title:'How could my savings grow?',text:'Start with your balance and regular deposits. See what you put in and what interest adds.',href:'/calculators/compound-interest/',action:'Calculate my savings',area:'savings'},
+ {number:'03',icon:'checklist',title:'Will my pay cover my bills?',text:'Put paydays and bills on a 13-week calendar. Find a shortfall before the bill arrives.',href:'/tools/cash-flow/',action:'Plan my paydays',area:'home'},
+];
+const reading = ['salary-including-super-vs-plus-super','how-compound-interest-works','offset-vs-extra-repayments'].map(slug=>guides.find(g=>g.slug===slug));
 ---
-<Base title={SITE.name} description={SITE.description} jsonLd={faqLd}>
-  <div class="home-page">
-    <!-- Hero + Interactive Quick Salary & Tax Model -->
-    <section class="hl-home-hero">
-      <div class="hl-wrap hl-hero-grid">
-        <div>
-          <span class="hl-eyebrow">Australian Money Tools &amp; Editorial Guides</span>
-          <h1 class="hl-hero-title">Clear numbers for every payday, offset account, and savings goal.</h1>
-          <p class="hl-hero-lead">
-            Model your Australian take-home pay after Medicare levy and HELP repayments, compare mortgage offset savings against taxable interest, and explore public Consumer Data Right (CDR) bank rate snapshots—100% locally in your browser.
-          </p>
-          <div class="hl-cta-row">
-            <a href="/tools/" class="hl-btn-primary">Explore All Financial Tools →</a>
-            <a href="/learn/" class="hl-btn-secondary">Read Money Guides</a>
-          </div>
-          <div class="hl-trust-metrics">
-            <div>
-              <strong>100% Browser-Local</strong>
-              <span>Zero server storage of your personal financial inputs</span>
-            </div>
-            <div>
-              <strong>ATO &amp; CDR Grounded</strong>
-              <span>Stage 3 tax rules, 12% Super &amp; public CDR feeds</span>
-            </div>
-            <div>
-              <strong>Plain-English Depth</strong>
-              <span>Transparent formulas &amp; worked household scenarios</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hl-quick-calc" aria-label="Quick Australian Take-Home Pay Calculator">
-          <div class="hl-quick-calc__header">
-            <div>
-              <strong style="font-size:1.05rem;">Quick Australian Paycheck Model</strong>
-              <p style="font-size:0.8rem;color:var(--hl-text-muted);margin:2px 0 0;">Resident Stage 3 Tax + 2% Medicare + 12% Super</p>
-            </div>
-            <div class="hl-preset-group" role="group" aria-label="Salary presets">
-              <button type="button" class="hl-preset-btn is-active" data-preset="95000">$95k</button>
-              <button type="button" class="hl-preset-btn" data-preset="125000">$125k</button>
-              <button type="button" class="hl-preset-btn" data-preset="160000">$160k</button>
-            </div>
-          </div>
-
-          <div class="hl-field">
-            <label for="hl-quick-salary">
-              <span>Annual Gross Salary (AUD)</span>
-              <span>Before tax, excl. Super</span>
-            </label>
-            <div class="hl-input-box">
-              <span class="hl-input-prefix">$</span>
-              <input id="hl-quick-salary" type="number" value="95000" min="0" step="1000" />
-            </div>
-          </div>
-
-          <div class="hl-field">
-            <label for="hl-quick-cycle">
-              <span>Pay Cycle Frequency</span>
-              <span>Super Guarantee: 12.0%</span>
-            </label>
-            <div class="hl-input-box">
-              <select id="hl-quick-cycle">
-                <option value="26">Fortnightly (26 pays/year)</option>
-                <option value="12">Monthly (12 pays/year)</option>
-                <option value="52">Weekly (52 pays/year)</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="hl-result-panel" aria-live="polite">
-            <div class="hl-result-headline">
-              <span>Estimated Net Take-Home</span>
-              <span class="hl-result-amount" id="hl-out-cycle">$2,869 / fortnight</span>
-            </div>
-            <div class="hl-result-grid">
-              <div>
-                <span>Annual Net Pay</span>
-                <strong id="hl-out-net">$74,612</strong>
-              </div>
-              <div>
-                <span>Tax + Medicare</span>
-                <strong id="hl-out-tax">$20,388</strong>
-              </div>
-              <div>
-                <span>Employer Super (12%)</span>
-                <strong id="hl-out-super">$11,400</strong>
-              </div>
-            </div>
-          </div>
-          <p style="font-size:0.78rem;color:var(--hl-text-muted);margin-top:12px;">
-            Need HELP/HECS debt, salary sacrifice, or Medicare Levy Surcharge modelling? <a href="/calculators/salary/" style="color:var(--hl-emerald-800);font-weight:600;">Open the full Take-Home Pay Calculator →</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Bento Grid of Core Tools -->
-    <section class="hl-section">
-      <div class="hl-wrap">
-        <div class="hl-section-head">
-          <span class="hl-eyebrow">Interactive Workspace</span>
-          <h2 class="hl-section-title">Six Australian calculators &amp; 13-week payday planner</h2>
-          <p class="hl-section-sub">
-            Every tool combines interactive scenario testing with documented mathematical assumptions, statutory Australian thresholds, and step-by-step worked examples.
-          </p>
-        </div>
-
-        <div class="hl-bento-grid">
-          <a class="hl-bento-card" href="/calculators/salary/">
-            <div>
-              <span class="hl-badge">Income &amp; Tax</span>
-              <h3>Take-Home Pay &amp; Super Calculator</h3>
-              <p>Convert gross annual salary into weekly, fortnightly, or monthly net pay using resident tax brackets, Medicare levy, and HELP repayments.</p>
-            </div>
-            <div class="hl-bento-meta"><span>FY 2025–26 &amp; 2026–27</span><span>Open calculator →</span></div>
-          </a>
-
-          <a class="hl-bento-card" href="/tools/cash-flow/">
-            <div>
-              <span class="hl-badge">Cash-Flow Planning</span>
-              <h3>13-Week Payday &amp; Bills Planner</h3>
-              <p>Line up fortnightly or monthly paydays against quarterly electricity, strata/council rates, water, rego, and rent spikes across a 90-day horizon.</p>
-            </div>
-            <div class="hl-bento-meta"><span>Device-local save &amp; CSV</span><span>Plan 13 weeks →</span></div>
-          </a>
-
-          <a class="hl-bento-card" href="/calculators/compound-interest/">
-            <div>
-              <span class="hl-badge">Savings &amp; CDR Data</span>
-              <h3>Compound Interest &amp; CDR Bank Picker</h3>
-              <p>Project multi-year savings growth with regular contributions and compare unambiguous base variable rates from the public CDR register.</p>
-            </div>
-            <div class="hl-bento-meta"><span>Dated CDR snapshots</span><span>Open calculator →</span></div>
-          </a>
-
-          <a class="hl-bento-card" href="/banks/">
-            <div>
-              <span class="hl-badge">Public Banking Data</span>
-              <h3>Australian CDR Bank Rate Explorer</h3>
-              <p>Inspect dated savings and transaction product snapshots from Australian banking brands without promotional rate tricks or affiliate rankings.</p>
-            </div>
-            <div class="hl-bento-meta"><span>Base vs bonus rate clarity</span><span>Explore banks →</span></div>
-          </a>
-
-          <a class="hl-bento-card" href="/learn/">
-            <div>
-              <span class="hl-badge">Money Education</span>
-              <h3>Plain-English Australian Money Guides</h3>
-              <p>Step-by-step visual lessons on mortgage offset accounts, emergency fund sizing, Loan-to-Value Ratio (LVR), and tax return preparation.</p>
-            </div>
-            <div class="hl-bento-meta"><span>Visual &amp; worked examples</span><span>Start learning →</span></div>
-          </a>
-
-          <a class="hl-bento-card" href="/guides/">
-            <div>
-              <span class="hl-badge">Practical Archive</span>
-              <h3>Australian Admin &amp; Household Guides</h3>
-              <p>Statutory walkthroughs covering Australian Tax File Number TFN applications, Medicare levy rules, and Superannuation administration.</p>
-            </div>
-            <div class="hl-bento-meta"><span>16 step-by-step guides</span><span>Browse guides →</span></div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Deep Original Editorial Content Section (High-Value Publisher Content) -->
-    <section class="hl-section">
-      <div class="hl-wrap">
-        <div class="hl-section-head">
-          <span class="hl-eyebrow">Editorial Deep Dive</span>
-          <h2 class="hl-section-title">How Australian money mechanics work in practice</h2>
-          <p class="hl-section-sub">
-            Headline interest rates and gross salary offers rarely tell the full story. Below we break down the three financial calculations that have the largest impact on Australian household cash flow.
-          </p>
-        </div>
-
-        <div class="hl-editorial-grid">
-          <article class="hl-editorial-card">
-            <h3>1. Why a 6.15% Mortgage Offset Account Often Outperforms a 5.50% Savings Account</h3>
-            <div class="hl-byline">
-              <span>By Jess Baek, Founder & Financial Data Modeller QLD</span>
-              <span> methodology verified</span>
-              <span>Australian Home Loans &amp; Marginal Tax</span>
-            </div>
-            <p>
-              When deciding where to park an emergency fund or house deposit buffer, comparing the headline interest rate of a high-interest savings account (HISA) directly against your variable home loan rate is misleading. In Australia, interest earned in a bank savings account is assessable income taxed at your marginal tax rate plus the 2% Medicare levy.
-            </p>
-            <div class="hl-formula-callout">
-              After-Tax Savings Return = Nominal Savings Rate × (1 − Marginal Tax Rate − Medicare Levy)<br />
-              Worked Example ($125,000 income, 30% tax + 2% Medicare = 32%):<br />
-              5.50% × (1 − 0.32) = 3.74% effective return vs 6.15% tax-free offset interest saved.
-            </div>
-            <p>
-              Because Australian lenders calculate variable home loan interest daily on the net balance (Loan Principal minus 100% Offset Balance) and debit interest monthly, every dollar sitting in your offset account between payday and bill due dates reduces your interest charge immediately—without triggering an ATO tax liability at the end of the financial year.
-            </p>
-
-            <h3 style="margin-top:28px;">2. Understanding Unambiguous Base Rates vs Conditional Bonus Tiers in CDR Data</h3>
-            <p>
-              Many Australian savings accounts advertise a high headline rate made up of a low base variable rate (sometimes 0.10% to 1.50%) plus a conditional bonus rate that requires growing your balance every calendar month, making five settled debit card purchases, and never making a withdrawal. Missing a single condition for one month drops your return to the base rate.
-            </p>
-            <p>
-              That is why Howloop's <a href="/banks/">CDR Bank Explorer</a> and <a href="/calculators/compound-interest/">Compound Interest Calculator</a> separate unambiguous base variable rates from conditional bonus components. Before moving cash, check our <a href="/methodology/">Calculation Methodology</a> to see how base tiers and retrieval timestamps are verified.
-            </p>
-          </article>
-
-          <div>
-            <div class="hl-editorial-card" style="margin-bottom:20px;">
-              <h3 style="font-size:1.25rem;">Our Editorial &amp; Privacy Commitments</h3>
-              <p style="font-size:0.92rem;margin-bottom:12px;">
-                Howloop is built as a transparent public utility. We do not sell lead-generation forms, require account sign-ups, or rank banking products by commercial commission.
-              </p>
-              <ul style="padding-left:18px;font-size:0.9rem;color:var(--hl-text-body);margin-bottom:16px;">
-                <li><a href="/methodology/">How we calculate tax, super &amp; compound interest</a></li>
-                <li><a href="/editorial-policy/">Editorial independence &amp; correction policy</a></li>
-                <li><a href="/privacy/">Privacy, local storage &amp; Google AdSense cookie policy</a></li>
-                <li><a href="/terms/">Terms of use &amp; general information disclaimer</a></li>
-              </ul>
-              <a href="/start/" class="hl-btn-secondary" style="width:100%;justify-content:center;">New here? Open the Start Here Guide →</a>
-            </div>
-
-            <div class="hl-faq-list" aria-label="Frequently Asked Questions">
-              <details class="hl-faq-item" open>
-                <summary>Does Howloop store the numbers I enter into calculators?</summary>
-                <p>No. Every calculation runs locally in your browser. Optional plan saves use your browser's own <code>localStorage</code> and never leave your device.</p>
-              </details>
-              <details class="hl-faq-item">
-                <summary>How often are CDR bank rates updated?</summary>
-                <p>Rate snapshots are refreshed from the public Australian Government Consumer Data Right register and display explicit retrieval dates. Snapshots older than 7 days are clearly flagged.</p>
-              </details>
-              <details class="hl-faq-item">
-                <summary>Is Howloop personal financial advice?</summary>
-                <p>No. All calculators and guides provide general factual and mathematical information only. Always review official ATO guidance and bank Product Disclosure Statements (PDS).</p>
-              </details>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <script is:inline>
-    (function () {
-      const salaryEl = document.getElementById('hl-quick-salary');
-      const cycleEl = document.getElementById('hl-quick-cycle');
-      const outCycle = document.getElementById('hl-out-cycle');
-      const outNet = document.getElementById('hl-out-net');
-      const outTax = document.getElementById('hl-out-tax');
-      const outSuper = document.getElementById('hl-out-super');
-      const presetBtns = document.querySelectorAll('.hl-preset-btn');
-
-      function recalc() {
-        if (!salaryEl || !cycleEl) return;
-        const salary = Math.max(0, Number(salaryEl.value) || 0);
-        const cycle = Number(cycleEl.value) || 26;
-
-        let tax = 0;
-        if (salary > 190000) {
-          tax = 51638 + (salary - 190000) * 0.45;
-        } else if (salary > 135000) {
-          tax = 31288 + (salary - 135000) * 0.37;
-        } else if (salary > 45000) {
-          tax = 4288 + (salary - 45000) * 0.30;
-        } else if (salary > 18200) {
-          tax = (salary - 18200) * 0.16;
-        }
-        const medicare = salary > 26000 ? salary * 0.02 : 0;
-        const totalTax = Math.round(tax + medicare);
-        const netAnnual = Math.round(salary - totalTax);
-        const netPerPay = Math.round(netAnnual / cycle);
-        const superAmt = Math.round(salary * 0.12);
-
-        const label = cycle === 26 ? 'fortnight' : (cycle === 12 ? 'month' : 'week');
-        const fmt = (n) => '$' + n.toLocaleString('en-AU');
-
-        if (outCycle) outCycle.textContent = fmt(netPerPay) + ' / ' + label;
-        if (outNet) outNet.textContent = fmt(netAnnual);
-        if (outTax) outTax.textContent = fmt(totalTax);
-        if (outSuper) outSuper.textContent = fmt(superAmt);
-      }
-
-      if (salaryEl) salaryEl.addEventListener('input', recalc);
-      if (cycleEl) cycleEl.addEventListener('change', recalc);
-
-      presetBtns.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const val = btn.getAttribute('data-preset');
-          if (salaryEl && val) {
-            salaryEl.value = val;
-            presetBtns.forEach((b) => b.classList.remove('is-active'));
-            btn.classList.add('is-active');
-            recalc();
-          }
-        });
-      });
-
-      recalc();
-    })();
-  </script>
+<Base title={SITE.name} description="Free Australian money tools, without the overwhelm. Calculate take-home pay, see your savings grow and plan bills around payday. Clear examples and linked sources.">
+ <div class="home-simple">
+  <section class="home-intro hl-wrap" aria-labelledby="home-title">
+   <div class="home-intro-copy">
+    <p class="home-eyebrow"><span aria-hidden="true"></span>Everyday money, made clearer</p>
+    <h1 id="home-title">Less guesswork.<br />More <em>clarity.</em></h1>
+    <p class="home-lead">Your pay. Your savings. Your next bill.<br />Simple Australian tools to help you work it out.</p>
+    <a class="home-primary" href="#choose">Find my starting point <span aria-hidden="true">↗</span></a>
+    <p class="home-small">Free to use · No account needed · All amounts in AUD</p>
+   </div>
+   <aside class="home-example" aria-labelledby="example-title">
+    <div class="home-example-top"><span>A little, regularly.</span><span class="home-example-tag">Worked example</span></div>
+    <h2 id="example-title">$200 a month.<br />A bigger buffer in five years.</h2>
+    <div class="home-example-total">{money(example.balance)} <span>illustrative balance</span></div>
+    <div class="home-growth" aria-hidden="true">{[19,28,39,51,65,81,100].map(h=><span style={`--bar-height:${h}%`}></span>)}</div>
+    <dl class="home-example-breakdown"><div><dt>Your money</dt><dd>{money(example.deposits)}</dd></div><div><dt>Interest added</dt><dd>{money(example.interest)}</dd></div></dl>
+    <p>Start with $1,000, add $200 at each month’s end, and assume 4% a year compounded monthly. Before tax, fees and inflation. An example, not a bank offer or forecast.</p>
+    <a href="/calculators/compound-interest/">Try your own numbers <span aria-hidden="true">→</span></a>
+   </aside>
+  </section>
+  <section class="home-choose hl-wrap" id="choose" aria-labelledby="choose-title">
+   <div class="home-section-heading"><div><p class="home-eyebrow">Start with one question</p><h2 id="choose-title">What would you like to work out?</h2></div><a href="/tools/">See all tools →</a></div>
+   <div class="home-task-grid">{tasks.map(task=><a class="home-task" href={task.href} data-money-area={task.area}><div class="home-task-top"><span class="home-task-icon"><ToolIcon name={task.icon}/></span><span>{task.number}</span></div><h3>{task.title}</h3><p>{task.text}</p><span class="home-task-action">{task.action}<span aria-hidden="true">↗</span></span></a>)}</div>
+   <p class="home-other">Looking at a home loan? <a href="/calculators/mortgage/">Work out repayments &amp; offsets →</a></p>
+  </section>
+  <section class="home-understand hl-wrap" aria-labelledby="understand-title">
+   <div class="home-section-heading"><div><p class="home-eyebrow">Understand, then decide</p><h2 id="understand-title">One idea at a time.</h2></div><a href="/learn/">Explore the guides →</a></div>
+   <div class="home-reading">{reading.map((guide,i)=><a href={`/learn/${guide.slug}/`}><span class="home-reading-number">0{i+1}</span><div><small>{guide.category} · {guide.minutes} min</small><h3>{guide.title}</h3><p>{guide.summary}</p></div><span aria-hidden="true">↗</span></a>)}</div>
+  </section>
+  <section class="home-practice hl-wrap" aria-labelledby="practice-title">
+   <div><p class="home-eyebrow">Put the example to work</p><h2 id="practice-title">What changes if you save another $50?</h2><p>Keep the same starting balance, five years and hypothetical 4% rate. Increasing the monthly deposit from $200 to $250 produces {money(more.balance)} instead of {money(example.balance)}.</p><p>That is about {money(more.balance-example.balance)} more. Of that difference, $3,000 comes from the extra deposits; the rest is additional interest. Separating deposits from interest helps you see what you control.</p></div>
+   <div class="home-practice-aside"><h3>Try one change at a time.</h3><ol><li>Enter an amount you could save regularly.</li><li>Keep the rate and time fixed; change the deposit.</li><li>Then lower the rate to see a less optimistic scenario.</li></ol><p>Real bank rates can change. The model uses monthly compounding; a bank may calculate daily. <a href="/methodology/">See the assumptions</a>.</p><a href="/learn/how-compound-interest-works/">Understand interest on interest →</a></div>
+  </section>
+  <section class="home-trust hl-wrap" aria-labelledby="trust-title"><h2 id="trust-title">Useful numbers.<br />Clear limits.</h2><div><p>Howloop is an independent money education project. Our guides connect worked examples with public sources; our tools let you try those examples with your own numbers. We do not accept payment to rank bank products.</p><p>Calculations run in your browser. Optional saved plans stay on your device. These are educational estimates, not personal financial advice, and have not been reviewed by a licensed financial adviser. <a href="/about/#publisher">About the publisher</a> · <a href="/editorial-policy/">How we check our work</a> · <a href="/contact/">Report a correction</a>.</p></div></section>
+ </div>
 </Base>
