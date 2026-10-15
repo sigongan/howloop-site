@@ -12,24 +12,20 @@
     --calc-accent-soft: #f2f1fa;
   }
   body .calculator-page,
-  body .salary-page,
   body .tax-main {
     color: var(--ui-ink, #102329);
   }
   body .calculator-page .hl-wrap,
-  body .salary-page,
   body .tax-simple-head,
   body .tax-workspace,
   body .tax-help {
     max-width: 1180px;
   }
   body .calculator-page .hl-page-head,
-  body .salary-page .salary-heading,
   body .tax-simple-head {
     padding-block: 44px 28px;
   }
   body .calculator-page .hl-page-head h1,
-  body .salary-page .salary-heading h1,
   body .tax-simple-head h1 {
     font-size: clamp(2rem, 3.4vw, 3.25rem);
     line-height: 1.13;
@@ -46,7 +42,6 @@
     vertical-align: middle;
   }
   body .calculator-page .hl-page-head p,
-  body .salary-page .salary-heading > p:last-child,
   body .tax-simple-head > p {
     color: var(--ui-muted, #52606d);
     font-size: 1.125rem;
@@ -54,7 +49,6 @@
     max-width: 760px;
   }
   body .calculator-page .hl-breadcrumb,
-  body .salary-page .hl-breadcrumb,
   body .tax-simple-head .hl-breadcrumb {
     font-size: .9375rem;
     line-height: 1.5;
@@ -73,16 +67,14 @@
     box-shadow: none;
     overflow: visible;
   }
-  body .calculator-page .hl-form,
-  body .salary-page .salary-form {
+  body .calculator-page .hl-form {
     border: 1px solid var(--ui-line, #dfe5e9);
     border-radius: 20px;
     background: #fff;
     padding: 30px;
     min-width: 0;
   }
-  body .calculator-page .hl-form h2,
-  body .salary-page .salary-form h2 {
+  body .calculator-page .hl-form h2 {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
@@ -101,8 +93,7 @@
     font-weight: 400;
     color: var(--ui-muted, #52606d);
   }
-  body .calculator-page .hl-field,
-  body .salary-page .hl-field {
+  body .calculator-page .hl-field {
     margin-bottom: 23px;
     min-width: 0;
   }
@@ -110,7 +101,6 @@
     gap: 16px;
   }
   body .calculator-page .hl-field > span,
-  body .salary-page .hl-field > span,
   body .calc-bank-dialog .hl-field > span {
     font-size: 1.0625rem;
     font-weight: 500;
@@ -120,8 +110,6 @@
   }
   body .calculator-page .hl-field input,
   body .calculator-page .hl-field select,
-  body .salary-page .hl-field input,
-  body .salary-page .hl-field select,
   body .calc-bank-dialog .hl-field input,
   body .calc-bank-dialog .hl-field select {
     min-height: 58px;
@@ -141,19 +129,15 @@
   }
   body .calculator-page .hl-field input:hover,
   body .calculator-page .hl-field select:hover,
-  body .salary-page .hl-field input:hover,
-  body .salary-page .hl-field select:hover,
   body .calc-bank-dialog .hl-field input:hover,
   body .calc-bank-dialog .hl-field select:hover {
     border-color: #87999f;
   }
-  body .calculator-page .hl-input-wrap > span,
-  body .salary-page .hl-input-wrap > span {
+  body .calculator-page .hl-input-wrap > span {
     font-size: 1.125rem;
     color: #65777d;
   }
-  body .calculator-page .hl-field small,
-  body .salary-page .hl-field small {
+  body .calculator-page .hl-field small {
     font-size: .9375rem;
     line-height: 1.65;
     color: var(--ui-muted, #52606d);
@@ -161,8 +145,7 @@
   }
   body .calculator-page .hl-form .hl-help,
   body .calculator-page .hl-rate-model,
-  body .calculator-page .calc-local-note,
-  body .salary-page .salary-hint {
+  body .calculator-page .calc-local-note {
     font-size: .9375rem;
     line-height: 1.65;
     color: var(--ui-muted, #52606d);
@@ -170,8 +153,6 @@
   body .calculator-page .hl-rate-model { margin-block: 14px 20px; }
   body .calculator-page .calc-local-note { margin-block: 14px 0; text-align: left; }
   body .calculator-page .calc-update-button,
-  body .salary-page .salary-submit,
-  body .salary-page a.hl-button,
   body .calc-bank-dialog .calc-bank-done,
   body .tax-main .hl-button,
   body .tax-ai .hl-button {
@@ -187,8 +168,6 @@
     box-shadow: none;
   }
   body .calculator-page .calc-update-button:hover,
-  body .salary-page .salary-submit:hover,
-  body .salary-page a.hl-button:hover,
   body .calc-bank-dialog .calc-bank-done:hover,
   body .tax-main .hl-button:hover {
     background: #21434a;
@@ -520,59 +499,6 @@
   body .calc-bank-dialog .calc-bank-done { margin-top: 22px; min-height: 56px; }
 
   /* Pay follows the same input/answer hierarchy, with no decorative gradients. */
-  body .salary-page .salary-kicker { color: #456160; font-size: .875rem; letter-spacing: .08em; }
-  body .salary-page .salary-workspace { grid-template-columns: minmax(0, 1fr) minmax(0, 1.18fr); gap: 24px; }
-  body .salary-page .salary-check { color: var(--ui-ink, #102329); font-size: 1.0625rem; line-height: 1.6; min-height: 48px; }
-  body .salary-page .salary-check input { accent-color: #165b50; }
-  body .salary-page .salary-settings { border-color: var(--ui-line, #dfe5e9); padding-top: 15px; }
-  body .salary-page .salary-settings > summary { color: var(--ui-ink, #102329); font-size: 1.0625rem; min-height: 48px; }
-  body .salary-page .salary-settings p { color: var(--ui-muted, #52606d); font-size: 1.0625rem; line-height: 1.75; }
-  body .salary-page .salary-results {
-    position: static;
-    padding: 30px;
-    border: 1px solid var(--ui-line, #dfe5e9);
-    border-top: 4px solid #295bb7;
-    border-radius: 20px;
-    background: #fff;
-    color: var(--ui-ink, #102329);
-    box-shadow: none;
-  }
-  body .salary-page .salary-periods {
-    background: #eff4fb;
-    border: 1px solid #d3deee;
-    border-radius: 12px;
-    gap: 4px;
-    padding: 5px;
-    margin-bottom: 25px;
-  }
-  body .salary-page .salary-periods button { color: #344d72; min-height: 48px; border-radius: 7px; font-size: 1rem; }
-  body .salary-page .salary-periods button[aria-pressed=true] { background: #295bb7; color: #fff; box-shadow: none; font-weight: 600; }
-  body .salary-page .salary-results .salary-hint { color: var(--ui-muted, #52606d); font-size: .9375rem; line-height: 1.7; }
-  body .salary-page .salary-result-label { color: #40556d; font-size: 1.125rem; line-height: 1.6; }
-  body .salary-page .salary-net { color: var(--ui-ink, #102329); font-size: clamp(2.5rem, 4.2vw, 3.5rem); font-weight: 600; line-height: 1.1; margin-block: 13px; }
-  body .salary-page .salary-breakdown { margin-block: 28px; }
-  body .salary-page .salary-breakdown > div { border-color: #dfe5e9; gap: 22px; padding-block: 15px; }
-  body .salary-page .salary-breakdown dt { color: #40556d; font-size: 1.0625rem; }
-  body .salary-page .salary-breakdown dd { color: var(--ui-ink, #102329); font-size: 1.25rem; font-weight: 500; }
-  body .salary-page .salary-breakdown small { color: var(--ui-muted, #52606d); font-size: .9375rem; margin-top: 3px; }
-  body .salary-page .salary-super { background: #eff4fb; border: 1px solid #d3deee; border-radius: 12px; padding: 21px; }
-  body .salary-page .salary-super > div { color: #40556d; font-size: 1.0625rem; }
-  body .salary-page .salary-super strong { color: #1c4c98; font-size: 1.5rem; font-weight: 500; }
-  body .salary-page .salary-super p { color: var(--ui-muted, #52606d); font-size: .9375rem; line-height: 1.7; }
-  body .salary-page .salary-next-link { color: #295bb7; padding-block: 12px; margin-top: 18px; }
-  body .salary-page .salary-compare { background: #fff; border: 1px solid var(--ui-line, #dfe5e9); border-radius: 20px; padding: 34px; margin-top: 32px; }
-  body .salary-page .salary-compare h2,
-  body .salary-page .salary-guide h2 { color: var(--ui-ink, #102329); }
-  body .salary-page .salary-rank { color: #145c53; }
-  body .salary-page .salary-compare-numbers { gap: 20px; margin-block: 25px; }
-  body .salary-page .salary-compare-numbers > div { background: #f5f7f7; border: 0; border-radius: 12px; padding: 24px; }
-  body .salary-page .salary-compare-numbers dt { color: var(--ui-muted, #52606d); font-size: 1.0625rem; }
-  body .salary-page .salary-compare-numbers dd { color: #124c45; font-size: 2rem; }
-  body .salary-page .salary-guide { max-width: 780px; margin-top: 64px; }
-  body .salary-page .salary-guide p,
-  body .salary-page .salary-guide li { color: #3b4d56; }
-  body .salary-page a { color: #145c53; }
-  body .salary-page .salary-guide .source-status { color: var(--ui-muted, #52606d); }
 
   /* Tax preparation is a calm step-by-step workspace rather than a stack of tinted boxes. */
   body .tax-simple-head .tax-badges { gap: 12px 24px; margin-top: 20px; font-size: .9375rem; line-height: 1.5; color: var(--ui-muted, #52606d); }
@@ -702,26 +628,18 @@
   body .tax-help .hl-details,
   body .tax-help .tax-faq details { border-color: var(--ui-line, #dfe5e9); }
   body .tax-help .tax-faq summary { color: var(--ui-ink, #102329); font-size: 1.0625rem; line-height: 1.6; min-height: 48px; }
-  body .tax-main .tax-notice,
-  body .salary-page .salary-error,
-  body .salary-page .salary-year-warning { background: #fff7e9; color: #77501f; border: 1px solid #e9d7b7; border-radius: 10px; font-size: 1rem; line-height: 1.7; }
+  body .tax-main .tax-notice { background: #fff7e9; color: #77501f; border: 1px solid #e9d7b7; border-radius: 10px; font-size: 1rem; line-height: 1.7; }
 
   body .calculator-page input:focus-visible,
   body .calculator-page select:focus-visible,
   body .calculator-page button:focus-visible,
   body .calculator-page summary:focus-visible,
-  body .salary-page input:focus-visible,
-  body .salary-page select:focus-visible,
-  body .salary-page button:focus-visible,
   body .tax-main input:focus-visible,
   body .tax-main select:focus-visible,
   body .tax-main button:focus-visible,
   body .tax-main summary:focus-visible {
     outline: 3px solid #2d7f75;
     outline-offset: 3px;
-  }
-  body .salary-page .salary-results :is(button, a):focus-visible {
-    outline-color: #295bb7;
   }
   body .calculator-page .calc-overview:focus {
     outline: 3px solid #2765b5;
@@ -731,9 +649,7 @@
   @media (min-width: 801px) and (max-width: 1080px) {
     body .calculator-page .hl-calculator { grid-template-columns: minmax(300px, .95fr) minmax(0, 1.15fr); gap: 18px; }
     body .calculator-page .hl-form,
-    body .calculator-page .calc-overview,
-    body .salary-page .salary-form,
-    body .salary-page .salary-results { padding: 24px; }
+    body .calculator-page .calc-overview { padding: 24px; }
     body .calculator-page .hl-field-row { grid-template-columns: 1fr; gap: 0; }
     body .tax-workspace { grid-template-columns: 180px minmax(0, 1fr); gap: 24px; }
     body .tax-main { padding: 28px; }
@@ -741,19 +657,15 @@
 
   @media (max-width: 800px) {
     body .calculator-page,
-    body .salary-page,
     body .tax-main { font-size: 1.125rem; line-height: 1.65; }
     body .calculator-page { line-height: 1.55; }
     body .calculator-page .hl-wrap { width: calc(100% - 32px); }
     body .calculator-page .hl-page-head,
-    body .salary-page .salary-heading,
     body .tax-simple-head { padding-block: 26px 24px; }
     body .calculator-page .hl-page-head h1,
-    body .salary-page .salary-heading h1,
     body .tax-simple-head h1 { font-size: 2rem; line-height: 1.2; letter-spacing: -.035em; }
     body .calculator-page .calc-title-note { display: block; margin: 9px 0 0; font-size: 1.0625rem; }
     body .calculator-page .hl-page-head p,
-    body .salary-page .salary-heading > p:last-child,
     body .tax-simple-head > p { font-size: 1.125rem; line-height: 1.7; }
     body .calculator-page .hl-page-head { padding-block: 14px 10px; }
     body .calculator-page .hl-page-head h1 { font-size: 1.75rem; line-height: 1.18; letter-spacing: -.03em; max-width: none; margin: 0 0 4px; }
@@ -767,26 +679,20 @@
     body .calculator-page .calc-insights,
     body .calculator-page .calc-extras { padding: 16px 18px; margin: 0; border-radius: 14px; }
     body .calculator-page .hl-field-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-    body .calculator-page .hl-form h2,
-    body .salary-page .salary-form h2 { font-size: 1.5rem; margin-bottom: 25px; }
+    body .calculator-page .hl-form h2 { font-size: 1.5rem; margin-bottom: 25px; }
     body .calculator-page .hl-form h2 { font-size: 1.25rem; gap: 6px 8px; margin-bottom: 12px; }
     body .calculator-page .hl-form h2 small { font-size: .875rem; white-space: nowrap; }
-    body .calculator-page .hl-field,
-    body .salary-page .hl-field { margin-bottom: 25px; }
+    body .calculator-page .hl-field { margin-bottom: 25px; }
     body .calculator-page .hl-field { margin-bottom: 10px; }
     body .calculator-page .hl-field > span,
-    body .salary-page .hl-field > span,
     body .calc-bank-dialog .hl-field > span { font-size: 1.125rem; }
     body .calculator-page .hl-field input,
     body .calculator-page .hl-field select,
-    body .salary-page .hl-field input,
-    body .salary-page .hl-field select,
     body .calc-bank-dialog .hl-field input,
     body .calc-bank-dialog .hl-field select { min-height: 60px; height: 60px; font-size: 1.25rem; padding-block: 14px; }
     body .calculator-page .hl-field input,
     body .calculator-page .hl-field select { min-height: 54px; height: 54px; font-size: 1.125rem; padding-block: 11px; }
-    body .calculator-page .hl-field small,
-    body .salary-page .hl-field small { font-size: 1rem; line-height: 1.7; }
+    body .calculator-page .hl-field small { font-size: 1rem; line-height: 1.7; }
     body .calculator-page .hl-result-label { font-size: 1.125rem; color: #40545b; }
     body .calculator-page .hl-result-total { font-size: clamp(2rem, 8vw, 2.625rem); line-height: 1.12; }
     body .calculator-page .hl-result-sub { color: var(--ui-muted, #52606d); font-size: 1.125rem; line-height: 1.5; margin-bottom: 14px; }
@@ -843,22 +749,6 @@
     body .calc-bank-dialog .bank-scenario-actions { flex-direction: column; }
     body .calc-bank-dialog .bank-scenario-actions button { font-size: 1.0625rem; min-height: 52px; }
     body .calc-bank-dialog .calc-bank-done { font-size: 1.0625rem; min-height: 56px; }
-    body .salary-page .salary-workspace { grid-template-columns: 1fr; gap: 20px; }
-    body .salary-page .salary-form,
-    body .salary-page .salary-results,
-    body .salary-page .salary-compare { padding: 26px 22px; border-radius: 18px; }
-    body .salary-page .salary-net { font-size: 2.5rem; }
-    body .salary-page .salary-results .salary-hint,
-    body .salary-page .salary-hint { font-size: 1rem; line-height: 1.7; }
-    body .salary-page .salary-periods button { font-size: 1rem; min-height: 50px; }
-    body .salary-page .salary-breakdown dt,
-    body .salary-page .salary-super > div { font-size: 1.125rem; }
-    body .salary-page .salary-breakdown small,
-    body .salary-page .salary-super p { font-size: 1rem; }
-    body .salary-page .salary-compare-fields { grid-template-columns: 1fr; gap: 0; }
-    body .salary-page .salary-compare-numbers { grid-template-columns: 1fr; gap: 14px; }
-    body .salary-page .salary-check,
-    body .salary-page .salary-settings > summary { font-size: 1.125rem; }
     body .tax-workspace { grid-template-columns: 1fr; gap: 18px; margin-top: 0; }
     body .tax-sidebar { position: static; display: flex; gap: 20px; align-items: center; padding: 0; }
     body .tax-sidebar ol { display: flex; flex: 1; justify-content: space-between; gap: 10px; margin: 0; }
@@ -923,15 +813,10 @@
     body .calculator-page .hl-form,
     body .calculator-page .calc-insights,
     body .calculator-page .calc-extras,
-    body .salary-page .salary-form,
-    body .salary-page .salary-results,
-    body .salary-page .salary-compare,
     body .tax-main { padding-inline: 18px; }
     body .calculator-page .hl-result-stats { grid-template-columns: 1fr; gap: 18px; }
     body .calc-bank-dialog .bank-rate-grid { grid-template-columns: 1fr; }
     body .calc-bank-dialog { padding: 17px; }
-    body .salary-page .salary-periods { gap: 2px; padding: 4px; }
-    body .salary-page .salary-periods button { font-size: .9375rem; }
   }
   @media (max-width: 379px) {
     body .calculator-page .hl-field-row { grid-template-columns: 1fr; gap: 0; }
