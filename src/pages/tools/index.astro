@@ -1,0 +1,8 @@
+---
+import Base from '../../layouts/Base.astro';
+import TaskPicker from '../../components/TaskPicker.astro';
+---
+<Base title="Find a money tool" description="Choose what you want to work out: take-home pay, savings, bills, a home loan or tax-return preparation. Free Australian tools with worked examples and clear limits.">
+ <header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / All tools</div><h1>One question.<br />The right tool.</h1><p>Choose what you want to work out. Start with a few numbers; the explanations are there when you need them.</p></header>
+ <div class="hl-wrap hl-page-main"><TaskPicker/><aside class="hl-help-strip"><p>All amounts are in AUD. Calculators run in your browser; optional saved plans stay on your device. Results are educational estimates. <a href="/methodology/">Read the assumptions</a> or <a href="/learn/">start with a worked example</a>.</p></aside></div>
+</Base>

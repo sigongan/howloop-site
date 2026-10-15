@@ -9,7 +9,7 @@ const language = languageForPath(Astro.url.pathname);
 const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const current = (item: typeof NAV[number]) =>
   item.matches.some(route => path === route || path.startsWith(route + '/'))
-    ? (path === item.href ? 'page' : 'true')
+    ? (path === item.href.replace(/\/+$/, '') ? 'page' : 'true')
     : undefined;
 ---
 <header class="hl-header">
@@ -20,7 +20,7 @@ const current = (item: typeof NAV[number]) =>
     )}
     <nav class="hl-desktop-nav" aria-label="Main navigation">
       {NAV.map(item => (
-        <a href={item.href} data-money-area={item.area || undefined} aria-current={current(item)}>
+        <a href={item.href} aria-current={current(item)}>
           <ToolIcon name={item.icon} />{item.label}
         </a>
       ))}
@@ -41,7 +41,7 @@ const current = (item: typeof NAV[number]) =>
         <div class="hl-mobile-dropdown">
           <nav class="hl-mobile-nav" aria-label="Mobile navigation">
             {NAV.map(item => (
-              <a href={item.href} data-money-area={item.area || undefined} aria-current={current(item)}>
+              <a href={item.href} aria-current={current(item)}>
                 <ToolIcon name={item.icon} />{item.label}
               </a>
             ))}

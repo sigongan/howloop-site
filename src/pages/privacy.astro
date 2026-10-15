@@ -2,49 +2,27 @@
 import Base from '../layouts/Base.astro';
 import { SITE } from '../consts';
 ---
-<Base
-  title="Privacy & Cookie Policy"
-  description="Howloop privacy policy covering local browser calculations, Google AdSense advertising cookies, optional analytics consent, and Australian privacy principles."
->
-  <div class="hl-wrap hl-prose-wrap">
-    <article class="hl-prose">
-      <h1>Privacy &amp; Cookie Policy</h1>
-      <p><strong>Last updated:</strong> October 2026 · <strong>Domain:</strong> <a href={SITE.url}>{SITE.domain}</a></p>
-
-      <div class="hl-policy-callout">
-        <strong>Privacy Summary:</strong> Financial numbers you type into Howloop calculators (salary, savings balances, mortgage amounts, or 13-week cash-flow plans) are processed locally inside your browser. We do not transmit your calculator inputs to a central database.
-      </div>
-
-      <h2>1. Calculator Inputs &amp; Device-Local Storage</h2>
-      <p>
-        All interactive calculators on {SITE.name} execute client-side in your web browser. If you explicitly choose to save a scenario or 13-week payday plan, that data is stored only in your browser's local storage (<code>localStorage</code>) on your own device and can be cleared or exported to CSV at any time.
-      </p>
-
-      <h2>2. Google AdSense &amp; Third-Party Advertising Cookies</h2>
-      <p>
-        We use Google AdSense to display advertisements on select informational and tool pages. In accordance with <a href="https://support.google.com/adsense/answer/1348695" rel="noopener noreferrer" target="_blank">Google AdSense Required Privacy Content Policies</a>, please note:
-      </p>
-      <ul>
-        <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites on the internet.</li>
-        <li>Google's use of advertising cookies enables Google and its partners to serve advertisements to our users based on their visit to {SITE.domain} and/or other sites on the Internet.</li>
-        <li>Users may opt out of personalized advertising at any time by visiting <a href="https://adssettings.google.com/" rel="noopener noreferrer" target="_blank">Google Ads Settings</a> or <a href="https://www.aboutads.info/choices/" rel="noopener noreferrer" target="_blank">www.aboutads.info/choices</a>.</li>
-        <li>To understand how Google collects and processes data when you visit sites that use Google services, please review <a href="https://policies.google.com/technologies/partner-sites" rel="noopener noreferrer" target="_blank">How Google uses information from sites or apps that use our services</a>.</li>
-      </ul>
-
-      <h2 id="analytics-choices">3. Optional Analytics &amp; Consent Controls</h2>
-      <p>
-        Optional Google Analytics remains disabled by default until you explicitly opt in via our privacy banner. If you decline or revoke consent, accessible analytics cookies are cleared from your browser.
-      </p>
-
-      <h2>4. Server Logs &amp; Security</h2>
-      <p>
-        Our static hosting provider (Cloudflare Pages) automatically processes standard HTTP request metadata (IP address, user-agent string, and requested URL) solely for network routing, DDoS mitigation, and security monitoring.
-      </p>
-
-      <h2>5. Contact Us</h2>
-      <p>
-        For privacy inquiries, data questions, or policy feedback, please contact us at <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or visit our <a href="/contact/">Contact &amp; Feedback</a> page.
-      </p>
-    </article>
-  </div>
+<Base title="Privacy and cookies" description="How Howloop handles calculator inputs, optional local saves, Google Analytics choices, hosting analytics, advertising verification and optional AI questions.">
+ <div class="hl-wrap hl-prose-wrap"><article class="hl-prose">
+  <h1>Privacy and cookies</h1>
+  <p>Updated 16 October 2026 · <a href={SITE.url}>{SITE.domain}</a></p>
+  <h2>Your calculator amounts</h2>
+  <p>Calculations run in your browser. Salary, savings, mortgage, cash-flow and tax-checklist entries are not submitted to a Howloop financial database. We do not need your TFN, bank login or account number. Please do not enter those identifiers.</p>
+  <h2>Saving on your device</h2>
+  <p>Some tools let you choose to save a plan in your browser’s local storage. It stays on that browser and device until you clear it using the tool or your browser settings. Theme and analytics choices also use local storage. Language switching may temporarily retain supported calculator inputs in this tab’s session storage. Local storage is not an account backup; anyone using the same browser profile may be able to see saved plans.</p>
+  <h2 id="analytics-choices">Optional Google Analytics</h2>
+  <p>Google Analytics is off until you choose “Accept analytics”. It measures page use and a limited set of tool actions. Our event code does not include calculator amounts, checklist answers or free-text entries. Google Analytics can process device/browser information, page paths and usage events and use analytics cookies. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner sites</a>.</p>
+  <p>Use “Privacy choices” on any page to change your choice. Keeping essentials leaves optional Google Analytics off. Revoking consent clears analytics cookies accessible to this site; reload the page to unload an already loaded script. This choice controls Google Analytics, not the hosting security or Cloudflare analytics described below.</p>
+  <h2>Hosting and Cloudflare analytics</h2>
+  <p>Cloudflare Pages serves the site and processes request information such as IP address, requested URL and browser information for delivery and security. Our hosted site also includes Cloudflare Web Analytics for visit and page-performance measurement. This is separate from optional Google Analytics and does not receive our calculator field values through Howloop’s event code. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a> and <a href="https://developers.cloudflare.com/web-analytics/">Web Analytics documentation</a> for the provider’s processing details.</p>
+  <h2>Advertising verification and future ads</h2>
+  <p>Ad serving is disabled in this release. A public Google publisher ID, ownership-verification metadata and an ads.txt file identify the intended AdSense account. Those declarations do not themselves load Google’s advertising script or establish site approval.</p>
+  <p>If advertising is enabled later, this policy and the consent controls must be updated to match the deployed service. Google and other advertising vendors may use cookies based on visits to this and other sites. Google’s advertising cookies can enable personalised advertising. Choices are available in <a href="https://adssettings.google.com/">Google Ads Settings</a> and at <a href="https://www.aboutads.info/choices/">AboutAds choices</a>. Applicable regions require appropriate advertising consent controls; the analytics choice here is not an advertising consent system.</p>
+  <h2>Optional AI explanations</h2>
+  <p>The tax checklist can offer a separately configured optional AI panel. It is unavailable when the service is not configured. Choosing to enable that panel loads Cloudflare Turnstile verification. If you then consent and submit a question, Howloop sends the question and selected general topic to OpenAI for an explanation. Your checklist, expense records and calculator amounts are not included automatically.</p>
+  <p>Do not put personal identifiers, private documents or financial figures in an AI question. The request uses OpenAI’s API with response storage disabled, but that is not a promise of no provider processing or retention. See <a href="https://openai.com/policies/privacy-policy/">OpenAI’s privacy policy</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a>. AI answers can be wrong and are not tax advice.</p>
+  <h2>Email and external links</h2>
+  <p>If you email us, your message and address are handled by email providers; that is separate from local calculator storage. We use messages to respond to feedback and corrections. Links to banks, government sources and other sites take you to those providers and their own policies.</p>
+  <h2>Contact</h2><p>For privacy questions or corrections, email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Please use sample amounts when reporting a calculation issue.</p>
+ </article></div>
 </Base>

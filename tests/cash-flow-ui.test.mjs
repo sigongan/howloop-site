@@ -17,7 +17,7 @@ test('controller does not upload financial inputs or use raw HTML',async()=>{
   assert.match(source,/setItem\(CASH_FLOW_STORAGE_KEY/);assert.match(source,/removeItem\(CASH_FLOW_STORAGE_KEY/);
 });
 test('product page discloses checkout and planned-feature status without purchase claims',async()=>{
-  const page=await read('src/pages/products/payday-planner.astro');
+  const page=await read('src/pages/_products/payday-planner.astro');
   assert.match(page,/NOT AVAILABLE TO BUY/);assert.match(page,/planned, not delivered/);assert.match(page,/no checkout, preorder or payment/);
   assert.doesNotMatch(page,/application\/ld\+json|schema.org\/Offer|buy.stripe|checkout.stripe|gumroad.com/);
 });

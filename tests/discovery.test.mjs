@@ -17,13 +17,14 @@ test('layout, sitemap and readiness share an explicit indexability policy', () =
   assert.match(read('astro.config.mjs'), /filter:.*isIndexableRoute\(new URL\(page\)\.pathname\)/);
   assert.match(read('src/layouts/Base.astro'), /noindex = !isIndexableRoute\(Astro.url.pathname\)/);
   assert.match(read('scripts/check-readiness.mjs'), /const excluded = !isIndexableRoute\(route\)/);
-  assert.match(read('src/pages/products/payday-planner.astro'), /noindex=\{true\}/);
+  assert.match(read('src/pages/_products/payday-planner.astro'), /noindex=\{true\}/);
 });
 
 test('all-tools navigation goes to the complete directory and the planner has persistent links', () => {
   const header = read('src/components/Header.astro');
-  assert.match(header, /class="hl-all-tools" href="\/start\/"/);
-  assert.match(header, /<a href="\/start\/">All tools/);
+  assert.match(header, /NAV.map/);
+  assert.match(read('src/consts.ts'), /href: '\/tools\/', label: 'All tools'/);
+  assert.match(read('src/pages/tools/index.astro'), /<TaskPicker/);
   assert.match(read('src/components/TaskPicker.astro'), /href:'\/tools\/cash-flow\/'/);
   assert.match(read('src/components/Footer.astro'), /href="\/tools\/cash-flow\/"/);
 });
