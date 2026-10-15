@@ -12,11 +12,12 @@ const groups=earnings.populations.all.groups;
 ---
 <Base title="Take-home pay calculator Australia 2026–27" description="Turn your salary into weekly, fortnightly and monthly take-home pay. Separate tax, HELP and super, then compare gross pay with official occupation-group earnings.">
 <div class="salary-page hl-wrap">
-  <header class="salary-heading"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/calculators/">Calculators</a> / Take-home pay</div><p class="salary-kicker">YOUR PAY, MADE CLEAR · {PAYROLL.year}</p><h1>What lands in your bank account?</h1><p>Start with your salary. See your pay after tax.</p></header>
+  <header class="salary-heading"><div class="hl-breadcrumb"><a href="/">Home</a> / <a href="/calculators/">Calculators</a> / Take-home pay</div><p class="salary-kicker">YOUR PAY, MADE CLEAR · {PAYROLL.year}</p><h1>What lands in your bank account?</h1><p>Know what you can spend, what goes to tax, and what goes to super. Try a pay rise or compare two offers.</p></header>
   <p class="salary-year-warning" data-pay-year-warning hidden>These are 2026–27 rules. Check the current ATO tables before using this estimate for another financial year.</p>
   <div class="salary-workspace">
     <form id="salary-form" class="salary-form">
-      <h2>Your pay</h2>
+      <div class="salary-form-heading"><span class="salary-step" aria-hidden="true">01</span><h2 data-pay-form-title>Your pay details</h2></div>
+      <p class="salary-editing-note" data-offer-editing hidden>Offer A is kept below. Change these details to try offer B.</p>
       <Field name="amount" label="Pay before tax" value={85000} max={10000000}/>
       <label class="hl-field"><span>This amount is</span><select name="inputPeriod"><option value="annual">Per year</option><option value="monthly">Per month</option><option value="fortnightly">Per fortnight (2 weeks)</option><option value="weekly">Per week</option></select></label>
       <label class="hl-field"><span>Does it include employer super?</span><select name="includesSuper"><option value="no">No — super is on top</option><option value="yes">Yes — this is my total package</option></select></label>
@@ -33,6 +34,7 @@ const groups=earnings.populations.all.groups;
       <p class="salary-hint">Australian tax residents with a TFN. Standard Medicare treatment. Your numbers stay in this page; no sign-up.</p>
     </form>
     <section class="salary-results" id="pay-result" tabindex="-1" aria-label="Your take-home pay">
+      <div class="salary-result-heading"><span class="salary-step" aria-hidden="true">02</span><p>Your money, after tax</p><span class="salary-live-label">Live estimate</span></div>
       <div class="salary-periods" role="group" aria-label="Show pay period">{[['weekly','Week'],['fortnightly','2 weeks'],['monthly','Month'],['annual','Year']].map(([value,label])=><button type="button" data-pay-period={value} aria-pressed={value==='fortnightly'?'true':'false'}>{label}</button>)}</div>
       <p class="salary-hint" data-pay-example>Example salary · change it to yours</p>
       <p class="salary-result-label" data-net-label>Estimated take-home every 2 weeks</p>
@@ -46,14 +48,27 @@ const groups=earnings.populations.all.groups;
       </dl>
       <div class="salary-super"><div><span>Employer super</span><strong data-pay-super>—</strong></div><p>Separate from your bank deposit. An average for this period, before super fund tax.</p></div>
       <p class="salary-hint">An estimate for regular pay, not your final annual tax bill. Payslip rounding and personal circumstances can change the amount.</p>
-      <a class="salary-next-link" href="#compare-pay">How does my pay compare? ↓</a>
+      <button class="salary-offer-toggle" type="button" data-offer-toggle aria-expanded="false" aria-controls="offer-comparison" disabled>Compare a pay rise or job offer <span aria-hidden="true">+</span></button>
+      <section class="salary-offers" id="offer-comparison" aria-label="Compare two pay offers" hidden>
+        <p class="salary-offer-intro">Offer A is the estimate you kept. Offer B follows the pay details you edit.</p>
+        <p class="salary-offer-difference" data-offer-difference aria-live="polite"></p>
+        <div class="salary-offer-pair">
+          <div><span>Offer A · kept</span><strong data-offer-a-net>—</strong><small data-offer-a-period></small></div>
+          <div><span>Offer B · editing</span><strong data-offer-b-net>—</strong><small data-offer-b-period></small></div>
+        </div>
+        <details class="salary-offer-settings"><summary>Compare the details behind these amounts</summary>
+          <div class="salary-offer-setting-pair"><div><h3>Offer A</h3><p data-offer-a-settings></p></div><div><h3>Offer B</h3><p data-offer-b-settings></p></div></div>
+        </details>
+        <p class="salary-offer-privacy">Kept only while this page is open. Refreshing clears the comparison.</p>
+      </section>
+      <a class="salary-next-link" href="#compare-pay">See the pay range for your occupation ↓</a>
     </section>
   </div>
   <PaydayPlannerInvite placement="salary"/>
   <noscript><p class="hl-noscript">Enable JavaScript to calculate your pay. The guide and official sources below are available without it.</p></noscript>
 
   <section class="salary-compare" id="compare-pay" aria-labelledby="compare-title">
-    <div><p class="salary-kicker">ABS SURVEY · MAY 2025</p><h2 id="compare-title">How does your pay compare?</h2><p>Compare <strong>pay before tax, excluding employer super</strong> with a broad occupation group.</p></div>
+    <div><p class="salary-kicker">ABS SURVEY · MAY 2025</p><h2 id="compare-title">Put your pay in perspective.</h2><p>Compare <strong>pay before tax, excluding employer super</strong> with a broad occupation group.</p></div>
     <div class="salary-compare-fields">
       <label class="hl-field"><span>Your occupation group</span><select id="pay-occupation"><option value="">Choose a group…</option>{groups.map(group=><option value={group.id}>{group.name}</option>)}</select></label>
       <label class="hl-field"><span>Compare with</span><select id="pay-population"><option value="fulltime">Full-time adults, non-managerial</option><option value="all">All employees, including part-time</option></select></label>

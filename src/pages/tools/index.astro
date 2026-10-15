@@ -2,7 +2,17 @@
 import Base from '../../layouts/Base.astro';
 import TaskPicker from '../../components/TaskPicker.astro';
 ---
-<Base title="Find a money tool" description="Choose what you want to work out: take-home pay, savings, bills, a home loan or tax-return preparation. Free Australian tools with worked examples and clear limits.">
- <header class="hl-page-head hl-wrap"><div class="hl-breadcrumb"><a href="/">Home</a> / All tools</div><h1>One question.<br />The right tool.</h1><p>Choose what you want to work out. Start with a few numbers; the explanations are there when you need them.</p></header>
- <div class="hl-wrap hl-page-main"><TaskPicker/><aside class="hl-help-strip"><p>All amounts are in AUD. Calculators run in your browser; optional saved plans stay on your device. Results are educational estimates. <a href="/methodology/">Read the assumptions</a> or <a href="/learn/">start with a worked example</a>.</p></aside></div>
+<Base title="Free Australian money tools" description="Find the right free tool for take-home pay, savings goals, bills, home loans or tax preparation. Clear estimates, practical examples and no account required.">
+  <header class="finder-page-head hl-wrap">
+    <nav class="finder-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">All tools</span></nav>
+    <p class="finder-eyebrow">A little clarity goes a long way</p>
+    <div class="finder-page-intro"><h1>Your money.<br /><em>Made clearer.</em></h1><p>A pay rise. A first home. A rainy-day fund. Start with the question on your mind, and find a useful next step.</p></div>
+  </header>
+  <div class="hl-wrap finder-page-main">
+    <TaskPicker/>
+    <aside class="finder-footnote" aria-label="About these tools">
+      <p><strong>A helpful estimate, with the workings.</strong> All amounts are in AUD. Our calculators run in your browser, and optional saved plans stay on your device. Results are educational estimates, not personal financial advice.</p>
+      <div><a href="/methodology/">See how we calculate <span aria-hidden="true">↗</span></a><a href="/learn/">Learn with a worked example <span aria-hidden="true">↗</span></a></div>
+    </aside>
+  </div>
 </Base>

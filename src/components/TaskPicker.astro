@@ -3,39 +3,62 @@ import ToolIcon from './ToolIcon.astro';
 import '../styles/tool-directory.css';
 const {calculatorsOnly=false}=Astro.props;
 const groups=[
-  {id:'pay',title:'Take-home pay',icon:'wallet',description:'Know what lands in your bank account.',tools:[
-    {href:'/calculators/salary/',title:'Pay after tax',detail:'See your weekly, fortnightly or monthly pay, with super shown separately.',icon:'wallet',action:'Calculate my pay'},
-    {href:'/tools/cash-flow/',title:'Payday & bills planner',detail:'Put weekly, fortnightly and monthly payments on one calendar. Find the days cash could run low.',icon:'checklist',action:'Plan my paydays'},
+  {id:'pay',title:'Pay & everyday money',description:'Know what comes in. Plan what goes out.',tools:[
+    {href:'/calculators/salary/',title:'Pay after tax',detail:'Turn your salary into weekly, fortnightly or monthly take-home pay.',start:'Start with your salary',icon:'wallet',action:'Work out my pay',keywords:'salary wages income net gross PAYG super annual hourly tax'},
+    {href:'/tools/cash-flow/',title:'Payday & bills planner',detail:'See the days your balance could run low, before the next payday arrives.',start:'Add your paydays and bills',icon:'checklist',action:'Plan my cash flow',keywords:'cashflow budget rent expenses calendar weekly monthly'},
   ]},
-  {id:'savings',title:'Savings',icon:'growth',description:'Grow your savings, reach a goal or build a buffer.',tools:[
-    {href:'/calculators/compound-interest/',title:'Savings growth',detail:'See your future balance and how much interest you could earn.',icon:'growth',action:'Calculate my savings'},
-    {href:'/calculators/savings-goal/',title:'Save for a goal',detail:'Work out how much to save each month to reach your target.',icon:'target',action:'Plan my savings'},
-    {href:'/calculators/emergency-fund/',title:'Money for emergencies',detail:'Work out a cash buffer for your essential living costs.',icon:'shield',action:'Calculate my buffer'},
-    ...(!calculatorsOnly?[{href:'/banks/',title:'Bank savings rates',detail:'Find your bank’s published products, rates and conditions.',icon:'bank',action:'Find my bank'}]:[]),
+  {id:'savings',title:'Savings & goals',description:'Give your next milestone a plan.',tools:[
+    {href:'/calculators/compound-interest/',title:'Savings growth',detail:'See what regular deposits and compound interest could add up to.',start:'Start with your savings balance',icon:'growth',action:'See my future balance',keywords:'compound interest savings rate growth monthly deposit investment'},
+    {href:'/calculators/savings-goal/',title:'Save for a goal',detail:'Find the monthly amount to set aside for a target and a date.',start:'Choose a target and deadline',icon:'target',action:'Build my savings plan',keywords:'goal target holiday car wedding deposit save'},
+    {href:'/calculators/emergency-fund/',title:'Emergency fund',detail:'Turn your essential living costs into a practical cash-buffer target.',start:'Add your essential monthly costs',icon:'shield',action:'Work out my buffer',keywords:'emergency fund safety rainy day buffer expense job loss'},
+    ...(!calculatorsOnly?[{href:'/banks/',title:'Bank savings rates',detail:'Explore published savings products, rates and the conditions attached.',start:'Choose your bank',icon:'bank',action:'Explore bank rates',keywords:'bank accounts interest rate compare bonus conditions term savings'}]:[]),
   ]},
-  {id:'home',title:'Home loans',icon:'home',description:'Plan your deposit and your repayments.',tools:[
-    {href:'/calculators/mortgage/',title:'Mortgage & offset',detail:'See your repayments, then try an offset or extra payments.',icon:'home',action:'Calculate repayments'},
-    {href:'/calculators/lvr/',title:'Home deposit & loan',detail:'See how much you would borrow compared with the home’s value (LVR).',icon:'home',action:'Check my deposit'},
+  {id:'home',title:'Buying a home',description:'See how a home loan could fit your life.',tools:[
+    {href:'/calculators/mortgage/',title:'Mortgage & offset',detail:'Estimate repayments, then see the effect of an offset or extra payments.',start:'Add a loan amount, rate and term',icon:'home',action:'Explore repayments',keywords:'mortgage home loan repayment refinance offset extra interest'},
+    {href:'/calculators/lvr/',title:'Home deposit & LVR',detail:'See your deposit share and how much of the property price you would borrow.',start:'Add a property price and deposit',icon:'home',action:'Check my deposit',keywords:'house home loan value ratio LVR deposit purchase property LMI'},
   ]},
-  ...(!calculatorsOnly?[{id:'tax',title:'Tax returns',icon:'checklist',description:'Get organised before you lodge.',tools:[
-    {href:'/tax-return/',title:'Employee tax checklist',detail:'Gather your records and review work expenses before using myTax.',icon:'checklist',action:'Build my tax checklist'},
-  ]}]:[]),
+  ...(!calculatorsOnly?[{id:'tax',title:'Tax-time preparation',description:'Get the paperwork in order.',tools:[
+    {href:'/tax-return/',title:'Employee tax checklist',detail:'Organise income records and work expenses before preparing your tax return.',start:'Work through a guided checklist',icon:'checklist',action:'Prepare my checklist',keywords:'tax return myTax lodge lodging deduction work expense receipt employee ATO'}],}]:[]),
 ];
+const total=groups.reduce((count,group)=>count+group.tools.length,0);
 ---
-<div class="tool-directory">
-  <nav class="tool-directory-jumps" aria-label="Jump to a money topic">
-    {groups.map(group=><a href={'#tools-'+group.id} data-money-area={group.id}><ToolIcon name={group.icon}/><span>{group.title}</span></a>)}
+<div class="tool-finder" data-tool-finder>
+  <div class="finder-toolbar">
+    <form class="finder-search" role="search" aria-label="Find a money tool" data-tool-controls hidden>
+      <label for="tool-finder-query">What would you like to work out?</label>
+      <div class="finder-search-field">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+        <input id="tool-finder-query" type="search" placeholder="Try salary, savings or a home loan" autocomplete="off" aria-controls="tool-finder-results" data-tool-query />
+        <button type="button" class="finder-clear" data-tool-clear hidden>Clear</button>
+      </div>
+    </form>
+    <p class="finder-count" role="status" aria-live="polite" aria-atomic="true" data-tool-status>{total} free tools. No account needed.</p>
+  </div>
+  <nav class="finder-topics" aria-label="Jump to a money topic" data-tool-topics>
+    <span>Browse by topic</span>
+    {groups.map(group=><a href={'#tools-'+group.id}>{group.title}<span aria-hidden="true">↗</span></a>)}
   </nav>
-  <div class="tool-directory-groups">
-    {groups.map(group=><section class="tool-topic" id={'tools-'+group.id} aria-labelledby={'tools-'+group.id+'-title'} data-money-area={group.id}>
-      <header class="tool-topic-heading"><span class="money-area-icon"><ToolIcon name={group.icon}/></span><div><h2 id={'tools-'+group.id+'-title'}>{group.title}</h2><p>{group.description}</p></div></header>
-      <div class="tool-topic-grid">
-        {group.tools.map(tool=><a class="tool-choice" href={tool.href}>
-          <div class="tool-choice-heading"><span class="tool-choice-icon"><ToolIcon name={tool.icon}/></span><h3>{tool.title}</h3></div>
+  <div class="finder-groups" id="tool-finder-results">
+    {groups.map((group,index)=><section class="finder-topic" id={'tools-'+group.id} aria-labelledby={'tools-'+group.id+'-title'} data-tool-group>
+      <header class="finder-topic-heading"><span class="finder-topic-number" aria-hidden="true">0{index+1}</span><h2 id={'tools-'+group.id+'-title'}>{group.title}</h2><p>{group.description}</p></header>
+      <div class="finder-card-grid">
+        {group.tools.map(tool=><a class="finder-card" href={tool.href} data-tool-search={[tool.title,tool.detail,tool.start,tool.keywords,group.title].join(' ')}>
+          <span class="finder-card-icon"><ToolIcon name={tool.icon}/></span>
+          <h3>{tool.title}</h3>
           <p>{tool.detail}</p>
-          <span class="tool-choice-action"><span>{tool.action}</span><ToolIcon name="arrow"/></span>
+          <span class="finder-card-start">{tool.start}</span>
+          <span class="finder-card-action">{tool.action}<ToolIcon name="arrow"/></span>
         </a>)}
       </div>
     </section>)}
   </div>
+  <div class="finder-empty" data-tool-empty hidden>
+    <h2>No tools match that search.</h2>
+    <p>Try a simpler term, such as “salary”, “savings”, “mortgage” or “tax”.</p>
+    <button class="finder-reset" type="button" data-tool-reset>Show all tools <span aria-hidden="true">↗</span></button>
+  </div>
 </div>
+<script>
+  import { initToolSearch } from '../scripts/tool-search.mjs';
+  document.querySelectorAll('[data-tool-finder]').forEach(initToolSearch);
+</script>

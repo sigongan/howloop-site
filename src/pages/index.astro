@@ -6,48 +6,47 @@ import { savings } from '../lib/finance.mjs';
 import guides from '../data/learning.json';
 import '../styles/home.css';
 const example = savings({principal:1000,contribution:200,annualRate:4,years:5});
-const more = savings({principal:1000,contribution:250,annualRate:4,years:5});
 const money = n => new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:0}).format(n);
 const tasks = [
- {number:'01',icon:'wallet',title:'What’s my take-home pay?',text:'Turn your salary into weekly, fortnightly or monthly pay. See tax and super separately.',href:'/calculators/salary/',action:'Calculate my pay',area:'pay'},
- {number:'02',icon:'growth',title:'How could my savings grow?',text:'Start with your balance and regular deposits. See what you put in and what interest adds.',href:'/calculators/compound-interest/',action:'Calculate my savings',area:'savings'},
- {number:'03',icon:'checklist',title:'Will my pay cover my bills?',text:'Put paydays and bills on a 13-week calendar. Find a shortfall before the bill arrives.',href:'/tools/cash-flow/',action:'Plan my paydays',area:'home'},
+ {icon:'wallet',title:'Understand your pay',text:'See what reaches your bank account. Compare two offers, with tax and super explained.',href:'/calculators/salary/',action:'Calculate take-home pay',tag:'PAY & SUPER',colour:'peach'},
+ {icon:'growth',title:'Give your savings a plan',text:'See where regular deposits could take you. Separate your contributions from interest.',href:'/calculators/compound-interest/',action:'Explore your savings',tag:'SAVING & GOALS',colour:'sage'},
+ {icon:'checklist',title:'Stay ahead of your bills',text:'Put income and bills on a 13-week calendar. Spot the tight weeks before they happen.',href:'/tools/cash-flow/',action:'Plan your paydays',tag:'EVERYDAY MONEY',colour:'sand'},
 ];
 const reading = ['salary-including-super-vs-plus-super','how-compound-interest-works','offset-vs-extra-repayments'].map(slug=>guides.find(g=>g.slug===slug));
 ---
-<Base title={SITE.name} description="Free Australian money tools, without the overwhelm. Calculate take-home pay, see your savings grow and plan bills around payday. Clear examples and linked sources.">
- <div class="home-simple">
-  <section class="home-intro hl-wrap" aria-labelledby="home-title">
-   <div class="home-intro-copy">
-    <p class="home-eyebrow"><span aria-hidden="true"></span>Everyday money, made clearer</p>
-    <h1 id="home-title">Less guesswork.<br />More <em>clarity.</em></h1>
-    <p class="home-lead">Your pay. Your savings. Your next bill.<br />Simple Australian tools to help you work it out.</p>
-    <a class="home-primary" href="#choose">Find my starting point <span aria-hidden="true">↗</span></a>
-    <p class="home-small">Free to use · No account needed · All amounts in AUD</p>
-   </div>
-   <aside class="home-example" aria-labelledby="example-title">
-    <div class="home-example-top"><span>A little, regularly.</span><span class="home-example-tag">Worked example</span></div>
-    <h2 id="example-title">$200 a month.<br />A bigger buffer in five years.</h2>
-    <div class="home-example-total">{money(example.balance)} <span>illustrative balance</span></div>
-    <div class="home-growth" aria-hidden="true">{[19,28,39,51,65,81,100].map(h=><span style={`--bar-height:${h}%`}></span>)}</div>
-    <dl class="home-example-breakdown"><div><dt>Your money</dt><dd>{money(example.deposits)}</dd></div><div><dt>Interest added</dt><dd>{money(example.interest)}</dd></div></dl>
-    <p>Start with $1,000, add $200 at each month’s end, and assume 4% a year compounded monthly. Before tax, fees and inflation. An example, not a bank offer or forecast.</p>
-    <a href="/calculators/compound-interest/">Try your own numbers <span aria-hidden="true">→</span></a>
-   </aside>
-  </section>
-  <section class="home-choose hl-wrap" id="choose" aria-labelledby="choose-title">
-   <div class="home-section-heading"><div><p class="home-eyebrow">Start with one question</p><h2 id="choose-title">What would you like to work out?</h2></div><a href="/tools/">See all tools →</a></div>
-   <div class="home-task-grid">{tasks.map(task=><a class="home-task" href={task.href} data-money-area={task.area}><div class="home-task-top"><span class="home-task-icon"><ToolIcon name={task.icon}/></span><span>{task.number}</span></div><h3>{task.title}</h3><p>{task.text}</p><span class="home-task-action">{task.action}<span aria-hidden="true">↗</span></span></a>)}</div>
-   <p class="home-other">Looking at a home loan? <a href="/calculators/mortgage/">Work out repayments &amp; offsets →</a></p>
-  </section>
-  <section class="home-understand hl-wrap" aria-labelledby="understand-title">
-   <div class="home-section-heading"><div><p class="home-eyebrow">Understand, then decide</p><h2 id="understand-title">One idea at a time.</h2></div><a href="/learn/">Explore the guides →</a></div>
-   <div class="home-reading">{reading.map((guide,i)=><a href={`/learn/${guide.slug}/`}><span class="home-reading-number">0{i+1}</span><div><small>{guide.category} · {guide.minutes} min</small><h3>{guide.title}</h3><p>{guide.summary}</p></div><span aria-hidden="true">↗</span></a>)}</div>
-  </section>
-  <section class="home-practice hl-wrap" aria-labelledby="practice-title">
-   <div><p class="home-eyebrow">Put the example to work</p><h2 id="practice-title">What changes if you save another $50?</h2><p>Keep the same starting balance, five years and hypothetical 4% rate. Increasing the monthly deposit from $200 to $250 produces {money(more.balance)} instead of {money(example.balance)}.</p><p>That is about {money(more.balance-example.balance)} more. Of that difference, $3,000 comes from the extra deposits; the rest is additional interest. Separating deposits from interest helps you see what you control.</p></div>
-   <div class="home-practice-aside"><h3>Try one change at a time.</h3><ol><li>Enter an amount you could save regularly.</li><li>Keep the rate and time fixed; change the deposit.</li><li>Then lower the rate to see a less optimistic scenario.</li></ol><p>Real bank rates can change. The model uses monthly compounding; a bank may calculate daily. <a href="/methodology/">See the assumptions</a>.</p><a href="/learn/how-compound-interest-works/">Understand interest on interest →</a></div>
-  </section>
-  <section class="home-trust hl-wrap" aria-labelledby="trust-title"><h2 id="trust-title">Useful numbers.<br />Clear limits.</h2><div><p>Howloop is an independent money education project. Our guides connect worked examples with public sources; our tools let you try those examples with your own numbers. We do not accept payment to rank bank products.</p><p>Calculations run in your browser. Optional saved plans stay on your device. These are educational estimates, not personal financial advice, and have not been reviewed by a licensed financial adviser. <a href="/about/#publisher">About the publisher</a> · <a href="/editorial-policy/">How we check our work</a> · <a href="/contact/">Report a correction</a>.</p></div></section>
- </div>
+<Base title={SITE.name} description="Make sense of your money with free Australian calculators and practical guides. Compare take-home pay, explore your savings and plan bills around payday. No account needed.">
+<div class="home-studio">
+ <section class="studio-hero hl-wrap" aria-labelledby="home-title">
+  <div class="studio-intro">
+   <p class="studio-eyebrow"><span class="studio-dot"></span> Free Australian money tools</p>
+   <h1 id="home-title">Your money.<br/>A little <em>clearer.</em></h1>
+   <p class="studio-lead">Less wondering. More working it out.<br/>Simple tools for your pay, savings and everyday life in Australia.</p>
+   <div class="studio-actions"><a class="studio-primary" href="/calculators/salary/">Work out my take-home pay <span aria-hidden="true">↗</span></a><a class="studio-text-link" href="/tools/">Explore all tools <span aria-hidden="true">→</span></a></div>
+   <div class="studio-assurance"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg>Free to use</span><span>No account needed</span><span>Made for Australia</span></div>
+  </div>
+  <aside class="studio-lab" aria-labelledby="lab-title" data-home-lab>
+   <div class="lab-top"><p class="studio-eyebrow">SMALL STEPS, REAL POSSIBILITIES</p><span class="lab-stamp" aria-hidden="true"><ToolIcon name="growth"/></span></div>
+   <h2 id="lab-title">What could a little<br/>each month become?</h2>
+   <p class="lab-context">Start with $1,000. Try a monthly saving.</p>
+   <form data-lab-form>
+    <div class="lab-controls" data-lab-controls hidden><label for="home-deposit">Add each month <span>AUD</span></label><div class="lab-amount"><span aria-hidden="true">$</span><input id="home-deposit" name="deposit" type="number" inputmode="decimal" value="200" min="0" max="10000" step="any" required aria-describedby="lab-assumptions"/><span>/ month</span></div><input class="lab-slider" data-lab-slider type="range" min="0" max="1000" step="25" value="200" aria-label="Adjust monthly saving up to 1,000 dollars"/><div class="lab-periods" role="group" aria-label="Savings timeframe">{[1,3,5,10].map(year=><button type="button" data-lab-years={year} aria-pressed={year===5?'true':'false'}>{year} {year===1?'year':'years'}</button>)}</div></div>
+    <p class="lab-error" role="alert" data-lab-error hidden></p>
+   </form>
+   <div class="lab-result" role="status" aria-live="polite" aria-atomic="true"><span data-lab-label>Illustrative balance after 5 years</span><strong data-lab-total>{money(example.balance)}</strong><span class="lab-result-detail"><span data-lab-deposits>{money(example.deposits)}</span> saved by you + <span data-lab-interest>{money(example.interest)}</span> interest</span></div>
+   <div class="lab-bars" aria-hidden="true" data-lab-chart>{example.rows.slice(1).map(row=><div><span style={`height:${row.balance/example.balance*100}%`}><i style={`height:${row.interest/row.balance*100}%`}></i></span><small>Y{row.year}</small></div>)}</div>
+   <p class="lab-legend"><span>Your deposits</span><span>Interest</span></p>
+   <p id="lab-assumptions" class="lab-assumptions">Example: $1,000 to start, $200 added at each month’s end, 4% a year compounded monthly. Before tax, fees and inflation. Rates can change.</p>
+   <a href="/calculators/compound-interest/" class="lab-link" data-lab-continue>Change the rate &amp; see the full picture <span aria-hidden="true">↗</span></a>
+  </aside>
+ </section>
+ <section class="studio-tools hl-wrap" id="choose" aria-labelledby="choose-title">
+  <div class="studio-section-head"><div><p class="studio-eyebrow">START WHERE YOU ARE</p><h2 id="choose-title">One question. A useful next step.</h2></div><a href="/tools/">All tools <span aria-hidden="true">↗</span></a></div>
+  <div class="studio-tool-grid">{tasks.map(task=><a class={`studio-tool ${task.colour}`} href={task.href}><div class="studio-tool-top"><span class="studio-tool-icon"><ToolIcon name={task.icon}/></span><span>{task.tag}</span></div><h3>{task.title}</h3><p>{task.text}</p><span class="studio-tool-action">{task.action}<span aria-hidden="true">↗</span></span></a>)}</div>
+  <div class="studio-shortcuts"><span>Something else on your mind?</span><a href="/calculators/mortgage/">Home loan &amp; offset ↗</a><a href="/calculators/emergency-fund/">Emergency buffer ↗</a><a href="/tax-return/">Tax checklist ↗</a></div>
+ </section>
+ <section class="studio-principles" aria-labelledby="principles-title"><div class="hl-wrap studio-principles-inner"><div><p class="studio-eyebrow">THE HOWLOOP WAY</p><h2 id="principles-title">Understand the number.<br/>Then make your next move.</h2></div><ol><li><span>01</span><div><h3>Start with your situation</h3><p>Enter only the details the tool needs. No account, bank connection or sales call.</p></div></li><li><span>02</span><div><h3>See what changes the answer</h3><p>Try a different amount or timeframe. We show the assumptions and where the estimate stops.</p></div></li><li><span>03</span><div><h3>Leave with a clearer picture</h3><p>Use the worked examples and linked sources to understand what to check next.</p></div></li></ol></div></section>
+ <section class="studio-reading hl-wrap" aria-labelledby="reading-title"><div class="studio-section-head"><div><p class="studio-eyebrow">A FEW MINUTES WELL SPENT</p><h2 id="reading-title">Make the numbers make sense.</h2></div><a href="/learn/">All money guides <span aria-hidden="true">↗</span></a></div><div class="studio-reading-grid">{reading.map((guide,i)=><a class="studio-guide" href={`/learn/${guide.slug}/`}><div class={`studio-guide-art art-${i}`} aria-hidden="true">{i===0?<><span>YOUR SALARY</span><div class="art-pay"><b>Pay</b><i>Super</i></div><small>One offer. Two different amounts.</small></>:i===1?<><span>SMALL AMOUNTS ADD UP</span><div class="art-growth">{[23,39,58,78,100].map(h=><i style={`height:${h}%`}></i>)}</div><small>Your money, plus time.</small></>:<><span>THE OFFSET EFFECT</span><div class="art-offset"><b>Loan</b><span>−</span><i>Savings</i></div><small>Interest on a smaller balance.</small></>}</div><div class="studio-guide-copy"><small>{guide.category} <span>· {guide.minutes} min read</span></small><h3>{guide.title}</h3><p>{guide.summary}</p><span class="studio-guide-link">Read the guide <span aria-hidden="true">↗</span></span></div></a>)}</div></section>
+ <section class="studio-note hl-wrap" aria-labelledby="note-title"><div class="studio-note-symbol" aria-hidden="true">✳</div><div><p class="studio-eyebrow">USEFUL NUMBERS. CLEAR LIMITS.</p><h2 id="note-title">A helping hand, not a sales pitch.</h2><p>Howloop is an independent money education project. We connect practical calculators with original worked examples and public sources. We do not accept payment to rank bank products.</p><p>These are educational estimates, not personal financial advice. Our content has not been reviewed by a licensed financial adviser. Optional saved plans stay on your device.</p><div><a href="/about/#publisher">Meet Howloop ↗</a><a href="/methodology/">How we calculate ↗</a><a href="/editorial-policy/">How we check our work ↗</a></div></div></section>
+</div>
 </Base>
+<script>import '../scripts/home-lab.mjs';</script>
