@@ -921,12 +921,16 @@
     ],
     "sources": [
       [
-        "ATO: main residence and CGT",
-        "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/property-and-capital-gains-tax/your-main-residence-home"
+        "ATO: main residence exemption eligibility",
+        "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/property-and-capital-gains-tax/your-main-residence-home/eligibility-for-main-residence-exemption"
       ],
       [
         "ATO: CGT discount, capital losses and event dates",
-        "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount"
+        "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cgt-discount"
+      ],
+      [
+        "ATO: cost base and excluded amounts",
+        "https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/cost-base-of-asset"
       ],
       [
         "2026 tax reform legislation",
@@ -939,10 +943,10 @@
     },
     "minutes": 5,
     "datePublished": "2026-09-18",
-    "dateModified": "2026-09-27",
-    "sourcesChecked": "2026-09-27",
+    "dateModified": "2026-10-16",
+    "sourcesChecked": "2026-10-16",
     "reviewDays": 14,
-    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic. 27 September 2026: replaced the 2023 worksheet link with the current ATO CGT discount guide; retained the dated future-reform note.",
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic. 27 September 2026: replaced the 2023 worksheet link with the current ATO CGT discount guide; retained the dated future-reform note. 16 October 2026: checked the current ATO discount, event-date, loss-order, main-residence and cost-base guidance against this explanation; updated the redirected discount link and added direct eligibility and cost-base sources. Rechecked the enacted future-reform source. Illustrative arithmetic is unchanged.",
     "policyIds": [
       "cgt-reform"
     ]
@@ -1044,9 +1048,9 @@
     "minutes": 5,
     "datePublished": "2026-09-18",
     "dateModified": "2026-09-18",
-    "sourcesChecked": "2026-09-27",
+    "sourcesChecked": "2026-10-16",
     "reviewDays": 14,
-    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic.",
+    "updateNote": "Expanded with original worked examples, practical checks and common mistakes. Current rule notes remain separate from illustrative arithmetic. 16 October 2026: rechecked Moneysmart investing-and-tax guidance, ATO rental-interest and private-use borrowing guidance, and the linked legislation and government reform explanation. No change to the illustrative arithmetic.",
     "policyIds": [
       "negative-gearing-reform"
     ]
