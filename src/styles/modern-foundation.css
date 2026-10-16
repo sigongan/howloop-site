@@ -55,8 +55,6 @@ body .hl-footer{background:#f1f5f4;color:var(--ui-ink);border-top:1px solid #d9e
 body .hl-footer .hl-footer-grid{grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px}
 body .hl-footer .hl-footer-brand>a{display:inline-block;color:var(--ui-ink);margin-bottom:16px}
 body .hl-footer .brandmark{font-size:32px}
-body .hl-footer .brand-dot{color:#467b66}
-body .hl-footer .brandmark svg path:last-child{stroke:var(--ui-ink)}
 body .hl-footer .hl-footer-brand p{font-size:1.125rem;line-height:1.6;color:#52636a;max-width:24ch}
 body .hl-footer .hl-country{display:inline-flex;align-items:center;gap:8px;border:1px solid #d3ded9;border-radius:999px;padding:7px 12px;font-size:.875rem;line-height:1.5;color:#465e56;margin-top:16px}
 body .hl-footer .hl-country>span{width:6px;height:6px;border-radius:50%;background:#467b66;padding:0}

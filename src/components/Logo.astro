@@ -1,5 +1,8 @@
 ---
+import mark from '../../public/brand/howloop-mark.svg?raw';
 const {size=30}=Astro.props;
+// The website and exported icons use the same original infinity-coin artwork.
+const decorativeMark=mark.replace(/ role="img" aria-labelledby="title"/, ' aria-hidden="true"').replace(/<title[^>]*>.*?<\/title>/, '').replace('<svg ', `<svg width="${size*1.5}" height="${size}" `);
 ---
-<span class="brandmark"><svg width={size*1.5} height={size} viewBox="0 0 72 48" aria-hidden="true"><circle cx="54" cy="24" r="12" fill="#e1ba96"/><path d="M36 24C28 12 24 9 18 9a15 15 0 1 0 0 30c6 0 10-3 18-15s12-15 18-15a15 15 0 1 1 0 30c-6 0-10-3-18-15Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M58 19h-5a3 3 0 0 0 0 6h2a3 3 0 0 1 0 6h-5m4-15v18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>howloop<span class="brand-dot">.</span></span></span>
-<style>.brandmark{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:29px;font-weight:800;letter-spacing:-1.4px;line-height:1}.brand-dot{color:#6b7f3f}</style>
+<span class="brandmark"><Fragment set:html={decorativeMark}/><span>howloop<span class="brand-dot">.</span></span></span>
+<style>.brandmark{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:29px;font-weight:800;letter-spacing:-1.4px;line-height:1}.brandmark :global(svg path:first-of-type){stroke:currentColor}.brand-dot{color:#b86042}</style>
