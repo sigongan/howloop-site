@@ -52,7 +52,7 @@ const fullTitle =
 const publisherId = /^ca-pub-\d{16}$/.test(SITE.adsensePublisherId) ? SITE.adsensePublisherId : '';
 // Verify ownership using metadata and ads.txt. Ad serving is a separate release.
 
-const ogImage = new URL('og-default.svg', Astro.site);
+const ogImage = new URL('og-default.png?v=howloop-20261016', Astro.site);
 
 const orgLd = {
   '@context': 'https://schema.org',
@@ -80,10 +80,10 @@ const orgLd = {
     {noindex && <meta name="robots" content="noindex, follow" />}
     {publisherId && <meta name="google-adsense-account" content={publisherId} />}
 
-    <link rel="icon" href="/favicon.ico?v=money-loop-20260920" sizes="16x16 32x32 48x48" />
-    <link rel="icon" href="/favicon-48.png?v=money-loop-20260920" type="image/png" sizes="48x48" />
-    <link rel="icon" href="/favicon.svg?v=money-loop-20260920" type="image/svg+xml" sizes="any" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=money-loop-20260920" sizes="180x180" />
+    <link rel="icon" href="/favicon.ico?v=howloop-20261016" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/favicon-48.png?v=howloop-20261016" type="image/png" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg?v=howloop-20261016" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=howloop-20261016" sizes="180x180" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link
       rel="alternate"
@@ -92,7 +92,7 @@ const orgLd = {
       href="/rss.xml"
     />
 
-    <meta name="theme-color" content="#0B4F3E" />
+    <meta name="theme-color" content="#183b33" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Open Graph -->

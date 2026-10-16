@@ -47,6 +47,7 @@ export const TOPICS: Record<
 
 export const NAV = [
   { id: 'tools', href: '/tools/', label: 'All tools', icon: 'wallet', hint: 'Find a money tool', matches: ['/tools', '/calculators', '/start', '/banks', '/compare', '/tax-return'] },
+  { id: 'school', href: '/money-school/', label: 'Money School', icon: 'book', hint: 'Start with five simple lessons', matches: ['/money-school'] },
   { id: 'learn', href: '/learn/', label: 'Money guides', icon: 'book', hint: 'Understand one idea at a time', matches: ['/learn', '/updates', '/help'] },
   { id: 'about', href: '/about/', label: 'About Howloop', icon: 'checklist', hint: 'Who publishes this site', matches: ['/about', '/methodology', '/editorial-policy', '/contact'] },
 ];
