@@ -5,4 +5,4 @@ const {size=30}=Astro.props;
 const decorativeMark=mark.replace(/ role="img" aria-labelledby="title"/, ' aria-hidden="true"').replace(/<title[^>]*>.*?<\/title>/, '').replace('<svg ', `<svg width="${size*1.5}" height="${size}" `);
 ---
 <span class="brandmark"><Fragment set:html={decorativeMark}/><span>howloop<span class="brand-dot">.</span></span></span>
-<style>.brandmark{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:29px;font-weight:800;letter-spacing:-1.4px;line-height:1;color:#b58a32}.brandmark .brand-dot{color:inherit}</style>
+<style>.brandmark{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:29px;font-weight:800;letter-spacing:-1.4px;line-height:1;color:#202620}.brandmark .brand-dot{color:inherit}.brandmark :global(svg path:first-of-type){stroke:currentColor}:global(html[data-theme=dark]) .brandmark{color:#faf8f1}</style>
