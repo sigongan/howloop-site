@@ -53,7 +53,7 @@ test('occlusion ray checks reject misses and return positive near intersections'
 
 // Stub GPU calls only: exercise the renderer's real CPU transforms, occlusion and
 // picking without pretending this is a browser/shader rendering test.
-function pickingFixture(onSeed){
+function pickingFixture(onSeed,inspectCanvas){
   const noop=()=>{};
   const ctx=new Proxy({createRadialGradient:()=>({addColorStop:noop})},{get:(o,p)=>p in o?o[p]:noop,set:(o,p,v)=>(o[p]=v,true)});
   let nextEnum=1;
@@ -62,7 +62,8 @@ function pickingFixture(onSeed){
   const win={requestAnimationFrame:()=>1,cancelAnimationFrame:noop,devicePixelRatio:1,addEventListener:noop,removeEventListener:noop};
   const canvas={getContext:()=>gl,ownerDocument:{defaultView:win,createElement:()=>({getContext:()=>ctx})},
     getBoundingClientRect:()=>({left:10,top:25,width:600,height:500}),addEventListener:noop,removeEventListener:noop,dataset:{}};
-  return createAppleScene(canvas,{onSeed});
+  canvas.clientWidth=600;canvas.clientHeight=500;
+  const scene=createAppleScene(canvas,{onSeed});inspectCanvas?.(canvas,scene);return scene;
 }
 
 test('both fruits expose all five front seeds when open, and no seeds through the back',()=>{
@@ -86,4 +87,11 @@ test('switching fruit clears discovery state and closed fruit cannot be picked',
   assert.ok(scene.getSeedTargets().every(t=>!t.found));scene.setState({split:0});
   for(const t of scene.getSeedTargets())assert.equal(scene.pickSeed(t.clientX,t.clientY),null);
   scene.destroy();
+});
+
+test('CSS entrance scaling cannot shrink the WebGL drawing buffer',()=>{
+ const scene=pickingFixture(undefined,(canvas,renderer)=>{
+ canvas.getBoundingClientRect=()=>({left:10,top:25,width:90,height:75});
+ renderer.resize();assert.equal(canvas.width,600);assert.equal(canvas.height,500);
+ });scene.destroy();
 });

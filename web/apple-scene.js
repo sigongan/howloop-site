@@ -123,7 +123,7 @@ export function createAppleScene(canvas,{onSeed,fruit='apple'}={}) {
   function resize(){
     if(destroyed)return;
     const rect=canvas.getBoundingClientRect(),ratio=Math.min(win.devicePixelRatio||1,2);
-    const width=Math.max(1,Math.round(rect.width*ratio)),height=Math.max(1,Math.round(rect.height*ratio));
+    const width=Math.max(1,Math.round((canvas.clientWidth||rect.width)*ratio)),height=Math.max(1,Math.round((canvas.clientHeight||rect.height)*ratio));
     if(canvas.width!==width||canvas.height!==height){canvas.width=width;canvas.height=height;}
     requestRender();
   }
