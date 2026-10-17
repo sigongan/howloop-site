@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "id": "apple",
+  "version": "2026-10-18",
+  "seedCount": 5,
+  "languages": {
+    "en": {
+      "name": "English",
+      "rotate": "Turn",
+      "open": "Open",
+      "close": "Close",
+      "seeds": "Find the seeds",
+      "reset": "Again",
+      "seed": "Seed",
+      "found": "{count} of {total}",
+      "hintRotate": "Drag to turn. What can you see?",
+      "hintOpen": "Spread two fingers, or tap Open.",
+      "hintSeeds": "Tap the seeds hiding inside.",
+      "help": "How to play",
+      "dismiss": "Done",
+      "language": "Language",
+      "foundSeed": "Found seed",
+      "waitingSeed": "Find seed",
+      "stageLabel": "Fruit to explore",
+      "stageHint": "Drag to turn, spread to open, tap a seed.",
+      "storyTitle": "From tree to table",
+      "factsTitle": "What is inside?",
+      "orchard": "Our little orchard",
+      "back": "Back to the tree",
+      "shake": "Shake the tree",
+      "pick": "Tap a fruit",
+      "listen": "Read aloud",
+      "stop": "Stop",
+      "grownups": "For grown-ups",
+      "play": "Let’s explore",
+      "noWebGL": "Try the picture below. You can still open the fruit and find its seeds.",
+      "allFound": "You found them all!",
+      "treeHint": "Give the tree a little shake. Then choose a fruit.",
+      "originTitle": "Where does it come from?",
+      "appleChoice": "Apple",
+      "lemonChoice": "Lemon",
+      "fruit": "Apple",
+      "apple": "Apple",
+      "title": "Hello, little apple.",
+      "subtitle": "Turn it around. Peek inside. Find a surprise.",
+      "facts": [
+        {
+          "id": "skin",
+          "title": "Skin",
+          "text": "The thin outside is called the skin. Apples can be different colours."
+        },
+        {
+          "id": "flesh",
+          "title": "Flesh",
+          "text": "The firm part inside is called the flesh."
+        },
+        {
+          "id": "seed",
+          "title": "Core and seeds",
+          "text": "The core is in the middle. Seeds can be tucked inside it."
+        }
+      ],
+      "story": [
+        {
+          "title": "On a tree",
+          "text": "Apples grow on apple trees."
+        },
+        {
+          "title": "First, a blossom",
+          "text": "A flower can become a tiny apple."
+        },
+        {
+          "title": "Time to grow",
+          "text": "The apple grows bigger on its branch."
+        },
+        {
+          "title": "To the kitchen",
+          "text": "A grown-up can wash and cut an apple. What can you find inside?"
+        }
+      ],
+      "origin": "Apples grow on trees. People grow many different kinds around the world.",
+      "modelNote": "A play model with five seeds. Real fruit can be different.",
+      "playgroundTagline": "A little food playground"
+    },
+    "ko": {
+      "name": "한국어",
+      "rotate": "돌리기",
+      "open": "벌리기",
+      "close": "닫기",
+      "seeds": "씨앗 찾기",
+      "reset": "다시",
+      "seed": "씨앗",
+      "found": "{total}개 중 {count}개",
+      "hintRotate": "손가락으로 돌려봐요. 무엇이 보이나요?",
+      "hintOpen": "두 손가락을 벌리거나 벌리기를 눌러요.",
+      "hintSeeds": "속에 숨어 있는 씨앗을 눌러봐요.",
+      "help": "놀이 방법",
+      "dismiss": "좋아요",
+      "language": "언어",
+      "foundSeed": "찾은 씨앗",
+      "waitingSeed": "씨앗 찾기",
+      "stageLabel": "만져보는 과일",
+      "stageHint": "밀어서 돌리고, 벌려서 열고, 씨앗을 눌러요.",
+      "storyTitle": "나무에서 식탁까지",
+      "factsTitle": "안에는 뭐가 있을까요?",
+      "orchard": "우리의 작은 과수원",
+      "back": "나무로 돌아가기",
+      "shake": "나무 흔들기",
+      "pick": "과일을 눌러봐요",
+      "listen": "읽어주기",
+      "stop": "멈추기",
+      "grownups": "어른들을 위한 안내",
+      "play": "탐험 시작",
+      "noWebGL": "아래 그림으로 놀아봐요. 과일을 벌리고 씨앗을 찾을 수 있어요.",
+      "allFound": "씨앗을 모두 찾았어요!",
+      "treeHint": "나무를 살짝 흔들어봐요. 그리고 과일을 골라요.",
+      "originTitle": "어디에서 왔을까요?",
+      "appleChoice": "사과",
+      "lemonChoice": "레몬",
+      "fruit": "사과",
+      "apple": "사과",
+      "title": "안녕, 작은 사과야.",
+      "subtitle": "돌려보고, 속을 보고, 숨어 있는 것을 찾아요.",
+      "facts": [
+        {
+          "id": "skin",
+          "title": "껍질",
+          "text": "얇은 겉부분을 껍질이라고 불러요. 사과는 여러 색이 있어요."
+        },
+        {
+          "id": "flesh",
+          "title": "과육",
+          "text": "안쪽의 단단한 부분을 과육이라고 불러요."
+        },
+        {
+          "id": "seed",
+          "title": "심과 씨앗",
+          "text": "가운데에는 심이 있어요. 그 안에 씨앗이 숨어 있을 수 있어요."
+        }
+      ],
+      "story": [
+        {
+          "title": "나무에서",
+          "text": "사과는 사과나무에서 자라요."
+        },
+        {
+          "title": "먼저 꽃이 피어요",
+          "text": "꽃에서 아주 작은 사과가 생길 수 있어요."
+        },
+        {
+          "title": "쑥쑥 자라요",
+          "text": "가지에 달린 사과가 점점 커져요."
+        },
+        {
+          "title": "부엌으로",
+          "text": "어른이 사과를 씻고 잘라줄 수 있어요. 안에서 무엇을 찾았나요?"
+        }
+      ],
+      "origin": "사과는 나무에서 자라요. 세계 여러 곳에서 다양한 종류의 사과를 기르고 있어요.",
+      "modelNote": "씨앗 5개가 있는 놀이 모형이에요. 실제 과일은 다를 수 있어요.",
+      "playgroundTagline": "어린이 식재료 놀이터"
+    },
+    "es": {
+      "name": "Español",
+      "rotate": "Girar",
+      "open": "Abrir",
+      "close": "Cerrar",
+      "seeds": "Busca las semillas",
+      "reset": "Otra vez",
+      "seed": "Semilla",
+      "found": "{count} de {total}",
+      "hintRotate": "Arrastra para girar. ¿Qué ves?",
+      "hintOpen": "Separa dos dedos o toca Abrir.",
+      "hintSeeds": "Toca las semillas escondidas dentro.",
+      "help": "Cómo jugar",
+      "dismiss": "Listo",
+      "language": "Idioma",
+      "foundSeed": "Semilla encontrada",
+      "waitingSeed": "Busca una semilla",
+      "stageLabel": "Fruta para explorar",
+      "stageHint": "Arrastra para girar, separa para abrir y toca una semilla.",
+      "storyTitle": "Del árbol a la mesa",
+      "factsTitle": "¿Qué hay dentro?",
+      "orchard": "Nuestro pequeño huerto",
+      "back": "Volver al árbol",
+      "shake": "Mueve el árbol",
+      "pick": "Toca una fruta",
+      "listen": "Leer en voz alta",
+      "stop": "Parar",
+      "grownups": "Para personas adultas",
+      "play": "Vamos a explorar",
+      "noWebGL": "Prueba el dibujo de abajo. Puedes abrir la fruta y buscar sus semillas.",
+      "allFound": "¡Las encontraste todas!",
+      "treeHint": "Mueve un poco el árbol. Después elige una fruta.",
+      "originTitle": "¿De dónde viene?",
+      "appleChoice": "Manzana",
+      "lemonChoice": "Limón",
+      "fruit": "Manzana",
+      "apple": "Manzana",
+      "title": "Hola, pequeña manzana.",
+      "subtitle": "Gírala. Mira dentro. Encuentra una sorpresa.",
+      "facts": [
+        {
+          "id": "skin",
+          "title": "Piel",
+          "text": "La parte fina de fuera se llama piel. Las manzanas pueden tener distintos colores."
+        },
+        {
+          "id": "flesh",
+          "title": "Pulpa",
+          "text": "La parte firme de dentro se llama pulpa."
+        },
+        {
+          "id": "seed",
+          "title": "Corazón y semillas",
+          "text": "El corazón está en el centro. Puede guardar semillas dentro."
+        }
+      ],
+      "story": [
+        {
+          "title": "En un árbol",
+          "text": "Las manzanas crecen en los manzanos."
+        },
+        {
+          "title": "Primero, una flor",
+          "text": "Una flor puede convertirse en una manzana pequeña."
+        },
+        {
+          "title": "A crecer",
+          "text": "La manzana crece en su rama."
+        },
+        {
+          "title": "A la cocina",
+          "text": "Una persona adulta puede lavar y cortar una manzana. ¿Qué encuentras dentro?"
+        }
+      ],
+      "origin": "Las manzanas crecen en árboles. Se cultivan muchas variedades en todo el mundo.",
+      "modelNote": "Un modelo con cinco semillas. La fruta real puede ser diferente.",
+      "playgroundTagline": "Un pequeño mundo de alimentos"
+    }
+  }
+}

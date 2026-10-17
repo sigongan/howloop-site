@@ -1,0 +1,126 @@
+// All textures are original, deterministic drawings. No image fetches or trackers.
+export function createTextures(document) {
+  let seed=314159;
+  const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
+  const make=(width,height)=>{const c=document.createElement('canvas');c.width=width;c.height=height;return[c,c.getContext('2d')];};
+  const [apple,ac]=make(1024,512);
+  for(let x=0;x<1024;x++){
+    const broad=Math.sin(x*.008+1)*.5+.5,wave=Math.sin(x*.033)*Math.sin(x*.103);
+    ac.fillStyle=`rgb(${174+broad*34+wave*15},${24+broad*16+wave*8},${22+broad*5})`;
+    ac.fillRect(x,0,1,512);
+  }
+  for(let i=0;i<1250;i++){
+    const x=random()*1024,y=random()*512,w=.3+random()*1.5,h=5+random()*35;
+    ac.fillStyle=`rgba(255,179,77,${.01+random()*.055})`;ac.fillRect(x,y,w,h);
+  }
+  for(let i=0;i<3800;i++){
+    const x=random()*1024,y=random()*512,r=.5+random()*1.25;
+    ac.fillStyle=`rgba(255,223,155,${.09+random()*.22})`;
+    ac.beginPath();ac.ellipse(x,y,r,r*1.25,0,0,Math.PI*2);ac.fill();
+  }
+  const [flesh,fc]=make(768,768);fc.fillStyle='#f7e9c8';fc.fillRect(0,0,768,768);
+  const wash=fc.createRadialGradient(384,380,20,384,380,400);
+  wash.addColorStop(0,'rgba(224,199,145,.30)');wash.addColorStop(.66,'rgba(255,255,238,.12)');wash.addColorStop(1,'rgba(233,202,142,.24)');
+  fc.fillStyle=wash;fc.fillRect(0,0,768,768);
+  for(let i=0;i<14000;i++){
+    fc.fillStyle=`rgba(153,116,54,${.018+random()*.045})`;
+    fc.fillRect(random()*768,random()*768,.6+random()*2,.8+random()*3.6);
+  }
+  fc.fillStyle='rgba(191,158,93,.20)';fc.beginPath();fc.moveTo(384,112);
+  fc.bezierCurveTo(307,270,314,510,384,657);fc.bezierCurveTo(452,510,462,270,384,112);fc.fill();
+  for(let i=0;i<50;i++){
+    const dx=random()*64-32;fc.strokeStyle=`rgba(133,103,53,${.025+random()*.045})`;
+    fc.lineWidth=.5+random();fc.beginPath();fc.moveTo(384+dx*.15,127);
+    fc.bezierCurveTo(384+dx,300,384+dx,480,384+dx*.15,641);fc.stroke();
+  }
+  const [lemon,lc]=make(1024,512);lc.fillStyle='#f7ce38';lc.fillRect(0,0,1024,512);
+  for(let i=0;i<12500;i++){
+    const x=random()*1024,y=random()*512,r=.45+random()*1.7;
+    lc.fillStyle=`rgba(${random()>.5?'255,245,157':'170,128,12'},${.025+random()*.09})`;
+    lc.beginPath();lc.arc(x,y,r,0,Math.PI*2);lc.fill();
+  }
+  const [citrus,cc]=make(768,768);cc.fillStyle='#fff7d2';cc.fillRect(0,0,768,768);
+  cc.save();cc.translate(384,384);cc.scale(.82/1.4,1.30/1.4);
+  const circle=(r,color)=>{cc.beginPath();cc.arc(0,0,r,0,Math.PI*2);cc.fillStyle=color;cc.fill();};
+  circle(386,'#e9bd23');circle(373,'#fff8d8');circle(344,'#f9d759');
+  for(let s=0;s<10;s++){
+    const a=s/10*Math.PI*2+.035,b=(s+1)/10*Math.PI*2-.035;
+    cc.beginPath();cc.moveTo(Math.cos(a)*39,Math.sin(a)*39);
+    cc.arc(0,0,331,a,b);cc.lineTo(Math.cos(b)*39,Math.sin(b)*39);cc.closePath();
+    const gradient=cc.createRadialGradient(0,0,30,0,0,340);
+    gradient.addColorStop(0,s%2?'#f9df83':'#ffe896');gradient.addColorStop(.68,s%2?'#f4cb43':'#f8d65c');gradient.addColorStop(1,'#fff1b1');
+    cc.fillStyle=gradient;cc.fill();cc.strokeStyle='rgba(255,251,221,.85)';cc.lineWidth=8;cc.stroke();
+    // Fine juice-vesicle threads, each confined to its own wedge.
+    cc.save();cc.clip();
+    for(let i=0;i<210;i++){
+      const angle=a+random()*(b-a),r=65+random()*265,len=6+random()*22;
+      cc.strokeStyle=`rgba(255,251,215,${.12+random()*.28})`;cc.lineWidth=.6+random()*1.1;
+      cc.beginPath();cc.moveTo(Math.cos(angle)*r,Math.sin(angle)*r);
+      cc.lineTo(Math.cos(angle)*(r+len),Math.sin(angle)*(r+len));cc.stroke();
+    }cc.restore();
+  }
+  circle(33,'#fff7d6');cc.restore();
+  return {apple,flesh,lemon,citrus};
+}
+
+export const VERTEX_SHADER=`
+attribute vec3 aPosition;
+attribute vec3 aNormal;
+attribute vec2 aUV;
+uniform mat4 uModel;
+uniform mat4 uProjectionView;
+uniform mat3 uNormalMatrix;
+varying vec3 vNormal;
+varying vec3 vWorld;
+varying vec2 vUV;
+void main(){
+  vec4 world=uModel*vec4(aPosition,1.0);
+  vWorld=world.xyz;vNormal=normalize(uNormalMatrix*aNormal);vUV=aUV;
+  gl_Position=uProjectionView*world;
+}`;
+
+export const FRAGMENT_SHADER=`
+precision mediump float;
+varying vec3 vNormal;
+varying vec3 vWorld;
+varying vec2 vUV;
+uniform sampler2D uTexture;
+uniform int uMaterial;
+void main(){
+  if(uMaterial==8){
+    vec2 p=(vUV-.5)*2.0;
+    float alpha=exp(-dot(p,p)*3.8)*.20;
+    gl_FragColor=vec4(.12,.21,.12,alpha);return;
+  }
+  vec3 N=normalize(vNormal);if(!gl_FrontFacing)N=-N;
+  vec3 L=normalize(vec3(-3.0,4.5,6.0)-vWorld);
+  vec3 F=normalize(vec3(4.0,1.0,2.5)-vWorld);
+  vec3 V=normalize(vec3(0.0,.12,7.0)-vWorld);
+  float key=max(dot(N,L),0.0),fill=max(dot(N,F),0.0);
+  vec3 H=normalize(L+V);
+  float gloss=pow(max(dot(N,H),0.0),44.0);
+  vec3 base;float specular=.10;
+  if(uMaterial==0||uMaterial==1||uMaterial==9||uMaterial==10){base=texture2D(uTexture,vUV).rgb;}
+  else if(uMaterial==2){
+    float grain=sin(vUV.x*78.0+sin(vUV.y*14.0))*.035;
+    base=vec3(.28+grain,.15+grain*.7,.062);specular=.045;
+  }else if(uMaterial==3){
+    float center=1.0-smoothstep(.010,.032,abs(vUV.y-.5));
+    float vein=1.0-smoothstep(.018,.045,abs(fract(vUV.x*9.0-abs(vUV.y-.5)*2.0)-.5));
+    base=mix(vec3(.20,.39,.095),vec3(.44,.58,.18),max(center*.65,vein*.28));specular=.08;
+  }else if(uMaterial==4){base=vec3(.28,.105,.036);specular=.22;}
+  else if(uMaterial==5){base=vec3(.55,.37,.15);specular=.015;}
+  else if(uMaterial==6){base=vec3(.77,.40,.055);specular=.26;}
+  else if(uMaterial==11){base=vec3(.94,.89,.69);specular=.15;}
+  else if(uMaterial==12){base=vec3(.72,.62,.28);specular=.015;}
+  else{base=vec3(1.0,.76,.18);specular=.13;}
+  vec3 color=base*(.43+.52*key+.15*fill);
+  if(uMaterial==1||uMaterial==10){color=base*(.78+.18*key+.07*fill);specular=.025;}
+  if(uMaterial==0){specular=.48;}
+  if(uMaterial==9){specular=.25;}
+  if(uMaterial==7){color=base*.95;}
+  color+=vec3(1.0,.95,.84)*gloss*specular;
+  float rim=pow(1.0-max(dot(N,V),0.0),3.0)*max(N.y*.5+.5,0.0);
+  if(uMaterial==0||uMaterial==9)color+=vec3(.11,.07,.025)*rim;
+  gl_FragColor=vec4(color,1.0);
+}`;

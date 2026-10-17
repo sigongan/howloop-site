@@ -1,71 +1,40 @@
-# Howloop — Australian money tools
+# Howloop — a little food playground
 
-An Astro static site for howloop.how, retaining the existing GitHub → Cloudflare Pages flow.
+A dependency-free web playground and native iPhone prototype sharing one set of learning content. The public website is https://howloop.how. The web brand remains **Howloop** with a lemon mark and the Korean subtitle **어린이 식재료 놀이터**. The app's final public name will be chosen separately; the internal Xcode project is still FruitLab.
 
-## Run
+## Run the web playground
 
-Node 22; npm ci; npm run dev; npm run build (output: dist). Existing lockfile retained. No accounts, paid APIs or databases required.
+Node 22 or newer. No npm dependencies are required.
 
-## Features
+```sh
+npm test
+npm run build
+npm run check:readiness
+npm run dev
+```
 
-- Six client-side calculators for compound interest, mortgage and offset, savings goals, emergency funds, take-home pay and home-deposit LVR, plus a dated 13-week cash-flow planner.
-- Public CDR banking-brand explorer, dated product snapshots, explicit unavailable and partial states.
-- Seventeen original money guides, methodology, about, contact, editorial, privacy and terms pages.
-- Device-local opt-in plan save/restore/delete and CSV export.
-- Existing published guide URLs and technical utilities are retained; public navigation focuses on money tools and education.
+Open the local URL printed by the server. Deployment builds `dist/` with `npm run build` in the existing Cloudflare Pages project.
 
-## Rate data
+## Shared learning format
 
-Run npm run refresh:rates to fetch the government CDR banking-brand register and available current transaction/savings product detail feeds. The collector writes src/data/banks.json and public/data/banks*.json. Commit updated snapshots and deploy via the existing workflow. It does not create a scheduled job. Retrieval dates are preserved when a feed fails, and the UI flags snapshots older than seven days. No claim of live rates or whole-market coverage.
+`shared/lemon.json` and `shared/apple.json` hold versioned English, Korean and Spanish content, seed-count assumptions, three discovery facts, four growth-story steps and origin notes. The web build copies these verbatim to `/content/`; the native Xcode resource references point directly to the same authored files. Content updates ship on the website when deployed and in the app with a new build. There is no remote app-content update service or account/progress syncing.
 
-Only unambiguous base variable rates and supported full-coverage dollar tiers are automatically modelled. Bonus/introductory components are displayed, not automatically combined. Manual rates remain constant for the projection. Product eligibility and fees must be checked with the provider. Product feeds may contain specialised products.
+The repeatable experience is orchard → tap fruit → rotate/open → seed discovery → short illustrated story. A new ingredient needs reviewed learning content plus suitable visual geometry; vegetables are not all tree fruit and must receive an appropriate growing scene.
 
-## AdSense preparation
+## Native prototype
 
-Set PUBLIC_ADSENSE_PUBLISHER_ID to the actual ca-pub- plus 16-digit publisher ID to emit the Google verification meta tag and ads.txt. No placeholder ID is emitted. Ad serving stays disabled: verification is separate from loading ads. After approval, configure appropriate consent controls (including a Google-certified CMP where required), review actual privacy disclosures, and then implement ad serving deliberately. Never assume approval from page count or design.
+Open `ios/FruitLab/FruitLab.xcodeproj`. See its README for clean simulator build and test commands. The prototype bundles the shared learning files for offline use. Device installation, App Store distribution and final app naming are separate work.
 
-Before requesting Google review: verify that hello@howloop.how actually receives mail, check all live pages, complete the account tasks, add the live domain to AdSense, and submit the sitemap in Search Console. Google makes the approval decision. This code cannot verify inbox delivery or complete account identity/payment tasks.
+## Editorial and design
 
-Official guidance:
-- https://support.google.com/adsense/answer/7299563
-- https://support.google.com/adsense/answer/7584263
-- https://support.google.com/adsense/answer/1348695
-- https://support.google.com/adsense/answer/13554116
+Stylized, original procedural 3D fruit and SVG orchard illustration. Each play model has five discoverable seeds; this is not a universal botanical count or an anatomy diagram. No knife interaction. Real food preparation needs an adult. Historical lemon origins are presented as uncertain rather than an exact ancient birthplace.
 
-## Verification
+Primary references: UF/IFAS Lemon Growing in the Florida Home Landscape, Kew Plants of the World Online (Citrus × limon), University of Maryland apple and pear growing, University of Minnesota Flowers to Fruit. Links and limitations are visible in the grown-up section. Translations have not all received native-speaker review; no child usability study or expert review is claimed.
 
-npm test runs the financial engine and existing trading-engine tests. npm run build generates all static routes. Calculator assumptions are published at /methodology. Browser QA should check custom rates, bank selection, invalid/zero inputs, save/restore/clear, CSV, and mobile layouts.
+## Privacy and accessibility
 
-The Windows sandbox used to author this revision required a local WebAssembly esbuild adapter. That adaptation is confined to ignored node_modules and is not part of this project or its dependency manifest; normal Cloudflare/Linux builds use the existing native esbuild dependencies.
+No ads, analytics scripts, accounts, uploads, voice recording, location, cookies or persistent play storage. Language and progress live in page memory. Hosting receives ordinary network requests; the privacy page explains this distinction. CSP and `no-transform` prevent third-party scripting and Cloudflare automatic analytics insertion. The website includes button/keyboard alternatives for gestures, reduced-motion styles, fallback illustration if WebGL is unavailable, and large controls.
 
+## Replacement of the earlier site
 
-## Payday Planner preview
-
-`/tools/cash-flow/` is an original 13-week, local-first demonstration. It uses
-`src/lib/cash-flow.mjs` for deterministic integer-cent/date-only arithmetic.
-The unavailable paid concept is retained only as an unpublished source draft in
-`src/pages/_products/payday-planner.astro`. See `docs/payday-planner-product-2026-10-04.md` for scope,
-measurement, validation and the remaining sale gates. No financial input is
-passed between the existing calculators and this preview.
-
-The DOM regression tests use the pinned jsdom development dependency. They
-exercise the real controller with the page's static controls, without making
-network requests. Existing engine and content tests remain in `npm test`.
-
-
-## Type-check status
-
-`npm run check` fails explicitly if `@astrojs/check` or `typescript` is missing.
-The current dependency manifest does not provide them. Tests, the Astro build,
-and `npm run check:readiness` are separate gates; none should be described as a
-full Astro type-check pass. The wrapper never silently installs packages.
-
-## Automatic bank-rate safety
-
-All bank-rate consumers share the conservative guards in
-`src/lib/bank-rate-safety.mjs`. Ambiguous total-rate wording, prose-only caps or
-expiry periods must not be converted into guessed rates. Known account limits
-are enforced at opening and after every month, including the final contribution.
-The regression fixtures retain provider counterexamples even after live snapshots
-are refreshed. A saved bank-derived rate requires current usable source data; a
-custom-only saved plan remains a user-entered illustration.
+This working tree replaces the former finance website. Finance pages, tools, data, scheduled bank refresh, advertising verification and financial API endpoints are absent. Old addresses return a 404 page linking to the new playground. Ordinary Git history is not rewritten.
