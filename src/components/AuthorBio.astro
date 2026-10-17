@@ -1,9 +1,0 @@
----
-interface Props { id?: string; }
-const {id='article-publisher'}=Astro.props;
----
-<aside class="author-bio" aria-labelledby={id}>
-  <h2 id={id}>About the publisher</h2>
-  <p><a href="/about/#publisher">Howloop</a> is an independent Australian money education project. AI assists preparation; this guide has not been reviewed by a licensed financial adviser. <a href="/editorial-policy/">How we check our work</a> · <a href="/contact/">Corrections</a></p>
-</aside>
-<style>.author-bio{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line)}.author-bio h2{font-size:1.1rem}.author-bio p{line-height:1.7}</style>

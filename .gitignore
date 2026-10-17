@@ -1,9 +1,8 @@
-node_modules/
 dist/
-.astro/
-.env
-.env.production
+node_modules/
 .DS_Store
-npm-debug.log*
-.vscode/
-_hidden_non_finance_guides/
+*.xcuserstate
+xcuserdata/
+Build/
+DeviceBuild/
+*.xcresult/

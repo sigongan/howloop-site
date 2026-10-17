@@ -1,0 +1,10 @@
+import {cp,mkdir,rm,readFile,writeFile} from 'node:fs/promises';
+import path from 'node:path';
+const root=path.resolve(import.meta.dirname,'..');
+await rm(path.join(root,'dist'),{recursive:true,force:true});
+await mkdir(path.join(root,'dist'),{recursive:true});
+await cp(path.join(root,'web'),path.join(root,'dist'),{recursive:true});
+await cp(path.join(root,'shared'),path.join(root,'dist/content'),{recursive:true});
+await writeFile(path.join(root,'dist/robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://howloop.how/sitemap.xml\n');
+await writeFile(path.join(root,'dist/sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://howloop.how/</loc></url><url><loc>https://howloop.how/privacy.html</loc></url></urlset>');
+console.log('Built dependency-free food playground and shared learning content.');

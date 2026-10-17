@@ -1,6 +1,0 @@
-export const calculators=[
-{slug:'compound-interest',name:'Compound interest',tag:'SAVE & GROW',icon:'growth',description:'See what small, regular deposits could become. Let time do some of the work.',detail:"See your future balance and interest earned.",color:'green'},
-{slug:'mortgage',name:'Mortgage & offset',tag:'MAKE IT HOME',icon:'home',description:'Find your repayments. See what an offset or extra payment could change.',detail:"Calculate repayments and the effect of an offset or extra payments.",color:'blue'},
-{slug:'savings-goal',name:'Savings goal',tag:'PLAN SOMETHING GOOD',icon:'target',description:'A home deposit, a big trip, a fresh start. Turn your goal into a monthly plan.',detail:"Find how much to save each month to reach your target.",color:'peach'},
-{slug:'emergency-fund',name:'Emergency fund',tag:'FIND YOUR BUFFER',icon:'shield',description:'Work out a cash buffer that fits your expenses. Give yourself some breathing room.',detail:"Work out your cash buffer and how long it could take to build.",color:'lavender'}
-];

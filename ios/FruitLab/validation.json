@@ -1,0 +1,76 @@
+{
+  "dateAustraliaBrisbane": "2026-10-18",
+  "displayName": "Howloop",
+  "internalProject": "FruitLab",
+  "sharedResources": {
+    "apple": {
+      "sha256": "8d0a2413e238b53bd868648587e9f9ffbabbccb1ec5ad5af71c9cb0a51df4f4e",
+      "bundleMatchesShared": true
+    },
+    "lemon": {
+      "sha256": "edcc28e01aa919dd56dc8231ec74b81f6cc48afe9a590bbc47d83073c48f0aa2",
+      "bundleMatchesShared": true
+    }
+  },
+  "swiftCoreAssertions": {
+    "passed": 68,
+    "executed": true,
+    "command": "./verify_core.sh"
+  },
+  "simulatorBuild": {
+    "passed": true,
+    "action": "build-for-testing",
+    "architectures": [
+      "arm64",
+      "x86_64"
+    ],
+    "appAndTestBinariesCompiled": true,
+    "codeSigningAllowed": false,
+    "command": "./build_simulator.sh"
+  },
+  "simulatorRuntimeTests": {
+    "executed": false,
+    "reason": "CoreSimulatorService connection invalid and simulator runtime service inaccessible in sandbox."
+  },
+  "nativeUIVerification": {
+    "performed": false,
+    "reason": "No simulator runtime could be launched in this environment."
+  },
+  "deviceInstalled": false,
+  "submittedToAppStore": false,
+  "learningContentDuplicatedInNative": false,
+  "features": [
+    "lemon-first orchard",
+    "apple and lemon selection",
+    "tap fruit to inspect",
+    "shake-tree action with reduced-motion support",
+    "rotate and spread/pinch 3D fruit",
+    "button alternatives",
+    "five unique seed discoveries",
+    "shared English Korean Spanish content",
+    "three facts and four growth-story cards",
+    "shared fruit origin card",
+    "shared illustrative-model note",
+    "shared playground subtitle"
+  ],
+  "sourceFiles": {
+    "Source/AppleMesh.swift": "ad15de12356e001c03c88fd6eda3e3ae5b1bfe2615be76ea48319dd1927ae161",
+    "Source/ExplorationState.swift": "5d3eb9491d4eb0e8dcf1de65b6ca583d88d4000971e8aa413e1f9efba4f33662",
+    "Source/FoodScene.swift": "f57f2ab363f28097bb500b7e8da8ef1c0637c528938161c312ead868282119cb",
+    "Source/FruitContent.swift": "3cf500c472e32e8259df47be74237c48d25ed1281e9fd60bed2a1c4aa6661abd",
+    "Source/FruitLabApp.swift": "01b405a122de412e38bf008726e44bd5b90d77e3e94ae6faec24b4c15003f6a7",
+    "Source/FruitSceneView.swift": "be92974387d484238d7a3853ae7bae44728697493b616763d81aed615c8211ae"
+  },
+  "sharedBrandResource": {
+    "source": "../../web/apple-touch-icon.png",
+    "sourceSha256": "84795064b41c41dada29307791e474b5ebff54da8c36e9ccefb8ae54ba32472a",
+    "bundledSha256": "620b5fe446224a5b8c9612fad597700971ed4f5c745ce3d7e224cd78a0d176bc",
+    "canonicalWebFileReferencedDirectly": true,
+    "bundledResourceExists": true,
+    "pngRecompressedByXcode": true,
+    "pixelEqualityNotIndependentlyVerified": true,
+    "usage": "native orchard navigation header",
+    "launcherIconChanged": false
+  },
+  "displayNameStatus": "Howloop is provisional for the app; website branding remains Howloop and the final app name will be chosen later."
+}
