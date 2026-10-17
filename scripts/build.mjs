@@ -8,7 +8,7 @@ await mkdir(path.join(root,'dist'),{recursive:true});
 await cp(path.join(root,'web'),path.join(root,'dist'),{recursive:true});
 await cp(path.join(root,'shared'),path.join(root,'dist/content'),{recursive:true});
 await writeFile(path.join(root,'dist/robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://howloop.how/sitemap.xml\n');
-await writeFile(path.join(root,'dist/sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://howloop.how/</loc></url><url><loc>https://howloop.how/privacy.html</loc></url></urlset>');
+await writeFile(path.join(root,'dist/sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://howloop.how/</loc><lastmod>2026-10-18</lastmod></url><url><loc>https://howloop.how/privacy.html</loc><lastmod>2026-10-18</lastmod></url></urlset>');
 console.log('Built dependency-free food playground and shared learning content.');
 
 // Version every local module and stylesheet, including transitive imports.
