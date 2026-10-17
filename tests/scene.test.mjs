@@ -33,8 +33,8 @@ for(const fruit of ['apple','lemon'])for(const right of [false,true]){
 }
 
 test('lemon and apple have different silhouettes and five stable seed identities',()=>{
-  assert.ok(fruitSurface(0,0,'lemon')[1]>fruitSurface(0,0,'apple')[1]+.2);
-  assert.ok(fruitSurface(Math.PI/2,0,'apple')[0]>fruitSurface(Math.PI/2,0,'lemon')[0]+.2);
+  assert.ok(fruitSurface(0,0,'lemon')[1]>fruitSurface(0,0,'apple')[1]+.15);
+  assert.ok(fruitSurface(Math.PI/2,0,'apple')[0]>fruitSurface(Math.PI/2,0,'lemon')[0]+.12);
   assert.equal(SEED_POSITIONS.length,5);assert.equal(new Set(SEED_POSITIONS.map(String)).size,5);
 });
 

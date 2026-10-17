@@ -3,9 +3,9 @@ import { cross, normalize, subtract } from './math.js';
 export function fruitSurface(theta, phi, fruit='apple') {
   const s=Math.sin(theta),c=Math.cos(theta);
   if(fruit==='lemon') {
-    const radius=.81*s*(1+.065*s)*(1+.015*Math.cos(9*phi)*s*s);
+    const radius=.91*s*(1+.045*s)*(1+.015*Math.cos(9*phi)*s*s);
     // The small pointed ends make this recognisably a lemon from every angle.
-    const y=1.14*c+.18*Math.sign(c)*Math.pow(Math.abs(c),14);
+    const y=1.04*c+.09*Math.sign(c)*Math.pow(Math.abs(c),24);
     return [radius*Math.cos(phi),y,radius*Math.sin(phi)];
   }
   const radius=s*(1.02+.11*s+.055*c)*(1+.035*Math.cos(5*phi)*s*s);

@@ -33,14 +33,14 @@ export function createTextures(document) {
     fc.lineWidth=.5+random();fc.beginPath();fc.moveTo(384+dx*.15,127);
     fc.bezierCurveTo(384+dx,300,384+dx,480,384+dx*.15,641);fc.stroke();
   }
-  const [lemon,lc]=make(1024,512);lc.fillStyle='#f7ce38';lc.fillRect(0,0,1024,512);
+  const [lemon,lc]=make(1024,512);lc.fillStyle='#ffe34d';lc.fillRect(0,0,1024,512);
   for(let i=0;i<12500;i++){
     const x=random()*1024,y=random()*512,r=.45+random()*1.7;
-    lc.fillStyle=`rgba(${random()>.5?'255,245,157':'170,128,12'},${.025+random()*.09})`;
+    lc.fillStyle=`rgba(${random()>.5?'255,245,157':'190,163,30'},${.025+random()*.09})`;
     lc.beginPath();lc.arc(x,y,r,0,Math.PI*2);lc.fill();
   }
   const [citrus,cc]=make(768,768);cc.fillStyle='#fff7d2';cc.fillRect(0,0,768,768);
-  cc.save();cc.translate(384,384);cc.scale(.82/1.4,1.30/1.4);
+  cc.save();cc.translate(384,384);cc.scale(.95/1.4,1.12/1.4);
   const circle=(r,color)=>{cc.beginPath();cc.arc(0,0,r,0,Math.PI*2);cc.fillStyle=color;cc.fill();};
   circle(386,'#e9bd23');circle(373,'#fff8d8');circle(344,'#f9d759');
   for(let s=0;s<10;s++){
@@ -117,7 +117,7 @@ void main(){
   vec3 color=base*(.43+.52*key+.15*fill);
   if(uMaterial==1||uMaterial==10){color=base*(.78+.18*key+.07*fill);specular=.025;}
   if(uMaterial==0){specular=.48;}
-  if(uMaterial==9){specular=.25;}
+  if(uMaterial==9){color=base*(.72+.23*key+.08*fill);specular=.035;}
   if(uMaterial==7){color=base*.95;}
   color+=vec3(1.0,.95,.84)*gloss*specular;
   float rim=pow(1.0-max(dot(N,V),0.0),3.0)*max(N.y*.5+.5,0.0);

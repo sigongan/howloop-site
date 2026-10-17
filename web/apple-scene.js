@@ -76,7 +76,7 @@ export function createAppleScene(canvas,{onSeed,fruit='apple'}={}) {
       items.push({mesh:body.skin,model:body.model,material:lemon?9:0,texture:lemon?'lemon':'apple'});
       items.push({mesh:body.cut,model:body.model,material:lemon?10:1,texture:lemon?'citrus':'flesh'});
       if(body.right){
-        const top=lemon?1.29:.88;
+        const top=lemon?1.10:.88;
         items.push({mesh:stem,model:compose(body.model,translate(.025,top,0),rotateZ(-.12),scale(lemon?.65:1,lemon?.50:1,lemon?.65:1)),material:2});
         items.push({mesh:leaf,model:compose(body.model,translate(.055,top+(lemon?.13:.27),0),rotateZ(.30),rotateX(.36),scale(lemon?.74:1)),material:3});
       }
@@ -106,7 +106,7 @@ export function createAppleScene(canvas,{onSeed,fruit='apple'}={}) {
   }
   function camera(){
     const aspect=canvas.width/Math.max(1,canvas.height);
-    halfHeight=Math.max(1.58,(1.37+state.split*1.10)/aspect);halfWidth=halfHeight*aspect;
+    halfHeight=Math.max(1.72,(1.32+state.split*1.15)/aspect);halfWidth=halfHeight*aspect;
     projectionView=multiply(orthographic(-halfWidth,halfWidth,-halfHeight,halfHeight,.1,20),translate(0,-.10,-7));
   }
   function render(){
