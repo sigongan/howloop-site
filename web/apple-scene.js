@@ -17,7 +17,7 @@ export function createAppleScene(canvas,{onSeed,fruit='apple'}={}) {
     ||canvas.getContext('experimental-webgl',{alpha:true,antialias:true,premultipliedAlpha:false});
   if(!gl)throw new Error('3D is unavailable in this browser. The picture explorer is still available.');
   const win=canvas.ownerDocument.defaultView;
-  const state={fruit:fruit==='lemon'?'lemon':'apple',yaw:0,pitch:-.08,split:0,foundSeeds:new Set()};
+  const state={fruit:['apple','lemon','watermelon'].includes(fruit)?fruit:'apple',yaw:0,pitch:-.08,split:0,foundSeeds:new Set()};
   let destroyed=false,lost=false,frame=0,halfWidth=2,halfHeight=1.6,projectionView=identity();
   let bodies=[],seedTargets=[],items=[],fruitMeshes=[],allMeshes=[];
   const shaders=[],textures=[];
@@ -72,10 +72,10 @@ export function createAppleScene(canvas,{onSeed,fruit='apple'}={}) {
       const direction=body.right?1:-1;
       body.model=compose(root,translate(direction*state.split*1.16,0,0),rotateY(direction*state.split*1.07));
       body.inverse=inverse(body.model);
-      const lemon=state.fruit==='lemon';
-      items.push({mesh:body.skin,model:body.model,material:lemon?9:0,texture:lemon?'lemon':'apple'});
-      items.push({mesh:body.cut,model:body.model,material:lemon?10:1,texture:lemon?'citrus':'flesh'});
-      if(body.right){
+      const lemon=state.fruit==='lemon',watermelon=state.fruit==='watermelon';
+      items.push({mesh:body.skin,model:body.model,material:watermelon?13:lemon?9:0,texture:watermelon?'watermelon':lemon?'lemon':'apple'});
+      items.push({mesh:body.cut,model:body.model,material:watermelon?14:lemon?10:1,texture:watermelon?'melonFlesh':lemon?'citrus':'flesh'});
+      if(body.right&&!watermelon){
         const top=lemon?1.10:.88;
         items.push({mesh:stem,model:compose(body.model,translate(.025,top,0),rotateZ(-.12),scale(lemon?.65:1,lemon?.50:1,lemon?.65:1)),material:2});
         items.push({mesh:leaf,model:compose(body.model,translate(.055,top+(lemon?.13:.27),0),rotateZ(.30),rotateX(.36),scale(lemon?.74:1)),material:3});
@@ -85,9 +85,9 @@ export function createAppleScene(canvas,{onSeed,fruit='apple'}={}) {
       const body=bodies[id<3?0:1],dir=id<3?1:-1,[y,z]=SEED_POSITIONS[id];
       const found=state.foundSeeds.has(id),size=found?1.20:1;
       const pocket=compose(body.model,translate(dir*.009,y,z),rotateX(id%2?.25:-.25),scale(.011,.155,.112));
-      items.push({mesh:sphere,model:pocket,material:state.fruit==='lemon'?12:5});
+      items.push({mesh:sphere,model:pocket,material:state.fruit==='watermelon'?16:state.fruit==='lemon'?12:5});
       const model=compose(body.model,translate(dir*.040,y,z),rotateX(id%2?.25:-.25),scale(.044*size,.125*size,.076*size));
-      items.push({mesh:seedMesh,model,material:found?6:(state.fruit==='lemon'?11:4)});
+      items.push({mesh:seedMesh,model,material:found?6:(state.fruit==='watermelon'?15:state.fruit==='lemon'?11:4)});
       seedTargets.push({id,model,inverse:inverse(model),center:transformPoint(model,[0,0,0]),found});
       if(found){
         items.push({mesh:ring,model:compose(body.model,translate(dir*.055,y,z),rotateX(id%2?.25:-.25),scale(.17,.18,.14)),material:7});
@@ -129,7 +129,7 @@ export function createAppleScene(canvas,{onSeed,fruit='apple'}={}) {
   }
   function setState(next={}){
     if(destroyed)return;
-    if(next.fruit!==undefined&&['apple','lemon'].includes(next.fruit)&&next.fruit!==state.fruit){
+    if(next.fruit!==undefined&&['apple','lemon','watermelon'].includes(next.fruit)&&next.fruit!==state.fruit){
       state.fruit=next.fruit;state.foundSeeds=new Set();rebuildFruit();
     }
     if(Number.isFinite(next.yaw))state.yaw=next.yaw%(Math.PI*2);
