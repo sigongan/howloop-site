@@ -40,3 +40,35 @@ html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:10
 .world.dropping .tree-fruit{pointer-events:none;transition:none}
 .tree-fruit.landed:hover{transform:translateY(-4px) rotate(-5deg)}
 .tree-fruit.landed:active{transform:scale(.94)}
+
+/* Short, readable learning cards and a handwritten-style invitation. */
+.fact-card h3,.story-card h3{font-size:22px;line-height:1.3}
+.fact-card p,.story-card p,.origin-section p{font-size:18px;line-height:1.55;color:#465a43}
+.fact-card{align-items:center}.story-card{padding:26px 18px}.origin-section h2{font-size:23px}
+.inside-note{position:absolute;z-index:2;bottom:34px;left:50%;transform:translateX(-50%) rotate(-2deg);width:max-content;max-width:94%;padding:8px 10px;min-height:48px;border:0;background:none;box-shadow:none;color:#365333;font-family:'Chalkboard SE','Comic Sans MS',Sprout,'Trebuchet MS',system-ui,sans-serif;font-size:clamp(20px,2.4vw,27px);font-weight:750;line-height:1.3;cursor:pointer}
+.inside-note #open-label{background:linear-gradient(transparent 72%,#f5dd83 72%,#f5dd83 94%,transparent 94%);padding:0 3px}
+.note-star{display:inline-block;color:#a76d25;margin-right:6px}.note-arrow{display:inline-block;margin-left:6px;color:#698653}
+.inside-note:hover .note-arrow{transform:translate(2px,-2px)}.inside-note:active{transform:translateX(-50%) rotate(0deg)}
+.fruit-world{padding-bottom:88px}.fruit-world canvas{height:calc(var(--stage-height) - 137px)}
+.stage-instruction{font-size:15px;bottom:10px}.section-heading .eyebrow{display:none}
+@media(max-width:760px){
+ .story-grid{grid-template-columns:1fr;gap:12px}
+ .story-card{display:grid;grid-template-columns:80px minmax(0,1fr);column-gap:18px;text-align:left;padding:22px 18px 22px 34px;align-items:center}
+ .story-card>svg{grid-column:1;grid-row:1 / 3;width:80px;height:80px}
+ .story-card h3{grid-column:2;margin:0 0 5px}.story-card p{grid-column:2;margin:0}
+ .story-number{left:8px;top:8px;width:22px;height:22px}
+ .fact-card{padding:20px 16px;gap:14px}.fact-visual{width:54px;height:54px}
+ .origin-section{align-items:flex-start;padding:22px 18px;gap:14px}.origin-section>svg{width:44px;height:44px}
+ .inside-note{font-size:21px}.section-heading h2{font-size:28px}
+}
+
+.orchard-art{touch-action:pan-y;cursor:grab}.orchard-art:active{cursor:grabbing}
+.world.shaking:not(.dropping) .tree-fruits{animation:shake-fruits .7s ease}
+#tree-controls p{min-height:19px}
+.tree-instruction{font-size:16px;font-weight:650}.tree-instruction .hand{display:none}
+
+.inside-note{margin:0;cursor:default;font-size:clamp(19px,2.3vw,25px)}
+.inside-note:active{transform:translateX(-50%) rotate(-2deg)}
+.pull-handle{position:absolute;top:62%;z-index:3;width:48px;height:48px;border:2px dashed #92a878;border-radius:50%;background:#fffbedee;color:#4c6a40;font-size:27px;touch-action:none;cursor:ew-resize;user-select:none;-webkit-user-select:none}
+.pull-left{left:22%}.pull-right{right:22%}.pull-handle:active{background:#f9e8a3;border-style:solid}
+@media(max-width:760px){.inside-note{font-size:19px}.note-star,.note-arrow{margin:0 3px}}

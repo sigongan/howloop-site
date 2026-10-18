@@ -4,28 +4,23 @@ export function createTextures(document) {
   const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
   const make=(width,height)=>{const c=document.createElement('canvas');c.width=width;c.height=height;return[c,c.getContext('2d')];};
   const [apple,ac]=make(1024,512);
-  for(let x=0;x<1024;x++){
-    const broad=Math.sin(x*.008+1)*.5+.5,wave=Math.sin(x*.033)*Math.sin(x*.103);
-    ac.fillStyle=`rgb(${174+broad*34+wave*15},${24+broad*16+wave*8},${22+broad*5})`;
-    ac.fillRect(x,0,1,512);
+  // Painted characters: flat colour, a cream brush mark and a tiny smile.
+  function paintFruit(ctx,colour,blush){
+    ctx.fillStyle=colour;ctx.fillRect(0,0,1024,512);
+    ctx.strokeStyle='#fff6cd';ctx.lineWidth=18;ctx.lineCap='round';
+    ctx.beginPath();ctx.moveTo(432,190);ctx.quadraticCurveTo(441,153,474,149);ctx.stroke();
+    ctx.fillStyle=blush;
+    for(const x of [458,566]){ctx.beginPath();ctx.ellipse(x,286,17,9,0,0,Math.PI*2);ctx.fill();}
+    ctx.fillStyle='#3c5037';
+    for(const x of [482,542]){ctx.beginPath();ctx.ellipse(x,267,6,9,0,0,Math.PI*2);ctx.fill();}
+    ctx.strokeStyle='#3c5037';ctx.lineWidth=5;
+    ctx.beginPath();ctx.arc(512,284,16,.18,Math.PI-.18);ctx.stroke();
   }
-  for(let i=0;i<1250;i++){
-    const x=random()*1024,y=random()*512,w=.3+random()*1.5,h=5+random()*35;
-    ac.fillStyle=`rgba(255,179,77,${.01+random()*.055})`;ac.fillRect(x,y,w,h);
-  }
-  for(let i=0;i<3800;i++){
-    const x=random()*1024,y=random()*512,r=.5+random()*1.25;
-    ac.fillStyle=`rgba(255,223,155,${.09+random()*.22})`;
-    ac.beginPath();ac.ellipse(x,y,r,r*1.25,0,0,Math.PI*2);ac.fill();
-  }
+  paintFruit(ac,'#ed8b74','#f5b69c');
   const [flesh,fc]=make(768,768);fc.fillStyle='#f7e9c8';fc.fillRect(0,0,768,768);
   const wash=fc.createRadialGradient(384,380,20,384,380,400);
   wash.addColorStop(0,'rgba(224,199,145,.30)');wash.addColorStop(.66,'rgba(255,255,238,.12)');wash.addColorStop(1,'rgba(233,202,142,.24)');
   fc.fillStyle=wash;fc.fillRect(0,0,768,768);
-  for(let i=0;i<14000;i++){
-    fc.fillStyle=`rgba(153,116,54,${.018+random()*.045})`;
-    fc.fillRect(random()*768,random()*768,.6+random()*2,.8+random()*3.6);
-  }
   fc.fillStyle='rgba(191,158,93,.20)';fc.beginPath();fc.moveTo(384,112);
   fc.bezierCurveTo(307,270,314,510,384,657);fc.bezierCurveTo(452,510,462,270,384,112);fc.fill();
   for(let i=0;i<50;i++){
@@ -33,12 +28,7 @@ export function createTextures(document) {
     fc.lineWidth=.5+random();fc.beginPath();fc.moveTo(384+dx*.15,127);
     fc.bezierCurveTo(384+dx,300,384+dx,480,384+dx*.15,641);fc.stroke();
   }
-  const [lemon,lc]=make(1024,512);lc.fillStyle='#ffe34d';lc.fillRect(0,0,1024,512);
-  for(let i=0;i<12500;i++){
-    const x=random()*1024,y=random()*512,r=.45+random()*1.7;
-    lc.fillStyle=`rgba(${random()>.5?'255,245,157':'190,163,30'},${.025+random()*.09})`;
-    lc.beginPath();lc.arc(x,y,r,0,Math.PI*2);lc.fill();
-  }
+  const [lemon,lc]=make(1024,512);paintFruit(lc,'#f5d968','#efba83');
   const [citrus,cc]=make(768,768);cc.fillStyle='#fff7d2';cc.fillRect(0,0,768,768);
   cc.save();cc.translate(384,384);cc.scale(.95/1.4,1.12/1.4);
   const circle=(r,color)=>{cc.beginPath();cc.arc(0,0,r,0,Math.PI*2);cc.fillStyle=color;cc.fill();};
@@ -52,12 +42,7 @@ export function createTextures(document) {
     cc.fillStyle=gradient;cc.fill();cc.strokeStyle='rgba(255,251,221,.85)';cc.lineWidth=8;cc.stroke();
     // Fine juice-vesicle threads, each confined to its own wedge.
     cc.save();cc.clip();
-    for(let i=0;i<210;i++){
-      const angle=a+random()*(b-a),r=65+random()*265,len=6+random()*22;
-      cc.strokeStyle=`rgba(255,251,215,${.12+random()*.28})`;cc.lineWidth=.6+random()*1.1;
-      cc.beginPath();cc.moveTo(Math.cos(angle)*r,Math.sin(angle)*r);
-      cc.lineTo(Math.cos(angle)*(r+len),Math.sin(angle)*(r+len));cc.stroke();
-    }cc.restore();
+    cc.restore();
   }
   circle(33,'#fff7d6');cc.restore();
   return {apple,flesh,lemon,citrus};
@@ -114,13 +99,13 @@ void main(){
   else if(uMaterial==11){base=vec3(.94,.89,.69);specular=.15;}
   else if(uMaterial==12){base=vec3(.72,.62,.28);specular=.015;}
   else{base=vec3(1.0,.76,.18);specular=.13;}
-  vec3 color=base*(.43+.52*key+.15*fill);
+  vec3 color=base*(.82+.14*key+.04*fill);specular=.015;
   if(uMaterial==1||uMaterial==10){color=base*(.78+.18*key+.07*fill);specular=.025;}
-  if(uMaterial==0){specular=.48;}
-  if(uMaterial==9){color=base*(.72+.23*key+.08*fill);specular=.035;}
+  if(uMaterial==0){color=base*(.93+.07*key);specular=0.0;}
+  if(uMaterial==9){color=base*(.93+.07*key);specular=0.0;}
   if(uMaterial==7){color=base*.95;}
   color+=vec3(1.0,.95,.84)*gloss*specular;
   float rim=pow(1.0-max(dot(N,V),0.0),3.0)*max(N.y*.5+.5,0.0);
-  if(uMaterial==0||uMaterial==9)color+=vec3(.11,.07,.025)*rim;
+  // Painted rind keeps the same soft colour at the silhouette.
   gl_FragColor=vec4(color,1.0);
 }`;

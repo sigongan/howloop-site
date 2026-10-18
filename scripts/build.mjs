@@ -14,10 +14,10 @@ console.log('Built dependency-free food playground and shared learning content.'
 // Version every local module and stylesheet, including transitive imports.
 // The domain's edge cache can outlive a deployment.
 async function assetFiles(dir){const entries=await readdir(dir,{withFileTypes:true});return (await Promise.all(entries.map(e=>e.isDirectory()?assetFiles(path.join(dir,e.name)):[path.join(dir,e.name)]))).flat();}
-const assets=(await assetFiles(path.join(root,'dist'))).filter(f=>/\.(js|css)$/.test(f)).sort();
+const assets=(await assetFiles(path.join(root,'dist'))).filter(f=>/\.(js|css|json)$/.test(f)).sort();
 const hash=createHash('sha256');for(const f of assets)hash.update(await readFile(f));
 const version=hash.digest('hex').slice(0,12);
 for(const f of [...assets.filter(f=>f.endsWith('.js')),path.join(root,'dist/index.html'),path.join(root,'dist/privacy.html')]){
  const source=await readFile(f,'utf8');
- await writeFile(f,source.replace(/(["'])([^"'\s]+\.(?:js|css))\1/g,(match,quote,url)=>`${quote}${url}?v=${version}${quote}`));
+ await writeFile(f,source.replaceAll('/content/${id}.json','/content/${id}.json?v='+version).replace(/(["'])([^"'\s]+\.(?:js|css))\1/g,(match,quote,url)=>`${quote}${url}?v=${version}${quote}`));
 }
