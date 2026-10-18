@@ -88,3 +88,16 @@ html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:10
  .play-top{gap:8px}.fruit-picker{flex:1;gap:2px;border-radius:18px}.fruit-picker button{flex-direction:column;gap:1px;padding:4px 8px;min-width:67px;font-size:12px;min-height:62px;line-height:1.3}.fruit-picker button:last-child{min-width:96px}.fruit-picker svg{width:28px;height:28px}.round-button{flex-shrink:0;width:43px;height:43px}
  .ground-fruit{width:68px;height:63px}.melon-one{left:13%;top:58%}.melon-two{left:41%;top:65%}.melon-three{left:67%;top:55%}.ground-caption{font-size:13px;top:12px;left:15px}
 }
+
+/* Seed feedback lives in the viewport, independent of page scroll. */
+.seed-toast{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 18px);transform:translateX(-50%);z-index:25;display:flex;align-items:center;justify-content:center;gap:10px;width:max-content;max-width:calc(100% - 32px);padding:12px 20px;border:2px solid #d7e2bf;border-radius:24px;background:#fffdf4;color:#365437;box-shadow:0 8px 25px #314b3b24;font-size:20px;font-weight:750;line-height:1.4;pointer-events:none}
+.seed-sparkle{color:#a97928;font-size:28px}.seed-toast.popping{animation:seed-toast-in .25s ease-out}
+@keyframes seed-toast-in{from{opacity:0;transform:translate(-50%,8px)}to{opacity:1;transform:translate(-50%,0)}}
+.seed-celebration{inset:0;margin:auto;max-width:400px;width:calc(100% - 36px);max-height:calc(100dvh - 36px);overflow:auto;padding:28px 22px 30px;text-align:center;border:2px solid #dce6c6;box-shadow:0 18px 70px #243c3a30}
+.seed-celebration::backdrop{background:#304a3a77}.seed-celebration[open]{animation:seed-celebrate-in .35s ease-out}
+.seed-celebration h2{font-size:34px;line-height:1.15;margin:8px 0 12px}.seed-celebration>p{font-size:23px;line-height:1.4;margin:0;color:#3f593f;font-weight:650}
+.reward-stars{display:flex;align-items:center;justify-content:center;gap:15px;color:#b28a36;font-size:38px}.reward-stars svg{width:105px;height:105px}.reward-stars span:last-child{transform:translateY(15px)}
+.reward-seeds{margin:17px 0 22px;color:#608653;font-size:21px;font-weight:bold}.seed-celebration .pill{min-width:190px;font-size:17px;min-height:52px}
+@keyframes seed-celebrate-in{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:none}}
+@media(max-width:370px){.seed-toast{font-size:18px;padding:10px 16px}.seed-celebration h2{font-size:30px}.seed-celebration>p{font-size:21px}}
+@media(prefers-reduced-motion:reduce){.seed-toast.popping,.seed-celebration[open]{animation:none}}
