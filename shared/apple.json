@@ -47,38 +47,38 @@
         {
           "id": "skin",
           "title": "Skin",
-          "text": "The thin outside is called the skin. Apples can be different colours."
+          "text": "The thin outer layer."
         },
         {
           "id": "flesh",
           "title": "Flesh",
-          "text": "The firm part inside is called the flesh."
+          "text": "The firm part we eat."
         },
         {
           "id": "seed",
           "title": "Core and seeds",
-          "text": "The core is in the middle. Seeds can be tucked inside it."
+          "text": "Seeds hide in the centre."
         }
       ],
       "story": [
         {
           "title": "On a tree",
-          "text": "Apples grow on apple trees."
+          "text": "Apples grow on trees."
         },
         {
           "title": "First, a blossom",
-          "text": "A flower can become a tiny apple."
+          "text": "A flower can become an apple."
         },
         {
           "title": "Time to grow",
-          "text": "The apple grows bigger on its branch."
+          "text": "The little apple grows bigger."
         },
         {
           "title": "To the kitchen",
-          "text": "A grown-up can wash and cut an apple. What can you find inside?"
+          "text": "Ask a grown-up to wash and cut it."
         }
       ],
-      "origin": "Apples grow on trees. People grow many different kinds around the world.",
+      "origin": "Apples grow in many places around the world.",
       "modelNote": "A play model with five seeds. Real fruit can be different.",
       "playgroundTagline": "A little food playground"
     },
@@ -125,38 +125,38 @@
         {
           "id": "skin",
           "title": "껍질",
-          "text": "얇은 겉부분을 껍질이라고 불러요. 사과는 여러 색이 있어요."
+          "text": "얇은 겉부분이에요."
         },
         {
           "id": "flesh",
           "title": "과육",
-          "text": "안쪽의 단단한 부분을 과육이라고 불러요."
+          "text": "우리가 먹는 단단한 속이에요."
         },
         {
           "id": "seed",
           "title": "심과 씨앗",
-          "text": "가운데에는 심이 있어요. 그 안에 씨앗이 숨어 있을 수 있어요."
+          "text": "가운데에 씨앗이 숨어 있어요."
         }
       ],
       "story": [
         {
           "title": "나무에서",
-          "text": "사과는 사과나무에서 자라요."
+          "text": "사과는 나무에서 자라요."
         },
         {
           "title": "먼저 꽃이 피어요",
-          "text": "꽃에서 아주 작은 사과가 생길 수 있어요."
+          "text": "꽃에서 사과가 생길 수 있어요."
         },
         {
           "title": "쑥쑥 자라요",
-          "text": "가지에 달린 사과가 점점 커져요."
+          "text": "작은 사과가 점점 커져요."
         },
         {
           "title": "부엌으로",
-          "text": "어른이 사과를 씻고 잘라줄 수 있어요. 안에서 무엇을 찾았나요?"
+          "text": "씻고 자르는 건 어른에게 부탁해요."
         }
       ],
-      "origin": "사과는 나무에서 자라요. 세계 여러 곳에서 다양한 종류의 사과를 기르고 있어요.",
+      "origin": "사과는 세계 여러 곳에서 자라요.",
       "modelNote": "씨앗 5개가 있는 놀이 모형이에요. 실제 과일은 다를 수 있어요.",
       "playgroundTagline": "어린이 식재료 놀이터"
     },
@@ -203,38 +203,38 @@
         {
           "id": "skin",
           "title": "Piel",
-          "text": "La parte fina de fuera se llama piel. Las manzanas pueden tener distintos colores."
+          "text": "La capa fina de fuera."
         },
         {
           "id": "flesh",
           "title": "Pulpa",
-          "text": "La parte firme de dentro se llama pulpa."
+          "text": "La parte firme que comemos."
         },
         {
           "id": "seed",
           "title": "Corazón y semillas",
-          "text": "El corazón está en el centro. Puede guardar semillas dentro."
+          "text": "Las semillas están en el centro."
         }
       ],
       "story": [
         {
           "title": "En un árbol",
-          "text": "Las manzanas crecen en los manzanos."
+          "text": "Las manzanas crecen en árboles."
         },
         {
           "title": "Primero, una flor",
-          "text": "Una flor puede convertirse en una manzana pequeña."
+          "text": "Una flor puede convertirse en manzana."
         },
         {
           "title": "A crecer",
-          "text": "La manzana crece en su rama."
+          "text": "La manzana se hace más grande."
         },
         {
           "title": "A la cocina",
-          "text": "Una persona adulta puede lavar y cortar una manzana. ¿Qué encuentras dentro?"
+          "text": "Pide a un adulto que la lave y corte."
         }
       ],
-      "origin": "Las manzanas crecen en árboles. Se cultivan muchas variedades en todo el mundo.",
+      "origin": "Las manzanas crecen en muchos lugares del mundo.",
       "modelNote": "Un modelo con cinco semillas. La fruta real puede ser diferente.",
       "playgroundTagline": "Un pequeño mundo de alimentos"
     }

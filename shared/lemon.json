@@ -47,38 +47,38 @@
         {
           "id": "skin",
           "title": "Peel",
-          "text": "The yellow outside is called the peel."
+          "text": "The yellow outer layer."
         },
         {
           "id": "flesh",
           "title": "Segments",
-          "text": "Inside are little sections filled with juicy pulp."
+          "text": "Juicy little sections inside."
         },
         {
           "id": "seed",
           "title": "Seeds",
-          "text": "Some lemons have seeds. Others have very few or none."
+          "text": "Some lemons have no seeds!"
         }
       ],
       "story": [
         {
           "title": "On a tree",
-          "text": "Lemons grow on lemon trees."
+          "text": "Lemons grow on trees."
         },
         {
           "title": "First, a flower",
-          "text": "A flower can become a little green fruit."
+          "text": "A flower can become a little lemon."
         },
         {
           "title": "Time to grow",
-          "text": "The fruit grows. Many lemons turn yellow as they ripen."
+          "text": "Many lemons turn yellow as they ripen."
         },
         {
           "title": "To the kitchen",
-          "text": "A grown-up can wash and cut a lemon. Look at the sections inside!"
+          "text": "Ask a grown-up to wash and cut it."
         }
       ],
-      "origin": "Lemons grow on trees in many warm places. Their long history began in Asia; the exact first home is uncertain.",
+      "origin": "Lemons grow in many warm places.",
       "modelNote": "A play model with five seeds. Real fruit can be different.",
       "playgroundTagline": "A little food playground"
     },
@@ -125,38 +125,38 @@
         {
           "id": "skin",
           "title": "껍질",
-          "text": "노란 겉부분을 껍질이라고 불러요."
+          "text": "노란 겉부분이에요."
         },
         {
           "id": "flesh",
           "title": "과육 조각",
-          "text": "속에는 과즙이 들어 있는 작은 조각들이 있어요."
+          "text": "과즙이 가득한 작은 조각이에요."
         },
         {
           "id": "seed",
           "title": "씨앗",
-          "text": "씨앗이 있는 레몬도 있고, 거의 없거나 아예 없는 레몬도 있어요."
+          "text": "씨앗이 없는 레몬도 있어요!"
         }
       ],
       "story": [
         {
           "title": "나무에서",
-          "text": "레몬은 레몬나무에서 자라요."
+          "text": "레몬은 나무에서 자라요."
         },
         {
           "title": "먼저 꽃이 피어요",
-          "text": "꽃에서 작은 초록 열매가 생길 수 있어요."
+          "text": "꽃에서 레몬이 생길 수 있어요."
         },
         {
           "title": "쑥쑥 자라요",
-          "text": "열매가 자라요. 많은 레몬은 익으면서 노랗게 변해요."
+          "text": "많은 레몬은 익으면 노래져요."
         },
         {
           "title": "부엌으로",
-          "text": "어른이 레몬을 씻고 잘라줄 수 있어요. 속의 조각들을 살펴봐요!"
+          "text": "씻고 자르는 건 어른에게 부탁해요."
         }
       ],
-      "origin": "레몬은 여러 따뜻한 지역의 나무에서 자라요. 오래전 아시아에서 시작된 것으로 보지만, 정확한 첫 고향은 확실하지 않아요.",
+      "origin": "레몬은 여러 따뜻한 지역에서 자라요.",
       "modelNote": "씨앗 5개가 있는 놀이 모형이에요. 실제 과일은 다를 수 있어요.",
       "playgroundTagline": "어린이 식재료 놀이터"
     },
@@ -203,38 +203,38 @@
         {
           "id": "skin",
           "title": "Cáscara",
-          "text": "La parte amarilla de fuera se llama cáscara."
+          "text": "La capa amarilla de fuera."
         },
         {
           "id": "flesh",
           "title": "Gajos",
-          "text": "Dentro hay secciones pequeñas llenas de pulpa jugosa."
+          "text": "Pequeños gajos llenos de jugo."
         },
         {
           "id": "seed",
           "title": "Semillas",
-          "text": "Algunos limones tienen semillas. Otros tienen pocas o ninguna."
+          "text": "¡Algunos limones no tienen semillas!"
         }
       ],
       "story": [
         {
           "title": "En un árbol",
-          "text": "Los limones crecen en limoneros."
+          "text": "Los limones crecen en árboles."
         },
         {
           "title": "Primero, una flor",
-          "text": "Una flor puede convertirse en un pequeño fruto verde."
+          "text": "Una flor puede convertirse en limón."
         },
         {
           "title": "A crecer",
-          "text": "El fruto crece. Muchos limones se vuelven amarillos al madurar."
+          "text": "Muchos limones se vuelven amarillos al madurar."
         },
         {
           "title": "A la cocina",
-          "text": "Una persona adulta puede lavar y cortar un limón. ¡Mira sus gajos!"
+          "text": "Pide a un adulto que lo lave y corte."
         }
       ],
-      "origin": "Los limones crecen en árboles en muchos lugares cálidos. Su larga historia comenzó en Asia; su primer lugar exacto es incierto.",
+      "origin": "Los limones crecen en muchos lugares cálidos.",
       "modelNote": "Un modelo con cinco semillas. La fruta real puede ser diferente.",
       "playgroundTagline": "Un pequeño mundo de alimentos"
     }
