@@ -101,3 +101,13 @@ html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:10
 @keyframes seed-celebrate-in{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:none}}
 @media(max-width:370px){.seed-toast{font-size:18px;padding:10px 16px}.seed-celebration h2{font-size:30px}.seed-celebration>p{font-size:21px}}
 @media(prefers-reduced-motion:reduce){.seed-toast.popping,.seed-celebration[open]{animation:none}}
+
+/* Carry a shared fruit character from its growing scene into the close-up. */
+.fruit-world.entering canvas,.fruit-world.entering .fallback{animation:fruit-reveal .3s ease-out both}
+.fruit-world.entering.travelling canvas,.fruit-world.entering.travelling .fallback{animation:fruit-reveal .48s .2s ease-out both}
+.fruit-world.entering .pull-handle,.fruit-world.entering .inside-note{animation:fruit-controls-reveal .28s .35s ease-out both}
+@keyframes fruit-reveal{from{opacity:0}to{opacity:1}}
+@keyframes fruit-controls-reveal{from{opacity:0;translate:0 5px}to{opacity:1;translate:0 0}}
+.sound-toggle{position:absolute;top:12px;right:12px;z-index:5;display:flex;align-items:center;justify-content:center;gap:4px;min-width:64px;min-height:44px;padding:7px 10px;border:1px solid #d9dfc4;border-radius:22px;background:#fffdf3e8;color:#4b6443;font-weight:700;font-size:12px;line-height:1.2}
+.sound-toggle>span:first-child{font-size:21px}.sound-toggle[aria-pressed=true]{background:#f8e6a5;border-color:#dfc575}.sound-toggle[aria-pressed=false]>span:first-child{opacity:.55}.sound-toggle:disabled{opacity:.5}
+@media(prefers-reduced-motion:reduce){.fruit-world.entering canvas,.fruit-world.entering .fallback,.fruit-world.entering .pull-handle,.fruit-world.entering .inside-note{animation:none}}
