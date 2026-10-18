@@ -6,7 +6,7 @@ import { createAppleScene } from '../web/apple-scene.js';
 
 const close=(a,b,epsilon=1e-5)=>assert.ok(Math.abs(a-b)<epsilon,`${a} should equal ${b}`);
 
-for(const fruit of ['apple','lemon'])for(const right of [false,true]){
+for(const fruit of ['apple','lemon','watermelon'])for(const right of [false,true]){
   test(`${fruit} ${right?'right':'left'} half is finite, closed and consistently outward`,()=>{
     const m=createFruitHalf(right,fruit),welded=new Map(),ids=[],edges=new Map();
     for(let i=0;i<m.positions.length;i+=3){
@@ -38,6 +38,14 @@ test('lemon and apple have different silhouettes and five stable seed identities
   assert.equal(SEED_POSITIONS.length,5);assert.equal(new Set(SEED_POSITIONS.map(String)).size,5);
 });
 
+test('watermelon has a rounded silhouette without pointed tips or a stem hollow',()=>{
+  const top=fruitSurface(0,0,'watermelon'),bottom=fruitSurface(Math.PI,0,'watermelon');
+  close(top[1],1.02);close(bottom[1],-1.02);
+  const equator=fruitSurface(Math.PI/2,0,'watermelon')[0];
+  assert.ok(equator>top[1]&&equator<top[1]*1.1,'the melon is gently wider than it is tall');
+  assert.ok(fruitSurface(.15,0,'watermelon')[1]<top[1],'the top has no indented apple hollow');
+});
+
 test('non-uniform seed transforms preserve ray positions through inverse',()=>{
   const m=multiply(translate(-1.2,.03,.4),multiply(rotateY(-1.07),multiply(rotateX(.2),scale(.044,.125,.076))));
   for(const p of [[0,0,0],[1,1,1],[-.2,.7,-.4]]){
@@ -66,10 +74,10 @@ function pickingFixture(onSeed,inspectCanvas){
   const scene=createAppleScene(canvas,{onSeed});inspectCanvas?.(canvas,scene);return scene;
 }
 
-test('both fruits expose all five front seeds when open, and no seeds through the back',()=>{
+test('all fruits expose all five front seeds when open, and no seeds through the back',()=>{
   const hits=[],scene=pickingFixture(id=>hits.push(id));
   assert.ok(scene.getSeedTargets().every(t=>!t.visible));
-  for(const fruit of ['apple','lemon']){
+  for(const fruit of ['apple','lemon','watermelon']){
     scene.setState({fruit,split:1,yaw:0,pitch:0});
     const targets=scene.getSeedTargets();assert.equal(targets.filter(t=>t.visible).length,5);
     for(const t of targets)assert.equal(scene.pickSeed(t.clientX,t.clientY),t.id);
@@ -78,12 +86,14 @@ test('both fruits expose all five front seeds when open, and no seeds through th
       assert.equal(t.visible,false);assert.equal(scene.pickSeed(t.clientX,t.clientY),null);
     }
   }
-  assert.deepEqual(hits,[0,1,2,3,4,0,1,2,3,4]);scene.destroy();
+  assert.deepEqual(hits,[0,1,2,3,4,0,1,2,3,4,0,1,2,3,4]);scene.destroy();
 });
 
 test('switching fruit clears discovery state and closed fruit cannot be picked',()=>{
   const scene=pickingFixture();scene.setState({split:1,foundSeeds:new Set([0,1,2,3,4])});
   assert.ok(scene.getSeedTargets().every(t=>t.found));scene.setFruit('lemon');
+  assert.ok(scene.getSeedTargets().every(t=>!t.found));
+  scene.setState({foundSeeds:new Set([0,1,2,3,4])});scene.setFruit('watermelon');
   assert.ok(scene.getSeedTargets().every(t=>!t.found));scene.setState({split:0});
   for(const t of scene.getSeedTargets())assert.equal(scene.pickSeed(t.clientX,t.clientY),null);
   scene.destroy();

@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "id": "watermelon",
+  "version": "2026-10-18",
+  "seedCount": 5,
+  "languages": {
+    "en": {
+      "name": "English",
+      "rotate": "Turn",
+      "open": "Open",
+      "close": "Close",
+      "seeds": "Find the seeds",
+      "reset": "Again",
+      "seed": "Seed",
+      "found": "{count} of {total}",
+      "hintRotate": "Drag to turn. What can you see?",
+      "hintOpen": "Spread two fingers to open.",
+      "hintSeeds": "Tap the seeds hiding inside.",
+      "help": "How to play",
+      "dismiss": "Done",
+      "language": "Language",
+      "foundSeed": "Found seed",
+      "waitingSeed": "Find seed",
+      "stageLabel": "Fruit to explore",
+      "stageHint": "Drag to turn, spread to open, tap a seed.",
+      "storyTitle": "From vine to table",
+      "factsTitle": "What is inside?",
+      "orchard": "Our little garden",
+      "back": "Back to the garden",
+      "shake": "Give it a roll",
+      "pick": "Tap a watermelon",
+      "listen": "Read aloud",
+      "stop": "Stop",
+      "grownups": "For grown-ups",
+      "play": "Let’s explore",
+      "noWebGL": "Try the picture below. You can still open the fruit and find its seeds.",
+      "allFound": "Great job! You found all 5 seeds!",
+      "treeHint": "Tap a watermelon on the ground to explore.",
+      "originTitle": "Where does it come from?",
+      "appleChoice": "Apple",
+      "lemonChoice": "Lemon",
+      "fruit": "Watermelon",
+      "apple": "Watermelon",
+      "title": "Hello, little watermelon.",
+      "subtitle": "On the ground, a juicy surprise grows.",
+      "facts": [
+        {
+          "id": "skin",
+          "title": "Rind",
+          "text": "The thick green outer layer."
+        },
+        {
+          "id": "flesh",
+          "title": "Flesh",
+          "text": "Juicy red flesh inside. Other colours exist too!"
+        },
+        {
+          "id": "seed",
+          "title": "Seeds",
+          "text": "Some watermelons have few or no mature seeds."
+        }
+      ],
+      "story": [
+        {
+          "title": "Along the ground",
+          "text": "A long vine spreads across the ground."
+        },
+        {
+          "title": "A yellow flower",
+          "text": "A flower can become a tiny watermelon."
+        },
+        {
+          "title": "Bigger and bigger",
+          "text": "The watermelon grows on the ground."
+        },
+        {
+          "title": "To the kitchen",
+          "text": "Ask a grown-up to wash and cut it."
+        }
+      ],
+      "origin": "Watermelons grow on vines in warm, sunny places.",
+      "modelNote": "A play model with five seeds. Real watermelons can have many seeds, or few mature seeds.",
+      "playgroundTagline": "A little food playground"
+    },
+    "ko": {
+      "name": "한국어",
+      "rotate": "돌리기",
+      "open": "벌리기",
+      "close": "닫기",
+      "seeds": "씨앗 찾기",
+      "reset": "다시",
+      "seed": "씨앗",
+      "found": "{total}개 중 {count}개",
+      "hintRotate": "손가락으로 돌려봐요. 무엇이 보이나요?",
+      "hintOpen": "두 손가락을 벌려서 열어봐요.",
+      "hintSeeds": "속에 숨어 있는 씨앗을 눌러봐요.",
+      "help": "놀이 방법",
+      "dismiss": "좋아요",
+      "language": "언어",
+      "foundSeed": "찾은 씨앗",
+      "waitingSeed": "씨앗 찾기",
+      "stageLabel": "만져보는 과일",
+      "stageHint": "밀어서 돌리고, 벌려서 열고, 씨앗을 눌러요.",
+      "storyTitle": "덩굴에서 식탁까지",
+      "factsTitle": "안에는 뭐가 있을까요?",
+      "orchard": "우리의 작은 텃밭",
+      "back": "텃밭으로 돌아가기",
+      "shake": "살짝 굴려봐요",
+      "pick": "수박을 눌러봐요",
+      "listen": "읽어주기",
+      "stop": "멈추기",
+      "grownups": "어른들을 위한 안내",
+      "play": "탐험 시작",
+      "noWebGL": "아래 그림으로 놀아봐요. 과일을 벌리고 씨앗을 찾을 수 있어요.",
+      "allFound": "잘했어요! 씨앗 5개를 모두 찾았어요!",
+      "treeHint": "땅 위의 수박을 눌러서 살펴봐요.",
+      "originTitle": "어디에서 왔을까요?",
+      "appleChoice": "사과",
+      "lemonChoice": "레몬",
+      "fruit": "수박",
+      "apple": "수박",
+      "title": "안녕, 작은 수박아.",
+      "subtitle": "땅 위에서 자라는 촉촉한 놀라움.",
+      "facts": [
+        {
+          "id": "skin",
+          "title": "껍질",
+          "text": "두껍고 초록색인 겉부분이에요."
+        },
+        {
+          "id": "flesh",
+          "title": "과육",
+          "text": "촉촉한 빨간 속이에요. 다른 색도 있어요!"
+        },
+        {
+          "id": "seed",
+          "title": "씨앗",
+          "text": "다 자란 씨가 적거나 없는 수박도 있어요."
+        }
+      ],
+      "story": [
+        {
+          "title": "땅을 따라 쭉",
+          "text": "긴 덩굴이 땅 위로 뻗어요."
+        },
+        {
+          "title": "노란 꽃이 피어요",
+          "text": "꽃에서 작은 수박이 생길 수 있어요."
+        },
+        {
+          "title": "점점 커져요",
+          "text": "수박은 땅 위에서 자라요."
+        },
+        {
+          "title": "부엌으로",
+          "text": "씻고 자르는 건 어른에게 부탁해요."
+        }
+      ],
+      "origin": "수박은 따뜻하고 햇볕이 잘 드는 곳의 덩굴에서 자라요.",
+      "modelNote": "씨앗 5개가 있는 놀이 모형이에요. 실제 수박은 씨가 많거나 다 자란 씨가 적을 수 있어요.",
+      "playgroundTagline": "어린이 식재료 놀이터"
+    },
+    "es": {
+      "name": "Español",
+      "rotate": "Girar",
+      "open": "Abrir",
+      "close": "Cerrar",
+      "seeds": "Busca las semillas",
+      "reset": "Otra vez",
+      "seed": "Semilla",
+      "found": "{count} de {total}",
+      "hintRotate": "Arrastra para girar. ¿Qué ves?",
+      "hintOpen": "Separa dos dedos para abrir.",
+      "hintSeeds": "Toca las semillas escondidas dentro.",
+      "help": "Cómo jugar",
+      "dismiss": "Listo",
+      "language": "Idioma",
+      "foundSeed": "Semilla encontrada",
+      "waitingSeed": "Busca una semilla",
+      "stageLabel": "Fruta para explorar",
+      "stageHint": "Arrastra para girar, separa para abrir y toca una semilla.",
+      "storyTitle": "De la planta a la mesa",
+      "factsTitle": "¿Qué hay dentro?",
+      "orchard": "Nuestro pequeño huerto",
+      "back": "Volver al huerto",
+      "shake": "Hazla rodar un poco",
+      "pick": "Toca una sandía",
+      "listen": "Leer en voz alta",
+      "stop": "Parar",
+      "grownups": "Para personas adultas",
+      "play": "Vamos a explorar",
+      "noWebGL": "Prueba el dibujo de abajo. Puedes abrir la fruta y buscar sus semillas.",
+      "allFound": "¡Muy bien! ¡Encontraste las 5 semillas!",
+      "treeHint": "Toca una sandía en el suelo para explorar.",
+      "originTitle": "¿De dónde viene?",
+      "appleChoice": "Manzana",
+      "lemonChoice": "Limón",
+      "fruit": "Sandía",
+      "apple": "Sandía",
+      "title": "Hola, pequeña sandía.",
+      "subtitle": "En el suelo crece una sorpresa jugosa.",
+      "facts": [
+        {
+          "id": "skin",
+          "title": "Cáscara",
+          "text": "La capa verde y gruesa de fuera."
+        },
+        {
+          "id": "flesh",
+          "title": "Pulpa",
+          "text": "Pulpa roja y jugosa. ¡También hay otros colores!"
+        },
+        {
+          "id": "seed",
+          "title": "Semillas",
+          "text": "Algunas sandías tienen pocas o ninguna semilla madura."
+        }
+      ],
+      "story": [
+        {
+          "title": "Por el suelo",
+          "text": "Los tallos largos se extienden por el suelo."
+        },
+        {
+          "title": "Una flor amarilla",
+          "text": "Una flor puede convertirse en una sandía."
+        },
+        {
+          "title": "Cada vez más grande",
+          "text": "La sandía crece sobre el suelo."
+        },
+        {
+          "title": "A la cocina",
+          "text": "Pide a un adulto que la lave y corte."
+        }
+      ],
+      "origin": "Las sandías crecen en plantas rastreras, en lugares cálidos y soleados.",
+      "modelNote": "Un modelo con cinco semillas. Las sandías reales pueden tener muchas semillas o pocas semillas maduras.",
+      "playgroundTagline": "Un pequeño mundo de alimentos"
+    }
+  }
+}

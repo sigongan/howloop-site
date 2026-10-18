@@ -5,8 +5,7 @@ export function createTextures(document) {
   const make=(width,height)=>{const c=document.createElement('canvas');c.width=width;c.height=height;return[c,c.getContext('2d')];};
   const [apple,ac]=make(1024,512);
   // Painted characters: flat colour, a cream brush mark and a tiny smile.
-  function paintFruit(ctx,colour,blush){
-    ctx.fillStyle=colour;ctx.fillRect(0,0,1024,512);
+  function paintCharacter(ctx,blush){
     ctx.strokeStyle='#fff6cd';ctx.lineWidth=18;ctx.lineCap='round';
     ctx.beginPath();ctx.moveTo(432,190);ctx.quadraticCurveTo(441,153,474,149);ctx.stroke();
     ctx.fillStyle=blush;
@@ -15,6 +14,9 @@ export function createTextures(document) {
     for(const x of [482,542]){ctx.beginPath();ctx.ellipse(x,267,6,9,0,0,Math.PI*2);ctx.fill();}
     ctx.strokeStyle='#3c5037';ctx.lineWidth=5;
     ctx.beginPath();ctx.arc(512,284,16,.18,Math.PI-.18);ctx.stroke();
+  }
+  function paintFruit(ctx,colour,blush){
+    ctx.fillStyle=colour;ctx.fillRect(0,0,1024,512);paintCharacter(ctx,blush);
   }
   paintFruit(ac,'#ed8b74','#f5b69c');
   const [flesh,fc]=make(768,768);fc.fillStyle='#f7e9c8';fc.fillRect(0,0,768,768);
@@ -32,12 +34,13 @@ export function createTextures(document) {
   const [citrus,cc]=make(768,768);cc.fillStyle='#fff7d2';cc.fillRect(0,0,768,768);
   cc.save();cc.translate(384,384);cc.scale(.95/1.4,1.12/1.4);
   const circle=(r,color)=>{cc.beginPath();cc.arc(0,0,r,0,Math.PI*2);cc.fillStyle=color;cc.fill();};
-  circle(386,'#e9bd23');circle(373,'#fff8d8');circle(344,'#f9d759');
+  // Leave a clear ivory pith band between the yellow peel and juicy segments.
+  circle(386,'#e9bd23');circle(375,'#fffcef');circle(326,'#f9d759');
   for(let s=0;s<10;s++){
     const a=s/10*Math.PI*2+.035,b=(s+1)/10*Math.PI*2-.035;
     cc.beginPath();cc.moveTo(Math.cos(a)*39,Math.sin(a)*39);
-    cc.arc(0,0,331,a,b);cc.lineTo(Math.cos(b)*39,Math.sin(b)*39);cc.closePath();
-    const gradient=cc.createRadialGradient(0,0,30,0,0,340);
+    cc.arc(0,0,314,a,b);cc.lineTo(Math.cos(b)*39,Math.sin(b)*39);cc.closePath();
+    const gradient=cc.createRadialGradient(0,0,30,0,0,325);
     gradient.addColorStop(0,s%2?'#f9df83':'#ffe896');gradient.addColorStop(.68,s%2?'#f4cb43':'#f8d65c');gradient.addColorStop(1,'#fff1b1');
     cc.fillStyle=gradient;cc.fill();cc.strokeStyle='rgba(255,251,221,.85)';cc.lineWidth=8;cc.stroke();
     // Fine juice-vesicle threads, each confined to its own wedge.
@@ -45,7 +48,42 @@ export function createTextures(document) {
     cc.restore();
   }
   circle(33,'#fff7d6');cc.restore();
-  return {apple,flesh,lemon,citrus};
+  const [watermelon,wc]=make(1024,512);
+  wc.fillStyle='#9ac87c';wc.fillRect(0,0,1024,512);
+  // Wobbly painted stripes run from end to end. Their edges stay soft and
+  // simple so the melon belongs to the same illustrated family as its friends.
+  wc.fillStyle='#528b5c';
+  for(let stripe=-1;stripe<11;stripe++){
+    const center=stripe*102.4;
+    wc.beginPath();
+    for(let y=0;y<=512;y+=8){
+      const wave=Math.sin(y/69+stripe*.61)*7+Math.sin(y/31+stripe)*2;
+      const width=13+Math.sin(y/512*Math.PI)*8;
+      const x=center+wave-width;
+      if(y===0)wc.moveTo(x,y);else wc.lineTo(x,y);
+    }
+    for(let y=512;y>=0;y-=8){
+      const wave=Math.sin(y/69+stripe*.61)*7+Math.sin(y/31+stripe)*2;
+      const width=13+Math.sin(y/512*Math.PI)*8;
+      wc.lineTo(center+wave+width,y);
+    }
+    wc.closePath();wc.fill();
+  }
+  paintCharacter(wc,'#d1df94');
+  const [melonFlesh,mc]=make(768,768);
+  mc.fillStyle='#91bd73';mc.fillRect(0,0,768,768);
+  mc.save();mc.translate(384,384);mc.scale(1.09/1.4,1.02/1.4);
+  const melonCircle=(r,color)=>{mc.beginPath();mc.arc(0,0,r,0,Math.PI*2);mc.fillStyle=color;mc.fill();};
+  melonCircle(386,'#7cab63');melonCircle(371,'#f2efd1');melonCircle(340,'#ed8c8b');
+  // A gentle watermelon-pink wash, with no glossy highlight or baked-in seeds:
+  // the five seeds are separate objects that children can discover by touch.
+  melonCircle(325,'#f29a96');
+  mc.strokeStyle='#f9b3a8';mc.lineWidth=7;mc.lineCap='round';
+  for(const [angle,radius] of [[-.9,240],[.6,210],[2.4,250]]){
+    mc.beginPath();mc.arc(0,0,radius,angle,angle+.35);mc.stroke();
+  }
+  mc.restore();
+  return {apple,flesh,lemon,citrus,watermelon,melonFlesh};
 }
 
 export const VERTEX_SHADER=`
@@ -85,7 +123,7 @@ void main(){
   vec3 H=normalize(L+V);
   float gloss=pow(max(dot(N,H),0.0),44.0);
   vec3 base;float specular=.10;
-  if(uMaterial==0||uMaterial==1||uMaterial==9||uMaterial==10){base=texture2D(uTexture,vUV).rgb;}
+  if(uMaterial==0||uMaterial==1||uMaterial==9||uMaterial==10||uMaterial==13||uMaterial==14){base=texture2D(uTexture,vUV).rgb;}
   else if(uMaterial==2){
     float grain=sin(vUV.x*78.0+sin(vUV.y*14.0))*.035;
     base=vec3(.28+grain,.15+grain*.7,.062);specular=.045;
@@ -98,11 +136,14 @@ void main(){
   else if(uMaterial==6){base=vec3(.77,.40,.055);specular=.26;}
   else if(uMaterial==11){base=vec3(.94,.89,.69);specular=.15;}
   else if(uMaterial==12){base=vec3(.72,.62,.28);specular=.015;}
+  else if(uMaterial==15){base=vec3(.22,.25,.19);specular=.015;}
+  else if(uMaterial==16){base=vec3(.80,.38,.37);specular=.015;}
   else{base=vec3(1.0,.76,.18);specular=.13;}
   vec3 color=base*(.82+.14*key+.04*fill);specular=.015;
-  if(uMaterial==1||uMaterial==10){color=base*(.78+.18*key+.07*fill);specular=.025;}
+  if(uMaterial==1||uMaterial==10||uMaterial==14){color=base*(.78+.18*key+.07*fill);specular=.025;}
   if(uMaterial==0){color=base*(.93+.07*key);specular=0.0;}
   if(uMaterial==9){color=base*(.93+.07*key);specular=0.0;}
+  if(uMaterial==13){color=base*(.93+.07*key);specular=0.0;}
   if(uMaterial==7){color=base*.95;}
   color+=vec3(1.0,.95,.84)*gloss*specular;
   float rim=pow(1.0-max(dot(N,V),0.0),3.0)*max(N.y*.5+.5,0.0);

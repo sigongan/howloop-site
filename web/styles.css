@@ -72,3 +72,19 @@ html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:10
 .pull-handle{position:absolute;top:62%;z-index:3;width:48px;height:48px;border:2px dashed #92a878;border-radius:50%;background:#fffbedee;color:#4c6a40;font-size:27px;touch-action:none;cursor:ew-resize;user-select:none;-webkit-user-select:none}
 .pull-left{left:22%}.pull-right{right:22%}.pull-handle:active{background:#f9e8a3;border-style:solid}
 @media(max-width:760px){.inside-note{font-size:19px}.note-star,.note-arrow{margin:0 3px}}
+
+/* Watermelons begin in their own ground-level vine patch. */
+#tree-world[data-growing=ground]>.orchard-art,#tree-world[data-growing=ground]>.tree-fruits,#tree-world[data-growing=ground]>.tree-caption{display:none}
+.ground-world{position:absolute;inset:0}.ground-art{width:100%;height:100%;display:block}
+.ground-caption{position:absolute;top:18px;left:22px;font-size:15px;color:#596a52}
+.ground-fruits{position:absolute;inset:0;pointer-events:none}
+.ground-fruit{position:absolute;width:94px;height:86px;padding:0;border:0;background:none;pointer-events:auto;filter:drop-shadow(0 7px 3px #53673a20);transition:transform .18s}
+.ground-fruit svg{width:100%;height:100%}.ground-fruit:hover{transform:translateY(-5px) rotate(-3deg)}.ground-fruit:active{transform:scale(.94)}
+.melon-one{left:22%;top:57%}.melon-two{left:44%;top:65%}.melon-three{left:65%;top:53%}
+.fruit-picker{min-width:0;overflow-x:auto;scrollbar-width:thin}.fruit-picker button{flex-shrink:0}
+.fruit-world{padding-bottom:66px}.fruit-world canvas{height:calc(var(--stage-height) - 115px)}
+.inside-note{bottom:13px}.pull-handle{top:62%}
+@media(max-width:760px){
+ .play-top{gap:8px}.fruit-picker{flex:1;gap:2px;border-radius:18px}.fruit-picker button{flex-direction:column;gap:1px;padding:4px 8px;min-width:67px;font-size:12px;min-height:62px;line-height:1.3}.fruit-picker button:last-child{min-width:96px}.fruit-picker svg{width:28px;height:28px}.round-button{flex-shrink:0;width:43px;height:43px}
+ .ground-fruit{width:68px;height:63px}.melon-one{left:13%;top:58%}.melon-two{left:41%;top:65%}.melon-three{left:67%;top:55%}.ground-caption{font-size:13px;top:12px;left:15px}
+}

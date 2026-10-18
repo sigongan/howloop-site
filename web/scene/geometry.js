@@ -8,6 +8,12 @@ export function fruitSurface(theta, phi, fruit='apple') {
     const y=1.04*c+.09*Math.sign(c)*Math.pow(Math.abs(c),24);
     return [radius*Math.cos(phi),y,radius*Math.sin(phi)];
   }
+  if(fruit==='watermelon') {
+    // A plump melon has a smooth, almost round silhouette, without an apple's
+    // stem hollow or a lemon's pointed ends.
+    const radius=1.08*s*(1+.012*Math.cos(10*phi)*s*s);
+    return [radius*Math.cos(phi),1.02*c,radius*Math.sin(phi)];
+  }
   const radius=s*(1.02+.11*s+.055*c)*(1+.035*Math.cos(5*phi)*s*s);
   const y=1.12*c-.20*Math.exp(-theta*theta/.10)+.075*Math.exp(-((theta-Math.PI)**2)/.08);
   return [radius*Math.cos(phi),y,radius*Math.sin(phi)];
