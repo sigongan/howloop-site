@@ -21,10 +21,6 @@ export function createTextures(document) {
   const wash=fc.createRadialGradient(384,380,20,384,380,400);
   wash.addColorStop(0,'rgba(224,199,145,.30)');wash.addColorStop(.66,'rgba(255,255,238,.12)');wash.addColorStop(1,'rgba(233,202,142,.24)');
   fc.fillStyle=wash;fc.fillRect(0,0,768,768);
-  for(let i=0;i<0;i++){
-    fc.fillStyle=`rgba(153,116,54,${.018+random()*.045})`;
-    fc.fillRect(random()*768,random()*768,.6+random()*2,.8+random()*3.6);
-  }
   fc.fillStyle='rgba(191,158,93,.20)';fc.beginPath();fc.moveTo(384,112);
   fc.bezierCurveTo(307,270,314,510,384,657);fc.bezierCurveTo(452,510,462,270,384,112);fc.fill();
   for(let i=0;i<50;i++){
@@ -46,12 +42,7 @@ export function createTextures(document) {
     cc.fillStyle=gradient;cc.fill();cc.strokeStyle='rgba(255,251,221,.85)';cc.lineWidth=8;cc.stroke();
     // Fine juice-vesicle threads, each confined to its own wedge.
     cc.save();cc.clip();
-    for(let i=0;i<0;i++){
-      const angle=a+random()*(b-a),r=65+random()*265,len=6+random()*22;
-      cc.strokeStyle=`rgba(255,251,215,${.12+random()*.28})`;cc.lineWidth=.6+random()*1.1;
-      cc.beginPath();cc.moveTo(Math.cos(angle)*r,Math.sin(angle)*r);
-      cc.lineTo(Math.cos(angle)*(r+len),Math.sin(angle)*(r+len));cc.stroke();
-    }cc.restore();
+    cc.restore();
   }
   circle(33,'#fff7d6');cc.restore();
   return {apple,flesh,lemon,citrus};

@@ -61,3 +61,8 @@ html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:10
  .origin-section{align-items:flex-start;padding:22px 18px;gap:14px}.origin-section>svg{width:44px;height:44px}
  .inside-note{font-size:21px}.section-heading h2{font-size:28px}
 }
+
+.orchard-art{touch-action:pan-y;cursor:grab}.orchard-art:active{cursor:grabbing}
+.world.shaking:not(.dropping) .tree-fruits{animation:shake-fruits .7s ease}
+#tree-controls p{min-height:19px}
+.tree-instruction{font-size:16px;font-weight:650}.tree-instruction .hand{display:none}
