@@ -19,3 +19,18 @@
  .section-heading{margin:28px 0 18px}.story-card p{font-size:14px}.seed-area{padding-top:2px}
 }
 @media(prefers-reduced-motion:reduce){.fruit-world.entering canvas,.seed-button.found svg{animation:none}}
+
+/* Disable accidental double-tap zoom, while retaining pinch-to-zoom. */
+html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.language select{font-size:16px}
+.world{--stage-height:460px;min-height:var(--stage-height)}
+.tree-world,.orchard-art,.fruit-world{height:var(--stage-height);min-height:var(--stage-height)}
+.fruit-world{padding:49px 0 34px}.fruit-world canvas{height:calc(var(--stage-height) - 83px)}
+.seed-area.is-concealed{visibility:hidden;pointer-events:none}
+#seed-status{display:flex;align-items:center;justify-content:center;min-height:64px;max-width:360px;margin:10px auto;padding:10px 14px;border:2px solid transparent;border-radius:18px;line-height:1.4}
+#seed-status.complete{background:#e4efce;border-color:#abc58a;color:#2f5239;font-size:17px;animation:well-done .4s ease-out}
+@keyframes well-done{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}
+/* A gentle entrance affects only the fruit, never the page scale. */
+@keyframes fruit-arrive{from{opacity:0;transform:translateY(10px) rotate(-3deg)}to{opacity:1;transform:none}}
+@media(max-width:760px){.world{--stage-height:clamp(310px,42svh,370px)}}
+@media(prefers-reduced-motion:reduce){#seed-status.complete{animation:none}}
