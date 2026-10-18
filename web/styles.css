@@ -34,3 +34,9 @@ html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:10
 @keyframes fruit-arrive{from{opacity:0;transform:translateY(10px) rotate(-3deg)}to{opacity:1;transform:none}}
 @media(max-width:760px){.world{--stage-height:clamp(310px,42svh,370px)}}
 @media(prefers-reduced-motion:reduce){#seed-status.complete{animation:none}}
+
+.tree-fruit.landed{top:74%;left:var(--ground-x);transform:none}
+.world.shaking .tree-fruits{animation:none}
+.world.dropping .tree-fruit{pointer-events:none;transition:none}
+.tree-fruit.landed:hover{transform:translateY(-4px) rotate(-5deg)}
+.tree-fruit.landed:active{transform:scale(.94)}
