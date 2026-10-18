@@ -66,3 +66,9 @@ html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:10
 .world.shaking:not(.dropping) .tree-fruits{animation:shake-fruits .7s ease}
 #tree-controls p{min-height:19px}
 .tree-instruction{font-size:16px;font-weight:650}.tree-instruction .hand{display:none}
+
+.inside-note{margin:0;cursor:default;font-size:clamp(19px,2.3vw,25px)}
+.inside-note:active{transform:translateX(-50%) rotate(-2deg)}
+.pull-handle{position:absolute;top:62%;z-index:3;width:48px;height:48px;border:2px dashed #92a878;border-radius:50%;background:#fffbedee;color:#4c6a40;font-size:27px;touch-action:none;cursor:ew-resize;user-select:none;-webkit-user-select:none}
+.pull-left{left:22%}.pull-right{right:22%}.pull-handle:active{background:#f9e8a3;border-style:solid}
+@media(max-width:760px){.inside-note{font-size:19px}.note-star,.note-arrow{margin:0 3px}}
