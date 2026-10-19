@@ -1,18 +1,21 @@
 import {initialState,updateState} from './state.js';
 import {createAppleScene} from './apple-scene.js';
 import {createPlaySounds} from './sounds.js';
+import {createPlayMusic} from './music.js';
 import {createFruitTransition} from './fruit-transition.js';
 import {createFruitPuzzle} from './fruit-puzzle.js';
 import {createPlayEffects} from './play-effects.js';
 import {renderFruitSymbol} from './scene/fruit-icons.js';
 const $=s=>document.querySelector(s);
-const sounds=createPlaySounds(),fruitTransition=createFruitTransition();
+const sounds=createPlaySounds(),music=createPlayMusic(),fruitTransition=createFruitTransition();
+music.setVolume(.65);
 const effects=createPlayEffects({world:$('#world')});
 let effectTimers=[],lastSeedPoint=null;
 function clearPlayEffects(){effectTimers.forEach(clearTimeout);effectTimers=[];effects.clear();}
 const puzzle=createFruitPuzzle({root:$('#puzzle-root'),onSound:name=>sounds.play(name),onComplete:()=>effects.celebrate($('#puzzle-root'))});
 for(const fruit of ['lemon','apple','watermelon','orange','pear'])$('#icon-'+fruit).innerHTML=renderFruitSymbol(fruit);
-let soundTogglePending=false,soundTimers=[];
+let soundTogglePending=false,musicTogglePending=false,musicRequest=0,soundTimers=[];
+function updateMusicControl(){const copy={en:['Music','On','Off','Background music','Music unavailable','Music volume','Original instrumental music. Choose Music to play.'],ko:['음악','켜짐','꺼짐','배경음악','음악을 사용할 수 없어요','음악 음량','직접 만든 연주곡이에요. 음악 버튼을 눌러 들어봐요.'],es:['Música','Sí','No','Música de fondo','Música no disponible','Volumen de música','Música instrumental original. Pulsa Música para escuchar.']}[language];const button=$('#music-toggle');button.disabled=!music.available||musicTogglePending;button.setAttribute('aria-pressed',String(music.enabled));button.setAttribute('aria-label',music.available?copy[3]:copy[4]);button.title=music.available?copy[3]+': '+copy[music.enabled?1:2]:copy[4];$('#music-name').textContent=copy[0];$('#music-label').textContent=copy[music.enabled?1:2];$('#music-volume-label').textContent=copy[5];$('#music-description').textContent=copy[6];}
 function stopPlaySounds(){soundTimers.forEach(clearTimeout);soundTimers=[];sounds.stop();}
 function updateSoundControl(){const copy={en:['Sound effects','On','Off','Sound unavailable'],ko:['효과음','켜짐','꺼짐','소리를 사용할 수 없어요'],es:['Efectos de sonido','Sí','No','Sonido no disponible']}[language];const button=$('#sound-toggle');button.disabled=!sounds.available||soundTogglePending;button.setAttribute('aria-label',sounds.available?copy[0]:copy[3]);button.setAttribute('aria-pressed',String(sounds.enabled));button.title=sounds.available?copy[0]+': '+copy[sounds.enabled?1:2]:copy[3];$('#sound-label').textContent=copy[sounds.enabled?1:2];}
 let state=initialState(),scene=null,content={},language='en',fallback=false;
@@ -52,7 +55,7 @@ function animateAction(action){
 }
 const seedSvg='<svg viewBox="0 0 30 40" aria-hidden="true"><path d="M15 3C13 9 4 17 5 27c1 13 22 13 21 0C25 18 18 10 15 3" fill="#986b43"/><path d="M12 15q-4 7-3 12" fill="none" stroke="#d0a678" stroke-width="2.5" stroke-linecap="round"/></svg>';
 function svgUse(id){return `<svg viewBox="0 0 100 100" aria-hidden="true"><use href="#${id}"/></svg>`;}
-function renderContent(){const text=t();if(!text)return;document.documentElement.lang=language;$('#language').value=language;$('#title').textContent=text.title;$('#subtitle').textContent=text.subtitle;$('#brand-description').textContent=ui[language].brand;$('#eyebrow').textContent=ui[language].tag;$('#look-closer').textContent=ui[language].closer;$('#little-story').textContent=ui[language].story;$('#footer-note').textContent=ui[language].footer;$('#privacy-link').textContent=ui[language].privacy;
+function renderContent(){const text=t();if(!text)return;updateMusicControl();document.documentElement.lang=language;$('#language').value=language;$('#title').textContent=text.title;$('#subtitle').textContent=text.subtitle;$('#brand-description').textContent=ui[language].brand;$('#eyebrow').textContent=ui[language].tag;$('#look-closer').textContent=ui[language].closer;$('#little-story').textContent=ui[language].story;$('#footer-note').textContent=ui[language].footer;$('#privacy-link').textContent=ui[language].privacy;
  document.querySelectorAll('[data-text]').forEach(el=>{if(text[el.dataset.text])el.textContent=text[el.dataset.text];});
  const playCopy={en:['Puzzle','Try a fruit puzzle','Close puzzle'],ko:['퍼즐','과일 퍼즐 해보기','퍼즐 닫기'],es:['Puzle','Prueba el puzle','Cerrar puzle']}[language];$('#puzzle-label').textContent=playCopy[0];$('#seed-celebration-puzzle').textContent=playCopy[1];$('#puzzle-close').setAttribute('aria-label',playCopy[2]);puzzle.setLanguage(language);puzzle.setFruit(state.fruit);
  $('#help').setAttribute('aria-label',text.help);$('#dismiss').setAttribute('aria-label',text.dismiss);$('#language').setAttribute('aria-label',text.language);$('#fruit-canvas').setAttribute('aria-label',text.stageHint);
@@ -111,11 +114,16 @@ $('#shake').addEventListener('click',shake);const treeArt=$('.orchard-art');let 
  treeArt.addEventListener('pointerup',e=>{if(treeTouch?.id===e.pointerId){if(!treeTouch.shaken&&Math.hypot(e.clientX-treeTouch.x,e.clientY-treeTouch.y)<8)shake();treeTouch=null;}});
  treeArt.addEventListener('pointercancel',()=>{treeTouch=null;});document.querySelectorAll('.tree-fruit,.ground-fruit').forEach(b=>b.addEventListener('click',inspect));document.querySelectorAll('.fruit-picker [data-fruit]').forEach(b=>b.addEventListener('click',()=>{resetOrchard();dispatch({type:'fruit',fruit:b.dataset.fruit});scene?.setFruit(state.fruit);renderContent();}));$('#back').addEventListener('click',()=>{dispatch({type:'back'});$(state.fruit==='watermelon'?'.ground-fruit':'.tree-fruit').focus({preventScroll:true});});$('#turn').addEventListener('click',()=>{sounds.play('turn');animateAction({type:'turn',dx:65,dy:0});});$('#reset').addEventListener('click',()=>animateAction({type:'reset'}));$('#language').addEventListener('change',e=>{language=e.target.value;renderContent();});$('#help').addEventListener('click',()=>$('#help-dialog').showModal());$('#dismiss').addEventListener('click',()=>$('#help-dialog').close());$('#help-dialog').addEventListener('click',e=>{if(e.target===$('#help-dialog'))$('#help-dialog').close();});
 $('#sound-toggle').addEventListener('click',async()=>{if(soundTogglePending)return;soundTogglePending=true;const turnOn=!sounds.enabled;if(!turnOn)stopPlaySounds();const pending=sounds.setEnabled(turnOn);updateSoundControl();await pending;soundTogglePending=false;updateSoundControl();if(sounds.enabled)sounds.play('pick');});
-document.addEventListener('visibilitychange',()=>{if(document.hidden){stopPlaySounds();clearPlayEffects();}});
-function openPuzzle(){clearSeedRewards();stopPlaySounds();clearPlayEffects();puzzle.reset();$('#puzzle-dialog').showModal();}
+$('#music-toggle').addEventListener('click',async()=>{if(musicTogglePending)return;musicTogglePending=true;const request=++musicRequest,pending=music.setEnabled(!music.enabled);updateMusicControl();await pending;if(request!==musicRequest)return;musicTogglePending=false;updateMusicControl();});
+$('#music-volume').addEventListener('input',e=>music.setVolume(Number(e.target.value)/100));
+function pausePageAudio(){musicRequest++;musicTogglePending=false;stopPlaySounds();music.pause();updateMusicControl();clearPlayEffects();}
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pausePageAudio();});
+window.addEventListener('pagehide',pausePageAudio);
+window.addEventListener('pageshow',updateMusicControl);
+function openPuzzle(){clearSeedRewards();stopPlaySounds();clearPlayEffects();puzzle.reset();music.setMood('puzzle');$('#puzzle-dialog').showModal();}
 $('#puzzle-open').addEventListener('click',openPuzzle);$('#seed-celebration-puzzle').addEventListener('click',openPuzzle);
 $('#puzzle-close').addEventListener('click',()=>$('#puzzle-dialog').close());
-$('#puzzle-dialog').addEventListener('close',()=>{puzzle.reset();stopPlaySounds();clearPlayEffects();$('#puzzle-open').focus({preventScroll:true});});
+$('#puzzle-dialog').addEventListener('close',()=>{music.setMood('orchard');puzzle.reset();stopPlaySounds();clearPlayEffects();$('#puzzle-open').focus({preventScroll:true});});
 $('#seed-celebration-dismiss').addEventListener('click',()=>$('#seed-celebration').close());
 const pointers=new Map();let previousDistance=0,moved=false,wasPinch=false,turnSoundPlayed=false;const canvas=$('#fruit-canvas');canvas.addEventListener('webglcontextlost',showFallback);
 canvas.addEventListener('pointerdown',e=>{stopMotion();canvas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY,startX:e.clientX,startY:e.clientY});if(pointers.size===1){moved=false;wasPinch=false;turnSoundPlayed=false;}if(pointers.size===2){wasPinch=true;previousDistance=distance();}});
