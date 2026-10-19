@@ -83,7 +83,31 @@ export function createTextures(document) {
     mc.beginPath();mc.arc(0,0,radius,angle,angle+.35);mc.stroke();
   }
   mc.restore();
-  return {apple,flesh,lemon,citrus,watermelon,melonFlesh};
+  const [orange,oc]=make(1024,512);paintFruit(oc,'#f3aa63','#f2bba1');
+  const [orangeFlesh,ofc]=make(768,768);
+  ofc.fillStyle='#fff8e4';ofc.fillRect(0,0,768,768);
+  ofc.save();ofc.translate(384,384);ofc.scale(1.03/1.4,.99/1.4);
+  const orangeCircle=(r,color)=>{ofc.beginPath();ofc.arc(0,0,r,0,Math.PI*2);ofc.fillStyle=color;ofc.fill();};
+  orangeCircle(386,'#eaa15d');orangeCircle(375,'#fffbed');orangeCircle(326,'#f6b462');
+  for(let s=0;s<10;s++){
+    const a=s/10*Math.PI*2+.035,b=(s+1)/10*Math.PI*2-.035;
+    ofc.beginPath();ofc.moveTo(Math.cos(a)*36,Math.sin(a)*36);
+    ofc.arc(0,0,314,a,b);ofc.lineTo(Math.cos(b)*36,Math.sin(b)*36);ofc.closePath();
+    ofc.fillStyle=s%2?'#f5b467':'#f9c27d';ofc.fill();
+    ofc.strokeStyle='#fff2cd';ofc.lineWidth=8;ofc.stroke();
+  }
+  orangeCircle(32,'#fff8e4');ofc.restore();
+  const [pear,pc]=make(1024,512);paintFruit(pc,'#c4d982','#e9bb99');
+  const [pearFlesh,pfc]=make(768,768);
+  pfc.fillStyle='#faf0d7';pfc.fillRect(0,0,768,768);
+  // The core widens toward the pear's plump lower body; seeds remain separate.
+  pfc.fillStyle='#e9dcb8';pfc.beginPath();pfc.moveTo(384,100);
+  pfc.bezierCurveTo(366,230,287,402,327,565);
+  pfc.bezierCurveTo(347,637,421,637,441,565);
+  pfc.bezierCurveTo(481,402,402,230,384,100);pfc.fill();
+  pfc.strokeStyle='#f4e8c9';pfc.lineWidth=10;pfc.lineCap='round';
+  pfc.beginPath();pfc.moveTo(384,123);pfc.bezierCurveTo(374,270,365,430,384,580);pfc.stroke();
+  return {apple,flesh,lemon,citrus,watermelon,melonFlesh,orange,orangeFlesh,pear,pearFlesh};
 }
 
 export const VERTEX_SHADER=`
@@ -123,7 +147,7 @@ void main(){
   vec3 H=normalize(L+V);
   float gloss=pow(max(dot(N,H),0.0),44.0);
   vec3 base;float specular=.10;
-  if(uMaterial==0||uMaterial==1||uMaterial==9||uMaterial==10||uMaterial==13||uMaterial==14){base=texture2D(uTexture,vUV).rgb;}
+  if(uMaterial==0||uMaterial==1||uMaterial==9||uMaterial==10||uMaterial==13||uMaterial==14||uMaterial==17||uMaterial==18||uMaterial==19||uMaterial==20){base=texture2D(uTexture,vUV).rgb;}
   else if(uMaterial==2){
     float grain=sin(vUV.x*78.0+sin(vUV.y*14.0))*.035;
     base=vec3(.28+grain,.15+grain*.7,.062);specular=.045;
@@ -140,10 +164,11 @@ void main(){
   else if(uMaterial==16){base=vec3(.80,.38,.37);specular=.015;}
   else{base=vec3(1.0,.76,.18);specular=.13;}
   vec3 color=base*(.82+.14*key+.04*fill);specular=.015;
-  if(uMaterial==1||uMaterial==10||uMaterial==14){color=base*(.78+.18*key+.07*fill);specular=.025;}
+  if(uMaterial==1||uMaterial==10||uMaterial==14||uMaterial==18||uMaterial==20){color=base*(.78+.18*key+.07*fill);specular=.025;}
   if(uMaterial==0){color=base*(.93+.07*key);specular=0.0;}
   if(uMaterial==9){color=base*(.93+.07*key);specular=0.0;}
   if(uMaterial==13){color=base*(.93+.07*key);specular=0.0;}
+  if(uMaterial==17||uMaterial==19){color=base*(.93+.07*key);specular=0.0;}
   if(uMaterial==7){color=base*.95;}
   color+=vec3(1.0,.95,.84)*gloss*specular;
   float rim=pow(1.0-max(dot(N,V),0.0),3.0)*max(N.y*.5+.5,0.0);

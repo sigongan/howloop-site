@@ -6,6 +6,8 @@ const characters={
   lemon:{skin:'#f5d968',blush:'#efba83'},
   apple:{skin:'#ed8b74',blush:'#f5b69c'},
   watermelon:{skin:'#9ac87c',blush:'#d1df94'},
+  orange:{skin:'#f3aa63',blush:'#f2bba1'},
+  pear:{skin:'#c4d982',blush:'#e9bb99'},
 };
 const centre={x:25,y:28},size=17.4;
 const number=value=>Number(value.toFixed(3));
@@ -50,11 +52,11 @@ function characterFace(fruit,blush){
 
 function stemAndLeaf(fruit){
   if(fruit==='watermelon')return '';
-  const top=fruit==='lemon'?1.10:.88;
+  const top={lemon:1.10,apple:.88,orange:.97,pear:1.18}[fruit];
   const [x,y]=project([.025,top]);
-  const height=fruit==='lemon'?3.4:6.3;
-  const leafY=y-height+1.2,leafWidth=fruit==='lemon'?9.8:12.2;
-  return `<path d="M${point([x,y+.6])}q-.2,${number(-height*.7)} 1,${number(-height)}" fill="none" stroke="#786044" stroke-width="${fruit==='lemon'?'1.15':'1.5'}" stroke-linecap="round"/><path d="M${point([x+.8,leafY])}q${number(leafWidth*.38)},-6 ${number(leafWidth)},-3.4q${number(-leafWidth*.32)},-.2 ${number(-leafWidth)},3.4Z" fill="#4d7136"/><path d="M${point([x+1.5,leafY-.35])}q${number(leafWidth*.35)},-2.3 ${number(leafWidth*.7)},-2.5" fill="none" stroke="#7b9458" stroke-width=".55" stroke-linecap="round"/>`;
+  const height={lemon:3.4,apple:6.3,orange:3.2,pear:3.8}[fruit];
+  const small=fruit!=='apple',leafY=y-height+1.2,leafWidth=small?9.8:12.2;
+  return `<path d="M${point([x,y+.6])}q-.2,${number(-height*.7)} 1,${number(-height)}" fill="none" stroke="#786044" stroke-width="${small?'1.15':'1.5'}" stroke-linecap="round"/><path d="M${point([x+.8,leafY])}q${number(leafWidth*.38)},-6 ${number(leafWidth)},-3.4q${number(-leafWidth*.32)},-.2 ${number(-leafWidth)},3.4Z" fill="#4d7136"/><path d="M${point([x+1.5,leafY-.35])}q${number(leafWidth*.35)},-2.3 ${number(leafWidth*.7)},-2.5" fill="none" stroke="#7b9458" stroke-width=".55" stroke-linecap="round"/>`;
 }
 
 function melonStripes(){
@@ -77,7 +79,7 @@ function melonStripes(){
 
 /** SVG symbol contents for a viewBox of "0 0 50 50"; no DOM or external assets. */
 export function renderFruitSymbol(fruit){
+  if(!Object.hasOwn(characters,fruit))throw new RangeError(`Unknown fruit icon: ${fruit}`);
   const character=characters[fruit];
-  if(!character)throw new RangeError(`Unknown fruit icon: ${fruit}`);
   return `${stemAndLeaf(fruit)}<path d="${silhouette(fruit)}" fill="${character.skin}"/>${fruit==='watermelon'?melonStripes():''}${characterFace(fruit,character.blush)}`;
 }

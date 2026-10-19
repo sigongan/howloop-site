@@ -33,7 +33,7 @@ test('visible seeds selected during gradual opening are recorded by the playgrou
   let state = initialState();
   const scene = sceneFixture(id => { state = updateState(state, { type: 'seed', id }); });
   try {
-    for (const fruit of ['lemon', 'apple', 'watermelon']) {
+    for (const fruit of ['lemon', 'apple', 'watermelon', 'orange', 'pear']) {
       for (const split of [0.2, 0.4, 0.54, 1]) {
         state = updateState(initialState(), { type: 'fruit', fruit });
         assert.equal(state.fruit, fruit, 'the playground and renderer must inspect the selected fruit');

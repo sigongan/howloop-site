@@ -1,7 +1,7 @@
 import { renderFruitSymbol } from './scene/fruit-icons.js';
 
 export const PUZZLE_PIECES = Object.freeze([0, 1, 2]);
-const fruits = ['lemon', 'apple', 'watermelon'];
+const fruits = ['lemon', 'apple', 'watermelon', 'orange', 'pear'];
 const validPiece = value => Number.isInteger(value) && PUZZLE_PIECES.includes(value);
 
 export function initialPuzzleState(fruit = 'lemon') {

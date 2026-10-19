@@ -2,7 +2,7 @@ export const initialState=()=>({fruit:'lemon',view:'tree',yaw:-.18,pitch:-.08,sp
 export function clamp(value,min,max){return Math.max(min,Math.min(max,value));}
 export function updateState(state,action){
  const next={...state,foundSeeds:new Set(state.foundSeeds)};
- if(action.type==='fruit'){if(!['apple','lemon','watermelon'].includes(action.fruit))return next;return {...initialState(),fruit:action.fruit};}
+ if(action.type==='fruit'){if(!['apple','lemon','watermelon','orange','pear'].includes(action.fruit))return next;return {...initialState(),fruit:action.fruit};}
  if(action.type==='inspect'){next.view='fruit';}
  if(action.type==='back'){next.view='tree';}
  if(action.type==='reset'){return {...initialState(),fruit:state.fruit,view:state.view};}

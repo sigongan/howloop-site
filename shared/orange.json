@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "id": "orange",
+  "version": "2026-10-20",
+  "seedCount": 5,
+  "languages": {
+    "en": {
+      "name": "English",
+      "rotate": "Turn",
+      "open": "Open",
+      "close": "Close",
+      "seeds": "Find the seeds",
+      "reset": "Again",
+      "seed": "Seed",
+      "found": "{count} of {total}",
+      "hintRotate": "Drag to turn. What can you see?",
+      "hintOpen": "Spread two fingers to open.",
+      "hintSeeds": "Tap the seeds hiding inside.",
+      "help": "How to play",
+      "dismiss": "Done",
+      "language": "Language",
+      "foundSeed": "Found seed",
+      "waitingSeed": "Find seed",
+      "stageLabel": "Fruit to explore",
+      "stageHint": "Drag to turn, spread to open, tap a seed.",
+      "storyTitle": "From tree to table",
+      "factsTitle": "What is inside?",
+      "orchard": "Our little orchard",
+      "back": "Back to the tree",
+      "shake": "Shake the tree",
+      "pick": "Tap a fruit",
+      "listen": "Read aloud",
+      "stop": "Stop",
+      "grownups": "For grown-ups",
+      "play": "Let’s explore",
+      "noWebGL": "Try the picture below. You can still open the fruit and find its seeds.",
+      "allFound": "You found them all!",
+      "treeHint": "Give the tree a little shake. Then choose a fruit.",
+      "originTitle": "Where does it come from?",
+      "appleChoice": "Apple",
+      "lemonChoice": "Lemon",
+      "fruit": "Orange",
+      "apple": "Orange",
+      "title": "Hello, little orange.",
+      "subtitle": "A round little fruit. A juicy surprise inside.",
+      "facts": [
+        {
+          "id": "skin",
+          "title": "Peel and pith",
+          "text": "A bumpy peel with soft white pith beneath."
+        },
+        {
+          "id": "flesh",
+          "title": "Segments",
+          "text": "Juicy sections fit together like little wedges."
+        },
+        {
+          "id": "seed",
+          "title": "Seeds",
+          "text": "Some oranges have seeds. Others have none!"
+        }
+      ],
+      "story": [
+        {
+          "title": "On a tree",
+          "text": "Oranges grow on trees."
+        },
+        {
+          "title": "First, a blossom",
+          "text": "A flower can become a tiny orange."
+        },
+        {
+          "title": "Round and growing",
+          "text": "The little orange grows bigger on its branch."
+        },
+        {
+          "title": "To the kitchen",
+          "text": "A grown-up can wash it and help you peel it."
+        }
+      ],
+      "origin": "Orange trees grow in many warm places around the world.",
+      "modelNote": "Five seeds to find in this play model. Real oranges can have more, fewer, or no seeds.",
+      "playgroundTagline": "A little food playground"
+    },
+    "ko": {
+      "name": "한국어",
+      "rotate": "돌리기",
+      "open": "벌리기",
+      "close": "닫기",
+      "seeds": "씨앗 찾기",
+      "reset": "다시",
+      "seed": "씨앗",
+      "found": "{total}개 중 {count}개",
+      "hintRotate": "손가락으로 돌려봐요. 무엇이 보이나요?",
+      "hintOpen": "두 손가락을 벌려서 열어봐요.",
+      "hintSeeds": "속에 숨어 있는 씨앗을 눌러봐요.",
+      "help": "놀이 방법",
+      "dismiss": "좋아요",
+      "language": "언어",
+      "foundSeed": "찾은 씨앗",
+      "waitingSeed": "씨앗 찾기",
+      "stageLabel": "만져보는 과일",
+      "stageHint": "밀어서 돌리고, 벌려서 열고, 씨앗을 눌러요.",
+      "storyTitle": "나무에서 식탁까지",
+      "factsTitle": "안에는 뭐가 있을까요?",
+      "orchard": "우리의 작은 과수원",
+      "back": "나무로 돌아가기",
+      "shake": "나무 흔들기",
+      "pick": "과일을 눌러봐요",
+      "listen": "읽어주기",
+      "stop": "멈추기",
+      "grownups": "어른들을 위한 안내",
+      "play": "탐험 시작",
+      "noWebGL": "아래 그림으로 놀아봐요. 과일을 벌리고 씨앗을 찾을 수 있어요.",
+      "allFound": "씨앗을 모두 찾았어요!",
+      "treeHint": "나무를 살짝 흔들어봐요. 그리고 과일을 골라요.",
+      "originTitle": "어디에서 왔을까요?",
+      "appleChoice": "사과",
+      "lemonChoice": "레몬",
+      "fruit": "오렌지",
+      "apple": "오렌지",
+      "title": "안녕, 작은 오렌지야.",
+      "subtitle": "동글동글 작은 과일 속에 촉촉한 비밀이 있어요.",
+      "facts": [
+        {
+          "id": "skin",
+          "title": "껍질과 흰 속껍질",
+          "text": "울퉁불퉁한 껍질 아래 부드러운 흰 부분이 있어요."
+        },
+        {
+          "id": "flesh",
+          "title": "과육 조각",
+          "text": "촉촉한 조각들이 쏙쏙 모여 있어요."
+        },
+        {
+          "id": "seed",
+          "title": "씨앗",
+          "text": "씨앗이 있는 오렌지도, 없는 오렌지도 있어요!"
+        }
+      ],
+      "story": [
+        {
+          "title": "나무에서",
+          "text": "오렌지는 나무에서 자라요."
+        },
+        {
+          "title": "먼저 꽃이 피어요",
+          "text": "꽃에서 작은 오렌지가 생길 수 있어요."
+        },
+        {
+          "title": "동글동글 쑥쑥",
+          "text": "작은 오렌지가 가지에서 점점 커져요."
+        },
+        {
+          "title": "부엌으로",
+          "text": "어른과 함께 씻고 껍질을 벗겨봐요."
+        }
+      ],
+      "origin": "오렌지나무는 세계 여러 따뜻한 곳에서 자라요.",
+      "modelNote": "이 놀이 모형에는 씨앗이 5개 있어요. 실제 오렌지는 씨가 더 많거나 적을 수 있고, 없을 수도 있어요.",
+      "playgroundTagline": "어린이 식재료 놀이터"
+    },
+    "es": {
+      "name": "Español",
+      "rotate": "Girar",
+      "open": "Abrir",
+      "close": "Cerrar",
+      "seeds": "Busca las semillas",
+      "reset": "Otra vez",
+      "seed": "Semilla",
+      "found": "{count} de {total}",
+      "hintRotate": "Arrastra para girar. ¿Qué ves?",
+      "hintOpen": "Separa dos dedos para abrir.",
+      "hintSeeds": "Toca las semillas escondidas dentro.",
+      "help": "Cómo jugar",
+      "dismiss": "Listo",
+      "language": "Idioma",
+      "foundSeed": "Semilla encontrada",
+      "waitingSeed": "Busca una semilla",
+      "stageLabel": "Fruta para explorar",
+      "stageHint": "Arrastra para girar, separa para abrir y toca una semilla.",
+      "storyTitle": "Del árbol a la mesa",
+      "factsTitle": "¿Qué hay dentro?",
+      "orchard": "Nuestro pequeño huerto",
+      "back": "Volver al árbol",
+      "shake": "Mueve el árbol",
+      "pick": "Toca una fruta",
+      "listen": "Leer en voz alta",
+      "stop": "Parar",
+      "grownups": "Para personas adultas",
+      "play": "Vamos a explorar",
+      "noWebGL": "Prueba el dibujo de abajo. Puedes abrir la fruta y buscar sus semillas.",
+      "allFound": "¡Las encontraste todas!",
+      "treeHint": "Mueve un poco el árbol. Después elige una fruta.",
+      "originTitle": "¿De dónde viene?",
+      "appleChoice": "Manzana",
+      "lemonChoice": "Limón",
+      "fruit": "Naranja",
+      "apple": "Naranja",
+      "title": "Hola, pequeña naranja.",
+      "subtitle": "Una fruta redondita. Una sorpresa jugosa dentro.",
+      "facts": [
+        {
+          "id": "skin",
+          "title": "Cáscara y capa blanca",
+          "text": "Bajo la cáscara rugosa hay una capa blanca y esponjosa."
+        },
+        {
+          "id": "flesh",
+          "title": "Gajos",
+          "text": "Los gajos jugosos encajan como pequeñas cuñas."
+        },
+        {
+          "id": "seed",
+          "title": "Semillas",
+          "text": "¡Hay naranjas con semillas y otras sin ellas!"
+        }
+      ],
+      "story": [
+        {
+          "title": "En un árbol",
+          "text": "Las naranjas crecen en árboles."
+        },
+        {
+          "title": "Primero, una flor",
+          "text": "Una flor puede convertirse en una naranja."
+        },
+        {
+          "title": "Redondita y creciendo",
+          "text": "La naranja se hace más grande en su rama."
+        },
+        {
+          "title": "A la cocina",
+          "text": "Una persona adulta puede lavarla y ayudarte a pelarla."
+        }
+      ],
+      "origin": "Los naranjos crecen en muchos lugares cálidos del mundo.",
+      "modelNote": "Busca cinco semillas en este modelo de juego. Las naranjas reales pueden tener más, menos o ninguna.",
+      "playgroundTagline": "Un pequeño mundo de alimentos"
+    }
+  }
+}

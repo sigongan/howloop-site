@@ -14,6 +14,15 @@ export function fruitSurface(theta, phi, fruit='apple') {
     const radius=1.08*s*(1+.012*Math.cos(10*phi)*s*s);
     return [radius*Math.cos(phi),1.02*c,radius*Math.sin(phi)];
   }
+  if(fruit==='orange') {
+    const radius=1.02*s*(1+.007*Math.cos(10*phi)*s*s);
+    return [radius*Math.cos(phi),.99*c,radius*Math.sin(phi)];
+  }
+  if(fruit==='pear') {
+    // A slim neck above a broad belly makes a pear distinct even without colour.
+    const radius=s*(.96-.38*c+.12*s)*(1+.018*Math.cos(5*phi)*s*s);
+    return [radius*Math.cos(phi),1.12*c+.08*c*c,radius*Math.sin(phi)];
+  }
   const radius=s*(1.02+.11*s+.055*c)*(1+.035*Math.cos(5*phi)*s*s);
   const y=1.12*c-.20*Math.exp(-theta*theta/.10)+.075*Math.exp(-((theta-Math.PI)**2)/.08);
   return [radius*Math.cos(phi),y,radius*Math.sin(phi)];
