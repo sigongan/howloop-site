@@ -2,9 +2,15 @@ import {initialState,updateState} from './state.js';
 import {createAppleScene} from './apple-scene.js';
 import {createPlaySounds} from './sounds.js';
 import {createFruitTransition} from './fruit-transition.js';
+import {createFruitPuzzle} from './fruit-puzzle.js';
+import {createPlayEffects} from './play-effects.js';
 import {renderFruitSymbol} from './scene/fruit-icons.js';
 const $=s=>document.querySelector(s);
 const sounds=createPlaySounds(),fruitTransition=createFruitTransition();
+const effects=createPlayEffects({world:$('#world')});
+let effectTimers=[],lastSeedPoint=null;
+function clearPlayEffects(){effectTimers.forEach(clearTimeout);effectTimers=[];effects.clear();}
+const puzzle=createFruitPuzzle({root:$('#puzzle-root'),onSound:name=>sounds.play(name),onComplete:()=>effects.celebrate($('#puzzle-root'))});
 for(const fruit of ['lemon','apple','watermelon'])$('#icon-'+fruit).innerHTML=renderFruitSymbol(fruit);
 let soundTogglePending=false,soundTimers=[];
 function stopPlaySounds(){soundTimers.forEach(clearTimeout);soundTimers=[];sounds.stop();}
@@ -21,19 +27,20 @@ let seedToastTimer;
 function clearSeedRewards(){clearTimeout(seedToastTimer);$('#seed-toast').hidden=true;$('#seed-announcement').textContent='';if($('#seed-celebration').open)$('#seed-celebration').close();}
 function showSeedReward(count){
  clearTimeout(seedToastTimer);const toast=$('#seed-toast');toast.hidden=true;
- if(count===5){$('#seed-announcement').textContent='';if(!$('#seed-celebration').open)$('#seed-celebration').showModal();return;}
+ if(count===5){$('#seed-announcement').textContent='';if(!$('#seed-celebration').open){$('#seed-celebration').showModal();effects.celebrate($('#seed-celebration'));}return;}
  $('#seed-toast-text').textContent=`${count} of 5 seeds found!`;$('#seed-announcement').textContent=$('#seed-toast-text').textContent;
  toast.classList.remove('popping');void toast.offsetWidth;toast.hidden=false;toast.classList.add('popping');
  seedToastTimer=setTimeout(()=>{toast.hidden=true;},1700);
 }
 function dispatch(action){
- stopMotion();if(['fruit','back','reset'].includes(action.type)){clearSeedRewards();stopPlaySounds();fruitTransition.cancel();$('#fruit-world').classList.remove('entering','travelling');}
+ stopMotion();if(['fruit','back','reset'].includes(action.type)){clearSeedRewards();stopPlaySounds();clearPlayEffects();fruitTransition.cancel();$('#fruit-world').classList.remove('entering','travelling');}
  const before=state.foundSeeds.size,previousSplit=state.split;state=updateState(state,action);renderState();
  if(action.type==='split'&&previousSplit<=.12&&state.split>.12)sounds.play('open');
- if(action.type==='seed'&&state.foundSeeds.size>before){showSeedReward(state.foundSeeds.size);sounds.play(state.foundSeeds.size===5?'complete':'seed',state.foundSeeds.size);}
+ if(action.type==='split'&&previousSplit>.12&&state.split<=.12)sounds.play('close');
+ if(action.type==='seed'&&state.foundSeeds.size>before){const rect=$('#fruit-canvas').getBoundingClientRect(),target=lastSeedPoint??{x:rect.left+rect.width/2,y:rect.top+rect.height/2};effects.burst({x:target.x,y:target.y,kind:'seed',count:12});lastSeedPoint=null;showSeedReward(state.foundSeeds.size);sounds.play(state.foundSeeds.size===5?'complete':'seed',state.foundSeeds.size);}
 }
 function animateAction(action){
- if(action.type==='reset'){clearSeedRewards();stopPlaySounds();fruitTransition.cancel();}
+ if(action.type==='reset'){clearSeedRewards();stopPlaySounds();clearPlayEffects();fruitTransition.cancel();}
  const from=state,target=updateState(state,action);stopMotion();
  if(reducedMotion()){state=target;renderState();return;}
  motionTarget=target;const start=performance.now();
@@ -46,6 +53,7 @@ const seedSvg='<svg viewBox="0 0 30 40" aria-hidden="true"><path d="M15 3C13 9 4
 function svgUse(id){return `<svg viewBox="0 0 100 100" aria-hidden="true"><use href="#${id}"/></svg>`;}
 function renderContent(){const text=t();if(!text)return;document.documentElement.lang=language;$('#language').value=language;$('#title').textContent=text.title;$('#subtitle').textContent=text.subtitle;$('#brand-description').textContent=ui[language].brand;$('#eyebrow').textContent=ui[language].tag;$('#look-closer').textContent=ui[language].closer;$('#little-story').textContent=ui[language].story;$('#footer-note').textContent=ui[language].footer;$('#privacy-link').textContent=ui[language].privacy;
  document.querySelectorAll('[data-text]').forEach(el=>{if(text[el.dataset.text])el.textContent=text[el.dataset.text];});
+ const playCopy={en:['Puzzle','Try a fruit puzzle','Close puzzle'],ko:['퍼즐','과일 퍼즐 해보기','퍼즐 닫기'],es:['Puzle','Prueba el puzle','Cerrar puzle']}[language];$('#puzzle-label').textContent=playCopy[0];$('#seed-celebration-puzzle').textContent=playCopy[1];$('#puzzle-close').setAttribute('aria-label',playCopy[2]);puzzle.setLanguage(language);puzzle.setFruit(state.fruit);
  $('#help').setAttribute('aria-label',text.help);$('#dismiss').setAttribute('aria-label',text.dismiss);$('#language').setAttribute('aria-label',text.language);$('#fruit-canvas').setAttribute('aria-label',text.stageHint);
  document.querySelectorAll('.tree-fruit,.ground-fruit').forEach(el=>{el.setAttribute('aria-label',`${text.play}: ${text.fruit}`);el.querySelector('use').setAttribute('href',`#icon-${state.fruit}`);});
  $('#facts').replaceChildren(...text.facts.map((fact,i)=>{const card=document.createElement('article');card.className='fact-card';const visual=document.createElement('div');visual.className='fact-visual';visual.innerHTML=i===2?seedSvg.replace('#986b43',state.fruit==='lemon'?'#d3c697':state.fruit==='watermelon'?'#564239':'#986b43'):i===0?`<svg viewBox="0 0 50 50" aria-hidden="true"><use href="#icon-${state.fruit}"/></svg>`:state.fruit==='watermelon'?svgUse('icon-watermelon-cut'):state.fruit==='lemon'?'<svg viewBox="0 0 50 50" aria-hidden="true"><circle cx="25" cy="25" r="22" fill="#ecd45d"/><circle cx="25" cy="25" r="18" fill="#fff1a3"/><path d="M25 7v36M7 25h36M12 12l26 26M12 38l26-26" stroke="#fffce1" stroke-width="3"/></svg>':'<svg viewBox="0 0 50 50" aria-hidden="true"><ellipse cx="25" cy="26" rx="21" ry="22" fill="#ce6752"/><ellipse cx="25" cy="26" rx="18" ry="19" fill="#fff1cd"/><path d="m25 16-5 10 5 9 5-9Z" fill="#d7bc8d"/></svg>';const copy=document.createElement('div'),h=document.createElement('h3'),p=document.createElement('p');h.textContent=fact.title;p.textContent=fact.text;copy.append(h,p);card.append(visual,copy);return card;}));
@@ -56,7 +64,7 @@ function renderContent(){const text=t();if(!text)return;document.documentElement
  $('#adult-content').innerHTML=adultCopy[language]+watermelonSources[language];
  const names={en:'Watermelon',ko:'수박',es:'Sandía'};document.querySelector('[data-fruit=watermelon] span').textContent=names[language];
  $('#model-note').textContent=text.modelNote;
- $('#seed-buttons').replaceChildren(...Array.from({length:content[state.fruit].seedCount},(_,id)=>{const button=document.createElement('button');button.type='button';button.className='seed-button';button.dataset.seed=id;button.innerHTML=seedSvg.replace('#986b43',state.fruit==='lemon'?'#d3c697':state.fruit==='watermelon'?'#564239':'#986b43');button.addEventListener('click',()=>dispatch({type:'seed',id}));return button;}));renderState();}
+ $('#seed-buttons').replaceChildren(...Array.from({length:content[state.fruit].seedCount},(_,id)=>{const button=document.createElement('button');button.type='button';button.className='seed-button';button.dataset.seed=id;button.innerHTML=seedSvg.replace('#986b43',state.fruit==='lemon'?'#d3c697':state.fruit==='watermelon'?'#564239':'#986b43');button.addEventListener('click',e=>{const r=button.getBoundingClientRect();lastSeedPoint=e.detail?{x:e.clientX,y:e.clientY}:{x:r.left+r.width/2,y:r.top+r.height/2};dispatch({type:'seed',id});});return button;}));renderState();}
 function renderState(){const text=t();if(!text)return;updateSoundControl();orchardLabels();const tree=state.view==='tree';$('#tree-world').hidden=!tree;$('#fruit-world').hidden=tree;const ground=state.fruit==='watermelon';$('#tree-world').dataset.growing=ground?'ground':'tree';$('#ground-world').hidden=!ground;$('#tree-controls').hidden=!tree||ground;$('#fruit-controls').hidden=tree;$('#world').dataset.view=state.view;document.querySelectorAll('[data-fruit]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.fruit===state.fruit)));const invitation={en:['Pull apart & peek inside!','Push together to close!'],ko:['양쪽으로 쏙! 벌려봐요!','안쪽으로 모아 닫아요!'],es:['¡Separa y mira dentro!','¡Junta para cerrar!']}[language];$('#open-label').textContent=invitation[state.split>=.55?1:0];$('#seed-area').hidden=false;$('#seed-area').classList.toggle('is-concealed',state.split<=.12);$('#seed-area').inert=state.split<=.12;$('#seed-area').setAttribute('aria-hidden',String(state.split<=.12));const status=$('#seed-status');const message=text.found.replace('{count}',state.foundSeeds.size).replace('{total}',5);if(status.textContent!==message)status.textContent=message;status.lang=language;document.querySelectorAll('[data-seed]').forEach(b=>{const id=Number(b.dataset.seed),found=state.foundSeeds.has(id);b.classList.toggle('found',found);b.setAttribute('aria-label',`${found?text.foundSeed:text.waitingSeed} ${id+1}`);b.setAttribute('aria-pressed',String(found));b.disabled=state.split<=.12;});if(!tree&&scene){scene.setState(state);scene.resize();}$('#fallback').classList.toggle('open',state.split>=.55);$('#fallback-fruit').style.transform=`rotate(${state.yaw*12}deg)`;$('#fallback-left>ellipse:first-child').setAttribute('fill',state.fruit==='lemon'?'#f0ce4b':state.fruit==='watermelon'?'#91b879':'#d6634c');$('#fallback-right>ellipse:first-child').setAttribute('fill',state.fruit==='lemon'?'#f0ce4b':state.fruit==='watermelon'?'#91b879':'#d6634c');document.querySelectorAll('#fallback .cut').forEach(el=>{el.setAttribute('fill',state.fruit==='watermelon'?'#ed938c':'#fff2be');el.setAttribute('stroke',state.fruit==='watermelon'?'#f5f4cc':'#fff9df');el.setAttribute('stroke-width',state.fruit==='watermelon'?'7':'4');});}
 function showFallback(){fallback=true;$('#fruit-canvas').hidden=true;$('#fallback').hidden=false;}
 function inspect(event){
@@ -68,45 +76,50 @@ function inspect(event){
 let shakeTimer,orchardBusy=false,fruitDropped=false,dropAnimations=[],shakeCount=0,dropAfter=3+Math.floor(Math.random()*2);
 const orchardCopy={en:{ready:'Shake the tree and watch the fruit fall!',landed:'Tap a fruit & see inside!',keep:'A little more!',again:'Bounce again'},ko:{ready:'나무를 흔들어 과일을 떨어뜨려봐요!',landed:'과일을 톡! 눌러 속을 봐요!',keep:'조금만 더 흔들어봐요!',again:'한 번 더 통통!'},es:{ready:'¡Mueve el árbol y mira caer la fruta!',landed:'¡Toca una fruta y mira dentro!',keep:'¡Un poquito más!',again:'Otro saltito'}};
 function orchardLabels(){const copy=orchardCopy[language];if(state.fruit==='watermelon'){$('.tree-instruction [data-text=pick]').textContent=t()?.pick??copy.landed;return;}$('#tree-controls [data-text="treeHint"]').textContent=fruitDropped?'':shakeCount?copy.keep:copy.ready;$('.tree-instruction [data-text="pick"]').textContent=fruitDropped?copy.landed:t()?.pick??copy.ready;$('#shake [data-text="shake"]').textContent=fruitDropped?copy.again:t()?.shake??'Shake the tree';}
-function resetOrchard(){clearTimeout(shakeTimer);dropAnimations.forEach(a=>a.cancel());dropAnimations=[];orchardBusy=false;fruitDropped=false;shakeCount=0;dropAfter=3+Math.floor(Math.random()*2);$('#world').classList.remove('shaking','dropping');document.querySelectorAll('.tree-fruit').forEach(b=>{b.classList.remove('landed');b.style.removeProperty('--ground-x');});}
+function resetOrchard(){clearPlayEffects();clearTimeout(shakeTimer);dropAnimations.forEach(a=>a.cancel());dropAnimations=[];orchardBusy=false;fruitDropped=false;shakeCount=0;dropAfter=3+Math.floor(Math.random()*2);$('#world').classList.remove('shaking','dropping');document.querySelectorAll('.tree-fruit').forEach(b=>{b.classList.remove('landed');b.style.removeProperty('--ground-x');});}
 function shake(){
  if(orchardBusy||state.view!=='tree'||state.fruit==='watermelon')return;
- orchardBusy=true;sounds.play('shake');const world=$('#world'),repeat=fruitDropped;world.classList.remove('shaking');void world.offsetWidth;world.classList.add('shaking');
+ orchardBusy=true;sounds.play('shake');const world=$('#world'),repeat=fruitDropped;world.classList.remove('shaking');void world.offsetWidth;world.style.setProperty('--shake-strength',String(Math.min(1.35,.8+shakeCount*.18)));world.classList.add('shaking');effects.leaves(1+shakeCount*.25);
  if(!repeat&&++shakeCount<dropAfter){orchardLabels();shakeTimer=setTimeout(()=>{world.classList.remove('shaking');orchardBusy=false;},reducedMotion()?0:700);return;}
- world.classList.add('dropping');if(sounds.enabled)soundTimers.push(setTimeout(()=>sounds.play('drop'),repeat?150:770));
+ world.classList.add('dropping');
  const buttons=[...document.querySelectorAll('.tree-fruit')];
  buttons.forEach((button,index)=>{
   const fromTop=button.offsetTop+'px',fromLeft=button.offsetLeft+'px',left=(12+index*21)+'%';
   button.style.setProperty('--ground-x',left);button.classList.add('landed');
   if(reducedMotion())return;
   const frames=repeat?[
-   {transform:'translateY(0) rotate(0deg)'},{transform:'translateY(-24px) rotate(-9deg)',offset:.4},{transform:'translateY(0) rotate(5deg)',offset:.8},{transform:'none'}
+   {transform:'translateY(0) rotate(0deg)'},{transform:'translateY(-42px) rotate(-14deg)',offset:.4},{transform:'translateY(0) rotate(5deg)',offset:.8},{transform:'none'}
   ]:[
    {top:fromTop,left:fromLeft,transform:'rotate(-8deg)',offset:0},
-   {top:'74%',left,transform:'rotate(16deg) scale(1.08,.9)',offset:.62},
-   {top:'65%',left,transform:'rotate(-9deg)',offset:.78},
-   {top:'74%',left,transform:'rotate(5deg)',offset:.92},
+   {top:'74%',left,transform:'rotate(16deg) scale(1.18,.8)',offset:.54},
+   {top:'61%',left,transform:'rotate(-15deg) scale(.94,1.06)',offset:.71},
+   {top:'74%',left,transform:'rotate(6deg) scale(1.08,.94)',offset:.88},
    {top:'74%',left,transform:'none',offset:1}
   ];
-  dropAnimations.push(button.animate(frames,{duration:repeat?560:950,delay:180+index*90,easing:'ease-in',fill:'backwards'}));
+  dropAnimations.push(button.animate(frames,{duration:repeat?680:1120,delay:120+index*110,easing:'cubic-bezier(.35,.05,.65,1)',fill:'backwards'}));
+  if(!reducedMotion())effectTimers.push(setTimeout(()=>{effects.landing(button);sounds.play('drop');},120+index*110+(repeat?540:605)));
  });
- fruitDropped=true;orchardLabels();
+ fruitDropped=true;orchardLabels();if(reducedMotion())sounds.play('drop');
  const finish=()=>{world.classList.remove('shaking','dropping');orchardBusy=false;dropAnimations=[];};
- if(reducedMotion())finish();else shakeTimer=setTimeout(finish,repeat?1050:1450);
+ if(reducedMotion())finish();else shakeTimer=setTimeout(finish,repeat?1160:1620);
 }
 $('#shake').addEventListener('click',shake);const treeArt=$('.orchard-art');let treeTouch=null;
  treeArt.addEventListener('pointerdown',e=>{treeTouch={id:e.pointerId,x:e.clientX,y:e.clientY,shaken:false};});
  treeArt.addEventListener('pointermove',e=>{if(!treeTouch||treeTouch.id!==e.pointerId||treeTouch.shaken)return;const dx=Math.abs(e.clientX-treeTouch.x),dy=Math.abs(e.clientY-treeTouch.y);if(dx>26&&dx>dy){treeTouch.shaken=true;shake();}});
  treeArt.addEventListener('pointerup',e=>{if(treeTouch?.id===e.pointerId){if(!treeTouch.shaken&&Math.hypot(e.clientX-treeTouch.x,e.clientY-treeTouch.y)<8)shake();treeTouch=null;}});
- treeArt.addEventListener('pointercancel',()=>{treeTouch=null;});document.querySelectorAll('.tree-fruit,.ground-fruit').forEach(b=>b.addEventListener('click',inspect));document.querySelectorAll('[data-fruit]').forEach(b=>b.addEventListener('click',()=>{resetOrchard();dispatch({type:'fruit',fruit:b.dataset.fruit});scene?.setFruit(state.fruit);renderContent();}));$('#back').addEventListener('click',()=>{dispatch({type:'back'});$(state.fruit==='watermelon'?'.ground-fruit':'.tree-fruit').focus({preventScroll:true});});$('#turn').addEventListener('click',()=>animateAction({type:'turn',dx:65,dy:0}));$('#reset').addEventListener('click',()=>animateAction({type:'reset'}));$('#language').addEventListener('change',e=>{language=e.target.value;renderContent();});$('#help').addEventListener('click',()=>$('#help-dialog').showModal());$('#dismiss').addEventListener('click',()=>$('#help-dialog').close());$('#help-dialog').addEventListener('click',e=>{if(e.target===$('#help-dialog'))$('#help-dialog').close();});
+ treeArt.addEventListener('pointercancel',()=>{treeTouch=null;});document.querySelectorAll('.tree-fruit,.ground-fruit').forEach(b=>b.addEventListener('click',inspect));document.querySelectorAll('[data-fruit]').forEach(b=>b.addEventListener('click',()=>{resetOrchard();dispatch({type:'fruit',fruit:b.dataset.fruit});scene?.setFruit(state.fruit);renderContent();}));$('#back').addEventListener('click',()=>{dispatch({type:'back'});$(state.fruit==='watermelon'?'.ground-fruit':'.tree-fruit').focus({preventScroll:true});});$('#turn').addEventListener('click',()=>{sounds.play('turn');animateAction({type:'turn',dx:65,dy:0});});$('#reset').addEventListener('click',()=>animateAction({type:'reset'}));$('#language').addEventListener('change',e=>{language=e.target.value;renderContent();});$('#help').addEventListener('click',()=>$('#help-dialog').showModal());$('#dismiss').addEventListener('click',()=>$('#help-dialog').close());$('#help-dialog').addEventListener('click',e=>{if(e.target===$('#help-dialog'))$('#help-dialog').close();});
 $('#sound-toggle').addEventListener('click',async()=>{if(soundTogglePending)return;soundTogglePending=true;const turnOn=!sounds.enabled;if(!turnOn)stopPlaySounds();const pending=sounds.setEnabled(turnOn);updateSoundControl();await pending;soundTogglePending=false;updateSoundControl();if(sounds.enabled)sounds.play('pick');});
-document.addEventListener('visibilitychange',()=>{if(document.hidden)stopPlaySounds();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){stopPlaySounds();clearPlayEffects();}});
+function openPuzzle(){clearSeedRewards();stopPlaySounds();clearPlayEffects();puzzle.reset();$('#puzzle-dialog').showModal();}
+$('#puzzle-open').addEventListener('click',openPuzzle);$('#seed-celebration-puzzle').addEventListener('click',openPuzzle);
+$('#puzzle-close').addEventListener('click',()=>$('#puzzle-dialog').close());
+$('#puzzle-dialog').addEventListener('close',()=>{puzzle.reset();stopPlaySounds();clearPlayEffects();$('#puzzle-open').focus({preventScroll:true});});
 $('#seed-celebration-dismiss').addEventListener('click',()=>$('#seed-celebration').close());
-const pointers=new Map();let previousDistance=0,moved=false,wasPinch=false;const canvas=$('#fruit-canvas');canvas.addEventListener('webglcontextlost',showFallback);
-canvas.addEventListener('pointerdown',e=>{stopMotion();canvas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY,startX:e.clientX,startY:e.clientY});if(pointers.size===1){moved=false;wasPinch=false;}if(pointers.size===2){wasPinch=true;previousDistance=distance();}});
+const pointers=new Map();let previousDistance=0,moved=false,wasPinch=false,turnSoundPlayed=false;const canvas=$('#fruit-canvas');canvas.addEventListener('webglcontextlost',showFallback);
+canvas.addEventListener('pointerdown',e=>{stopMotion();canvas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY,startX:e.clientX,startY:e.clientY});if(pointers.size===1){moved=false;wasPinch=false;turnSoundPlayed=false;}if(pointers.size===2){wasPinch=true;previousDistance=distance();}});
 function distance(){const [a,b]=[...pointers.values()];return a&&b?Math.hypot(a.x-b.x,a.y-b.y):0;}
-canvas.addEventListener('pointermove',e=>{const prev=pointers.get(e.pointerId);if(!prev)return;const dx=e.clientX-prev.x,dy=e.clientY-prev.y;prev.x=e.clientX;prev.y=e.clientY;if(Math.hypot(prev.x-prev.startX,prev.y-prev.startY)>6)moved=true;if(pointers.size===1&&!wasPinch)dispatch({type:'turn',dx,dy});else if(pointers.size===2){const d=distance();if(previousDistance>0&&d>0)dispatch({type:'split',value:state.split+Math.log(d/previousDistance)*.85});previousDistance=d;}});
-function endPointer(e){if(!pointers.has(e.pointerId))return;if(e.type==='pointerup'&&!moved&&!wasPinch)scene?.pickSeed(e.clientX,e.clientY);pointers.delete(e.pointerId);if(!pointers.size){previousDistance=0;wasPinch=false;}}canvas.addEventListener('pointerup',endPointer);canvas.addEventListener('pointercancel',endPointer);canvas.addEventListener('lostpointercapture',endPointer);
+canvas.addEventListener('pointermove',e=>{const prev=pointers.get(e.pointerId);if(!prev)return;const dx=e.clientX-prev.x,dy=e.clientY-prev.y;prev.x=e.clientX;prev.y=e.clientY;if(Math.hypot(prev.x-prev.startX,prev.y-prev.startY)>6)moved=true;if(pointers.size===1&&!wasPinch){if(moved&&!turnSoundPlayed){sounds.play('turn');turnSoundPlayed=true;}dispatch({type:'turn',dx,dy});}else if(pointers.size===2){const d=distance();if(previousDistance>0&&d>0)dispatch({type:'split',value:state.split+Math.log(d/previousDistance)*.85});previousDistance=d;}});
+function endPointer(e){if(!pointers.has(e.pointerId))return;if(e.type==='pointerup'&&!moved&&!wasPinch){lastSeedPoint={x:e.clientX,y:e.clientY};scene?.pickSeed(e.clientX,e.clientY);lastSeedPoint=null;}pointers.delete(e.pointerId);if(!pointers.size){previousDistance=0;wasPinch=false;}}canvas.addEventListener('pointerup',endPointer);canvas.addEventListener('pointercancel',endPointer);canvas.addEventListener('lostpointercapture',endPointer);
 canvas.addEventListener('keydown',e=>{const keys={ArrowLeft:[-45,0],ArrowRight:[45,0],ArrowUp:[0,-40],ArrowDown:[0,40]};if(keys[e.key]){e.preventDefault();dispatch({type:'turn',dx:keys[e.key][0],dy:keys[e.key][1]});}});
 // Dedicated handles separate pulling from the canvas rotation gesture.
 for(const [id,direction] of [['pull-left',-1],['pull-right',1]]){
