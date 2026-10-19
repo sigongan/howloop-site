@@ -35,9 +35,9 @@ export function createPlayMusic(win = globalThis.window) {
   let supported = typeof Context === 'function' && typeof setTick === 'function' && typeof clearTick === 'function';
   let context = null, master = null, interval = null;
   let selected = false, destroyed = false, activation = 0;
-  let mood = 'orchard', volume = .55, nextTime = 0, step = 0;
+  let mood = 'orchard', volume = .65, nextTime = 0, step = 0;
   const voices = new Set();
-  const maxVoices = 12, lookahead = .28, maxGain = .08;
+  const maxVoices = 12, lookahead = .28, maxGain = .22;
 
   function stopSequence() {
     if (interval !== null) { clearTick(interval); interval = null; }
@@ -84,6 +84,8 @@ export function createPlayMusic(win = globalThis.window) {
     source.frequency.setValueAtTime(frequency(midi), time);
     gain.gain.setValueAtTime(.0001, time);
     gain.gain.linearRampToValueAtTime(amplitude, time + .012);
+    // Let the wooden-key body ring briefly before its quiet tail fades away.
+    gain.gain.exponentialRampToValueAtTime(amplitude * .4, time + .12);
     gain.gain.exponentialRampToValueAtTime(.0001, time + duration);
     source.connect(gain); gain.connect(master);
     source.onended = () => {
@@ -110,8 +112,8 @@ export function createPlayMusic(win = globalThis.window) {
         if (pitch !== -1 && voices.size + 2 <= maxVoices) {
           // A rounded fundamental and a very quiet octave create a small wooden-key timbre.
           const midi = melodyMidi[pitch];
-          note(midi, nextTime, mood === 'puzzle' ? .28 : .39, .21);
-          note(midi + 12, nextTime, .15, .027, 'triangle');
+          note(midi, nextTime, .6, .32);
+          note(midi + 12, nextTime, .15, .035, 'triangle');
         }
         if ((beat === 0 || beat === 4) && voices.size < maxVoices) {
           note(score.bass[bar] + (beat === 4 ? 7 : 0), nextTime, .48, .12);

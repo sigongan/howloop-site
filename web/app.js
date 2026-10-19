@@ -8,7 +8,7 @@ import {createPlayEffects} from './play-effects.js';
 import {renderFruitSymbol} from './scene/fruit-icons.js';
 const $=s=>document.querySelector(s);
 const sounds=createPlaySounds(),music=createPlayMusic(),fruitTransition=createFruitTransition();
-music.setVolume(.55);
+music.setVolume(.65);
 const effects=createPlayEffects({world:$('#world')});
 let effectTimers=[],lastSeedPoint=null;
 function clearPlayEffects(){effectTimers.forEach(clearTimeout);effectTimers=[];effects.clear();}
