@@ -169,3 +169,5 @@ html{touch-action:manipulation;-webkit-text-size-adjust:100%;text-size-adjust:10
 @media(max-width:760px){.music-toggle{width:61px}.music-heading{font-size:11px;gap:3px}.music-note{font-size:21px}}
 @media(max-width:440px){.play-tools{flex-direction:column;gap:7px;width:54px}.music-toggle{width:54px;min-height:51px;padding:4px}.music-heading{font-size:10px}.music-toggle small{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.music-toggle[aria-pressed=true] .music-note{animation:none}}
+@media(min-width:601px) and (max-width:1000px){.fruit-picker{flex:1}.fruit-picker button{flex-direction:column;min-height:60px;gap:1px;padding:4px 6px;font-size:12px}.fruit-picker svg{width:30px;height:30px;flex-shrink:0}}
+@media(min-width:441px) and (max-width:600px){.fruit-picker{grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;flex:1}.fruit-picker button{font-size:12px;min-height:56px}.fruit-picker svg{width:27px;height:27px}.play-tools{flex-direction:column;gap:7px;width:54px}.music-toggle{width:54px;min-height:51px;padding:4px}.music-heading{font-size:10px}.music-toggle small{font-size:10px}}
