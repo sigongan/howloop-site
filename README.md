@@ -17,9 +17,9 @@ Open the local URL printed by the server. Deployment builds `dist/` with `npm ru
 
 ## Shared learning format
 
-`shared/lemon.json` and `shared/apple.json` hold versioned English, Korean and Spanish content, seed-count assumptions, three discovery facts, four growth-story steps and origin notes. The web build copies these verbatim to `/content/`; the native Xcode resource references point directly to the same authored files. Content updates ship on the website when deployed and in the app with a new build. There is no remote app-content update service or account/progress syncing.
+`shared/{lemon,apple,watermelon,orange,pear}.json` hold versioned English, Korean and Spanish content, seed-count assumptions, three discovery facts, four growth-story steps and origin notes. The web build copies these verbatim to `/content/`; the native prototype references its existing authored resources; the two new web fruits are not yet native app scenes. Content updates ship on the website when deployed and in the app with a new build. There is no remote app-content update service or account/progress syncing.
 
-The repeatable experience is orchard → tap fruit → rotate/open → seed discovery → short illustrated story. A new ingredient needs reviewed learning content plus suitable visual geometry; vegetables are not all tree fruit and must receive an appropriate growing scene.
+The repeatable experience is orchard (or a ground vine for watermelon) → tap fruit → rotate/pull open → seed discovery → short illustrated story. An optional three-piece puzzle uses the same fruit characters and supports drag, tap and keyboard input. A new ingredient needs reviewed learning content plus suitable visual geometry; vegetables are not all tree fruit and must receive an appropriate growing scene.
 
 ## Native prototype
 
@@ -33,8 +33,14 @@ Primary references: UF/IFAS Lemon Growing in the Florida Home Landscape, Kew Pla
 
 ## Privacy and accessibility
 
+Original synthesized effects are off by default and enabled only with the sound button. Leaf flutter, soft landings, seed sparkles and completion confetti respect reduced motion and stop in the background.
+
 No ads, analytics scripts, accounts, uploads, voice recording, location, cookies or persistent play storage. Language and progress live in page memory. Hosting receives ordinary network requests; the privacy page explains this distinction. CSP and `no-transform` prevent third-party scripting and Cloudflare automatic analytics insertion. The website includes button/keyboard alternatives for gestures, reduced-motion styles, fallback illustration if WebGL is unavailable, and large controls.
 
 ## Replacement of the earlier site
 
 This working tree replaces the former finance website. Finance pages, tools, data, scheduled bank refresh, advertising verification and financial API endpoints are absent. Old addresses return a 404 page linking to the new playground. Ordinary Git history is not rewritten.
+
+## Read-together lessons and review readiness
+
+The build creates five crawlable `/learn/{fruit}/` pages with English observation activities, parent prompts and primary sources. Their links select the matching playground fruit with `?fruit=`. These pages are educational content, not an approval guarantee. AdSense has not been resubmitted. Before any ads are enabled, revisit Google’s child age treatment, interaction placement and privacy disclosure requirements; the present public site still serves no advertising.
