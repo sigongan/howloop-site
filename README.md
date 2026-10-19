@@ -33,7 +33,7 @@ Primary references: UF/IFAS Lemon Growing in the Florida Home Landscape, Kew Pla
 
 ## Privacy and accessibility
 
-Original synthesized effects are off by default and enabled only with the sound button. Leaf flutter, soft landings, seed sparkles and completion confetti respect reduced motion and stop in the background.
+Original synthesized effects are off by default and enabled only with the sound button. Background music has an independent Music button: original 16-bar instrumental arrangements for orchard exploration and the puzzle. Both are synthesized locally, require an explicit tap, and stop when the page is hidden; returning requires another tap. Music volume is adjustable in the help dialog. Leaf flutter, soft landings, seed sparkles and completion confetti respect reduced motion and stop in the background.
 
 No ads, analytics scripts, accounts, uploads, voice recording, location, cookies or persistent play storage. Language and progress live in page memory. Hosting receives ordinary network requests; the privacy page explains this distinction. CSP and `no-transform` prevent third-party scripting and Cloudflare automatic analytics insertion. The website includes button/keyboard alternatives for gestures, reduced-motion styles, fallback illustration if WebGL is unavailable, and large controls.
 
