@@ -10,7 +10,7 @@ await cp(path.join(root,'web'),path.join(root,'dist'),{recursive:true});
 await cp(path.join(root,'shared'),path.join(root,'dist/content'),{recursive:true});
 const lessonUrls=await buildLessonPages({contentDir:path.join(root,'shared'),outputDir:path.join(root,'dist')});
 await writeFile(path.join(root,'dist/robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://howloop.how/sitemap.xml\n');
-const siteUrls=['https://howloop.how/','https://howloop.how/privacy.html',...lessonUrls];
+const siteUrls=['https://howloop.how/','https://howloop.how/privacy/','https://howloop.how/learn/','https://howloop.how/grown-ups/',...lessonUrls];
 await writeFile(path.join(root,'dist/sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+siteUrls.map(url=>`<url><loc>${url}</loc></url>`).join('')+'</urlset>');
 console.log('Built dependency-free food playground and shared learning content.');
 
@@ -21,7 +21,13 @@ const assets=(await assetFiles(path.join(root,'dist'))).filter(f=>/\.(js|css|jso
 const hash=createHash('sha256');for(const f of assets)hash.update(await readFile(f));
 const version=hash.digest('hex').slice(0,12);
 const htmlFiles=(await assetFiles(path.join(root,'dist'))).filter(f=>f.endsWith('.html'));
+const home = await readFile(path.join(root, 'dist/index.html'), 'utf8');
+const publisherTag = home.match(/<meta name="google-adsense-account" content="ca-pub-\d{16}">/)?.[0];
+if (!publisherTag) throw new Error('Missing AdSense publisher meta tag on the homepage');
 for(const f of [...assets.filter(f=>f.endsWith('.js')),...htmlFiles]){
- const source=await readFile(f,'utf8');
+ let source=await readFile(f,'utf8');
+ if (path.basename(f) === 'index.html' && !source.includes(publisherTag)) {
+   source = source.replace('</head>', publisherTag + '\n</head>');
+ }
  await writeFile(f,source.replaceAll('/content/${id}.json','/content/${id}.json?v='+version).replace(/(["'])([^"'\s]+\.(?:js|css))\1/g,(match,quote,url)=>`${quote}${url}?v=${version}${quote}`));
 }
