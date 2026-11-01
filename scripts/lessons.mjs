@@ -72,7 +72,7 @@ export const lessonActivities = {
     sources: [
       ['UF/IFAS: Citrus Culture in the Home Landscape', 'https://ask.ifas.ufl.edu/publication/HS132'],
       ['UF/IFAS: Citrus Fruit Pigments', 'https://ask.ifas.ufl.edu/publication/HS1472'],
-      ['UF/IFAS: Blood Orange Fruit Structure and Colour', 'https://ask.ifas.ufl.edu/publication/HS1494'],
+      ['UF/IFAS: Postharvest Anthocyanin Enhancement in Blood Orange Fruit', 'https://ask.ifas.ufl.edu/publication/HS1494'],
     ],
   },
   pear: {
@@ -114,16 +114,16 @@ export function renderLesson(content) {
 <meta name="theme-color" content="#f9f6e9"><link rel="icon" type="image/x-icon" sizes="32x32 48x48 96x96" href="/favicon.ico"><link rel="icon" type="image/png" sizes="96x96" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/styles.css">
 <meta property="og:title" content="${escape(lesson.title)} — Howloop"><meta property="og:description" content="${escape(lesson.description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="article"><meta property="og:site_name" content="Howloop"></head>
 <body><a class="skip" href="#lesson">Skip to the lesson</a>
-<header class="site-header"><a class="brand" href="/" aria-label="Howloop home"><img src="/lemon-logo.svg" width="58" height="58" alt=""><span>howloop<span class="brand-dot">.</span><small>A little food playground</small></span></a><nav aria-label="Site navigation"><a class="adult-link" href="/#learn">Food lessons</a><a class="adult-link" href="/privacy.html">Privacy</a></nav></header>
+<header class="site-header"><a class="brand" href="/" aria-label="Howloop home"><img src="/lemon-logo.svg" width="58" height="58" alt=""><span>howloop<span class="brand-dot">.</span><small>A little food playground</small></span></a><nav aria-label="Site navigation"><a class="adult-link" href="/learn/">Food lessons</a><a class="adult-link" href="/privacy/">Privacy</a></nav></header>
 <main class="lesson-page" id="lesson"><article>
 <header class="lesson-hero"><svg viewBox="0 0 50 50" role="img" aria-label="${escape(copy.fruit)} play character">${renderFruitSymbol(id)}</svg><p class="eyebrow">LOOK · WONDER · DISCOVER</p><h1>${escape(lesson.title)}</h1><p class="lesson-meta">English lesson · Ages 5+ with a grown-up · By Howloop</p><p class="lesson-lead">${escape(lesson.intro)}</p><a class="pill lesson-play" href="/?fruit=${id}#playground">Play with ${escape(copy.fruit.toLowerCase())} →</a></header>
 <section class="lesson-card"><h2>Our little discovery</h2><p>${escape(lesson.goal)}</p><h3>${escape(copy.factsTitle)}</h3><ul>${facts}</ul><p>${escape(copy.origin)}</p></section>
-<section class="lesson-card"><h2>${escape(copy.storyTitle)}</h2><ol>${story}</ol><p>Shaking a tree in the playground is pretend play, not a real harvesting instruction.</p></section>
+<section class="lesson-card"><h2>${escape(copy.storyTitle)}</h2><ol>${story}</ol><p>${id === 'watermelon' ? 'The game shows a melon patch. Trace the vine back from a fruit to see how it joins the plant.' : 'Shaking a tree in the playground is pretend play, not a real harvesting instruction.'}</p></section>
 <section class="lesson-card"><h2>Three ways to look closer</h2><p>You can point, draw or talk. You do not need to taste anything.</p><ol class="lesson-activities">${activities}</ol></section>
 <section class="lesson-card"><h2>What to notice</h2><p>${escape(lesson.notice)}</p><h3>Wonder together</h3><p>${escape(lesson.question)}</p></section>
 <aside class="lesson-card"><h2>A note for grown-ups</h2><p>Howloop creates original illustrated play models and observation prompts. Each model has five findable seeds for counting; it is not an anatomy diagram. ${escape(copy.modelNote)}</p><p>For real fruit, a grown-up handles washing, cutting and small loose seeds. Watching or drawing is enough. Our lessons are AI-assisted and have not received independent expert review or a child usability study.</p><h3>Learning sources</h3><p>The university sources below support the growing and fruit-structure explanations. The activities are Howloop’s own suggested prompts.</p><ul class="lesson-sources">${sources}</ul><p>Parents and educators can send corrections to <a href="mailto:hello@howloop.how">hello@howloop.how</a>. Please do not include a child’s personal information.</p></aside>
 <nav class="lesson-nav" aria-label="More food lessons"><h2>Another little discovery</h2>${related}</nav>
-</article></main><footer><a href="/">Back to the playground</a> · <a href="/privacy.html">Privacy</a></footer></body></html>\n`;
+</article></main><footer><a href="/">Back to the playground</a> · <a href="/learn/">All lessons</a> · <a href="/grown-ups/">Grown-up activity sheet</a> · <a href="/privacy/">Privacy</a></footer></body></html>\n`;
 }
 
 export async function buildLessonPages({contentDir, outputDir}) {

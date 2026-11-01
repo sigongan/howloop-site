@@ -10,7 +10,7 @@ await cp(path.join(root,'web'),path.join(root,'dist'),{recursive:true});
 await cp(path.join(root,'shared'),path.join(root,'dist/content'),{recursive:true});
 const lessonUrls=await buildLessonPages({contentDir:path.join(root,'shared'),outputDir:path.join(root,'dist')});
 await writeFile(path.join(root,'dist/robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://howloop.how/sitemap.xml\n');
-const siteUrls=['https://howloop.how/','https://howloop.how/privacy.html',...lessonUrls];
+const siteUrls=['https://howloop.how/','https://howloop.how/privacy/','https://howloop.how/learn/','https://howloop.how/grown-ups/',...lessonUrls];
 await writeFile(path.join(root,'dist/sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+siteUrls.map(url=>`<url><loc>${url}</loc></url>`).join('')+'</urlset>');
 console.log('Built dependency-free food playground and shared learning content.');
 
