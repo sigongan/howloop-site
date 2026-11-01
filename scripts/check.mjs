@@ -6,6 +6,10 @@ assert.ok(!files.some(f=>/salary|tax-explain|banks|cash-flow|finance|worked-exam
 for(const f of files.filter(f=>/\.(html|js)$/.test(f))){const text=await readFile(f,'utf8');assert.ok(!/googletagmanager|googlesyndication|doubleclick|adsbygoogle|beacon\.min\.js|static\.cloudflareinsights\.com|localStorage|sessionStorage/.test(text),`Tracking or ad script in ${f}`);}
 const ownership = html.match(/<head>[^]*?<meta name="google-adsense-account" content="ca-(pub-\d{16})">[^]*?<\/head>/);
 assert.ok(ownership, 'Homepage head contains the publisher verification tag');
+for (const file of files.filter(file => path.basename(file) === 'index.html')) {
+  const source = await readFile(file,'utf8');
+  assert.ok(source.split('</head>')[0].includes(`<meta name="google-adsense-account" content="ca-${ownership[1]}">`), `Publisher verification in ${file}`);
+}
 assert.equal((await readFile(path.join(dist,'ads.txt'),'utf8')).trim(), `google.com, ${ownership[1]}, DIRECT, f08c47fec0942fa0`);
 const sitemap = await readFile(path.join(dist,'sitemap.xml'),'utf8');
 for (const page of ['/learn/', '/grown-ups/', '/privacy/']) {
