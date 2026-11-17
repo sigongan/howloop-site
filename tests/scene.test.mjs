@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createFruitHalf, fruitSurface, SEED_POSITIONS } from '../web/scene/geometry.js';
-import { multiply, translate, rotateX, rotateY, scale, inverse, transformPoint, rayTriangle } from '../web/scene/math.js';
-import { createAppleScene } from '../web/apple-scene.js';
+import { createFruitHalf, fruitSurface, SEED_POSITIONS } from '../playground/scene/geometry.js';
+import { multiply, translate, rotateX, rotateY, scale, inverse, transformPoint, rayTriangle } from '../playground/scene/math.js';
+import { createAppleScene } from '../playground/apple-scene.js';
 
 const close=(a,b,epsilon=1e-5)=>assert.ok(Math.abs(a-b)<epsilon,`${a} should equal ${b}`);
 

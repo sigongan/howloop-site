@@ -1,46 +1,75 @@
-# Howloop — a little food playground
+# Howloop — kitchen science, explained by a working chef
 
-A dependency-free web playground and native iPhone prototype sharing one set of learning content. The public website is https://howloop.how. The web brand remains **Howloop** with a lemon mark and the Korean subtitle **어린이 식재료 놀이터**. The app's final public name will be chosen separately; the internal Xcode project is still FruitLab.
+The public website is https://howloop.how: a text-first food-science site written by Jess Baek, a professional chef in Queensland, Australia. Each article answers one everyday cooking question (eggs, meat, fruit and veg, heat and browning, sauces and seasoning), explains the science in plain English and lists its sources.
 
-## Run the web playground
+The site is a static build with **no npm dependencies**, deployed by the existing Cloudflare Pages project (build command `npm run build`, output directory `dist`).
 
-Node 22 or newer. No npm dependencies are required.
+## Commands
+
+Node 20 or newer.
 
 ```sh
-npm test
-npm run build
-npm run check:readiness
-npm run dev
+npm test                 # unit tests (site renderer + archived playground)
+npm run build            # builds dist/
+npm run check:readiness  # AdSense/site-quality checks on dist/ (must pass before requesting review)
+npm run dev              # serves dist/ on http://127.0.0.1:4325
 ```
 
-Open the local URL printed by the server. Deployment builds `dist/` with `npm run build` in the existing Cloudflare Pages project.
+## Where things live
 
-## Shared learning format
+| Path | What it is |
+|---|---|
+| `site/content/articles/*.md` | Articles. File name = URL slug (`/why-onions-make-you-cry/`). |
+| `site/content/pages/*.md` | About, Contact, Privacy, Terms, Editorial policy. |
+| `site/site.config.mjs` | Site name, author, AdSense publisher ID, topics and topic intros. |
+| `site/static/` | Copied as-is: CSS, icons, share image, `_headers`, `_redirects`. |
+| `scripts/build.mjs` | Static site generator (home, topics, articles, sitemap, RSS, robots, ads.txt). |
+| `scripts/markdown.mjs` | Small Markdown renderer (headings, lists, tables, `:::callouts`, links). |
+| `scripts/check.mjs` | Readiness checker: publisher code on every page, required policy pages, no broken internal links, ≥900 words per article, sources on every article, sitemap coverage. |
+| `scripts/make-icons.py` | Regenerates favicon, logo PNG and default share image (needs Pillow). |
 
-`shared/{lemon,apple,watermelon,orange,pear}.json` hold versioned English, Korean and Spanish content, seed-count assumptions, three discovery facts, four growth-story steps and origin notes. The web build copies these verbatim to `/content/`; the native prototype references its existing authored resources; the two new web fruits are not yet native app scenes. Content updates ship on the website when deployed and in the app with a new build. There is no remote app-content update service or account/progress syncing.
+## Writing an article
 
-The repeatable experience is orchard (or a ground vine for watermelon) → tap fruit → rotate/pull open → seed discovery → short illustrated story. An optional three-piece puzzle uses the same fruit characters and supports drag, tap and keyboard input. A new ingredient needs reviewed learning content plus suitable visual geometry; vegetables are not all tree fruit and must receive an appropriate growing scene.
+Create `site/content/articles/<slug>.md`:
 
-## Native prototype
+```markdown
+---
+title: Why Something Happens — and What to Do About It
+description: One or two sentences (80–220 characters) used for search results and cards.
+category: eggs            # eggs | meat | fruit-and-veg | heat | sauces-and-seasoning
+order: 5                  # position within the topic
+published: 2026-11-18
+updated: 2026-12-01       # optional; set when you materially change an article
+summary:
+  - Three short "In short" bullets.
+  - ...
+---
+Intro paragraph...
 
-Open `ios/FruitLab/FruitLab.xcodeproj`. See its README for clean simulator build and test commands. The prototype bundles the shared learning files for offline use. Device installation, App Store distribution and final app naming are separate work.
+## Section heading
 
-## Editorial and design
+Body text. Use :::chef, :::tip or :::safety blocks for callouts.
 
-Stylized, original procedural 3D fruit and SVG orchard illustration. Each play model has five discoverable seeds; this is not a universal botanical count or an anatomy diagram. No knife interaction. Real food preparation needs an adult. Historical lemon origins are presented as uncertain rather than an exact ancient birthplace.
+## Sources
 
-Primary references: UF/IFAS Lemon Growing in the Florida Home Landscape, Kew Plants of the World Online (Citrus × limon), University of Maryland apple and pear growing, University of Minnesota Flowers to Fruit. Links and limitations are visible in the grown-up section. Translations have not all received native-speaker review; no child usability study or expert review is claimed.
+- Book, paper (with DOI link) or official page the claims rest on.
+```
 
-## Privacy and accessibility
+Keep articles original and useful: at least ~900 words of real explanation, sources for every factual claim, and no invented personal anecdotes or test results. Food-safety statements should match official guidance (FSANZ, USDA FSIS).
 
-Original synthesized effects are off by default and enabled only with the sound button. Background music has an independent Music button: original 16-bar instrumental arrangements for orchard exploration and the puzzle. Both are synthesized locally, require an explicit tap, and stop when the page is hidden; returning requires another tap. Music volume is adjustable in the help dialog. Leaf flutter, soft landings, seed sparkles and completion confetti respect reduced motion and stop in the background.
+## AdSense
 
-No ads, analytics scripts, accounts, uploads, voice recording, location, cookies or persistent play storage. Language and progress live in page memory. Hosting receives ordinary network requests; the privacy page explains this distinction. CSP blocks external scripts. Successful HTML responses also use `no-transform` to prevent beacon insertion. The host may insert a performance beacon in 404 responses, where CSP blocks execution. The website includes button/keyboard alternatives for gestures, reduced-motion styles, fallback illustration if WebGL is unavailable, and large controls.
+- Publisher: `ca-pub-9777958537717885` (set in `site/site.config.mjs`). Every page carries the `google-adsense-account` meta tag and the Auto ads script; `dist/ads.txt` is generated from the same ID.
+- The privacy policy contains Google's required advertising-cookie disclosures and opt-out links.
+- `_headers` deliberately has no restrictive `script-src` CSP, because AdSense loads scripts and frames from many Google domains.
+- Turn on Google's consent message (AdSense → Privacy & messaging → European regulations) before serving ads to UK/EEA visitors.
 
-## Replacement of the earlier site
+## Archived: the children's fruit playground
 
-This working tree replaces the former finance website. Finance pages, tools, data, scheduled bank refresh, and financial API endpoints are absent. Old addresses return a 404 page linking to the new playground. Ordinary Git history is not rewritten.
+The previous version of howloop.how — a WebGL fruit playground for children with an iPhone prototype — is kept in this repository but **is not deployed**. Image- and interaction-heavy pages with little text, aimed at children, are a poor fit for AdSense review.
 
-## Read-together lessons and review readiness
+- Web playground source: `playground/` (tests in `tests/` still run).
+- Shared lesson content: `shared/*.json` (also used by `ios/FruitLab`).
+- Local preview: `npm run build:playground && npm run dev:playground`.
 
-The build creates five crawlable `/learn/{fruit}/` pages with English observation activities, parent prompts and primary sources. Their links select the matching playground fruit with `?fruit=`. These pages are educational content, not an approval guarantee. The homepage verification meta tag and public ads.txt identify the publisher without loading advertising code. The lesson directory and printable family activity are at /learn/ and /grown-ups/. Before any ads are enabled, revisit Google’s child age treatment, interaction placement and privacy disclosure requirements; the present public site still serves no advertising.
+Old playground URLs (`/learn/…`, `/grown-ups/`) redirect to the new site. Earlier versions (finance tools, Astro guides) remain in Git history.

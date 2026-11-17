@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createPlaySounds } from '../web/sounds.js';
+import { createPlaySounds } from '../playground/sounds.js';
 
 function audioWindow({ rejectResume = false, deferResume = false } = {}) {
   const instances = [];

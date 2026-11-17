@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {mkdtemp, readFile, rm} from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
-import {buildLessonPages, lessonActivities, lessonIds, renderLesson} from '../scripts/lessons.mjs';
+import {buildLessonPages, lessonActivities, lessonIds, renderLesson} from '../playground/lessons.mjs';
 
 const contentDir = path.resolve(import.meta.dirname, '../shared');
 

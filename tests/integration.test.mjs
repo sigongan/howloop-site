@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createAppleScene } from '../web/apple-scene.js';
-import { initialState, updateState } from '../web/state.js';
+import { createAppleScene } from '../playground/apple-scene.js';
+import { initialState, updateState } from '../playground/state.js';
 
 // GPU calls are stubbed; the renderer's real geometry, visibility, ray picking
 // and application reducer are exercised together. This is not a visual test.

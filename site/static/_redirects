@@ -1,0 +1,9 @@
+# Addresses from earlier versions of howloop.how
+/privacy.html /privacy/ 301
+/grown-ups /about/ 301
+/grown-ups/ /about/ 301
+/learn /articles/ 301
+/learn/ /articles/ 301
+/learn/* /articles/ 301
+/studio /about/ 301
+/studio/* /about/ 301

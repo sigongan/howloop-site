@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createPlayEffects} from '../web/play-effects.js';
+import {createPlayEffects} from '../playground/play-effects.js';
 
 function environment({reduced=false,animated=true}={}){
  const animations=[],timers=new Map(),events=new Map(),motionEvents=new Map();let nextTimer=1;
