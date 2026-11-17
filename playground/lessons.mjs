@@ -1,6 +1,6 @@
 import {mkdir, readFile, writeFile} from 'node:fs/promises';
 import path from 'node:path';
-import {renderFruitSymbol} from '../web/scene/fruit-icons.js';
+import {renderFruitSymbol} from './scene/fruit-icons.js';
 
 export const lessonIds = ['lemon', 'apple', 'watermelon', 'orange', 'pear'];
 

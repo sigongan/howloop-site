@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { initialPuzzleState, updatePuzzleState, isPuzzleComplete } from '../web/fruit-puzzle.js';
+import { initialPuzzleState, updatePuzzleState, isPuzzleComplete } from '../playground/fruit-puzzle.js';
 
 test('puzzle supports selecting and placing all three pieces in any order', () => {
   let state = initialPuzzleState('apple');

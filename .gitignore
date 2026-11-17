@@ -1,4 +1,5 @@
 dist/
+dist-playground/
 node_modules/
 .DS_Store
 *.xcuserstate
@@ -6,3 +7,4 @@ xcuserdata/
 Build/
 DeviceBuild/
 *.xcresult/
+__pycache__/

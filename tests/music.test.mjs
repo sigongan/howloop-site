@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createPlayMusic, PLAY_MUSIC} from '../web/music.js';
+import {createPlayMusic, PLAY_MUSIC} from '../playground/music.js';
 
 function musicWindow({rejectResume = false, deferResume = false} = {}) {
   const instances = [], intervals = new Map();
