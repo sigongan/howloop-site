@@ -67,6 +67,8 @@ for (const file of htmlFiles) {
   if ((html.match(/<h1[\s>]/g) || []).length !== 1) problems.push(`${rel}: expected exactly one <h1>`);
   if (/\b(TODO|TBD|lorem ipsum|coming soon|under construction)\b/i.test(html.replace(/<script[\s\S]*?<\/script>/g, ''))) problems.push(`${rel}: placeholder text found`);
   if (/playground|grown-ups|fruit-puzzle/i.test(html)) problems.push(`${rel}: links to the retired playground`);
+  const visibleText = html.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ');
+  if (/\*\*|\]\(|(^|\s)\*\S/.test(visibleText)) problems.push(`${rel}: unrendered Markdown in page text`);
   if (!isNotFound && !sitemap.includes(`<loc>${site.url}${rel}</loc>`)) problems.push(`${rel}: not listed in sitemap.xml`);
 
   // Internal links must resolve to a built file.

@@ -34,7 +34,7 @@ In 2023 the FSA updated that advice. Its scientific advisers on the Committee on
 
 The European Food Information Council summarises the current evidence the same way: storing potatoes in a home fridge does not significantly increase their acrylamide-forming potential compared with a cool, dark cupboard.
 
-Why the difference from the theory? Cold-induced sweetening is real, but the amount of sugar that builds up in a typical home fridge over a typical storage time turned out to be smaller than feared, and acrylamide formation depends far more on **how dark you cook the potato** than on where it was stored.
+Why the difference from the theory? Cold-induced sweetening is real, but a likely explanation is that the sugar that builds up over a typical stay in a home fridge is modest — and acrylamide formation depends heavily on **how dark you cook the potato**, whichever way it was stored.
 
 ## So where should you keep potatoes?
 

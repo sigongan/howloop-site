@@ -6,7 +6,7 @@ updated: 2026-11-18
 ---
 ## Who is responsible
 
-Howloop is written and published by [Jess Baek](/about/), a professional chef in Queensland, Australia. Jess chooses every topic and is responsible for everything published on the site.
+Howloop is published by [Jess Baek](/about/), a professional chef in Queensland, Australia, who is responsible for everything published on the site.
 
 ## How topics are chosen
 

@@ -31,7 +31,7 @@ Varieties differ a lot. The speed of browning depends on how much PPO and how ma
 
 Every effective method works by removing one of the three ingredients or slowing the enzyme down.
 
-**1. Acid.** PPO works best at a mildly acidic to neutral pH. Lemon juice (around pH 2) pushes the cut surface well below that, slowing the enzyme dramatically. Lime juice and other acidic juices work in the same way, though they also flavour the fruit.
+**1. Acid.** PPO slows down sharply as conditions become more acidic. Lemon juice (around pH 2) makes the cut surface far more acidic than the apple flesh itself, slowing the enzyme dramatically. Lime juice and other acidic juices work in the same way, though they also flavour the fruit.
 
 **2. Vitamin C (ascorbic acid).** Lemon juice has a second weapon. Ascorbic acid is a reducing agent: it converts the quinones back to their colourless original form before they can join up into brown pigments. It works until it is used up, which is why browning eventually starts even on lemon-treated fruit. Pure ascorbic acid powder (sold for home preserving) is very effective and adds less flavour than lemon juice.
 
@@ -41,7 +41,7 @@ Every effective method works by removing one of the three ingredients or slowing
 
 **5. Salt water.** A brief dip in lightly salted water — about half a teaspoon of salt per cup of water — slows browning, because chloride ions inhibit PPO. Rinse the fruit afterwards if you don't want any salty taste.
 
-**6. Heat.** Cooking destroys the enzyme. That is why baked apples, poached pears and blanched potatoes don't brown in the same way, and why fruit for freezing is often blanched or packed in syrup.
+**6. Heat.** Cooking destroys the enzyme. That is why baked apples, poached pears and blanched potatoes don't brown in the same way, and why vegetables are blanched before freezing (fruit is usually packed in syrup or treated with ascorbic acid instead).
 
 :::tip The fruit-platter method
 For apple slices that need to stay pale for a few hours, toss them in a mix of water and lemon juice (roughly one part juice to four parts water) or a dilute ascorbic acid solution, drain, then refrigerate in a sealed container. It works better than lemon juice alone and the flavour is milder.

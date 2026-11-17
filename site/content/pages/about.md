@@ -16,7 +16,7 @@ I'm **Jess Baek**, a professional chef based in Far North Queensland, Australia.
 
 I started as an apprentice in a luxury hotel kitchen in Seoul, worked as a demi chef in a Japanese izakaya in Vancouver, and have spent more than a decade in Australian kitchens since — as a sous chef, a senior chef de partie in a resort kitchen, and for five years as sous chef and then head chef of a one-hat Italian restaurant. My training spans Italian and Japanese cooking, and I still cook for a living every week.
 
-Before I cooked, I studied mechanical engineering and worked as an assistant engineer on power-plant projects in Korea. That background is why Howloop cares about temperatures, pressures and measurements: a kitchen is a small factory full of heat transfer and chemistry, and understanding the system makes the results repeatable.
+Alongside cooking, I trained in mechanical engineering and worked as an assistant engineer on power-plant projects in Korea. That background is why Howloop cares about temperatures, pressures and measurements: a kitchen is a small factory full of heat transfer and chemistry, and understanding the system makes the results repeatable.
 
 ## How the guides are made
 

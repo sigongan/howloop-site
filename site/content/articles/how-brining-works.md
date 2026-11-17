@@ -24,7 +24,7 @@ When salt dissolves in meat, its sodium and chloride ions interact with the prot
 1. **The filaments swell.** Chloride ions in particular bind to the proteins and increase the repulsion between neighbouring filaments, pushing them further apart. The lattice opens up and can hold more water. Classic research by Offer and Trinick showed myofibrils — the bundles of filaments inside each muscle fibre — swelling markedly in salt solutions of the strength used in meat processing.
 2. **Some proteins partly dissolve.** Salt makes part of the myosin soluble. Dissolved proteins form a gel when they're heated, trapping water rather than letting it run out.
 
-The combined effect is meat that starts with more water — brined meat typically gains a few per cent of its weight — and loses less during cooking. Salt also changes how muscle proteins react to heat, so they contract less forcefully.
+The combined effect is meat that starts with more water — wet-brined meat can gain several per cent of its weight — and loses less during cooking. Salt also changes how muscle proteins react to heat, so they contract less forcefully.
 
 There's a bonus: the meat is **seasoned all the way through**, not just on the surface.
 
