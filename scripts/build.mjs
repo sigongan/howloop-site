@@ -250,7 +250,7 @@ function homePage(articles, version) {
 ${sections}
 <section class="about-strip" aria-labelledby="about-strip">
   <h2 id="about-strip">Written in a real kitchen</h2>
-  <p>Howloop is written by ${escapeHtml(site.author.name)}, a professional chef in Queensland, Australia, who trained in a luxury hotel kitchen in Seoul, cooked Japanese food in Vancouver and has spent the last decade in Australian restaurants, including five years running the kitchen of a hatted Italian restaurant. Before cooking, Jess studied mechanical engineering — which is why these guides care about temperatures, pressures and measurements as much as flavour.</p>
+  <p>Howloop is written by ${escapeHtml(site.author.name)}, a professional chef in Queensland, Australia, who trained in a luxury hotel kitchen in Seoul, cooked Japanese food in Vancouver and has spent more than a decade in Australian kitchens, including five years as sous chef and then head chef of a hatted Italian restaurant. Jess also trained in mechanical engineering — which is why these guides care about temperatures, pressures and measurements as much as flavour.</p>
   <p><a href="/about/">Read more about Jess and how Howloop is made →</a></p>
 </section>
 </div>`;

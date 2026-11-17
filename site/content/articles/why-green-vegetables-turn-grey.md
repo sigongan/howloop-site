@@ -21,7 +21,7 @@ When the vegetable hits boiling water, the air expands and escapes, and water or
 
 The green comes from **chlorophyll**, which plants use to capture light. There are two main forms: chlorophyll *a*, which is blue-green, and chlorophyll *b*, which is yellow-green. Each chlorophyll molecule has a **magnesium** atom at its centre, and that magnesium is what gives it its bright colour.
 
-Plant cells contain natural acids, kept in separate compartments. As cooking breaks down the cell structure — above roughly 60°C the membranes around the chloroplasts are damaged — those acids are released and come into contact with the chlorophyll. Hydrogen ions from the acids push the magnesium out of the centre of the molecule. Without its magnesium, chlorophyll *a* becomes grey-green **pheophytin *a*** and chlorophyll *b* becomes olive-yellow **pheophytin *b***. The vegetable turns drab.
+Plant cells contain natural acids, kept in separate compartments. As cooking breaks down the cell structure — above roughly 60°C the membranes around the chloroplasts are damaged — those acids are released and come into contact with the chlorophyll. Hydrogen ions from the acids push the magnesium out of the centre of the molecule. Without its magnesium, chlorophyll *a* becomes grey-green **pheophytin** *a* and chlorophyll *b* becomes olive-yellow **pheophytin** *b*. The vegetable turns drab.
 
 Anything that brings more acid to the chlorophyll, or gives the reaction more time, makes the colour change worse.
 

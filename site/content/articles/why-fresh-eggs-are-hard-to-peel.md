@@ -25,7 +25,7 @@ Eggshells are porous — thousands of tiny pores let gases pass in and out. Over
 
 That change matters because the proteins of the white behave differently at different pH levels. At the lower pH of a fresh egg, the white proteins bond strongly to the membrane as they set, so they stick to the shell. At the higher pH of an older egg, the bond is much weaker, and the cooked white releases the membrane more readily.
 
-Researchers and cooks who have measured this generally find a threshold effect: eggs whose white is above roughly pH 9 tend to peel easily, and eggs below that often don't.
+Sources differ on the exact number — figures quoted range from about pH 8.6 to 9.2 — but the pattern is consistent: once the white has climbed into that range, eggs peel far more cleanly than very fresh ones.
 
 ## What actually helps
 
